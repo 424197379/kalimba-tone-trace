@@ -245,6 +245,34 @@ const APP_NAME = "卡林巴循音";
     const updateLaterBtn = document.getElementById("updateLaterBtn");
     const portraitPracticeQuery = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
 
+    function setCompactIcon(button, icon, label) {
+      if (!button) {
+        return;
+      }
+
+      button.classList.remove("compact-icon-mic", "compact-icon-stop");
+      if (icon === "mic" || icon === "stop") {
+        button.dataset.compactIcon = "";
+        button.classList.add(`compact-icon-${icon}`);
+      } else {
+        button.dataset.compactIcon = icon;
+      }
+      if (label) {
+        button.setAttribute("aria-label", label);
+        button.title = label;
+      }
+    }
+
+    function applyStaticControlIcons() {
+      setCompactIcon(startBtn, "▶", "开始练习");
+      setCompactIcon(micBtn, "mic", "麦克风测试");
+      setCompactIcon(pauseBtn, "Ⅱ", "暂停");
+      setCompactIcon(resetBtn, "↺", "重置");
+      setCompactIcon(demoBtn, "♪", "示范播放");
+      setCompactIcon(changeSongBtn, "换", "换曲");
+      setCompactIcon(songSpeedBtn, "↯", "使用曲目默认速度");
+    }
+
     const laneEls = [];
     const keyEls = [];
     const noteEls = new Map();
@@ -381,6 +409,7 @@ const APP_NAME = "卡林巴循音";
       document.documentElement.style.setProperty("--key-scale", keyScale.toFixed(3));
       keyScaleBtn.textContent = `键宽 ${Math.round(keyScale * 100)}%`;
       keyScaleBtn.title = "双指捏合练习区调整琴键宽度，点击恢复 100%";
+      setCompactIcon(keyScaleBtn, "↔", `琴键宽度 ${Math.round(keyScale * 100)}%，点击恢复 100%`);
       if (persist) {
         localStorage.setItem(keyScaleStorageKey, keyScale.toFixed(3));
       }
@@ -517,6 +546,7 @@ const APP_NAME = "卡林巴循音";
       const defaultSpeed = getSongDefaultSpeedFactor();
       songSpeedBtn.textContent = `曲目默认 ${defaultSpeed.toFixed(2)}x`;
       songSpeedBtn.title = `切换到 ${currentSong.title} 适合听旋律的默认速率`;
+      setCompactIcon(songSpeedBtn, "速", `使用 ${currentSong.title} 的默认速度 ${defaultSpeed.toFixed(2)}x`);
     }
 
     function getSongDefaultSpeedFactor() {
@@ -547,12 +577,17 @@ const APP_NAME = "卡林巴循音";
       }
 
       const variants = getSongVariants(currentSong);
-      songVersionBtn.hidden = variants.length < 2;
-      songVersionBtn.disabled = variants.length < 2;
-      songVersionBtn.textContent = currentSong.versionLabel || "主旋律版";
-      songVersionBtn.title = variants.length < 2
+      const hidden = variants.length < 2;
+      const label = currentSong.versionLabel || "主旋律版";
+      const icon = getSongVersionRank(currentSong) > 0 ? "和" : "主";
+      const title = hidden
         ? "当前曲目暂无其他版本"
         : `切换到 ${variants.find((song) => song.id !== currentSong.id)?.versionLabel || "其他版本"}`;
+      songVersionBtn.hidden = hidden;
+      songVersionBtn.disabled = hidden;
+      songVersionBtn.textContent = label;
+      setCompactIcon(songVersionBtn, icon, label);
+      songVersionBtn.title = title;
     }
 
     function applyAccompanimentControl() {
@@ -562,6 +597,7 @@ const APP_NAME = "卡林巴循音";
         accompanimentBtn.disabled = !hasAccompaniment;
         accompanimentBtn.classList.toggle("active", hasAccompaniment && accompanimentEnabled);
         accompanimentBtn.textContent = accompanimentEnabled ? "伴奏 开" : "伴奏 关";
+        setCompactIcon(accompanimentBtn, "伴", accompanimentEnabled ? "伴奏已开启，点击关闭" : "伴奏已关闭，点击开启");
         accompanimentBtn.title = hasAccompaniment
           ? "切换自动伴奏播放"
           : "当前曲目暂无自动伴奏";
@@ -2003,6 +2039,7 @@ const APP_NAME = "卡林巴循音";
       practiceStartAt = performance.now() - pausedElapsed * 1000;
       pauseBtn.disabled = false;
       micBtn.textContent = "麦克风测试";
+      setCompactIcon(micBtn, "mic", "麦克风测试");
       setStatus("准备");
       updateScore();
       startLoop();
@@ -2012,6 +2049,7 @@ const APP_NAME = "卡林巴循音";
       if (micTestMode) {
         micTestMode = false;
         micBtn.textContent = "麦克风测试";
+        setCompactIcon(micBtn, "mic", "麦克风测试");
         setStatus(practiceRunning ? "练习中" : "待开始");
         return;
       }
@@ -2037,6 +2075,7 @@ const APP_NAME = "卡林巴循音";
       demoMode = false;
       pauseBtn.disabled = true;
       micBtn.textContent = "停止测试";
+      setCompactIcon(micBtn, "stop", "停止麦克风测试");
       setStatus("麦克风测试中");
       startLoop();
     }
@@ -2060,6 +2099,7 @@ const APP_NAME = "卡林巴循音";
       pausedElapsed = 0;
       pauseBtn.disabled = true;
       micBtn.textContent = "麦克风测试";
+      setCompactIcon(micBtn, "mic", "麦克风测试");
 
       activeDetection = {
         lane: null,
@@ -2245,6 +2285,8 @@ const APP_NAME = "卡林巴循音";
       }
       waitingServiceWorker = null;
     }
+
+    applyStaticControlIcons();
 
     startBtn.addEventListener("click", startPractice);
     micBtn.addEventListener("click", toggleMicTest);

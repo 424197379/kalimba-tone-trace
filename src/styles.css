@@ -1775,10 +1775,17 @@
 
       .controls {
         display: grid;
-        grid-template-columns: minmax(168px, 0.85fr) auto auto auto auto auto minmax(124px, 1fr) auto auto;
-        gap: 4px;
+        grid-template-columns: minmax(290px, 340px) minmax(56px, 68px) 38px minmax(56px, 68px) minmax(150px, 190px) minmax(58px, 74px);
+        justify-content: start;
+        gap: 6px;
         align-items: center;
         margin: 0;
+      }
+
+      #resetBtn,
+      #songSpeedBtn,
+      #keyScaleBtn {
+        display: none;
       }
 
       button,
@@ -1789,6 +1796,51 @@
         border-radius: 9px;
         font-size: 13px;
         line-height: 1.1;
+      }
+
+      button[data-compact-icon] {
+        position: relative;
+        width: 34px;
+        min-width: 34px;
+        padding: 0;
+        gap: 0;
+        font-size: 0;
+      }
+
+      button[data-compact-icon]::before {
+        content: attr(data-compact-icon);
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 800;
+      }
+
+      button[data-compact-icon].compact-icon-mic::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        background: currentColor;
+        transform: translate(-50%, -50%);
+        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'/%3E%3Cpath d='M12 19v3'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E") center / contain no-repeat;
+        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'/%3E%3Cpath d='M12 19v3'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E") center / contain no-repeat;
+      }
+
+      button[data-compact-icon].compact-icon-mic::after {
+        content: none;
+      }
+
+      button[data-compact-icon].compact-icon-stop::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background: currentColor;
       }
 
       .compact {
@@ -1816,12 +1868,32 @@
 
       .current-song-name {
         font-size: 13px;
+        max-width: 104px;
       }
 
       .current-song-wrap .compact {
+        width: auto;
+        min-width: 40px;
         min-height: 26px;
-        padding: 4px 7px;
+        padding: 0 7px;
         font-size: 12px;
+      }
+
+      .current-song-wrap .compact[data-compact-icon],
+      #startBtn[data-compact-icon],
+      #demoBtn[data-compact-icon],
+      #accompanimentBtn[data-compact-icon] {
+        width: auto;
+        min-width: 0;
+        padding: 0 9px;
+        font-size: 12px;
+      }
+
+      .current-song-wrap .compact[data-compact-icon]::before,
+      #startBtn[data-compact-icon]::before,
+      #demoBtn[data-compact-icon]::before,
+      #accompanimentBtn[data-compact-icon]::before {
+        content: none;
       }
 
       .song-wrap select {
@@ -1833,7 +1905,7 @@
 
       .speed-wrap input[type="range"] {
         width: 100%;
-        min-width: 78px;
+        min-width: 74px;
       }
 
       .accompaniment-wrap {
@@ -2096,10 +2168,11 @@
 
     @media (orientation: landscape) and (max-height: 560px) and (max-width: 760px) {
       .controls {
-        grid-template-columns: minmax(150px, 0.95fr) auto auto auto minmax(118px, 1fr) auto;
+        grid-template-columns: minmax(270px, 320px) minmax(52px, 62px) 36px minmax(52px, 62px) minmax(138px, 170px) minmax(54px, 68px);
       }
 
-      #resetBtn {
+      #resetBtn,
+      #keyScaleBtn {
         display: none;
       }
 
@@ -2207,14 +2280,16 @@
 
       html.software-landscape .controls {
         display: grid;
-        grid-template-columns: minmax(150px, 0.95fr) auto auto auto minmax(118px, 1fr) auto;
-        gap: 4px;
+        grid-template-columns: minmax(290px, 340px) minmax(56px, 68px) 38px minmax(56px, 68px) minmax(150px, 190px) minmax(58px, 74px);
+        justify-content: start;
+        gap: 6px;
         align-items: center;
         margin: 0;
       }
 
       html.software-landscape #resetBtn,
-      html.software-landscape #songSpeedBtn {
+      html.software-landscape #songSpeedBtn,
+      html.software-landscape #keyScaleBtn {
         display: none;
       }
 
@@ -2226,6 +2301,51 @@
         border-radius: 9px;
         font-size: 13px;
         line-height: 1.1;
+      }
+
+      html.software-landscape button[data-compact-icon] {
+        position: relative;
+        width: 34px;
+        min-width: 34px;
+        padding: 0;
+        gap: 0;
+        font-size: 0;
+      }
+
+      html.software-landscape button[data-compact-icon]::before {
+        content: attr(data-compact-icon);
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 800;
+      }
+
+      html.software-landscape button[data-compact-icon].compact-icon-mic::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        background: currentColor;
+        transform: translate(-50%, -50%);
+        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'/%3E%3Cpath d='M12 19v3'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E") center / contain no-repeat;
+        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'/%3E%3Cpath d='M12 19v3'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E") center / contain no-repeat;
+      }
+
+      html.software-landscape button[data-compact-icon].compact-icon-mic::after {
+        content: none;
+      }
+
+      html.software-landscape button[data-compact-icon].compact-icon-stop::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        background: currentColor;
       }
 
       html.software-landscape .compact {
@@ -2253,12 +2373,32 @@
 
       html.software-landscape .current-song-name {
         font-size: 13px;
+        max-width: 104px;
       }
 
       html.software-landscape .current-song-wrap .compact {
+        width: auto;
+        min-width: 40px;
         min-height: 26px;
-        padding: 4px 7px;
+        padding: 0 7px;
         font-size: 12px;
+      }
+
+      html.software-landscape .current-song-wrap .compact[data-compact-icon],
+      html.software-landscape #startBtn[data-compact-icon],
+      html.software-landscape #demoBtn[data-compact-icon],
+      html.software-landscape #accompanimentBtn[data-compact-icon] {
+        width: auto;
+        min-width: 0;
+        padding: 0 9px;
+        font-size: 12px;
+      }
+
+      html.software-landscape .current-song-wrap .compact[data-compact-icon]::before,
+      html.software-landscape #startBtn[data-compact-icon]::before,
+      html.software-landscape #demoBtn[data-compact-icon]::before,
+      html.software-landscape #accompanimentBtn[data-compact-icon]::before {
+        content: none;
       }
 
       html.software-landscape .song-wrap select {
@@ -2270,7 +2410,7 @@
 
       html.software-landscape .speed-wrap input[type="range"] {
         width: 100%;
-        min-width: 78px;
+        min-width: 74px;
       }
 
       html.software-landscape .accompaniment-wrap {
