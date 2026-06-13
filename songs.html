@@ -19,7 +19,7 @@
   <main class="page library-page">
     <header class="card library-header">
       <div class="library-title">
-        <div class="app-kicker">曲库 · <span id="appVersionText">v1.0.4</span></div>
+        <div class="app-kicker">曲库 · <span id="appVersionText">v1.1.0</span></div>
         <h1>选择歌曲</h1>
       </div>
       <div class="library-actions">
@@ -68,6 +68,14 @@
         <button class="accent" id="importSongBtn" type="button">保存到本地曲库</button>
         <span class="import-message" id="importMessage" hidden></span>
       </div>
+      <div class="local-library-manager" id="localLibraryManager">
+        <div class="local-library-head">
+          <h3>本地曲库管理</h3>
+          <span id="localSongCountText">0 首</span>
+        </div>
+        <div class="local-song-list" id="localSongList"></div>
+        <p class="local-song-empty" id="localSongEmptyText">暂无本地歌曲</p>
+      </div>
     </section>
 
     <section class="song-list" id="songList" aria-label="歌曲列表"></section>
@@ -78,6 +86,22 @@
     <span>发现新版本，点击更新</span>
     <button id="updateNowBtn" type="button">立即更新</button>
     <button class="ghost" id="updateLaterBtn" type="button">稍后</button>
+  </div>
+  <div class="ai-thinking-modal" id="aiThinkingModal" hidden role="status" aria-live="polite">
+    <div class="ai-thinking-card">
+      <span class="ai-thinking-spinner" aria-hidden="true"></span>
+      <strong>AI thinking......</strong>
+    </div>
+  </div>
+  <div class="delete-confirm-modal" id="deleteConfirmModal" hidden role="dialog" aria-modal="true" aria-labelledby="deleteConfirmTitle" aria-describedby="deleteConfirmText">
+    <div class="delete-confirm-card">
+      <h2 id="deleteConfirmTitle">确定删除这首歌曲？</h2>
+      <p id="deleteConfirmText">只会从本机曲库移除，不会影响系统内置歌曲。</p>
+      <div class="delete-confirm-actions">
+        <button class="ghost" id="cancelDeleteBtn" type="button">取消</button>
+        <button class="delete-confirm-btn" id="confirmDeleteBtn" type="button">确认删除</button>
+      </div>
+    </div>
   </div>
   <script type="module" src="./src/song-library.js"></script>
 </body>

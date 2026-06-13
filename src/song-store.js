@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "1.0.4";
+export const APP_VERSION = "1.1.0";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -436,4 +436,20 @@ export function saveCustomSong(song) {
   songs.push(song);
   saveCustomSongArray(songs);
   return song;
+}
+
+export function deleteCustomSong(songId) {
+  const id = String(songId || "").trim();
+  if (!id) {
+    return null;
+  }
+
+  const songs = getCustomSongs();
+  const deletedSong = songs.find((song) => song.id === id);
+  if (!deletedSong) {
+    return null;
+  }
+
+  saveCustomSongArray(songs.filter((song) => song.id !== id));
+  return deletedSong;
 }

@@ -101,6 +101,26 @@
     </header>
 
     <section>
+      <h2>1.1.0 - 2026-06-13</h2>
+      <ul>
+        <li>从用户录制的 21 音卡林巴录音中切分真实采样，按页面琴键从左到右的音名保存为 <code>d6.mp3</code> 到 <code>e6.mp3</code>。</li>
+        <li>示范播放和琴键点击优先使用真实采样音色，单个采样加载失败时仅该音回退到 Web Audio 合成音。</li>
+        <li>新增 <code>scripts/split-samples.mjs</code>，用于重新检测拨弦瞬态并生成 <code>assets/samples/</code> 下的 MP3 采样。</li>
+        <li>将 21 个采样加入 Service Worker 离线缓存，并将缓存版本更新为 <code>kalimba-tone-trace-v1.1.0</code>。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1.0.5 - 2026-06-13</h2>
+      <ul>
+        <li>添加歌曲保存时新增短暂的 <code>AI thinking......</code> 加载弹窗，让导入 JSON 的反馈更明确。</li>
+        <li>导入期间会暂时禁用保存按钮和 JSON 输入框，避免重复点击。</li>
+        <li>添加本地曲库管理，可删除本机导入歌曲，系统内置歌曲不可删除。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v1.0.5</code>。</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>1.0.4 - 2026-06-13</h2>
       <ul>
         <li>新增曲库难度分级，内置和本地导入歌曲都会带有 <code>easy</code>、<code>medium</code>、<code>hard</code> 难度。</li>

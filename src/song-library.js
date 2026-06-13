@@ -3,6 +3,8 @@ import {
   APP_VERSION,
   DIFFICULTY_LABELS,
   DIFFICULTY_LEVELS,
+  deleteCustomSong,
+  getCustomSongs,
   getSongLibrary,
   normalizeDifficulty,
   parseImportedSong,
@@ -27,12 +29,24 @@ const copyPromptBtn = document.getElementById("copyPromptBtn");
 const songJsonInput = document.getElementById("songJsonInput");
 const importSongBtn = document.getElementById("importSongBtn");
 const importMessage = document.getElementById("importMessage");
+const aiThinkingModal = document.getElementById("aiThinkingModal");
+const localSongCountText = document.getElementById("localSongCountText");
+const localSongList = document.getElementById("localSongList");
+const localSongEmptyText = document.getElementById("localSongEmptyText");
+const deleteConfirmModal = document.getElementById("deleteConfirmModal");
+const deleteConfirmTitle = document.getElementById("deleteConfirmTitle");
+const deleteConfirmText = document.getElementById("deleteConfirmText");
+const cancelDeleteBtn = document.getElementById("cancelDeleteBtn");
+const confirmDeleteBtn = document.getElementById("confirmDeleteBtn");
 const updateToast = document.getElementById("updateToast");
 const updateNowBtn = document.getElementById("updateNowBtn");
 const updateLaterBtn = document.getElementById("updateLaterBtn");
+const AI_THINKING_MIN_MS = 900;
 
 let songLibrary = getSongLibrary();
 let activeDifficulty = "all";
+let importingSong = false;
+let pendingDeleteSongId = null;
 let waitingServiceWorker = null;
 let reloadRequestedForUpdate = false;
 let refreshingForUpdate = false;
@@ -80,6 +94,11 @@ function normalizeText(text) {
 
 function getSongUploader(song) {
   return song.uploader || song.author || "system";
+}
+
+function formatSongTitleForMessage(title) {
+  const text = String(title || "本地歌曲").trim() || "本地歌曲";
+  return text.startsWith("《") && text.endsWith("》") ? text : `《${text}》`;
 }
 
 function getSongDifficulty(song) {
@@ -154,6 +173,53 @@ function createSongCard(song, selectedSongId) {
   return card;
 }
 
+function createLocalSongItem(song) {
+  const item = document.createElement("article");
+  item.className = "local-song-item";
+
+  const body = document.createElement("div");
+  body.className = "local-song-body";
+
+  const title = document.createElement("strong");
+  title.className = "local-song-title";
+  title.textContent = song.title;
+
+  const meta = document.createElement("div");
+  meta.className = "local-song-meta";
+  const difficulty = getSongDifficulty(song);
+  meta.append(
+    createMeta("难度", DIFFICULTY_LABELS[difficulty], `difficulty-${difficulty}`),
+    createMeta("BPM", song.bpm),
+    createMeta("音符", song.steps.length)
+  );
+
+  body.append(title, meta);
+
+  const deleteButton = document.createElement("button");
+  deleteButton.className = "delete-song-btn";
+  deleteButton.type = "button";
+  deleteButton.textContent = "删除";
+  deleteButton.addEventListener("click", () => openDeleteConfirm(song));
+
+  item.append(body, deleteButton);
+  return item;
+}
+
+function renderLocalSongManager() {
+  if (!localSongList || !localSongEmptyText || !localSongCountText) {
+    return;
+  }
+
+  const localSongs = getCustomSongs();
+  localSongList.replaceChildren();
+  localSongCountText.textContent = `${localSongs.length} 首`;
+  localSongEmptyText.hidden = localSongs.length > 0;
+
+  localSongs.forEach((song) => {
+    localSongList.appendChild(createLocalSongItem(song));
+  });
+}
+
 function createDifficultyButton(difficulty, count) {
   const button = document.createElement("button");
   const isActive = difficulty === activeDifficulty;
@@ -217,6 +283,52 @@ function showImportMessage(message, kind = "neutral") {
   importMessage.hidden = false;
 }
 
+function refreshLibraryViews() {
+  renderSongList();
+  renderLocalSongManager();
+}
+
+function openDeleteConfirm(song) {
+  if (!song || song.source !== "local") {
+    return;
+  }
+
+  pendingDeleteSongId = song.id;
+  deleteConfirmTitle.textContent = `确定删除${formatSongTitleForMessage(song.title)}？`;
+  deleteConfirmText.textContent = "只会从本机曲库移除，不会影响系统内置歌曲。";
+  deleteConfirmModal.hidden = false;
+  cancelDeleteBtn.focus();
+}
+
+function closeDeleteConfirm() {
+  pendingDeleteSongId = null;
+  deleteConfirmModal.hidden = true;
+}
+
+function confirmDeleteCustomSong() {
+  if (!pendingDeleteSongId) {
+    return;
+  }
+
+  const songId = pendingDeleteSongId;
+  const selectedSongId = getSelectedSongId();
+  const deletedSong = deleteCustomSong(songId);
+  closeDeleteConfirm();
+
+  if (!deletedSong) {
+    showImportMessage("只能删除本地歌曲", "error");
+    return;
+  }
+
+  if (selectedSongId === songId || readStoredSongId() === songId) {
+    storeSongId("birthday");
+  }
+
+  songLibrary = getSongLibrary();
+  refreshLibraryViews();
+  showImportMessage(`已删除 ${formatSongTitleForMessage(deletedSong.title)}`, "success");
+}
+
 function toggleImportPanel() {
   importPanel.hidden = !importPanel.hidden;
   addSongBtn.textContent = importPanel.hidden ? "添加歌曲" : "收起添加";
@@ -236,7 +348,39 @@ async function copyPrompt() {
   }
 }
 
-function importSongFromJson() {
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function waitForPaint() {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(resolve));
+  });
+}
+
+function setImportBusy(enabled) {
+  importingSong = enabled;
+  importSongBtn.disabled = enabled;
+  songJsonInput.disabled = enabled;
+  if (aiThinkingModal) {
+    aiThinkingModal.hidden = !enabled;
+  }
+}
+
+async function waitForThinkingMinimum(startTime) {
+  const elapsed = performance.now() - startTime;
+  await delay(Math.max(0, AI_THINKING_MIN_MS - elapsed));
+}
+
+async function importSongFromJson() {
+  if (importingSong) {
+    return;
+  }
+
+  const startedAt = performance.now();
+  setImportBusy(true);
+  await waitForPaint();
+
   try {
     const song = parseImportedSong(songJsonInput.value, songLibrary);
     saveCustomSong(song);
@@ -245,10 +389,14 @@ function importSongFromJson() {
     activeDifficulty = "all";
     songSearchInput.value = "";
     songJsonInput.value = "";
-    renderSongList();
+    refreshLibraryViews();
+    await waitForThinkingMinimum(startedAt);
     showImportMessage(`已添加 ${song.title}`, "success");
   } catch (error) {
+    await waitForThinkingMinimum(startedAt);
     showImportMessage(error.message, "error");
+  } finally {
+    setImportBusy(false);
   }
 }
 
@@ -343,8 +491,20 @@ songSearchInput.addEventListener("input", renderSongList);
 addSongBtn.addEventListener("click", toggleImportPanel);
 copyPromptBtn.addEventListener("click", copyPrompt);
 importSongBtn.addEventListener("click", importSongFromJson);
+cancelDeleteBtn.addEventListener("click", closeDeleteConfirm);
+confirmDeleteBtn.addEventListener("click", confirmDeleteCustomSong);
+deleteConfirmModal.addEventListener("click", (event) => {
+  if (event.target === deleteConfirmModal) {
+    closeDeleteConfirm();
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !deleteConfirmModal.hidden) {
+    closeDeleteConfirm();
+  }
+});
 updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
 updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
 
-renderSongList();
+refreshLibraryViews();
 setupServiceWorker();

@@ -122,6 +122,10 @@ const APP_NAME = "卡林巴循音";
     const beamEls = [];
     const scoreNoteEls = new Map();
 
+    const KALIMBA_SAMPLE_PATHS = new Map(
+      DISPLAY_KEYS.map((note) => [note.name, `./assets/samples/${note.name.toLowerCase()}.mp3`])
+    );
+
     let audioContext = null;
     let analyser = null;
     let micSource = null;
@@ -149,6 +153,11 @@ const APP_NAME = "卡林巴循音";
     let waitingServiceWorker = null;
     let reloadRequestedForUpdate = false;
     let refreshingForUpdate = false;
+    let kalimbaSamplePreloadPromise = null;
+
+    const kalimbaSampleBuffers = new Map();
+    const kalimbaSamplePromises = new Map();
+    const kalimbaSampleFailures = new Set();
 
     let activeDetection = {
       lane: null,
@@ -381,9 +390,19 @@ const APP_NAME = "卡林巴循音";
           const height = Math.max(104, 172 - distance * 6);
           const mobileHeight = 68 + ((height - 104) / (172 - 104)) * 28;
           key.className = "key";
+          key.tabIndex = 0;
+          key.setAttribute("role", "button");
+          key.setAttribute("aria-label", `Play ${note.name}`);
           key.style.height = `${height}px`;
           key.style.setProperty("--mobile-key-height", `${mobileHeight.toFixed(1)}%`);
           key.innerHTML = `<div class="key-note">${note.letter}</div><div class="key-degree">${renderDegreeMarkup(note)}</div>`;
+          key.addEventListener("click", () => playKeyPreview(note.name));
+          key.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              playKeyPreview(note.name);
+            }
+          });
           keyRow.appendChild(key);
           keyEls.push(key);
         });
@@ -633,6 +652,7 @@ const APP_NAME = "卡林巴循音";
       if (audioContext.state === "suspended") {
         await audioContext.resume();
       }
+      preloadKalimbaSamples();
       return audioContext;
     }
 
@@ -683,6 +703,115 @@ const APP_NAME = "卡林巴循音";
       kalimbaBus.connect(kalimbaDry).connect(masterTone);
       kalimbaBus.connect(kalimbaReverb).connect(kalimbaWet).connect(masterTone);
       masterTone.connect(safety).connect(audioContext.destination);
+    }
+
+    async function loadKalimbaSampleBuffer(noteName) {
+      const samplePath = KALIMBA_SAMPLE_PATHS.get(noteName);
+      if (!audioContext || !samplePath || kalimbaSampleFailures.has(noteName)) {
+        return null;
+      }
+
+      if (kalimbaSampleBuffers.has(noteName)) {
+        return kalimbaSampleBuffers.get(noteName);
+      }
+
+      if (kalimbaSamplePromises.has(noteName)) {
+        return kalimbaSamplePromises.get(noteName);
+      }
+
+      const promise = fetch(samplePath, { headers: { Range: "bytes=0-" } })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Sample ${samplePath} returned ${response.status}`);
+          }
+          return response.arrayBuffer();
+        })
+        .then((arrayBuffer) => audioContext.decodeAudioData(arrayBuffer))
+        .then((buffer) => {
+          kalimbaSampleBuffers.set(noteName, buffer);
+          kalimbaSamplePromises.delete(noteName);
+          return buffer;
+        })
+        .catch((error) => {
+          kalimbaSampleFailures.add(noteName);
+          kalimbaSamplePromises.delete(noteName);
+          console.warn(`${APP_NAME} sample fallback for ${noteName}`, error);
+          return null;
+        });
+
+      kalimbaSamplePromises.set(noteName, promise);
+      return promise;
+    }
+
+    function preloadKalimbaSamples() {
+      if (!audioContext) {
+        return Promise.resolve([]);
+      }
+
+      if (!kalimbaSamplePreloadPromise) {
+        kalimbaSamplePreloadPromise = Promise.all(
+          DISPLAY_KEYS.map((note) => loadKalimbaSampleBuffer(note.name))
+        );
+      }
+
+      return kalimbaSamplePreloadPromise;
+    }
+
+    function playDecodedKalimbaSample(noteName, buffer) {
+      if (!audioContext || !buffer) {
+        return false;
+      }
+
+      ensureKalimbaOutput();
+      if (!kalimbaBus) {
+        return false;
+      }
+
+      const now = audioContext.currentTime;
+      const source = audioContext.createBufferSource();
+      const voice = audioContext.createGain();
+      const pan = audioContext.createStereoPanner ? audioContext.createStereoPanner() : null;
+      const noteIndex = NOTE_INDEX.get(noteName);
+
+      source.buffer = buffer;
+      voice.gain.setValueAtTime(0.92, now);
+
+      if (pan) {
+        pan.pan.setValueAtTime(((noteIndex ?? 10) - 10) / 34, now);
+        source.connect(voice).connect(pan).connect(kalimbaBus);
+      } else {
+        source.connect(voice).connect(kalimbaBus);
+      }
+
+      source.start(now);
+      source.stop(now + buffer.duration + 0.04);
+      return true;
+    }
+
+    async function playKalimbaSample(noteName) {
+      const buffer = await loadKalimbaSampleBuffer(noteName);
+      return playDecodedKalimbaSample(noteName, buffer);
+    }
+
+    async function playKalimbaNote(noteName, durationSeconds) {
+      if (!audioContext) {
+        return false;
+      }
+
+      const playedSample = await playKalimbaSample(noteName);
+      if (!playedSample) {
+        createPluckSynth(noteName, durationSeconds);
+      }
+      return playedSample;
+    }
+
+    async function playKeyPreview(noteName) {
+      try {
+        await ensureAudioContext();
+        await playKalimbaNote(noteName, 1.2);
+      } catch (error) {
+        console.warn(`${APP_NAME} could not play ${noteName}`, error);
+      }
     }
 
     function pluckEnvelope(param, now, peak, attackSeconds, decaySeconds) {
@@ -1136,7 +1265,7 @@ const APP_NAME = "卡林巴循音";
         }
 
         if (demoMode && !event.demoPlayed && seconds >= eventTime) {
-          createPluckSynth(event.name, Math.max(0.24, durationSeconds * 0.9));
+          playKalimbaNote(event.name, Math.max(0.24, durationSeconds * 0.9));
           event.demoPlayed = true;
         }
       });
@@ -1327,6 +1456,7 @@ const APP_NAME = "卡林巴循音";
     async function playDemo() {
       try {
         await ensureAudioContext();
+        await preloadKalimbaSamples();
       } catch (error) {
         console.error(error);
         return;
