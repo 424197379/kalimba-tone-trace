@@ -5,6 +5,7 @@ const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 const APP_SHELL = [
   "./",
   "./index.html",
+  "./changelog.html",
   "./kalimba-practice.html",
   "./manifest.webmanifest",
   "./src/app.js",

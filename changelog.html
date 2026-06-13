@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卡林巴循音 - 更新日志</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7efe3;
+      --panel: #fffaf3;
+      --ink: #241a14;
+      --subtle: #74655a;
+      --accent: #bd5f3b;
+      --border: rgba(61, 45, 32, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: linear-gradient(180deg, #fffaf2, var(--bg));
+      font-family: "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(860px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 34px 0 52px;
+    }
+
+    header {
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(28px, 6vw, 40px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--subtle);
+    }
+
+    section {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255, 250, 243, 0.88);
+      box-shadow: 0 12px 32px rgba(64, 43, 24, 0.08);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25em;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    code {
+      padding: 1px 5px;
+      border-radius: 6px;
+      background: rgba(189, 95, 59, 0.1);
+      color: #7d3a25;
+      font-family: Consolas, "Cascadia Code", monospace;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>卡林巴循音更新日志</h1>
+      <p class="subtitle">英文工程名：Kalimba ToneTrace。每次发布前都会在这里记录版本变更。</p>
+      <p><a href="./index.html">返回应用</a></p>
+    </header>
+
+    <section>
+      <h2>1.0.1 - 2026-06-13</h2>
+      <ul>
+        <li>修复鸿蒙手机/PWA 中点击“进入横屏”后可能卡在竖屏提示层的问题。</li>
+        <li>横屏按钮现在会优先请求系统全屏和原生横屏锁定。</li>
+        <li>当浏览器拒绝原生横屏锁定时，启用软件横屏模式，把练习界面旋转成可用的横屏画布。</li>
+        <li>增加 PWA 新版本提示，发现新版本时可点击“立即更新”切换到新版缓存。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v1.0.1</code>。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1.0.0 - 2026-06-13</h2>
+      <ul>
+        <li>建立 <code>Kalimba ToneTrace / 卡林巴循音</code> 工程结构。</li>
+        <li>将原单文件网页拆分为 <code>index.html</code>、<code>src/app.js</code>、<code>src/songs.js</code>、<code>src/pitch.js</code> 和 <code>src/styles.css</code>。</li>
+        <li>新增 PWA 配置、离线缓存、手机桌面图标和旧地址跳转页。</li>
+        <li>新增本地自绘木质卡林巴图标。</li>
+        <li>保留卡林巴跟练、示范播放、麦克风识别、横屏练习和琴键宽度缩放等核心功能。</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
