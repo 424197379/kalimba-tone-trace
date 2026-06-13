@@ -67,6 +67,25 @@ http://localhost:8123/index.html
 
 局域网 `http://电脑IP:8123` 适合调试，但手机浏览器通常不会把它当成安全上下文，所以 Service Worker 离线安装和麦克风识别可能受限。`localhost` 在电脑上可以用于本地测试。
 
+## 曲库数据
+
+内置曲库采用“一首歌一个 JSON”的结构，文件放在 `data/songs/`。新增内置歌曲时：
+
+1. 新建 `data/songs/<id>.json`。
+2. 文件名和 `id` 使用 ASCII 小写字母、数字和短横线，例如 `new-song.json`。
+3. 中文歌名继续放在 `title` 字段里。
+4. JSON 字段沿用现有歌曲格式：`id`、`title`、`uploader`、`practiceTitle`、`scoreTitle`、`hint`、`difficulty`、`bpm`、`defaultSpeedFactor`、`beatsPerMeasure`、`steps`。
+5. 修改曲库后运行：
+
+```bat
+npm run validate:songs
+npm run build:songs
+```
+
+`src/songs.js` 是由 `scripts/build-song-library.mjs` 生成的 App 曲库模块，不要直接在里面改歌曲数据。
+
+未来本地上传歌曲也可以复用同一首歌 JSON schema；区别是内置曲库从 `data/songs/` 构建进 App，本地上传曲库由浏览器本地存储保存，不需要写入仓库文件。
+
 ## 更新版本
 
 发布新版时同步修改：
@@ -92,6 +111,8 @@ service-worker.js          离线缓存逻辑
 package.json               工程名、版本号和启动脚本
 CHANGELOG.md               每个版本的更新记录
 changelog.html             GitHub Pages 可直接打开的更新日志
+data/
+  songs/                   内置曲库 JSON，一首歌一个文件
 serve-kalimba.js           本地局域网静态服务器
 start-kalimba.cmd          Windows 快速启动脚本
 src/
@@ -107,6 +128,8 @@ assets/
   source/                  不直接加载的源素材
     recordings/            原始卡林巴采样录音
 scripts/
+  build-song-library.mjs   从 data/songs 生成 src/songs.js
+  validate-songs.mjs       校验 data/songs 曲库 JSON
   split-samples.mjs        从原始录音检测拨弦并重新生成采样
 ```
 
