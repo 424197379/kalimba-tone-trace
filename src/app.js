@@ -317,6 +317,9 @@ const APP_NAME = "卡林巴循音";
     let refreshingForUpdate = false;
     let seekingWithProgress = false;
     let kalimbaSamplePreloadPromise = null;
+    let pendingFullscreenGesture = false;
+    let landscapeFullscreenTimer = 0;
+    let landscapeFullscreenGestureListeners = [];
 
     const kalimbaSampleBuffers = new Map();
     const kalimbaSamplePromises = new Map();
@@ -469,31 +472,103 @@ const APP_NAME = "卡林巴循音";
       if (shouldAutoEnterLandscapeFromLibrary() && portraitPracticeQuery.matches) {
         setSoftwareLandscapeMode(true);
       }
+      scheduleLandscapeFullscreenRequest();
     }
 
     function refreshLandscapeMode() {
       if (!portraitPracticeQuery.matches) {
         setSoftwareLandscapeMode(false);
+        scheduleLandscapeFullscreenRequest();
         return;
       }
 
+      clearLandscapeFullscreenRequest();
       if (document.documentElement.classList.contains("software-landscape")) {
         scheduleLayoutRefresh();
       }
     }
 
-    async function requestFullscreenMode() {
-      if (document.fullscreenElement || !document.documentElement.requestFullscreen) {
+    function shouldUseLandscapeFullscreen() {
+      return window.matchMedia("(orientation: landscape) and (max-height: 760px), (orientation: landscape) and (pointer: coarse)").matches;
+    }
+
+    function clearLandscapeFullscreenRequest() {
+      if (landscapeFullscreenTimer) {
+        window.clearTimeout(landscapeFullscreenTimer);
+        landscapeFullscreenTimer = 0;
+      }
+      landscapeFullscreenGestureListeners.forEach(({ type, listener }) => {
+        window.removeEventListener(type, listener, { capture: true });
+      });
+      landscapeFullscreenGestureListeners = [];
+      pendingFullscreenGesture = false;
+    }
+
+    async function requestFullscreenMode(options = {}) {
+      const quiet = Boolean(options.quiet);
+
+      if (document.fullscreenElement) {
         return true;
+      }
+
+      if (!document.documentElement.requestFullscreen) {
+        return false;
       }
 
       try {
         await document.documentElement.requestFullscreen();
         return true;
       } catch (error) {
-        console.warn("Fullscreen is not available in this browser.", error);
+        if (!quiet) {
+          console.warn("Fullscreen is not available in this browser.", error);
+        }
         return false;
       }
+    }
+
+    function requestFullscreenOnNextGesture() {
+      if (pendingFullscreenGesture || document.fullscreenElement || !document.documentElement.requestFullscreen) {
+        return;
+      }
+
+      pendingFullscreenGesture = true;
+
+      const requestFromGesture = () => {
+        clearLandscapeFullscreenRequest();
+        if (shouldUseLandscapeFullscreen() && !document.fullscreenElement) {
+          requestFullscreenMode({ quiet: true });
+        }
+      };
+
+      window.addEventListener("pointerup", requestFromGesture, { once: true, capture: true });
+      window.addEventListener("keydown", requestFromGesture, { once: true, capture: true });
+      landscapeFullscreenGestureListeners = [
+        { type: "pointerup", listener: requestFromGesture },
+        { type: "keydown", listener: requestFromGesture }
+      ];
+    }
+
+    function scheduleLandscapeFullscreenRequest() {
+      if (!shouldUseLandscapeFullscreen() || document.fullscreenElement) {
+        clearLandscapeFullscreenRequest();
+        return;
+      }
+
+      if (landscapeFullscreenTimer) {
+        window.clearTimeout(landscapeFullscreenTimer);
+      }
+
+      landscapeFullscreenTimer = window.setTimeout(async () => {
+        landscapeFullscreenTimer = 0;
+        if (!shouldUseLandscapeFullscreen() || document.fullscreenElement) {
+          return;
+        }
+
+        const entered = await requestFullscreenMode({ quiet: true });
+        if (!entered) {
+          requestFullscreenOnNextGesture();
+        }
+      }, 120);
     }
 
     async function requestNativeLandscapeLock() {
@@ -2010,6 +2085,10 @@ const APP_NAME = "卡林巴循音";
     }
 
     async function startPractice() {
+      if (shouldUseLandscapeFullscreen() && !document.fullscreenElement) {
+        await requestFullscreenMode({ quiet: true });
+      }
+
       if (accompanimentEnabled && accompanimentEvents.length) {
         try {
           await ensureAudioContext();
