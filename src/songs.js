@@ -45183,6 +45183,1769 @@ export const SONG_LIBRARY = {
         "restWindows": []
       }
     },
+  "tai-yang-zhao-chang-sheng-qi": {
+      "schemaVersion": 1,
+      "id": "tai-yang-zhao-chang-sheng-qi",
+      "title": "《太阳照常升起》",
+      "uploader": "system",
+      "practiceTitle": "《太阳照常升起》练习轨道",
+      "scoreTitle": "《太阳照常升起》简谱进度",
+      "hint": "主旋律练习版；据1=F钢琴简谱转为C调21音卡林巴，保留句尾长音与跨小节连音。",
+      "difficulty": "medium",
+      "bpm": 112,
+      "defaultSpeedFactor": 0.82,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "steps": [
+        [
+          "A3",
+          0,
+          1
+        ],
+        [
+          "E4",
+          1,
+          1
+        ],
+        [
+          "E4",
+          2,
+          1
+        ],
+        [
+          "E4",
+          3,
+          0.75
+        ],
+        [
+          "F4",
+          3.75,
+          0.25
+        ],
+        [
+          "E4",
+          4,
+          2
+        ],
+        [
+          "E4",
+          6,
+          0.5
+        ],
+        [
+          "E4",
+          6.5,
+          0.5
+        ],
+        [
+          "F4",
+          7,
+          0.5
+        ],
+        [
+          "G4",
+          7.5,
+          0.5
+        ],
+        [
+          "A4",
+          8,
+          1.5
+        ],
+        [
+          "A4",
+          9.5,
+          0.5
+        ],
+        [
+          "G4",
+          10,
+          1
+        ],
+        [
+          "G4",
+          11,
+          1
+        ],
+        [
+          "E4",
+          12,
+          4
+        ],
+        [
+          "A3",
+          16,
+          1
+        ],
+        [
+          "D4",
+          17,
+          1
+        ],
+        [
+          "D4",
+          18,
+          1
+        ],
+        [
+          "D4",
+          19,
+          0.75
+        ],
+        [
+          "E4",
+          19.75,
+          0.25
+        ],
+        [
+          "D4",
+          20,
+          2
+        ],
+        [
+          "E4",
+          22,
+          2
+        ],
+        [
+          "G4",
+          24,
+          0.75
+        ],
+        [
+          "E4",
+          24.75,
+          0.25
+        ],
+        [
+          "G4",
+          25,
+          2
+        ],
+        [
+          "B3",
+          27,
+          0.75
+        ],
+        [
+          "C4",
+          27.75,
+          0.25
+        ],
+        [
+          "A3",
+          28,
+          5
+        ],
+        [
+          "A3",
+          33,
+          1
+        ],
+        [
+          "C4",
+          34,
+          1
+        ],
+        [
+          "E4",
+          35,
+          1
+        ],
+        [
+          "A4",
+          36,
+          0.75
+        ],
+        [
+          "G4",
+          36.75,
+          0.25
+        ],
+        [
+          "A4",
+          37,
+          2
+        ],
+        [
+          "A4",
+          39,
+          0.75
+        ],
+        [
+          "G4",
+          39.75,
+          0.25
+        ],
+        [
+          "A4",
+          40,
+          0.75
+        ],
+        [
+          "G4",
+          40.75,
+          0.25
+        ],
+        [
+          "A4",
+          41,
+          2
+        ],
+        [
+          "G4",
+          43,
+          0.75
+        ],
+        [
+          "G4",
+          43.75,
+          0.25
+        ],
+        [
+          "E4",
+          44,
+          4
+        ],
+        [
+          "E4",
+          48,
+          1
+        ],
+        [
+          "D4",
+          49,
+          1
+        ],
+        [
+          "A4",
+          50,
+          1
+        ],
+        [
+          "G4",
+          51,
+          1
+        ],
+        [
+          "E4",
+          52,
+          0.75
+        ],
+        [
+          "D4",
+          52.75,
+          0.25
+        ],
+        [
+          "E4",
+          53,
+          3
+        ],
+        [
+          "E4",
+          56,
+          1
+        ],
+        [
+          "D4",
+          57,
+          1
+        ],
+        [
+          "A4",
+          58,
+          1
+        ],
+        [
+          "F4",
+          59,
+          1
+        ],
+        [
+          "E4",
+          60,
+          0.75
+        ],
+        [
+          "D4",
+          60.75,
+          0.25
+        ],
+        [
+          "E4",
+          61,
+          1
+        ],
+        [
+          "G4",
+          62,
+          1
+        ],
+        [
+          "B3",
+          63,
+          0.75
+        ],
+        [
+          "C4",
+          63.75,
+          0.25
+        ],
+        [
+          "A3",
+          64,
+          4
+        ]
+      ],
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "unsupported": [
+          "钢琴谱下方伴奏未进入主旋律版；原谱1=F已整体转为C调。"
+        ],
+        "unsureMeasures": [
+          "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。"
+        ]
+      }
+    },
+  "tai-yang-zhao-chang-sheng-qi-chord": {
+      "schemaVersion": 2,
+      "id": "tai-yang-zhao-chang-sheng-qi-chord",
+      "baseSongId": "tai-yang-zhao-chang-sheng-qi",
+      "title": "《太阳照常升起》",
+      "versionLabel": "和弦版",
+      "arrangementKind": "chord",
+      "judgementMode": "chord",
+      "uploader": "system",
+      "practiceTitle": "《太阳照常升起》和弦版练习轨道",
+      "scoreTitle": "《太阳照常升起》和弦版简谱进度",
+      "hint": "和弦版按钢琴简谱下方伴奏做稀疏卡林巴编配；主旋律与标记和弦音需在判定窗口内弹出。",
+      "difficulty": "medium",
+      "bpm": 112,
+      "defaultSpeedFactor": 0.78,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "tuning": "21-key-c",
+      "events": [
+        {
+          "beat": 0,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 1,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 2,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "F4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "F4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 9.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 10,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 16,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 17,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 18,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 22,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 24.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 25,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28,
+          "duration": 5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 33,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 34,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 35,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 36.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 40.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 41,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 48,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 49,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 50,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 51,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 52,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 52.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 53,
+          "duration": 3,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 56,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 57,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 58,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 59,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 60,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "B3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.62
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 60.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 61,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 62,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 63,
+          "duration": 0.75,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 63.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 64,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            },
+            {
+              "name": "E4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.72
+            }
+          ],
+          "judgeWindow": 0.7
+        }
+      ],
+      "autoAccompaniment": {
+        "enabledByDefault": true,
+        "volume": 0.34,
+        "events": [
+          {
+            "beat": 16,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 18,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 22,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 26,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 30,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 34,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 38,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 40,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 42,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 46,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 48,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 50,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 52,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 54,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 56,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 58,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 60,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "B3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "G4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 62,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "G4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 64,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 66,
+            "duration": 0.75,
+            "pattern": "source-informed-sparse",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          }
+        ]
+      },
+      "rhythm": {
+        "sourceStatus": "verified",
+        "pickupBeats": 0,
+        "restWindows": [],
+        "sources": [
+          {
+            "label": "中国曲谱网《太阳照常升起》钢琴简谱",
+            "url": "https://qupu123.com/Mobile-view-id-378530.html"
+          },
+          {
+            "label": "中国曲谱网《太阳照常升起》五线谱",
+            "url": "https://www.qupu123.com/Mobile-view-id-256604.html"
+          },
+          {
+            "label": "EveryonePiano The Sun Also Rises preview",
+            "url": "https://www.everyonepiano.cn/Music-1896.html"
+          }
+        ]
+      }
+    },
   "tian-kong-zhi-cheng": {
       "schemaVersion": 1,
       "id": "tian-kong-zhi-cheng",
