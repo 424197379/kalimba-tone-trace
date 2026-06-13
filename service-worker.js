@@ -1,4 +1,4 @@
-const APP_VERSION = "2.2.5";
+const APP_VERSION = "2.2.8";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -30,6 +30,7 @@ const APP_SHELL = [
   "./",
   "./index.html",
   "./changelog.html",
+  "./support.html",
   "./songs.html",
   "./kalimba-practice.html",
   "./manifest.webmanifest",
@@ -42,6 +43,7 @@ const APP_SHELL = [
   "./assets/icons/icon-192.png",
   "./assets/icons/icon-512.png",
   "./assets/icons/maskable-512.png",
+  "./assets/support/alipay-reward.jpg",
   "./assets/samples/manifest.json"
 ];
 

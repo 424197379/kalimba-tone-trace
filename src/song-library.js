@@ -20,7 +20,6 @@ const songSearchInput = document.getElementById("songSearchInput");
 const songCountText = document.getElementById("songCountText");
 const difficultyTabs = document.getElementById("difficultyTabs");
 const emptySongText = document.getElementById("emptySongText");
-const backToPracticeLink = document.getElementById("backToPracticeLink");
 const appVersionText = document.getElementById("appVersionText");
 const addSongBtn = document.getElementById("addSongBtn");
 const importPanel = document.getElementById("importPanel");
@@ -341,7 +340,6 @@ function renderSongList() {
 
   songCountText.textContent = `显示 ${matchedSongs.length} / ${searchedSongs.length} 首`;
   emptySongText.hidden = matchedSongs.length > 0;
-  backToPracticeLink.href = `./index.html?song=${encodeURIComponent(selectedSongId)}`;
 }
 
 function showImportMessage(message, kind = "neutral") {

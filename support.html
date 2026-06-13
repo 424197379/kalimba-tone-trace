@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="support-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>支持与共建 - 卡林巴循音</title>
+  <meta name="description" content="支持卡林巴循音开源维护，了解 GitHub 共建、AI 曲谱编译和贡献流程。">
+  <meta name="theme-color" content="#bd5f3b">
+  <meta name="application-name" content="卡林巴循音">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="卡林巴循音">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="support-body">
+  <main class="page support-page">
+    <header class="card support-hero">
+      <div class="support-hero-copy">
+        <div class="app-kicker">支持与共建 · <span>v2.2.8</span></div>
+        <h1>让卡林巴循音继续长出来</h1>
+        <p>这个项目开源免费，不做商业化。打赏可以帮我回一点开发和 AI token 成本；共建可以让曲库、编配和工具链越来越准。</p>
+      </div>
+      <div class="support-hero-actions">
+        <a class="accent support-link" href="https://github.com/424197379/kalimba-tone-trace" target="_blank" rel="noreferrer">打开 GitHub</a>
+        <a class="ghost support-link" href="./songs.html">返回曲库</a>
+      </div>
+    </header>
+
+    <section class="support-layout">
+      <article class="card support-donate-card">
+        <div class="support-section-head">
+          <span class="support-kicker">打赏回血</span>
+          <h2>请作者喝杯咖啡</h2>
+          <p>如果这个 App 对你的练习有帮助，可以随手支持一点。金额完全自愿，扫码前请确认金额。</p>
+        </div>
+        <figure class="support-code">
+          <img src="./assets/support/alipay-reward.jpg" alt="支付宝打赏二维码" width="1182" height="1772">
+          <figcaption>支付宝扫码打赏</figcaption>
+        </figure>
+      </article>
+
+      <article class="card support-build-card">
+        <div class="support-section-head">
+          <span class="support-kicker">开源共建</span>
+          <h2>一起把曲库做准</h2>
+          <p>卡林巴循音的核心不是花哨页面，而是可靠的曲谱数据、可复核的编配流程和能被 AI 代理持续维护的工程结构。</p>
+        </div>
+
+        <div class="support-feature-grid">
+          <section class="support-feature">
+            <strong>AI 化曲谱流程</strong>
+            <p>用简谱照片、来源说明和项目提示词，把主旋律、节奏空档、和弦与伴奏转成 App 可导入的 JSON。</p>
+          </section>
+          <section class="support-feature">
+            <strong>专用 Codex skill</strong>
+            <p>仓库内提供 `kalimba-tone-trace-compiler` skill，用来规范 AI 识谱、转调、校验和曲库落盘。</p>
+          </section>
+          <section class="support-feature">
+            <strong>本地优先 PWA</strong>
+            <p>练习、曲库导入和离线缓存都在前端完成，不依赖后端服务，适合小步快跑地迭代。</p>
+          </section>
+          <section class="support-feature">
+            <strong>欢迎 PR</strong>
+            <p>可以补曲谱、修节奏、改 UI、完善文档，也可以只提交问题和复核结果。</p>
+          </section>
+        </div>
+
+        <div class="support-doc-links" aria-label="共建入口">
+          <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/blob/main/docs/SCORE_COMPILER.md" target="_blank" rel="noreferrer">AI 编谱流程</a>
+          <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/blob/main/docs/SONG_LIBRARY.md" target="_blank" rel="noreferrer">曲库格式</a>
+          <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/tree/main/skills/kalimba-tone-trace-compiler" target="_blank" rel="noreferrer">项目 skill</a>
+          <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/blob/main/AGENTS.md" target="_blank" rel="noreferrer">AI 代理说明</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
