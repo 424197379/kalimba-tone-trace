@@ -2,7 +2,7 @@ import { DISPLAY_KEYS, NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 import { detectPitch, getNearestNote } from "./pitch.js";
 
 const APP_NAME = "卡林巴循音";
-const APP_VERSION = "1.0.0";
+const APP_VERSION = "1.0.1";
 
     function buildSongEvents(song) {
       return song.steps
@@ -96,6 +96,10 @@ const APP_VERSION = "1.0.0";
     const scoreTitle = document.getElementById("scoreTitle");
     const landscapeBtn = document.getElementById("landscapeBtn");
     const appVersionText = document.getElementById("appVersionText");
+    const updateToast = document.getElementById("updateToast");
+    const updateNowBtn = document.getElementById("updateNowBtn");
+    const updateLaterBtn = document.getElementById("updateLaterBtn");
+    const portraitPracticeQuery = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
 
     const laneEls = [];
     const keyEls = [];
@@ -127,6 +131,9 @@ const APP_VERSION = "1.0.0";
     let lastWrongLane = null;
     let lastWrongAt = 0;
     let signalPeakUntil = 0;
+    let waitingServiceWorker = null;
+    let reloadRequestedForUpdate = false;
+    let refreshingForUpdate = false;
 
     let activeDetection = {
       lane: null,
@@ -207,17 +214,78 @@ const APP_VERSION = "1.0.0";
       }, { passive: true });
     }
 
-    async function requestLandscapeMode() {
-      try {
-        if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
-          await document.documentElement.requestFullscreen();
-        }
-        if (screen.orientation && screen.orientation.lock) {
-          await screen.orientation.lock("landscape");
-        }
-      } catch (error) {
-        console.warn("Landscape lock is not available in this browser.", error);
+    function scheduleLayoutRefresh() {
+      requestAnimationFrame(() => {
+        renderBoard(currentPracticeTime());
+      });
+    }
+
+    function setSoftwareLandscapeMode(enabled) {
+      document.documentElement.classList.toggle("software-landscape", enabled);
+      document.body.classList.toggle("software-landscape", enabled);
+      scheduleLayoutRefresh();
+    }
+
+    function refreshLandscapeMode() {
+      if (!portraitPracticeQuery.matches) {
+        setSoftwareLandscapeMode(false);
+        return;
       }
+
+      if (document.documentElement.classList.contains("software-landscape")) {
+        scheduleLayoutRefresh();
+      }
+    }
+
+    async function requestFullscreenMode() {
+      if (document.fullscreenElement || !document.documentElement.requestFullscreen) {
+        return true;
+      }
+
+      try {
+        await document.documentElement.requestFullscreen();
+        return true;
+      } catch (error) {
+        console.warn("Fullscreen is not available in this browser.", error);
+        return false;
+      }
+    }
+
+    async function requestNativeLandscapeLock() {
+      if (!screen.orientation || !screen.orientation.lock) {
+        return false;
+      }
+
+      for (const orientation of ["landscape-primary", "landscape"]) {
+        try {
+          await screen.orientation.lock(orientation);
+          return true;
+        } catch (error) {
+          console.warn(`Landscape lock ${orientation} is not available.`, error);
+        }
+      }
+
+      return false;
+    }
+
+    async function requestLandscapeMode() {
+      const previousText = landscapeBtn.textContent;
+      landscapeBtn.disabled = true;
+      landscapeBtn.textContent = "正在进入横屏";
+
+      await requestFullscreenMode();
+      await requestNativeLandscapeLock();
+      await new Promise((resolve) => setTimeout(resolve, 420));
+
+      const needsSoftwareLandscape = portraitPracticeQuery.matches;
+      setSoftwareLandscapeMode(needsSoftwareLandscape);
+
+      if (needsSoftwareLandscape) {
+        console.warn("Native landscape lock was not applied; using software landscape mode.");
+      }
+
+      landscapeBtn.textContent = previousText;
+      landscapeBtn.disabled = false;
     }
 
     function applySongMeta() {
@@ -1270,6 +1338,70 @@ const APP_VERSION = "1.0.0";
       applySpeed();
     }
 
+    function hasActiveServiceWorkerController() {
+      return Boolean("serviceWorker" in navigator && navigator.serviceWorker.controller);
+    }
+
+    function showUpdatePrompt(worker) {
+      if (!worker || !hasActiveServiceWorkerController() || !updateToast) {
+        return;
+      }
+
+      waitingServiceWorker = worker;
+      updateToast.hidden = false;
+      if (updateNowBtn) {
+        updateNowBtn.disabled = false;
+      }
+      if (updateLaterBtn) {
+        updateLaterBtn.disabled = false;
+      }
+    }
+
+    function trackInstallingServiceWorker(worker) {
+      if (!worker) {
+        return;
+      }
+
+      worker.addEventListener("statechange", () => {
+        if (worker.state === "installed" && hasActiveServiceWorkerController()) {
+          showUpdatePrompt(worker);
+        }
+      });
+    }
+
+    function setupServiceWorkerUpdatePrompt(registration) {
+      if (registration.waiting && hasActiveServiceWorkerController()) {
+        showUpdatePrompt(registration.waiting);
+      }
+
+      trackInstallingServiceWorker(registration.installing);
+      registration.addEventListener("updatefound", () => {
+        trackInstallingServiceWorker(registration.installing);
+      });
+    }
+
+    function requestServiceWorkerUpdate() {
+      if (!waitingServiceWorker) {
+        return;
+      }
+
+      reloadRequestedForUpdate = true;
+      if (updateNowBtn) {
+        updateNowBtn.disabled = true;
+      }
+      if (updateLaterBtn) {
+        updateLaterBtn.disabled = true;
+      }
+      waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
+    }
+
+    function dismissServiceWorkerUpdate() {
+      if (updateToast) {
+        updateToast.hidden = true;
+      }
+      waitingServiceWorker = null;
+    }
+
     startBtn.addEventListener("click", startPractice);
     micBtn.addEventListener("click", toggleMicTest);
     pauseBtn.addEventListener("click", pausePractice);
@@ -1278,8 +1410,22 @@ const APP_VERSION = "1.0.0";
     songSpeedBtn.addEventListener("click", applySongDefaultSpeed);
     keyScaleBtn.addEventListener("click", resetKeyScale);
     landscapeBtn.addEventListener("click", requestLandscapeMode);
+    if (updateNowBtn) {
+      updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
+    }
+    if (updateLaterBtn) {
+      updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
+    }
     songSelect.addEventListener("change", () => setCurrentSong(songSelect.value));
     speedSlider.addEventListener("input", applySpeed);
+    window.addEventListener("resize", refreshLandscapeMode);
+    window.addEventListener("orientationchange", refreshLandscapeMode);
+    if (portraitPracticeQuery.addEventListener) {
+      portraitPracticeQuery.addEventListener("change", refreshLandscapeMode);
+    }
+    if (screen.orientation && screen.orientation.addEventListener) {
+      screen.orientation.addEventListener("change", refreshLandscapeMode);
+    }
 
     restoreKeyScale();
     setupKeyScaleGesture();
@@ -1296,9 +1442,21 @@ const APP_VERSION = "1.0.0";
     }
 
     if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (!reloadRequestedForUpdate || refreshingForUpdate) {
+          return;
+        }
+
+        refreshingForUpdate = true;
+        window.location.reload();
+      });
+
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service-worker.js").catch((error) => {
-          console.warn(`${APP_NAME} 离线缓存注册失败`, error);
-        });
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(setupServiceWorkerUpdatePrompt)
+          .catch((error) => {
+            console.warn(`${APP_NAME} 离线缓存注册失败`, error);
+          });
       });
     }

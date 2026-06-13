@@ -1,7 +1,7 @@
 # 卡林巴循音
 
 英文工程名：Kalimba ToneTrace  
-当前版本：1.0.0
+当前版本：1.0.1
 
 一个面向 21 音卡林巴的本地优先练习 App。核心功能是听音识别与跟练：用下落块提示目标音，通过麦克风判断弹奏音高；麦克风权限不可用时仍可进入跟练模式。
 
@@ -63,6 +63,7 @@ http://localhost:8123/index.html
 发布新版时同步修改：
 
 - `package.json` 里的 `version`
+- `index.html` 里的 `appVersionText` 占位版本
 - `src/app.js` 里的 `APP_VERSION`
 - `service-worker.js` 里的 `APP_VERSION`
 

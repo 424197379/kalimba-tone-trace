@@ -1208,4 +1208,317 @@
         color: var(--subtle);
         line-height: 1.5;
       }
+
+      html.software-landscape {
+        --keys-height: clamp(104px, 30dvw, 128px);
+      }
+
+      html.software-landscape,
+      html.software-landscape body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      html.software-landscape body {
+        min-height: 100dvh;
+      }
+
+      html.software-landscape .rotate-overlay {
+        display: none !important;
+      }
+
+      html.software-landscape .page {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: calc(100dvh - 8px);
+        max-width: none;
+        height: 100dvw;
+        margin: 0;
+        padding: 4px 0;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        gap: 4px;
+        transform: translate(-50%, -50%) rotate(90deg);
+        transform-origin: center center;
+      }
+
+      html.software-landscape .hero {
+        display: block;
+        min-height: 0;
+        margin: 0;
+      }
+
+      html.software-landscape .title-card,
+      html.software-landscape .meta-grid,
+      html.software-landscape .legend,
+      html.software-landscape .subtitle,
+      html.software-landscape .notice,
+      html.software-landscape .help-strip {
+        display: none !important;
+      }
+
+      html.software-landscape .status-card {
+        padding: 4px;
+        border-radius: 12px;
+      }
+
+      html.software-landscape .controls {
+        display: grid;
+        grid-template-columns: 128px auto auto auto auto auto minmax(124px, 1fr) auto auto;
+        gap: 4px;
+        align-items: center;
+        margin: 0;
+      }
+
+      html.software-landscape button,
+      html.software-landscape select {
+        width: auto;
+        min-height: 34px;
+        padding: 5px 8px;
+        border-radius: 9px;
+        font-size: 13px;
+        line-height: 1.1;
+      }
+
+      html.software-landscape .compact {
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+
+      html.software-landscape .song-wrap,
+      html.software-landscape .speed-wrap {
+        grid-column: auto;
+        flex: none;
+        max-width: none;
+        height: 34px;
+        min-width: 0;
+        padding: 3px 6px;
+        gap: 5px;
+        border-radius: 9px;
+        font-size: 0;
+      }
+
+      html.software-landscape .song-wrap select {
+        width: 100%;
+        min-width: 0;
+        padding: 4px 8px;
+        font-size: 13px;
+      }
+
+      html.software-landscape .speed-wrap input[type="range"] {
+        width: 100%;
+        min-width: 78px;
+      }
+
+      html.software-landscape .speed-value {
+        min-width: 42px;
+        font-size: 12px;
+      }
+
+      html.software-landscape .board-card {
+        min-height: 0;
+        padding: 5px;
+        border-radius: 12px;
+        display: grid;
+        grid-template-rows: 50px minmax(0, 1fr);
+        gap: 4px;
+      }
+
+      html.software-landscape .score-card {
+        min-height: 0;
+        margin: 0;
+        padding: 4px;
+        border-radius: 12px;
+      }
+
+      html.software-landscape .score-head {
+        display: none;
+      }
+
+      html.software-landscape .score-strip {
+        height: 42px;
+        border-radius: 10px;
+      }
+
+      html.software-landscape .score-grid-line {
+        top: 6px;
+        bottom: 6px;
+      }
+
+      html.software-landscape .score-note-chip {
+        top: 4px;
+        min-width: 20px;
+        padding: 2px 2px 3px;
+        border-radius: 8px;
+      }
+
+      html.software-landscape .score-note-chip.active {
+        transform: translateY(-2px);
+      }
+
+      html.software-landscape .score-cursor {
+        top: 4px;
+        bottom: 4px;
+      }
+
+      html.software-landscape .score-cursor::before {
+        width: 9px;
+        height: 9px;
+      }
+
+      html.software-landscape .board-shell {
+        min-height: 0;
+        display: grid;
+        grid-template-rows: minmax(0, 1fr) var(--keys-height);
+        border-radius: 12px;
+      }
+
+      html.software-landscape .board-top {
+        height: auto;
+        min-height: 0;
+      }
+
+      html.software-landscape .keys-shell {
+        height: auto;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      html.software-landscape .key-row {
+        gap: 2px;
+        padding: 5px 6px 3px;
+      }
+
+      html.software-landscape .key {
+        height: var(--mobile-key-height, 88%) !important;
+        min-height: 0;
+        padding: 6px 1px 5px;
+        border-radius: 10px 10px 7px 7px;
+        justify-content: center;
+      }
+
+      html.software-landscape .key-note,
+      html.software-landscape .note-label {
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      html.software-landscape .key-degree,
+      html.software-landscape .note-degree {
+        display: block;
+        margin-top: 2px;
+        line-height: 1;
+      }
+
+      html.software-landscape .degree-dots {
+        min-height: 7px;
+        font-size: 8px;
+        line-height: 1;
+      }
+
+      html.software-landscape .degree-number {
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      html.software-landscape .note {
+        min-height: 42px;
+        border-radius: 10px;
+        padding: 4px 1px;
+      }
+    }
+
+    .update-toast[hidden] {
+      display: none !important;
+    }
+
+    .update-toast {
+      position: fixed;
+      left: max(12px, env(safe-area-inset-left));
+      right: max(12px, env(safe-area-inset-right));
+      bottom: max(10px, env(safe-area-inset-bottom));
+      z-index: 30;
+      width: min(420px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 12px;
+      background: rgba(255, 252, 246, 0.96);
+      border: 1px solid rgba(61, 45, 32, 0.14);
+      box-shadow: 0 10px 28px rgba(40, 28, 20, 0.16);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.2;
+      backdrop-filter: blur(16px);
+    }
+
+    .update-toast span {
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .update-toast button {
+      width: auto;
+      min-height: 32px;
+      padding: 5px 10px;
+      border-radius: 9px;
+      font-size: 12px;
+      line-height: 1.1;
+      flex: 0 0 auto;
+    }
+
+    @media (orientation: landscape) and (max-height: 560px) {
+      .update-toast {
+        top: max(6px, env(safe-area-inset-top));
+        right: max(6px, env(safe-area-inset-right));
+        bottom: auto;
+        left: auto;
+        width: auto;
+        max-width: min(360px, 62vw);
+        padding: 5px 6px;
+        gap: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+      }
+
+      .update-toast button {
+        min-height: 28px;
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .update-toast {
+        justify-content: flex-start;
+      }
+    }
+
+    html.software-landscape .update-toast {
+      top: max(6px, env(safe-area-inset-top));
+      right: max(6px, env(safe-area-inset-right));
+      bottom: auto;
+      left: auto;
+      width: auto;
+      max-width: min(360px, 72vw);
+      padding: 5px 6px;
+      gap: 5px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+
+    html.software-landscape .update-toast button {
+      min-height: 28px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 11px;
     }
