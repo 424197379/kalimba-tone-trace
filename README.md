@@ -66,6 +66,7 @@ http://localhost:8123/index.html
 - `index.html` 里的 `appVersionText` 占位版本
 - `src/app.js` 里的 `APP_VERSION`
 - `service-worker.js` 里的 `APP_VERSION`
+- `CHANGELOG.md` 里的版本记录
 
 版本号变化后，Service Worker 会创建新的缓存名，手机端联网打开一次后会更新离线包。
 
@@ -77,6 +78,7 @@ kalimba-practice.html      旧地址兼容跳转页
 manifest.webmanifest       PWA 安装信息
 service-worker.js          离线缓存逻辑
 package.json               工程名、版本号和启动脚本
+CHANGELOG.md               每个版本的更新记录
 serve-kalimba.js           本地局域网静态服务器
 start-kalimba.cmd          Windows 快速启动脚本
 src/
