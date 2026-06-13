@@ -823,7 +823,7 @@
     ]
   ],
   "sourceFeatures": {
-    "hasChords": false,
+    "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": false,
     "unsupported": [

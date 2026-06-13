@@ -375,5 +375,19 @@
       42,
       2
     ]
-  ]
+  ],
+  "schemaVersion": 1,
+  "key": "C",
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": true,
+    "hasRepeats": true,
+    "unsupported": [
+      "V1 steps keep the 21-key kalimba 4/4 practice melody; Jitabang 1=C 2/4 guitar source is not fully expanded.",
+      "The 2/4 source grouping differs from the current 4/4 practice grouping."
+    ],
+    "unsureMeasures": [
+      "Current practice version and Jitabang 2/4 source need meter and repeat review."
+    ]
+  }
 }

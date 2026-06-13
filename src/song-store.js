@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.2.3";
+export const APP_VERSION = "2.2.4";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -69,7 +69,8 @@ JSON 必须使用双引号，不能有注释，不能有尾随逗号。
 2. 如果图片模糊、不完整、缺少和弦/伴奏/节奏细节，请上网查找同曲简谱、简和谱、五线谱、MIDI 或 MusicXML 交叉验证；优先完整谱，其次简和谱，再其次和弦谱。
 3. 主旋律 1 拍以上空档默认保持静音呼吸，不要用自动伴奏填满，除非谱源明确显示伴奏延续。
 4. 和弦目标音要适合 21 音 C 调卡林巴实际弹奏，密集和弦请精简为 2 到 4 个关键音。无法确认的装饰音不要强行加入判定。
-5. App 会自动从 events 里抽取主旋律版；如果 events 里有和弦目标音或自动伴奏，App 也会生成和弦版。
+5. App 会自动从 events 里抽取主旋律版；只要 events 里有和弦目标音，或 JSON 里有 autoAccompaniment，App 就会生成可切换的和弦/编配版。
+6. 除非用户明确要求“只要主旋律”，否则不要只输出单音主旋律。请尽量补充可验证或保守推断的和弦目标音、bass/harmony 与 autoAccompaniment；推断内容要在 hint 或 rhythm.sourceStatus 中标明。
 
 JSON 格式：
 {
@@ -128,6 +129,8 @@ JSON 格式：
 - beat 是从 0 开始的起始拍，可以是小数。
 - duration 是持续拍数，可以是 0.25、0.5、1、1.5、2 等。
 - events[].notes 至少有一个 role: "melody" 的主旋律音，并设置 judge: true。
+- 如果输出的是完整编配，至少应满足以下之一：某些 events 含有 harmony/bass 且 judge: true，或提供 autoAccompaniment.events。
+- 不要在 title/versionLabel/arrangementKind 写“主旋律版”后又省略和弦与伴奏，除非用户明确要求只导入主旋律。
 - notes[].name 必须是 21 音 C 调卡林巴音名，role 只能是 "melody"、"harmony"、"bass"、"arpeggio"、"ornament"。
 - judgementMode 为 "melody" 时只判定主旋律；为 "chord" 时，事件内所有 judge: true 的音都需要用户弹出。
 - autoAccompaniment 是 App 自动播放的伴奏，不参与麦克风判定，里面不要写 judge 字段，音量 velocity 通常低于 0.45。
@@ -863,7 +866,7 @@ function buildMelodyEvents(events) {
   });
 }
 
-function hasChordArrangement(parsed, events) {
+function hasChordTargets(parsed, events) {
   if (parsed.arrangementKind === "chord" || parsed.judgementMode === "chord") {
     return true;
   }
@@ -873,6 +876,10 @@ function hasChordArrangement(parsed, events) {
     const playableChordNotes = event.notes.filter((note) => note.role !== "ornament").length;
     return judgeCount > 1 || playableChordNotes > 1;
   });
+}
+
+function hasUploadedArrangement(parsed, events, autoAccompaniment) {
+  return hasChordTargets(parsed, events) || Boolean(autoAccompaniment?.events?.length);
 }
 
 function getImportedBaseId(parsed) {
@@ -913,7 +920,8 @@ function buildImportedSongPair(parsed, existingLibrary) {
   const autoAccompaniment = normalizeAutoAccompaniment(parsed.autoAccompaniment);
   const rhythm = normalizeRhythm(parsed.rhythm);
   const filteredAutoAccompaniment = applyRhythmToAutoAccompaniment(autoAccompaniment, rhythm);
-  const shouldCreateChordVersion = hasChordArrangement(parsed, events);
+  const hasChordTargetNotes = hasChordTargets(parsed, events);
+  const shouldCreateArrangementVersion = hasUploadedArrangement(parsed, events, filteredAutoAccompaniment);
   const difficulty = normalizeDifficulty(parsed.difficulty) || estimateSongDifficulty({ steps: melodySteps, bpm });
   const hint = String(parsed.hint || "本地导入曲谱").trim() || "本地导入曲谱";
   const common = {
@@ -944,27 +952,29 @@ function buildImportedSongPair(parsed, existingLibrary) {
     practiceTitle: `${title}主旋律版练习轨道`,
     scoreTitle: `${title}主旋律版简谱进度`,
     events: melodyEvents,
-    ...(!shouldCreateChordVersion && filteredAutoAccompaniment ? { autoAccompaniment: filteredAutoAccompaniment } : {}),
-    ...(!shouldCreateChordVersion && rhythm ? { rhythm } : {})
+    ...(!shouldCreateArrangementVersion && filteredAutoAccompaniment ? { autoAccompaniment: filteredAutoAccompaniment } : {}),
+    ...(!shouldCreateArrangementVersion && rhythm ? { rhythm } : {})
   });
 
   if (!melodySong) {
     throw new Error("主旋律版生成失败，请检查 events 的 beat、duration 和 notes");
   }
 
-  if (!shouldCreateChordVersion) {
+  if (!shouldCreateArrangementVersion) {
     return [melodySong];
   }
 
   const chordId = makeLocalSongId(`${baseId}_chord`, `${title} 和弦版`, { ...existingLibrary, [baseId]: melodySong });
+  const arrangementVersionLabel = hasChordTargetNotes ? CHORD_VERSION_LABEL : "伴奏版";
+  const arrangementJudgementMode = hasChordTargetNotes ? "chord" : "melody";
   const chordSong = normalizeStoredSong({
     ...common,
     id: chordId,
-    versionLabel: CHORD_VERSION_LABEL,
+    versionLabel: arrangementVersionLabel,
     arrangementKind: "chord",
-    judgementMode: "chord",
-    practiceTitle: `${title}和弦版练习轨道`,
-    scoreTitle: `${title}和弦版简谱进度`,
+    judgementMode: arrangementJudgementMode,
+    practiceTitle: `${title}${arrangementVersionLabel}练习轨道`,
+    scoreTitle: `${title}${arrangementVersionLabel}简谱进度`,
     events,
     ...(filteredAutoAccompaniment ? { autoAccompaniment: filteredAutoAccompaniment } : {}),
     ...(rhythm ? { rhythm } : {})

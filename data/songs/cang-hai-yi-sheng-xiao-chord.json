@@ -1412,30 +1412,42 @@
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "hasArpeggio": false,
+    "hasArpeggio": true,
     "hasRepeats": false,
     "unsupported": [
-      "下方伴奏未进入 steps；附点节奏按练习版规整。",
-      "V2 和弦版为 21 音 C 调卡林巴练习编配，优先保持可弹性和判定稳定性；不等同于出版级原版和声还原。",
+      "Chords, strums, and ornaments from the source are not encoded in V1 steps.",
+      "V2 chord version is a 21-key C kalimba practice arrangement, prioritized for playability and stable judgement.",
+      "Source image marks about 65 BPM; practice version keeps 88 BPM for existing library consistency.",
       "harmonic-density:sparse; generated-from:cang-hai-yi-sheng-xiao; progression:I-V-vi-IV-I-V-I-I"
     ],
-    "unsureMeasures": [],
+    "unsureMeasures": [
+      "Opening 5-6-1-2-5 ornament motive still needs listening review."
+    ],
     "harmonyReview": {
       "confidence": "medium-cross-checked",
-      "method": "C-major triad accompaniment adapted for 21-key kalimba and strict chord judging",
+      "method": "Existing C-major kalimba chord anchors preserved; GuitarWorld C-key preview and Qupu123 jianpu used for source metadata cross-check.",
       "sources": [
         {
-          "title": "????? C??????",
+          "label": "GuitarWorld Cang Hai Yi Sheng Xiao C chord source",
           "url": "https://www.guitarworld.com.cn/pu/q72954"
+        },
+        {
+          "label": "GuitarWorld Cang Hai Yi Sheng Xiao source image local copy",
+          "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/649000/view/14a35b4192cbdb8f3cd6317fde469403.png"
+        },
+        {
+          "label": "Qupu123 Cang Hai Yi Sheng Xiao jianpu cross-check",
+          "url": "https://www.qupu123.com/Mobile-view-id-435769.html"
         }
       ]
     },
     "autoAccompaniment": {
       "generatedFrom": "existing schemaVersion 2 harmony/bass events",
-      "generator": "private/generate-auto-accompaniment.mjs --inject-only",
-      "pattern": "4/4 bass-harmony-bass-harmony",
-      "restPolicy": "silent restWindows are not filled",
-      "reviewRequired": []
+      "pattern": "sparse chord-change pulses with occasional 2-beat support",
+      "restPolicy": "no melody gaps of 1 beat or longer found",
+      "reviewRequired": [
+        "Chord support keeps only key change points and still needs listening review."
+      ]
     }
   },
   "autoAccompaniment": {
@@ -1457,35 +1469,6 @@
             "role": "harmony",
             "velocity": 0.36
           },
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 1,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 2,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
           {
             "name": "G3",
             "role": "bass",
@@ -1527,30 +1510,6 @@
           },
           {
             "name": "B3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 5,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 6,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
             "role": "bass",
             "velocity": 0.42
           }
@@ -1639,18 +1598,6 @@
         ]
       },
       {
-        "beat": 13,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 14,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1693,23 +1640,6 @@
             "name": "G3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 17,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -1759,30 +1689,6 @@
           },
           {
             "name": "B3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 21,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 22,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
             "role": "bass",
             "velocity": 0.42
           }
@@ -1871,23 +1777,6 @@
         ]
       },
       {
-        "beat": 29,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 30,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1939,52 +1828,6 @@
         ]
       },
       {
-        "beat": 33,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 34,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 35,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 36,
         "duration": 0.75,
         "pattern": "source-chord",
@@ -2007,42 +1850,6 @@
         ]
       },
       {
-        "beat": 37,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 38,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 39,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 40,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2055,18 +1862,6 @@
         ]
       },
       {
-        "beat": 41,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 42,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2075,18 +1870,6 @@
             "name": "G3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 43,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -2113,18 +1896,6 @@
         ]
       },
       {
-        "beat": 45,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 46,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2133,18 +1904,6 @@
             "name": "F3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 47,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -2171,52 +1930,6 @@
         ]
       },
       {
-        "beat": 49,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 50,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 51,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 52,
         "duration": 0.75,
         "pattern": "source-chord",
@@ -2239,42 +1952,6 @@
         ]
       },
       {
-        "beat": 53,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
-        "beat": 54,
-        "duration": 0.75,
-        "pattern": "filled-bass",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 55,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 56,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2287,18 +1964,6 @@
         ]
       },
       {
-        "beat": 57,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 58,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2307,18 +1972,6 @@
             "name": "G3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 59,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -2345,23 +1998,6 @@
         ]
       },
       {
-        "beat": 61,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 62,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -2372,29 +2008,26 @@
             "velocity": 0.42
           }
         ]
-      },
-      {
-        "beat": 63,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
       }
     ]
   },
   "rhythm": {
     "sourceStatus": "inferred",
     "pickupBeats": 0,
-    "restWindows": []
+    "restWindows": [],
+    "sources": [
+      {
+        "label": "GuitarWorld Cang Hai Yi Sheng Xiao C chord source",
+        "url": "https://www.guitarworld.com.cn/pu/q72954"
+      },
+      {
+        "label": "GuitarWorld Cang Hai Yi Sheng Xiao source image local copy",
+        "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/649000/view/14a35b4192cbdb8f3cd6317fde469403.png"
+      },
+      {
+        "label": "Qupu123 Cang Hai Yi Sheng Xiao jianpu cross-check",
+        "url": "https://www.qupu123.com/Mobile-view-id-435769.html"
+      }
+    ]
   }
 }

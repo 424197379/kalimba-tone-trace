@@ -1,14 +1,16 @@
 {
+  "schemaVersion": 1,
   "id": "birthday",
   "title": "《生日快乐》",
   "uploader": "system",
   "practiceTitle": "《生日快乐》练习轨道",
   "scoreTitle": "《生日快乐》简谱进度",
-  "hint": "橙色高亮是现在该弹的琴键。绿色表示你弹对了，红色表示当前听到的音不在目标键位上。",
+  "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
   "difficulty": "easy",
   "bpm": 104,
   "defaultSpeedFactor": 1,
-  "beatsPerMeasure": 4,
+  "beatsPerMeasure": 3,
+  "key": "C",
   "steps": [
     [
       "G4",
@@ -135,5 +137,25 @@
       23,
       2
     ]
-  ]
+  ],
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": false,
+    "hasRepeats": false,
+    "sourceImages": [],
+    "unsupported": [
+      "C major 3/4 lead-sheet sources include C, G7, and F chords; V1 keeps melody only."
+    ],
+    "unsureMeasures": [],
+    "sources": [
+      {
+        "label": "Michael Kravchuk Happy Birthday lead sheet",
+        "url": "https://michaelkravchuk.com/free-lead-sheet-happy-birthday/"
+      },
+      {
+        "label": "Music-for-Music-Teachers Happy Birthday chords",
+        "url": "https://www.music-for-music-teachers.com/happy-birthday.html"
+      }
+    ]
+  }
 }

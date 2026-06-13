@@ -420,5 +420,19 @@
       46,
       2
     ]
-  ]
+  ],
+  "schemaVersion": 1,
+  "key": "C",
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": true,
+    "hasRepeats": false,
+    "unsupported": [
+      "V1 keeps only the playable 21-key kalimba melody; original speed, accompaniment, and ornaments are not fully encoded.",
+      "Public source includes chords or accompaniment; V1 steps keep melody only."
+    ],
+    "unsureMeasures": [
+      "Simplified chorus practice version in C; full original form still needs review."
+    ]
+  }
 }

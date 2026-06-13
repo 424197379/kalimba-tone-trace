@@ -5,230 +5,244 @@
   "uploader": "system",
   "practiceTitle": "《小星星》练习轨道",
   "scoreTitle": "《小星星》简谱进度",
-  "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+  "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
   "difficulty": "easy",
   "bpm": 80,
   "defaultSpeedFactor": 0.9,
   "beatsPerMeasure": 4,
+  "key": "C",
   "steps": [
     [
       "C5",
-      0.0,
-      1.0
+      0,
+      1
     ],
     [
       "C5",
-      1.0,
-      1.0
+      1,
+      1
     ],
     [
       "G5",
-      2.0,
-      1.0
+      2,
+      1
     ],
     [
       "G5",
-      3.0,
-      1.0
+      3,
+      1
     ],
     [
       "A5",
-      4.0,
-      1.0
+      4,
+      1
     ],
     [
       "A5",
-      5.0,
-      1.0
+      5,
+      1
     ],
     [
       "G5",
-      6.0,
-      2.0
+      6,
+      2
     ],
     [
       "F5",
-      8.0,
-      1.0
+      8,
+      1
     ],
     [
       "F5",
-      9.0,
-      1.0
+      9,
+      1
     ],
     [
       "E5",
-      10.0,
-      1.0
+      10,
+      1
     ],
     [
       "E5",
-      11.0,
-      1.0
+      11,
+      1
     ],
     [
       "D5",
-      12.0,
-      1.0
+      12,
+      1
     ],
     [
       "D5",
-      13.0,
-      1.0
+      13,
+      1
     ],
     [
       "C5",
-      14.0,
-      2.0
+      14,
+      2
     ],
     [
       "G5",
-      16.0,
-      1.0
+      16,
+      1
     ],
     [
       "G5",
-      17.0,
-      1.0
+      17,
+      1
     ],
     [
       "F5",
-      18.0,
-      1.0
+      18,
+      1
     ],
     [
       "F5",
-      19.0,
-      1.0
+      19,
+      1
     ],
     [
       "E5",
-      20.0,
-      1.0
+      20,
+      1
     ],
     [
       "E5",
-      21.0,
-      1.0
+      21,
+      1
     ],
     [
       "D5",
-      22.0,
-      2.0
+      22,
+      2
     ],
     [
       "G5",
-      24.0,
-      1.0
+      24,
+      1
     ],
     [
       "G5",
-      25.0,
-      1.0
+      25,
+      1
     ],
     [
       "F5",
-      26.0,
-      1.0
+      26,
+      1
     ],
     [
       "F5",
-      27.0,
-      1.0
+      27,
+      1
     ],
     [
       "E5",
-      28.0,
-      1.0
+      28,
+      1
     ],
     [
       "E5",
-      29.0,
-      1.0
+      29,
+      1
     ],
     [
       "D5",
-      30.0,
-      2.0
+      30,
+      2
     ],
     [
       "C5",
-      32.0,
-      1.0
+      32,
+      1
     ],
     [
       "C5",
-      33.0,
-      1.0
+      33,
+      1
     ],
     [
       "G5",
-      34.0,
-      1.0
+      34,
+      1
     ],
     [
       "G5",
-      35.0,
-      1.0
+      35,
+      1
     ],
     [
       "A5",
-      36.0,
-      1.0
+      36,
+      1
     ],
     [
       "A5",
-      37.0,
-      1.0
+      37,
+      1
     ],
     [
       "G5",
-      38.0,
-      2.0
+      38,
+      2
     ],
     [
       "F5",
-      40.0,
-      1.0
+      40,
+      1
     ],
     [
       "F5",
-      41.0,
-      1.0
+      41,
+      1
     ],
     [
       "E5",
-      42.0,
-      1.0
+      42,
+      1
     ],
     [
       "E5",
-      43.0,
-      1.0
+      43,
+      1
     ],
     [
       "D5",
-      44.0,
-      1.0
+      44,
+      1
     ],
     [
       "D5",
-      45.0,
-      1.0
+      45,
+      1
     ],
     [
       "C5",
-      46.0,
-      2.0
+      46,
+      2
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": false,
-    "unsupported": [
-      "原谱下方伴奏音型未进入 steps。"
+    "sourceImages": [
+      "private/sheets/raw/IMG_20260613_131359.jpg"
     ],
-    "unsureMeasures": []
+    "unsupported": [
+      "Local source photo is 1=C, 4/4, q=80; lower accompaniment row is omitted from V1 steps."
+    ],
+    "unsureMeasures": [],
+    "sources": [
+      {
+        "label": "Easy Breezy Twinkle Twinkle C major piano notes",
+        "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/05/twinkle-twinkle-little-star-piano-notes.pdf"
+      },
+      {
+        "label": "UkuStuff Twinkle Twinkle C/F/G7 chords",
+        "url": "https://ukestuff.wordpress.com/wp-content/uploads/2016/08/twinkle-twinkle-little-star-c-f-g71.pdf"
+      }
+    ]
   }
 }

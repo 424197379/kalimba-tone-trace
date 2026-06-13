@@ -1042,28 +1042,38 @@
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "unsureMeasures": [],
+    "unsureMeasures": [
+      "Chord targets follow the simplified chorus practice version; full C-key original section needs review."
+    ],
     "unsupported": [
-      "V2 和弦版为 21 音 C 调卡林巴练习编配，优先保持可弹性和判定稳定性；不等同于出版级原版和声还原。",
+      "V2 chord version is a 21-key C kalimba practice arrangement, prioritized for playability and stable judgement.",
+      "Original speed and accompaniment texture are complex, so only key chord targets are kept.",
       "harmonic-density:sparse; generated-from:bluebird; progression:I-V-vi-IV-I-V-IV-V"
     ],
     "harmonyReview": {
-      "confidence": "medium-cross-checked",
-      "method": "C-major triad accompaniment adapted for 21-key kalimba and strict chord judging",
+      "confidence": "low-needs-review",
+      "method": "Existing C-major kalimba chord anchors preserved; GuitarWorld C-key preview used only for source cross-check metadata.",
       "sources": [
         {
-          "title": "?? C??????",
+          "label": "GuitarWorld Bluebird C chord source",
           "url": "https://www.guitarworld.com.cn/pu/q91150"
+        },
+        {
+          "label": "GuitarWorld Bluebird source image local copy",
+          "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/1348800/view/4be163ac2a3d118a0dd2ba5a920b9a5c.png"
         }
       ]
     },
     "autoAccompaniment": {
       "generatedFrom": "existing schemaVersion 2 harmony/bass events",
-      "generator": "private/generate-auto-accompaniment.mjs --inject-only",
-      "pattern": "4/4 bass-harmony-bass-harmony",
+      "pattern": "sparse existing anchors with silent phrase rest",
       "restPolicy": "silent restWindows are not filled",
-      "reviewRequired": []
-    }
+      "reviewRequired": [
+        "Auto accompaniment is sparse and still needs listening review."
+      ]
+    },
+    "hasArpeggio": true,
+    "hasRepeats": false
   },
   "autoAccompaniment": {
     "enabledByDefault": true,
@@ -1296,18 +1306,6 @@
         ]
       },
       {
-        "beat": 31,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 32,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1316,18 +1314,6 @@
             "name": "F3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 33,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -1344,18 +1330,6 @@
         ]
       },
       {
-        "beat": 35,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 36,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1364,18 +1338,6 @@
             "name": "F3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 37,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -1392,18 +1354,6 @@
         ]
       },
       {
-        "beat": 39,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 40,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1416,18 +1366,6 @@
         ]
       },
       {
-        "beat": 41,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 42,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1436,18 +1374,6 @@
             "name": "F3",
             "role": "bass",
             "velocity": 0.42
-          }
-        ]
-      },
-      {
-        "beat": 43,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
           }
         ]
       },
@@ -1474,18 +1400,6 @@
         ]
       },
       {
-        "beat": 45,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
-      },
-      {
         "beat": 46,
         "duration": 0.75,
         "pattern": "filled-bass",
@@ -1496,23 +1410,11 @@
             "velocity": 0.42
           }
         ]
-      },
-      {
-        "beat": 47,
-        "duration": 0.75,
-        "pattern": "filled-harmony",
-        "notes": [
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.36
-          }
-        ]
       }
     ]
   },
   "rhythm": {
-    "sourceStatus": "inferred",
+    "sourceStatus": "needs-review",
     "pickupBeats": 0,
     "restWindows": [
       {
@@ -1520,6 +1422,16 @@
         "duration": 1,
         "policy": "silent",
         "reason": "phrase-rest"
+      }
+    ],
+    "sources": [
+      {
+        "label": "GuitarWorld Bluebird C chord source",
+        "url": "https://www.guitarworld.com.cn/pu/q91150"
+      },
+      {
+        "label": "GuitarWorld Bluebird source image local copy",
+        "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/1348800/view/4be163ac2a3d118a0dd2ba5a920b9a5c.png"
       }
     ]
   }

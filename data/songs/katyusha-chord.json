@@ -934,28 +934,42 @@
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "unsureMeasures": [],
+    "unsureMeasures": [
+      "Current 4/4 practice grouping differs from the 2/4 source grouping and needs review."
+    ],
     "unsupported": [
-      "V2 和弦版为 21 音 C 调卡林巴练习编配，优先保持可弹性和判定稳定性；不等同于出版级原版和声还原。",
+      "V2 chord version is a 21-key C kalimba practice arrangement, prioritized for playability and stable judgement.",
+      "Jitabang 1=C 2/4 source accompaniment pattern is not fully expanded.",
       "harmonic-density:sparse; generated-from:katyusha; progression:vi-V-vi-IV-V-vi-V-vi"
     ],
     "harmonyReview": {
-      "confidence": "medium-cross-checked",
-      "method": "C-major triad accompaniment adapted for 21-key kalimba and strict chord judging",
+      "confidence": "medium-needs-review",
+      "method": "Existing C-major kalimba chord anchors preserved; Jitabang C-key guitar source used for chord/rhythm cross-check.",
       "sources": [
         {
-          "title": "??? C????",
+          "label": "Jitabang Katyusha C chord source",
           "url": "https://www.jitabang.com/jiaoxue/8653.html"
+        },
+        {
+          "label": "Jitabang Katyusha source image page 1 local copy",
+          "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png"
+        },
+        {
+          "label": "Jitabang Katyusha source image page 2 local copy",
+          "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png"
         }
       ]
     },
     "autoAccompaniment": {
       "generatedFrom": "existing schemaVersion 2 harmony/bass events",
-      "generator": "private/generate-auto-accompaniment.mjs --inject-only",
-      "pattern": "4/4 bass-harmony-bass-harmony",
+      "pattern": "sparse existing anchors around phrase rests",
       "restPolicy": "silent restWindows are not filled",
-      "reviewRequired": []
-    }
+      "reviewRequired": [
+        "Auto accompaniment still follows the current 4/4 practice grouping."
+      ]
+    },
+    "hasArpeggio": true,
+    "hasRepeats": true
   },
   "autoAccompaniment": {
     "enabledByDefault": true,
@@ -1230,7 +1244,7 @@
     ]
   },
   "rhythm": {
-    "sourceStatus": "inferred",
+    "sourceStatus": "needs-review",
     "pickupBeats": 0,
     "restWindows": [
       {
@@ -1250,6 +1264,20 @@
         "duration": 1,
         "policy": "silent",
         "reason": "phrase-rest"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jitabang Katyusha C chord source",
+        "url": "https://www.jitabang.com/jiaoxue/8653.html"
+      },
+      {
+        "label": "Jitabang Katyusha source image page 1 local copy",
+        "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png"
+      },
+      {
+        "label": "Jitabang Katyusha source image page 2 local copy",
+        "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png"
       }
     ]
   }

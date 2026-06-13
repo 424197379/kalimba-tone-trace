@@ -403,7 +403,7 @@
     ]
   ],
   "sourceFeatures": {
-    "hasChords": false,
+    "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": true,
     "unsupported": [

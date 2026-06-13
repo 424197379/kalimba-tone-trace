@@ -350,6 +350,20 @@ function showImportMessage(message, kind = "neutral") {
   importMessage.hidden = false;
 }
 
+function getImportSuccessMessage(savedSongs) {
+  const [primarySong] = savedSongs;
+  if (!primarySong) {
+    return "没有可保存的歌曲";
+  }
+
+  const versionLabels = savedSongs.map(getSongVersionLabel);
+  if (savedSongs.length > 1) {
+    return `已添加 ${primarySong.title}（${versionLabels.join(" / ")}）`;
+  }
+
+  return `已添加 ${primarySong.title}（仅主旋律，JSON 未包含可用和弦或伴奏）`;
+}
+
 function refreshLibraryViews() {
   renderSongList();
   renderLocalSongManager();
@@ -459,7 +473,7 @@ async function importSongFromJson() {
     songJsonInput.value = "";
     refreshLibraryViews();
     await waitForThinkingMinimum(startedAt);
-    showImportMessage(`已添加 ${song.title}${savedSongs.length > 1 ? `（${savedSongs.length} 个版本）` : ""}`, "success");
+    showImportMessage(getImportSuccessMessage(savedSongs), "success");
   } catch (error) {
     await waitForThinkingMinimum(startedAt);
     showImportMessage(error.message, "error");

@@ -5,15 +5,16 @@
   "uploader": "system",
   "practiceTitle": "《铃儿响叮当》练习轨道",
   "scoreTitle": "《铃儿响叮当》简谱进度",
-  "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+  "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
   "difficulty": "easy",
   "bpm": 80,
   "defaultSpeedFactor": 0.9,
   "beatsPerMeasure": 4,
+  "key": "C",
   "steps": [
     [
       "E5",
-      0.0,
+      0,
       0.5
     ],
     [
@@ -23,12 +24,12 @@
     ],
     [
       "E5",
-      1.0,
+      1,
       0.5
     ],
     [
       "E5",
-      2.0,
+      2,
       0.5
     ],
     [
@@ -38,12 +39,12 @@
     ],
     [
       "E5",
-      3.0,
+      3,
       0.5
     ],
     [
       "E5",
-      4.0,
+      4,
       0.75
     ],
     [
@@ -63,12 +64,12 @@
     ],
     [
       "E5",
-      7.0,
-      1.0
+      7,
+      1
     ],
     [
       "F5",
-      8.0,
+      8,
       0.5
     ],
     [
@@ -78,7 +79,7 @@
     ],
     [
       "F5",
-      9.0,
+      9,
       0.5
     ],
     [
@@ -88,7 +89,7 @@
     ],
     [
       "F5",
-      10.0,
+      10,
       0.5
     ],
     [
@@ -98,7 +99,7 @@
     ],
     [
       "E5",
-      11.0,
+      11,
       0.5
     ],
     [
@@ -108,7 +109,7 @@
     ],
     [
       "E5",
-      12.0,
+      12,
       0.75
     ],
     [
@@ -128,7 +129,7 @@
     ],
     [
       "D5",
-      15.0,
+      15,
       0.5
     ],
     [
@@ -138,7 +139,7 @@
     ],
     [
       "E5",
-      16.0,
+      16,
       0.5
     ],
     [
@@ -148,12 +149,12 @@
     ],
     [
       "E5",
-      17.0,
+      17,
       0.5
     ],
     [
       "E5",
-      18.0,
+      18,
       0.5
     ],
     [
@@ -163,12 +164,12 @@
     ],
     [
       "E5",
-      19.0,
+      19,
       0.5
     ],
     [
       "E5",
-      20.0,
+      20,
       0.75
     ],
     [
@@ -188,12 +189,12 @@
     ],
     [
       "E5",
-      23.0,
-      1.0
+      23,
+      1
     ],
     [
       "F5",
-      24.0,
+      24,
       0.5
     ],
     [
@@ -203,7 +204,7 @@
     ],
     [
       "F5",
-      25.0,
+      25,
       0.5
     ],
     [
@@ -213,7 +214,7 @@
     ],
     [
       "F5",
-      26.0,
+      26,
       0.5
     ],
     [
@@ -223,7 +224,7 @@
     ],
     [
       "E5",
-      27.0,
+      27,
       0.5
     ],
     [
@@ -233,7 +234,7 @@
     ],
     [
       "G5",
-      28.0,
+      28,
       0.75
     ],
     [
@@ -253,17 +254,30 @@
     ],
     [
       "C5",
-      31.0,
-      1.0
+      31,
+      1
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": false,
-    "unsupported": [
-      "照片下方低音伴奏未进入 steps。"
+    "sourceImages": [
+      "private/sheets/raw/IMG_20260613_182556.jpg"
     ],
-    "unsureMeasures": []
+    "unsupported": [
+      "Local source photo is 1=C, 4/4, q=80; lower bass accompaniment row is omitted from V1 steps."
+    ],
+    "unsureMeasures": [],
+    "sources": [
+      {
+        "label": "Doctor Uke Jingle Bells C chord sheet",
+        "url": "https://www.doctoruke.com/jinglebellsc.pdf"
+      },
+      {
+        "label": "Easy Breezy Jingle Bells piano notes",
+        "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+      }
+    ]
   }
 }

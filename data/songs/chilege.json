@@ -1,14 +1,16 @@
 {
+  "schemaVersion": 1,
   "id": "chilege",
   "title": "《敕勒歌》",
   "uploader": "system",
   "practiceTitle": "《敕勒歌》练习轨道",
   "scoreTitle": "《敕勒歌》简谱进度",
-  "hint": "这里放的是适合 21 音卡林巴练习的《敕勒歌》简化主旋律版本，按 4/4 慢速推进，保留了换句停顿。",
+  "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
   "difficulty": "medium",
   "bpm": 72,
   "defaultSpeedFactor": 1.15,
   "beatsPerMeasure": 4,
+  "key": "C",
   "steps": [
     [
       "A4",
@@ -230,5 +232,25 @@
       54,
       2
     ]
-  ]
+  ],
+  "sourceFeatures": {
+    "hasChords": false,
+    "hasArpeggio": false,
+    "hasRepeats": false,
+    "sourceImages": [],
+    "unsupported": [
+      "C 4/4 simplified melody version; no reliable public chord source confirmed for V1."
+    ],
+    "unsureMeasures": [],
+    "sources": [
+      {
+        "label": "Everyone Piano Chile Ge C numbered notation",
+        "url": "https://www.everyonepiano.cn/Number-13808-1.html"
+      },
+      {
+        "label": "GuitarWorld Chile Ge C sheet",
+        "url": "https://www.guitarworld.com.cn/pu/q69031"
+      }
+    ]
+  }
 }
