@@ -17,7 +17,7 @@ Do not commit original sheet photos, OCR text, or review records from `private/`
 
 ## Recommended Flow
 
-1. Put source images in `private/sheets/raw/<song-id>/`.
+1. Put source images in `private/sheets/raw/<song-id>/`. If the user only gives a song title, search for sources first and save useful downloaded images, screenshots, PDFs, or source notes in the same private source folders.
 2. If OCR is useful, put intermediate OCR output in `private/sheets/ocr/<song-id>/`.
 3. Read the main melody first. Keep it playable on 21-key C kalimba.
 4. Convert rests to beat gaps, not rest notes.
@@ -39,6 +39,14 @@ For V2 accompaniment work:
 npm run report:rhythm
 npm run report:arrangements
 ```
+
+## Song Title Only
+
+When the request is only "add this song", the compiler should behave like the `tai-yang-zhao-chang-sheng-qi` workflow: search for the score, preserve the useful source material privately, cross-check melody and rhythm, then compile the best supported app data.
+
+Recommended search variants include `<title> 简谱`, `<title> 卡林巴简谱`, `<title> 简和谱`, `<title> 五线谱`, `<title> MIDI`, `<title> MusicXML`, and `<title> 吉他谱`.
+
+Ask the user for more material only after a reasonable search, and be specific about the missing piece: clearer sheet image, source URL, MIDI/MusicXML, target performance, target section, or confirmation that a melody-only version is acceptable.
 
 ## Melody First
 

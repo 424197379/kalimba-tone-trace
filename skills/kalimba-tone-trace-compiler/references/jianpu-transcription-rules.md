@@ -63,6 +63,16 @@ For V2 uploads and built-in chord arrangements:
 
 Use online sources when the image is blurry, incomplete, or lacks rhythm/chord/accompaniment information.
 
+Also use online sources when the user gives only a song title. Search broadly first, then narrow around the sources that preserve rhythm. Useful query families include:
+
+- `<title> 简谱`
+- `<title> 卡林巴 简谱`
+- `<title> 简和谱`
+- `<title> 五线谱`
+- `<title> MIDI`
+- `<title> MusicXML`
+- `<title> 吉他谱`
+
 Source priority:
 
 1. Full score, MusicXML, MIDI, or complete jianpu with rhythm.
@@ -71,6 +81,23 @@ Source priority:
 4. Listening-based inference.
 
 When sources conflict, keep the melody/rhythm from the most complete rhythmic source and use chord-only pages only for harmony support.
+
+Save downloaded source images, screenshots, or page captures under `private/sheets/raw/<song-id>/`. Save URL lists, confidence notes, conflicts, and source decisions under `private/sheets/review/<song-id>.json`. These private source files are working material and must not be committed.
+
+## When To Ask The User For More Sources
+
+Ask for user help only after a reasonable source search, and ask for the exact missing material.
+
+Ask when:
+
+- No complete rhythmic source can be found.
+- Sources disagree on the main melody, pickup, or phrase rests.
+- Only chord charts or performance videos are available and the melody would be mostly guessed.
+- The source is too blurry or cropped to read durations.
+- Harmony or accompaniment would be mostly invented.
+- The user wants a specific version, excerpt, singer, film arrangement, or kalimba cover that differs from the common published melody.
+
+Useful requests include a clearer sheet photo, a source URL, MIDI or MusicXML, an audio/video reference, the target section, or permission/source notes for modern copyrighted material.
 
 ## Uncertainty
 

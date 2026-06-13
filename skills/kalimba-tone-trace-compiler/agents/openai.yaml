@@ -1,7 +1,7 @@
 interface:
   display_name: "Kalimba ToneTrace Compiler"
-  short_description: "Convert jianpu photos into melody, chord, accompaniment, and rhythm-aware song JSON."
-  default_prompt: "Use $kalimba-tone-trace-compiler to convert numbered-notation sheet photos into validated Kalimba ToneTrace song JSON."
+  short_description: "Find or transcribe jianpu sources and compile melody, chord, accompaniment, and rhythm-aware song JSON."
+  default_prompt: "Use $kalimba-tone-trace-compiler to find or transcribe numbered-notation sources, cross-check melody and rhythm, and compile validated Kalimba ToneTrace song JSON."
 
 policy:
   allow_implicit_invocation: true

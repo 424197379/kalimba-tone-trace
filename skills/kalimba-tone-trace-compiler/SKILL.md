@@ -21,9 +21,21 @@ Before writing song JSON, read:
 - `references/song-json-schema.md` for V1, V2, accompaniment, and rhythm fields.
 - `references/jianpu-transcription-rules.md` for note, rhythm, rest, chord, and accompaniment transcription rules.
 
+## Song-Title Source Workflow
+
+Use this workflow when the user gives only a song title and asks Codex to add it to the app, or when the supplied image is not enough to make a reliable arrangement.
+
+1. Search for sources before asking the user for more material. Try variants such as `<title> 简谱`, `<title> 卡林巴简谱`, `<title> 简和谱`, `<title> 五线谱`, `<title> MIDI`, `<title> MusicXML`, and `<title> 吉他谱`.
+2. Prefer complete rhythmic sources: full score, MusicXML, MIDI, complete jianpu with rhythm, or clear kalimba notation. Use chord-only pages only as harmony support.
+3. Save useful source images, screenshots, PDFs, or page captures under `private/sheets/raw/<song-id>/`. Do not commit these files. If a source is web-only, save the URL and review notes under `private/sheets/review/<song-id>.json`.
+4. Cross-check at least two independent sources when possible. Melody contour, rhythm, pickup beats, and rests matter more than adding accompaniment.
+5. If the best available sources conflict or are too weak, ask the user for specific material: a clearer sheet photo, source URL, MIDI/MusicXML, target performance link, target section, or confirmation that a melody-only import is acceptable.
+6. Compile the song only to the confidence level the sources support. Use melody-only V2 when harmony is uncertain; add chord targets, auto-accompaniment, and `rhythm.restWindows` only when they improve the result.
+7. For built-in library additions, create or update `data/songs/<song-id>.json` and, when appropriate, `data/songs/<song-id>-chord.json`, then rebuild `src/songs.js`.
+
 ## Workflow
 
-1. Locate source images under the project `private/sheets/raw/` when available. Do not move raw images into public folders.
+1. Locate source images under the project `private/sheets/raw/` when available. If the user supplied only a song title, run the Song-Title Source Workflow first. Do not move raw images into public folders.
 2. Inspect the image and transcribe the main melody first. Keep rests as beat gaps.
 3. If the image is blurry, incomplete, or lacks chord/accompaniment/rhythm detail, use online sheet sources for cross-checking. Prefer full score, jianpu, MusicXML, or MIDI over chord-only pages.
 4. For user-upload output, use V2 `events`. If only the melody is reliable, emit one judged melody note per event; if chord targets or accompaniment are reliable, include them in the same V2 object.
@@ -46,4 +58,6 @@ npm run check
 - Do not output V1 JSON for user uploads unless specifically testing backward compatibility; current upload prompts should use V2.
 - Do not silently guess unreadable notes, rhythms, or chords. Mark uncertain measures or set V2 `rhythm.sourceStatus` / harmony review confidence accordingly.
 - If V2 accompaniment fills a melody rest, either remove that accompaniment event or mark the rest as an intentional `hold`; default long rests are `silent`.
+- Do not make a dense auto-accompaniment pattern just because the schema supports it. A sparse, rest-aware pattern is usually closer to a real kalimba arrangement.
+- If online material is not good enough for a high-confidence song, stop and ask for the missing source type instead of presenting a speculative full arrangement as finished.
 - Confirm publication rights before committing modern copyrighted songs to the public built-in library.

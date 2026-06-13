@@ -13,6 +13,7 @@ Use this reference when producing `data/songs/*.json` or user-import JSON for Ka
 - `difficulty` is `"easy"`, `"medium"`, or `"hard"`.
 - `bpm` should normally be 72-120 for practice unless the source clearly indicates otherwise.
 - `beatsPerMeasure` is the source meter when known; otherwise infer from bars and rhythm.
+- When using web sources, keep source URLs and confidence decisions in `rhythm.sources`, `sourceFeatures`, or private review notes. Do not commit downloaded source images or full copied third-party scores.
 
 ## V1 Melody Schema
 
@@ -53,6 +54,8 @@ Do not use this as the current user-facing upload target unless specifically tes
 ## V2 Upload And Chord Schema
 
 Use V2 for all current user uploads/local imports and for system chord arrangements. For user uploads, emit a single V2 object: melody-only songs use one judged melody note per event, while richer arrangements may include harmony/bass target notes, `autoAccompaniment`, and `rhythm`. The app derives the local melody version automatically, creates a chord version when chord targets are present, and creates an accompaniment version when useful `autoAccompaniment` is present without chord targets. For built-in library songs, keep separate files when needed, usually `<base-id>.json` and `<base-id>-chord.json`.
+
+When only a song title is supplied, build this V2 object from cross-checked sources. If melody and rhythm are reliable but harmony is not, set `arrangementKind: "melody"` / `judgementMode: "melody"` and omit chord target notes. If accompaniment is useful but should not be judged, put it under `autoAccompaniment` rather than in judged `events[].notes`.
 
 ```json
 {
@@ -149,6 +152,7 @@ Rhythm rules:
 - Default rest policy is `"silent"`: no auto-accompaniment event should overlap the window.
 - Use `"hold"` only when the source or musical context clearly calls for a held accompaniment tone; allow at most one soft event near the rest start.
 - Put external rhythm/chord references in `sources` when used.
+- Use `sourceStatus: "verified"` only when the rhythm and rest decisions are backed by a reliable source or multiple consistent sources. Use `"inferred"` or `"needs-review"` when the arrangement depends on conservative AI inference.
 
 ## Validation
 
