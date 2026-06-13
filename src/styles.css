@@ -2879,11 +2879,58 @@
       line-height: 1.2;
     }
 
-    .support-layout {
+    .support-stack {
       display: grid;
-      grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
       gap: 14px;
       align-items: start;
+    }
+
+    .support-story-card {
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+      background:
+        linear-gradient(135deg, rgba(255, 252, 246, 0.94), rgba(255, 248, 238, 0.88)),
+        var(--panel);
+    }
+
+    .support-story-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .support-story-step {
+      min-width: 0;
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--border);
+    }
+
+    .support-story-step span {
+      display: inline-flex;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(189, 95, 59, 0.1);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: var(--weight-semibold);
+      line-height: 1.2;
+    }
+
+    .support-story-step strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .support-story-step p {
+      margin: 8px 0 0;
+      color: var(--subtle);
+      font-size: 13px;
+      line-height: 1.55;
     }
 
     .support-donate-card,
@@ -2891,6 +2938,11 @@
       padding: 18px;
       display: grid;
       gap: 16px;
+    }
+
+    .support-donate-footer {
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+      align-items: center;
     }
 
     .support-kicker {
@@ -2993,13 +3045,9 @@
         line-height: 1.45;
       }
 
-      html.support-root .support-layout {
-        grid-template-columns: minmax(250px, 0.82fr) minmax(0, 1.18fr);
-        gap: 10px;
-      }
-
       html.support-root .support-donate-card,
-      html.support-root .support-build-card {
+      html.support-root .support-build-card,
+      html.support-root .support-story-card {
         padding: 14px;
         gap: 10px;
       }
@@ -3015,6 +3063,25 @@
 
       html.support-root .support-feature-grid {
         gap: 8px;
+      }
+
+      html.support-root .support-story-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      html.support-root .support-story-step {
+        padding: 10px;
+      }
+
+      html.support-root .support-story-step strong {
+        font-size: 13px;
+      }
+
+      html.support-root .support-story-step p {
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 1.42;
       }
 
       html.support-root .support-feature {
@@ -3054,8 +3121,13 @@
       }
 
       .support-hero,
-      .support-layout,
-      .support-feature-grid {
+      .support-stack,
+      .support-feature-grid,
+      .support-story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .support-donate-footer {
         grid-template-columns: 1fr;
       }
 

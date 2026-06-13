@@ -19,7 +19,7 @@
   <main class="page support-page">
     <header class="card support-hero">
       <div class="support-hero-copy">
-        <div class="app-kicker">支持与共建 · <span>v2.2.8</span></div>
+        <div class="app-kicker">支持与共建 · <span>v2.2.9</span></div>
         <h1>让卡林巴循音继续长出来</h1>
         <p>这个项目开源免费，不做商业化。打赏可以帮我回一点开发和 AI token 成本；共建可以让曲库、编配和工具链越来越准。</p>
       </div>
@@ -29,19 +29,32 @@
       </div>
     </header>
 
-    <section class="support-layout">
-      <article class="card support-donate-card">
-        <div class="support-section-head">
-          <span class="support-kicker">打赏回血</span>
-          <h2>请作者喝杯咖啡</h2>
-          <p>如果这个 App 对你的练习有帮助，可以随手支持一点。金额完全自愿，扫码前请确认金额。</p>
-        </div>
-        <figure class="support-code">
-          <img src="./assets/support/alipay-reward.jpg" alt="支付宝打赏二维码" width="1182" height="1772">
-          <figcaption>支付宝扫码打赏</figcaption>
-        </figure>
-      </article>
+    <article class="card support-story-card">
+      <div class="support-section-head">
+        <span class="support-kicker">开发故事</span>
+        <h2>从看不懂简谱开始</h2>
+        <p>我本身几乎没有音乐基础，买了卡林巴之后，发现自己连简谱都看不懂。于是这个 App 的第一个目标很直接：把“什么时候弹哪个键”变成下落块和高亮琴键，让零基础的人也能先弹起来。</p>
+      </div>
+      <div class="support-story-grid">
+        <section class="support-story-step">
+          <span>起点</span>
+          <strong>不会音乐，也想弹出旋律</strong>
+          <p>比起先学一整套乐理，我更需要一个能把曲谱翻译成动作提示的练习工具。</p>
+        </section>
+        <section class="support-story-step">
+          <span>办法</span>
+          <strong>把 AI 用在真实项目里</strong>
+          <p>最近一个月我一直重度使用 AI，所以想做一个真正能落地、能持续迭代的小项目，而不是只停在 demo。按 token 消耗折算，这个项目目前已经花掉大约五六百刀。</p>
+        </section>
+        <section class="support-story-step">
+          <span>声音</span>
+          <strong>用真实卡林巴采样</strong>
+          <p>为了不让播放听起来太像死板的电子合成音，我录制了实体卡林巴的音色，再让 AI 辅助切分出单音 sample，用在示范播放和琴键点击里。</p>
+        </section>
+      </div>
+    </article>
 
+    <section class="support-stack" aria-label="支持与共建内容">
       <article class="card support-build-card">
         <div class="support-section-head">
           <span class="support-kicker">开源共建</span>
@@ -74,6 +87,18 @@
           <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/tree/main/skills/kalimba-tone-trace-compiler" target="_blank" rel="noreferrer">项目 skill</a>
           <a class="ghost support-link" href="https://github.com/424197379/kalimba-tone-trace/blob/main/AGENTS.md" target="_blank" rel="noreferrer">AI 代理说明</a>
         </div>
+      </article>
+
+      <article class="card support-donate-card support-donate-footer">
+        <div class="support-section-head">
+          <span class="support-kicker">打赏回血</span>
+          <h2>请作者喝杯咖啡</h2>
+          <p>如果这个 App 对你的练习有帮助，可以随手支持一点。金额完全自愿，扫码前请确认金额。</p>
+        </div>
+        <figure class="support-code">
+          <img src="./assets/support/alipay-reward.jpg" alt="支付宝打赏二维码" width="1182" height="1772">
+          <figcaption>支付宝扫码打赏</figcaption>
+        </figure>
       </article>
     </section>
   </main>
