@@ -1,7 +1,10 @@
 import {
   AI_SONG_PROMPT,
   APP_VERSION,
+  DIFFICULTY_LABELS,
+  DIFFICULTY_LEVELS,
   getSongLibrary,
+  normalizeDifficulty,
   parseImportedSong,
   readStoredSongId,
   saveCustomSong,
@@ -13,6 +16,7 @@ const APP_NAME = "卡林巴循音";
 const songList = document.getElementById("songList");
 const songSearchInput = document.getElementById("songSearchInput");
 const songCountText = document.getElementById("songCountText");
+const difficultyTabs = document.getElementById("difficultyTabs");
 const emptySongText = document.getElementById("emptySongText");
 const backToPracticeLink = document.getElementById("backToPracticeLink");
 const appVersionText = document.getElementById("appVersionText");
@@ -28,6 +32,7 @@ const updateNowBtn = document.getElementById("updateNowBtn");
 const updateLaterBtn = document.getElementById("updateLaterBtn");
 
 let songLibrary = getSongLibrary();
+let activeDifficulty = "all";
 let waitingServiceWorker = null;
 let reloadRequestedForUpdate = false;
 let refreshingForUpdate = false;
@@ -77,23 +82,33 @@ function getSongUploader(song) {
   return song.uploader || song.author || "system";
 }
 
+function getSongDifficulty(song) {
+  return normalizeDifficulty(song.difficulty) || "easy";
+}
+
 function getSearchText(song) {
+  const difficulty = getSongDifficulty(song);
   return normalizeText([
     song.id,
     song.title,
     song.hint,
-    getSongUploader(song)
+    getSongUploader(song),
+    DIFFICULTY_LABELS[difficulty],
+    difficulty
   ].join(" "));
 }
 
 function selectSong(songId) {
   storeSongId(songId);
-  window.location.href = `./index.html?song=${encodeURIComponent(songId)}`;
+  window.location.href = `./index.html?song=${encodeURIComponent(songId)}&fromLibrary=1`;
 }
 
-function createMeta(label, value) {
+function createMeta(label, value, modifier = "") {
   const item = document.createElement("span");
   item.className = "song-meta-item";
+  if (modifier) {
+    item.classList.add(modifier);
+  }
   item.textContent = `${label} ${value}`;
   return item;
 }
@@ -113,7 +128,9 @@ function createSongCard(song, selectedSongId) {
 
   const meta = document.createElement("div");
   meta.className = "song-meta";
+  const difficulty = getSongDifficulty(song);
   meta.append(
+    createMeta("难度", DIFFICULTY_LABELS[difficulty], `difficulty-${difficulty}`),
     createMeta("作者", getSongUploader(song)),
     createMeta("BPM", song.bpm),
     createMeta("拍号", `${song.beatsPerMeasure}/4`),
@@ -137,20 +154,59 @@ function createSongCard(song, selectedSongId) {
   return card;
 }
 
+function createDifficultyButton(difficulty, count) {
+  const button = document.createElement("button");
+  const isActive = difficulty === activeDifficulty;
+  button.type = "button";
+  button.className = `difficulty-tab ${isActive ? "accent active" : "ghost"}`;
+  button.textContent = `${DIFFICULTY_LABELS[difficulty]} ${count}`;
+  button.setAttribute("aria-pressed", String(isActive));
+  if (difficulty !== "all" && count === 0) {
+    button.disabled = true;
+  }
+
+  button.addEventListener("click", () => {
+    activeDifficulty = difficulty;
+    renderSongList();
+  });
+
+  return button;
+}
+
+function renderDifficultyTabs(searchedSongs) {
+  if (!difficultyTabs) {
+    return;
+  }
+
+  const counts = Object.fromEntries(DIFFICULTY_LEVELS.map((difficulty) => [difficulty, 0]));
+  searchedSongs.forEach((song) => {
+    counts[getSongDifficulty(song)] += 1;
+  });
+
+  difficultyTabs.replaceChildren(
+    createDifficultyButton("all", searchedSongs.length),
+    ...DIFFICULTY_LEVELS.map((difficulty) => createDifficultyButton(difficulty, counts[difficulty]))
+  );
+}
+
 function renderSongList() {
   const selectedSongId = getSelectedSongId();
   const query = normalizeText(songSearchInput.value);
   const songs = Object.values(songLibrary);
-  const matchedSongs = query
+  const searchedSongs = query
     ? songs.filter((song) => getSearchText(song).includes(query))
     : songs;
+  const matchedSongs = activeDifficulty === "all"
+    ? searchedSongs
+    : searchedSongs.filter((song) => getSongDifficulty(song) === activeDifficulty);
 
+  renderDifficultyTabs(searchedSongs);
   songList.replaceChildren();
   matchedSongs.forEach((song) => {
     songList.appendChild(createSongCard(song, selectedSongId));
   });
 
-  songCountText.textContent = `${matchedSongs.length} / ${songs.length} 首`;
+  songCountText.textContent = `显示 ${matchedSongs.length} / ${searchedSongs.length} 首`;
   emptySongText.hidden = matchedSongs.length > 0;
   backToPracticeLink.href = `./index.html?song=${encodeURIComponent(selectedSongId)}`;
 }
@@ -186,6 +242,7 @@ function importSongFromJson() {
     saveCustomSong(song);
     songLibrary = getSongLibrary();
     storeSongId(song.id);
+    activeDifficulty = "all";
     songSearchInput.value = "";
     songJsonInput.value = "";
     renderSongList();

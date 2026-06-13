@@ -410,6 +410,30 @@
       white-space: nowrap;
     }
 
+    .difficulty-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .difficulty-tab {
+      width: auto;
+      min-height: 36px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      line-height: 1.1;
+    }
+
+    .difficulty-tab.active {
+      box-shadow: 0 8px 18px rgba(189, 95, 59, 0.16);
+    }
+
+    .difficulty-tab:disabled {
+      opacity: 0.42;
+    }
+
     .import-panel {
       padding: 14px;
       display: grid;
@@ -582,6 +606,24 @@
       font-weight: 650;
       font-variant-numeric: tabular-nums;
       font-feature-settings: "tnum" 1;
+    }
+
+    .song-meta-item.difficulty-easy {
+      color: #276542;
+      background: rgba(58, 139, 97, 0.12);
+      border-color: rgba(58, 139, 97, 0.18);
+    }
+
+    .song-meta-item.difficulty-medium {
+      color: #8b5522;
+      background: rgba(212, 139, 63, 0.14);
+      border-color: rgba(212, 139, 63, 0.2);
+    }
+
+    .song-meta-item.difficulty-hard {
+      color: #7d2d2d;
+      background: rgba(196, 74, 74, 0.09);
+      border-color: rgba(196, 74, 74, 0.16);
     }
 
     .song-card-hint {
@@ -1252,6 +1294,15 @@
         display: grid;
       }
 
+      .difficulty-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .difficulty-tab {
+        width: 100%;
+      }
+
       .import-grid {
         grid-template-columns: 1fr;
       }
@@ -1566,6 +1617,16 @@
 
       html.library-root .library-search input {
         min-height: 30px;
+      }
+
+      html.library-root .difficulty-tabs {
+        gap: 6px;
+      }
+
+      html.library-root .difficulty-tab {
+        min-height: 30px;
+        padding: 4px 9px;
+        font-size: 12px;
       }
 
       html.library-root .import-panel {

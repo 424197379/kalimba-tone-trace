@@ -1,8 +1,40 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "1.0.3";
+export const APP_VERSION = "1.0.4";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
+export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
+export const DIFFICULTY_LABELS = {
+  all: "全部",
+  easy: "简单",
+  medium: "中等",
+  hard: "困难"
+};
+
+const DIFFICULTY_ALIASES = new Map([
+  ["easy", "easy"],
+  ["simple", "easy"],
+  ["beginner", "easy"],
+  ["1", "easy"],
+  ["简单", "easy"],
+  ["容易", "easy"],
+  ["入门", "easy"],
+  ["初级", "easy"],
+  ["medium", "medium"],
+  ["normal", "medium"],
+  ["moderate", "medium"],
+  ["2", "medium"],
+  ["中等", "medium"],
+  ["普通", "medium"],
+  ["中级", "medium"],
+  ["hard", "hard"],
+  ["difficult", "hard"],
+  ["advanced", "hard"],
+  ["3", "hard"],
+  ["困难", "hard"],
+  ["难", "hard"],
+  ["高级", "hard"]
+]);
 
 const DEGREE_TO_NOTE = {
   1: "C",
@@ -28,6 +60,7 @@ JSON 格式：
   "bpm": 96,
   "beatsPerMeasure": 4,
   "defaultSpeedFactor": 0.9,
+  "difficulty": "easy",
   "key": "C",
   "hint": "简短说明，可留空",
   "notation": [
@@ -45,6 +78,7 @@ notation 规则：
 - 如果图片有调号，例如 1=C、1=D、1=F，请先按原调读谱，再转成 C 调输出，仍然写 "key": "C"。
 - 如果图片没有 BPM，请按歌曲风格估计一个适合练习的 bpm，通常在 72 到 120 之间。
 - 如果图片有拍号，请填写 beatsPerMeasure；如果没有，请根据小节线和节奏判断，无法判断时用 4。
+- difficulty 只能是 "easy"、"medium"、"hard"。简单表示旋律稳定、跳音少、速度慢；中等表示有少量跳音、速度或节奏变化；困难表示速度快、音符密集、跨键跨度大或节奏复杂。
 - 简谱下划线、附点、连音线等节奏信息要体现在 duration 和 beat 上。
 - 小节线和换行只用于帮助定位节拍，不要作为音符输出。
 - 如果某个音转成 C 调后超出 21 音卡林巴范围，请就近调整到可弹范围，并尽量保持旋律走向。`;
@@ -92,6 +126,11 @@ function normalizeNumber(value, fallback) {
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
+}
+
+export function normalizeDifficulty(value) {
+  const text = String(value || "").trim().toLowerCase();
+  return DIFFICULTY_ALIASES.get(text) || null;
 }
 
 function normalizeTitle(title) {
@@ -151,6 +190,98 @@ export function compileNotationToSteps(notation) {
     .filter((item) => !isRestDegree(item.degree))
     .map((item) => [getNoteNameFromNotation(item), item.beat, item.duration])
     .sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]));
+}
+
+function getStepTotalBeats(steps) {
+  if (!steps.length) {
+    return 0;
+  }
+
+  return Math.max(...steps.map(([, beat, duration]) => Number(beat) + Number(duration)));
+}
+
+function getPhysicalJumpScore(steps) {
+  return steps.reduce((maxJump, step, index) => {
+    if (index === 0) {
+      return maxJump;
+    }
+
+    const previousIndex = NOTE_INDEX.get(steps[index - 1][0]);
+    const currentIndex = NOTE_INDEX.get(step[0]);
+    return Math.max(maxJump, Math.abs(currentIndex - previousIndex));
+  }, 0);
+}
+
+function getPhysicalSpan(steps) {
+  const indexes = steps.map(([name]) => NOTE_INDEX.get(name));
+  return Math.max(...indexes) - Math.min(...indexes);
+}
+
+export function estimateSongDifficulty(song) {
+  const steps = Array.isArray(song.steps)
+    ? song.steps.filter(([name, beat, duration]) =>
+        NOTE_INDEX.has(name) &&
+        Number.isFinite(Number(beat)) &&
+        Number.isFinite(Number(duration)) &&
+        Number(duration) > 0
+      )
+    : [];
+
+  if (!steps.length) {
+    return "easy";
+  }
+
+  const bpm = clamp(normalizeNumber(song.bpm, 96), 40, 220);
+  const totalBeats = Math.max(1, getStepTotalBeats(steps));
+  const noteDensity = steps.length / totalBeats;
+  const minDuration = Math.min(...steps.map(([, , duration]) => Number(duration)));
+  const maxJump = getPhysicalJumpScore(steps);
+  const span = getPhysicalSpan(steps);
+
+  let score = 0;
+  if (bpm >= 136) {
+    score += 2;
+  } else if (bpm >= 112) {
+    score += 1;
+  }
+
+  if (noteDensity >= 1.35) {
+    score += 2;
+  } else if (noteDensity >= 0.95) {
+    score += 1;
+  }
+
+  if (minDuration <= 0.25) {
+    score += 1;
+  } else if (minDuration <= 0.5 && noteDensity >= 0.9) {
+    score += 1;
+  }
+
+  if (maxJump >= 10) {
+    score += 2;
+  } else if (maxJump >= 6) {
+    score += 1;
+  }
+
+  if (span >= 16) {
+    score += 2;
+  } else if (span >= 11) {
+    score += 1;
+  }
+
+  if (steps.length >= 96) {
+    score += 2;
+  } else if (steps.length >= 48) {
+    score += 1;
+  }
+
+  if (score >= 7) {
+    return "hard";
+  }
+  if (score >= 4) {
+    return "medium";
+  }
+  return "easy";
 }
 
 function normalizeNotation(rawNotation) {
@@ -218,8 +349,11 @@ function normalizeStoredSong(song) {
     return null;
   }
 
+  const difficulty = normalizeDifficulty(song.difficulty) || estimateSongDifficulty(song);
+
   return {
     ...song,
+    difficulty,
     uploader: song.uploader || "local",
     source: song.source || "local"
   };
@@ -232,7 +366,11 @@ export function getCustomSongs() {
 }
 
 export function getSongLibrary() {
-  const library = { ...SONG_LIBRARY };
+  const library = Object.fromEntries(
+    Object.entries(SONG_LIBRARY)
+      .map(([id, song]) => [id, normalizeStoredSong({ ...song, source: "system" })])
+      .filter(([, song]) => Boolean(song))
+  );
   getCustomSongs().forEach((song) => {
     library[song.id] = song;
   });
@@ -271,6 +409,7 @@ export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
   const bpm = clamp(normalizeNumber(parsed.bpm, 96), 40, 220);
   const beatsPerMeasure = clamp(Math.round(normalizeNumber(parsed.beatsPerMeasure, 4)), 2, 8);
   const defaultSpeedFactor = clamp(normalizeNumber(parsed.defaultSpeedFactor, 0.9), 0.35, 1.4);
+  const difficulty = normalizeDifficulty(parsed.difficulty) || estimateSongDifficulty({ steps, bpm });
   const hint = String(parsed.hint || "本地导入曲谱").trim() || "本地导入曲谱";
 
   return {
@@ -283,6 +422,7 @@ export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
     bpm,
     defaultSpeedFactor,
     beatsPerMeasure,
+    difficulty,
     hint,
     practiceTitle: `${title}练习轨道`,
     scoreTitle: `${title}简谱进度`,

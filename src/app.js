@@ -241,6 +241,17 @@ const APP_NAME = "卡林巴循音";
       scheduleLayoutRefresh();
     }
 
+    function shouldAutoEnterLandscapeFromLibrary() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("fromLibrary") === "1" || params.get("landscape") === "1";
+    }
+
+    function applyInitialLandscapeMode() {
+      if (shouldAutoEnterLandscapeFromLibrary() && portraitPracticeQuery.matches) {
+        setSoftwareLandscapeMode(true);
+      }
+    }
+
     function refreshLandscapeMode() {
       if (!portraitPracticeQuery.matches) {
         setSoftwareLandscapeMode(false);
@@ -1451,6 +1462,7 @@ const APP_NAME = "卡林巴循音";
       appVersionText.textContent = `v${APP_VERSION}`;
     }
     setCurrentSong(currentSongId);
+    applyInitialLandscapeMode();
 
     if (!canRequestMicrophone()) {
       showNotice(getMicrophoneUnavailableMessage());

@@ -101,6 +101,17 @@
     </header>
 
     <section>
+      <h2>1.0.4 - 2026-06-13</h2>
+      <ul>
+        <li>新增曲库难度分级，内置和本地导入歌曲都会带有 <code>easy</code>、<code>medium</code>、<code>hard</code> 难度。</li>
+        <li>曲库页新增“全部 / 简单 / 中等 / 困难”分组，搜索结果会先全局过滤，再按难度分组展示。</li>
+        <li>添加歌曲提示词和 JSON 导入支持 <code>difficulty</code> 字段，缺省时会根据速度、密度、跨度和跳音估算难度。</li>
+        <li>从曲库选择歌曲进入练习页时，手机竖屏下会直接启用软件横屏练习模式，省去二次点击横屏提示。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v1.0.4</code>。</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>1.0.3 - 2026-06-13</h2>
       <ul>
         <li>新增本地歌曲导入能力，曲库页可复制 AI 提示词并粘贴标准 JSON 保存到本地曲库。</li>
