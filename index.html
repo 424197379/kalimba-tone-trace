@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卡林巴循音</title>
+  <meta name="description" content="卡林巴听音识别与跟练练习 App，支持离线使用。">
+  <meta name="theme-color" content="#bd5f3b">
+  <meta name="application-name" content="卡林巴循音">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="卡林巴循音">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <div class="rotate-overlay" id="rotateOverlay">
+    <div class="rotate-panel">
+      <h2>请横屏练习</h2>
+      <p>横屏后能同时看到下落块和琴键。点下面按钮会尝试进入全屏并锁定横屏；如果浏览器不支持，请手动旋转手机。</p>
+      <button class="accent" id="landscapeBtn" type="button">进入横屏</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="hero">
+      <article class="card title-card">
+        <div class="app-kicker">听音跟练 · <span id="appVersionText">v1.0.0</span></div>
+        <h1>卡林巴循音</h1>
+      </article>
+
+      <aside class="card status-card">
+        <div class="meta-grid">
+          <div class="meta-box">
+            <div class="meta-label">状态</div>
+            <div class="meta-value" id="statusText">待开始</div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-label">麦克风</div>
+            <div class="meta-value" id="micText">未连接</div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-label">检测音</div>
+            <div class="meta-value" id="heardText">--</div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-label">当前目标</div>
+            <div class="meta-value" id="targetText">--</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <label class="song-wrap">
+            歌曲
+            <select id="songSelect"></select>
+          </label>
+          <button class="accent" id="startBtn">开始练习</button>
+          <button class="ghost" id="micBtn">麦克风测试</button>
+          <button class="ghost" id="pauseBtn" disabled>暂停</button>
+          <button class="ghost" id="resetBtn">重置</button>
+          <button id="demoBtn">示范播放</button>
+          <label class="speed-wrap">
+            速度倍率
+            <input id="speedSlider" type="range" min="0.35" max="1.4" step="0.05" value="0.55">
+            <span class="speed-value" id="speedValue">0.55x</span>
+          </label>
+          <button class="ghost compact" id="songSpeedBtn" type="button">曲目默认速率</button>
+          <button class="ghost compact" id="keyScaleBtn" type="button">键宽 100%</button>
+        </div>
+
+        <div class="notice" id="secureNotice"></div>
+      </aside>
+    </section>
+
+    <section class="card board-card">
+      <div class="legend">
+        <div class="legend-copy">
+          <h2 id="practiceTitle">《生日快乐》练习轨道</h2>
+          <p class="diagnostic" id="practiceHint"></p>
+        </div>
+        <div class="badges">
+          <div class="badge" id="scoreText">命中: 0 / 0</div>
+          <div class="badge" id="comboText">连击: 0</div>
+          <div class="badge" id="feedbackText">反馈: 等待声音</div>
+          <div class="badge diagnostic" id="centsText">音准偏差: --</div>
+          <div class="badge diagnostic" id="freqText">频率: --</div>
+          <div class="badge diagnostic" id="levelText">输入电平: 0%</div>
+        </div>
+      </div>
+
+      <div class="score-card">
+        <div class="score-head">
+          <strong id="scoreTitle">《生日快乐》简谱进度</strong>
+          <div class="score-now" id="scoreNow">准备中</div>
+        </div>
+        <div class="score-strip" id="scoreStrip">
+          <div class="score-grid" id="scoreGrid"></div>
+          <div class="score-notes" id="scoreNotes"></div>
+          <div class="score-cursor" id="scoreCursor"></div>
+        </div>
+      </div>
+
+      <div class="board-shell">
+        <div class="board-top" id="boardTop">
+          <div class="lane-grid" id="laneGrid"></div>
+          <div class="target-strip" id="targetStrip"></div>
+          <div class="note-layer" id="noteLayer"></div>
+          <div class="judge-line"></div>
+        </div>
+        <div class="keys-shell">
+          <div class="key-row" id="keyRow"></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
