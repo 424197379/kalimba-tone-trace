@@ -1,12 +1,13 @@
 {
   "name": "kalimba-tone-trace",
-  "version": "1.1.0",
+  "version": "2.2.0",
   "private": true,
   "description": "Kalimba ToneTrace, a local-first kalimba listening and follow-practice PWA.",
   "scripts": {
     "start": "node serve-kalimba.js",
     "serve": "node serve-kalimba.js",
     "validate:songs": "node scripts/validate-songs.mjs",
+    "report:rhythm": "node scripts/report-rhythm-gaps.mjs",
     "build:songs": "node scripts/build-song-library.mjs",
     "check": "npm run validate:songs && node --check src/app.js && node --check src/songs.js && node --check src/song-store.js && node --check src/song-library.js && node --check src/pitch.js && node --check service-worker.js"
   },

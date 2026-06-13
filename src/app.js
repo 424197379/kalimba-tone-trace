@@ -5,20 +5,53 @@ import { detectPitch, getNearestNote } from "./pitch.js";
 const APP_NAME = "卡林巴循音";
 
     function buildSongEvents(song) {
-      return song.steps
-        .map(([name, beat, duration], index) => {
-          const lane = NOTE_INDEX.get(name);
-          if (lane == null) {
-            throw new Error(`${song.title} 包含未知音名: ${name}`);
-          }
-          return {
-            id: index,
-            name,
-            lane,
+      const sourceEvents = Array.isArray(song.events)
+        ? song.events
+        : song.steps.map(([name, beat, duration]) => ({
             beat,
             duration,
+            notes: [{ name, role: "melody", judge: true, velocity: 1 }]
+          }));
+
+      return sourceEvents
+        .map((sourceEvent, index) => {
+          const notes = sourceEvent.notes
+            .map((note) => {
+              const lane = NOTE_INDEX.get(note.name);
+              if (lane == null) {
+                throw new Error(`${song.title} 包含未知音名: ${note.name}`);
+              }
+              return {
+                name: note.name,
+                lane,
+                role: note.role || "melody",
+                judge: Boolean(note.judge),
+                velocity: Number.isFinite(Number(note.velocity)) ? Number(note.velocity) : 1
+              };
+            })
+            .sort((a, b) => a.lane - b.lane);
+          const markedJudgeNotes = notes.filter((note) => note.judge);
+          const melodyJudgeNotes = markedJudgeNotes.filter((note) => note.role === "melody");
+          const judgeNotes = song.judgementMode === "chord"
+            ? markedJudgeNotes
+            : melodyJudgeNotes.slice(0, 1);
+          const primaryNote = judgeNotes[0] || notes.find((note) => note.role === "melody") || notes[0];
+          const judgeLanes = [...new Set(judgeNotes.map((note) => note.lane))];
+
+          return {
+            id: index,
+            name: primaryNote.name,
+            lane: primaryNote.lane,
+            beat: Number(sourceEvent.beat),
+            duration: Number(sourceEvent.duration),
+            judgeWindow: Number(sourceEvent.judgeWindow || 0),
+            notes,
+            judgeNotes,
+            judgeLanes,
+            pendingJudgeLanes: new Set(judgeLanes),
             hit: false,
             missed: false,
+            skipped: false,
             demoPlayed: false,
             lockedUntil: 0
           };
@@ -26,11 +59,94 @@ const APP_NAME = "卡林巴循音";
         .sort((a, b) => a.beat - b.beat || a.id - b.id);
     }
 
-    function getSongTotalBeats(steps) {
-      if (!steps.length) {
+    function getAccompanimentConfig(song) {
+      if (song?.autoAccompaniment?.events?.length) {
+        return song.autoAccompaniment;
+      }
+
+      const variantWithAccompaniment = getSongVariants(song || {})
+        .find((variant) => variant.autoAccompaniment?.events?.length);
+      return variantWithAccompaniment?.autoAccompaniment || null;
+    }
+
+    function getDefaultAccompanimentEnabled(song) {
+      const config = getAccompanimentConfig(song);
+      return Boolean(config?.events?.length && config.enabledByDefault !== false && song?.judgementMode !== "chord");
+    }
+
+    function getDefaultAccompanimentVolume(song) {
+      const config = getAccompanimentConfig(song);
+      const volume = Number(config?.volume);
+      return Number.isFinite(volume) ? clamp(volume, 0, 1) : 0.38;
+    }
+
+    function buildAutoAccompanimentEvents(song) {
+      const config = getAccompanimentConfig(song);
+      if (!Array.isArray(config?.events) || !config.events.length) {
+        return [];
+      }
+
+      return config.events
+        .map((sourceEvent, index) => {
+          if (!sourceEvent || typeof sourceEvent !== "object") {
+            return null;
+          }
+
+          const beat = Number(sourceEvent.beat);
+          const duration = Number(sourceEvent.duration);
+          if (!Number.isFinite(beat) || beat < 0 || !Number.isFinite(duration) || duration <= 0) {
+            return null;
+          }
+
+          const notes = Array.isArray(sourceEvent.notes)
+            ? sourceEvent.notes
+                .map((note) => {
+                  const lane = NOTE_INDEX.get(note.name);
+                  if (lane == null) {
+                    return null;
+                  }
+
+                  const velocity = Number(note.velocity);
+                  return {
+                    name: note.name,
+                    lane,
+                    role: note.role || "harmony",
+                    velocity: Number.isFinite(velocity) ? velocity : 0.45
+                  };
+                })
+                .filter(Boolean)
+                .sort((a, b) => a.lane - b.lane)
+            : [];
+
+          if (!notes.length) {
+            return null;
+          }
+
+          return {
+            id: index,
+            beat,
+            duration,
+            notes,
+            played: false
+          };
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.beat - b.beat || a.id - b.id);
+    }
+
+    function getSongTotalBeats(events) {
+      if (!events.length) {
         return 0;
       }
-      return Math.max(...steps.map(([, beat, duration]) => beat + duration));
+      return Math.max(...events.map((event) => event.beat + event.duration));
+    }
+
+    function isLaneInEvent(lane, event) {
+      return event && event.judgeLanes.includes(lane);
+    }
+
+    function getJudgeableEventCount() {
+      return songEvents.filter((event) => event.judgeLanes.length > 0).length;
     }
 
     function getInitialSongId() {
@@ -50,9 +166,11 @@ const APP_NAME = "卡林巴循音";
     let currentSongId = getInitialSongId();
     let currentSong = songLibrary[currentSongId];
     let songEvents = buildSongEvents(currentSong);
-    let songTotalBeats = getSongTotalBeats(currentSong.steps);
+    let accompanimentEvents = buildAutoAccompanimentEvents(currentSong);
+    let songTotalBeats = getSongTotalBeats(songEvents);
     const scoreBeatWidth = 78;
     const scoreTrackPadding = 56;
+    const noteLaneInsetRatio = 0.08;
 
     let bpm = currentSong.bpm;
     let beatSeconds = 60 / bpm;
@@ -61,6 +179,8 @@ const APP_NAME = "卡林巴循音";
     let speedFactor = 0.55;
     let fallLeadSeconds = 4.25;
     const keyScaleStorageKey = "kalimba-key-scale";
+    const accompanimentEnabledStorageKey = "kalimba-accompaniment-enabled";
+    const accompanimentVolumeStorageKey = "kalimba-accompaniment-volume";
     const keyScaleMin = 0.72;
     const keyScaleMax = 1.55;
     let keyScale = 1;
@@ -70,6 +190,7 @@ const APP_NAME = "卡林巴循音";
     const lateGraceSeconds = 0.36;
     const detectionHoldSeconds = 0.16;
     const wrongFlashSeconds = 0.18;
+    const beamSwitchLeadSeconds = 0.12;
 
     const laneGrid = document.getElementById("laneGrid");
     const targetStrip = document.getElementById("targetStrip");
@@ -82,6 +203,9 @@ const APP_NAME = "卡林巴循音";
     const scoreNotes = document.getElementById("scoreNotes");
     const scoreCursor = document.getElementById("scoreCursor");
     const scoreNow = document.getElementById("scoreNow");
+    const songProgress = document.getElementById("songProgress");
+    const songProgressFill = document.getElementById("songProgressFill");
+    const songProgressThumb = document.getElementById("songProgressThumb");
 
     const statusText = document.getElementById("statusText");
     const micText = document.getElementById("micText");
@@ -103,9 +227,14 @@ const APP_NAME = "卡林巴循音";
     const songSpeedBtn = document.getElementById("songSpeedBtn");
     const keyScaleBtn = document.getElementById("keyScaleBtn");
     const currentSongText = document.getElementById("currentSongText");
+    const songVersionBtn = document.getElementById("songVersionBtn");
     const changeSongBtn = document.getElementById("changeSongBtn");
     const speedSlider = document.getElementById("speedSlider");
     const speedValue = document.getElementById("speedValue");
+    const accompanimentBtn = document.getElementById("accompanimentBtn");
+    const accompanimentVolumeWrap = document.getElementById("accompanimentVolumeWrap");
+    const accompanimentVolumeSlider = document.getElementById("accompanimentVolumeSlider");
+    const accompanimentVolumeValue = document.getElementById("accompanimentVolumeValue");
     const practiceTitle = document.getElementById("practiceTitle");
     const practiceHint = document.getElementById("practiceHint");
     const scoreTitle = document.getElementById("scoreTitle");
@@ -146,13 +275,19 @@ const APP_NAME = "卡林巴循音";
     let pausedElapsed = 0;
     let totalHits = 0;
     let combo = 0;
-    let expectedLane = null;
+    let expectedLanes = [];
+    let activeBeamLane = null;
+    let storedAccompanimentEnabled = readStoredAccompanimentEnabled();
+    let storedAccompanimentVolume = readStoredAccompanimentVolume();
+    let accompanimentEnabled = storedAccompanimentEnabled ?? getDefaultAccompanimentEnabled(currentSong);
+    let accompanimentVolume = storedAccompanimentVolume ?? getDefaultAccompanimentVolume(currentSong);
     let lastWrongLane = null;
     let lastWrongAt = 0;
     let signalPeakUntil = 0;
     let waitingServiceWorker = null;
     let reloadRequestedForUpdate = false;
     let refreshingForUpdate = false;
+    let seekingWithProgress = false;
     let kalimbaSamplePreloadPromise = null;
 
     const kalimbaSampleBuffers = new Map();
@@ -188,6 +323,52 @@ const APP_NAME = "卡林巴循音";
 
     function clamp(value, min, max) {
       return Math.min(max, Math.max(min, value));
+    }
+
+    function readStoredAccompanimentEnabled() {
+      try {
+        const value = localStorage.getItem(accompanimentEnabledStorageKey);
+        if (value === "true") {
+          return true;
+        }
+        if (value === "false") {
+          return false;
+        }
+      } catch (error) {
+        return null;
+      }
+      return null;
+    }
+
+    function storeAccompanimentEnabled(enabled) {
+      storedAccompanimentEnabled = enabled;
+      try {
+        localStorage.setItem(accompanimentEnabledStorageKey, String(enabled));
+      } catch (error) {
+        // Ignore private browsing or storage quota failures.
+      }
+    }
+
+    function readStoredAccompanimentVolume() {
+      try {
+        const storedValue = localStorage.getItem(accompanimentVolumeStorageKey);
+        if (storedValue == null) {
+          return null;
+        }
+        const value = Number(storedValue);
+        return Number.isFinite(value) ? clamp(value, 0, 1) : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function storeAccompanimentVolume(volume) {
+      storedAccompanimentVolume = volume;
+      try {
+        localStorage.setItem(accompanimentVolumeStorageKey, String(volume));
+      } catch (error) {
+        // Ignore private browsing or storage quota failures.
+      }
     }
 
     function getTouchDistance(touches) {
@@ -331,6 +512,8 @@ const APP_NAME = "卡林巴循音";
       if (currentSongText) {
         currentSongText.textContent = currentSong.title;
       }
+      applySongVersionControl();
+      applyAccompanimentControl();
       const defaultSpeed = getSongDefaultSpeedFactor();
       songSpeedBtn.textContent = `曲目默认 ${defaultSpeed.toFixed(2)}x`;
       songSpeedBtn.title = `切换到 ${currentSong.title} 适合听旋律的默认速率`;
@@ -340,14 +523,82 @@ const APP_NAME = "卡林巴循音";
       return Number(currentSong.defaultSpeedFactor || 1);
     }
 
-    function setCurrentSong(songId) {
+    function getSongBaseId(song) {
+      return song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id);
+    }
+
+    function getSongVersionRank(song) {
+      if (song.arrangementKind === "chord" || song.judgementMode === "chord") {
+        return 1;
+      }
+      return 0;
+    }
+
+    function getSongVariants(song) {
+      const baseSongId = getSongBaseId(song);
+      return Object.values(songLibrary)
+        .filter((candidate) => getSongBaseId(candidate) === baseSongId)
+        .sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"));
+    }
+
+    function applySongVersionControl() {
+      if (!songVersionBtn) {
+        return;
+      }
+
+      const variants = getSongVariants(currentSong);
+      songVersionBtn.hidden = variants.length < 2;
+      songVersionBtn.disabled = variants.length < 2;
+      songVersionBtn.textContent = currentSong.versionLabel || "主旋律版";
+      songVersionBtn.title = variants.length < 2
+        ? "当前曲目暂无其他版本"
+        : `切换到 ${variants.find((song) => song.id !== currentSong.id)?.versionLabel || "其他版本"}`;
+    }
+
+    function applyAccompanimentControl() {
+      const hasAccompaniment = accompanimentEvents.length > 0;
+      if (accompanimentBtn) {
+        accompanimentBtn.hidden = !hasAccompaniment;
+        accompanimentBtn.disabled = !hasAccompaniment;
+        accompanimentBtn.classList.toggle("active", hasAccompaniment && accompanimentEnabled);
+        accompanimentBtn.textContent = accompanimentEnabled ? "伴奏 开" : "伴奏 关";
+        accompanimentBtn.title = hasAccompaniment
+          ? "切换自动伴奏播放"
+          : "当前曲目暂无自动伴奏";
+      }
+
+      if (accompanimentVolumeWrap) {
+        accompanimentVolumeWrap.hidden = !hasAccompaniment;
+      }
+      if (accompanimentVolumeSlider) {
+        accompanimentVolumeSlider.disabled = !hasAccompaniment;
+        accompanimentVolumeSlider.value = accompanimentVolume.toFixed(2);
+      }
+      if (accompanimentVolumeValue) {
+        accompanimentVolumeValue.textContent = `${Math.round(accompanimentVolume * 100)}%`;
+      }
+    }
+
+    function syncSongUrl(songId) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("song", songId);
+      window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    }
+
+    function setCurrentSong(songId, options = {}) {
       currentSongId = songLibrary[songId] ? songId : "birthday";
       storeSongId(currentSongId);
+      if (options.syncUrl) {
+        syncSongUrl(currentSongId);
+      }
       currentSong = songLibrary[currentSongId];
       bpm = currentSong.bpm;
       beatSeconds = 60 / bpm;
       songEvents = buildSongEvents(currentSong);
-      songTotalBeats = getSongTotalBeats(currentSong.steps);
+      accompanimentEvents = buildAutoAccompanimentEvents(currentSong);
+      accompanimentEnabled = storedAccompanimentEnabled ?? getDefaultAccompanimentEnabled(currentSong);
+      accompanimentVolume = storedAccompanimentVolume ?? getDefaultAccompanimentVolume(currentSong);
+      songTotalBeats = getSongTotalBeats(songEvents);
       applySongMeta();
       renderStaticBoard();
       resetPracticeState();
@@ -409,18 +660,27 @@ const APP_NAME = "卡林巴循音";
       }
 
       songEvents.forEach((event) => {
-        const note = DISPLAY_KEYS[event.lane];
         const noteEl = document.createElement("div");
         noteEl.className = "note";
-        noteEl.innerHTML = `<div class="note-label">${note.letter}</div><div class="note-degree">${renderDegreeMarkup(note)}</div>`;
+        if (event.notes.length > 1) {
+          noteEl.classList.add("chord-note");
+        }
+        noteEl.innerHTML = renderEventNotesMarkup(event, "note");
         noteLayer.appendChild(noteEl);
         noteEls.set(event.id, noteEl);
 
         const chip = document.createElement("div");
+        const scoreChipWidth = Math.max(28, event.duration * scoreBeatWidth - 10);
         chip.className = "score-note-chip";
+        if (event.notes.length > 1) {
+          chip.classList.add("score-chord-chip");
+        }
+        if (scoreChipWidth < 44) {
+          chip.classList.add("compact-score-note");
+        }
         chip.style.left = `${scoreTrackPadding + event.beat * scoreBeatWidth}px`;
-        chip.style.width = `${Math.max(24, event.duration * scoreBeatWidth - 10)}px`;
-        chip.innerHTML = `<div class="note-degree">${renderDegreeMarkup(note)}</div>`;
+        chip.style.width = `${scoreChipWidth}px`;
+        chip.innerHTML = renderEventNotesMarkup(event, "score-note");
         scoreNotes.appendChild(chip);
         scoreNoteEls.set(event.id, chip);
       });
@@ -430,17 +690,63 @@ const APP_NAME = "卡林巴循音";
       songEvents.forEach((event) => {
         event.hit = false;
         event.missed = false;
+        event.skipped = false;
         event.demoPlayed = false;
         event.lockedUntil = 0;
+        event.pendingJudgeLanes = new Set(event.judgeLanes);
         const noteEl = noteEls.get(event.id);
         if (noteEl) {
           noteEl.className = "note";
+          if (event.notes.length > 1) {
+            noteEl.classList.add("chord-note");
+          }
+          noteEl.querySelectorAll(".tone-heard").forEach((tone) => tone.classList.remove("tone-heard"));
           noteEl.style.opacity = "0";
         }
       });
+      resetAccompanimentEvents();
       totalHits = 0;
       combo = 0;
       updateScore();
+    }
+
+    function resetAccompanimentEvents() {
+      accompanimentEvents.forEach((event) => {
+        event.played = false;
+      });
+    }
+
+    function getAccompanimentTime(event) {
+      return event.beat * getScaledBeatSeconds();
+    }
+
+    function getAccompanimentDurationSeconds(event) {
+      return event.duration * getScaledBeatSeconds();
+    }
+
+    function syncAccompanimentEventsForSeek(seconds) {
+      const progressSeconds = Math.max(0, seconds);
+      accompanimentEvents.forEach((event) => {
+        event.played = getAccompanimentTime(event) < progressSeconds - 0.05;
+      });
+    }
+
+    function playAccompanimentEvents(seconds) {
+      if (!accompanimentEnabled || !accompanimentEvents.length || !audioContext || seconds < 0) {
+        return;
+      }
+
+      accompanimentEvents.forEach((event) => {
+        if (event.played || seconds < getAccompanimentTime(event)) {
+          return;
+        }
+
+        const durationSeconds = Math.max(0.18, getAccompanimentDurationSeconds(event) * 0.86);
+        event.notes.forEach((note) => {
+          playKalimbaNote(note.name, durationSeconds, note.velocity * accompanimentVolume);
+        });
+        event.played = true;
+      });
     }
 
     function updateScore() {
@@ -450,7 +756,7 @@ const APP_NAME = "卡林巴循音";
         return;
       }
 
-      scoreText.textContent = `命中: ${totalHits} / ${songEvents.length}`;
+      scoreText.textContent = `命中: ${totalHits} / ${getJudgeableEventCount()}`;
       comboText.textContent = `连击: ${combo}`;
     }
 
@@ -473,6 +779,80 @@ const APP_NAME = "卡林巴循音";
       const topDots = note.dotsAbove ? "•".repeat(note.dotsAbove) : "";
       const bottomDots = note.dotsBelow ? "•".repeat(note.dotsBelow) : "";
       return `${note.letter} ${topDots}${note.degree}${bottomDots}`;
+    }
+
+    function formatEventTargetText(event) {
+      if (!event || !event.judgeNotes.length) {
+        return "--";
+      }
+
+      return event.judgeNotes
+        .map((note) => formatTargetText(DISPLAY_KEYS[note.lane]))
+        .join(" + ");
+    }
+
+    function getToneXPercent(lane, minLane, laneSpan) {
+      const visibleLaneSpan = Math.max(0.01, laneSpan - noteLaneInsetRatio * 2);
+      return ((lane - minLane + 0.5 - noteLaneInsetRatio) / visibleLaneSpan) * 100;
+    }
+
+    function renderEventNotesMarkup(event, modifier = "note") {
+      const minLane = Math.min(...event.notes.map((note) => note.lane));
+      const maxLane = Math.max(...event.notes.map((note) => note.lane));
+      const laneSpan = Math.max(1, maxLane - minLane + 1);
+      const alignFallingChordTones = modifier === "note" && event.notes.length > 1;
+      const tones = event.notes
+        .map((eventNote) => {
+          const note = DISPLAY_KEYS[eventNote.lane];
+          const classes = [
+            `${modifier}-tone`,
+            eventNote.role,
+            eventNote.judge ? "judge-tone" : "support-tone"
+          ].join(" ");
+          const toneStyle = alignFallingChordTones
+            ? ` style="--tone-x: ${getToneXPercent(eventNote.lane, minLane, laneSpan).toFixed(4)}%;"`
+            : "";
+          return [
+            `<span class="${classes}" data-lane="${eventNote.lane}"${toneStyle}>`,
+            `<span class="${modifier}-tone-letter">${note.letter}</span>`,
+            `<span class="${modifier}-tone-degree">${renderDegreeMarkup(note)}</span>`,
+            "</span>"
+          ].join("");
+        })
+        .join("");
+
+      return `<div class="${modifier}-tone-stack">${tones}</div>`;
+    }
+
+    function formatSongTime(seconds) {
+      const safeSeconds = Math.max(0, Math.round(seconds || 0));
+      const minutes = Math.floor(safeSeconds / 60);
+      const remainSeconds = String(safeSeconds % 60).padStart(2, "0");
+      return `${minutes}:${remainSeconds}`;
+    }
+
+    function getSongProgressDuration() {
+      return Math.max(0.1, getSongEndSeconds());
+    }
+
+    function renderSongProgress(seconds) {
+      if (!songProgress || !songProgressFill || !songProgressThumb) {
+        return;
+      }
+
+      const duration = getSongProgressDuration();
+      const progressSeconds = clamp(seconds, 0, duration);
+      const progressRatio = duration ? progressSeconds / duration : 0;
+      const progressPercent = `${(progressRatio * 100).toFixed(3)}%`;
+      const valueText = `${formatSongTime(progressSeconds)} / ${formatSongTime(duration)}`;
+
+      songProgress.style.setProperty("--song-progress-percent", progressPercent);
+      songProgressFill.style.width = progressPercent;
+      songProgressThumb.style.left = progressPercent;
+      songProgress.setAttribute("aria-valuemax", String(Math.round(duration)));
+      songProgress.setAttribute("aria-valuenow", String(Math.round(progressSeconds)));
+      songProgress.setAttribute("aria-valuetext", valueText);
+      songProgress.title = valueText;
     }
 
     function setStatus(text) {
@@ -557,7 +937,22 @@ const APP_NAME = "卡林巴循音";
     function clearHighlights() {
       laneEls.forEach((el) => el.classList.remove("expected", "heard", "soft", "wrong"));
       keyEls.forEach((el) => el.classList.remove("expected", "heard", "soft", "wrong"));
-      beamEls.forEach((el) => el.classList.remove("active"));
+    }
+
+    function setActiveBeamLane(index) {
+      const indexes = Array.isArray(index) ? index : index == null ? [] : [index];
+      const key = indexes.join("|");
+      if (activeBeamLane === key) {
+        return;
+      }
+
+      beamEls.forEach((beam) => beam.classList.remove("active"));
+      activeBeamLane = key;
+      indexes.forEach((lane) => {
+        if (beamEls[lane]) {
+          beamEls[lane].classList.add("active");
+        }
+      });
     }
 
     function highlightLane(index, kind) {
@@ -566,9 +961,6 @@ const APP_NAME = "卡林巴循音";
       }
       laneEls[index].classList.add(kind);
       keyEls[index].classList.add(kind);
-      if (kind === "expected") {
-        beamEls[index].classList.add("active");
-      }
     }
 
     function getScaledBeatSeconds() {
@@ -601,8 +993,22 @@ const APP_NAME = "卡林巴循音";
       return event.duration * getScaledBeatSeconds();
     }
 
+    function getEventJudgeWindowSeconds(event) {
+      const windowBeats = Number(event.judgeWindow || 0);
+      if (windowBeats > 0) {
+        return Math.max(hitWindowSeconds, windowBeats * getScaledBeatSeconds());
+      }
+      return hitWindowSeconds;
+    }
+
     function getSongEndSeconds() {
-      return Math.max(...songEvents.map((event) => getEventTime(event) + getEventDurationSeconds(event))) + 0.9;
+      const songEventEnd = songEvents.length
+        ? Math.max(...songEvents.map((event) => getEventTime(event) + getEventDurationSeconds(event)))
+        : 0;
+      const accompanimentEnd = accompanimentEvents.length
+        ? Math.max(...accompanimentEvents.map((event) => getAccompanimentTime(event) + getAccompanimentDurationSeconds(event)))
+        : 0;
+      return Math.max(songEventEnd, accompanimentEnd) + 0.9;
     }
 
     function renderScoreProgress(seconds, expectedEvent) {
@@ -612,6 +1018,7 @@ const APP_NAME = "卡林巴循音";
       const trackOffset = cursorX - (scoreTrackPadding + currentBeat * scoreBeatWidth);
       const visualFallLeadSeconds = getVisualFallLeadSeconds();
 
+      renderSongProgress(seconds);
       scoreCursor.style.left = `${cursorX}px`;
       scoreGrid.style.transform = `translateX(${trackOffset}px)`;
       scoreNotes.style.transform = `translateX(${trackOffset}px)`;
@@ -621,7 +1028,7 @@ const APP_NAME = "卡林巴循音";
       } else if (seconds < 0) {
         scoreNow.textContent = "音块下落中";
       } else if (expectedEvent) {
-        scoreNow.textContent = formatTargetText(DISPLAY_KEYS[expectedEvent.lane]);
+        scoreNow.textContent = formatEventTargetText(expectedEvent);
       } else if (seconds >= getSongEndSeconds()) {
         scoreNow.textContent = "结束";
       } else {
@@ -637,8 +1044,171 @@ const APP_NAME = "卡林巴循音";
         const eventEnd = eventTime + getEventDurationSeconds(event);
         chip.classList.toggle("active", expectedEvent && expectedEvent.id === event.id);
         chip.classList.toggle("passed", seconds > eventEnd);
-        chip.classList.toggle("current-heard", activeDetection.lane != null && activeDetection.lane === event.lane && Math.abs(seconds - eventTime) <= hitWindowSeconds);
+        chip.classList.toggle(
+          "current-heard",
+          activeDetection.lane != null &&
+            isLaneInEvent(activeDetection.lane, event) &&
+            Math.abs(seconds - eventTime) <= getEventJudgeWindowSeconds(event)
+        );
       });
+    }
+
+    function getProgressSeekSeconds(clientX) {
+      if (!songProgress) {
+        return 0;
+      }
+      const rect = songProgress.getBoundingClientRect();
+      const ratio = rect.width ? clamp((clientX - rect.left) / rect.width, 0, 1) : 0;
+      return ratio * getSongProgressDuration();
+    }
+
+    function resetDetectionReadout() {
+      activeDetection = {
+        lane: null,
+        candidateLane: null,
+        candidateNote: "--",
+        note: "--",
+        cents: null,
+        frequency: 0,
+        volume: 0,
+        clarity: 0,
+        time: 0,
+        held: false
+      };
+
+      lastStableDetection = {
+        lane: null,
+        candidateLane: null,
+        candidateNote: "--",
+        note: "--",
+        cents: null,
+        frequency: 0,
+        volume: 0,
+        clarity: 0,
+        time: 0
+      };
+
+      heardText.textContent = "--";
+      centsText.textContent = "音准偏差: --";
+      freqText.textContent = "频率: --";
+      levelText.textContent = "输入电平: 0%";
+    }
+
+    function syncSongEventsForSeek(seconds) {
+      const progressSeconds = Math.max(0, seconds);
+      let hitCount = 0;
+
+      songEvents.forEach((event) => {
+        const eventTime = getEventTime(event);
+        const beforeSeekPoint = eventTime < progressSeconds - lateGraceSeconds;
+        const noteEl = noteEls.get(event.id);
+
+        if (beforeSeekPoint) {
+          event.skipped = !event.hit && !event.missed;
+          event.demoPlayed = demoMode;
+        } else {
+          event.hit = false;
+          event.missed = false;
+          event.skipped = false;
+          event.demoPlayed = false;
+          event.lockedUntil = 0;
+          event.pendingJudgeLanes = new Set(event.judgeLanes);
+        }
+
+        if (event.hit) {
+          hitCount += 1;
+        }
+        if (noteEl) {
+          noteEl.classList.toggle("hit", event.hit);
+          noteEl.classList.toggle("missed", event.missed);
+          noteEl.classList.remove("partial-hit");
+          noteEl.querySelectorAll(".tone-heard").forEach((tone) => tone.classList.remove("tone-heard"));
+        }
+      });
+
+      totalHits = hitCount;
+      combo = 0;
+      updateScore();
+    }
+
+    function seekToSongTime(seconds) {
+      const seekSeconds = clamp(seconds, 0, getSongProgressDuration());
+      const wasPlaying = practiceRunning || demoMode;
+
+      pausedElapsed = seekSeconds;
+      if (wasPlaying) {
+        practiceStartAt = performance.now() - seekSeconds * 1000;
+      }
+
+      syncSongEventsForSeek(seekSeconds);
+      syncAccompanimentEventsForSeek(seekSeconds);
+      resetDetectionReadout();
+      expectedLanes = [];
+      lastWrongLane = null;
+      lastWrongAt = 0;
+      renderBoard(seekSeconds);
+    }
+
+    function handleProgressPointer(event) {
+      seekToSongTime(getProgressSeekSeconds(event.clientX));
+    }
+
+    function startProgressSeek(event) {
+      if (!songProgress || (event.button != null && event.button !== 0)) {
+        return;
+      }
+
+      seekingWithProgress = true;
+      songProgress.classList.add("seeking");
+      songProgress.focus({ preventScroll: true });
+      songProgress.setPointerCapture(event.pointerId);
+      event.preventDefault();
+      handleProgressPointer(event);
+    }
+
+    function moveProgressSeek(event) {
+      if (!seekingWithProgress) {
+        return;
+      }
+
+      event.preventDefault();
+      handleProgressPointer(event);
+    }
+
+    function finishProgressSeek(event) {
+      if (!seekingWithProgress) {
+        return;
+      }
+
+      seekingWithProgress = false;
+      songProgress.classList.remove("seeking");
+      if (songProgress.hasPointerCapture(event.pointerId)) {
+        songProgress.releasePointerCapture(event.pointerId);
+      }
+    }
+
+    function handleProgressKeydown(event) {
+      const duration = getSongProgressDuration();
+      const currentSeconds = clamp(currentPracticeTime(), 0, duration);
+      const smallStep = event.shiftKey ? 10 : 2;
+      let nextSeconds = null;
+
+      if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
+        nextSeconds = currentSeconds - smallStep;
+      } else if (event.key === "ArrowRight" || event.key === "ArrowUp") {
+        nextSeconds = currentSeconds + smallStep;
+      } else if (event.key === "Home") {
+        nextSeconds = 0;
+      } else if (event.key === "End") {
+        nextSeconds = duration;
+      }
+
+      if (nextSeconds == null) {
+        return;
+      }
+
+      event.preventDefault();
+      seekToSongTime(nextSeconds);
     }
 
     async function ensureAudioContext() {
@@ -757,7 +1327,7 @@ const APP_NAME = "卡林巴循音";
       return kalimbaSamplePreloadPromise;
     }
 
-    function playDecodedKalimbaSample(noteName, buffer) {
+    function playDecodedKalimbaSample(noteName, buffer, velocity = 1) {
       if (!audioContext || !buffer) {
         return false;
       }
@@ -774,7 +1344,7 @@ const APP_NAME = "卡林巴循音";
       const noteIndex = NOTE_INDEX.get(noteName);
 
       source.buffer = buffer;
-      voice.gain.setValueAtTime(0.92, now);
+      voice.gain.setValueAtTime(0.92 * clamp(velocity, 0.1, 1.2), now);
 
       if (pan) {
         pan.pan.setValueAtTime(((noteIndex ?? 10) - 10) / 34, now);
@@ -788,19 +1358,19 @@ const APP_NAME = "卡林巴循音";
       return true;
     }
 
-    async function playKalimbaSample(noteName) {
+    async function playKalimbaSample(noteName, velocity = 1) {
       const buffer = await loadKalimbaSampleBuffer(noteName);
-      return playDecodedKalimbaSample(noteName, buffer);
+      return playDecodedKalimbaSample(noteName, buffer, velocity);
     }
 
-    async function playKalimbaNote(noteName, durationSeconds) {
+    async function playKalimbaNote(noteName, durationSeconds, velocity = 1) {
       if (!audioContext) {
         return false;
       }
 
-      const playedSample = await playKalimbaSample(noteName);
+      const playedSample = await playKalimbaSample(noteName, velocity);
       if (!playedSample) {
-        createPluckSynth(noteName, durationSeconds);
+        createPluckSynth(noteName, durationSeconds, velocity);
       }
       return playedSample;
     }
@@ -869,7 +1439,7 @@ const APP_NAME = "卡林巴循音";
       micText.textContent = "已连接";
     }
 
-    function createPluckSynth(noteName, durationSeconds) {
+    function createPluckSynth(noteName, durationSeconds, velocity = 1) {
       if (!audioContext) {
         return;
       }
@@ -889,7 +1459,7 @@ const APP_NAME = "卡林巴循音";
       const woodBody = audioContext.createBiquadFilter();
       const nasalBody = audioContext.createBiquadFilter();
 
-      voice.gain.setValueAtTime(0.82, now);
+      voice.gain.setValueAtTime(0.82 * clamp(velocity, 0.1, 1.2), now);
 
       highpass.type = "highpass";
       highpass.frequency.setValueAtTime(95, now);
@@ -1101,17 +1671,22 @@ const APP_NAME = "卡林巴循音";
       micText.textContent = "有输入";
     }
 
+    function isEventResolved(event) {
+      return !event.judgeLanes.length || event.hit || event.missed || event.skipped;
+    }
+
     function getExpectedEvent(seconds) {
       let candidate = null;
       let bestDistance = Infinity;
 
       songEvents.forEach((event) => {
-        if (event.hit || event.missed) {
+        if (isEventResolved(event)) {
           return;
         }
         const eventTime = getEventTime(event);
+        const eventLateGrace = Math.max(lateGraceSeconds, getEventJudgeWindowSeconds(event));
         const distance = Math.abs(seconds - eventTime);
-        if (distance < bestDistance && seconds <= eventTime + lateGraceSeconds) {
+        if (distance < bestDistance && seconds <= eventTime + eventLateGrace) {
           bestDistance = distance;
           candidate = event;
         }
@@ -1120,48 +1695,93 @@ const APP_NAME = "卡林巴循音";
       return candidate;
     }
 
+    function getJudgementEvent(seconds) {
+      let candidate = null;
+      let latestEventTime = -Infinity;
+
+      songEvents.forEach((event) => {
+        if (isEventResolved(event)) {
+          return;
+        }
+        const eventTime = getEventTime(event);
+        const eventLateGrace = Math.max(lateGraceSeconds, getEventJudgeWindowSeconds(event));
+        const inSwitchWindow = seconds >= eventTime - beamSwitchLeadSeconds && seconds <= eventTime + eventLateGrace;
+        if (inSwitchWindow && eventTime >= latestEventTime) {
+          latestEventTime = eventTime;
+          candidate = event;
+        }
+      });
+
+      return candidate;
+    }
+
     function markHit(event) {
-      if (event.hit || event.missed) {
+      if (isEventResolved(event)) {
         return;
       }
       event.hit = true;
+      event.skipped = false;
+      event.pendingJudgeLanes.clear();
       totalHits += 1;
       combo += 1;
       updateScore();
-      noteEls.get(event.id).classList.add("hit");
+      const noteEl = noteEls.get(event.id);
+      if (noteEl) {
+        noteEl.classList.add("hit");
+        noteEl.classList.remove("partial-hit");
+      }
     }
 
     function markMiss(event) {
-      if (event.hit || event.missed) {
+      if (isEventResolved(event)) {
         return;
       }
       event.missed = true;
+      event.skipped = false;
       combo = 0;
       updateScore();
-      noteEls.get(event.id).classList.add("missed");
+      const noteEl = noteEls.get(event.id);
+      if (noteEl) {
+        noteEl.classList.add("missed");
+        noteEl.classList.remove("partial-hit");
+      }
+    }
+
+    function markPartialHit(event, lane) {
+      event.pendingJudgeLanes.delete(lane);
+      const noteEl = noteEls.get(event.id);
+      if (!noteEl) {
+        return;
+      }
+      noteEl.classList.add("partial-hit");
+      noteEl.querySelectorAll(`[data-lane="${lane}"]`).forEach((tone) => tone.classList.add("tone-heard"));
     }
 
     function evaluatePractice(seconds) {
       songEvents.forEach((event) => {
-        if (event.hit || event.missed) {
+        if (isEventResolved(event)) {
           return;
         }
 
         const eventTime = getEventTime(event);
         const delta = seconds - eventTime;
+        const judgeWindow = getEventJudgeWindowSeconds(event);
 
         if (
           activeDetection.lane != null &&
-          Math.abs(delta) <= hitWindowSeconds &&
-          activeDetection.lane === event.lane &&
+          Math.abs(delta) <= judgeWindow &&
+          event.pendingJudgeLanes.has(activeDetection.lane) &&
           seconds >= event.lockedUntil
         ) {
           event.lockedUntil = seconds + 0.16;
-          markHit(event);
+          markPartialHit(event, activeDetection.lane);
+          if (!event.pendingJudgeLanes.size) {
+            markHit(event);
+          }
           return;
         }
 
-        if (delta > lateGraceSeconds) {
+        if (delta > Math.max(lateGraceSeconds, judgeWindow)) {
           markMiss(event);
         }
       });
@@ -1207,19 +1827,27 @@ const APP_NAME = "卡林巴循音";
       boardShell.classList.toggle("signal", now < signalPeakUntil);
 
       const expectedEvent = seconds >= -visualFallLeadSeconds ? getExpectedEvent(seconds) : null;
-      expectedLane = expectedEvent ? expectedEvent.lane : null;
+      const judgementEvent = seconds >= 0 ? getJudgementEvent(seconds) : null;
+      expectedLanes = judgementEvent ? judgementEvent.judgeLanes : [];
+      if (seconds < 0 || seconds >= getSongProgressDuration()) {
+        setActiveBeamLane(null);
+      } else if (judgementEvent) {
+        setActiveBeamLane(judgementEvent.judgeLanes);
+      }
 
       if (expectedEvent) {
-        targetText.textContent = formatTargetText(DISPLAY_KEYS[expectedEvent.lane]);
-        highlightLane(expectedEvent.lane, "expected");
+        targetText.textContent = formatEventTargetText(expectedEvent);
       } else {
         targetText.textContent = "--";
+      }
+      if (judgementEvent) {
+        judgementEvent.judgeLanes.forEach((lane) => highlightLane(lane, "expected"));
       }
 
       renderScoreProgress(seconds, expectedEvent);
 
       if (activeDetection.lane != null) {
-        const kind = expectedLane == null || activeDetection.lane === expectedLane ? "heard" : "wrong";
+        const kind = !expectedLanes.length || expectedLanes.includes(activeDetection.lane) ? "heard" : "wrong";
         highlightLane(activeDetection.lane, kind);
         if (kind === "wrong") {
           lastWrongLane = activeDetection.lane;
@@ -1243,16 +1871,19 @@ const APP_NAME = "卡林巴循音";
         const bottomY = spawnBottomY + progress * travelDistance;
         const topY = bottomY - height;
         const columnWidth = noteLayer.clientWidth / DISPLAY_KEYS.length;
-        const left = event.lane * columnWidth + columnWidth * 0.08;
+        const minLane = Math.min(...event.notes.map((note) => note.lane));
+        const maxLane = Math.max(...event.notes.map((note) => note.lane));
+        const laneSpan = Math.max(1, maxLane - minLane + 1);
+        const left = minLane * columnWidth + columnWidth * noteLaneInsetRatio;
         const visible = progress >= 0 && progress <= 1.04 && (!compactView || (compactVisibleIds.has(event.id) && topY >= 0));
         const closeness = clamp(progress, 0, 1);
 
         noteEl.style.left = `${left}px`;
-        noteEl.style.width = `${columnWidth * 0.84}px`;
+        noteEl.style.width = `${columnWidth * (laneSpan - noteLaneInsetRatio * 2)}px`;
         noteEl.style.height = `${height}px`;
         noteEl.style.transform = `translateY(${topY}px)`;
         noteEl.style.zIndex = `${10 + Math.round(closeness * 90)}`;
-        noteEl.classList.toggle("imminent", expectedEvent && expectedEvent.id === event.id);
+        noteEl.classList.toggle("imminent", judgementEvent && judgementEvent.id === event.id);
 
         if (visible) {
           noteEl.classList.add("visible");
@@ -1265,7 +1896,9 @@ const APP_NAME = "卡林巴循音";
         }
 
         if (demoMode && !event.demoPlayed && seconds >= eventTime) {
-          playKalimbaNote(event.name, Math.max(0.24, durationSeconds * 0.9));
+          event.notes.forEach((note) => {
+            playKalimbaNote(note.name, Math.max(0.24, durationSeconds * 0.9), note.velocity);
+          });
           event.demoPlayed = true;
         }
       });
@@ -1282,8 +1915,11 @@ const APP_NAME = "卡林巴循音";
 
       const seconds = practiceRunning || demoMode ? currentPracticeTime() : pausedElapsed;
       const visualFallLeadSeconds = getVisualFallLeadSeconds();
-      if (practiceRunning && micJudgingEnabled && seconds >= 0) {
+      if (practiceRunning && micJudgingEnabled && seconds >= 0 && !seekingWithProgress) {
         evaluatePractice(seconds);
+      }
+      if ((practiceRunning || demoMode) && !seekingWithProgress) {
+        playAccompanimentEvents(seconds);
       }
       renderBoard(seconds);
 
@@ -1298,12 +1934,12 @@ const APP_NAME = "卡林巴循音";
         setStatus("示范中");
       }
 
-      if (practiceRunning && songEvents.every((event) => event.hit || event.missed)) {
+      if (practiceRunning && songEvents.every(isEventResolved)) {
         practiceRunning = false;
         demoMode = false;
         pausedElapsed = seconds;
         pauseBtn.disabled = true;
-        setStatus(totalHits === songEvents.length ? "完成" : "结束");
+        setStatus(totalHits === getJudgeableEventCount() ? "完成" : "结束");
       }
 
       if (practiceRunning && !micJudgingEnabled && seconds >= getSongEndSeconds()) {
@@ -1334,14 +1970,30 @@ const APP_NAME = "卡林巴循音";
     }
 
     function isSongFinished() {
-      return songEvents.length > 0 && songEvents.every((event) => event.hit || event.missed);
+      return songEvents.length > 0 && songEvents.every(isEventResolved);
     }
 
     async function startPractice() {
+      if (accompanimentEnabled && accompanimentEvents.length) {
+        try {
+          await ensureAudioContext();
+          await preloadKalimbaSamples();
+        } catch (error) {
+          console.warn(`${APP_NAME} could not start accompaniment`, error);
+        }
+      }
       await tryEnableMicrophoneForPractice();
 
       if (isSongFinished() || pausedElapsed >= getSongEndSeconds()) {
         resetPracticeState();
+        if (accompanimentEnabled && accompanimentEvents.length) {
+          try {
+            await ensureAudioContext();
+            await preloadKalimbaSamples();
+          } catch (error) {
+            console.warn(`${APP_NAME} could not restart accompaniment`, error);
+          }
+        }
         await tryEnableMicrophoneForPractice();
       }
 
@@ -1434,7 +2086,7 @@ const APP_NAME = "卡林巴循音";
         time: 0
       };
 
-      expectedLane = null;
+      expectedLanes = [];
       lastWrongLane = null;
       lastWrongAt = 0;
       signalPeakUntil = 0;
@@ -1447,6 +2099,7 @@ const APP_NAME = "卡林巴循音";
       pausedElapsed = -getSessionLeadSeconds();
       setStatus("待开始");
       clearHighlights();
+      setActiveBeamLane(null);
       boardShell.classList.remove("signal");
       resetSongEvents();
       renderBoard(pausedElapsed);
@@ -1485,6 +2138,40 @@ const APP_NAME = "卡林巴循音";
     function applySongDefaultSpeed() {
       speedSlider.value = getSongDefaultSpeedFactor().toFixed(2);
       applySpeed();
+    }
+
+    function toggleAccompaniment() {
+      if (!accompanimentEvents.length) {
+        return;
+      }
+
+      accompanimentEnabled = !accompanimentEnabled;
+      storeAccompanimentEnabled(accompanimentEnabled);
+      if (accompanimentEnabled) {
+        syncAccompanimentEventsForSeek(currentPracticeTime());
+      }
+      applyAccompanimentControl();
+    }
+
+    function applyAccompanimentVolume() {
+      if (!accompanimentVolumeSlider) {
+        return;
+      }
+
+      accompanimentVolume = clamp(Number(accompanimentVolumeSlider.value || "0.38"), 0, 1);
+      storeAccompanimentVolume(accompanimentVolume);
+      applyAccompanimentControl();
+    }
+
+    function toggleSongVersion() {
+      const variants = getSongVariants(currentSong);
+      if (variants.length < 2) {
+        return;
+      }
+
+      const currentIndex = variants.findIndex((song) => song.id === currentSongId);
+      const nextSong = variants[(currentIndex + 1) % variants.length] || variants[0];
+      setCurrentSong(nextSong.id, { syncUrl: true });
     }
 
     function openSongLibrary() {
@@ -1566,9 +2253,25 @@ const APP_NAME = "卡林巴循音";
     demoBtn.addEventListener("click", playDemo);
     songSpeedBtn.addEventListener("click", applySongDefaultSpeed);
     keyScaleBtn.addEventListener("click", resetKeyScale);
+    if (accompanimentBtn) {
+      accompanimentBtn.addEventListener("click", toggleAccompaniment);
+    }
+    if (accompanimentVolumeSlider) {
+      accompanimentVolumeSlider.addEventListener("input", applyAccompanimentVolume);
+    }
+    if (songVersionBtn) {
+      songVersionBtn.addEventListener("click", toggleSongVersion);
+    }
     landscapeBtn.addEventListener("click", requestLandscapeMode);
     if (changeSongBtn) {
       changeSongBtn.addEventListener("click", openSongLibrary);
+    }
+    if (songProgress) {
+      songProgress.addEventListener("pointerdown", startProgressSeek);
+      songProgress.addEventListener("pointermove", moveProgressSeek);
+      songProgress.addEventListener("pointerup", finishProgressSeek);
+      songProgress.addEventListener("pointercancel", finishProgressSeek);
+      songProgress.addEventListener("keydown", handleProgressKeydown);
     }
     if (updateNowBtn) {
       updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);

@@ -3,3 +3,12 @@ dist/
 .DS_Store
 Thumbs.db
 *.log
+private/sheets/raw/*
+private/sheets/ocr/*
+private/sheets/review/*
+private/sheets/archive/*
+!private/sheets/raw/.gitkeep
+!private/sheets/ocr/.gitkeep
+!private/sheets/review/.gitkeep
+!private/sheets/archive/.gitkeep
+private/dev-docs/*

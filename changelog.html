@@ -101,6 +101,18 @@
     </header>
 
     <section>
+      <h2>2.2.0 - 2026-06-13</h2>
+      <ul>
+        <li>新增 V2 内置曲目的 <code>rhythm.restWindows</code> 节奏间歇数据，用于记录主旋律 1 拍以上的呼吸和停顿。</li>
+        <li>自动伴奏生成改为 rest-aware，默认不在主旋律长空档内填充伴奏，改善句尾停顿和弱起间歇听感。</li>
+        <li>为《萱草花》《因为爱情》《安和桥》《大鱼》《天空之城》的节奏间歇写入外部复核来源。</li>
+        <li>新增 <code>npm run report:rhythm</code>，用于报告长空档、伴奏事件数量和空档内伴奏冲突。</li>
+        <li>校验器新增 V2 <code>rhythm</code> 结构检查，并禁止 <code>silent</code> 空档内出现伴奏事件。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v2.2.0</code>。</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>1.1.0 - 2026-06-13</h2>
       <ul>
         <li>从用户录制的 21 音卡林巴录音中切分真实采样，按页面琴键从左到右的音名保存为 <code>d6.mp3</code> 到 <code>e6.mp3</code>。</li>

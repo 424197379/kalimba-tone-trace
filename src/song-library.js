@@ -65,6 +65,10 @@ function getSelectedSongId() {
 }
 
 function getSongTotalBeats(song) {
+  const events = Array.isArray(song.events) ? song.events : [];
+  if (events.length) {
+    return Math.max(...events.map((event) => event.beat + event.duration));
+  }
   if (!song.steps.length) {
     return 0;
   }
@@ -96,6 +100,45 @@ function getSongUploader(song) {
   return song.uploader || song.author || "system";
 }
 
+function getSongVersionLabel(song) {
+  return song.versionLabel || (song.arrangementKind === "chord" ? "和弦版" : "主旋律版");
+}
+
+function getSongBaseId(song) {
+  return song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id);
+}
+
+function getSongVersionRank(song) {
+  return song.arrangementKind === "chord" || song.judgementMode === "chord" ? 1 : 0;
+}
+
+function getPrimarySong(songGroup) {
+  return [...songGroup].sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"))[0];
+}
+
+function getGroupedSongs(songs) {
+  const groups = new Map();
+  songs.forEach((song) => {
+    const baseSongId = getSongBaseId(song);
+    if (!groups.has(baseSongId)) {
+      groups.set(baseSongId, []);
+    }
+    groups.get(baseSongId).push(song);
+  });
+
+  return [...groups.values()].map((variants) => ({
+    baseSongId: getSongBaseId(variants[0]),
+    primary: getPrimarySong(variants),
+    variants: [...variants].sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"))
+  }));
+}
+
+function getSongNoteSummary(song) {
+  const judgeCount = Number(song.judgeNoteCount || song.steps.length || 0);
+  const arrangementCount = Number(song.arrangementNoteCount || judgeCount);
+  return arrangementCount > judgeCount ? `${judgeCount} / ${arrangementCount}` : String(judgeCount);
+}
+
 function formatSongTitleForMessage(title) {
   const text = String(title || "本地歌曲").trim() || "本地歌曲";
   return text.startsWith("《") && text.endsWith("》") ? text : `《${text}》`;
@@ -105,16 +148,20 @@ function getSongDifficulty(song) {
   return normalizeDifficulty(song.difficulty) || "easy";
 }
 
-function getSearchText(song) {
-  const difficulty = getSongDifficulty(song);
+function getSearchText(songGroup) {
+  const { primary, variants } = songGroup;
   return normalizeText([
-    song.id,
-    song.title,
-    song.hint,
-    getSongUploader(song),
-    DIFFICULTY_LABELS[difficulty],
-    difficulty
+    primary.id,
+    primary.title,
+    ...variants.map((variant) => variant.hint),
+    getSongUploader(primary),
+    DIFFICULTY_LABELS[getSongDifficulty(primary)],
+    getSongDifficulty(primary)
   ].join(" "));
+}
+
+function songGroupMatchesDifficulty(songGroup, difficulty) {
+  return difficulty === "all" || getSongDifficulty(songGroup.primary) === difficulty;
 }
 
 function selectSong(songId) {
@@ -132,10 +179,11 @@ function createMeta(label, value, modifier = "") {
   return item;
 }
 
-function createSongCard(song, selectedSongId) {
+function createSongCard(songGroup, selectedSongId, selectedBaseSongId) {
+  const song = songGroup.primary;
   const card = document.createElement("article");
   card.className = "card song-card";
-  if (song.id === selectedSongId) {
+  if (getSongBaseId(song) === selectedBaseSongId) {
     card.classList.add("selected");
   }
 
@@ -163,11 +211,14 @@ function createSongCard(song, selectedSongId) {
 
   body.append(title, meta, hint);
 
+  const isSelected = getSongBaseId(song) === selectedBaseSongId;
   const action = document.createElement("button");
-  action.className = song.id === selectedSongId ? "accent" : "ghost";
+  action.className = `song-action-btn ${isSelected ? "accent" : "ghost"}`;
   action.type = "button";
-  action.textContent = song.id === selectedSongId ? "继续练习" : "开始练习";
-  action.addEventListener("click", () => selectSong(song.id));
+  action.title = isSelected ? "继续练习" : "开始练习";
+  action.setAttribute("aria-label", `${action.title}${song.title}`);
+  action.innerHTML = '<span class="song-action-icon" aria-hidden="true"></span>';
+  action.addEventListener("click", () => selectSong(isSelected ? selectedSongId : song.id));
 
   card.append(body, action);
   return card;
@@ -245,8 +296,8 @@ function renderDifficultyTabs(searchedSongs) {
   }
 
   const counts = Object.fromEntries(DIFFICULTY_LEVELS.map((difficulty) => [difficulty, 0]));
-  searchedSongs.forEach((song) => {
-    counts[getSongDifficulty(song)] += 1;
+  searchedSongs.forEach((songGroup) => {
+    counts[getSongDifficulty(songGroup.primary)] += 1;
   });
 
   difficultyTabs.replaceChildren(
@@ -257,19 +308,19 @@ function renderDifficultyTabs(searchedSongs) {
 
 function renderSongList() {
   const selectedSongId = getSelectedSongId();
+  const selectedSong = songLibrary[selectedSongId] || songLibrary.birthday;
+  const selectedBaseSongId = getSongBaseId(selectedSong);
   const query = normalizeText(songSearchInput.value);
-  const songs = Object.values(songLibrary);
+  const songs = getGroupedSongs(Object.values(songLibrary));
   const searchedSongs = query
     ? songs.filter((song) => getSearchText(song).includes(query))
     : songs;
-  const matchedSongs = activeDifficulty === "all"
-    ? searchedSongs
-    : searchedSongs.filter((song) => getSongDifficulty(song) === activeDifficulty);
+  const matchedSongs = searchedSongs.filter((songGroup) => songGroupMatchesDifficulty(songGroup, activeDifficulty));
 
   renderDifficultyTabs(searchedSongs);
   songList.replaceChildren();
   matchedSongs.forEach((song) => {
-    songList.appendChild(createSongCard(song, selectedSongId));
+    songList.appendChild(createSongCard(song, selectedSongId, selectedBaseSongId));
   });
 
   songCountText.textContent = `显示 ${matchedSongs.length} / ${searchedSongs.length} 首`;

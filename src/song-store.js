@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "1.1.0";
+export const APP_VERSION = "2.2.0";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -46,10 +46,19 @@ const DEGREE_TO_NOTE = {
   7: "B"
 };
 
+const NOTE_ROLES = new Set(["melody", "harmony", "bass", "arpeggio", "ornament"]);
+const ARRANGEMENT_KINDS = new Set(["melody", "chord"]);
+const JUDGEMENT_MODES = new Set(["melody", "chord"]);
+const ACCOMPANIMENT_MIN_VELOCITY = 0.05;
+const ACCOMPANIMENT_MAX_VELOCITY = 1.2;
+const MELODY_VERSION_LABEL = "主旋律版";
+const CHORD_VERSION_LABEL = "和弦版";
+
 export const AI_SONG_PROMPT = `你需要从我提供的简谱图片中识别主旋律，并输出一个可被卡林巴循音 App 导入的纯 JSON 对象。
 
 只输出 JSON，不要输出 Markdown，不要代码块，不要解释。
 JSON 必须使用双引号，不能有注释，不能有尾随逗号。
+用户上传只支持主旋律版：schemaVersion 必须为 1，不要输出 schemaVersion 2、events、和弦、伴奏或多音同拍结构。
 
 目标乐器是 21 音 C 调卡林巴，只支持自然音：F3、G3、A3、B3、C4-D6、E6。请把图片中的主旋律转成 C 调简谱后再输出，key 必须为 "C"。
 
@@ -192,6 +201,216 @@ export function compileNotationToSteps(notation) {
     .sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]));
 }
 
+function normalizeNoteName(value) {
+  const noteName = String(value || "").trim();
+  return NOTE_INDEX.has(noteName) ? noteName : null;
+}
+
+function normalizeEventNote(rawNote, fallbackJudge = false) {
+  const source = typeof rawNote === "string" ? { name: rawNote } : rawNote;
+  if (!source || typeof source !== "object" || Array.isArray(source)) {
+    return null;
+  }
+
+  const name = normalizeNoteName(source.name);
+  if (!name) {
+    return null;
+  }
+
+  const role = NOTE_ROLES.has(source.role) ? source.role : "melody";
+  const velocity = clamp(normalizeNumber(source.velocity, 1), 0.1, 1.2);
+  return {
+    name,
+    role,
+    judge: typeof source.judge === "boolean" ? source.judge : fallbackJudge,
+    velocity
+  };
+}
+
+function normalizeStepList(steps) {
+  if (!Array.isArray(steps) || !steps.length) {
+    return [];
+  }
+
+  return steps
+    .map((step) => {
+      if (!Array.isArray(step) || step.length !== 3) {
+        return null;
+      }
+
+      const [name, beat, duration] = step;
+      const noteName = normalizeNoteName(name);
+      const beatNumber = Number(beat);
+      const durationNumber = Number(duration);
+      if (!noteName || !Number.isFinite(beatNumber) || beatNumber < 0 || !Number.isFinite(durationNumber) || durationNumber <= 0) {
+        return null;
+      }
+
+      return [noteName, beatNumber, durationNumber];
+    })
+    .filter(Boolean)
+    .sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]));
+}
+
+function normalizeEventsFromSteps(steps) {
+  return normalizeStepList(steps).map(([name, beat, duration]) => ({
+    beat,
+    duration,
+    notes: [
+      {
+        name,
+        role: "melody",
+        judge: true,
+        velocity: 1
+      }
+    ]
+  }));
+}
+
+function normalizeSongEvents(song) {
+  if (Number(song.schemaVersion || 1) === 2) {
+    if (!Array.isArray(song.events) || !song.events.length) {
+      return [];
+    }
+
+    return song.events
+      .map((event) => {
+        if (!event || typeof event !== "object" || Array.isArray(event)) {
+          return null;
+        }
+
+        const beat = Number(event.beat);
+        const duration = Number(event.duration);
+        if (!Number.isFinite(beat) || beat < 0 || !Number.isFinite(duration) || duration <= 0) {
+          return null;
+        }
+
+        const notes = Array.isArray(event.notes)
+          ? event.notes.map((note) => normalizeEventNote(note, false)).filter(Boolean)
+          : [];
+        if (!notes.length) {
+          return null;
+        }
+
+        const normalized = {
+          beat,
+          duration,
+          notes
+        };
+
+        if (Number.isFinite(Number(event.judgeWindow)) && Number(event.judgeWindow) > 0) {
+          normalized.judgeWindow = clamp(Number(event.judgeWindow), 0.1, 2);
+        }
+
+        return normalized;
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.beat - b.beat || a.notes[0].name.localeCompare(b.notes[0].name));
+  }
+
+  return normalizeEventsFromSteps(song.steps);
+}
+
+function normalizeAutoAccompanimentNote(rawNote) {
+  const source = typeof rawNote === "string" ? { name: rawNote } : rawNote;
+  if (!source || typeof source !== "object" || Array.isArray(source)) {
+    return null;
+  }
+
+  const name = normalizeNoteName(source.name);
+  if (!name) {
+    return null;
+  }
+
+  return {
+    name,
+    role: NOTE_ROLES.has(source.role) ? source.role : "harmony",
+    velocity: clamp(normalizeNumber(source.velocity, 0.65), ACCOMPANIMENT_MIN_VELOCITY, ACCOMPANIMENT_MAX_VELOCITY)
+  };
+}
+
+function normalizeAutoAccompaniment(rawAutoAccompaniment) {
+  if (!rawAutoAccompaniment || typeof rawAutoAccompaniment !== "object" || Array.isArray(rawAutoAccompaniment)) {
+    return null;
+  }
+
+  if (!Array.isArray(rawAutoAccompaniment.events) || !rawAutoAccompaniment.events.length) {
+    return null;
+  }
+
+  const events = rawAutoAccompaniment.events
+    .map((event) => {
+      if (!event || typeof event !== "object" || Array.isArray(event)) {
+        return null;
+      }
+
+      const beat = Number(event.beat);
+      const duration = Number(event.duration);
+      if (!Number.isFinite(beat) || beat < 0 || !Number.isFinite(duration) || duration <= 0) {
+        return null;
+      }
+
+      const seenNotes = new Set();
+      const notes = Array.isArray(event.notes)
+        ? event.notes
+            .map((note) => normalizeAutoAccompanimentNote(note))
+            .filter((note) => {
+              if (!note || seenNotes.has(note.name)) {
+                return false;
+              }
+              seenNotes.add(note.name);
+              return true;
+            })
+        : [];
+      if (!notes.length) {
+        return null;
+      }
+
+      const normalized = {
+        beat,
+        duration,
+        notes
+      };
+
+      if (typeof event.pattern === "string" && event.pattern.trim()) {
+        normalized.pattern = event.pattern.trim();
+      }
+
+      return normalized;
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.beat - b.beat || a.notes[0].name.localeCompare(b.notes[0].name));
+
+  if (!events.length) {
+    return null;
+  }
+
+  return {
+    enabledByDefault: Boolean(rawAutoAccompaniment.enabledByDefault),
+    volume: clamp(normalizeNumber(rawAutoAccompaniment.volume, 0.55), 0, 1),
+    events
+  };
+}
+
+function getJudgeNotesForSong(song, event) {
+  const judgeNotes = event.notes.filter((note) => note.judge);
+  if (song.judgementMode === "chord") {
+    return judgeNotes;
+  }
+
+  return judgeNotes.filter((note) => note.role === "melody").slice(0, 1);
+}
+
+function buildJudgeSteps(song, events) {
+  return events
+    .flatMap((event) => getJudgeNotesForSong(song, event).map((note) => [note.name, event.beat, event.duration]))
+    .sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0]));
+}
+
+function countArrangementNotes(events) {
+  return events.reduce((total, event) => total + event.notes.length, 0);
+}
+
 function getStepTotalBeats(steps) {
   if (!steps.length) {
     return 0;
@@ -332,31 +551,70 @@ function normalizeNotation(rawNotation) {
 }
 
 function assertStepSong(song) {
-  if (!Array.isArray(song.steps) || !song.steps.length) {
-    return false;
-  }
-
-  return song.steps.every(([name, beat, duration]) =>
-    NOTE_INDEX.has(name) &&
-    Number.isFinite(Number(beat)) &&
-    Number.isFinite(Number(duration)) &&
-    Number(duration) > 0
-  );
+  return normalizeStepList(song.steps).length > 0;
 }
 
 function normalizeStoredSong(song) {
-  if (!song || typeof song !== "object" || !assertStepSong(song)) {
+  if (!song || typeof song !== "object") {
     return null;
   }
 
-  const difficulty = normalizeDifficulty(song.difficulty) || estimateSongDifficulty(song);
+  const schemaVersion = Number(song.schemaVersion || 1);
+  if (schemaVersion !== 1 && schemaVersion !== 2) {
+    return null;
+  }
 
-  return {
+  const arrangementKind = ARRANGEMENT_KINDS.has(song.arrangementKind)
+    ? song.arrangementKind
+    : schemaVersion === 2
+      ? "chord"
+      : "melody";
+  const judgementMode = JUDGEMENT_MODES.has(song.judgementMode)
+    ? song.judgementMode
+    : arrangementKind === "chord"
+      ? "chord"
+      : "melody";
+
+  const events = normalizeSongEvents({ ...song, schemaVersion, arrangementKind, judgementMode });
+  if (!events.length) {
+    return null;
+  }
+
+  const songForJudgement = { ...song, arrangementKind, judgementMode };
+  const steps = schemaVersion === 1 ? normalizeStepList(song.steps) : buildJudgeSteps(songForJudgement, events);
+  if (!steps.length && !assertStepSong({ steps: song.steps })) {
+    return null;
+  }
+
+  const judgeNoteCount = steps.length;
+  const arrangementNoteCount = countArrangementNotes(events);
+  const autoAccompaniment = schemaVersion === 2 ? normalizeAutoAccompaniment(song.autoAccompaniment) : null;
+  const difficulty = normalizeDifficulty(song.difficulty) || estimateSongDifficulty({ ...song, steps });
+  const baseSongId = String(song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id)).trim() || song.id;
+
+  const normalizedSong = {
     ...song,
+    schemaVersion,
+    baseSongId,
+    versionLabel: song.versionLabel || (arrangementKind === "chord" ? CHORD_VERSION_LABEL : MELODY_VERSION_LABEL),
+    arrangementKind,
+    judgementMode,
+    events,
+    steps,
+    judgeNoteCount,
+    arrangementNoteCount,
     difficulty,
     uploader: song.uploader || "local",
     source: song.source || "local"
   };
+
+  if (autoAccompaniment) {
+    normalizedSong.autoAccompaniment = autoAccompaniment;
+  } else {
+    delete normalizedSong.autoAccompaniment;
+  }
+
+  return normalizedSong;
 }
 
 export function getCustomSongs() {
@@ -390,7 +648,7 @@ export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
   }
 
   if (Number(parsed.schemaVersion || 1) !== 1) {
-    throw new Error("schemaVersion 目前只支持 1");
+    throw new Error("用户上传只支持 schemaVersion 1 主旋律版；和弦版仅支持内置曲库");
   }
 
   const key = String(parsed.key || "C").trim().toUpperCase();
@@ -418,6 +676,10 @@ export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
     uploader: "local",
     source: "local",
     schemaVersion: 1,
+    baseSongId: id,
+    versionLabel: MELODY_VERSION_LABEL,
+    arrangementKind: "melody",
+    judgementMode: "melody",
     key,
     bpm,
     defaultSpeedFactor,

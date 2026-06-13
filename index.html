@@ -27,7 +27,7 @@
   <main class="page">
     <section class="hero">
       <article class="card title-card">
-        <div class="app-kicker">听音跟练 · <span id="appVersionText">v1.1.0</span></div>
+        <div class="app-kicker">听音跟练 · <span id="appVersionText">v2.2.0</span></div>
         <h1>卡林巴循音</h1>
       </article>
 
@@ -55,11 +55,12 @@
           <div class="song-wrap current-song-wrap">
             <span class="song-label">曲目</span>
             <strong class="current-song-name" id="currentSongText">《生日快乐》</strong>
+            <button class="ghost compact" id="songVersionBtn" type="button" hidden>主旋律版</button>
+            <button class="ghost compact" id="pauseBtn" type="button" disabled>暂停</button>
             <button class="ghost compact" id="changeSongBtn" type="button">换曲</button>
           </div>
           <button class="accent" id="startBtn">开始练习</button>
           <button class="ghost" id="micBtn">麦克风测试</button>
-          <button class="ghost" id="pauseBtn" disabled>暂停</button>
           <button class="ghost" id="resetBtn">重置</button>
           <button id="demoBtn">示范播放</button>
           <label class="speed-wrap">
@@ -69,6 +70,12 @@
           </label>
           <button class="ghost compact" id="songSpeedBtn" type="button">曲目默认速率</button>
           <button class="ghost compact" id="keyScaleBtn" type="button">键宽 100%</button>
+          <button class="ghost compact accompaniment-toggle" id="accompanimentBtn" type="button" hidden>伴奏 开</button>
+          <label class="speed-wrap accompaniment-wrap" id="accompanimentVolumeWrap" hidden>
+            伴奏音量
+            <input id="accompanimentVolumeSlider" type="range" min="0" max="1" step="0.01" value="0.38">
+            <span class="speed-value" id="accompanimentVolumeValue">38%</span>
+          </label>
         </div>
 
         <div class="notice" id="secureNotice"></div>
@@ -100,6 +107,21 @@
           <div class="score-grid" id="scoreGrid"></div>
           <div class="score-notes" id="scoreNotes"></div>
           <div class="score-cursor" id="scoreCursor"></div>
+          <div
+            class="song-progress"
+            id="songProgress"
+            role="slider"
+            tabindex="0"
+            aria-label="歌曲进度"
+            aria-valuemin="0"
+            aria-valuemax="0"
+            aria-valuenow="0"
+            aria-valuetext="0:00 / 0:00"
+          >
+            <span class="song-progress-rail" aria-hidden="true"></span>
+            <span class="song-progress-fill" id="songProgressFill" aria-hidden="true"></span>
+            <span class="song-progress-thumb" id="songProgressThumb" aria-hidden="true"></span>
+          </div>
         </div>
       </div>
 

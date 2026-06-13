@@ -1,0 +1,3354 @@
+{
+  "schemaVersion": 2,
+  "id": "xuan-cao-hua-chord",
+  "baseSongId": "xuan-cao-hua",
+  "title": "《萱草花》",
+  "versionLabel": "和弦版",
+  "arrangementKind": "chord",
+  "judgementMode": "chord",
+  "uploader": "system",
+  "practiceTitle": "《萱草花》和弦版练习轨道",
+  "scoreTitle": "《萱草花》和弦版简谱进度",
+  "hint": "和弦版需要在判定窗口内弹出主旋律与标记的和弦目标音；可用扫弦或分解方式完成。",
+  "difficulty": "medium",
+  "bpm": 84,
+  "defaultSpeedFactor": 0.9,
+  "beatsPerMeasure": 4,
+  "key": "C",
+  "tuning": "21-key-c",
+  "events": [
+    {
+      "beat": 0,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 1.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 2.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 5.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 8,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 9,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 10,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 11,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 16,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 17,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 18,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 20,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 21,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 24,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "F4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 25,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "B4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 26,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "F4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 27,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 28,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 30,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 31,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 32,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 33.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 34.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 37.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 38.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 40,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 41,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 42,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 43,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 48,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 49,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 50,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 52,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 53,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 54,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 55,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 56,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 57.75,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 58.5,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 59.25,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 60,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 64,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 65,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 66,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 67,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 68,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 72,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 73,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 73.75,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 74.5,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 75.25,
+      "duration": 0.75,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 76,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 80,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 81,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 82,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 83,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 84,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 88,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "F4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 89.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "B4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 90.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 92,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 96,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 97.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "B4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 98.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 100,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "G3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 101.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 102.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 104,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 105.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "E4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 106.75,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "D4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 108,
+      "duration": 2.75,
+      "notes": [
+        {
+          "name": "C4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "E4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "G4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "B3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    },
+    {
+      "beat": 112,
+      "duration": 4,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        },
+        {
+          "name": "F3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        },
+        {
+          "name": "C4",
+          "role": "harmony",
+          "judge": true,
+          "velocity": 0.72
+        },
+        {
+          "name": "A3",
+          "role": "bass",
+          "judge": true,
+          "velocity": 0.6
+        }
+      ],
+      "judgeWindow": 0.6
+    }
+  ],
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": false,
+    "hasRepeats": true,
+    "unsupported": [
+      "原照片歌名印作“萱雨花”，按用户要求修正为《萱草花》；源谱 1=C#，已按 C 调卡林巴度数映射；反复段按练习版展开。",
+      "V2 和弦版为 21 音 C 调卡林巴练习编配，优先保持可弹性和判定稳定性；不等同于出版级原版和声还原。",
+      "harmonic-density:full; generated-from:xuan-cao-hua; progression:I-V-vi-iii-IV-I-ii-V"
+    ],
+    "unsureMeasures": [],
+    "harmonyReview": {
+      "confidence": "medium-cross-checked",
+      "method": "C-major triad accompaniment adapted for 21-key kalimba and strict chord judging",
+      "sources": [
+        {
+          "title": "??? C?????",
+          "url": "https://www.2qupu.com/jita/20210322/22876.html"
+        },
+        {
+          "title": "??? C?????",
+          "url": "https://www.jitabang.com/jitapu/2805.html"
+        }
+      ]
+    },
+    "autoAccompaniment": {
+      "generatedFrom": "existing schemaVersion 2 harmony/bass events",
+      "generator": "private/generate-auto-accompaniment.mjs --inject-only",
+      "pattern": "4/4 bass-harmony-bass-harmony",
+      "restPolicy": "silent restWindows are not filled",
+      "reviewRequired": []
+    }
+  },
+  "autoAccompaniment": {
+    "enabledByDefault": true,
+    "volume": 0.38,
+    "events": [
+      {
+        "beat": 0,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 1,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 2,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 3,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 4,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 5,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 6,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 7,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 8,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 9,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 10,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 11,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 13,
+        "duration": 0.5,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 17,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 18,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 21,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 22,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 24,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 25,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 26,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 27,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 28,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 30,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 31,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 32,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 33,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 34,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 35,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 36,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 37,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 38,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 39,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 40,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 41,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 42,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 43,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 44,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 45,
+        "duration": 0.5,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 48,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 49,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 50,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 52,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 53,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 54,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 55,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 56,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 57,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 58,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 59,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 60,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 61,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 62,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 64,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 65,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 66,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 67,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 68,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 69,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 70,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 72,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 73,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 74,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 75,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 76,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 77,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 78,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 80,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 81,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 82,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 83,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 84,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 85,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 86,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 88,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 89,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 90,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 91,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "F4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 92,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 93,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 94,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 96,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 97,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 98,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 99,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 100,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 101,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 102,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 103,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 104,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 105,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 106,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 107,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 108,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 109,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "G4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 110,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "B3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 112,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          },
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 113,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      },
+      {
+        "beat": 114,
+        "duration": 0.75,
+        "pattern": "filled-bass",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.42
+          }
+        ]
+      },
+      {
+        "beat": 115,
+        "duration": 0.75,
+        "pattern": "filled-harmony",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.36
+          }
+        ]
+      }
+    ]
+  },
+  "rhythm": {
+    "sourceStatus": "verified",
+    "pickupBeats": 0,
+    "restWindows": [
+      {
+        "beat": 13.5,
+        "duration": 2.5,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 19,
+        "duration": 1,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 23,
+        "duration": 1,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 29,
+        "duration": 1,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 45.5,
+        "duration": 2.5,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 51,
+        "duration": 1,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 62.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 70.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 78.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 86.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 94.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      },
+      {
+        "beat": 110.75,
+        "duration": 1.25,
+        "policy": "silent",
+        "reason": "phrase-rest"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Qupu123 Xuan Cao Hua kalimba jianpu",
+        "url": "https://www.qupu123.com/Mobile-view-id-367151.html"
+      }
+    ]
+  }
+}

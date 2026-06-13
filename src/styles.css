@@ -297,6 +297,10 @@
       flex: 0 0 auto;
     }
 
+    .current-song-wrap #pauseBtn {
+      min-width: 54px;
+    }
+
     .speed-wrap input[type="range"] {
       width: 100%;
       min-width: 120px;
@@ -308,6 +312,17 @@
       text-align: right;
       color: var(--ink);
       font-weight: 600;
+    }
+
+    .accompaniment-toggle.active {
+      background: rgba(58, 139, 97, 0.13);
+      color: var(--good);
+      border-color: rgba(58, 139, 97, 0.24);
+    }
+
+    .accompaniment-wrap {
+      flex: 0 1 220px;
+      max-width: 280px;
     }
 
     .notice {
@@ -743,8 +758,25 @@
       font-size: 13px;
     }
 
-    .song-card button {
-      min-width: 88px;
+    .song-action-btn {
+      width: 44px;
+      min-width: 44px;
+      height: 44px;
+      min-height: 44px;
+      padding: 0;
+      border-radius: 999px;
+      flex: 0 0 auto;
+      align-self: center;
+    }
+
+    .song-action-icon {
+      width: 0;
+      height: 0;
+      display: block;
+      margin-left: 3px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 11px solid currentColor;
     }
 
     .empty-state {
@@ -899,10 +931,17 @@
 
     .score-note-chip {
       position: absolute;
-      top: 18px;
-      min-width: 24px;
-      padding: 4px 2px 6px;
+      top: 12px;
+      bottom: 20px;
+      min-width: 28px;
+      padding: 3px 4px;
       border-radius: 10px;
+      display: grid;
+      grid-template-rows: auto auto;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+      gap: 1px;
       text-align: center;
       color: var(--ink);
       background: rgba(255, 252, 247, 0.86);
@@ -926,9 +965,96 @@
       box-shadow: 0 0 0 3px rgba(47, 143, 91, 0.18);
     }
 
-    .score-note-chip .note-degree {
-      margin-top: 0;
-      opacity: 1;
+    .score-note-chip.compact-score-note {
+      grid-template-columns: auto auto;
+      grid-template-rows: 1fr;
+      gap: 3px;
+    }
+
+    .score-note-letter,
+    .score-note-degree {
+      position: relative;
+      z-index: 1;
+    }
+
+    .score-note-letter {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    .score-note-degree {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0.9;
+    }
+
+    .score-note-tone-stack {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2px;
+      max-width: 100%;
+    }
+
+    .score-note-tone {
+      display: inline-grid;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: center;
+      min-width: 18px;
+      line-height: 0.9;
+    }
+
+    .score-note-tone-letter,
+    .score-note-tone-degree {
+      position: relative;
+      z-index: 1;
+    }
+
+    .score-note-tone-letter {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .score-note-tone-degree {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0.9;
+    }
+
+    .score-note-tone.support-tone {
+      opacity: 0.72;
+    }
+
+    .score-note-chip.score-chord-chip {
+      align-content: center;
+      padding-inline: 5px;
+    }
+
+    .score-note-degree .degree-stack,
+    .score-note-tone-degree .degree-stack {
+      line-height: 0.9;
+    }
+
+    .score-note-degree .degree-dots,
+    .score-note-tone-degree .degree-dots {
+      min-height: 5px;
+      font-size: 7px;
+      line-height: 0.8;
+    }
+
+    .score-note-degree .degree-number,
+    .score-note-tone-degree .degree-number {
+      font-size: 11px;
+      line-height: 0.95;
     }
 
     .score-cursor {
@@ -953,6 +1079,59 @@
       background: var(--accent);
       transform: translate(-50%, 0);
       box-shadow: 0 0 0 4px rgba(207, 92, 54, 0.12);
+    }
+
+    .song-progress {
+      --song-progress-percent: 0%;
+      position: absolute;
+      right: 12px;
+      bottom: 4px;
+      left: 12px;
+      height: 16px;
+      z-index: 6;
+      cursor: pointer;
+      touch-action: none;
+      outline: none;
+    }
+
+    .song-progress-rail,
+    .song-progress-fill {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 5px;
+      border-radius: 999px;
+      transform: translateY(-50%);
+    }
+
+    .song-progress-rail {
+      right: 0;
+      background: rgba(87, 68, 52, 0.14);
+    }
+
+    .song-progress-fill {
+      width: var(--song-progress-percent);
+      background: linear-gradient(90deg, rgba(187, 93, 56, 0.84), rgba(222, 135, 92, 0.92));
+      box-shadow: 0 0 0 1px rgba(187, 93, 56, 0.08);
+    }
+
+    .song-progress-thumb {
+      position: absolute;
+      top: 50%;
+      left: var(--song-progress-percent);
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      background: #fff9f2;
+      border: 2px solid var(--primary);
+      box-shadow: 0 3px 8px rgba(41, 27, 18, 0.16);
+      transform: translate(-50%, -50%);
+    }
+
+    .song-progress:hover .song-progress-thumb,
+    .song-progress:focus-visible .song-progress-thumb,
+    .song-progress.seeking .song-progress-thumb {
+      box-shadow: 0 0 0 5px rgba(187, 93, 56, 0.14), 0 3px 8px rgba(41, 27, 18, 0.16);
     }
 
     .board-shell {
@@ -1059,7 +1238,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 3px;
+      gap: 1px;
       text-align: center;
       color: #fff9f2;
       background:
@@ -1101,6 +1280,12 @@
       opacity: 0.45;
     }
 
+    .note.partial-hit {
+      box-shadow:
+        0 0 0 2px rgba(89, 151, 104, 0.32),
+        0 10px 24px rgba(41, 27, 18, 0.2);
+    }
+
     .note-label,
     .note-degree {
       position: relative;
@@ -1110,28 +1295,95 @@
     .note-label {
       font-size: 14px;
       font-weight: 700;
-      letter-spacing: 0.08em;
-      line-height: 1;
+      letter-spacing: 0.04em;
+      line-height: 0.95;
       flex: 0 0 auto;
     }
 
     .note-degree {
       margin-top: 0;
       opacity: 0.84;
-      line-height: 1;
+      line-height: 0.9;
       flex: 0 0 auto;
+    }
+
+    .note-tone-stack {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      width: 100%;
+    }
+
+    .note-tone {
+      min-width: 30px;
+      display: inline-grid;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      align-items: center;
+      padding: 2px 3px;
+      border-radius: 8px;
+      line-height: 0.9;
+    }
+
+    .note-tone.support-tone {
+      opacity: 0.72;
+    }
+
+    .note-tone.judge-tone {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .note-tone.tone-heard {
+      background: rgba(188, 242, 203, 0.28);
+      box-shadow: inset 0 0 0 1px rgba(218, 255, 225, 0.34);
+    }
+
+    .note-tone-letter {
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .note-tone-degree {
+      display: inline-flex;
+      justify-content: center;
+      opacity: 0.9;
+      line-height: 0.9;
+    }
+
+    .note.chord-note {
+      padding-inline: 0;
+    }
+
+    .note.chord-note .note-tone-stack {
+      display: block;
+      align-self: stretch;
+      flex: 1 1 auto;
+      height: 100%;
+    }
+
+    .note.chord-note .note-tone {
+      position: absolute;
+      top: 50%;
+      left: var(--tone-x, 50%);
+      transform: translate(-50%, -50%);
     }
 
     .degree-stack {
       display: inline-flex;
       flex-direction: column;
       align-items: center;
-      line-height: 1;
+      line-height: 0.9;
     }
 
     .degree-dots {
-      min-height: 8px;
-      font-size: 10px;
+      min-height: 6px;
+      font-size: 9px;
+      line-height: 0.85;
       letter-spacing: 0.14em;
     }
 
@@ -1139,6 +1391,7 @@
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 0.04em;
+      line-height: 0.95;
     }
 
     .degree-dots-top,
@@ -1263,7 +1516,8 @@
       }
 
       .song-wrap,
-      .speed-wrap {
+      .speed-wrap,
+      .accompaniment-wrap {
         grid-column: span 2;
       }
 
@@ -1337,6 +1591,7 @@
 
       .score-note-chip {
         top: 9px;
+        bottom: 17px;
       }
 
       .key {
@@ -1373,7 +1628,8 @@
       }
 
       .song-wrap,
-      .speed-wrap {
+      .speed-wrap,
+      .accompaniment-wrap {
         grid-column: span 2;
       }
 
@@ -1386,8 +1642,7 @@
         width: auto;
       }
 
-      .library-header,
-      .song-card {
+      .library-header {
         grid-template-columns: 1fr;
       }
 
@@ -1440,7 +1695,8 @@
       }
 
       .song-card {
-        align-items: stretch;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
       }
 
       .badges {
@@ -1541,7 +1797,8 @@
       }
 
       .song-wrap,
-      .speed-wrap {
+      .speed-wrap,
+      .accompaniment-wrap {
         grid-column: auto;
         flex: none;
         max-width: none;
@@ -1577,6 +1834,10 @@
       .speed-wrap input[type="range"] {
         width: 100%;
         min-width: 78px;
+      }
+
+      .accompaniment-wrap {
+        display: none;
       }
 
       .speed-value {
@@ -1616,9 +1877,26 @@
 
       .score-note-chip {
         top: 4px;
+        bottom: 14px;
         min-width: 20px;
         padding: 2px 2px 3px;
         border-radius: 8px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        gap: 2px;
+      }
+
+      .score-note-letter {
+        font-size: 10px;
+      }
+
+      .score-note-degree .degree-dots {
+        min-height: 4px;
+        font-size: 6px;
+      }
+
+      .score-note-degree .degree-number {
+        font-size: 10px;
       }
 
       .score-note-chip.active {
@@ -1628,6 +1906,23 @@
       .score-cursor {
         top: 4px;
         bottom: 4px;
+      }
+
+      .song-progress {
+        right: 8px;
+        bottom: 0;
+        left: 8px;
+        height: 12px;
+      }
+
+      .song-progress-rail,
+      .song-progress-fill {
+        height: 4px;
+      }
+
+      .song-progress-thumb {
+        width: 12px;
+        height: 12px;
       }
 
       .score-cursor::before {
@@ -1804,7 +2099,6 @@
         grid-template-columns: minmax(150px, 0.95fr) auto auto auto minmax(118px, 1fr) auto;
       }
 
-      #pauseBtn,
       #resetBtn {
         display: none;
       }
@@ -1919,7 +2213,6 @@
         margin: 0;
       }
 
-      html.software-landscape #pauseBtn,
       html.software-landscape #resetBtn,
       html.software-landscape #songSpeedBtn {
         display: none;
@@ -1941,7 +2234,8 @@
       }
 
       html.software-landscape .song-wrap,
-      html.software-landscape .speed-wrap {
+      html.software-landscape .speed-wrap,
+      html.software-landscape .accompaniment-wrap {
         grid-column: auto;
         flex: none;
         max-width: none;
@@ -1977,6 +2271,10 @@
       html.software-landscape .speed-wrap input[type="range"] {
         width: 100%;
         min-width: 78px;
+      }
+
+      html.software-landscape .accompaniment-wrap {
+        display: none;
       }
 
       html.software-landscape .speed-value {
@@ -2016,9 +2314,26 @@
 
       html.software-landscape .score-note-chip {
         top: 4px;
+        bottom: 14px;
         min-width: 20px;
         padding: 2px 2px 3px;
         border-radius: 8px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        gap: 2px;
+      }
+
+      html.software-landscape .score-note-letter {
+        font-size: 10px;
+      }
+
+      html.software-landscape .score-note-degree .degree-dots {
+        min-height: 4px;
+        font-size: 6px;
+      }
+
+      html.software-landscape .score-note-degree .degree-number {
+        font-size: 10px;
       }
 
       html.software-landscape .score-note-chip.active {
@@ -2028,6 +2343,23 @@
       html.software-landscape .score-cursor {
         top: 4px;
         bottom: 4px;
+      }
+
+      html.software-landscape .song-progress {
+        right: 8px;
+        bottom: 0;
+        left: 8px;
+        height: 12px;
+      }
+
+      html.software-landscape .song-progress-rail,
+      html.software-landscape .song-progress-fill {
+        height: 4px;
+      }
+
+      html.software-landscape .song-progress-thumb {
+        width: 12px;
+        height: 12px;
       }
 
       html.software-landscape .score-cursor::before {
