@@ -1,4 +1,4 @@
-const APP_VERSION = "1.0.1";
+const APP_VERSION = "1.0.3";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -6,10 +6,13 @@ const APP_SHELL = [
   "./",
   "./index.html",
   "./changelog.html",
+  "./songs.html",
   "./kalimba-practice.html",
   "./manifest.webmanifest",
   "./src/app.js",
   "./src/pitch.js",
+  "./src/song-library.js",
+  "./src/song-store.js",
   "./src/songs.js",
   "./src/styles.css",
   "./assets/icons/icon-192.png",
@@ -46,6 +49,17 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+function getNavigationFallback(request) {
+  const url = new URL(request.url);
+  const fileName = url.pathname.split("/").pop() || "index.html";
+  const shellPage = `./${fileName}`;
+
+  return caches
+    .match(request)
+    .then((cached) => cached || caches.match(shellPage))
+    .then((cached) => cached || caches.match("./index.html"));
+}
+
 self.addEventListener("fetch", (event) => {
   const { request } = event;
 
@@ -58,10 +72,10 @@ self.addEventListener("fetch", (event) => {
       fetch(request)
         .then((response) => {
           const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put("./index.html", copy));
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
           return response;
         })
-        .catch(() => caches.match("./index.html"))
+        .catch(() => getNavigationFallback(request))
     );
     return;
   }

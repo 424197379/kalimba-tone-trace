@@ -27,7 +27,7 @@
   <main class="page">
     <section class="hero">
       <article class="card title-card">
-        <div class="app-kicker">听音跟练 · <span id="appVersionText">v1.0.1</span></div>
+        <div class="app-kicker">听音跟练 · <span id="appVersionText">v1.0.3</span></div>
         <h1>卡林巴循音</h1>
       </article>
 
@@ -52,10 +52,11 @@
         </div>
 
         <div class="controls">
-          <label class="song-wrap">
-            歌曲
-            <select id="songSelect"></select>
-          </label>
+          <div class="song-wrap current-song-wrap">
+            <span class="song-label">曲目</span>
+            <strong class="current-song-name" id="currentSongText">《生日快乐》</strong>
+            <button class="ghost compact" id="changeSongBtn" type="button">换曲</button>
+          </div>
           <button class="accent" id="startBtn">开始练习</button>
           <button class="ghost" id="micBtn">麦克风测试</button>
           <button class="ghost" id="pauseBtn" disabled>暂停</button>

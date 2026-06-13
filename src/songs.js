@@ -30,6 +30,7 @@ export const DISPLAY_KEYS = [
       birthday: {
         id: "birthday",
         title: "《生日快乐》",
+        uploader: "system",
         practiceTitle: "《生日快乐》练习轨道",
         scoreTitle: "《生日快乐》简谱进度",
         hint: "橙色高亮是现在该弹的琴键。绿色表示你弹对了，红色表示当前听到的音不在目标键位上。",
@@ -46,6 +47,7 @@ export const DISPLAY_KEYS = [
       jasmine: {
         id: "jasmine",
         title: "《茉莉花》",
+        uploader: "system",
         practiceTitle: "《茉莉花》练习轨道",
         scoreTitle: "《茉莉花》简谱进度",
         hint: "这里先放的是适合练习的《茉莉花》简化版主旋律，按 2/4 拍推进，空位会保留停顿。",
@@ -89,6 +91,7 @@ export const DISPLAY_KEYS = [
       chilege: {
         id: "chilege",
         title: "《敕勒歌》",
+        uploader: "system",
         practiceTitle: "《敕勒歌》练习轨道",
         scoreTitle: "《敕勒歌》简谱进度",
         hint: "这里放的是适合 21 音卡林巴练习的《敕勒歌》简化主旋律版本，按 4/4 慢速推进，保留了换句停顿。",
@@ -121,6 +124,7 @@ export const DISPLAY_KEYS = [
       bluebird: {
         id: "bluebird",
         title: "《青鸟》",
+        uploader: "system",
         practiceTitle: "《青鸟》练习轨道",
         scoreTitle: "《青鸟》简谱进度",
         hint: "这里放的是适合 21 音卡林巴的新手副歌简化练习版，保留快速上行和高音落点，默认速率会放慢一些。",
@@ -163,6 +167,7 @@ export const DISPLAY_KEYS = [
       katyusha: {
         id: "katyusha",
         title: "《喀秋莎》",
+        uploader: "system",
         practiceTitle: "《喀秋莎》练习轨道",
         scoreTitle: "《喀秋莎》简谱进度",
         hint: "这里放的是适合 21 音卡林巴的《喀秋莎》简化主旋律练习版，按 4/4 推进，保留了民歌式上行和句尾停顿。",

@@ -188,6 +188,8 @@
 
     button:focus-visible,
     select:focus-visible,
+    input[type="search"]:focus-visible,
+    textarea:focus-visible,
     input[type="range"]:focus-visible {
       box-shadow: 0 0 0 3px var(--ring);
     }
@@ -264,6 +266,36 @@
       cursor: pointer;
     }
 
+    .current-song-wrap {
+      flex: 1 1 250px;
+      max-width: 380px;
+    }
+
+    .song-label {
+      color: var(--subtle);
+      font-size: 13px;
+      flex: 0 0 auto;
+    }
+
+    .current-song-name {
+      min-width: 0;
+      flex: 1 1 auto;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .current-song-wrap .compact {
+      width: auto;
+      min-height: 30px;
+      padding: 5px 10px;
+      border-radius: 9px;
+      flex: 0 0 auto;
+    }
+
     .speed-wrap input[type="range"] {
       width: 100%;
       min-width: 120px;
@@ -286,6 +318,291 @@
       border: 1px solid rgba(196, 74, 74, 0.15);
       color: #7d2d2d;
       font-size: 13px;
+    }
+
+    .library-page {
+      width: min(980px, calc(100vw - 24px));
+      margin-top: 18px;
+      gap: 12px;
+    }
+
+    .library-header {
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .library-title {
+      min-width: 0;
+    }
+
+    .library-title h1 {
+      font-size: clamp(26px, 4vw, 34px);
+    }
+
+    .library-back {
+      text-decoration: none;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      font-weight: 650;
+    }
+
+    .library-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .library-tools {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .library-search {
+      min-width: 0;
+      flex: 1 1 auto;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 10px 6px 12px;
+      border-radius: 12px;
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      font-size: 13px;
+    }
+
+    .library-search input {
+      min-width: 0;
+      width: 100%;
+      border: 1px solid var(--input);
+      border-radius: 10px;
+      min-height: 32px;
+      padding: 6px 10px;
+      color: var(--ink);
+      background: var(--popover);
+      font: inherit;
+      outline: none;
+    }
+
+    .library-count {
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      font-size: 13px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .import-panel {
+      padding: 14px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .import-panel[hidden] {
+      display: none !important;
+    }
+
+    .import-head {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .import-head h2 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .import-head p {
+      margin: 6px 0 0;
+      color: var(--subtle);
+      line-height: 1.45;
+      font-size: 13px;
+    }
+
+    .import-steps {
+      margin: 0;
+      padding: 8px 10px 8px 28px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .import-steps li {
+      padding-right: 6px;
+      font-weight: 650;
+    }
+
+    .import-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    .import-field {
+      min-width: 0;
+      display: grid;
+      gap: 6px;
+      color: var(--subtle);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .import-field small {
+      color: var(--subtle);
+      line-height: 1.35;
+      font-weight: 500;
+    }
+
+    .import-field textarea {
+      width: 100%;
+      min-height: 220px;
+      resize: vertical;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid var(--input);
+      background: rgba(255, 250, 243, 0.9);
+      color: var(--ink);
+      font: 12px/1.5 Consolas, "Cascadia Code", monospace;
+      outline: none;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+    }
+
+    .import-field textarea[readonly] {
+      background: rgba(255, 255, 255, 0.55);
+    }
+
+    .import-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .import-message {
+      min-height: 32px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--subtle);
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .import-message[hidden] {
+      display: none !important;
+    }
+
+    .import-message.success {
+      color: #276542;
+      background: rgba(58, 139, 97, 0.12);
+      border-color: rgba(58, 139, 97, 0.18);
+    }
+
+    .import-message.error {
+      color: #7d2d2d;
+      background: rgba(196, 74, 74, 0.09);
+      border-color: rgba(196, 74, 74, 0.15);
+    }
+
+    .song-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .song-card {
+      padding: 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .song-card.selected {
+      border-color: rgba(189, 95, 59, 0.34);
+      box-shadow: 0 12px 32px rgba(189, 95, 59, 0.12);
+    }
+
+    .song-card-body {
+      min-width: 0;
+    }
+
+    .song-card h2 {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .song-meta {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .song-meta-item {
+      min-height: 28px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      font-size: 12px;
+      font-weight: 650;
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1;
+    }
+
+    .song-card-hint {
+      margin: 8px 0 0;
+      color: var(--subtle);
+      line-height: 1.45;
+      font-size: 13px;
+    }
+
+    .song-card button {
+      min-width: 88px;
+    }
+
+    .empty-state {
+      margin: 0;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: var(--subtle);
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid var(--border);
     }
 
     .board-card {
@@ -842,7 +1159,7 @@
       }
 
       .controls {
-        grid-template-columns: minmax(140px, 1fr) repeat(5, auto) minmax(180px, 1.2fr) auto auto;
+        grid-template-columns: minmax(170px, 0.8fr) repeat(5, auto) minmax(180px, 1.2fr) auto auto;
         gap: 6px;
       }
 
@@ -910,6 +1227,49 @@
       button,
       select {
         width: 100%;
+      }
+
+      .current-song-wrap .compact {
+        width: auto;
+      }
+
+      .library-header,
+      .song-card {
+        grid-template-columns: 1fr;
+      }
+
+      .library-header {
+        display: grid;
+      }
+
+      .library-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .library-tools {
+        display: grid;
+      }
+
+      .import-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .import-head {
+        display: grid;
+      }
+
+      .import-steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .import-field textarea {
+        min-height: 180px;
+      }
+
+      .song-card {
+        align-items: stretch;
       }
 
       .badges {
@@ -988,7 +1348,7 @@
 
       .controls {
         display: grid;
-        grid-template-columns: 128px auto auto auto auto auto minmax(124px, 1fr) auto auto;
+        grid-template-columns: minmax(168px, 0.85fr) auto auto auto auto auto minmax(124px, 1fr) auto auto;
         gap: 4px;
         align-items: center;
         margin: 0;
@@ -1020,6 +1380,20 @@
         gap: 5px;
         border-radius: 9px;
         font-size: 0;
+      }
+
+      .song-label {
+        display: none;
+      }
+
+      .current-song-name {
+        font-size: 13px;
+      }
+
+      .current-song-wrap .compact {
+        min-height: 26px;
+        padding: 4px 7px;
+        font-size: 12px;
       }
 
       .song-wrap select {
@@ -1150,11 +1524,103 @@
         border-radius: 10px;
         padding: 4px 1px;
       }
+
+      html.library-root,
+      html.library-root body {
+        height: auto;
+        min-height: 100%;
+        overflow: auto;
+      }
+
+      html.library-root .library-page {
+        width: calc(100vw - 8px);
+        height: auto;
+        min-height: 100dvh;
+        margin: 0 auto;
+        padding: 4px 0 12px;
+        display: grid;
+        grid-template-rows: none;
+        gap: 8px;
+      }
+
+      html.library-root .library-header {
+        padding: 10px 12px;
+        display: flex;
+        border-radius: 12px;
+      }
+
+      html.library-root .library-actions {
+        display: inline-flex;
+        width: auto;
+      }
+
+      html.library-root .library-tools {
+        display: flex;
+        gap: 8px;
+      }
+
+      html.library-root .library-search {
+        min-height: 38px;
+        padding: 4px 8px 4px 10px;
+      }
+
+      html.library-root .library-search input {
+        min-height: 30px;
+      }
+
+      html.library-root .import-panel {
+        padding: 10px;
+      }
+
+      html.library-root .import-head {
+        align-items: center;
+      }
+
+      html.library-root .import-head h2 {
+        font-size: 16px;
+      }
+
+      html.library-root .import-head p {
+        display: none;
+      }
+
+      html.library-root .import-steps {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+
+      html.library-root .import-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      html.library-root .import-field textarea {
+        min-height: 130px;
+      }
+
+      html.library-root .song-list {
+        gap: 8px;
+      }
+
+      html.library-root .song-card {
+        padding: 10px 12px;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+      }
+
+      html.library-root .song-card h2 {
+        font-size: 16px;
+      }
+
+      html.library-root .song-card-hint {
+        display: none;
+      }
     }
 
     @media (orientation: landscape) and (max-height: 560px) and (max-width: 760px) {
       .controls {
-        grid-template-columns: 122px auto auto auto auto minmax(118px, 1fr) auto;
+        grid-template-columns: minmax(150px, 0.95fr) auto auto auto minmax(118px, 1fr) auto;
       }
 
       #pauseBtn,
@@ -1266,10 +1732,16 @@
 
       html.software-landscape .controls {
         display: grid;
-        grid-template-columns: 128px auto auto auto auto auto minmax(124px, 1fr) auto auto;
+        grid-template-columns: minmax(150px, 0.95fr) auto auto auto minmax(118px, 1fr) auto;
         gap: 4px;
         align-items: center;
         margin: 0;
+      }
+
+      html.software-landscape #pauseBtn,
+      html.software-landscape #resetBtn,
+      html.software-landscape #songSpeedBtn {
+        display: none;
       }
 
       html.software-landscape button,
@@ -1298,6 +1770,20 @@
         gap: 5px;
         border-radius: 9px;
         font-size: 0;
+      }
+
+      html.software-landscape .song-label {
+        display: none;
+      }
+
+      html.software-landscape .current-song-name {
+        font-size: 13px;
+      }
+
+      html.software-landscape .current-song-wrap .compact {
+        min-height: 26px;
+        padding: 4px 7px;
+        font-size: 12px;
       }
 
       html.software-landscape .song-wrap select {

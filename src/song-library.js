@@ -1,0 +1,293 @@
+import {
+  AI_SONG_PROMPT,
+  APP_VERSION,
+  getSongLibrary,
+  parseImportedSong,
+  readStoredSongId,
+  saveCustomSong,
+  storeSongId
+} from "./song-store.js";
+
+const APP_NAME = "卡林巴循音";
+
+const songList = document.getElementById("songList");
+const songSearchInput = document.getElementById("songSearchInput");
+const songCountText = document.getElementById("songCountText");
+const emptySongText = document.getElementById("emptySongText");
+const backToPracticeLink = document.getElementById("backToPracticeLink");
+const appVersionText = document.getElementById("appVersionText");
+const addSongBtn = document.getElementById("addSongBtn");
+const importPanel = document.getElementById("importPanel");
+const aiPromptText = document.getElementById("aiPromptText");
+const copyPromptBtn = document.getElementById("copyPromptBtn");
+const songJsonInput = document.getElementById("songJsonInput");
+const importSongBtn = document.getElementById("importSongBtn");
+const importMessage = document.getElementById("importMessage");
+const updateToast = document.getElementById("updateToast");
+const updateNowBtn = document.getElementById("updateNowBtn");
+const updateLaterBtn = document.getElementById("updateLaterBtn");
+
+let songLibrary = getSongLibrary();
+let waitingServiceWorker = null;
+let reloadRequestedForUpdate = false;
+let refreshingForUpdate = false;
+
+function getSelectedSongId() {
+  const params = new URLSearchParams(window.location.search);
+  const selectedSongId = params.get("selected") || params.get("song");
+  const storedSongId = readStoredSongId();
+  if (songLibrary[selectedSongId]) {
+    return selectedSongId;
+  }
+  if (songLibrary[storedSongId]) {
+    return storedSongId;
+  }
+  return "birthday";
+}
+
+function getSongTotalBeats(song) {
+  if (!song.steps.length) {
+    return 0;
+  }
+  return Math.max(...song.steps.map(([, beat, duration]) => beat + duration));
+}
+
+function formatDuration(seconds) {
+  if (seconds < 60) {
+    return `约 ${Math.max(1, Math.round(seconds))} 秒`;
+  }
+  const minutes = Math.floor(seconds / 60);
+  const remainSeconds = Math.round(seconds % 60).toString().padStart(2, "0");
+  return `约 ${minutes}:${remainSeconds}`;
+}
+
+function getSongDuration(song) {
+  const defaultSpeed = Number(song.defaultSpeedFactor || 1);
+  return getSongTotalBeats(song) * (60 / song.bpm) / defaultSpeed;
+}
+
+function normalizeText(text) {
+  return String(text || "")
+    .replace(/[《》]/g, "")
+    .trim()
+    .toLowerCase();
+}
+
+function getSongUploader(song) {
+  return song.uploader || song.author || "system";
+}
+
+function getSearchText(song) {
+  return normalizeText([
+    song.id,
+    song.title,
+    song.hint,
+    getSongUploader(song)
+  ].join(" "));
+}
+
+function selectSong(songId) {
+  storeSongId(songId);
+  window.location.href = `./index.html?song=${encodeURIComponent(songId)}`;
+}
+
+function createMeta(label, value) {
+  const item = document.createElement("span");
+  item.className = "song-meta-item";
+  item.textContent = `${label} ${value}`;
+  return item;
+}
+
+function createSongCard(song, selectedSongId) {
+  const card = document.createElement("article");
+  card.className = "card song-card";
+  if (song.id === selectedSongId) {
+    card.classList.add("selected");
+  }
+
+  const body = document.createElement("div");
+  body.className = "song-card-body";
+
+  const title = document.createElement("h2");
+  title.textContent = song.title;
+
+  const meta = document.createElement("div");
+  meta.className = "song-meta";
+  meta.append(
+    createMeta("作者", getSongUploader(song)),
+    createMeta("BPM", song.bpm),
+    createMeta("拍号", `${song.beatsPerMeasure}/4`),
+    createMeta("音符", song.steps.length),
+    createMeta("时长", formatDuration(getSongDuration(song)))
+  );
+
+  const hint = document.createElement("p");
+  hint.className = "song-card-hint";
+  hint.textContent = song.hint;
+
+  body.append(title, meta, hint);
+
+  const action = document.createElement("button");
+  action.className = song.id === selectedSongId ? "accent" : "ghost";
+  action.type = "button";
+  action.textContent = song.id === selectedSongId ? "继续练习" : "开始练习";
+  action.addEventListener("click", () => selectSong(song.id));
+
+  card.append(body, action);
+  return card;
+}
+
+function renderSongList() {
+  const selectedSongId = getSelectedSongId();
+  const query = normalizeText(songSearchInput.value);
+  const songs = Object.values(songLibrary);
+  const matchedSongs = query
+    ? songs.filter((song) => getSearchText(song).includes(query))
+    : songs;
+
+  songList.replaceChildren();
+  matchedSongs.forEach((song) => {
+    songList.appendChild(createSongCard(song, selectedSongId));
+  });
+
+  songCountText.textContent = `${matchedSongs.length} / ${songs.length} 首`;
+  emptySongText.hidden = matchedSongs.length > 0;
+  backToPracticeLink.href = `./index.html?song=${encodeURIComponent(selectedSongId)}`;
+}
+
+function showImportMessage(message, kind = "neutral") {
+  importMessage.textContent = message;
+  importMessage.className = `import-message ${kind}`;
+  importMessage.hidden = false;
+}
+
+function toggleImportPanel() {
+  importPanel.hidden = !importPanel.hidden;
+  addSongBtn.textContent = importPanel.hidden ? "添加歌曲" : "收起添加";
+  if (!importPanel.hidden) {
+    songJsonInput.focus();
+  }
+}
+
+async function copyPrompt() {
+  try {
+    await navigator.clipboard.writeText(AI_SONG_PROMPT);
+    showImportMessage("提示词已复制", "success");
+  } catch (error) {
+    aiPromptText.focus();
+    aiPromptText.select();
+    showImportMessage("复制失败，可以手动全选提示词", "error");
+  }
+}
+
+function importSongFromJson() {
+  try {
+    const song = parseImportedSong(songJsonInput.value, songLibrary);
+    saveCustomSong(song);
+    songLibrary = getSongLibrary();
+    storeSongId(song.id);
+    songSearchInput.value = "";
+    songJsonInput.value = "";
+    renderSongList();
+    showImportMessage(`已添加 ${song.title}`, "success");
+  } catch (error) {
+    showImportMessage(error.message, "error");
+  }
+}
+
+function hasActiveServiceWorkerController() {
+  return Boolean("serviceWorker" in navigator && navigator.serviceWorker.controller);
+}
+
+function showUpdatePrompt(worker) {
+  if (!worker || !hasActiveServiceWorkerController() || !updateToast) {
+    return;
+  }
+
+  waitingServiceWorker = worker;
+  updateToast.hidden = false;
+  updateNowBtn.disabled = false;
+  updateLaterBtn.disabled = false;
+}
+
+function trackInstallingServiceWorker(worker) {
+  if (!worker) {
+    return;
+  }
+
+  worker.addEventListener("statechange", () => {
+    if (worker.state === "installed" && hasActiveServiceWorkerController()) {
+      showUpdatePrompt(worker);
+    }
+  });
+}
+
+function setupServiceWorkerUpdatePrompt(registration) {
+  if (!registration) {
+    return;
+  }
+
+  if (registration.waiting && hasActiveServiceWorkerController()) {
+    showUpdatePrompt(registration.waiting);
+  }
+
+  trackInstallingServiceWorker(registration.installing);
+  registration.addEventListener("updatefound", () => {
+    trackInstallingServiceWorker(registration.installing);
+  });
+}
+
+function requestServiceWorkerUpdate() {
+  if (!waitingServiceWorker) {
+    return;
+  }
+
+  reloadRequestedForUpdate = true;
+  updateNowBtn.disabled = true;
+  updateLaterBtn.disabled = true;
+  waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
+}
+
+function dismissServiceWorkerUpdate() {
+  updateToast.hidden = true;
+  waitingServiceWorker = null;
+}
+
+function setupServiceWorker() {
+  if (!("serviceWorker" in navigator)) {
+    return;
+  }
+
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!reloadRequestedForUpdate || refreshingForUpdate) {
+      return;
+    }
+
+    refreshingForUpdate = true;
+    window.location.reload();
+  });
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./service-worker.js")
+      .then(setupServiceWorkerUpdatePrompt)
+      .catch((error) => {
+        console.warn(`${APP_NAME} 离线缓存注册失败`, error);
+      });
+  });
+}
+
+aiPromptText.value = AI_SONG_PROMPT;
+if (appVersionText) {
+  appVersionText.textContent = `v${APP_VERSION}`;
+}
+
+songSearchInput.addEventListener("input", renderSongList);
+addSongBtn.addEventListener("click", toggleImportPanel);
+copyPromptBtn.addEventListener("click", copyPrompt);
+importSongBtn.addEventListener("click", importSongFromJson);
+updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
+updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
+
+renderSongList();
+setupServiceWorker();

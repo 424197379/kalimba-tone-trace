@@ -1,8 +1,8 @@
-import { DISPLAY_KEYS, NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
+import { DISPLAY_KEYS, NOTE_INDEX } from "./songs.js";
+import { APP_VERSION, getSongLibrary, readStoredSongId, storeSongId } from "./song-store.js";
 import { detectPitch, getNearestNote } from "./pitch.js";
 
 const APP_NAME = "卡林巴循音";
-const APP_VERSION = "1.0.1";
 
     function buildSongEvents(song) {
       return song.steps
@@ -33,8 +33,22 @@ const APP_VERSION = "1.0.1";
       return Math.max(...steps.map(([, beat, duration]) => beat + duration));
     }
 
-    let currentSongId = "birthday";
-    let currentSong = SONG_LIBRARY[currentSongId];
+    function getInitialSongId() {
+      const params = new URLSearchParams(window.location.search);
+      const urlSongId = params.get("song");
+      const storedSongId = readStoredSongId();
+      if (songLibrary[urlSongId]) {
+        return urlSongId;
+      }
+      if (songLibrary[storedSongId]) {
+        return storedSongId;
+      }
+      return "birthday";
+    }
+
+    const songLibrary = getSongLibrary();
+    let currentSongId = getInitialSongId();
+    let currentSong = songLibrary[currentSongId];
     let songEvents = buildSongEvents(currentSong);
     let songTotalBeats = getSongTotalBeats(currentSong.steps);
     const scoreBeatWidth = 78;
@@ -88,7 +102,8 @@ const APP_VERSION = "1.0.1";
     const demoBtn = document.getElementById("demoBtn");
     const songSpeedBtn = document.getElementById("songSpeedBtn");
     const keyScaleBtn = document.getElementById("keyScaleBtn");
-    const songSelect = document.getElementById("songSelect");
+    const currentSongText = document.getElementById("currentSongText");
+    const changeSongBtn = document.getElementById("changeSongBtn");
     const speedSlider = document.getElementById("speedSlider");
     const speedValue = document.getElementById("speedValue");
     const practiceTitle = document.getElementById("practiceTitle");
@@ -293,7 +308,9 @@ const APP_VERSION = "1.0.1";
       practiceTitle.textContent = currentSong.practiceTitle;
       practiceHint.textContent = currentSong.hint;
       scoreTitle.textContent = currentSong.scoreTitle;
-      songSelect.value = currentSongId;
+      if (currentSongText) {
+        currentSongText.textContent = currentSong.title;
+      }
       const defaultSpeed = getSongDefaultSpeedFactor();
       songSpeedBtn.textContent = `曲目默认 ${defaultSpeed.toFixed(2)}x`;
       songSpeedBtn.title = `切换到 ${currentSong.title} 适合听旋律的默认速率`;
@@ -303,19 +320,10 @@ const APP_VERSION = "1.0.1";
       return Number(currentSong.defaultSpeedFactor || 1);
     }
 
-    function populateSongOptions() {
-      songSelect.replaceChildren();
-      Object.values(SONG_LIBRARY).forEach((song) => {
-        const option = document.createElement("option");
-        option.value = song.id;
-        option.textContent = song.title.replace(/[《》]/g, "");
-        songSelect.appendChild(option);
-      });
-    }
-
     function setCurrentSong(songId) {
-      currentSongId = SONG_LIBRARY[songId] ? songId : "birthday";
-      currentSong = SONG_LIBRARY[currentSongId];
+      currentSongId = songLibrary[songId] ? songId : "birthday";
+      storeSongId(currentSongId);
+      currentSong = songLibrary[currentSongId];
       bpm = currentSong.bpm;
       beatSeconds = 60 / bpm;
       songEvents = buildSongEvents(currentSong);
@@ -1338,6 +1346,10 @@ const APP_VERSION = "1.0.1";
       applySpeed();
     }
 
+    function openSongLibrary() {
+      window.location.href = `./songs.html?selected=${encodeURIComponent(currentSongId)}`;
+    }
+
     function hasActiveServiceWorkerController() {
       return Boolean("serviceWorker" in navigator && navigator.serviceWorker.controller);
     }
@@ -1370,6 +1382,10 @@ const APP_VERSION = "1.0.1";
     }
 
     function setupServiceWorkerUpdatePrompt(registration) {
+      if (!registration) {
+        return;
+      }
+
       if (registration.waiting && hasActiveServiceWorkerController()) {
         showUpdatePrompt(registration.waiting);
       }
@@ -1410,13 +1426,15 @@ const APP_VERSION = "1.0.1";
     songSpeedBtn.addEventListener("click", applySongDefaultSpeed);
     keyScaleBtn.addEventListener("click", resetKeyScale);
     landscapeBtn.addEventListener("click", requestLandscapeMode);
+    if (changeSongBtn) {
+      changeSongBtn.addEventListener("click", openSongLibrary);
+    }
     if (updateNowBtn) {
       updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
     }
     if (updateLaterBtn) {
       updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
     }
-    songSelect.addEventListener("change", () => setCurrentSong(songSelect.value));
     speedSlider.addEventListener("input", applySpeed);
     window.addEventListener("resize", refreshLandscapeMode);
     window.addEventListener("orientationchange", refreshLandscapeMode);
@@ -1432,7 +1450,6 @@ const APP_VERSION = "1.0.1";
     if (appVersionText) {
       appVersionText.textContent = `v${APP_VERSION}`;
     }
-    populateSongOptions();
     setCurrentSong(currentSongId);
 
     if (!canRequestMicrophone()) {

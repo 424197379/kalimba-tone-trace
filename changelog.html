@@ -101,6 +101,28 @@
     </header>
 
     <section>
+      <h2>1.0.3 - 2026-06-13</h2>
+      <ul>
+        <li>新增本地歌曲导入能力，曲库页可复制 AI 提示词并粘贴标准 JSON 保存到本地曲库。</li>
+        <li>新增 <code>src/song-store.js</code>，统一管理内置曲库、本地曲库、JSON 校验和简谱 <code>notation</code> 到练习 <code>steps</code> 的编译。</li>
+        <li>导入 JSON 仅通过 <code>JSON.parse</code> 解析，并校验 C 调、音域、节拍和必填字段。</li>
+        <li>练习页和曲库页改为读取“内置歌曲 + 本地歌曲”的合并曲库。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v1.0.3</code>。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>1.0.2 - 2026-06-13</h2>
+      <ul>
+        <li>新增独立曲库页面 <code>songs.html</code>，支持搜索当前内置歌曲并选择进入练习页。</li>
+        <li>练习页移除原生歌曲下拉框，改为显示当前曲目并通过“换曲”进入曲库。</li>
+        <li>曲库数据增加上传者字段，当前内置歌曲上传者为 <code>system</code>。</li>
+        <li>优化导航缓存逻辑，离线访问曲库页时优先回退到对应页面。</li>
+        <li>将 Service Worker 离线缓存版本更新为 <code>kalimba-tone-trace-v1.0.2</code>。</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>1.0.1 - 2026-06-13</h2>
       <ul>
         <li>修复鸿蒙手机/PWA 中点击“进入横屏”后可能卡在竖屏提示层的问题。</li>
