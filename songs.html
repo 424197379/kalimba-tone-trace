@@ -42,7 +42,7 @@
       <div class="import-head">
         <div>
           <h2>添加歌曲</h2>
-          <p>复制提示词，把它和简谱照片一起发给 AI；再把 AI 返回的 JSON 粘贴回来保存。</p>
+          <p>复制提示词，把它和简谱照片一起发给 AI；再把 AI 返回的完整编配 JSON 粘贴回来保存。</p>
         </div>
         <button class="ghost" id="copyPromptBtn" type="button">复制提示词</button>
       </div>
@@ -55,13 +55,13 @@
       <div class="import-grid">
         <label class="import-field">
           <span>给 AI 的提示词</span>
-          <small>用于规范 AI 如何识别简谱、转调、处理节奏并输出数据。</small>
+          <small>用于规范 AI 如何识别简谱、转调、处理主旋律、和弦、伴奏与节奏空档。</small>
           <textarea id="aiPromptText" readonly></textarea>
         </label>
         <label class="import-field">
           <span>粘贴歌曲 JSON</span>
-          <small>这里只接受 JSON；不会执行粘贴内容中的任何代码。</small>
-          <textarea id="songJsonInput" spellcheck="false" placeholder="{ &quot;schemaVersion&quot;: 1, &quot;title&quot;: &quot;《歌曲名》&quot;, ... }"></textarea>
+          <small>这里只接受 JSON；支持主旋律、和弦与自动伴奏，不会执行粘贴内容中的任何代码。</small>
+          <textarea id="songJsonInput" spellcheck="false" placeholder="{ &quot;schemaVersion&quot;: 2, &quot;title&quot;: &quot;《歌曲名》&quot;, &quot;events&quot;: [ ... ] }"></textarea>
         </label>
       </div>
       <div class="import-actions">

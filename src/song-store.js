@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.2.2";
+export const APP_VERSION = "2.2.3";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -49,41 +49,89 @@ const DEGREE_TO_NOTE = {
 const NOTE_ROLES = new Set(["melody", "harmony", "bass", "arpeggio", "ornament"]);
 const ARRANGEMENT_KINDS = new Set(["melody", "chord"]);
 const JUDGEMENT_MODES = new Set(["melody", "chord"]);
+const RHYTHM_SOURCE_STATUSES = new Set(["verified", "inferred", "needs-review"]);
+const RHYTHM_REST_POLICIES = new Set(["silent", "hold"]);
 const ACCOMPANIMENT_MIN_VELOCITY = 0.05;
 const ACCOMPANIMENT_MAX_VELOCITY = 1.2;
 const MELODY_VERSION_LABEL = "主旋律版";
 const CHORD_VERSION_LABEL = "和弦版";
 
-export const AI_SONG_PROMPT = `你需要从我提供的简谱图片中识别主旋律，并输出一个可被卡林巴循音 App 导入的纯 JSON 对象。
+export const AI_SONG_PROMPT = `你需要从我提供的简谱图片中制作一份可被卡林巴循音 App 导入的高质量纯 JSON 乐谱。
 
 只输出 JSON，不要输出 Markdown，不要代码块，不要解释。
 JSON 必须使用双引号，不能有注释，不能有尾随逗号。
-用户上传只支持主旋律版：schemaVersion 必须为 1，不要输出 schemaVersion 2、events、和弦、伴奏或多音同拍结构。
+上传统一使用 schemaVersion 2。即使只能识别主旋律，也请用 events 单音事件表达，不要输出 schemaVersion 1 或 notation。
 
-目标乐器是 21 音 C 调卡林巴，只支持自然音：F3、G3、A3、B3、C4-D6、E6。请把图片中的主旋律转成 C 调简谱后再输出，key 必须为 "C"。
+目标乐器是 21 音 C 调卡林巴，只支持自然音：F3、G3、A3、B3、C4-D6、E6。请先按图片调号读谱，再整体转成 C 调输出，key 必须为 "C"。
+
+编谱流程：
+1. 先识别主旋律，严格按小节线、下划线、附点、连音线、休止符和弱起定位 beat 与 duration。
+2. 如果图片模糊、不完整、缺少和弦/伴奏/节奏细节，请上网查找同曲简谱、简和谱、五线谱、MIDI 或 MusicXML 交叉验证；优先完整谱，其次简和谱，再其次和弦谱。
+3. 主旋律 1 拍以上空档默认保持静音呼吸，不要用自动伴奏填满，除非谱源明确显示伴奏延续。
+4. 和弦目标音要适合 21 音 C 调卡林巴实际弹奏，密集和弦请精简为 2 到 4 个关键音。无法确认的装饰音不要强行加入判定。
+5. App 会自动从 events 里抽取主旋律版；如果 events 里有和弦目标音或自动伴奏，App 也会生成和弦版。
 
 JSON 格式：
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "title": "《歌曲名》",
+  "versionLabel": "和弦版",
+  "arrangementKind": "chord",
+  "judgementMode": "chord",
   "bpm": 96,
   "beatsPerMeasure": 4,
-  "defaultSpeedFactor": 0.9,
-  "difficulty": "easy",
+  "defaultSpeedFactor": 0.85,
+  "difficulty": "medium",
   "key": "C",
-  "hint": "简短说明，可留空",
-  "notation": [
-    { "degree": "1", "octave": 0, "beat": 0, "duration": 1 },
-    { "degree": "2", "octave": 0, "beat": 1, "duration": 0.5 }
-  ]
+  "tuning": "21-key-c",
+  "hint": "简短说明",
+  "events": [
+    {
+      "beat": 0,
+      "duration": 1,
+      "judgeWindow": 0.6,
+      "notes": [
+        { "name": "E4", "role": "melody", "judge": true, "velocity": 1 },
+        { "name": "C4", "role": "harmony", "judge": true, "velocity": 0.75 },
+        { "name": "G3", "role": "bass", "judge": true, "velocity": 0.65 }
+      ]
+    }
+  ],
+  "autoAccompaniment": {
+    "enabledByDefault": true,
+    "volume": 0.38,
+    "events": [
+      {
+        "beat": 4,
+        "duration": 0.75,
+        "pattern": "source-chord",
+        "notes": [
+          { "name": "C4", "role": "harmony", "velocity": 0.36 },
+          { "name": "G3", "role": "bass", "velocity": 0.32 }
+        ]
+      }
+    ]
+  },
+  "rhythm": {
+    "sourceStatus": "verified",
+    "pickupBeats": 0,
+    "restWindows": [
+      { "beat": 13.5, "duration": 2.5, "policy": "silent", "reason": "phrase-rest" }
+    ],
+    "sources": [
+      { "label": "谱源名称", "url": "https://example.com/source" }
+    ]
+  }
 }
 
-notation 规则：
-- degree 只能是 "1" 到 "7"，休止不要写成音符，直接通过 beat 留出空拍。
-- octave 表示高低音点：0 为无点，1 为上方一点，2 为上方两点，-1 为下方一点。
+通用规则：
 - beat 是从 0 开始的起始拍，可以是小数。
 - duration 是持续拍数，可以是 0.25、0.5、1、1.5、2 等。
-- 只识别主旋律，不要加入伴奏、和弦或装饰音。
+- events[].notes 至少有一个 role: "melody" 的主旋律音，并设置 judge: true。
+- notes[].name 必须是 21 音 C 调卡林巴音名，role 只能是 "melody"、"harmony"、"bass"、"arpeggio"、"ornament"。
+- judgementMode 为 "melody" 时只判定主旋律；为 "chord" 时，事件内所有 judge: true 的音都需要用户弹出。
+- autoAccompaniment 是 App 自动播放的伴奏，不参与麦克风判定，里面不要写 judge 字段，音量 velocity 通常低于 0.45。
+- rhythm.restWindows 表示主旋律长停顿，policy 为 "silent" 的窗口内不要放自动伴奏事件；只有谱源明确延音时才用 "hold"。
 - 如果图片有调号，例如 1=C、1=D、1=F，请先按原调读谱，再转成 C 调输出，仍然写 "key": "C"。
 - 如果图片没有 BPM，请按歌曲风格估计一个适合练习的 bpm，通常在 72 到 120 之间。
 - 如果图片有拍号，请填写 beatsPerMeasure；如果没有，请根据小节线和节奏判断，无法判断时用 4。
@@ -126,6 +174,10 @@ function saveCustomSongArray(songs) {
 
 function isFiniteNumber(value) {
   return Number.isFinite(Number(value));
+}
+
+function isPlainObject(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
 function normalizeNumber(value, fallback) {
@@ -392,6 +444,85 @@ function normalizeAutoAccompaniment(rawAutoAccompaniment) {
   };
 }
 
+function normalizeRhythm(rawRhythm) {
+  if (!isPlainObject(rawRhythm)) {
+    return null;
+  }
+
+  const restWindows = Array.isArray(rawRhythm.restWindows)
+    ? rawRhythm.restWindows
+        .map((window) => {
+          if (!isPlainObject(window)) {
+            return null;
+          }
+
+          const beat = Number(window.beat);
+          const duration = Number(window.duration);
+          if (!Number.isFinite(beat) || beat < 0 || !Number.isFinite(duration) || duration <= 0) {
+            return null;
+          }
+
+          const policy = RHYTHM_REST_POLICIES.has(window.policy) ? window.policy : "silent";
+          const normalized = { beat, duration, policy };
+          if (typeof window.reason === "string" && window.reason.trim()) {
+            normalized.reason = window.reason.trim();
+          }
+          return normalized;
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.beat - b.beat || a.duration - b.duration)
+    : [];
+
+  const sources = Array.isArray(rawRhythm.sources)
+    ? rawRhythm.sources
+        .map((source) => {
+          if (!isPlainObject(source)) {
+            return null;
+          }
+          const label = String(source.label || "").trim();
+          const url = String(source.url || "").trim();
+          if (!label && !url) {
+            return null;
+          }
+          return { label: label || url, url };
+        })
+        .filter(Boolean)
+    : [];
+
+  const rhythm = {
+    sourceStatus: RHYTHM_SOURCE_STATUSES.has(rawRhythm.sourceStatus) ? rawRhythm.sourceStatus : "inferred",
+    pickupBeats: Math.max(0, normalizeNumber(rawRhythm.pickupBeats, 0)),
+    restWindows
+  };
+
+  if (sources.length) {
+    rhythm.sources = sources;
+  }
+
+  return rhythm;
+}
+
+function rangesOverlap(firstBeat, firstDuration, secondBeat, secondDuration) {
+  return firstBeat < secondBeat + secondDuration && secondBeat < firstBeat + firstDuration;
+}
+
+function applyRhythmToAutoAccompaniment(autoAccompaniment, rhythm) {
+  if (!autoAccompaniment || !rhythm?.restWindows?.length) {
+    return autoAccompaniment;
+  }
+
+  const silentWindows = rhythm.restWindows.filter((window) => window.policy === "silent");
+  if (!silentWindows.length) {
+    return autoAccompaniment;
+  }
+
+  const events = autoAccompaniment.events.filter((event) =>
+    silentWindows.every((window) => !rangesOverlap(event.beat, event.duration, window.beat, window.duration))
+  );
+
+  return events.length ? { ...autoAccompaniment, events } : null;
+}
+
 function getJudgeNotesForSong(song, event) {
   const judgeNotes = event.notes.filter((note) => note.judge);
   if (song.judgementMode === "chord") {
@@ -509,7 +640,7 @@ function normalizeNotation(rawNotation) {
   }
 
   if (rawNotation.length > 1200) {
-    throw new Error("notation 过长，请先导入主旋律版本");
+    throw new Error("notation 过长，请让 AI 改用 schemaVersion 2 events");
   }
 
   return rawNotation.map((item, index) => {
@@ -588,7 +719,10 @@ function normalizeStoredSong(song) {
 
   const judgeNoteCount = steps.length;
   const arrangementNoteCount = countArrangementNotes(events);
-  const autoAccompaniment = schemaVersion === 2 ? normalizeAutoAccompaniment(song.autoAccompaniment) : null;
+  const rhythm = schemaVersion === 2 ? normalizeRhythm(song.rhythm) : null;
+  const autoAccompaniment = schemaVersion === 2
+    ? applyRhythmToAutoAccompaniment(normalizeAutoAccompaniment(song.autoAccompaniment), rhythm)
+    : null;
   const difficulty = normalizeDifficulty(song.difficulty) || estimateSongDifficulty({ ...song, steps });
   const baseSongId = String(song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id)).trim() || song.id;
 
@@ -614,6 +748,12 @@ function normalizeStoredSong(song) {
     delete normalizedSong.autoAccompaniment;
   }
 
+  if (rhythm) {
+    normalizedSong.rhythm = rhythm;
+  } else {
+    delete normalizedSong.rhythm;
+  }
+
   return normalizedSong;
 }
 
@@ -635,7 +775,209 @@ export function getSongLibrary() {
   return library;
 }
 
-export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
+function normalizeImportedEvents(parsed) {
+  const schemaVersion = Number(parsed.schemaVersion || 2);
+  if (schemaVersion === 2 && Array.isArray(parsed.events)) {
+    const events = normalizeSongEvents({ ...parsed, schemaVersion: 2 });
+    if (events.length) {
+      return events;
+    }
+  }
+
+  if (Array.isArray(parsed.notation)) {
+    const notation = normalizeNotation(parsed.notation);
+    return normalizeEventsFromSteps(compileNotationToSteps(notation));
+  }
+
+  if (Array.isArray(parsed.steps)) {
+    return normalizeEventsFromSteps(parsed.steps);
+  }
+
+  return [];
+}
+
+function dedupeEventNotes(events) {
+  return events
+    .map((event) => {
+      const seenNotes = new Set();
+      const notes = event.notes.filter((note) => {
+        if (seenNotes.has(note.name)) {
+          return false;
+        }
+        seenNotes.add(note.name);
+        return true;
+      });
+      return { ...event, notes };
+    })
+    .filter((event) => event.notes.length);
+}
+
+function getMelodyNote(event) {
+  return (
+    event.notes.find((note) => note.role === "melody" && note.judge) ||
+    event.notes.find((note) => note.role === "melody") ||
+    event.notes.find((note) => note.judge) ||
+    event.notes[0]
+  );
+}
+
+function ensureImportedJudgement(events, judgementMode) {
+  return dedupeEventNotes(events).map((event) => {
+    if (event.notes.some((note) => note.judge)) {
+      return event;
+    }
+
+    const melodyNote = getMelodyNote(event);
+    const shouldJudgeChord = judgementMode === "chord" && event.notes.length > 1;
+    return {
+      ...event,
+      notes: event.notes.map((note) => ({
+        ...note,
+        judge: shouldJudgeChord ? note.role !== "ornament" : note.name === melodyNote.name
+      }))
+    };
+  });
+}
+
+function buildMelodyEvents(events) {
+  return events.map((event) => {
+    const melodyNote = getMelodyNote(event);
+    const melodyEvent = {
+      beat: event.beat,
+      duration: event.duration,
+      notes: [
+        {
+          ...melodyNote,
+          role: "melody",
+          judge: true,
+          velocity: 1
+        }
+      ]
+    };
+
+    if (event.judgeWindow) {
+      melodyEvent.judgeWindow = event.judgeWindow;
+    }
+
+    return melodyEvent;
+  });
+}
+
+function hasChordArrangement(parsed, events) {
+  if (parsed.arrangementKind === "chord" || parsed.judgementMode === "chord") {
+    return true;
+  }
+
+  return events.some((event) => {
+    const judgeCount = event.notes.filter((note) => note.judge).length;
+    const playableChordNotes = event.notes.filter((note) => note.role !== "ornament").length;
+    return judgeCount > 1 || playableChordNotes > 1;
+  });
+}
+
+function getImportedBaseId(parsed) {
+  const rawId = String(parsed.baseSongId || parsed.id || "").trim();
+  if (rawId.endsWith("-chord") || rawId.endsWith("_chord")) {
+    return rawId.slice(0, -6);
+  }
+  return rawId;
+}
+
+function buildImportedSongPair(parsed, existingLibrary) {
+  if (!isPlainObject(parsed)) {
+    throw new Error("导入内容必须是歌曲 JSON 对象");
+  }
+
+  const key = String(parsed.key || "C").trim().toUpperCase();
+  if (key !== "C") {
+    throw new Error('目前仅支持 key: "C"，请让 AI 先转成 C 调');
+  }
+
+  const title = normalizeTitle(parsed.title);
+  const baseId = makeLocalSongId(getImportedBaseId(parsed), title, existingLibrary);
+  const bpm = clamp(normalizeNumber(parsed.bpm, 96), 40, 220);
+  const beatsPerMeasure = clamp(Math.round(normalizeNumber(parsed.beatsPerMeasure, 4)), 2, 8);
+  const defaultSpeedFactor = clamp(normalizeNumber(parsed.defaultSpeedFactor, 0.9), 0.35, 1.4);
+  const rawJudgementMode = JUDGEMENT_MODES.has(parsed.judgementMode) ? parsed.judgementMode : "melody";
+  const events = ensureImportedJudgement(normalizeImportedEvents(parsed), rawJudgementMode);
+  if (!events.length) {
+    throw new Error("没有可导入的 events 音符；请让 AI 输出 schemaVersion 2 events");
+  }
+
+  const melodyEvents = buildMelodyEvents(events);
+  const melodySteps = buildJudgeSteps({ judgementMode: "melody" }, melodyEvents);
+  if (!melodySteps.length) {
+    throw new Error("没有可导入的主旋律音符");
+  }
+
+  const autoAccompaniment = normalizeAutoAccompaniment(parsed.autoAccompaniment);
+  const rhythm = normalizeRhythm(parsed.rhythm);
+  const filteredAutoAccompaniment = applyRhythmToAutoAccompaniment(autoAccompaniment, rhythm);
+  const shouldCreateChordVersion = hasChordArrangement(parsed, events);
+  const difficulty = normalizeDifficulty(parsed.difficulty) || estimateSongDifficulty({ steps: melodySteps, bpm });
+  const hint = String(parsed.hint || "本地导入曲谱").trim() || "本地导入曲谱";
+  const common = {
+    title,
+    uploader: "local",
+    source: "local",
+    schemaVersion: 2,
+    baseSongId: baseId,
+    key: "C",
+    tuning: "21-key-c",
+    bpm,
+    defaultSpeedFactor,
+    beatsPerMeasure,
+    difficulty,
+    hint
+  };
+
+  if (isPlainObject(parsed.sourceFeatures)) {
+    common.sourceFeatures = parsed.sourceFeatures;
+  }
+
+  const melodySong = normalizeStoredSong({
+    ...common,
+    id: baseId,
+    versionLabel: MELODY_VERSION_LABEL,
+    arrangementKind: "melody",
+    judgementMode: "melody",
+    practiceTitle: `${title}主旋律版练习轨道`,
+    scoreTitle: `${title}主旋律版简谱进度`,
+    events: melodyEvents,
+    ...(!shouldCreateChordVersion && filteredAutoAccompaniment ? { autoAccompaniment: filteredAutoAccompaniment } : {}),
+    ...(!shouldCreateChordVersion && rhythm ? { rhythm } : {})
+  });
+
+  if (!melodySong) {
+    throw new Error("主旋律版生成失败，请检查 events 的 beat、duration 和 notes");
+  }
+
+  if (!shouldCreateChordVersion) {
+    return [melodySong];
+  }
+
+  const chordId = makeLocalSongId(`${baseId}_chord`, `${title} 和弦版`, { ...existingLibrary, [baseId]: melodySong });
+  const chordSong = normalizeStoredSong({
+    ...common,
+    id: chordId,
+    versionLabel: CHORD_VERSION_LABEL,
+    arrangementKind: "chord",
+    judgementMode: "chord",
+    practiceTitle: `${title}和弦版练习轨道`,
+    scoreTitle: `${title}和弦版简谱进度`,
+    events,
+    ...(filteredAutoAccompaniment ? { autoAccompaniment: filteredAutoAccompaniment } : {}),
+    ...(rhythm ? { rhythm } : {})
+  });
+
+  if (!chordSong) {
+    throw new Error("和弦版生成失败，请检查 events 里的和弦目标音");
+  }
+
+  return [melodySong, chordSong];
+}
+
+export function parseImportedSongs(rawText, existingLibrary = getSongLibrary()) {
   let parsed;
   try {
     parsed = JSON.parse(rawText);
@@ -643,61 +985,49 @@ export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
     throw new Error("粘贴内容不是合法 JSON");
   }
 
-  if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
-    throw new Error("导入内容必须是单首歌曲 JSON 对象");
+  const rawSongs = Array.isArray(parsed)
+    ? parsed
+    : Array.isArray(parsed?.songs)
+      ? parsed.songs
+      : [parsed];
+
+  if (!rawSongs.length) {
+    throw new Error("导入内容没有歌曲 JSON");
   }
 
-  if (Number(parsed.schemaVersion || 1) !== 1) {
-    throw new Error("用户上传只支持 schemaVersion 1 主旋律版；和弦版仅支持内置曲库");
+  const reservedLibrary = { ...existingLibrary };
+  const songs = rawSongs.flatMap((song) => {
+    const importedSongs = buildImportedSongPair(song, reservedLibrary);
+    importedSongs.forEach((importedSong) => {
+      reservedLibrary[importedSong.id] = importedSong;
+    });
+    return importedSongs;
+  });
+
+  if (!songs.length) {
+    throw new Error("没有可导入的歌曲");
   }
 
-  const key = String(parsed.key || "C").trim().toUpperCase();
-  if (key !== "C") {
-    throw new Error('目前仅支持 key: "C"，请让 AI 先转成 C 调简谱');
-  }
+  return songs;
+}
 
-  const notation = normalizeNotation(parsed.notation);
-  const steps = compileNotationToSteps(notation);
-  if (!steps.length) {
-    throw new Error("没有可导入的音符");
-  }
-
-  const title = normalizeTitle(parsed.title);
-  const id = makeLocalSongId(parsed.id, title, existingLibrary);
-  const bpm = clamp(normalizeNumber(parsed.bpm, 96), 40, 220);
-  const beatsPerMeasure = clamp(Math.round(normalizeNumber(parsed.beatsPerMeasure, 4)), 2, 8);
-  const defaultSpeedFactor = clamp(normalizeNumber(parsed.defaultSpeedFactor, 0.9), 0.35, 1.4);
-  const difficulty = normalizeDifficulty(parsed.difficulty) || estimateSongDifficulty({ steps, bpm });
-  const hint = String(parsed.hint || "本地导入曲谱").trim() || "本地导入曲谱";
-
-  return {
-    id,
-    title,
-    uploader: "local",
-    source: "local",
-    schemaVersion: 1,
-    baseSongId: id,
-    versionLabel: MELODY_VERSION_LABEL,
-    arrangementKind: "melody",
-    judgementMode: "melody",
-    key,
-    bpm,
-    defaultSpeedFactor,
-    beatsPerMeasure,
-    difficulty,
-    hint,
-    practiceTitle: `${title}练习轨道`,
-    scoreTitle: `${title}简谱进度`,
-    notation,
-    steps
-  };
+export function parseImportedSong(rawText, existingLibrary = getSongLibrary()) {
+  return parseImportedSongs(rawText, existingLibrary)[0];
 }
 
 export function saveCustomSong(song) {
-  const songs = getCustomSongs().filter((item) => item.id !== song.id);
-  songs.push(song);
+  return saveCustomSongs([song])[0] || null;
+}
+
+export function saveCustomSongs(importedSongs) {
+  const normalizedSongs = importedSongs
+    .map(normalizeStoredSong)
+    .filter(Boolean);
+  const importedIds = new Set(normalizedSongs.map((song) => song.id));
+  const songs = getCustomSongs().filter((item) => !importedIds.has(item.id));
+  songs.push(...normalizedSongs);
   saveCustomSongArray(songs);
-  return song;
+  return normalizedSongs;
 }
 
 export function deleteCustomSong(songId) {
@@ -714,4 +1044,24 @@ export function deleteCustomSong(songId) {
 
   saveCustomSongArray(songs.filter((song) => song.id !== id));
   return deletedSong;
+}
+
+export function deleteCustomSongGroup(baseSongId) {
+  const id = String(baseSongId || "").trim();
+  if (!id) {
+    return null;
+  }
+
+  const songs = getCustomSongs();
+  const deletedSongs = songs.filter((song) => song.baseSongId === id || song.id === id);
+  if (!deletedSongs.length) {
+    return null;
+  }
+
+  const deletedIds = new Set(deletedSongs.map((song) => song.id));
+  saveCustomSongArray(songs.filter((song) => !deletedIds.has(song.id)));
+  return {
+    title: deletedSongs[0].title,
+    ids: [...deletedIds]
+  };
 }

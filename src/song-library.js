@@ -3,13 +3,13 @@ import {
   APP_VERSION,
   DIFFICULTY_LABELS,
   DIFFICULTY_LEVELS,
-  deleteCustomSong,
+  deleteCustomSongGroup,
   getCustomSongs,
   getSongLibrary,
   normalizeDifficulty,
-  parseImportedSong,
+  parseImportedSongs,
   readStoredSongId,
-  saveCustomSong,
+  saveCustomSongs,
   storeSongId
 } from "./song-store.js";
 
@@ -46,7 +46,7 @@ const AI_THINKING_MIN_MS = 900;
 let songLibrary = getSongLibrary();
 let activeDifficulty = "all";
 let importingSong = false;
-let pendingDeleteSongId = null;
+let pendingDeleteBaseSongId = null;
 let waitingServiceWorker = null;
 let reloadRequestedForUpdate = false;
 let refreshingForUpdate = false;
@@ -151,8 +151,9 @@ function getSongDifficulty(song) {
 function getSearchText(songGroup) {
   const { primary, variants } = songGroup;
   return normalizeText([
-    primary.id,
-    primary.title,
+    ...variants.map((variant) => variant.id),
+    ...variants.map((variant) => variant.title),
+    ...variants.map((variant) => getSongVersionLabel(variant)),
     ...variants.map((variant) => variant.hint),
     getSongUploader(primary),
     DIFFICULTY_LABELS[getSongDifficulty(primary)],
@@ -201,9 +202,15 @@ function createSongCard(songGroup, selectedSongId, selectedBaseSongId) {
     createMeta("作者", getSongUploader(song)),
     createMeta("BPM", song.bpm),
     createMeta("拍号", `${song.beatsPerMeasure}/4`),
-    createMeta("音符", song.steps.length),
+    createMeta("音符", getSongNoteSummary(song)),
     createMeta("时长", formatDuration(getSongDuration(song)))
   );
+  if (songGroup.variants.length > 1) {
+    meta.append(createMeta("版本", songGroup.variants.map(getSongVersionLabel).join(" / ")));
+  }
+  if (songGroup.variants.some((variant) => variant.autoAccompaniment?.events?.length)) {
+    meta.append(createMeta("伴奏", "有"));
+  }
 
   const hint = document.createElement("p");
   hint.className = "song-card-hint";
@@ -224,7 +231,9 @@ function createSongCard(songGroup, selectedSongId, selectedBaseSongId) {
   return card;
 }
 
-function createLocalSongItem(song) {
+function createLocalSongItem(songGroup) {
+  const song = songGroup.primary;
+  const variants = songGroup.variants;
   const item = document.createElement("article");
   item.className = "local-song-item";
 
@@ -241,8 +250,14 @@ function createLocalSongItem(song) {
   meta.append(
     createMeta("难度", DIFFICULTY_LABELS[difficulty], `difficulty-${difficulty}`),
     createMeta("BPM", song.bpm),
-    createMeta("音符", song.steps.length)
+    createMeta("音符", getSongNoteSummary(song))
   );
+  if (variants.length > 1) {
+    meta.append(createMeta("版本", variants.map(getSongVersionLabel).join(" / ")));
+  }
+  if (variants.some((variant) => variant.autoAccompaniment?.events?.length)) {
+    meta.append(createMeta("伴奏", "有"));
+  }
 
   body.append(title, meta);
 
@@ -250,7 +265,7 @@ function createLocalSongItem(song) {
   deleteButton.className = "delete-song-btn";
   deleteButton.type = "button";
   deleteButton.textContent = "删除";
-  deleteButton.addEventListener("click", () => openDeleteConfirm(song));
+  deleteButton.addEventListener("click", () => openDeleteConfirm(songGroup));
 
   item.append(body, deleteButton);
   return item;
@@ -262,12 +277,13 @@ function renderLocalSongManager() {
   }
 
   const localSongs = getCustomSongs();
+  const localSongGroups = getGroupedSongs(localSongs);
   localSongList.replaceChildren();
-  localSongCountText.textContent = `${localSongs.length} 首`;
-  localSongEmptyText.hidden = localSongs.length > 0;
+  localSongCountText.textContent = `${localSongGroups.length} 首`;
+  localSongEmptyText.hidden = localSongGroups.length > 0;
 
-  localSongs.forEach((song) => {
-    localSongList.appendChild(createLocalSongItem(song));
+  localSongGroups.forEach((songGroup) => {
+    localSongList.appendChild(createLocalSongItem(songGroup));
   });
 }
 
@@ -339,31 +355,31 @@ function refreshLibraryViews() {
   renderLocalSongManager();
 }
 
-function openDeleteConfirm(song) {
-  if (!song || song.source !== "local") {
+function openDeleteConfirm(songGroup) {
+  if (!songGroup?.primary || songGroup.primary.source !== "local") {
     return;
   }
 
-  pendingDeleteSongId = song.id;
-  deleteConfirmTitle.textContent = `确定删除${formatSongTitleForMessage(song.title)}？`;
+  pendingDeleteBaseSongId = songGroup.baseSongId;
+  deleteConfirmTitle.textContent = `确定删除${formatSongTitleForMessage(songGroup.primary.title)}？`;
   deleteConfirmText.textContent = "只会从本机曲库移除，不会影响系统内置歌曲。";
   deleteConfirmModal.hidden = false;
   cancelDeleteBtn.focus();
 }
 
 function closeDeleteConfirm() {
-  pendingDeleteSongId = null;
+  pendingDeleteBaseSongId = null;
   deleteConfirmModal.hidden = true;
 }
 
 function confirmDeleteCustomSong() {
-  if (!pendingDeleteSongId) {
+  if (!pendingDeleteBaseSongId) {
     return;
   }
 
-  const songId = pendingDeleteSongId;
+  const baseSongId = pendingDeleteBaseSongId;
   const selectedSongId = getSelectedSongId();
-  const deletedSong = deleteCustomSong(songId);
+  const deletedSong = deleteCustomSongGroup(baseSongId);
   closeDeleteConfirm();
 
   if (!deletedSong) {
@@ -371,7 +387,7 @@ function confirmDeleteCustomSong() {
     return;
   }
 
-  if (selectedSongId === songId || readStoredSongId() === songId) {
+  if (deletedSong.ids.includes(selectedSongId) || deletedSong.ids.includes(readStoredSongId())) {
     storeSongId("birthday");
   }
 
@@ -433,8 +449,9 @@ async function importSongFromJson() {
   await waitForPaint();
 
   try {
-    const song = parseImportedSong(songJsonInput.value, songLibrary);
-    saveCustomSong(song);
+    const importedSongs = parseImportedSongs(songJsonInput.value, songLibrary);
+    const savedSongs = saveCustomSongs(importedSongs);
+    const song = savedSongs[0];
     songLibrary = getSongLibrary();
     storeSongId(song.id);
     activeDifficulty = "all";
@@ -442,7 +459,7 @@ async function importSongFromJson() {
     songJsonInput.value = "";
     refreshLibraryViews();
     await waitForThinkingMinimum(startedAt);
-    showImportMessage(`已添加 ${song.title}`, "success");
+    showImportMessage(`已添加 ${song.title}${savedSongs.length > 1 ? `（${savedSongs.length} 个版本）` : ""}`, "success");
   } catch (error) {
     await waitForThinkingMinimum(startedAt);
     showImportMessage(error.message, "error");
