@@ -1,6 +1,5 @@
 import { DISPLAY_KEYS, NOTE_INDEX } from "./songs.js";
 import { APP_VERSION, getSongLibrary, readStoredSongId, storeSongId } from "./song-store.js";
-import { detectPitch, getNearestNote } from "./pitch.js";
 
 const APP_NAME = "卡林巴循音";
 
@@ -48,12 +47,7 @@ const APP_NAME = "卡林巴循音";
             notes,
             judgeNotes,
             judgeLanes,
-            pendingJudgeLanes: new Set(judgeLanes),
-            hit: false,
-            missed: false,
-            skipped: false,
-            demoPlayed: false,
-            lockedUntil: 0
+            demoPlayed: false
           };
         })
         .sort((a, b) => a.beat - b.beat || a.id - b.id);
@@ -141,14 +135,6 @@ const APP_NAME = "卡林巴循音";
       return Math.max(...events.map((event) => event.beat + event.duration));
     }
 
-    function isLaneInEvent(lane, event) {
-      return event && event.judgeLanes.includes(lane);
-    }
-
-    function getJudgeableEventCount() {
-      return songEvents.filter((event) => event.judgeLanes.length > 0).length;
-    }
-
     function getInitialSongId() {
       const params = new URLSearchParams(window.location.search);
       const urlSongId = params.get("song");
@@ -186,10 +172,8 @@ const APP_NAME = "卡林巴循音";
     let keyScale = 1;
     let pinchStartDistance = 0;
     let pinchStartScale = 1;
-    const hitWindowSeconds = 0.28;
+    const focusWindowSeconds = 0.28;
     const lateGraceSeconds = 0.36;
-    const detectionHoldSeconds = 0.16;
-    const wrongFlashSeconds = 0.18;
     const beamSwitchLeadSeconds = 0.12;
 
     const laneGrid = document.getElementById("laneGrid");
@@ -208,19 +192,10 @@ const APP_NAME = "卡林巴循音";
     const songProgressThumb = document.getElementById("songProgressThumb");
 
     const statusText = document.getElementById("statusText");
-    const micText = document.getElementById("micText");
-    const heardText = document.getElementById("heardText");
     const targetText = document.getElementById("targetText");
-    const scoreText = document.getElementById("scoreText");
-    const comboText = document.getElementById("comboText");
-    const feedbackText = document.getElementById("feedbackText");
-    const centsText = document.getElementById("centsText");
-    const freqText = document.getElementById("freqText");
-    const levelText = document.getElementById("levelText");
     const secureNotice = document.getElementById("secureNotice");
 
     const startBtn = document.getElementById("startBtn");
-    const micBtn = document.getElementById("micBtn");
     const pauseBtn = document.getElementById("pauseBtn");
     const resetBtn = document.getElementById("resetBtn");
     const demoBtn = document.getElementById("demoBtn");
@@ -250,13 +225,7 @@ const APP_NAME = "卡林巴循音";
         return;
       }
 
-      button.classList.remove("compact-icon-mic", "compact-icon-stop");
-      if (icon === "mic" || icon === "stop") {
-        button.dataset.compactIcon = "";
-        button.classList.add(`compact-icon-${icon}`);
-      } else {
-        button.dataset.compactIcon = icon;
-      }
+      button.dataset.compactIcon = icon;
       if (label) {
         button.setAttribute("aria-label", label);
         button.title = label;
@@ -265,7 +234,6 @@ const APP_NAME = "卡林巴循音";
 
     function applyStaticControlIcons() {
       setCompactIcon(startBtn, "▶", "开始练习");
-      setCompactIcon(micBtn, "mic", "麦克风测试");
       setCompactIcon(pauseBtn, "Ⅱ", "暂停");
       setCompactIcon(resetBtn, "↺", "重置");
       setCompactIcon(demoBtn, "♪", "示范播放");
@@ -284,11 +252,6 @@ const APP_NAME = "卡林巴循音";
     );
 
     let audioContext = null;
-    let analyser = null;
-    let micSource = null;
-    let micStream = null;
-    let highpass = null;
-    let lowpass = null;
     let kalimbaBus = null;
     let kalimbaDry = null;
     let kalimbaWet = null;
@@ -296,26 +259,22 @@ const APP_NAME = "卡林巴循音";
     let rafId = 0;
 
     let practiceRunning = false;
-    let micTestMode = false;
     let demoMode = false;
-    let micJudgingEnabled = false;
     let practiceStartAt = 0;
     let pausedElapsed = 0;
-    let totalHits = 0;
-    let combo = 0;
-    let expectedLanes = [];
     let activeBeamLane = null;
     let storedAccompanimentEnabled = readStoredAccompanimentEnabled();
     let storedAccompanimentVolume = readStoredAccompanimentVolume();
     let accompanimentEnabled = storedAccompanimentEnabled ?? getDefaultAccompanimentEnabled(currentSong);
     let accompanimentVolume = storedAccompanimentVolume ?? getDefaultAccompanimentVolume(currentSong);
-    let lastWrongLane = null;
-    let lastWrongAt = 0;
     let signalPeakUntil = 0;
+    let activeInputUntil = 0;
     let waitingServiceWorker = null;
     let reloadRequestedForUpdate = false;
     let refreshingForUpdate = false;
     let seekingWithProgress = false;
+    let progressSeekPointerId = null;
+    let progressSeekRect = null;
     let kalimbaSamplePreloadPromise = null;
     let pendingFullscreenGesture = false;
     let landscapeFullscreenTimer = 0;
@@ -330,27 +289,9 @@ const APP_NAME = "卡林巴循音";
       candidateLane: null,
       candidateNote: "--",
       note: "--",
-      cents: null,
-      frequency: 0,
-      volume: 0,
-      clarity: 0,
       time: 0,
       held: false
     };
-
-    let lastStableDetection = {
-      lane: null,
-      candidateLane: null,
-      candidateNote: "--",
-      note: "--",
-      cents: null,
-      frequency: 0,
-      volume: 0,
-      clarity: 0,
-      time: 0
-    };
-
-    const analysisBuffer = new Float32Array(4096);
 
     function clamp(value, min, max) {
       return Math.min(max, Math.max(min, value));
@@ -758,11 +699,21 @@ const APP_NAME = "卡林巴循音";
           key.style.height = `${height}px`;
           key.style.setProperty("--mobile-key-height", `${mobileHeight.toFixed(1)}%`);
           key.innerHTML = `<div class="key-note">${note.letter}</div><div class="key-degree">${renderDegreeMarkup(note)}</div>`;
-          key.addEventListener("click", () => playKeyPreview(note.name));
+          key.addEventListener("pointerdown", (event) => {
+            if (event.button != null && event.button !== 0) {
+              return;
+            }
+            event.preventDefault();
+            key.focus({ preventScroll: true });
+            playKeyPreview(note.name, index);
+          });
+          key.addEventListener("click", (event) => {
+            event.preventDefault();
+          });
           key.addEventListener("keydown", (event) => {
             if (event.key === "Enter" || event.key === " ") {
               event.preventDefault();
-              playKeyPreview(note.name);
+              playKeyPreview(note.name, index);
             }
           });
           keyRow.appendChild(key);
@@ -799,26 +750,17 @@ const APP_NAME = "卡林巴循音";
 
     function resetSongEvents() {
       songEvents.forEach((event) => {
-        event.hit = false;
-        event.missed = false;
-        event.skipped = false;
         event.demoPlayed = false;
-        event.lockedUntil = 0;
-        event.pendingJudgeLanes = new Set(event.judgeLanes);
         const noteEl = noteEls.get(event.id);
         if (noteEl) {
           noteEl.className = "note";
           if (event.notes.length > 1) {
             noteEl.classList.add("chord-note");
           }
-          noteEl.querySelectorAll(".tone-heard").forEach((tone) => tone.classList.remove("tone-heard"));
           noteEl.style.opacity = "0";
         }
       });
       resetAccompanimentEvents();
-      totalHits = 0;
-      combo = 0;
-      updateScore();
     }
 
     function resetAccompanimentEvents() {
@@ -858,17 +800,6 @@ const APP_NAME = "卡林巴循音";
         });
         event.played = true;
       });
-    }
-
-    function updateScore() {
-      if (practiceRunning && !micJudgingEnabled) {
-        scoreText.textContent = "跟练: 不计分";
-        comboText.textContent = "麦克风: 关闭";
-        return;
-      }
-
-      scoreText.textContent = `命中: ${totalHits} / ${getJudgeableEventCount()}`;
-      comboText.textContent = `连击: ${combo}`;
     }
 
     function renderDegreeMarkup(note) {
@@ -981,63 +912,6 @@ const APP_NAME = "卡林巴循音";
       secureNotice.style.display = "none";
     }
 
-    function canRequestMicrophone() {
-      return Boolean(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.isSecureContext);
-    }
-
-    function getMicrophoneUnavailableMessage() {
-      if (!window.isSecureContext) {
-        return "当前地址不是安全上下文，手机浏览器通常不会开放麦克风。你仍然可以跟着下落块练习；自动判定需要 HTTPS 页面。";
-      }
-
-      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-        return "当前浏览器不支持麦克风采集。你仍然可以跟着下落块练习；自动判定需要换用支持麦克风权限的新版浏览器。";
-      }
-
-      return "麦克风暂时不可用。你仍然可以跟着下落块练习；开启麦克风后才会自动判定。";
-    }
-
-    function enterFollowMode(message) {
-      micJudgingEnabled = false;
-      activeDetection = {
-        lane: null,
-        candidateLane: null,
-        candidateNote: "--",
-        note: "--",
-        cents: null,
-        frequency: 0,
-        volume: 0,
-        clarity: 0,
-        time: 0,
-        held: false
-      };
-      micText.textContent = "跟练模式";
-      heardText.textContent = "--";
-      feedbackText.textContent = "反馈: 跟练模式，不自动判定";
-      if (message) {
-        showNotice(message);
-      }
-    }
-
-    async function tryEnableMicrophoneForPractice() {
-      if (!canRequestMicrophone()) {
-        enterFollowMode(getMicrophoneUnavailableMessage());
-        return false;
-      }
-
-      try {
-        await setupMicrophone();
-        micJudgingEnabled = true;
-        hideNotice();
-        feedbackText.textContent = "反馈: 等待声音";
-        return true;
-      } catch (error) {
-        console.error(error);
-        enterFollowMode("麦克风没有开启，已进入跟练模式。下落块和琴键高亮会照常运行，但本次不自动判定命中。");
-        return false;
-      }
-    }
-
     function currentPracticeTime() {
       if (!practiceRunning && !demoMode) {
         return pausedElapsed;
@@ -1107,9 +981,9 @@ const APP_NAME = "卡林巴循音";
     function getEventJudgeWindowSeconds(event) {
       const windowBeats = Number(event.judgeWindow || 0);
       if (windowBeats > 0) {
-        return Math.max(hitWindowSeconds, windowBeats * getScaledBeatSeconds());
+        return Math.max(focusWindowSeconds, windowBeats * getScaledBeatSeconds());
       }
-      return hitWindowSeconds;
+      return focusWindowSeconds;
     }
 
     function getSongEndSeconds() {
@@ -1155,21 +1029,15 @@ const APP_NAME = "卡林巴循音";
         const eventEnd = eventTime + getEventDurationSeconds(event);
         chip.classList.toggle("active", expectedEvent && expectedEvent.id === event.id);
         chip.classList.toggle("passed", seconds > eventEnd);
-        chip.classList.toggle(
-          "current-heard",
-          activeDetection.lane != null &&
-            isLaneInEvent(activeDetection.lane, event) &&
-            Math.abs(seconds - eventTime) <= getEventJudgeWindowSeconds(event)
-        );
       });
     }
 
-    function getProgressSeekSeconds(clientX) {
+    function getProgressSeekSeconds(clientX, rect = null) {
       if (!songProgress) {
         return 0;
       }
-      const rect = songProgress.getBoundingClientRect();
-      const ratio = rect.width ? clamp((clientX - rect.left) / rect.width, 0, 1) : 0;
+      const targetRect = rect || progressSeekRect || songProgress.getBoundingClientRect();
+      const ratio = targetRect.width ? clamp((clientX - targetRect.left) / targetRect.width, 0, 1) : 0;
       return ratio * getSongProgressDuration();
     }
 
@@ -1179,67 +1047,20 @@ const APP_NAME = "卡林巴循音";
         candidateLane: null,
         candidateNote: "--",
         note: "--",
-        cents: null,
-        frequency: 0,
-        volume: 0,
-        clarity: 0,
         time: 0,
         held: false
       };
-
-      lastStableDetection = {
-        lane: null,
-        candidateLane: null,
-        candidateNote: "--",
-        note: "--",
-        cents: null,
-        frequency: 0,
-        volume: 0,
-        clarity: 0,
-        time: 0
-      };
-
-      heardText.textContent = "--";
-      centsText.textContent = "音准偏差: --";
-      freqText.textContent = "频率: --";
-      levelText.textContent = "输入电平: 0%";
+      activeInputUntil = 0;
     }
 
     function syncSongEventsForSeek(seconds) {
       const progressSeconds = Math.max(0, seconds);
-      let hitCount = 0;
 
       songEvents.forEach((event) => {
         const eventTime = getEventTime(event);
         const beforeSeekPoint = eventTime < progressSeconds - lateGraceSeconds;
-        const noteEl = noteEls.get(event.id);
-
-        if (beforeSeekPoint) {
-          event.skipped = !event.hit && !event.missed;
-          event.demoPlayed = demoMode;
-        } else {
-          event.hit = false;
-          event.missed = false;
-          event.skipped = false;
-          event.demoPlayed = false;
-          event.lockedUntil = 0;
-          event.pendingJudgeLanes = new Set(event.judgeLanes);
-        }
-
-        if (event.hit) {
-          hitCount += 1;
-        }
-        if (noteEl) {
-          noteEl.classList.toggle("hit", event.hit);
-          noteEl.classList.toggle("missed", event.missed);
-          noteEl.classList.remove("partial-hit");
-          noteEl.querySelectorAll(".tone-heard").forEach((tone) => tone.classList.remove("tone-heard"));
-        }
+        event.demoPlayed = demoMode && beforeSeekPoint;
       });
-
-      totalHits = hitCount;
-      combo = 0;
-      updateScore();
     }
 
     function seekToSongTime(seconds) {
@@ -1254,9 +1075,6 @@ const APP_NAME = "卡林巴循音";
       syncSongEventsForSeek(seekSeconds);
       syncAccompanimentEventsForSeek(seekSeconds);
       resetDetectionReadout();
-      expectedLanes = [];
-      lastWrongLane = null;
-      lastWrongAt = 0;
       renderBoard(seekSeconds);
     }
 
@@ -1265,20 +1083,28 @@ const APP_NAME = "卡林巴循音";
     }
 
     function startProgressSeek(event) {
-      if (!songProgress || (event.button != null && event.button !== 0)) {
+      if (!songProgress || (event.button != null && event.button !== 0) || event.isPrimary === false) {
         return;
       }
 
       seekingWithProgress = true;
+      progressSeekPointerId = event.pointerId;
+      progressSeekRect = songProgress.getBoundingClientRect();
       songProgress.classList.add("seeking");
       songProgress.focus({ preventScroll: true });
-      songProgress.setPointerCapture(event.pointerId);
+      if (songProgress.setPointerCapture) {
+        try {
+          songProgress.setPointerCapture(event.pointerId);
+        } catch (error) {
+          // Some mobile browsers reject capture after scroll/zoom gestures; window listeners still handle the drag.
+        }
+      }
       event.preventDefault();
       handleProgressPointer(event);
     }
 
     function moveProgressSeek(event) {
-      if (!seekingWithProgress) {
+      if (!seekingWithProgress || event.pointerId !== progressSeekPointerId) {
         return;
       }
 
@@ -1287,13 +1113,15 @@ const APP_NAME = "卡林巴循音";
     }
 
     function finishProgressSeek(event) {
-      if (!seekingWithProgress) {
+      if (!seekingWithProgress || event.pointerId !== progressSeekPointerId) {
         return;
       }
 
       seekingWithProgress = false;
+      progressSeekPointerId = null;
+      progressSeekRect = null;
       songProgress.classList.remove("seeking");
-      if (songProgress.hasPointerCapture(event.pointerId)) {
+      if (songProgress.hasPointerCapture && songProgress.hasPointerCapture(event.pointerId)) {
         songProgress.releasePointerCapture(event.pointerId);
       }
     }
@@ -1486,10 +1314,45 @@ const APP_NAME = "卡林巴循音";
       return playedSample;
     }
 
-    async function playKeyPreview(noteName) {
+    function playKalimbaNoteImmediate(noteName, durationSeconds, velocity = 1) {
+      if (!audioContext) {
+        return false;
+      }
+
+      const buffer = kalimbaSampleBuffers.get(noteName);
+      if (buffer) {
+        return playDecodedKalimbaSample(noteName, buffer, velocity);
+      }
+
+      loadKalimbaSampleBuffer(noteName);
+      createPluckSynth(noteName, durationSeconds, velocity);
+      return false;
+    }
+
+    function setActiveKeyInput(noteName, lane) {
+      const now = performance.now() / 1000;
+      activeDetection = {
+        lane,
+        candidateLane: lane,
+        candidateNote: noteName,
+        note: noteName,
+        time: now,
+        held: false
+      };
+      activeInputUntil = now + 0.18;
+      signalPeakUntil = now + 0.16;
+    }
+
+    async function playKeyPreview(noteName, lane) {
+      if (demoMode) {
+        return;
+      }
+
       try {
         await ensureAudioContext();
-        await playKalimbaNote(noteName, 1.2);
+        playKalimbaNoteImmediate(noteName, 1.2);
+        setActiveKeyInput(noteName, lane);
+        renderBoard(currentPracticeTime());
       } catch (error) {
         console.warn(`${APP_NAME} could not play ${noteName}`, error);
       }
@@ -1500,54 +1363,6 @@ const APP_NAME = "卡林巴循音";
       param.setValueAtTime(0.0001, now);
       param.linearRampToValueAtTime(peak, now + attackSeconds);
       param.exponentialRampToValueAtTime(0.0001, now + decaySeconds);
-    }
-
-    async function setupMicrophone() {
-      if (!window.isSecureContext) {
-        showNotice(
-          "当前页面不是安全上下文，浏览器通常不会开放麦克风。<br>" +
-          "请用 <code>start-kalimba.cmd</code> 或 <code>node serve-kalimba.js</code> 启动本地服务，" +
-          "然后访问 <code>http://localhost:8123/index.html</code>。"
-        );
-        throw new Error("Microphone requires secure context");
-      }
-
-      hideNotice();
-      const context = await ensureAudioContext();
-
-      if (!micStream) {
-        micStream = await navigator.mediaDevices.getUserMedia({
-          audio: {
-            echoCancellation: false,
-            noiseSuppression: false,
-            autoGainControl: false,
-            channelCount: 1
-          }
-        });
-      }
-
-      if (!analyser) {
-        highpass = context.createBiquadFilter();
-        highpass.type = "highpass";
-        highpass.frequency.value = 120;
-
-        lowpass = context.createBiquadFilter();
-        lowpass.type = "lowpass";
-        lowpass.frequency.value = 1800;
-
-        analyser = context.createAnalyser();
-        analyser.fftSize = 4096;
-        analyser.smoothingTimeConstant = 0.05;
-      }
-
-      if (!micSource) {
-        micSource = context.createMediaStreamSource(micStream);
-        micSource.connect(highpass);
-        highpass.connect(lowpass);
-        lowpass.connect(analyser);
-      }
-
-      micText.textContent = "已连接";
     }
 
     function createPluckSynth(noteName, durationSeconds, velocity = 1) {
@@ -1687,113 +1502,11 @@ const APP_NAME = "卡林巴循音";
       }, Math.ceil((tailSeconds + 0.25) * 1000));
     }
 
-    function analyzePitch() {
-      if (!analyser || !audioContext) {
-        return;
-      }
-
-      analyser.getFloatTimeDomainData(analysisBuffer);
-      const detected = detectPitch(analysisBuffer, audioContext.sampleRate);
-      const now = performance.now() / 1000;
-      const level = Math.min(100, Math.round((detected.volume / 0.06) * 100));
-      const signalPresent = detected.volume > 0.005;
-
-      levelText.textContent = `输入电平: ${Math.max(0, level)}%`;
-      if (signalPresent) {
-        signalPeakUntil = now + 0.12;
-      }
-
-      if (!detected.frequency) {
-        if (lastStableDetection.lane != null && now - lastStableDetection.time < detectionHoldSeconds && detected.volume > 0.004) {
-          activeDetection = {
-            ...lastStableDetection,
-            volume: detected.volume,
-            time: now,
-            held: true
-          };
-          heardText.textContent = `${activeDetection.note}~`;
-          centsText.textContent = `音准偏差: ${activeDetection.cents > 0 ? "+" : ""}${activeDetection.cents} cents`;
-          freqText.textContent = `频率: ${activeDetection.frequency.toFixed(1)} Hz`;
-          feedbackText.textContent = `反馈: 持续听到 ${activeDetection.note}`;
-          micText.textContent = "有输入";
-          return;
-        }
-
-        activeDetection = {
-          lane: null,
-          candidateLane: null,
-          candidateNote: "--",
-          note: "--",
-          cents: null,
-          frequency: 0,
-          volume: detected.volume,
-          clarity: detected.clarity,
-          time: now,
-          held: false
-        };
-        heardText.textContent = signalPresent ? "收到拨弦" : "--";
-        centsText.textContent = "音准偏差: --";
-        freqText.textContent = "频率: --";
-        feedbackText.textContent = signalPresent ? "反馈: 已收到声音，正在找音高" : "反馈: 等待声音";
-        micText.textContent = detected.volume > 0.004 ? "有输入" : "已连接";
-        return;
-      }
-
-      const nearest = getNearestNote(detected.frequency, DISPLAY_KEYS);
-      if (nearest.distance > 48) {
-        activeDetection = {
-          lane: null,
-          candidateLane: nearest.lane,
-          candidateNote: nearest.note.name,
-          note: "--",
-          cents: nearest.cents,
-          frequency: detected.frequency,
-          volume: detected.volume,
-          clarity: detected.clarity,
-          time: now,
-          held: false
-        };
-        heardText.textContent = `接近 ${nearest.note.name}`;
-        centsText.textContent = `音准偏差: ${nearest.cents > 0 ? "+" : ""}${nearest.cents} cents`;
-        freqText.textContent = `频率: ${detected.frequency.toFixed(1)} Hz`;
-        feedbackText.textContent = `反馈: 收到声音，接近 ${nearest.note.name}`;
-        micText.textContent = "有输入";
-        return;
-      }
-
-      activeDetection = {
-        lane: nearest.lane,
-        candidateLane: nearest.lane,
-        candidateNote: nearest.note.name,
-        note: nearest.note.name,
-        cents: nearest.cents,
-        frequency: detected.frequency,
-        volume: detected.volume,
-        clarity: detected.clarity,
-        time: now,
-        held: false
-      };
-
-      lastStableDetection = { ...activeDetection };
-      heardText.textContent = nearest.note.name;
-      centsText.textContent = `音准偏差: ${nearest.cents > 0 ? "+" : ""}${nearest.cents} cents`;
-      freqText.textContent = `频率: ${detected.frequency.toFixed(1)} Hz`;
-      feedbackText.textContent = `反馈: 已识别到 ${nearest.note.name}`;
-      micText.textContent = "有输入";
-    }
-
-    function isEventResolved(event) {
-      return !event.judgeLanes.length || event.hit || event.missed || event.skipped;
-    }
-
     function getExpectedEvent(seconds) {
       let candidate = null;
       let bestDistance = Infinity;
 
       songEvents.forEach((event) => {
-        if (isEventResolved(event)) {
-          return;
-        }
         const eventTime = getEventTime(event);
         const eventLateGrace = Math.max(lateGraceSeconds, getEventJudgeWindowSeconds(event));
         const distance = Math.abs(seconds - eventTime);
@@ -1811,9 +1524,6 @@ const APP_NAME = "卡林巴循音";
       let latestEventTime = -Infinity;
 
       songEvents.forEach((event) => {
-        if (isEventResolved(event)) {
-          return;
-        }
         const eventTime = getEventTime(event);
         const eventLateGrace = Math.max(lateGraceSeconds, getEventJudgeWindowSeconds(event));
         const inSwitchWindow = seconds >= eventTime - beamSwitchLeadSeconds && seconds <= eventTime + eventLateGrace;
@@ -1824,78 +1534,6 @@ const APP_NAME = "卡林巴循音";
       });
 
       return candidate;
-    }
-
-    function markHit(event) {
-      if (isEventResolved(event)) {
-        return;
-      }
-      event.hit = true;
-      event.skipped = false;
-      event.pendingJudgeLanes.clear();
-      totalHits += 1;
-      combo += 1;
-      updateScore();
-      const noteEl = noteEls.get(event.id);
-      if (noteEl) {
-        noteEl.classList.add("hit");
-        noteEl.classList.remove("partial-hit");
-      }
-    }
-
-    function markMiss(event) {
-      if (isEventResolved(event)) {
-        return;
-      }
-      event.missed = true;
-      event.skipped = false;
-      combo = 0;
-      updateScore();
-      const noteEl = noteEls.get(event.id);
-      if (noteEl) {
-        noteEl.classList.add("missed");
-        noteEl.classList.remove("partial-hit");
-      }
-    }
-
-    function markPartialHit(event, lane) {
-      event.pendingJudgeLanes.delete(lane);
-      const noteEl = noteEls.get(event.id);
-      if (!noteEl) {
-        return;
-      }
-      noteEl.classList.add("partial-hit");
-      noteEl.querySelectorAll(`[data-lane="${lane}"]`).forEach((tone) => tone.classList.add("tone-heard"));
-    }
-
-    function evaluatePractice(seconds) {
-      songEvents.forEach((event) => {
-        if (isEventResolved(event)) {
-          return;
-        }
-
-        const eventTime = getEventTime(event);
-        const delta = seconds - eventTime;
-        const judgeWindow = getEventJudgeWindowSeconds(event);
-
-        if (
-          activeDetection.lane != null &&
-          Math.abs(delta) <= judgeWindow &&
-          event.pendingJudgeLanes.has(activeDetection.lane) &&
-          seconds >= event.lockedUntil
-        ) {
-          event.lockedUntil = seconds + 0.16;
-          markPartialHit(event, activeDetection.lane);
-          if (!event.pendingJudgeLanes.size) {
-            markHit(event);
-          }
-          return;
-        }
-
-        if (delta > Math.max(lateGraceSeconds, judgeWindow)) {
-          markMiss(event);
-        }
-      });
     }
 
     function renderBoard(seconds) {
@@ -1909,6 +1547,10 @@ const APP_NAME = "卡林巴循音";
       const compactView = isCompactPracticeView();
       const visualFallLeadSeconds = getVisualFallLeadSeconds();
       const maxCompactVisibleNotes = boardHeight < 155 ? 4 : 5;
+      if (activeDetection.lane != null && now > activeInputUntil) {
+        resetDetectionReadout();
+      }
+      boardShell.classList.toggle("demo-playing", demoMode);
       const compactVisibleIds = compactView
         ? new Set(
           (() => {
@@ -1916,9 +1558,6 @@ const APP_NAME = "卡林巴循音";
             const visibleIds = [];
             songEvents
               .filter((event) => {
-                if (event.hit || event.missed) {
-                  return false;
-                }
                 const eventTime = getEventTime(event);
                 return eventTime >= seconds - 0.08 && eventTime <= seconds + visualFallLeadSeconds;
               })
@@ -1939,7 +1578,6 @@ const APP_NAME = "卡林巴循音";
 
       const expectedEvent = seconds >= -visualFallLeadSeconds ? getExpectedEvent(seconds) : null;
       const judgementEvent = seconds >= 0 ? getJudgementEvent(seconds) : null;
-      expectedLanes = judgementEvent ? judgementEvent.judgeLanes : [];
       if (seconds < 0 || seconds >= getSongProgressDuration()) {
         setActiveBeamLane(null);
       } else if (judgementEvent) {
@@ -1958,16 +1596,9 @@ const APP_NAME = "卡林巴循音";
       renderScoreProgress(seconds, expectedEvent);
 
       if (activeDetection.lane != null) {
-        const kind = !expectedLanes.length || expectedLanes.includes(activeDetection.lane) ? "heard" : "wrong";
-        highlightLane(activeDetection.lane, kind);
-        if (kind === "wrong") {
-          lastWrongLane = activeDetection.lane;
-          lastWrongAt = now;
-        }
+        highlightLane(activeDetection.lane, "heard");
       } else if (activeDetection.candidateLane != null) {
         highlightLane(activeDetection.candidateLane, "soft");
-      } else if (lastWrongLane != null && performance.now() / 1000 - lastWrongAt < wrongFlashSeconds) {
-        highlightLane(lastWrongLane, "wrong");
       }
 
       songEvents.forEach((event) => {
@@ -1999,7 +1630,7 @@ const APP_NAME = "卡林巴循音";
         if (visible) {
           noteEl.classList.add("visible");
           const readableOpacity = compactView ? 0.34 + closeness * 0.66 : 1;
-          noteEl.style.opacity = event.hit ? "0.2" : event.missed ? "0.4" : `${readableOpacity}`;
+          noteEl.style.opacity = `${readableOpacity}`;
         } else {
           noteEl.classList.remove("visible");
           noteEl.classList.remove("imminent");
@@ -2016,19 +1647,12 @@ const APP_NAME = "卡林巴循音";
     }
 
     function shouldLoop() {
-      return practiceRunning || micTestMode || demoMode;
+      return practiceRunning || demoMode;
     }
 
     function animationLoop() {
-      if (analyser && (micJudgingEnabled || micTestMode)) {
-        analyzePitch();
-      }
-
       const seconds = practiceRunning || demoMode ? currentPracticeTime() : pausedElapsed;
       const visualFallLeadSeconds = getVisualFallLeadSeconds();
-      if (practiceRunning && micJudgingEnabled && seconds >= 0 && !seekingWithProgress) {
-        evaluatePractice(seconds);
-      }
       if ((practiceRunning || demoMode) && !seekingWithProgress) {
         playAccompanimentEvents(seconds);
       }
@@ -2045,26 +1669,18 @@ const APP_NAME = "卡林巴循音";
         setStatus("示范中");
       }
 
-      if (practiceRunning && songEvents.every(isEventResolved)) {
-        practiceRunning = false;
-        demoMode = false;
-        pausedElapsed = seconds;
-        pauseBtn.disabled = true;
-        setStatus(totalHits === getJudgeableEventCount() ? "完成" : "结束");
-      }
-
-      if (practiceRunning && !micJudgingEnabled && seconds >= getSongEndSeconds()) {
+      if (practiceRunning && seconds >= getSongEndSeconds()) {
         practiceRunning = false;
         pausedElapsed = seconds;
         pauseBtn.disabled = true;
-        setStatus("跟练结束");
-        updateScore();
+        setStatus("练习结束");
       }
 
       if (demoMode && seconds >= getSongEndSeconds()) {
         demoMode = false;
         pausedElapsed = -getSessionLeadSeconds();
         pauseBtn.disabled = true;
+        boardShell.classList.remove("demo-playing");
         resetSongEvents();
         renderBoard(pausedElapsed);
         setStatus("示范结束");
@@ -2080,82 +1696,34 @@ const APP_NAME = "卡林巴循音";
       rafId = requestAnimationFrame(animationLoop);
     }
 
-    function isSongFinished() {
-      return songEvents.length > 0 && songEvents.every(isEventResolved);
-    }
-
     async function startPractice() {
       if (shouldUseLandscapeFullscreen() && !document.fullscreenElement) {
         await requestFullscreenMode({ quiet: true });
       }
 
-      if (accompanimentEnabled && accompanimentEvents.length) {
+      try {
+        await ensureAudioContext();
+        preloadKalimbaSamples();
+      } catch (error) {
+        console.warn(`${APP_NAME} could not prepare screen keys`, error);
+      }
+
+      if (pausedElapsed >= getSongEndSeconds()) {
+        resetPracticeState();
         try {
           await ensureAudioContext();
-          await preloadKalimbaSamples();
+          preloadKalimbaSamples();
         } catch (error) {
-          console.warn(`${APP_NAME} could not start accompaniment`, error);
+          console.warn(`${APP_NAME} could not restart screen keys`, error);
         }
       }
-      await tryEnableMicrophoneForPractice();
 
-      if (isSongFinished() || pausedElapsed >= getSongEndSeconds()) {
-        resetPracticeState();
-        if (accompanimentEnabled && accompanimentEvents.length) {
-          try {
-            await ensureAudioContext();
-            await preloadKalimbaSamples();
-          } catch (error) {
-            console.warn(`${APP_NAME} could not restart accompaniment`, error);
-          }
-        }
-        await tryEnableMicrophoneForPractice();
-      }
-
-      micTestMode = false;
       demoMode = false;
+      boardShell.classList.remove("demo-playing");
       practiceRunning = true;
       practiceStartAt = performance.now() - pausedElapsed * 1000;
       pauseBtn.disabled = false;
-      micBtn.textContent = "麦克风测试";
-      setCompactIcon(micBtn, "mic", "麦克风测试");
       setStatus("准备");
-      updateScore();
-      startLoop();
-    }
-
-    async function toggleMicTest() {
-      if (micTestMode) {
-        micTestMode = false;
-        micBtn.textContent = "麦克风测试";
-        setCompactIcon(micBtn, "mic", "麦克风测试");
-        setStatus(practiceRunning ? "练习中" : "待开始");
-        return;
-      }
-
-      if (!canRequestMicrophone()) {
-        enterFollowMode(getMicrophoneUnavailableMessage());
-        setStatus("麦克风不可用");
-        return;
-      }
-
-      try {
-        await setupMicrophone();
-      } catch (error) {
-        console.error(error);
-        enterFollowMode("麦克风没有开启。你仍然可以点击“开始练习”进入跟练模式。");
-        setStatus("麦克风不可用");
-        return;
-      }
-
-      micTestMode = true;
-      micJudgingEnabled = false;
-      practiceRunning = false;
-      demoMode = false;
-      pauseBtn.disabled = true;
-      micBtn.textContent = "停止测试";
-      setCompactIcon(micBtn, "stop", "停止麦克风测试");
-      setStatus("麦克风测试中");
       startLoop();
     }
 
@@ -2167,59 +1735,33 @@ const APP_NAME = "卡林巴循音";
       practiceRunning = false;
       demoMode = false;
       pauseBtn.disabled = true;
+      boardShell.classList.remove("demo-playing");
       setStatus("已暂停");
     }
 
     function resetPracticeState() {
       practiceRunning = false;
       demoMode = false;
-      micTestMode = false;
-      micJudgingEnabled = false;
       pausedElapsed = 0;
       pauseBtn.disabled = true;
-      micBtn.textContent = "麦克风测试";
-      setCompactIcon(micBtn, "mic", "麦克风测试");
 
       activeDetection = {
         lane: null,
         candidateLane: null,
         candidateNote: "--",
         note: "--",
-        cents: null,
-        frequency: 0,
-        volume: 0,
-        clarity: 0,
         time: 0,
         held: false
       };
 
-      lastStableDetection = {
-        lane: null,
-        candidateLane: null,
-        candidateNote: "--",
-        note: "--",
-        cents: null,
-        frequency: 0,
-        volume: 0,
-        clarity: 0,
-        time: 0
-      };
-
-      expectedLanes = [];
-      lastWrongLane = null;
-      lastWrongAt = 0;
       signalPeakUntil = 0;
-      heardText.textContent = "--";
+      activeInputUntil = 0;
       targetText.textContent = "--";
-      feedbackText.textContent = "反馈: 等待声音";
-      centsText.textContent = "音准偏差: --";
-      freqText.textContent = "频率: --";
-      levelText.textContent = "输入电平: 0%";
       pausedElapsed = -getSessionLeadSeconds();
       setStatus("待开始");
       clearHighlights();
       setActiveBeamLane(null);
-      boardShell.classList.remove("signal");
+      boardShell.classList.remove("signal", "demo-playing");
       resetSongEvents();
       renderBoard(pausedElapsed);
       renderScoreProgress(pausedElapsed, null);
@@ -2240,6 +1782,7 @@ const APP_NAME = "卡林巴循音";
       pausedElapsed = -getSessionLeadSeconds();
       pauseBtn.disabled = false;
       practiceStartAt = performance.now() - pausedElapsed * 1000;
+      boardShell.classList.add("demo-playing");
       setStatus("示范准备");
       startLoop();
     }
@@ -2368,7 +1911,6 @@ const APP_NAME = "卡林巴循音";
     applyStaticControlIcons();
 
     startBtn.addEventListener("click", startPractice);
-    micBtn.addEventListener("click", toggleMicTest);
     pauseBtn.addEventListener("click", pausePractice);
     resetBtn.addEventListener("click", resetPracticeState);
     demoBtn.addEventListener("click", playDemo);
@@ -2389,9 +1931,6 @@ const APP_NAME = "卡林巴循音";
     }
     if (songProgress) {
       songProgress.addEventListener("pointerdown", startProgressSeek);
-      songProgress.addEventListener("pointermove", moveProgressSeek);
-      songProgress.addEventListener("pointerup", finishProgressSeek);
-      songProgress.addEventListener("pointercancel", finishProgressSeek);
       songProgress.addEventListener("keydown", handleProgressKeydown);
     }
     if (updateNowBtn) {
@@ -2401,6 +1940,9 @@ const APP_NAME = "卡林巴循音";
       updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
     }
     speedSlider.addEventListener("input", applySpeed);
+    window.addEventListener("pointermove", moveProgressSeek);
+    window.addEventListener("pointerup", finishProgressSeek);
+    window.addEventListener("pointercancel", finishProgressSeek);
     window.addEventListener("resize", refreshLandscapeMode);
     window.addEventListener("orientationchange", refreshLandscapeMode);
     if (portraitPracticeQuery.addEventListener) {
@@ -2417,12 +1959,6 @@ const APP_NAME = "卡林巴循音";
     }
     setCurrentSong(currentSongId);
     applyInitialLandscapeMode();
-
-    if (!canRequestMicrophone()) {
-      showNotice(getMicrophoneUnavailableMessage());
-      micText.textContent = "跟练模式";
-      micBtn.disabled = true;
-    }
 
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.addEventListener("controllerchange", () => {

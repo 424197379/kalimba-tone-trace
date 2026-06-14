@@ -1,4 +1,4 @@
-const APP_VERSION = "2.2.10";
+const APP_VERSION = "2.2.11";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -35,7 +35,6 @@ const APP_SHELL = [
   "./kalimba-practice.html",
   "./manifest.webmanifest",
   "./src/app.js",
-  "./src/pitch.js",
   "./src/song-library.js",
   "./src/song-store.js",
   "./src/songs.js",

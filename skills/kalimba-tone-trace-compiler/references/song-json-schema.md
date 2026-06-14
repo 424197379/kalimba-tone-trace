@@ -69,7 +69,7 @@ When only a song title is supplied, build this V2 object from cross-checked sour
   "uploader": "system",
   "practiceTitle": "Xuan Cao Hua chord practice track",
   "scoreTitle": "Xuan Cao Hua chord jianpu progress",
-  "hint": "Play marked melody and chord target notes within the judgement window.",
+  "hint": "Follow the marked melody and chord target notes as practice targets.",
   "difficulty": "medium",
   "bpm": 88,
   "defaultSpeedFactor": 0.85,
@@ -94,14 +94,14 @@ When only a song title is supplied, build this V2 object from cross-checked sour
 V2 event rules:
 
 - `notes[].role` is one of `"melody"`, `"harmony"`, `"bass"`, `"arpeggio"`, or `"ornament"`.
-- `judgementMode: "melody"` judges only the melody note.
-- `judgementMode: "chord"` judges every `judge: true` note in the event.
-- Use `judgeWindow` around `0.45` to `0.8` beats for chord events that may be played as a sweep or broken chord.
+- `judgementMode: "melody"` exposes only the melody note as the practice target.
+- `judgementMode: "chord"` exposes every `judge: true` note in the event as practice targets.
+- Use `judgeWindow` around `0.45` to `0.8` beats as a visual/following window for chord events that may be played as a sweep or broken chord.
 - Do not duplicate the same note name inside one event.
 
 ## Auto Accompaniment
 
-V2 uploads and built-ins may include `autoAccompaniment`. These notes are played by the app and are not microphone judgement targets.
+V2 uploads and built-ins may include `autoAccompaniment`. These notes are played by the app and are not user-played practice targets.
 
 ```json
 "autoAccompaniment": {
@@ -126,7 +126,7 @@ Auto-accompaniment rules:
 - Do not put `judge` on accompaniment notes.
 - Keep velocity lower than melody, usually `0.30` to `0.45`.
 - Generate sparse, playable patterns. Avoid dense fills that compete with the melody.
-- For the current app, accompaniment is for listening/following; microphone scoring still follows the selected practice version.
+- For the current app, accompaniment is for listening/following; practice target highlighting still follows the selected version.
 
 ## Rhythm Rest Windows
 

@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.2.10";
+export const APP_VERSION = "2.2.11";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -68,7 +68,7 @@ JSON 必须使用双引号，不能有注释，不能有尾随逗号。
 1. 先识别主旋律，严格按小节线、下划线、附点、连音线、休止符和弱起定位 beat 与 duration。
 2. 如果图片模糊、不完整、缺少和弦/伴奏/节奏细节，请上网查找同曲简谱、简和谱、五线谱、MIDI 或 MusicXML 交叉验证；优先完整谱，其次简和谱，再其次和弦谱。
 3. 主旋律 1 拍以上空档默认保持静音呼吸，不要用自动伴奏填满，除非谱源明确显示伴奏延续。
-4. 和弦目标音要适合 21 音 C 调卡林巴实际弹奏，密集和弦请精简为 2 到 4 个关键音。无法确认的装饰音不要强行加入判定。
+4. 和弦目标音要适合 21 音 C 调卡林巴实际弹奏，密集和弦请精简为 2 到 4 个关键音。无法确认的装饰音不要强行加入跟弹目标。
 5. App 会自动从 events 里抽取主旋律版；只要 events 里有和弦目标音，或 JSON 里有 autoAccompaniment，App 就会生成可切换的和弦/编配版。
 6. 除非用户明确要求“只要主旋律”，否则不要只输出单音主旋律。请尽量补充可验证或保守推断的和弦目标音、bass/harmony 与 autoAccompaniment；推断内容要在 hint 或 rhythm.sourceStatus 中标明。
 
@@ -132,8 +132,8 @@ JSON 格式：
 - 如果输出的是完整编配，至少应满足以下之一：某些 events 含有 harmony/bass 且 judge: true，或提供 autoAccompaniment.events。
 - 不要在 title/versionLabel/arrangementKind 写“主旋律版”后又省略和弦与伴奏，除非用户明确要求只导入主旋律。
 - notes[].name 必须是 21 音 C 调卡林巴音名，role 只能是 "melody"、"harmony"、"bass"、"arpeggio"、"ornament"。
-- judgementMode 为 "melody" 时只判定主旋律；为 "chord" 时，事件内所有 judge: true 的音都需要用户弹出。
-- autoAccompaniment 是 App 自动播放的伴奏，不参与麦克风判定，里面不要写 judge 字段，音量 velocity 通常低于 0.45。
+- judgementMode 为 "melody" 时只提示主旋律；为 "chord" 时，事件内所有 judge: true 的音都作为用户跟弹目标。
+- autoAccompaniment 是 App 自动播放的伴奏，不参与用户演奏目标提示，里面不要写 judge 字段，音量 velocity 通常低于 0.45。
 - rhythm.restWindows 表示主旋律长停顿，policy 为 "silent" 的窗口内不要放自动伴奏事件；只有谱源明确延音时才用 "hold"。
 - 如果图片有调号，例如 1=C、1=D、1=F，请先按原调读谱，再转成 C 调输出，仍然写 "key": "C"。
 - 如果图片没有 BPM，请按歌曲风格估计一个适合练习的 bpm，通常在 72 到 120 之间。

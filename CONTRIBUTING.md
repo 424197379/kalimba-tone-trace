@@ -41,7 +41,7 @@ npm run check
 Small, scoped feature PRs are welcome. For now, avoid broad changes to:
 
 - Core audio playback architecture.
-- Microphone pitch-detection architecture.
+- Screen-key input, audio playback, or PWA architecture.
 - PWA cache foundation.
 - Overall visual design system.
 
