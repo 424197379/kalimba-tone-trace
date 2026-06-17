@@ -1083,10 +1083,12 @@ export const SONG_LIBRARY = {
           "private/sheets/raw/IMG_20260613_182954.jpg"
         ],
         "unsupported": [
-          "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments."
+          "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments.",
+          "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
         ],
         "unsureMeasures": [
-          "m25-m30"
+          "m25-m30",
+          "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
         ],
         "sources": [
           {
@@ -1096,6 +1098,10 @@ export const SONG_LIBRARY = {
           {
             "label": "Zuoqu Mo Li Hua folk song reference",
             "url": "https://www.zuoqu.net/works-356716.html"
+          },
+          {
+            "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+            "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
           }
         ]
       }
@@ -15514,6 +15520,1524 @@ export const SONG_LIBRARY = {
         ]
       }
     },
+  "hollow-knight-main-theme": {
+      "schemaVersion": 1,
+      "id": "hollow-knight-main-theme",
+      "title": "Hollow Knight Main Theme",
+      "uploader": "system",
+      "practiceTitle": "Hollow Knight Main Theme practice track",
+      "scoreTitle": "Hollow Knight Main Theme jianpu progress",
+      "hint": "Opening melody excerpt for 21-key C kalimba; based on score previews at BPM 55. Harmony, bass, and later full-score measures are omitted.",
+      "difficulty": "medium",
+      "bpm": 55,
+      "defaultSpeedFactor": 0.9,
+      "beatsPerMeasure": 3,
+      "key": "C",
+      "steps": [
+        [
+          "E5",
+          0,
+          1
+        ],
+        [
+          "E5",
+          1,
+          1
+        ],
+        [
+          "G5",
+          2,
+          0.5
+        ],
+        [
+          "A5",
+          2.5,
+          0.5
+        ],
+        [
+          "B5",
+          3,
+          3
+        ],
+        [
+          "E5",
+          6,
+          0.5
+        ],
+        [
+          "D5",
+          6.5,
+          0.5
+        ],
+        [
+          "E5",
+          7,
+          1
+        ],
+        [
+          "C5",
+          8,
+          0.5
+        ],
+        [
+          "D5",
+          8.5,
+          0.5
+        ],
+        [
+          "B5",
+          9,
+          3
+        ],
+        [
+          "E5",
+          12,
+          1
+        ],
+        [
+          "E5",
+          13,
+          1
+        ],
+        [
+          "G5",
+          14,
+          0.5
+        ],
+        [
+          "A5",
+          14.5,
+          0.5
+        ],
+        [
+          "B5",
+          15,
+          3
+        ],
+        [
+          "B5",
+          18,
+          0.5
+        ],
+        [
+          "A5",
+          18.5,
+          0.5
+        ],
+        [
+          "G5",
+          19,
+          0.5
+        ],
+        [
+          "A5",
+          19.5,
+          0.5
+        ],
+        [
+          "F5",
+          20,
+          1
+        ],
+        [
+          "B5",
+          21,
+          3
+        ],
+        [
+          "E5",
+          27,
+          1
+        ],
+        [
+          "E5",
+          28,
+          1
+        ],
+        [
+          "G5",
+          29,
+          0.5
+        ],
+        [
+          "A5",
+          29.5,
+          0.5
+        ],
+        [
+          "B5",
+          30,
+          3
+        ],
+        [
+          "E5",
+          33,
+          0.5
+        ],
+        [
+          "D5",
+          33.5,
+          0.5
+        ],
+        [
+          "E5",
+          34,
+          1
+        ],
+        [
+          "C5",
+          35,
+          0.5
+        ],
+        [
+          "D5",
+          35.5,
+          0.5
+        ],
+        [
+          "B5",
+          36,
+          3
+        ],
+        [
+          "E5",
+          39,
+          1
+        ],
+        [
+          "E5",
+          40,
+          1
+        ],
+        [
+          "G5",
+          41,
+          0.5
+        ],
+        [
+          "A5",
+          41.5,
+          0.5
+        ],
+        [
+          "B5",
+          42,
+          3
+        ]
+      ],
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": false,
+        "unsupported": [
+          "V1 keeps only the upper melody from the sourced piano score; bass, harmony, slurs, and arpeggiated figures are omitted.",
+          "The source score uses a flat-key minor arrangement. This melody excerpt is normalized to natural notes playable on a 21-key C kalimba.",
+          "Gangqinpu exposes the score as a preview image; later measures are not encoded here pending source and rights review.",
+          "This built-in entry is an excerpt, not the complete public-domain-style full arrangement; publication rights for a full modern copyrighted game score should be reviewed before release.",
+          "Scorely cross-check is a full preview in E-flat minor; the built-in melody is normalized to C natural notes for the 21-key C kalimba."
+        ],
+        "unsureMeasures": [
+          "m12-m15 upper melody is extracted from a harmonized piano texture.",
+          "m16+ not included in this first library capture.",
+          "Only the opening 15 measures / 45 beats are encoded; later measures are intentionally omitted."
+        ],
+        "sources": [
+          {
+            "label": "Gangqinpu Hollow Knight Main Theme score preview",
+            "url": "https://www.gangqinpu.com/cchtml/1052937.htm"
+          },
+          {
+            "label": "Scorely Hollow Knight Main Theme full preview cross-check",
+            "url": "https://scorely.org/product/hollow-knight-main-theme/"
+          }
+        ],
+        "sourceImages": [
+          "private/sheets/raw/hollow-knight-main-theme/gangqinpu-score-preview.png",
+          "private/sheets/raw/hollow-knight-main-theme/scorely-preview.png"
+        ],
+        "sourceReview": {
+          "confidence": "medium-for-opening-melody-excerpt",
+          "decision": "Compile the existing first-pass opening melody excerpt into the built-in library and preserve source previews for later full arrangement review.",
+          "savedFiles": [
+            "private/sheets/raw/hollow-knight-main-theme/gangqinpu-1052937.html",
+            "private/sheets/raw/hollow-knight-main-theme/gangqinpu-score-preview.png",
+            "private/sheets/raw/hollow-knight-main-theme/gangqinpu-1052937.ccmz",
+            "private/sheets/raw/hollow-knight-main-theme/scorely-hollow-knight-main-theme.html",
+            "private/sheets/raw/hollow-knight-main-theme/scorely-preview.png"
+          ],
+          "reviewRequired": [
+            "Confirm rights before publishing a fuller modern game-score arrangement.",
+            "If a complete practice version is desired, transcribe from the Scorely full preview or CCMZ with explicit octave and accidental handling."
+          ]
+        }
+      }
+    },
+  "interstellar-main-theme": {
+      "schemaVersion": 1,
+      "id": "interstellar-main-theme",
+      "title": "《星际穿越主题曲》",
+      "uploader": "system",
+      "practiceTitle": "《星际穿越主题曲》练习轨道",
+      "scoreTitle": "《星际穿越主题曲》简谱进度",
+      "hint": "Interstellar Main Theme melody practice version; source is 1=C, 3/4, q=90. The 4/4 ending and triplet arpeggios are simplified for 21-key C kalimba playback.",
+      "difficulty": "hard",
+      "bpm": 90,
+      "defaultSpeedFactor": 0.82,
+      "beatsPerMeasure": 3,
+      "key": "C",
+      "steps": [
+        [
+          "E4",
+          0,
+          0.5
+        ],
+        [
+          "C4",
+          0.5,
+          0.5
+        ],
+        [
+          "E4",
+          1,
+          0.5
+        ],
+        [
+          "C4",
+          1.5,
+          0.5
+        ],
+        [
+          "E4",
+          2,
+          0.5
+        ],
+        [
+          "C4",
+          2.5,
+          0.5
+        ],
+        [
+          "E4",
+          3,
+          0.5
+        ],
+        [
+          "C4",
+          3.5,
+          0.5
+        ],
+        [
+          "E4",
+          4,
+          0.5
+        ],
+        [
+          "C4",
+          4.5,
+          0.5
+        ],
+        [
+          "E4",
+          5,
+          0.5
+        ],
+        [
+          "C4",
+          5.5,
+          0.5
+        ],
+        [
+          "E4",
+          6,
+          0.5
+        ],
+        [
+          "C4",
+          6.5,
+          0.5
+        ],
+        [
+          "E4",
+          7,
+          0.5
+        ],
+        [
+          "C4",
+          7.5,
+          0.5
+        ],
+        [
+          "E4",
+          8,
+          0.5
+        ],
+        [
+          "C4",
+          8.5,
+          0.5
+        ],
+        [
+          "E4",
+          9,
+          0.5
+        ],
+        [
+          "D4",
+          9.5,
+          0.5
+        ],
+        [
+          "E4",
+          10,
+          0.5
+        ],
+        [
+          "D4",
+          10.5,
+          0.5
+        ],
+        [
+          "E4",
+          11,
+          0.5
+        ],
+        [
+          "D4",
+          11.5,
+          0.5
+        ],
+        [
+          "E4",
+          12,
+          0.5
+        ],
+        [
+          "D4",
+          12.5,
+          0.5
+        ],
+        [
+          "E4",
+          13,
+          0.5
+        ],
+        [
+          "D4",
+          13.5,
+          0.5
+        ],
+        [
+          "E4",
+          14,
+          0.5
+        ],
+        [
+          "D4",
+          14.5,
+          0.5
+        ],
+        [
+          "E4",
+          15,
+          0.5
+        ],
+        [
+          "D4",
+          15.5,
+          0.5
+        ],
+        [
+          "E4",
+          16,
+          0.5
+        ],
+        [
+          "D4",
+          16.5,
+          0.5
+        ],
+        [
+          "E4",
+          17,
+          0.5
+        ],
+        [
+          "D4",
+          17.5,
+          0.5
+        ],
+        [
+          "E4",
+          18,
+          0.5
+        ],
+        [
+          "D4",
+          18.5,
+          0.5
+        ],
+        [
+          "E4",
+          19,
+          0.5
+        ],
+        [
+          "D4",
+          19.5,
+          0.5
+        ],
+        [
+          "E4",
+          20,
+          0.5
+        ],
+        [
+          "D4",
+          20.5,
+          0.5
+        ],
+        [
+          "E4",
+          21,
+          0.5
+        ],
+        [
+          "D4",
+          21.5,
+          0.5
+        ],
+        [
+          "E4",
+          22,
+          0.5
+        ],
+        [
+          "D4",
+          22.5,
+          0.5
+        ],
+        [
+          "E4",
+          23,
+          0.5
+        ],
+        [
+          "D4",
+          23.5,
+          0.5
+        ],
+        [
+          "E4",
+          24,
+          0.5
+        ],
+        [
+          "D4",
+          24.5,
+          0.5
+        ],
+        [
+          "E4",
+          25,
+          0.5
+        ],
+        [
+          "D4",
+          25.5,
+          0.5
+        ],
+        [
+          "E4",
+          26,
+          0.5
+        ],
+        [
+          "D4",
+          26.5,
+          0.5
+        ],
+        [
+          "A4",
+          27,
+          1
+        ],
+        [
+          "E5",
+          28,
+          2
+        ],
+        [
+          "A4",
+          30,
+          1
+        ],
+        [
+          "E5",
+          31,
+          2
+        ],
+        [
+          "B4",
+          33,
+          1
+        ],
+        [
+          "E5",
+          34,
+          2
+        ],
+        [
+          "B4",
+          36,
+          1
+        ],
+        [
+          "E5",
+          37,
+          2
+        ],
+        [
+          "C5",
+          39,
+          1
+        ],
+        [
+          "E5",
+          40,
+          2
+        ],
+        [
+          "C5",
+          42,
+          1
+        ],
+        [
+          "E5",
+          43,
+          2
+        ],
+        [
+          "D5",
+          45,
+          1
+        ],
+        [
+          "E5",
+          46,
+          2
+        ],
+        [
+          "D5",
+          48,
+          1
+        ],
+        [
+          "E5",
+          49,
+          1
+        ],
+        [
+          "B4",
+          50,
+          1
+        ],
+        [
+          "A4",
+          51,
+          1
+        ],
+        [
+          "E5",
+          52,
+          2
+        ],
+        [
+          "A4",
+          54,
+          1
+        ],
+        [
+          "E5",
+          55,
+          2
+        ],
+        [
+          "B4",
+          57,
+          1
+        ],
+        [
+          "E5",
+          58,
+          2
+        ],
+        [
+          "B4",
+          60,
+          1
+        ],
+        [
+          "E5",
+          61,
+          2
+        ],
+        [
+          "C5",
+          63,
+          1
+        ],
+        [
+          "E5",
+          64,
+          2
+        ],
+        [
+          "C5",
+          66,
+          1
+        ],
+        [
+          "E5",
+          67,
+          2
+        ],
+        [
+          "D5",
+          69,
+          1
+        ],
+        [
+          "E5",
+          70,
+          1
+        ],
+        [
+          "B4",
+          71,
+          1
+        ],
+        [
+          "D5",
+          72,
+          1
+        ],
+        [
+          "E5",
+          73,
+          1
+        ],
+        [
+          "B4",
+          74,
+          1
+        ],
+        [
+          "A4",
+          75,
+          1
+        ],
+        [
+          "E5",
+          76,
+          1
+        ],
+        [
+          "A4",
+          77,
+          1
+        ],
+        [
+          "A4",
+          78,
+          1
+        ],
+        [
+          "E5",
+          79,
+          1
+        ],
+        [
+          "A4",
+          80,
+          1
+        ],
+        [
+          "B4",
+          81,
+          1
+        ],
+        [
+          "E5",
+          82,
+          1
+        ],
+        [
+          "B4",
+          83,
+          1
+        ],
+        [
+          "B4",
+          84,
+          1
+        ],
+        [
+          "E5",
+          85,
+          1
+        ],
+        [
+          "B4",
+          86,
+          1
+        ],
+        [
+          "C5",
+          87,
+          1
+        ],
+        [
+          "E5",
+          88,
+          1
+        ],
+        [
+          "C5",
+          89,
+          1
+        ],
+        [
+          "C5",
+          90,
+          1
+        ],
+        [
+          "E5",
+          91,
+          1
+        ],
+        [
+          "C5",
+          92,
+          1
+        ],
+        [
+          "D5",
+          93,
+          1
+        ],
+        [
+          "E5",
+          94,
+          1
+        ],
+        [
+          "D5",
+          95,
+          1
+        ],
+        [
+          "D5",
+          96,
+          1
+        ],
+        [
+          "E5",
+          97,
+          1
+        ],
+        [
+          "B4",
+          98,
+          1
+        ],
+        [
+          "A4",
+          99,
+          1
+        ],
+        [
+          "E5",
+          100,
+          1
+        ],
+        [
+          "A4",
+          101,
+          1
+        ],
+        [
+          "A4",
+          102,
+          1
+        ],
+        [
+          "E5",
+          103,
+          1
+        ],
+        [
+          "A4",
+          104,
+          1
+        ],
+        [
+          "B4",
+          105,
+          1
+        ],
+        [
+          "E5",
+          106,
+          1
+        ],
+        [
+          "B4",
+          107,
+          1
+        ],
+        [
+          "B4",
+          108,
+          1
+        ],
+        [
+          "E5",
+          109,
+          1
+        ],
+        [
+          "B4",
+          110,
+          1
+        ],
+        [
+          "C5",
+          111,
+          1
+        ],
+        [
+          "E5",
+          112,
+          1
+        ],
+        [
+          "C5",
+          113,
+          1
+        ],
+        [
+          "C5",
+          114,
+          1
+        ],
+        [
+          "E5",
+          115,
+          1
+        ],
+        [
+          "C5",
+          116,
+          1
+        ],
+        [
+          "D5",
+          117,
+          1
+        ],
+        [
+          "E5",
+          118,
+          1
+        ],
+        [
+          "D5",
+          119,
+          1
+        ],
+        [
+          "D5",
+          120,
+          1
+        ],
+        [
+          "E5",
+          121,
+          1
+        ],
+        [
+          "D5",
+          122,
+          1
+        ],
+        [
+          "E4",
+          123,
+          1
+        ],
+        [
+          "E4",
+          124,
+          1
+        ],
+        [
+          "E4",
+          125,
+          1
+        ],
+        [
+          "E4",
+          126,
+          1
+        ],
+        [
+          "E4",
+          127,
+          1
+        ],
+        [
+          "E4",
+          128,
+          1
+        ],
+        [
+          "E4",
+          129,
+          1
+        ],
+        [
+          "E4",
+          130,
+          1
+        ],
+        [
+          "C5",
+          131,
+          0.25
+        ],
+        [
+          "A4",
+          131.25,
+          0.25
+        ],
+        [
+          "E4",
+          131.5,
+          0.25
+        ],
+        [
+          "A4",
+          131.75,
+          0.25
+        ],
+        [
+          "C5",
+          132,
+          0.25
+        ],
+        [
+          "A4",
+          132.25,
+          0.25
+        ],
+        [
+          "E4",
+          132.5,
+          0.25
+        ],
+        [
+          "A4",
+          132.75,
+          0.25
+        ],
+        [
+          "C5",
+          133,
+          0.25
+        ],
+        [
+          "A4",
+          133.25,
+          0.25
+        ],
+        [
+          "E4",
+          133.5,
+          0.25
+        ],
+        [
+          "A4",
+          133.75,
+          0.25
+        ],
+        [
+          "C5",
+          134,
+          0.25
+        ],
+        [
+          "A4",
+          134.25,
+          0.25
+        ],
+        [
+          "E4",
+          134.5,
+          0.25
+        ],
+        [
+          "A4",
+          134.75,
+          0.25
+        ],
+        [
+          "C5",
+          135,
+          0.25
+        ],
+        [
+          "A4",
+          135.25,
+          0.25
+        ],
+        [
+          "E4",
+          135.5,
+          0.25
+        ],
+        [
+          "A4",
+          135.75,
+          0.25
+        ],
+        [
+          "C5",
+          136,
+          0.25
+        ],
+        [
+          "A4",
+          136.25,
+          0.25
+        ],
+        [
+          "E4",
+          136.5,
+          0.25
+        ],
+        [
+          "A4",
+          136.75,
+          0.25
+        ],
+        [
+          "C5",
+          137,
+          0.25
+        ],
+        [
+          "A4",
+          137.25,
+          0.25
+        ],
+        [
+          "E4",
+          137.5,
+          0.25
+        ],
+        [
+          "A4",
+          137.75,
+          0.25
+        ],
+        [
+          "C5",
+          138,
+          0.25
+        ],
+        [
+          "A4",
+          138.25,
+          0.25
+        ],
+        [
+          "E4",
+          138.5,
+          0.25
+        ],
+        [
+          "A4",
+          138.75,
+          0.25
+        ],
+        [
+          "F5",
+          139,
+          0.25
+        ],
+        [
+          "C5",
+          139.25,
+          0.25
+        ],
+        [
+          "A4",
+          139.5,
+          0.25
+        ],
+        [
+          "C5",
+          139.75,
+          0.25
+        ],
+        [
+          "F5",
+          140,
+          0.25
+        ],
+        [
+          "C5",
+          140.25,
+          0.25
+        ],
+        [
+          "A4",
+          140.5,
+          0.25
+        ],
+        [
+          "C5",
+          140.75,
+          0.25
+        ],
+        [
+          "F5",
+          141,
+          0.25
+        ],
+        [
+          "C5",
+          141.25,
+          0.25
+        ],
+        [
+          "A4",
+          141.5,
+          0.25
+        ],
+        [
+          "C5",
+          141.75,
+          0.25
+        ],
+        [
+          "F5",
+          142,
+          0.25
+        ],
+        [
+          "C5",
+          142.25,
+          0.25
+        ],
+        [
+          "A4",
+          142.5,
+          0.25
+        ],
+        [
+          "C5",
+          142.75,
+          0.25
+        ],
+        [
+          "B4",
+          143,
+          0.25
+        ],
+        [
+          "G4",
+          143.25,
+          0.25
+        ],
+        [
+          "E4",
+          143.5,
+          0.25
+        ],
+        [
+          "G4",
+          143.75,
+          0.25
+        ],
+        [
+          "B4",
+          144,
+          0.25
+        ],
+        [
+          "G4",
+          144.25,
+          0.25
+        ],
+        [
+          "E4",
+          144.5,
+          0.25
+        ],
+        [
+          "G4",
+          144.75,
+          0.25
+        ],
+        [
+          "B4",
+          145,
+          0.25
+        ],
+        [
+          "G4",
+          145.25,
+          0.25
+        ],
+        [
+          "E4",
+          145.5,
+          0.25
+        ],
+        [
+          "G4",
+          145.75,
+          0.25
+        ],
+        [
+          "B4",
+          146,
+          0.25
+        ],
+        [
+          "G4",
+          146.25,
+          0.25
+        ],
+        [
+          "E4",
+          146.5,
+          0.25
+        ],
+        [
+          "G4",
+          146.75,
+          0.25
+        ],
+        [
+          "C5",
+          147,
+          0.25
+        ],
+        [
+          "G4",
+          147.25,
+          0.25
+        ],
+        [
+          "E4",
+          147.5,
+          0.25
+        ],
+        [
+          "G4",
+          147.75,
+          0.25
+        ],
+        [
+          "C5",
+          148,
+          0.25
+        ],
+        [
+          "G4",
+          148.25,
+          0.25
+        ],
+        [
+          "E4",
+          148.5,
+          0.25
+        ],
+        [
+          "G4",
+          148.75,
+          0.25
+        ],
+        [
+          "C5",
+          149,
+          0.25
+        ],
+        [
+          "G4",
+          149.25,
+          0.25
+        ],
+        [
+          "E4",
+          149.5,
+          0.25
+        ],
+        [
+          "G4",
+          149.75,
+          0.25
+        ],
+        [
+          "C5",
+          150,
+          0.25
+        ],
+        [
+          "G4",
+          150.25,
+          0.25
+        ],
+        [
+          "E4",
+          150.5,
+          0.25
+        ],
+        [
+          "G4",
+          150.75,
+          0.25
+        ],
+        [
+          "D5",
+          151,
+          0.25
+        ],
+        [
+          "B4",
+          151.25,
+          0.25
+        ],
+        [
+          "E4",
+          151.5,
+          0.25
+        ],
+        [
+          "B4",
+          151.75,
+          0.25
+        ],
+        [
+          "D5",
+          152,
+          0.25
+        ],
+        [
+          "B4",
+          152.25,
+          0.25
+        ],
+        [
+          "E4",
+          152.5,
+          0.25
+        ],
+        [
+          "B4",
+          152.75,
+          0.25
+        ],
+        [
+          "D5",
+          153,
+          0.25
+        ],
+        [
+          "B4",
+          153.25,
+          0.25
+        ],
+        [
+          "E4",
+          153.5,
+          0.25
+        ],
+        [
+          "B4",
+          153.75,
+          0.25
+        ],
+        [
+          "D5",
+          154,
+          0.25
+        ],
+        [
+          "B4",
+          154.25,
+          0.25
+        ],
+        [
+          "E4",
+          154.5,
+          0.25
+        ],
+        [
+          "B4",
+          154.75,
+          0.25
+        ],
+        [
+          "E5",
+          155,
+          4
+        ]
+      ],
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/interstellar-main-theme/doc88-page-01.png",
+          "private/sheets/raw/interstellar-main-theme/doc88-page-02.png",
+          "private/sheets/raw/interstellar-main-theme/doc88-page-03.png"
+        ],
+        "unsupported": [
+          "V1 keeps only the readable main melody / top-line motion; stacked chord tones, bass holds, and full accompaniment are omitted.",
+          "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
+          "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
+          "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
+        ],
+        "unsureMeasures": [
+          "m10-m41 use the upper note and sustained E5 from stacked chord notation; inner voices are intentionally omitted from V1.",
+          "m44-m49 are playable arpeggio simplifications rather than exact triplet transcription."
+        ],
+        "sourceReview": {
+          "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
+          "decision": "Added a melody-only built-in practice version from the supplied Doc88 three-page jianpu screenshots. Chord arrangement deferred because the source has dense stacked/bass layers and a meter change.",
+          "savedFiles": [
+            "private/sheets/raw/interstellar-main-theme/doc88-interstellar.html",
+            "private/sheets/raw/interstellar-main-theme/doc88-page-01.png",
+            "private/sheets/raw/interstellar-main-theme/doc88-page-02.png",
+            "private/sheets/raw/interstellar-main-theme/doc88-page-03.png"
+          ],
+          "sources": [
+            {
+              "label": "Doc88 Interstellar Main Theme jianpu source",
+              "url": "https://www.doc88.com/p-16016400430940.html"
+            },
+            {
+              "label": "User supplied page screenshots",
+              "url": "local-private-source"
+            }
+          ]
+        }
+      }
+    },
   "jasmine-chord": {
       "schemaVersion": 2,
       "id": "jasmine-chord",
@@ -17811,11 +19335,13 @@ export const SONG_LIBRARY = {
         ],
         "unsupported": [
           "V2 chord version is a 21-key C kalimba practice arrangement, optimized for playability and stable judging rather than publication-grade voicing.",
-          "harmonic-density:sparse; progression:C/F/G7 diatonic phrase support"
+          "harmonic-density:sparse; progression:C/F/G7 diatonic phrase support",
+          "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
         ],
         "unsureMeasures": [
           "m25-m30",
-          "harmony inferred from C major melody; no complete piano reduction source located"
+          "harmony inferred from C major melody; no complete piano reduction source located",
+          "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
         ],
         "harmonyReview": {
           "confidence": "medium-melody-verified-harmony-inferred",
@@ -17828,10 +19354,15 @@ export const SONG_LIBRARY = {
             {
               "title": "Zuoqu Mo Li Hua folk song reference",
               "url": "https://www.zuoqu.net/works-356716.html"
+            },
+            {
+              "title": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+              "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
             }
           ],
           "reviewRequired": [
-            "confirm full published harmony if a source-backed arrangement is required"
+            "confirm full published harmony if a source-backed arrangement is required",
+            "Quark source has C/F/Am/G/Dm/G chord symbols for the short version; current built-in chord track remains sparse and does not encode every mid-measure change."
           ]
         },
         "autoAccompaniment": {
@@ -17842,7 +19373,13 @@ export const SONG_LIBRARY = {
           "reviewRequired": [
             "confirm full published harmony if a source-backed arrangement is required"
           ]
-        }
+        },
+        "sources": [
+          {
+            "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+            "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
+          }
+        ]
       },
       "autoAccompaniment": {
         "enabledByDefault": true,
@@ -18402,8 +19939,393 @@ export const SONG_LIBRARY = {
           {
             "label": "Zuoqu Mo Li Hua folk song reference",
             "url": "https://www.zuoqu.net/works-356716.html"
+          },
+          {
+            "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+            "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
           }
         ]
+      }
+    },
+  "ju-ci-lang-de-xia-tian": {
+      "schemaVersion": 1,
+      "id": "ju-ci-lang-de-xia-tian",
+      "title": "《菊次郎的夏天》",
+      "uploader": "system",
+      "practiceTitle": "《菊次郎的夏天》练习轨道",
+      "scoreTitle": "《菊次郎的夏天》简谱进度",
+      "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴单音演奏谱整理。",
+      "difficulty": "easy",
+      "bpm": 80,
+      "defaultSpeedFactor": 0.9,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "steps": [
+        [
+          "G4",
+          2,
+          0.5
+        ],
+        [
+          "C5",
+          2.5,
+          0.5
+        ],
+        [
+          "D5",
+          3,
+          0.5
+        ],
+        [
+          "E5",
+          3.5,
+          0.5
+        ],
+        [
+          "D5",
+          4,
+          1
+        ],
+        [
+          "C5",
+          5,
+          0.5
+        ],
+        [
+          "C5",
+          5.5,
+          0.5
+        ],
+        [
+          "C5",
+          6,
+          2
+        ],
+        [
+          "G4",
+          10,
+          0.5
+        ],
+        [
+          "C5",
+          10.5,
+          0.5
+        ],
+        [
+          "D5",
+          11,
+          0.5
+        ],
+        [
+          "E5",
+          11.5,
+          0.5
+        ],
+        [
+          "D5",
+          12,
+          1
+        ],
+        [
+          "C5",
+          13,
+          0.5
+        ],
+        [
+          "D5",
+          13.5,
+          0.5
+        ],
+        [
+          "D5",
+          14,
+          1
+        ],
+        [
+          "E5",
+          15,
+          1
+        ],
+        [
+          "E5",
+          16,
+          2
+        ],
+        [
+          "G4",
+          18,
+          0.5
+        ],
+        [
+          "C5",
+          18.5,
+          0.5
+        ],
+        [
+          "D5",
+          19,
+          0.5
+        ],
+        [
+          "E5",
+          19.5,
+          0.5
+        ],
+        [
+          "D5",
+          20,
+          1
+        ],
+        [
+          "C5",
+          21,
+          0.5
+        ],
+        [
+          "C5",
+          21.5,
+          0.5
+        ],
+        [
+          "C5",
+          22,
+          2
+        ],
+        [
+          "G4",
+          26,
+          0.5
+        ],
+        [
+          "C5",
+          26.5,
+          0.5
+        ],
+        [
+          "D5",
+          27,
+          0.5
+        ],
+        [
+          "E5",
+          27.5,
+          0.5
+        ],
+        [
+          "D5",
+          28,
+          1
+        ],
+        [
+          "C5",
+          29,
+          0.5
+        ],
+        [
+          "D5",
+          29.5,
+          0.5
+        ],
+        [
+          "D5",
+          30,
+          1
+        ],
+        [
+          "G5",
+          31,
+          1
+        ],
+        [
+          "E5",
+          32,
+          2
+        ],
+        [
+          "E5",
+          34,
+          1
+        ],
+        [
+          "F5",
+          35,
+          1
+        ],
+        [
+          "G5",
+          36,
+          1
+        ],
+        [
+          "G5",
+          37,
+          0.5
+        ],
+        [
+          "G5",
+          37.5,
+          0.5
+        ],
+        [
+          "G5",
+          38,
+          1
+        ],
+        [
+          "G5",
+          39,
+          1
+        ],
+        [
+          "G5",
+          40,
+          0.5
+        ],
+        [
+          "E5",
+          40.5,
+          0.5
+        ],
+        [
+          "C5",
+          41,
+          1
+        ],
+        [
+          "E5",
+          43,
+          0.5
+        ],
+        [
+          "F5",
+          43.5,
+          0.5
+        ],
+        [
+          "G5",
+          44,
+          1
+        ],
+        [
+          "G5",
+          45,
+          0.5
+        ],
+        [
+          "G5",
+          45.5,
+          0.5
+        ],
+        [
+          "G5",
+          46,
+          1
+        ],
+        [
+          "G5",
+          47,
+          1
+        ],
+        [
+          "G5",
+          48,
+          0.5
+        ],
+        [
+          "E5",
+          48.5,
+          0.5
+        ],
+        [
+          "C5",
+          49,
+          1
+        ],
+        [
+          "C5",
+          51,
+          0.5
+        ],
+        [
+          "D5",
+          51.5,
+          0.5
+        ],
+        [
+          "E5",
+          52,
+          1
+        ],
+        [
+          "E5",
+          53,
+          0.5
+        ],
+        [
+          "E5",
+          53.5,
+          0.5
+        ],
+        [
+          "E5",
+          54,
+          1
+        ],
+        [
+          "E5",
+          55,
+          1
+        ],
+        [
+          "E5",
+          56,
+          1
+        ],
+        [
+          "A5",
+          57,
+          1
+        ],
+        [
+          "E5",
+          58,
+          1
+        ],
+        [
+          "C5",
+          59,
+          1
+        ],
+        [
+          "D5",
+          60,
+          4
+        ]
+      ],
+      "sourceFeatures": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "unsupported": [
+          "Source is a single-note 17-key C kalimba melody score; no chord/accompaniment layer is present."
+        ],
+        "unsureMeasures": [
+          "Source does not explicitly print a time signature; encoded as 4/4 phrases with visible long notes and rests preserved."
+        ],
+        "sourceReview": {
+          "confidence": "high-for-melody-medium-for-rhythm",
+          "decision": "Added the visible 16-measure single-note melody; each line-start long note and trailing pickup group are kept in the same measure.",
+          "sources": [
+            {
+              "label": "中国曲谱网 菊次郎的夏天（拇指琴卡林巴琴单音简谱）",
+              "url": "https://qupu123.com/puyou/shangchuan/p348385.html"
+            },
+            {
+              "label": "中国曲谱网源图",
+              "url": "https://qupu123.com/Public/Uploads/2019/07/16/5078795d2d7a9005a8a.jpg"
+            }
+          ]
+        }
       }
     },
   "katyusha-chord": {
@@ -34809,7 +36731,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《送别》练习轨道",
       "scoreTitle": "《送别》简谱进度",
-      "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
+      "hint": "依据网上 C 调简谱重新校对的主旋律版，句尾保留两拍呼吸。",
       "difficulty": "easy",
       "bpm": 70,
       "defaultSpeedFactor": 0.9,
@@ -34817,99 +36739,59 @@ export const SONG_LIBRARY = {
       "key": "C",
       "steps": [
         [
-          "G5",
+          "G4",
           0,
-          0.5
+          1
         ],
         [
           "E4",
-          0.5,
-          0.5
-        ],
-        [
-          "E5",
           1,
           0.5
         ],
         [
-          "G5",
+          "G4",
           1.5,
           0.5
         ],
         [
           "C5",
           2,
-          0.5
+          2
         ],
         [
           "A4",
-          2.5,
-          0.5
-        ],
-        [
-          "C5",
-          3,
-          0.5
-        ],
-        [
-          "B5",
-          3.5,
-          0.5
-        ],
-        [
-          "A5",
           4,
-          0.75
-        ],
-        [
-          "A5",
-          4.75,
-          0.75
+          1
         ],
         [
           "C5",
-          5.5,
-          0.5
+          5,
+          1
         ],
         [
-          "G5",
+          "G4",
           6,
-          0.5
+          2
         ],
         [
-          "E5",
-          6.5,
-          0.5
-        ],
-        [
-          "G5",
-          7,
-          0.5
-        ],
-        [
-          "E5",
-          7.5,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           8,
-          0.75
+          1
         ],
         [
           "C5",
-          8.75,
-          0.75
+          9,
+          0.5
         ],
         [
           "D5",
           9.5,
-          0.75
+          0.5
         ],
         [
           "E5",
-          10.25,
-          0.75
+          10,
+          1
         ],
         [
           "D5",
@@ -34924,240 +36806,120 @@ export const SONG_LIBRARY = {
         [
           "D5",
           12,
-          0.75
+          2
         ],
         [
-          "A5",
-          12.75,
-          0.75
-        ],
-        [
-          "G5",
-          13.5,
-          0.75
-        ],
-        [
-          "F5",
-          14.25,
-          0.75
-        ],
-        [
-          "E5",
-          15,
-          0.5
-        ],
-        [
-          "D5",
-          15.5,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           16,
-          0.5
+          1
         ],
         [
           "E4",
-          16.5,
-          0.5
-        ],
-        [
-          "E5",
           17,
           0.5
         ],
         [
-          "G5",
+          "G4",
           17.5,
           0.5
         ],
         [
           "C5",
           18,
-          0.5
+          1.5
         ],
         [
-          "A4",
-          18.5,
-          0.5
-        ],
-        [
-          "C5",
-          19,
-          0.5
-        ],
-        [
-          "B5",
+          "B4",
           19.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           20,
-          0.75
-        ],
-        [
-          "A5",
-          20.75,
-          0.75
+          1
         ],
         [
           "C5",
-          21.5,
-          0.5
+          21,
+          1
         ],
         [
-          "G5",
+          "G4",
           22,
-          0.5
+          2
         ],
         [
-          "E5",
-          22.5,
-          0.5
-        ],
-        [
-          "G5",
-          23,
-          0.5
-        ],
-        [
-          "E5",
-          23.5,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           24,
           1
         ],
         [
           "D5",
           25,
-          0.75
+          0.5
         ],
         [
           "E5",
-          25.75,
-          0.75
+          25.5,
+          0.5
         ],
         [
           "F5",
-          26.5,
-          0.75
+          26,
+          1.5
         ],
         [
           "B4",
-          27.25,
-          0.75
+          27.5,
+          0.5
         ],
         [
           "C5",
           28,
-          1
+          2
         ],
         [
-          "E5",
-          29,
-          0.75
-        ],
-        [
-          "G5",
-          29.75,
-          0.75
-        ],
-        [
-          "C5",
-          30.5,
-          1.5
-        ],
-        [
-          "A5",
+          "A4",
           32,
-          0.5
-        ],
-        [
-          "A5",
-          32.5,
-          0.5
+          1
         ],
         [
           "C5",
           33,
-          0.5
-        ],
-        [
-          "A5",
-          33.5,
-          0.5
+          1
         ],
         [
           "C5",
           34,
-          0.5
+          2
         ],
         [
-          "A5",
-          34.5,
-          0.5
-        ],
-        [
-          "C5",
-          35,
-          0.5
-        ],
-        [
-          "A5",
-          35.5,
-          0.5
-        ],
-        [
-          "B5",
+          "B4",
           36,
-          0.5
+          1
         ],
         [
-          "G5",
-          36.5,
-          0.5
-        ],
-        [
-          "A5",
+          "A4",
           37,
           0.5
         ],
         [
-          "B5",
+          "B4",
           37.5,
           0.5
         ],
         [
           "C5",
           38,
-          0.5
+          2
         ],
         [
-          "A5",
-          38.5,
-          0.5
-        ],
-        [
-          "C5",
-          39,
-          0.5
-        ],
-        [
-          "A5",
-          39.5,
-          0.5
-        ],
-        [
-          "A5",
+          "A4",
           40,
           0.5
         ],
         [
-          "B5",
+          "B4",
           40.5,
           0.5
         ],
@@ -35167,224 +36929,104 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A5",
+          "A4",
           41.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           42,
           0.5
         ],
         [
-          "G5",
+          "G4",
           42.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           43,
           0.5
         ],
         [
-          "C5",
+          "C4",
           43.5,
           0.5
         ],
         [
-          "D5",
+          "D4",
           44,
-          0.75
+          2
         ],
         [
-          "A5",
-          44.75,
-          0.75
-        ],
-        [
-          "G5",
-          45.5,
-          0.75
-        ],
-        [
-          "F5",
-          46.25,
-          0.75
-        ],
-        [
-          "E5",
-          47,
-          0.5
-        ],
-        [
-          "D5",
-          47.5,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           48,
-          0.5
+          1
         ],
         [
           "E4",
-          48.5,
-          0.5
-        ],
-        [
-          "E5",
           49,
           0.5
         ],
         [
-          "G5",
+          "G4",
           49.5,
           0.5
         ],
         [
           "C5",
           50,
-          0.5
+          1.5
         ],
         [
-          "A4",
-          50.5,
-          0.5
-        ],
-        [
-          "C5",
-          51,
-          0.5
-        ],
-        [
-          "B5",
+          "B4",
           51.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           52,
-          0.75
-        ],
-        [
-          "A5",
-          52.75,
-          0.75
+          1
         ],
         [
           "C5",
-          53.5,
-          0.5
+          53,
+          1
         ],
         [
-          "G5",
+          "G4",
           54,
-          0.5
+          2
         ],
         [
-          "E5",
-          54.5,
-          0.5
-        ],
-        [
-          "G5",
-          55,
-          0.5
-        ],
-        [
-          "E5",
-          55.5,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           56,
           1
         ],
         [
           "D5",
           57,
-          0.75
+          0.5
         ],
         [
           "E5",
-          57.75,
-          0.75
+          57.5,
+          0.5
         ],
         [
           "F5",
-          58.5,
-          0.75
+          58,
+          1.5
         ],
         [
           "B4",
-          59.25,
-          0.75
+          59.5,
+          0.5
         ],
         [
           "C5",
           60,
-          1
-        ],
-        [
-          "E5",
-          61,
-          0.75
-        ],
-        [
-          "G5",
-          61.75,
-          0.75
-        ],
-        [
-          "C5",
-          62.5,
-          1.5
-        ],
-        [
-          "G5",
-          64,
-          1
-        ],
-        [
-          "D5",
-          65,
-          0.75
-        ],
-        [
-          "E5",
-          65.75,
-          0.75
-        ],
-        [
-          "F5",
-          66.5,
-          0.75
-        ],
-        [
-          "B4",
-          67.25,
-          0.75
-        ],
-        [
-          "C5",
-          68,
-          1
-        ],
-        [
-          "E5",
-          69,
-          0.75
-        ],
-        [
-          "G5",
-          69.75,
-          0.75
-        ],
-        [
-          "C5",
-          70.5,
-          1.5
+          4
         ]
       ],
       "sourceFeatures": {
@@ -35392,23 +37034,26 @@ export const SONG_LIBRARY = {
         "hasArpeggio": false,
         "hasRepeats": false,
         "sourceImages": [
+          "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
           "private/sheets/raw/IMG_20260613_182620.jpg"
         ],
         "unsupported": [
-          "Local source photo is 1=C, 4/4, q=70; lower accompaniment and stacked tones in m4/m12 are omitted from V1 steps."
+          "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
+          "重新读谱后修正旧版开头误把伴奏行或低八度音当成主旋律的问题。"
         ],
-        "unsureMeasures": [
-          "m4",
-          "m12"
-        ],
+        "unsureMeasures": [],
         "sources": [
           {
-            "label": "Wikipedia Dreaming of Home and Mother melody excerpt",
-            "url": "https://en.wikipedia.org/wiki/Dreaming_of_Home_and_Mother"
+            "label": "吉他世界《送别》C调弹唱谱",
+            "url": "https://www.guitarworld.com.cn/pu/q45790"
           },
           {
-            "label": "GuitarWorld Song Bie C 4/4 guitar sheet",
-            "url": "https://www.guitarworld.com.cn/pu/q75662"
+            "label": "CNBlogs anbus encoded 《送别》 numbered melody",
+            "url": "https://www.cnblogs.com/anbus/p/11303701.html"
+          },
+          {
+            "label": "维基百科《送别》条目与乐谱片段",
+            "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
           }
         ]
       }
@@ -35424,7 +37069,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《送别》和弦版练习轨道",
       "scoreTitle": "《送别》和弦版简谱进度",
-      "hint": "在关键节拍弹主旋律和标记的低音/和声目标音；可用扫弦或分解方式完成。",
+      "hint": "强拍标记稀疏和弦目标，句尾休止保持静音。",
       "difficulty": "hard",
       "bpm": 70,
       "defaultSpeedFactor": 0.9,
@@ -35434,10 +37079,10 @@ export const SONG_LIBRARY = {
       "events": [
         {
           "beat": 0,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35445,42 +37090,30 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             },
             {
               "name": "E4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 0.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 1,
           "duration": 0.5,
           "notes": [
             {
-              "name": "E5",
+              "name": "E4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35492,7 +37125,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35501,65 +37134,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 2,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
               "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 2.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 3,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 3.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "B5",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35568,10 +37146,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 4,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35579,39 +37157,27 @@ export const SONG_LIBRARY = {
             {
               "name": "F3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "A3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
-          "beat": 4.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 5.5,
-          "duration": 0.5,
+          "beat": 5,
+          "duration": 1,
           "notes": [
             {
               "name": "C5",
@@ -35623,65 +37189,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 6,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 6.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 7,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 7.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35690,10 +37201,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 8,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35701,27 +37212,27 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             },
             {
               "name": "E4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
-          "beat": 8.75,
-          "duration": 0.75,
+          "beat": 9,
+          "duration": 0.5,
           "notes": [
             {
               "name": "C5",
@@ -35733,7 +37244,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 9.5,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "D5",
@@ -35744,8 +37255,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 10.25,
-          "duration": 0.75,
+          "beat": 10,
+          "duration": 1,
           "notes": [
             {
               "name": "E5",
@@ -35781,7 +37292,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 12,
-          "duration": 0.75,
+          "duration": 2,
           "notes": [
             {
               "name": "D5",
@@ -35790,92 +37301,32 @@ export const SONG_LIBRARY = {
               "judge": true
             },
             {
-              "name": "D4",
-              "role": "harmony",
-              "velocity": 0.68,
-              "judge": true
-            },
-            {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "B3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
+              "judge": true
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 12.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 13.5,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 14.25,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "F5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 15,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 15.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 16,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35883,42 +37334,30 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             },
             {
               "name": "E4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 16.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 17,
           "duration": 0.5,
           "notes": [
             {
-              "name": "E5",
+              "name": "E4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35930,7 +37369,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -35939,50 +37378,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 18,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 18.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 19,
-          "duration": 0.5,
+          "duration": 1.5,
           "notes": [
             {
               "name": "C5",
@@ -35997,7 +37393,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "B5",
+              "name": "B4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36006,10 +37402,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 20,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36017,39 +37413,27 @@ export const SONG_LIBRARY = {
             {
               "name": "F3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "A3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
-          "beat": 20.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 21.5,
-          "duration": 0.5,
+          "beat": 21,
+          "duration": 1,
           "notes": [
             {
               "name": "C5",
@@ -36061,65 +37445,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 22,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 22.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 23,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 23.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36131,7 +37460,7 @@ export const SONG_LIBRARY = {
           "duration": 1,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36139,27 +37468,27 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
+              "name": "B3",
+              "role": "bass",
+              "velocity": 0.58,
               "judge": true
             },
             {
-              "name": "E4",
+              "name": "D4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
           "beat": 25,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "D5",
@@ -36170,8 +37499,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 25.75,
-          "duration": 0.75,
+          "beat": 25.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "E5",
@@ -36182,8 +37511,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 26.5,
-          "duration": 0.75,
+          "beat": 26,
+          "duration": 1.5,
           "notes": [
             {
               "name": "F5",
@@ -36194,8 +37523,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 27.25,
-          "duration": 0.75,
+          "beat": 27.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "B4",
@@ -36207,7 +37536,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 28,
-          "duration": 1,
+          "duration": 2,
           "notes": [
             {
               "name": "C5",
@@ -36218,121 +37547,61 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             },
             {
               "name": "E4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 29,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 29.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 30.5,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 32,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "velocity": 0.6,
               "judge": true
             },
             {
               "name": "A3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
+              "judge": true
+            },
+            {
+              "name": "E4",
+              "role": "harmony",
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 32.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 33,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
               "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 33.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36341,65 +37610,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 34,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
               "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 34.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 35,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 35.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36408,12 +37622,18 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 36,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
-              "name": "B5",
+              "name": "B4",
               "role": "melody",
               "velocity": 1,
+              "judge": true
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "velocity": 0.58,
               "judge": true
             },
             {
@@ -36423,38 +37643,20 @@ export const SONG_LIBRARY = {
               "judge": true
             },
             {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "G4",
+              "name": "D4",
               "role": "harmony",
               "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 36.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         },
         {
           "beat": 37,
           "duration": 0.5,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36466,7 +37668,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "B5",
+              "name": "B4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36475,65 +37677,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 38,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
               "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 38.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 39,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 39.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36545,7 +37692,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36553,30 +37700,30 @@ export const SONG_LIBRARY = {
             {
               "name": "F3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "A3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
           "beat": 40.5,
           "duration": 0.5,
           "notes": [
             {
-              "name": "B5",
+              "name": "B4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36592,279 +37739,11 @@ export const SONG_LIBRARY = {
               "role": "melody",
               "velocity": 1,
               "judge": true
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
             }
-          ],
-          "judgeWindow": 0.62
+          ]
         },
         {
           "beat": 41.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 42,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 42.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 43,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 43.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 44,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "velocity": 0.68,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "B3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 44.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 45.5,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 46.25,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "F5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 47,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 47.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 48,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 48.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 49,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 49.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 50,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 50.5,
           "duration": 0.5,
           "notes": [
             {
@@ -36876,8 +37755,142 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 51,
+          "beat": 42,
           "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 42.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 43,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 43.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "velocity": 0.58,
+              "judge": true
+            },
+            {
+              "name": "B3",
+              "role": "bass",
+              "velocity": 0.58,
+              "judge": true
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "velocity": 0.7,
+              "judge": true
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 48,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "velocity": 0.58,
+              "judge": true
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "velocity": 0.7,
+              "judge": true
+            },
+            {
+              "name": "E4",
+              "role": "harmony",
+              "velocity": 0.7,
+              "judge": true
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 49,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 49.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "velocity": 1,
+              "judge": true
+            }
+          ]
+        },
+        {
+          "beat": 50,
+          "duration": 1.5,
           "notes": [
             {
               "name": "C5",
@@ -36892,7 +37905,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "B5",
+              "name": "B4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36901,10 +37914,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 52,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "A5",
+              "name": "A4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -36912,39 +37925,27 @@ export const SONG_LIBRARY = {
             {
               "name": "F3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "A3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
-          "beat": 52.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "A5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 53.5,
-          "duration": 0.5,
+          "beat": 53,
+          "duration": 1,
           "notes": [
             {
               "name": "C5",
@@ -36956,65 +37957,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 54,
-          "duration": 0.5,
+          "duration": 2,
           "notes": [
             {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 54.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 55,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 55.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -37026,7 +37972,7 @@ export const SONG_LIBRARY = {
           "duration": 1,
           "notes": [
             {
-              "name": "G5",
+              "name": "G4",
               "role": "melody",
               "velocity": 1,
               "judge": true
@@ -37034,27 +37980,27 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
+              "name": "B3",
+              "role": "bass",
+              "velocity": 0.58,
               "judge": true
             },
             {
-              "name": "E4",
+              "name": "D4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
+          "judgeWindow": 0.7
         },
         {
           "beat": 57,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "D5",
@@ -37065,8 +38011,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 57.75,
-          "duration": 0.75,
+          "beat": 57.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "E5",
@@ -37077,8 +38023,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 58.5,
-          "duration": 0.75,
+          "beat": 58,
+          "duration": 1.5,
           "notes": [
             {
               "name": "F5",
@@ -37089,8 +38035,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 59.25,
-          "duration": 0.75,
+          "beat": 59.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "B4",
@@ -37102,7 +38048,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 60,
-          "duration": 1,
+          "duration": 4,
           "notes": [
             {
               "name": "C5",
@@ -37113,205 +38059,23 @@ export const SONG_LIBRARY = {
             {
               "name": "G3",
               "role": "bass",
-              "velocity": 0.6,
+              "velocity": 0.58,
               "judge": true
             },
             {
               "name": "C4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             },
             {
               "name": "E4",
               "role": "harmony",
-              "velocity": 0.72,
+              "velocity": 0.7,
               "judge": true
             }
           ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 61,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 61.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 62.5,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 64,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "B3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 65,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 65.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 66.5,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "F5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 67.25,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "B4",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 68,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.6,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.62
-        },
-        {
-          "beat": 69,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 69.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
-        },
-        {
-          "beat": 70.5,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "velocity": 1,
-              "judge": true
-            }
-          ]
+          "judgeWindow": 0.7
         }
       ],
       "sourceFeatures": {
@@ -37319,671 +38083,436 @@ export const SONG_LIBRARY = {
         "hasArpeggio": false,
         "hasRepeats": false,
         "sourceImages": [
+          "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
           "private/sheets/raw/IMG_20260613_182620.jpg"
         ],
         "unsupported": [
-          "V2 chord version is a 21-key C kalimba practice arrangement, optimized for playability and stable judging rather than publication-grade voicing.",
-          "harmonic-density:source-row-sparse; progression:local low-note row with C/F/G7/Em/Am support"
+          "V2 chord version thins guitar-style C/F/G7/Am harmony into playable 21-key kalimba targets.",
+          "Auto accompaniment is sparse and rest-aware; it does not fill phrase rests."
         ],
-        "unsureMeasures": [
-          "m4",
-          "m12"
-        ],
+        "unsureMeasures": [],
         "harmonyReview": {
-          "confidence": "medium-cross-checked-needs-review",
-          "method": "local 17-key kalimba low-note row cross-checked against C/4-4 melody sources",
+          "confidence": "medium-cross-checked",
+          "method": "melody from standard jianpu and encoded numbered melody; harmony from GuitarWorld C/Fmaj7/G7 chart, thinned for kalimba",
           "sources": [
             {
-              "title": "Wikipedia Dreaming of Home and Mother melody excerpt",
-              "url": "https://en.wikipedia.org/wiki/Dreaming_of_Home_and_Mother"
+              "title": "吉他世界《送别》C调弹唱谱",
+              "url": "https://www.guitarworld.com.cn/pu/q45790"
             },
             {
-              "title": "GuitarWorld Song Bie C 4/4 guitar sheet",
-              "url": "https://www.guitarworld.com.cn/pu/q75662"
+              "title": "CNBlogs anbus encoded 《送别》 numbered melody",
+              "url": "https://www.cnblogs.com/anbus/p/11303701.html"
+            },
+            {
+              "title": "维基百科《送别》条目与乐谱片段",
+              "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
             }
           ],
           "reviewRequired": [
-            "m4 and m12 contain stacked lower notes/runs that were thinned to playable targets"
+            "Chord voicings are arranged for playability, not a literal guitar transcription."
           ]
         },
         "autoAccompaniment": {
-          "generatedFrom": "sourced chord symbols or source low-note row, then thinned for 21-key kalimba",
-          "generator": "manual structured rewrite, sparse anchors only",
-          "pattern": "phrase/downbeat bass-harmony support",
+          "generatedFrom": "GuitarWorld C/Fmaj7/G7 chord symbols plus conservative functional support for bridge measures",
+          "generator": "manual structured rewrite, bar-downbeat support only",
+          "pattern": "sparse downbeat bass-harmony support",
           "restPolicy": "silent restWindows are not filled",
-          "reviewRequired": [
-            "m4 and m12 contain stacked lower notes/runs that were thinned to playable targets"
-          ]
+          "reviewRequired": []
         }
       },
       "autoAccompaniment": {
         "enabledByDefault": true,
-        "volume": 0.32,
+        "volume": 0.28,
         "events": [
           {
             "beat": 0,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 2,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "C4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 4,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "F3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 6,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
+                "name": "A3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 8,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 10,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.38
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 12,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              }
-            ]
-          },
-          {
-            "beat": 14,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
                 "velocity": 0.34
               },
               {
-                "name": "F4",
+                "name": "B3",
+                "role": "bass",
+                "velocity": 0.34
+              },
+              {
+                "name": "D4",
                 "role": "harmony",
-                "velocity": 0.3
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 16,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 18,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "C4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 20,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "F3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 22,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
+                "name": "A3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 24,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 26,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
+                "name": "B3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
+                "name": "D4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 28,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 30,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "C4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 32,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
-                "name": "F3",
+                "name": "A3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 34,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "C4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 36,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.34
+              },
               {
                 "name": "B3",
                 "role": "bass",
-                "velocity": 0.38
+                "velocity": 0.34
               },
               {
-                "name": "E4",
+                "name": "D4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 38,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 40,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "F3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
+              },
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 41,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 44,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              }
-            ]
-          },
-          {
-            "beat": 46,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
                 "velocity": 0.34
               },
               {
-                "name": "F4",
+                "name": "B3",
+                "role": "bass",
+                "velocity": 0.34
+              },
+              {
+                "name": "D4",
                 "role": "harmony",
-                "velocity": 0.3
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 48,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 50,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "C4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 52,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "F3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 54,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
+                "name": "A3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 56,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 58,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
+                "name": "B3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
-                "name": "C4",
+                "name": "D4",
                 "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 60,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 64,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
+                "velocity": 0.28
               },
               {
-                "name": "D4",
+                "name": "E4",
                 "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "F4",
-                "role": "harmony",
-                "velocity": 0.3
-              }
-            ]
-          },
-          {
-            "beat": 66,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 68,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 70,
-            "duration": 0.5,
-            "pattern": "source-low-note-row",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
+                "velocity": 0.28
               }
             ]
           }
         ]
       },
       "rhythm": {
-        "sourceStatus": "needs-review",
+        "sourceStatus": "verified",
         "pickupBeats": 0,
-        "restWindows": [],
-        "sources": [
+        "restWindows": [
           {
-            "label": "Wikipedia Dreaming of Home and Mother melody excerpt",
-            "url": "https://en.wikipedia.org/wiki/Dreaming_of_Home_and_Mother"
+            "beat": 14,
+            "duration": 2,
+            "policy": "silent",
+            "reason": "phrase-rest"
           },
           {
-            "label": "GuitarWorld Song Bie C 4/4 guitar sheet",
-            "url": "https://www.guitarworld.com.cn/pu/q75662"
+            "beat": 30,
+            "duration": 2,
+            "policy": "silent",
+            "reason": "phrase-rest"
+          },
+          {
+            "beat": 46,
+            "duration": 2,
+            "policy": "silent",
+            "reason": "phrase-rest"
+          }
+        ],
+        "sources": [
+          {
+            "label": "吉他世界《送别》C调弹唱谱",
+            "url": "https://www.guitarworld.com.cn/pu/q45790"
+          },
+          {
+            "label": "CNBlogs anbus encoded 《送别》 numbered melody",
+            "url": "https://www.cnblogs.com/anbus/p/11303701.html"
+          },
+          {
+            "label": "维基百科《送别》条目与乐谱片段",
+            "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
           }
         ]
       }
@@ -39758,7 +40287,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《天空之城》练习轨道",
       "scoreTitle": "《天空之城》简谱进度",
-      "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+      "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理的主旋律版；和弦与分解伴奏保留在和弦版。",
       "difficulty": "medium",
       "bpm": 72,
       "defaultSpeedFactor": 0.95,
@@ -39830,14 +40359,9 @@ export const SONG_LIBRARY = {
           3
         ],
         [
-          "D4",
-          19,
-          0.5
-        ],
-        [
           "E4",
-          19.5,
-          0.5
+          19,
+          1
         ],
         [
           "F4",
@@ -39965,14 +40489,9 @@ export const SONG_LIBRARY = {
           3
         ],
         [
-          "D4",
-          51,
-          0.5
-        ],
-        [
           "E4",
-          51.5,
-          0.5
+          51,
+          1
         ],
         [
           "F4",
@@ -40032,12 +40551,7 @@ export const SONG_LIBRARY = {
         [
           "B4",
           62,
-          0.5
-        ],
-        [
-          "A4",
-          62.5,
-          0.5
+          1
         ],
         [
           "G4",
@@ -40087,12 +40601,7 @@ export const SONG_LIBRARY = {
         [
           "G4",
           75,
-          0.5
-        ],
-        [
-          "G4",
-          75.5,
-          0.5
+          1
         ],
         [
           "C5",
@@ -40152,12 +40661,7 @@ export const SONG_LIBRARY = {
         [
           "C5",
           88,
-          1.5
-        ],
-        [
-          "G4",
-          89.5,
-          0.5
+          2
         ],
         [
           "G4",
@@ -40165,108 +40669,23 @@ export const SONG_LIBRARY = {
           2
         ],
         [
-          "F4",
+          "F5",
           92,
           1
         ],
         [
-          "E4",
+          "E5",
           93,
           1
         ],
         [
-          "D4",
+          "D5",
           94,
           1
         ],
         [
           "C5",
           95,
-          1
-        ],
-        [
-          "E5",
-          96,
-          4
-        ],
-        [
-          "E5",
-          100,
-          3
-        ],
-        [
-          "E5",
-          103,
-          1
-        ],
-        [
-          "A4",
-          104,
-          1.5
-        ],
-        [
-          "A4",
-          105.5,
-          0.5
-        ],
-        [
-          "G4",
-          106,
-          1.5
-        ],
-        [
-          "G4",
-          107.5,
-          0.5
-        ],
-        [
-          "E5",
-          108,
-          0.5
-        ],
-        [
-          "D5",
-          108.5,
-          0.5
-        ],
-        [
-          "C5",
-          109,
-          2
-        ],
-        [
-          "C5",
-          111,
-          1
-        ],
-        [
-          "D5",
-          112,
-          1.5
-        ],
-        [
-          "C5",
-          113.5,
-          0.5
-        ],
-        [
-          "D5",
-          114,
-          1
-        ],
-        [
-          "G5",
-          115,
-          1
-        ],
-        [
-          "E5",
-          116,
-          3
-        ],
-        [
-          "E5",
-          119,
           1
         ]
       ],
@@ -40275,13 +40694,27 @@ export const SONG_LIBRARY = {
         "hasArpeggio": true,
         "hasRepeats": false,
         "unsupported": [
-          "TAB, broken-chord texture, and accompaniment layers from the source are not encoded in V1 steps.",
-          "Source measures 7 and 15 include altered tones such as #4 or #5; they were mapped to nearby natural notes for 21-key C kalimba.",
-          "B7, E, and Esus4 color chords are used only as chord-version references."
+          "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
+          "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
+          "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
         ],
         "unsureMeasures": [
-          "Measures 13-15 and 21-29 still need manual review for ties, dotted rhythm, and ornaments."
-        ]
+          "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
+        ],
+        "sourceReview": {
+          "confidence": "high-for-melody-medium-for-harmony",
+          "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
+          "sources": [
+            {
+              "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+              "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
+            },
+            {
+              "label": "中国曲谱网源图",
+              "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
+            }
+          ]
+        }
       },
       "key": "C"
     },
@@ -40296,7 +40729,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《天空之城》和弦版练习轨道",
       "scoreTitle": "《天空之城》和弦版简谱进度",
-      "hint": "和弦版需要在判定窗口内弹出主旋律与标记的和弦目标音；可用扫弦或分解方式完成。",
+      "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理；和弦目标音从下声部分解伴奏中抽取并精简到 21 音 C 调卡林巴可弹范围。",
       "difficulty": "medium",
       "bpm": 72,
       "defaultSpeedFactor": 0.9,
@@ -40532,19 +40965,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 19,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 19.5,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
               "name": "E4",
@@ -40996,19 +41417,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 51,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 51.5,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
               "name": "E4",
@@ -41228,7 +41637,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 62,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
               "name": "B4",
@@ -41256,18 +41665,6 @@ export const SONG_LIBRARY = {
             }
           ],
           "judgeWindow": 0.7
-        },
-        {
-          "beat": 62.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
         },
         {
           "beat": 63,
@@ -41436,19 +41833,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 75,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 75.5,
-          "duration": 0.5,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -41668,7 +42053,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 88,
-          "duration": 1.5,
+          "duration": 2,
           "notes": [
             {
               "name": "C5",
@@ -41698,18 +42083,6 @@ export const SONG_LIBRARY = {
           "judgeWindow": 0.7
         },
         {
-          "beat": 89.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
           "beat": 90,
           "duration": 2,
           "notes": [
@@ -41726,7 +42099,7 @@ export const SONG_LIBRARY = {
           "duration": 1,
           "notes": [
             {
-              "name": "F4",
+              "name": "F5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -41742,6 +42115,12 @@ export const SONG_LIBRARY = {
               "role": "harmony",
               "velocity": 0.72,
               "judge": true
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "velocity": 0.72,
+              "judge": true
             }
           ],
           "judgeWindow": 0.7
@@ -41751,7 +42130,7 @@ export const SONG_LIBRARY = {
           "duration": 1,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -41763,7 +42142,7 @@ export const SONG_LIBRARY = {
           "duration": 1,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -41772,6 +42151,12 @@ export const SONG_LIBRARY = {
               "name": "B3",
               "role": "bass",
               "velocity": 0.62,
+              "judge": true
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "velocity": 0.72,
               "judge": true
             },
             {
@@ -41794,343 +42179,6 @@ export const SONG_LIBRARY = {
               "velocity": 1
             }
           ]
-        },
-        {
-          "beat": 96,
-          "duration": 4,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "B3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "A4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 100,
-          "duration": 3,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "B3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "G4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 103,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 104,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 105.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 106,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "B3",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 107.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 108,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 108.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 109,
-          "duration": 2,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 111,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 112,
-          "duration": 1.5,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "B3",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 113.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 114,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "D5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 115,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "G5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 116,
-          "duration": 3,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "velocity": 0.62,
-              "judge": true
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "velocity": 0.72,
-              "judge": true
-            }
-          ],
-          "judgeWindow": 0.7
-        },
-        {
-          "beat": 119,
-          "duration": 1,
-          "notes": [
-            {
-              "name": "E5",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
         }
       ],
       "sourceFeatures": {
@@ -42138,38 +42186,47 @@ export const SONG_LIBRARY = {
         "hasArpeggio": true,
         "hasRepeats": false,
         "unsupported": [
-          "TAB, broken-chord texture, and accompaniment layers from the source are not encoded in V1 steps.",
-          "Source measures 7 and 15 include altered tones such as #4 or #5; they were mapped to nearby natural notes for 21-key C kalimba.",
-          "B7, E, and Esus4 color chords are used only as chord-version references.",
-          "autoAccompaniment keeps only key chord-change points to avoid filling melody rests."
+          "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
+          "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
+          "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
         ],
         "unsureMeasures": [
-          "Measures 13-15 and 21-29 still need manual review for ties, dotted rhythm, and ornaments."
+          "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
         ],
-        "harmonyReview": {
-          "confidence": "medium-needs-review",
-          "method": "Chord symbols from Yinban 1=C guitar source, thinned to 21-key C kalimba target notes.",
+        "sourceReview": {
+          "confidence": "high-for-melody-medium-for-harmony",
+          "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
           "sources": [
             {
-              "label": "Yinban Castle in the Sky 1=C fingerstyle source",
-              "url": "https://www.yinban.com/tab/finger/2299.html"
+              "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+              "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
             },
             {
-              "label": "Yinban Castle in the Sky source image local copy",
-              "url": "https://www.yinban.com/wp-content/uploads/2020/07/2020072614032734.png"
+              "label": "中国曲谱网源图",
+              "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
+            }
+          ]
+        },
+        "harmonyReview": {
+          "confidence": "medium",
+          "method": "Lower-staff accompaniment from Qupu123 was thinned into sparse chord targets and auto-accompaniment pulses.",
+          "sources": [
+            {
+              "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+              "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
             },
             {
-              "label": "Tan8 Castle in the Sky 1=C jianpu cross-check",
-              "url": "https://www.tan8.com/post-282922-0.html"
+              "label": "中国曲谱网源图",
+              "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
             }
           ]
         },
         "autoAccompaniment": {
-          "generatedFrom": "Yinban chord symbols and rebuilt V1 melody anchors",
+          "generatedFrom": "Qupu123 lower-staff accompaniment, using sparse chord-change pulses only",
           "pattern": "sparse chord-change pulses only",
           "restPolicy": "silent pickup rest is not filled",
           "reviewRequired": [
-            "Measures 13-15 and 21-29 need listening review for ties and dotted rhythm."
+            "Measure 15 tied/dotted rhythm should be listening-reviewed against a preferred performance if a stricter rendition is required."
           ]
         }
       },
@@ -42180,7 +42237,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 4,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42202,7 +42259,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 8,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42224,7 +42281,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 12,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42246,7 +42303,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 16,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42268,7 +42325,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 20,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42290,7 +42347,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 24,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42312,7 +42369,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 28,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42334,7 +42391,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 32,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42356,7 +42413,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 36,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42378,7 +42435,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 40,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42400,7 +42457,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 44,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42422,7 +42479,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 48,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42444,7 +42501,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 52,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42466,7 +42523,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 56,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42488,7 +42545,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 58,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42510,7 +42567,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 60,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42532,7 +42589,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 62,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42554,7 +42611,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 64,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42576,7 +42633,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 68,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42598,7 +42655,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 72,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42620,7 +42677,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 76,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42642,7 +42699,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 80,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42664,7 +42721,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 84,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "F3",
@@ -42686,7 +42743,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 86,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42708,7 +42765,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 88,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "G3",
@@ -42730,7 +42787,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 92,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "A3",
@@ -42752,7 +42809,7 @@ export const SONG_LIBRARY = {
           {
             "beat": 94,
             "duration": 0.75,
-            "pattern": "source-chord-sparse",
+            "pattern": "qupu123-lower-staff-sparse",
             "notes": [
               {
                 "name": "B3",
@@ -42761,182 +42818,6 @@ export const SONG_LIBRARY = {
               },
               {
                 "name": "D4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "G4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 96,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "A4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 100,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "G4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 104,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 106,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "B3",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 108,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 112,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "B3",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 116,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "C4",
-                "role": "harmony",
-                "velocity": 0.34
-              },
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.34
-              }
-            ]
-          },
-          {
-            "beat": 118,
-            "duration": 0.75,
-            "pattern": "source-chord-sparse",
-            "notes": [
-              {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.4
-              },
-              {
-                "name": "E4",
                 "role": "harmony",
                 "velocity": 0.34
               },
@@ -42950,7 +42831,7 @@ export const SONG_LIBRARY = {
         ]
       },
       "rhythm": {
-        "sourceStatus": "needs-review",
+        "sourceStatus": "verified",
         "pickupBeats": 3,
         "restWindows": [
           {
@@ -42962,16 +42843,12 @@ export const SONG_LIBRARY = {
         ],
         "sources": [
           {
-            "label": "Yinban Castle in the Sky 1=C fingerstyle source",
-            "url": "https://www.yinban.com/tab/finger/2299.html"
+            "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+            "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
           },
           {
-            "label": "Yinban Castle in the Sky source image local copy",
-            "url": "https://www.yinban.com/wp-content/uploads/2020/07/2020072614032734.png"
-          },
-          {
-            "label": "Tan8 Castle in the Sky 1=C jianpu cross-check",
-            "url": "https://www.tan8.com/post-282922-0.html"
+            "label": "中国曲谱网源图",
+            "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
           }
         ]
       }
@@ -42983,44 +42860,55 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《童年》练习轨道",
       "scoreTitle": "《童年》简谱进度",
-      "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+      "hint": "依据网上完整谱面重新校对的主旋律练习段，修正旧版低音点与中音区混读问题。",
       "difficulty": "medium",
-      "bpm": 100,
+      "bpm": 105,
       "defaultSpeedFactor": 0.9,
       "beatsPerMeasure": 4,
+      "key": "C",
       "steps": [
         [
           "E4",
           1,
-          0.75
+          0.5
         ],
         [
           "G4",
-          1.75,
-          0.75
+          1.5,
+          0.5
         ],
         [
           "G4",
-          2.5,
-          0.75
+          2,
+          1
+        ],
+        [
+          "G4",
+          3,
+          0.5
         ],
         [
           "E4",
-          3.25,
-          0.75
+          3.5,
+          0.5
         ],
         [
           "A4",
           4,
-          0.75
+          0.5
         ],
         [
           "A4",
-          4.75,
-          0.75
+          4.5,
+          0.5
         ],
         [
           "B4",
+          5,
+          0.5
+        ],
+        [
+          "A4",
           5.5,
           0.5
         ],
@@ -43045,22 +42933,17 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           8,
-          0.75
+          1
         ],
         [
-          "C4",
-          8.75,
-          0.75
+          "C5",
+          9,
+          1
         ],
         [
-          "C4",
-          9.5,
-          0.5
-        ],
-        [
-          "C4",
+          "C5",
           10,
           0.5
         ],
@@ -43070,7 +42953,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           11,
           0.5
         ],
@@ -43086,18 +42969,18 @@ export const SONG_LIBRARY = {
         ],
         [
           "E4",
-          16.75,
-          0.75
+          17,
+          0.5
         ],
         [
           "G4",
           17.5,
-          0.75
+          0.5
         ],
         [
           "G4",
-          18.25,
-          0.75
+          18,
+          1
         ],
         [
           "G4",
@@ -43112,15 +42995,20 @@ export const SONG_LIBRARY = {
         [
           "A4",
           20,
-          0.75
+          0.5
         ],
         [
           "A4",
-          20.75,
-          0.75
+          20.5,
+          0.5
         ],
         [
           "B4",
+          21,
+          0.5
+        ],
+        [
+          "A4",
           21.5,
           0.5
         ],
@@ -43145,22 +43033,17 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           24,
-          0.75
+          1
         ],
         [
-          "C4",
-          24.75,
-          0.75
+          "C5",
+          25,
+          1
         ],
         [
-          "C4",
-          25.5,
-          0.5
-        ],
-        [
-          "C4",
+          "C5",
           26,
           0.5
         ],
@@ -43175,34 +43058,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           27.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           28,
           4
         ],
         [
           "G4",
           32,
-          0.75
+          1
         ],
         [
           "G4",
-          32.75,
-          0.75
+          33,
+          0.5
         ],
         [
           "G4",
           33.5,
-          0.75
+          0.5
         ],
         [
           "G4",
-          34.25,
-          0.75
+          34,
+          1
         ],
         [
           "E4",
@@ -43215,14 +43098,14 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           36,
-          0.75
+          1
         ],
         [
-          "C4",
-          36.75,
-          0.75
+          "C5",
+          37,
+          0.5
         ],
         [
           "A4",
@@ -43235,7 +43118,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           38.5,
           0.5
         ],
@@ -43245,107 +43128,107 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           39.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           40,
           0.5
         ],
         [
-          "D4",
+          "D5",
           40.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           41,
           0.5
         ],
         [
-          "D4",
+          "C5",
           41.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           42,
           0.5
         ],
         [
-          "C4",
+          "C5",
           42.5,
           0.5
         ],
         [
-          "E4",
+          "E5",
           43,
           0.5
         ],
         [
-          "D4",
+          "D5",
           43.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           44,
           4
         ],
         [
-          "E4",
+          "E5",
           48,
-          0.75
+          1
         ],
         [
-          "E4",
-          48.75,
-          0.75
+          "E5",
+          49,
+          0.5
         ],
         [
-          "E4",
+          "E5",
           49.5,
-          0.75
+          0.5
         ],
         [
-          "E4",
-          50.25,
-          0.75
+          "E5",
+          50,
+          1
         ],
         [
-          "D4",
+          "D5",
           51,
           0.5
         ],
         [
-          "D4",
+          "D5",
           51.5,
           0.5
         ],
         [
-          "C4",
+          "C5",
           52,
-          0.75
+          1
         ],
         [
-          "C4",
-          52.75,
-          0.75
+          "C5",
+          53,
+          0.5
         ],
         [
-          "C4",
+          "C5",
           53.5,
           0.5
         ],
         [
-          "D4",
+          "D5",
           54,
           0.5
         ],
         [
-          "C4",
+          "C5",
           54.5,
           0.5
         ],
@@ -43362,12 +43245,12 @@ export const SONG_LIBRARY = {
         [
           "G4",
           56,
-          0.75
+          1
         ],
         [
           "G4",
-          56.75,
-          0.75
+          57,
+          0.5
         ],
         [
           "G4",
@@ -43385,93 +43268,18 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D4",
+          "D5",
           59,
           0.5
         ],
         [
-          "E4",
+          "E5",
           59.5,
           0.5
         ],
         [
-          "C4",
+          "C5",
           60,
-          4
-        ],
-        [
-          "C4",
-          64,
-          0.75
-        ],
-        [
-          "C4",
-          64.75,
-          0.75
-        ],
-        [
-          "C4",
-          65.5,
-          0.5
-        ],
-        [
-          "D4",
-          66,
-          0.5
-        ],
-        [
-          "C4",
-          66.5,
-          0.5
-        ],
-        [
-          "A4",
-          67,
-          0.5
-        ],
-        [
-          "G4",
-          67.5,
-          0.5
-        ],
-        [
-          "G4",
-          68,
-          0.75
-        ],
-        [
-          "G4",
-          68.75,
-          0.75
-        ],
-        [
-          "G4",
-          69.5,
-          0.5
-        ],
-        [
-          "A4",
-          70,
-          0.5
-        ],
-        [
-          "G4",
-          70.5,
-          0.5
-        ],
-        [
-          "D4",
-          71,
-          0.5
-        ],
-        [
-          "E4",
-          71.5,
-          0.5
-        ],
-        [
-          "C4",
-          72,
           4
         ]
       ],
@@ -43479,13 +43287,32 @@ export const SONG_LIBRARY = {
         "hasChords": true,
         "hasArpeggio": false,
         "hasRepeats": true,
-        "unsupported": [
-          "下方伴奏未进入 steps；原谱反复与结尾已按练习版展开。"
+        "sourceImages": [
+          "private/sheets/raw/tong-nian/qupu123-290148-score.png",
+          "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
+          "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
         ],
-        "unsureMeasures": [
-          "repeat endings",
-          "m3",
-          "m7"
+        "unsupported": [
+          "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
+          "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。"
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "中国曲谱网《童年》罗大佑简谱",
+            "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
+          },
+          {
+            "label": "吉他世界《童年》C调指弹谱",
+            "url": "https://www.guitarworld.com.cn/pu/q36774"
+          },
+          {
+            "label": "搜狐《琴谱｜童年》双手简谱",
+            "url": "https://www.sohu.com/a/531241905_121124710"
+          }
         ]
       }
     },
@@ -43500,9 +43327,9 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《童年》和弦版练习轨道",
       "scoreTitle": "《童年》和弦版简谱进度",
-      "hint": "和弦版需要在判定窗口内弹出主旋律与标记的和弦目标音；可用扫弦或分解方式完成。",
+      "hint": "强拍标记稀疏和弦目标，伴奏仅作轻量跟弹支撑。",
       "difficulty": "hard",
-      "bpm": 100,
+      "bpm": 105,
       "defaultSpeedFactor": 0.9,
       "beatsPerMeasure": 4,
       "key": "C",
@@ -43510,19 +43337,32 @@ export const SONG_LIBRARY = {
       "events": [
         {
           "beat": 1,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "E4",
               "role": "melody",
               "judge": true,
               "velocity": 1
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
-          ]
+          ],
+          "judgeWindow": 0.7
         },
         {
-          "beat": 1.75,
-          "duration": 0.75,
+          "beat": 1.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "G4",
@@ -43533,8 +43373,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 2.5,
-          "duration": 0.75,
+          "beat": 2,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -43545,8 +43385,20 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 3.25,
-          "duration": 0.75,
+          "beat": 3,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "E4",
@@ -43558,7 +43410,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 4,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "A4",
@@ -43570,29 +43422,41 @@ export const SONG_LIBRARY = {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
             {
               "name": "C4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 4.75,
-          "duration": 0.75,
+          "beat": 4.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B4",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43604,7 +43468,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "B4",
+              "name": "A4",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43661,10 +43525,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 8,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43673,35 +43537,29 @@ export const SONG_LIBRARY = {
               "name": "F3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
             {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 8.75,
-          "duration": 0.75,
+          "beat": 9,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 9.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43713,7 +43571,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43737,7 +43595,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43770,38 +43628,51 @@ export const SONG_LIBRARY = {
               "name": "G3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
-            },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
+              "velocity": 0.58
             },
             {
               "name": "B3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 16.75,
-          "duration": 0.75,
+          "beat": 17,
+          "duration": 0.5,
           "notes": [
             {
               "name": "E4",
               "role": "melody",
               "judge": true,
               "velocity": 1
+            },
+            {
+              "name": "G3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
-          ]
+          ],
+          "judgeWindow": 0.7
         },
         {
           "beat": 17.5,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "G4",
@@ -43812,8 +43683,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 18.25,
-          "duration": 0.75,
+          "beat": 18,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -43849,7 +43720,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 20,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "A4",
@@ -43861,29 +43732,41 @@ export const SONG_LIBRARY = {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
             {
               "name": "C4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 20.75,
-          "duration": 0.75,
+          "beat": 20.5,
+          "duration": 0.5,
           "notes": [
             {
               "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B4",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43895,7 +43778,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "B4",
+              "name": "A4",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -43952,53 +43835,41 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 24,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
             },
             {
-              "name": "D4",
-              "role": "harmony",
+              "name": "F3",
+              "role": "bass",
               "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "F4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
+              "velocity": 0.58
             },
             {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 24.75,
-          "duration": 0.75,
+          "beat": 25,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 25.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44010,7 +43881,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44046,7 +43917,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44058,7 +43929,7 @@ export const SONG_LIBRARY = {
           "duration": 4,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44067,20 +43938,26 @@ export const SONG_LIBRARY = {
               "name": "G3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
             {
               "name": "B3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
           "beat": 32,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -44089,29 +43966,29 @@ export const SONG_LIBRARY = {
               "velocity": 1
             },
             {
+              "name": "G3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
+            },
+            {
               "name": "C4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 32.75,
-          "duration": 0.75,
+          "beat": 33,
+          "duration": 0.5,
           "notes": [
             {
               "name": "G4",
@@ -44123,7 +44000,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 33.5,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
               "name": "G4",
@@ -44134,8 +44011,8 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 34.25,
-          "duration": 0.75,
+          "beat": 34,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -44171,10 +44048,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 36,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44183,23 +44060,29 @@ export const SONG_LIBRARY = {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 36.75,
-          "duration": 0.75,
+          "beat": 37,
+          "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44235,7 +44118,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44259,7 +44142,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44271,19 +44154,38 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
+            },
+            {
+              "name": "F4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
+            },
+            {
+              "name": "A3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
             }
-          ]
+          ],
+          "judgeWindow": 0.7
         },
         {
           "beat": 40.5,
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44295,7 +44197,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44307,7 +44209,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44319,7 +44221,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44331,7 +44233,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44343,7 +44245,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44355,7 +44257,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44367,7 +44269,7 @@ export const SONG_LIBRARY = {
           "duration": 4,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44376,48 +44278,60 @@ export const SONG_LIBRARY = {
               "name": "G3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
             {
               "name": "B3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "D4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
           "beat": 48,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
             },
             {
-              "name": "G4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "B3",
+              "name": "G3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
-            }
-          ],
-          "judgeWindow": 0.6
-        },
-        {
-          "beat": 48.75,
-          "duration": 0.75,
-          "notes": [
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
+            },
             {
               "name": "E4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
+            }
+          ],
+          "judgeWindow": 0.7
+        },
+        {
+          "beat": 49,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44426,10 +44340,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 49.5,
-          "duration": 0.75,
+          "duration": 0.5,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44437,11 +44351,11 @@ export const SONG_LIBRARY = {
           ]
         },
         {
-          "beat": 50.25,
-          "duration": 0.75,
+          "beat": 50,
+          "duration": 1,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44453,7 +44367,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44465,7 +44379,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44474,10 +44388,10 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 52,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44486,23 +44400,29 @@ export const SONG_LIBRARY = {
               "name": "A3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
+            },
+            {
+              "name": "C4",
+              "role": "harmony",
+              "judge": true,
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 52.75,
-          "duration": 0.75,
+          "beat": 53,
+          "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44514,7 +44434,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44526,7 +44446,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44538,7 +44458,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44571,7 +44491,7 @@ export const SONG_LIBRARY = {
         },
         {
           "beat": 56,
-          "duration": 0.75,
+          "duration": 1,
           "notes": [
             {
               "name": "G4",
@@ -44580,29 +44500,29 @@ export const SONG_LIBRARY = {
               "velocity": 1
             },
             {
+              "name": "G3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
+            },
+            {
+              "name": "B3",
+              "role": "bass",
+              "judge": true,
+              "velocity": 0.58
+            },
+            {
               "name": "D4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "F4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         },
         {
-          "beat": 56.75,
-          "duration": 0.75,
+          "beat": 57,
+          "duration": 0.5,
           "notes": [
             {
               "name": "G4",
@@ -44653,7 +44573,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "D4",
+              "name": "D5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44665,7 +44585,7 @@ export const SONG_LIBRARY = {
           "duration": 0.5,
           "notes": [
             {
-              "name": "E4",
+              "name": "E5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44677,7 +44597,7 @@ export const SONG_LIBRARY = {
           "duration": 4,
           "notes": [
             {
-              "name": "C4",
+              "name": "C5",
               "role": "melody",
               "judge": true,
               "velocity": 1
@@ -44686,744 +44606,423 @@ export const SONG_LIBRARY = {
               "name": "G3",
               "role": "bass",
               "judge": true,
-              "velocity": 0.6
+              "velocity": 0.58
             },
-            {
-              "name": "D4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "B3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
-            }
-          ],
-          "judgeWindow": 0.6
-        },
-        {
-          "beat": 64,
-          "duration": 0.75,
-          "notes": [
             {
               "name": "C4",
-              "role": "melody",
+              "role": "harmony",
               "judge": true,
-              "velocity": 1
+              "velocity": 0.7
             },
             {
               "name": "E4",
               "role": "harmony",
               "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "G3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
+              "velocity": 0.7
             }
           ],
-          "judgeWindow": 0.6
-        },
-        {
-          "beat": 64.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 65.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 66,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 66.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 67,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 67.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 68,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
-            },
-            {
-              "name": "C4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
-            },
-            {
-              "name": "E4",
-              "role": "harmony",
-              "judge": true,
-              "velocity": 0.72
-            }
-          ],
-          "judgeWindow": 0.6
-        },
-        {
-          "beat": 68.75,
-          "duration": 0.75,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 69.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 70,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "A4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 70.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "G4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 71,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "D4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 71.5,
-          "duration": 0.5,
-          "notes": [
-            {
-              "name": "E4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            }
-          ]
-        },
-        {
-          "beat": 72,
-          "duration": 4,
-          "notes": [
-            {
-              "name": "C4",
-              "role": "melody",
-              "judge": true,
-              "velocity": 1
-            },
-            {
-              "name": "F3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
-            },
-            {
-              "name": "A3",
-              "role": "bass",
-              "judge": true,
-              "velocity": 0.6
-            }
-          ],
-          "judgeWindow": 0.6
+          "judgeWindow": 0.7
         }
       ],
       "sourceFeatures": {
         "hasChords": true,
         "hasArpeggio": false,
         "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/tong-nian/qupu123-290148-score.png",
+          "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
+          "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
+          "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
+        ],
         "unsupported": [
-          "下方伴奏未进入 steps；原谱反复与结尾已按练习版展开。",
-          "V2 和弦版为 21 音 C 调卡林巴练习编配，优先保持可弹性和判定稳定性；不等同于出版级原版和声还原。",
-          "harmonic-density:sparse; generated-from:tong-nian; auto-accompaniment:half-measure-even-beats"
+          "V2 chord version thins guitar/piano harmony into playable 21-key C kalimba targets.",
+          "The practice track covers the first vocal verse and chorus; later lyric verses repeat the same contour in the source."
         ],
-        "unsureMeasures": [
-          "repeat endings",
-          "m3",
-          "m7"
-        ],
+        "unsureMeasures": [],
         "harmonyReview": {
           "confidence": "medium-cross-checked",
-          "method": "Public jianpu/jianhepu rhythm source plus chord-chart harmony adapted into sparse 21-key C kalimba practice anchors.",
+          "method": "melody and rhythm from Qupu123/GuitarWorld/Sohu jianpu, harmony from GuitarWorld C/Am/F/G chart and conservative functional support",
           "sources": [
             {
-              "label": "中国曲谱网《童年》罗大佑简谱",
+              "title": "中国曲谱网《童年》罗大佑简谱",
               "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
             },
             {
-              "label": "2曲谱《童年》C调吉他谱",
-              "url": "https://m.2qupu.com/jita/20231011/26884.html"
+              "title": "吉他世界《童年》C调指弹谱",
+              "url": "https://www.guitarworld.com.cn/pu/q36774"
+            },
+            {
+              "title": "搜狐《琴谱｜童年》双手简谱",
+              "url": "https://www.sohu.com/a/531241905_121124710"
             }
+          ],
+          "reviewRequired": [
+            "Chord voicings are arranged for kalimba playability, not literal guitar or piano voicing."
           ]
         },
         "autoAccompaniment": {
-          "generatedFrom": "current schemaVersion 2 harmony/bass events after sparse review",
-          "generator": "manual 2026-06-13 half-measure/downbeat filter",
-          "pattern": "4/4 half-measure sparse pulse",
-          "restPolicy": "silent restWindows are not filled",
-          "reviewRequired": [
-            "repeat endings are expanded for practice and should be checked against the preferred edition"
-          ]
+          "generatedFrom": "GuitarWorld C/Am/F/G chord chart and V2 chord anchors",
+          "generator": "manual structured rewrite, one soft support event per measure",
+          "pattern": "sparse downbeat support",
+          "restPolicy": "pickup and phrase-pickup restWindows are silent",
+          "reviewRequired": []
         }
       },
       "autoAccompaniment": {
         "enabledByDefault": true,
-        "volume": 0.34,
+        "volume": 0.28,
         "events": [
           {
-            "beat": 4,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "beat": 1,
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
-                "name": "A3",
+                "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.28
               }
             ]
           },
           {
-            "beat": 6,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "beat": 4,
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 8,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "F3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 10,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
+                "velocity": 0.34
+              },
               {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.42
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 12,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.34
               },
               {
                 "name": "B3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
-            "beat": 16,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "beat": 17,
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 20,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
-              }
-            ]
-          },
-          {
-            "beat": 22,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 24,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "F4",
-                "role": "harmony",
-                "velocity": 0.36
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.34
               },
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 26,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
+                "velocity": 0.34
+              },
               {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 28,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "B3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 32,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.34
+              },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 36,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
-              }
-            ]
-          },
-          {
-            "beat": 38,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 40,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.28
+              },
+              {
+                "name": "F4",
+                "role": "harmony",
+                "velocity": 0.28
+              },
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 42,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               }
             ]
           },
           {
             "beat": 44,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "B3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 48,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
-                "name": "G4",
-                "role": "harmony",
-                "velocity": 0.36
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.34
               },
               {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.42
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
+              },
+              {
+                "name": "E4",
+                "role": "harmony",
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 52,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "A3",
                 "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
-              }
-            ]
-          },
-          {
-            "beat": 54,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 56,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.34
+              },
+              {
+                "name": "B3",
+                "role": "bass",
+                "velocity": 0.34
+              },
               {
                 "name": "D4",
                 "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "F4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 58,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           },
           {
             "beat": 60,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
+            "duration": 1,
+            "pattern": "source-chord-downbeat",
             "notes": [
               {
                 "name": "G3",
                 "role": "bass",
-                "velocity": 0.42
-              },
-              {
-                "name": "D4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "B3",
-                "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 64,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "E4",
-                "role": "harmony",
-                "velocity": 0.36
-              },
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 66,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "G3",
-                "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 68,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.34
               },
               {
                 "name": "C4",
                 "role": "harmony",
-                "velocity": 0.36
+                "velocity": 0.28
               },
               {
                 "name": "E4",
                 "role": "harmony",
-                "velocity": 0.36
-              }
-            ]
-          },
-          {
-            "beat": 70,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
-              }
-            ]
-          },
-          {
-            "beat": 72,
-            "duration": 0.75,
-            "pattern": "source-informed-half-measure-sparse",
-            "notes": [
-              {
-                "name": "F3",
-                "role": "bass",
-                "velocity": 0.42
-              },
-              {
-                "name": "A3",
-                "role": "bass",
-                "velocity": 0.42
+                "velocity": 0.28
               }
             ]
           }
@@ -45431,13 +45030,19 @@ export const SONG_LIBRARY = {
       },
       "rhythm": {
         "sourceStatus": "verified",
-        "pickupBeats": 0,
+        "pickupBeats": 1,
         "restWindows": [
           {
             "beat": 0,
             "duration": 1,
             "policy": "silent",
             "reason": "pickup-rest"
+          },
+          {
+            "beat": 16,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "phrase-pickup-rest"
           }
         ],
         "sources": [
@@ -45446,8 +45051,12 @@ export const SONG_LIBRARY = {
             "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
           },
           {
-            "label": "2曲谱《童年》C调吉他谱",
-            "url": "https://m.2qupu.com/jita/20231011/26884.html"
+            "label": "吉他世界《童年》C调指弹谱",
+            "url": "https://www.guitarworld.com.cn/pu/q36774"
+          },
+          {
+            "label": "搜狐《琴谱｜童年》双手简谱",
+            "url": "https://www.sohu.com/a/531241905_121124710"
           }
         ]
       }
@@ -59270,6 +58879,1045 @@ export const SONG_LIBRARY = {
             "url": "https://www.qupu123.com/Mobile-view-id-339784.html"
           }
         ]
+      }
+    },
+  "yun-yan-cheng-yu": {
+      "schemaVersion": 1,
+      "id": "yun-yan-cheng-yu",
+      "title": "《云烟成雨》",
+      "uploader": "system",
+      "practiceTitle": "《云烟成雨》练习轨道",
+      "scoreTitle": "《云烟成雨》简谱进度",
+      "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴卷帘谱与清晰简谱交叉整理，伴奏/和弦暂未编码。",
+      "difficulty": "medium",
+      "bpm": 69,
+      "defaultSpeedFactor": 0.9,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "steps": [
+        [
+          "E5",
+          3,
+          0.25
+        ],
+        [
+          "F5",
+          3.25,
+          0.25
+        ],
+        [
+          "G5",
+          3.5,
+          0.25
+        ],
+        [
+          "A5",
+          4,
+          0.5
+        ],
+        [
+          "F5",
+          4.5,
+          0.5
+        ],
+        [
+          "F5",
+          5,
+          0.5
+        ],
+        [
+          "E5",
+          5.5,
+          0.25
+        ],
+        [
+          "D5",
+          5.75,
+          0.25
+        ],
+        [
+          "D5",
+          6,
+          0.5
+        ],
+        [
+          "D5",
+          6.5,
+          0.5
+        ],
+        [
+          "E5",
+          7,
+          0.5
+        ],
+        [
+          "F5",
+          7.5,
+          0.5
+        ],
+        [
+          "G5",
+          8,
+          0.5
+        ],
+        [
+          "A5",
+          8.5,
+          0.5
+        ],
+        [
+          "B5",
+          9,
+          0.5
+        ],
+        [
+          "C6",
+          9.5,
+          0.5
+        ],
+        [
+          "C6",
+          10,
+          1
+        ],
+        [
+          "D5",
+          11.5,
+          0.25
+        ],
+        [
+          "E5",
+          11.75,
+          0.25
+        ],
+        [
+          "F5",
+          12,
+          1
+        ],
+        [
+          "C6",
+          13,
+          0.5
+        ],
+        [
+          "A5",
+          13.5,
+          0.5
+        ],
+        [
+          "A5",
+          14,
+          1
+        ],
+        [
+          "F5",
+          15,
+          0.5
+        ],
+        [
+          "E5",
+          15.5,
+          0.25
+        ],
+        [
+          "C5",
+          15.75,
+          0.25
+        ],
+        [
+          "G5",
+          16,
+          4
+        ],
+        [
+          "G5",
+          21,
+          1
+        ],
+        [
+          "D5",
+          22,
+          1
+        ],
+        [
+          "C6",
+          23,
+          1
+        ],
+        [
+          "E5",
+          24,
+          1.5
+        ],
+        [
+          "G5",
+          25.5,
+          0.5
+        ],
+        [
+          "F5",
+          26,
+          0.5
+        ],
+        [
+          "E5",
+          26.5,
+          0.5
+        ],
+        [
+          "E5",
+          27,
+          0.5
+        ],
+        [
+          "G5",
+          27.5,
+          0.5
+        ],
+        [
+          "G5",
+          28,
+          1
+        ],
+        [
+          "D5",
+          29,
+          1
+        ],
+        [
+          "C6",
+          30,
+          0.5
+        ],
+        [
+          "D5",
+          30.5,
+          0.5
+        ],
+        [
+          "C6",
+          31,
+          0.5
+        ],
+        [
+          "D5",
+          31.5,
+          0.5
+        ],
+        [
+          "E5",
+          32,
+          1
+        ],
+        [
+          "E5",
+          33,
+          0.5
+        ],
+        [
+          "E5",
+          33.5,
+          0.5
+        ],
+        [
+          "G5",
+          34,
+          0.5
+        ],
+        [
+          "F5",
+          34.5,
+          0.5
+        ],
+        [
+          "E5",
+          35,
+          1
+        ],
+        [
+          "E5",
+          36,
+          1
+        ],
+        [
+          "E5",
+          38,
+          0.5
+        ],
+        [
+          "D5",
+          38.5,
+          0.5
+        ],
+        [
+          "C6",
+          39,
+          0.5
+        ],
+        [
+          "B5",
+          39.5,
+          0.5
+        ],
+        [
+          "B5",
+          40,
+          0.5
+        ],
+        [
+          "A5",
+          40.5,
+          0.5
+        ],
+        [
+          "A5",
+          41,
+          0.5
+        ],
+        [
+          "A5",
+          41.5,
+          0.5
+        ],
+        [
+          "A5",
+          42,
+          0.5
+        ],
+        [
+          "B5",
+          42.5,
+          0.5
+        ],
+        [
+          "C6",
+          43,
+          0.5
+        ],
+        [
+          "G5",
+          43.5,
+          0.5
+        ],
+        [
+          "G5",
+          44,
+          0.5
+        ],
+        [
+          "G5",
+          44.5,
+          0.5
+        ],
+        [
+          "D5",
+          45,
+          0.5
+        ],
+        [
+          "C6",
+          45.5,
+          0.5
+        ],
+        [
+          "C6",
+          46,
+          1
+        ],
+        [
+          "E5",
+          47,
+          0.5
+        ],
+        [
+          "D5",
+          47.5,
+          0.5
+        ],
+        [
+          "D5",
+          48,
+          0.5
+        ],
+        [
+          "D5",
+          48.5,
+          0.5
+        ],
+        [
+          "D5",
+          49,
+          0.5
+        ],
+        [
+          "C6",
+          49.5,
+          0.5
+        ],
+        [
+          "A5",
+          50,
+          1
+        ],
+        [
+          "G5",
+          51,
+          1
+        ],
+        [
+          "D5",
+          52,
+          1
+        ],
+        [
+          "D5",
+          53,
+          1
+        ],
+        [
+          "G5",
+          55,
+          0.5
+        ],
+        [
+          "G5",
+          55.5,
+          0.5
+        ],
+        [
+          "E5",
+          56,
+          1.5
+        ],
+        [
+          "E5",
+          57.5,
+          0.5
+        ],
+        [
+          "E5",
+          58,
+          0.5
+        ],
+        [
+          "G5",
+          58.5,
+          0.5
+        ],
+        [
+          "F5",
+          59,
+          0.5
+        ],
+        [
+          "E5",
+          59.5,
+          0.5
+        ],
+        [
+          "D5",
+          60,
+          1.5
+        ],
+        [
+          "D5",
+          61.5,
+          0.5
+        ],
+        [
+          "D5",
+          62,
+          0.5
+        ],
+        [
+          "F5",
+          62.5,
+          0.5
+        ],
+        [
+          "E5",
+          63,
+          0.5
+        ],
+        [
+          "D5",
+          63.5,
+          0.5
+        ],
+        [
+          "D5",
+          64,
+          1
+        ],
+        [
+          "C6",
+          65,
+          0.5
+        ],
+        [
+          "C6",
+          65.5,
+          0.5
+        ],
+        [
+          "A5",
+          66,
+          0.5
+        ],
+        [
+          "G5",
+          66.5,
+          0.5
+        ],
+        [
+          "F5",
+          67,
+          0.5
+        ],
+        [
+          "E5",
+          67.5,
+          0.25
+        ],
+        [
+          "F5",
+          67.75,
+          0.25
+        ],
+        [
+          "E5",
+          68,
+          2
+        ],
+        [
+          "G5",
+          70,
+          1
+        ],
+        [
+          "E5",
+          71,
+          0.5
+        ],
+        [
+          "D5",
+          71.5,
+          0.5
+        ],
+        [
+          "C6",
+          72,
+          1.5
+        ],
+        [
+          "A5",
+          73.5,
+          0.5
+        ],
+        [
+          "A5",
+          74,
+          0.5
+        ],
+        [
+          "B5",
+          74.5,
+          0.5
+        ],
+        [
+          "C6",
+          75,
+          0.5
+        ],
+        [
+          "G5",
+          75.5,
+          0.5
+        ],
+        [
+          "G5",
+          76,
+          0.5
+        ],
+        [
+          "G5",
+          76.5,
+          0.5
+        ],
+        [
+          "D5",
+          77,
+          0.5
+        ],
+        [
+          "C6",
+          77.5,
+          0.5
+        ],
+        [
+          "C6",
+          79,
+          0.25
+        ],
+        [
+          "E5",
+          79.25,
+          0.25
+        ],
+        [
+          "D5",
+          79.5,
+          0.5
+        ],
+        [
+          "D5",
+          80,
+          1
+        ],
+        [
+          "D5",
+          81,
+          0.5
+        ],
+        [
+          "D5",
+          81.5,
+          0.5
+        ],
+        [
+          "C6",
+          82,
+          0.5
+        ],
+        [
+          "C6",
+          82.5,
+          0.5
+        ],
+        [
+          "G5",
+          83,
+          1
+        ],
+        [
+          "G5",
+          84,
+          0.5
+        ],
+        [
+          "D5",
+          84.5,
+          0.5
+        ],
+        [
+          "C6",
+          85,
+          0.5
+        ],
+        [
+          "F5",
+          85.5,
+          0.5
+        ],
+        [
+          "A5",
+          86,
+          0.5
+        ],
+        [
+          "C6",
+          86.5,
+          0.5
+        ],
+        [
+          "G5",
+          87.5,
+          0.5
+        ],
+        [
+          "G5",
+          88,
+          0.5
+        ],
+        [
+          "F5",
+          88.5,
+          0.5
+        ],
+        [
+          "F5",
+          89,
+          0.5
+        ],
+        [
+          "E5",
+          89.5,
+          0.25
+        ],
+        [
+          "E5",
+          89.75,
+          0.25
+        ],
+        [
+          "E5",
+          90,
+          0.25
+        ],
+        [
+          "D5",
+          90.25,
+          0.25
+        ],
+        [
+          "D5",
+          90.5,
+          0.25
+        ],
+        [
+          "D5",
+          90.75,
+          0.25
+        ],
+        [
+          "E5",
+          91,
+          0.5
+        ],
+        [
+          "G5",
+          91.5,
+          0.5
+        ],
+        [
+          "G5",
+          92,
+          0.5
+        ],
+        [
+          "D5",
+          92.5,
+          0.5
+        ],
+        [
+          "D5",
+          93,
+          0.5
+        ],
+        [
+          "C6",
+          93.5,
+          0.5
+        ],
+        [
+          "B5",
+          94,
+          1
+        ],
+        [
+          "G5",
+          95.5,
+          0.5
+        ],
+        [
+          "A5",
+          96,
+          0.5
+        ],
+        [
+          "F5",
+          96.5,
+          0.5
+        ],
+        [
+          "F5",
+          97,
+          0.5
+        ],
+        [
+          "E5",
+          97.5,
+          0.5
+        ],
+        [
+          "E5",
+          98,
+          0.25
+        ],
+        [
+          "D5",
+          98.25,
+          0.25
+        ],
+        [
+          "D5",
+          98.5,
+          0.25
+        ],
+        [
+          "D5",
+          98.75,
+          0.25
+        ],
+        [
+          "C6",
+          99,
+          0.5
+        ],
+        [
+          "D5",
+          99.5,
+          0.5
+        ],
+        [
+          "E5",
+          100,
+          0.5
+        ],
+        [
+          "E5",
+          100.5,
+          0.25
+        ],
+        [
+          "E5",
+          100.75,
+          0.25
+        ],
+        [
+          "E5",
+          101,
+          0.25
+        ],
+        [
+          "F5",
+          101.25,
+          0.25
+        ],
+        [
+          "G5",
+          101.5,
+          0.5
+        ],
+        [
+          "G5",
+          102,
+          0.5
+        ],
+        [
+          "G5",
+          103.5,
+          0.5
+        ],
+        [
+          "A5",
+          104,
+          0.5
+        ],
+        [
+          "F5",
+          104.5,
+          0.5
+        ],
+        [
+          "F5",
+          105,
+          0.5
+        ],
+        [
+          "E5",
+          105.5,
+          0.25
+        ],
+        [
+          "D5",
+          105.75,
+          0.25
+        ],
+        [
+          "D5",
+          106,
+          0.25
+        ],
+        [
+          "E5",
+          106.25,
+          0.25
+        ],
+        [
+          "E5",
+          106.5,
+          0.25
+        ],
+        [
+          "E5",
+          106.75,
+          0.25
+        ],
+        [
+          "F5",
+          107,
+          0.5
+        ],
+        [
+          "G5",
+          107.5,
+          0.5
+        ],
+        [
+          "G5",
+          108,
+          0.5
+        ],
+        [
+          "A5",
+          108.5,
+          0.5
+        ],
+        [
+          "B5",
+          109,
+          1
+        ],
+        [
+          "A5",
+          110,
+          0.5
+        ],
+        [
+          "E5",
+          110.5,
+          0.5
+        ],
+        [
+          "A5",
+          111,
+          0.5
+        ],
+        [
+          "C6",
+          111.5,
+          0.25
+        ],
+        [
+          "E5",
+          111.75,
+          0.25
+        ],
+        [
+          "A5",
+          112,
+          0.5
+        ],
+        [
+          "A5",
+          112.5,
+          0.5
+        ],
+        [
+          "A5",
+          113,
+          0.5
+        ],
+        [
+          "G5",
+          113.5,
+          0.5
+        ],
+        [
+          "G5",
+          114,
+          0.5
+        ],
+        [
+          "G5",
+          114.5,
+          0.25
+        ],
+        [
+          "G5",
+          114.75,
+          0.25
+        ],
+        [
+          "G5",
+          115,
+          0.5
+        ],
+        [
+          "D5",
+          115.5,
+          0.25
+        ],
+        [
+          "E5",
+          115.75,
+          0.25
+        ],
+        [
+          "F5",
+          116,
+          0.5
+        ],
+        [
+          "C6",
+          116.5,
+          0.5
+        ],
+        [
+          "A5",
+          117,
+          0.5
+        ],
+        [
+          "G5",
+          117.5,
+          0.5
+        ],
+        [
+          "G5",
+          118,
+          0.5
+        ],
+        [
+          "B5",
+          118.5,
+          0.5
+        ],
+        [
+          "C6",
+          119,
+          1
+        ]
+      ],
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": false,
+        "unsupported": [
+          "Qupu123 source is a 17-key C kalimba roll/performance score; V1 keeps only the readable main melody line.",
+          "Chord, bass, and arpeggio cues visible in the source are recorded as source context but not encoded in this melody-only version.",
+          "Triplet and short grace-like groups were quantized to 0.25-beat subdivisions for the current practice timeline."
+        ],
+        "unsureMeasures": [
+          "Measures 1-4 and 21-30 were cross-checked against the clearer Sohu/Bi San Dai jianpu image because the Qupu123 roll score is harder to read as numbered notation.",
+          "Measures with tied gray notes were encoded as the audible melody note or held duration, not as duplicate attacks."
+        ],
+        "sourceReview": {
+          "confidence": "medium-for-melody-needs-listening-review",
+          "decision": "Added as a melody-only built-in song; defer chord/accompaniment coding until a clearer arrangement source or user review is available.",
+          "sources": [
+            {
+              "label": "中国曲谱网 云烟成雨（17音C调卡林巴琴演奏谱）",
+              "url": "https://qupu123.com/qiyue/qita/p330663.html"
+            },
+            {
+              "label": "搜狐 云烟成雨拇指琴演奏谱交叉参考",
+              "url": "https://www.sohu.com/a/274931646_759018"
+            }
+          ]
+        }
       }
     },
   "zhi-duan-qing-chang": {

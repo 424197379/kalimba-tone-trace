@@ -9,7 +9,7 @@
   "uploader": "system",
   "practiceTitle": "《天空之城》和弦版练习轨道",
   "scoreTitle": "《天空之城》和弦版简谱进度",
-  "hint": "和弦版需要在判定窗口内弹出主旋律与标记的和弦目标音；可用扫弦或分解方式完成。",
+  "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理；和弦目标音从下声部分解伴奏中抽取并精简到 21 音 C 调卡林巴可弹范围。",
   "difficulty": "medium",
   "bpm": 72,
   "defaultSpeedFactor": 0.9,
@@ -245,19 +245,7 @@
     },
     {
       "beat": 19,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "D4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 19.5,
-      "duration": 0.5,
+      "duration": 1,
       "notes": [
         {
           "name": "E4",
@@ -709,19 +697,7 @@
     },
     {
       "beat": 51,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "D4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 51.5,
-      "duration": 0.5,
+      "duration": 1,
       "notes": [
         {
           "name": "E4",
@@ -941,7 +917,7 @@
     },
     {
       "beat": 62,
-      "duration": 0.5,
+      "duration": 1,
       "notes": [
         {
           "name": "B4",
@@ -969,18 +945,6 @@
         }
       ],
       "judgeWindow": 0.7
-    },
-    {
-      "beat": 62.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "A4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
     },
     {
       "beat": 63,
@@ -1149,19 +1113,7 @@
     },
     {
       "beat": 75,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "G4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 75.5,
-      "duration": 0.5,
+      "duration": 1,
       "notes": [
         {
           "name": "G4",
@@ -1381,7 +1333,7 @@
     },
     {
       "beat": 88,
-      "duration": 1.5,
+      "duration": 2,
       "notes": [
         {
           "name": "C5",
@@ -1411,18 +1363,6 @@
       "judgeWindow": 0.7
     },
     {
-      "beat": 89.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "G4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
       "beat": 90,
       "duration": 2,
       "notes": [
@@ -1439,7 +1379,7 @@
       "duration": 1,
       "notes": [
         {
-          "name": "F4",
+          "name": "F5",
           "role": "melody",
           "judge": true,
           "velocity": 1
@@ -1455,6 +1395,12 @@
           "role": "harmony",
           "velocity": 0.72,
           "judge": true
+        },
+        {
+          "name": "F4",
+          "role": "harmony",
+          "velocity": 0.72,
+          "judge": true
         }
       ],
       "judgeWindow": 0.7
@@ -1464,7 +1410,7 @@
       "duration": 1,
       "notes": [
         {
-          "name": "E4",
+          "name": "E5",
           "role": "melody",
           "judge": true,
           "velocity": 1
@@ -1476,7 +1422,7 @@
       "duration": 1,
       "notes": [
         {
-          "name": "D4",
+          "name": "D5",
           "role": "melody",
           "judge": true,
           "velocity": 1
@@ -1485,6 +1431,12 @@
           "name": "B3",
           "role": "bass",
           "velocity": 0.62,
+          "judge": true
+        },
+        {
+          "name": "D4",
+          "role": "harmony",
+          "velocity": 0.72,
           "judge": true
         },
         {
@@ -1507,343 +1459,6 @@
           "velocity": 1
         }
       ]
-    },
-    {
-      "beat": 96,
-      "duration": 4,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "B3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "E4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "A4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 100,
-      "duration": 3,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "B3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "E4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "G4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 103,
-      "duration": 1,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 104,
-      "duration": 1.5,
-      "notes": [
-        {
-          "name": "A4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "A3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "C4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "E4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 105.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "A4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 106,
-      "duration": 1.5,
-      "notes": [
-        {
-          "name": "G4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "G3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "B3",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "D4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 107.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "G4",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 108,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "A3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "C4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "E4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 108.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "D5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 109,
-      "duration": 2,
-      "notes": [
-        {
-          "name": "C5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 111,
-      "duration": 1,
-      "notes": [
-        {
-          "name": "C5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 112,
-      "duration": 1.5,
-      "notes": [
-        {
-          "name": "D5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "G3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "B3",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "D4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 113.5,
-      "duration": 0.5,
-      "notes": [
-        {
-          "name": "C5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 114,
-      "duration": 1,
-      "notes": [
-        {
-          "name": "D5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 115,
-      "duration": 1,
-      "notes": [
-        {
-          "name": "G5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
-    },
-    {
-      "beat": 116,
-      "duration": 3,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        },
-        {
-          "name": "G3",
-          "role": "bass",
-          "velocity": 0.62,
-          "judge": true
-        },
-        {
-          "name": "C4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        },
-        {
-          "name": "E4",
-          "role": "harmony",
-          "velocity": 0.72,
-          "judge": true
-        }
-      ],
-      "judgeWindow": 0.7
-    },
-    {
-      "beat": 119,
-      "duration": 1,
-      "notes": [
-        {
-          "name": "E5",
-          "role": "melody",
-          "judge": true,
-          "velocity": 1
-        }
-      ]
     }
   ],
   "sourceFeatures": {
@@ -1851,38 +1466,47 @@
     "hasArpeggio": true,
     "hasRepeats": false,
     "unsupported": [
-      "TAB, broken-chord texture, and accompaniment layers from the source are not encoded in V1 steps.",
-      "Source measures 7 and 15 include altered tones such as #4 or #5; they were mapped to nearby natural notes for 21-key C kalimba.",
-      "B7, E, and Esus4 color chords are used only as chord-version references.",
-      "autoAccompaniment keeps only key chord-change points to avoid filling melody rests."
+      "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
+      "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
+      "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
     ],
     "unsureMeasures": [
-      "Measures 13-15 and 21-29 still need manual review for ties, dotted rhythm, and ornaments."
+      "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
     ],
-    "harmonyReview": {
-      "confidence": "medium-needs-review",
-      "method": "Chord symbols from Yinban 1=C guitar source, thinned to 21-key C kalimba target notes.",
+    "sourceReview": {
+      "confidence": "high-for-melody-medium-for-harmony",
+      "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
       "sources": [
         {
-          "label": "Yinban Castle in the Sky 1=C fingerstyle source",
-          "url": "https://www.yinban.com/tab/finger/2299.html"
+          "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+          "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
         },
         {
-          "label": "Yinban Castle in the Sky source image local copy",
-          "url": "https://www.yinban.com/wp-content/uploads/2020/07/2020072614032734.png"
+          "label": "中国曲谱网源图",
+          "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
+        }
+      ]
+    },
+    "harmonyReview": {
+      "confidence": "medium",
+      "method": "Lower-staff accompaniment from Qupu123 was thinned into sparse chord targets and auto-accompaniment pulses.",
+      "sources": [
+        {
+          "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+          "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
         },
         {
-          "label": "Tan8 Castle in the Sky 1=C jianpu cross-check",
-          "url": "https://www.tan8.com/post-282922-0.html"
+          "label": "中国曲谱网源图",
+          "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
         }
       ]
     },
     "autoAccompaniment": {
-      "generatedFrom": "Yinban chord symbols and rebuilt V1 melody anchors",
+      "generatedFrom": "Qupu123 lower-staff accompaniment, using sparse chord-change pulses only",
       "pattern": "sparse chord-change pulses only",
       "restPolicy": "silent pickup rest is not filled",
       "reviewRequired": [
-        "Measures 13-15 and 21-29 need listening review for ties and dotted rhythm."
+        "Measure 15 tied/dotted rhythm should be listening-reviewed against a preferred performance if a stricter rendition is required."
       ]
     }
   },
@@ -1893,7 +1517,7 @@
       {
         "beat": 4,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -1915,7 +1539,7 @@
       {
         "beat": 8,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -1937,7 +1561,7 @@
       {
         "beat": 12,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -1959,7 +1583,7 @@
       {
         "beat": 16,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -1981,7 +1605,7 @@
       {
         "beat": 20,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -2003,7 +1627,7 @@
       {
         "beat": 24,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2025,7 +1649,7 @@
       {
         "beat": 28,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2047,7 +1671,7 @@
       {
         "beat": 32,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2069,7 +1693,7 @@
       {
         "beat": 36,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2091,7 +1715,7 @@
       {
         "beat": 40,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2113,7 +1737,7 @@
       {
         "beat": 44,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -2135,7 +1759,7 @@
       {
         "beat": 48,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2157,7 +1781,7 @@
       {
         "beat": 52,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -2179,7 +1803,7 @@
       {
         "beat": 56,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2201,7 +1825,7 @@
       {
         "beat": 58,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2223,7 +1847,7 @@
       {
         "beat": 60,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -2245,7 +1869,7 @@
       {
         "beat": 62,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2267,7 +1891,7 @@
       {
         "beat": 64,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2289,7 +1913,7 @@
       {
         "beat": 68,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2311,7 +1935,7 @@
       {
         "beat": 72,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2333,7 +1957,7 @@
       {
         "beat": 76,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2355,7 +1979,7 @@
       {
         "beat": 80,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2377,7 +2001,7 @@
       {
         "beat": 84,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "F3",
@@ -2399,7 +2023,7 @@
       {
         "beat": 86,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2421,7 +2045,7 @@
       {
         "beat": 88,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "G3",
@@ -2443,7 +2067,7 @@
       {
         "beat": 92,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "A3",
@@ -2465,7 +2089,7 @@
       {
         "beat": 94,
         "duration": 0.75,
-        "pattern": "source-chord-sparse",
+        "pattern": "qupu123-lower-staff-sparse",
         "notes": [
           {
             "name": "B3",
@@ -2474,182 +2098,6 @@
           },
           {
             "name": "D4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "G4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 96,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "B3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "A4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 100,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "B3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "G4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 104,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "A3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 106,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "B3",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 108,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "A3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 112,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "B3",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "D4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 116,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "G3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "C4",
-            "role": "harmony",
-            "velocity": 0.34
-          },
-          {
-            "name": "E4",
-            "role": "harmony",
-            "velocity": 0.34
-          }
-        ]
-      },
-      {
-        "beat": 118,
-        "duration": 0.75,
-        "pattern": "source-chord-sparse",
-        "notes": [
-          {
-            "name": "B3",
-            "role": "bass",
-            "velocity": 0.4
-          },
-          {
-            "name": "E4",
             "role": "harmony",
             "velocity": 0.34
           },
@@ -2663,7 +2111,7 @@
     ]
   },
   "rhythm": {
-    "sourceStatus": "needs-review",
+    "sourceStatus": "verified",
     "pickupBeats": 3,
     "restWindows": [
       {
@@ -2675,16 +2123,12 @@
     ],
     "sources": [
       {
-        "label": "Yinban Castle in the Sky 1=C fingerstyle source",
-        "url": "https://www.yinban.com/tab/finger/2299.html"
+        "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+        "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
       },
       {
-        "label": "Yinban Castle in the Sky source image local copy",
-        "url": "https://www.yinban.com/wp-content/uploads/2020/07/2020072614032734.png"
-      },
-      {
-        "label": "Tan8 Castle in the Sky 1=C jianpu cross-check",
-        "url": "https://www.tan8.com/post-282922-0.html"
+        "label": "中国曲谱网源图",
+        "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
       }
     ]
   }

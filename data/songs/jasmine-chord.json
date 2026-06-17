@@ -2295,11 +2295,13 @@
     ],
     "unsupported": [
       "V2 chord version is a 21-key C kalimba practice arrangement, optimized for playability and stable judging rather than publication-grade voicing.",
-      "harmonic-density:sparse; progression:C/F/G7 diatonic phrase support"
+      "harmonic-density:sparse; progression:C/F/G7 diatonic phrase support",
+      "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
     ],
     "unsureMeasures": [
       "m25-m30",
-      "harmony inferred from C major melody; no complete piano reduction source located"
+      "harmony inferred from C major melody; no complete piano reduction source located",
+      "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
     ],
     "harmonyReview": {
       "confidence": "medium-melody-verified-harmony-inferred",
@@ -2312,10 +2314,15 @@
         {
           "title": "Zuoqu Mo Li Hua folk song reference",
           "url": "https://www.zuoqu.net/works-356716.html"
+        },
+        {
+          "title": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+          "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
         }
       ],
       "reviewRequired": [
-        "confirm full published harmony if a source-backed arrangement is required"
+        "confirm full published harmony if a source-backed arrangement is required",
+        "Quark source has C/F/Am/G/Dm/G chord symbols for the short version; current built-in chord track remains sparse and does not encode every mid-measure change."
       ]
     },
     "autoAccompaniment": {
@@ -2326,7 +2333,13 @@
       "reviewRequired": [
         "confirm full published harmony if a source-backed arrangement is required"
       ]
-    }
+    },
+    "sources": [
+      {
+        "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+        "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
+      }
+    ]
   },
   "autoAccompaniment": {
     "enabledByDefault": true,
@@ -2886,6 +2899,10 @@
       {
         "label": "Zuoqu Mo Li Hua folk song reference",
         "url": "https://www.zuoqu.net/works-356716.html"
+      },
+      {
+        "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+        "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
       }
     ]
   }

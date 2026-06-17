@@ -746,10 +746,12 @@
       "private/sheets/raw/IMG_20260613_182954.jpg"
     ],
     "unsupported": [
-      "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments."
+      "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments.",
+      "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
     ],
     "unsureMeasures": [
-      "m25-m30"
+      "m25-m30",
+      "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
     ],
     "sources": [
       {
@@ -759,6 +761,10 @@
       {
         "label": "Zuoqu Mo Li Hua folk song reference",
         "url": "https://www.zuoqu.net/works-356716.html"
+      },
+      {
+        "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+        "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
       }
     ]
   }

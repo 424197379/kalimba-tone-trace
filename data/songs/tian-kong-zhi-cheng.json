@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《天空之城》练习轨道",
   "scoreTitle": "《天空之城》简谱进度",
-  "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+  "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理的主旋律版；和弦与分解伴奏保留在和弦版。",
   "difficulty": "medium",
   "bpm": 72,
   "defaultSpeedFactor": 0.95,
@@ -77,14 +77,9 @@
       3
     ],
     [
-      "D4",
-      19,
-      0.5
-    ],
-    [
       "E4",
-      19.5,
-      0.5
+      19,
+      1
     ],
     [
       "F4",
@@ -212,14 +207,9 @@
       3
     ],
     [
-      "D4",
-      51,
-      0.5
-    ],
-    [
       "E4",
-      51.5,
-      0.5
+      51,
+      1
     ],
     [
       "F4",
@@ -279,12 +269,7 @@
     [
       "B4",
       62,
-      0.5
-    ],
-    [
-      "A4",
-      62.5,
-      0.5
+      1
     ],
     [
       "G4",
@@ -334,12 +319,7 @@
     [
       "G4",
       75,
-      0.5
-    ],
-    [
-      "G4",
-      75.5,
-      0.5
+      1
     ],
     [
       "C5",
@@ -399,12 +379,7 @@
     [
       "C5",
       88,
-      1.5
-    ],
-    [
-      "G4",
-      89.5,
-      0.5
+      2
     ],
     [
       "G4",
@@ -412,108 +387,23 @@
       2
     ],
     [
-      "F4",
+      "F5",
       92,
       1
     ],
     [
-      "E4",
+      "E5",
       93,
       1
     ],
     [
-      "D4",
+      "D5",
       94,
       1
     ],
     [
       "C5",
       95,
-      1
-    ],
-    [
-      "E5",
-      96,
-      4
-    ],
-    [
-      "E5",
-      100,
-      3
-    ],
-    [
-      "E5",
-      103,
-      1
-    ],
-    [
-      "A4",
-      104,
-      1.5
-    ],
-    [
-      "A4",
-      105.5,
-      0.5
-    ],
-    [
-      "G4",
-      106,
-      1.5
-    ],
-    [
-      "G4",
-      107.5,
-      0.5
-    ],
-    [
-      "E5",
-      108,
-      0.5
-    ],
-    [
-      "D5",
-      108.5,
-      0.5
-    ],
-    [
-      "C5",
-      109,
-      2
-    ],
-    [
-      "C5",
-      111,
-      1
-    ],
-    [
-      "D5",
-      112,
-      1.5
-    ],
-    [
-      "C5",
-      113.5,
-      0.5
-    ],
-    [
-      "D5",
-      114,
-      1
-    ],
-    [
-      "G5",
-      115,
-      1
-    ],
-    [
-      "E5",
-      116,
-      3
-    ],
-    [
-      "E5",
-      119,
       1
     ]
   ],
@@ -522,13 +412,27 @@
     "hasArpeggio": true,
     "hasRepeats": false,
     "unsupported": [
-      "TAB, broken-chord texture, and accompaniment layers from the source are not encoded in V1 steps.",
-      "Source measures 7 and 15 include altered tones such as #4 or #5; they were mapped to nearby natural notes for 21-key C kalimba.",
-      "B7, E, and Esus4 color chords are used only as chord-version references."
+      "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
+      "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
+      "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
     ],
     "unsureMeasures": [
-      "Measures 13-15 and 21-29 still need manual review for ties, dotted rhythm, and ornaments."
-    ]
+      "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
+    ],
+    "sourceReview": {
+      "confidence": "high-for-melody-medium-for-harmony",
+      "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
+      "sources": [
+        {
+          "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+          "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
+        },
+        {
+          "label": "中国曲谱网源图",
+          "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
+        }
+      ]
+    }
   },
   "key": "C"
 }
