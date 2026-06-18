@@ -1,6 +1,6 @@
 {
   "name": "kalimba-tone-trace",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "private": true,
   "description": "Kalimba ToneTrace, a local-first kalimba listening and follow-practice PWA.",
   "scripts": {
