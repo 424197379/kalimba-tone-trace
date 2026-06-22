@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《星际穿越主题曲》练习轨道",
   "scoreTitle": "《星际穿越主题曲》简谱进度",
-  "hint": "Interstellar Main Theme melody practice version; source is 1=C, 3/4, q=90. The 4/4 ending and triplet arpeggios are simplified for 21-key C kalimba playback.",
+  "hint": "Interstellar Main Theme melody practice version; opening ostinato moved into the higher register and source stack/accompaniment is available in the chord version.",
   "difficulty": "hard",
   "bpm": 90,
   "defaultSpeedFactor": 0.82,
@@ -13,272 +13,272 @@
   "key": "C",
   "steps": [
     [
-      "E4",
+      "E5",
       0,
       0.5
     ],
     [
-      "C4",
+      "C5",
       0.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       1,
       0.5
     ],
     [
-      "C4",
+      "C5",
       1.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       2,
       0.5
     ],
     [
-      "C4",
+      "C5",
       2.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       3,
       0.5
     ],
     [
-      "C4",
+      "C5",
       3.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       4,
       0.5
     ],
     [
-      "C4",
+      "C5",
       4.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       5,
       0.5
     ],
     [
-      "C4",
+      "C5",
       5.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       6,
       0.5
     ],
     [
-      "C4",
+      "C5",
       6.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       7,
       0.5
     ],
     [
-      "C4",
+      "C5",
       7.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       8,
       0.5
     ],
     [
-      "C4",
+      "C5",
       8.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       9,
       0.5
     ],
     [
-      "D4",
+      "D5",
       9.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       10,
       0.5
     ],
     [
-      "D4",
+      "D5",
       10.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       11,
       0.5
     ],
     [
-      "D4",
+      "D5",
       11.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       12,
       0.5
     ],
     [
-      "D4",
+      "D5",
       12.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       13,
       0.5
     ],
     [
-      "D4",
+      "D5",
       13.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       14,
       0.5
     ],
     [
-      "D4",
+      "D5",
       14.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       15,
       0.5
     ],
     [
-      "D4",
+      "D5",
       15.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       16,
       0.5
     ],
     [
-      "D4",
+      "D5",
       16.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       17,
       0.5
     ],
     [
-      "D4",
+      "D5",
       17.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       18,
       0.5
     ],
     [
-      "D4",
+      "D5",
       18.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       19,
       0.5
     ],
     [
-      "D4",
+      "D5",
       19.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       20,
       0.5
     ],
     [
-      "D4",
+      "D5",
       20.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       21,
       0.5
     ],
     [
-      "D4",
+      "D5",
       21.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       22,
       0.5
     ],
     [
-      "D4",
+      "D5",
       22.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       23,
       0.5
     ],
     [
-      "D4",
+      "D5",
       23.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       24,
       0.5
     ],
     [
-      "D4",
+      "D5",
       24.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       25,
       0.5
     ],
     [
-      "D4",
+      "D5",
       25.5,
       0.5
     ],
     [
-      "E4",
+      "E5",
       26,
       0.5
     ],
     [
-      "D4",
+      "D5",
       26.5,
       0.5
     ],
@@ -698,42 +698,42 @@
       1
     ],
     [
-      "E4",
+      "E5",
       123,
       1
     ],
     [
-      "E4",
+      "E5",
       124,
       1
     ],
     [
-      "E4",
+      "E5",
       125,
       1
     ],
     [
-      "E4",
+      "E5",
       126,
       1
     ],
     [
-      "E4",
+      "E5",
       127,
       1
     ],
     [
-      "E4",
+      "E5",
       128,
       1
     ],
     [
-      "E4",
+      "E5",
       129,
       1
     ],
     [
-      "E4",
+      "E5",
       130,
       1
     ],
@@ -1233,7 +1233,7 @@
       "private/sheets/raw/interstellar-main-theme/doc88-page-03.png"
     ],
     "unsupported": [
-      "V1 keeps only the readable main melody / top-line motion; stacked chord tones, bass holds, and full accompaniment are omitted.",
+      "V1 keeps only the readable main melody / top-line motion; use the chord version for the lower organ-like support that makes the theme recognizable.",
       "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
       "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
       "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
@@ -1244,7 +1244,7 @@
     ],
     "sourceReview": {
       "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
-      "decision": "Added a melody-only built-in practice version from the supplied Doc88 three-page jianpu screenshots. Chord arrangement deferred because the source has dense stacked/bass layers and a meter change.",
+      "decision": "Updated the melody version by moving the opening ostinato into the higher playable register, and added a V2 chord/accompaniment version from the supplied Doc88 three-page jianpu screenshots.",
       "savedFiles": [
         "private/sheets/raw/interstellar-main-theme/doc88-interstellar.html",
         "private/sheets/raw/interstellar-main-theme/doc88-page-01.png",
