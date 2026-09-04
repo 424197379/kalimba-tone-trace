@@ -40,6 +40,7 @@ npm start
 npm run validate:songs
 npm run report:rhythm
 npm run report:arrangements
+npm run report:suitability
 npm run build:songs
 npm run check
 ```
@@ -135,4 +136,5 @@ Confirm that no files under `private/sheets/raw/`, `private/sheets/ocr/`, or `pr
 - Preserve rests as beat gaps; do not create rest notes.
 - For accompaniment, avoid filling every beat. Long main-melody gaps of 1 beat or more should usually stay silent unless a reliable source shows held accompaniment.
 - Mark uncertain rhythm, chords, or source conflicts in `sourceFeatures` or V2 `rhythm.sourceStatus`.
+- Before adding a song, read `skills/kalimba-tone-trace-compiler/references/kalimba-suitability.md`: assess the composition's fit separately from transcription accuracy. Long notes alone do not make a song unsuitable. Record the actual scope and pending checks in `sourceFeatures.suitability`; use `npm run report:suitability` as a read-only review aid, not automatic approval.
 - Watch for PowerShell console encoding. Use Node or file inspection to verify UTF-8 text if Chinese appears as `????` in terminal output.

@@ -14,6 +14,7 @@ Use this reference when producing `data/songs/*.json` or user-import JSON for Ka
 - `bpm` should normally be 72-120 for practice unless the source clearly indicates otherwise.
 - `beatsPerMeasure` is the source meter when known; otherwise infer from bars and rhythm.
 - When using web sources, keep source URLs and confidence decisions in `rhythm.sources`, `sourceFeatures`, or private review notes. Do not commit downloaded source images or full copied third-party scores.
+- New built-ins should record a scope-specific `sourceFeatures.suitability` summary as described in `kalimba-suitability.md`. It is review metadata, not a new playback schema or an automatic approval.
 
 ## V1 Melody Schema
 

@@ -19,7 +19,7 @@ Do not commit original sheet photos, OCR text, or review records from `private/`
 
 1. Put source images in `private/sheets/raw/<song-id>/`. If the user only gives a song title, search for sources first and save useful downloaded images, screenshots, PDFs, or source notes in the same private source folders.
 2. If OCR is useful, put intermediate OCR output in `private/sheets/ocr/<song-id>/`.
-3. Read the main melody first. Keep it playable on 21-key C kalimba.
+3. Run the two gates in [Kalimba suitability](../skills/kalimba-tone-trace-compiler/references/kalimba-suitability.md): song fit first, transcription fidelity second. Confirm version/scope before compiling the main melody.
 4. Convert rests to beat gaps, not rest notes.
 5. If the image is blurry or lacks rhythm/chord details, cross-check with online sources.
 6. Prefer complete score, MusicXML, MIDI, or full jianpu with rhythm over chord-only pages.
@@ -29,6 +29,7 @@ Do not commit original sheet photos, OCR text, or review records from `private/`
 
 ```powershell
 npm run validate:songs
+npm run report:suitability
 npm run build:songs
 npm run check
 ```
@@ -49,6 +50,10 @@ Recommended search variants include `<title> 简谱`, `<title> 卡林巴简谱`,
 Ask the user for more material only after a reasonable search, and be specific about the missing piece: clearer sheet image, source URL, MIDI/MusicXML, target performance, target section, or confirmation that a melody-only version is acceptable.
 
 ## Melody First
+
+Do not judge a composition unsuitable because an old transcription sounds wrong. Check octave dots, ties, rhythm, source tempo and melody extraction first. Long notes are not a rejection criterion. Use `sourceFeatures.suitability` to record recommended, conditional, needs-review or not-recommended for the actual compiled scope, with reasons and pending verification. `npm run report:suitability` is a read-only evidence/risk report, not an automatic musical rating.
+
+Check playback at source tempo without accompaniment before listening to the richer arrangement. The sample player lets plucked samples decay naturally; note duration does not sustain a sample at a constant volume. Report source comparison, browser audio checks and physical-instrument listening separately.
 
 For built-in melody versions, keep `schemaVersion: 1` and write only the main melody in `steps`. The melody should be recognizable and judgeable as single notes.
 

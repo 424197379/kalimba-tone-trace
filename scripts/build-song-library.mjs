@@ -25,7 +25,7 @@ export const DISPLAY_KEYS = [
   { name: "E6", letter: "E", degree: "3", dotsAbove: 2, dotsBelow: 0, freq: 1318.51 }
 ];
 
-const KNOWN_SONG_ORDER = ["birthday", "jasmine", "chilege", "bluebird", "katyusha"];
+const KNOWN_SONG_ORDER = ["birthday", "jasmine", "bluebird", "katyusha"];
 const knownSongRank = new Map(KNOWN_SONG_ORDER.map((id, index) => [id, index]));
 
 const songsDirUrl = new URL("../data/songs/", import.meta.url);

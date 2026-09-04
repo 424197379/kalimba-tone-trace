@@ -17,13 +17,14 @@ For current user-upload JSON, use V2 `events`: melody-only songs still use singl
 - Two dots above means octave 6.
 - One dot below means octave 3, but only `4=F3`, `5=G3`, `6=A3`, `7=B3` are playable.
 - If the source key is not C, read in the source key first, then transpose to C degrees for app output.
-- If a note falls outside the 21-key range, move it to the nearest musically sensible playable octave and record the adjustment.
+- If notes fall outside the 21-key range, first try a global octave shift. Do not silently fold individual notes or discard accidentals. Apply the scope-specific decision in `kalimba-suitability.md` and record any accepted adjustment.
 
 ## Rhythm And Rests
 
 - Use beat units from the source meter.
 - Use common durations such as `0.25`, `0.5`, `0.75`, `1`, `1.5`, `2`, `3`, and `4`.
 - Underlines, beams, dots, ties, and slurs must be reflected in `beat` and `duration`.
+- Merge tied identical pitches into one attack with summed duration; keep different pitches under a slur as separate notes. Do not confuse octave dots with rhythmic dots, or a stacked meter beside `1=C` with a sharp sign.
 - `0` is a rest. Represent it as a beat gap, not as a note.
 - Bar lines help align beats but are not emitted as events.
 - Preserve weak starts, pickups, and long phrase rests. For V2 accompaniment, gaps of 1 beat or longer should become `rhythm.restWindows`.

@@ -26,6 +26,8 @@ F3 G3 A3 B3 C4 D4 E4 F4 G4 A4 B4 C5 D5 E5 F5 G5 A5 B5 C6 D6 E6
 
 Every judged note in built-in song data must be in this range.
 
+Range validation is not a musical quality approval. Before adding a new song, follow the [suitability and transcription gates](../skills/kalimba-tone-trace-compiler/references/kalimba-suitability.md) and run `npm run report:suitability`. Record the decision for the actual arrangement scope in `sourceFeatures.suitability`; do not classify slow songs or long notes as unsuitable by themselves.
+
 ## Formal V1 Melody Schema
 
 The current formal built-in melody schema is `schemaVersion: 1`. It supports single-note main melody practice.

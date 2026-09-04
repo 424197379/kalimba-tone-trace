@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.2.17";
+export const APP_VERSION = "2.2.18";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -58,11 +58,13 @@ const CHORD_VERSION_LABEL = "和弦版";
 
 export const AI_SONG_PROMPT = `你需要从我提供的简谱图片中制作一份可被卡林巴循音 App 导入的高质量纯 JSON 乐谱。
 
-只输出 JSON，不要输出 Markdown，不要代码块，不要解释。
+资料足够且能可靠编谱时，只输出 JSON，不要输出 Markdown，不要代码块，不要解释。若关键旋律、节奏或目标版本无法确认，先向我索要具体谱源或演奏参考，不要猜一份 JSON。
 JSON 必须使用双引号，不能有注释，不能有尾随逗号。
 上传统一使用 schemaVersion 2。即使只能识别主旋律，也请用 events 单音事件表达，不要输出 schemaVersion 1 或 notation。
 
 目标乐器是 21 音 C 调卡林巴，只支持自然音：F3、G3、A3、B3、C4-D6、E6。请先按图片调号读谱，再整体转成 C 调输出，key 必须为 "C"。
+
+编谱前先评估：确认歌曲版本和选段；检查整体转调后的升降音、音域、双手可弹性，以及去掉伴奏后主旋律是否仍可辨认。卡林巴不只适合短音或儿歌，长音本身不构成不适合的理由；不要为了延音而添加没有谱源依据的重复拨音。
 
 编谱流程：
 1. 先识别主旋律，严格按小节线、下划线、附点、连音线、休止符和弱起定位 beat 与 duration。
@@ -70,7 +72,8 @@ JSON 必须使用双引号，不能有注释，不能有尾随逗号。
 3. 主旋律 1 拍以上空档默认保持静音呼吸，不要用自动伴奏填满，除非谱源明确显示伴奏延续。
 4. 和弦目标音要适合 21 音 C 调卡林巴实际弹奏，密集和弦请精简为 2 到 4 个关键音。无法确认的装饰音不要强行加入跟弹目标。
 5. App 会自动从 events 里抽取主旋律版；只要 events 里有和弦目标音，或 JSON 里有 autoAccompaniment，App 就会生成可切换的和弦/编配版。
-6. 除非用户明确要求“只要主旋律”，否则不要只输出单音主旋律。请尽量补充可验证或保守推断的和弦目标音、bass/harmony 与 autoAccompaniment；推断内容要在 hint 或 rhythm.sourceStatus 中标明。
+6. 先把不带伴奏的主旋律与谱源逐句核对，再补充可靠的和弦目标音、bass/harmony 与 autoAccompaniment。和声依据不足时允许只输出主旋律；不要为了生成切换按钮而猜和弦或用伴奏掩盖错谱。
+7. 若只适合选段、整体移八度或简化编配，在 hint 中明确范围和限制。只有查证过的节奏才标 verified；这不代表旋律和和声也已核对。
 
 JSON 格式：
 {
@@ -130,7 +133,7 @@ JSON 格式：
 - duration 是持续拍数，可以是 0.25、0.5、1、1.5、2 等。
 - events[].notes 至少有一个 role: "melody" 的主旋律音，并设置 judge: true。
 - 如果输出的是完整编配，至少应满足以下之一：某些 events 含有 harmony/bass 且 judge: true，或提供 autoAccompaniment.events。
-- 不要在 title/versionLabel/arrangementKind 写“主旋律版”后又省略和弦与伴奏，除非用户明确要求只导入主旋律。
+- 只有主旋律可靠时，使用 versionLabel: "主旋律版"、arrangementKind: "melody"、judgementMode: "melody"，省略和弦与伴奏，不冒充完整编配。
 - notes[].name 必须是 21 音 C 调卡林巴音名，role 只能是 "melody"、"harmony"、"bass"、"arpeggio"、"ornament"。
 - judgementMode 为 "melody" 时只提示主旋律；为 "chord" 时，事件内所有 judge: true 的音都作为用户跟弹目标。
 - autoAccompaniment 是 App 自动播放的伴奏，不参与用户演奏目标提示，里面不要写 judge 字段，音量 velocity 通常低于 0.45。
@@ -140,8 +143,10 @@ JSON 格式：
 - 如果图片有拍号，请填写 beatsPerMeasure；如果没有，请根据小节线和节奏判断，无法判断时用 4。
 - difficulty 只能是 "easy"、"medium"、"hard"。简单表示旋律稳定、跳音少、速度慢；中等表示有少量跳音、速度或节奏变化；困难表示速度快、音符密集、跨键跨度大或节奏复杂。
 - 简谱下划线、附点、连音线等节奏信息要体现在 duration 和 beat 上。
+- 区分低音点、高音点与时值附点；1=C 旁边的上下叠写 4/4 是拍号，不是升号。相同音高的延音线要合并 duration，不重复起音；不同音高的连线仍保留各音。
+- 不要把切分、附点和十六分音符规整为均匀节奏。原谱有 BPM 时保留谱面速度，慢练使用 defaultSpeedFactor；核对时同时检查 1.0x 的原谱速度。
 - 小节线和换行只用于帮助定位节拍，不要作为音符输出。
-- 如果某个音转成 C 调后超出 21 音卡林巴范围，请就近调整到可弹范围，并尽量保持旋律走向。`;
+- 超出音域时优先整体移八度，不能孤立改变关键音的八度走向；不要把缺少的升降音强行替换成邻近自然音。若没有保持音程的整体转调方案，先和我确认选段或其他乐器方案。`;
 
 export function readStoredSongId() {
   try {
