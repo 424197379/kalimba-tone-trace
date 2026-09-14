@@ -26,13 +26,15 @@ Before writing song JSON, read:
 
 Use this workflow when the user gives only a song title and asks Codex to add it to the app, or when the supplied image is not enough to make a reliable arrangement.
 
-1. Search for sources before asking the user for more material. Try variants such as `<title> 简谱`, `<title> 卡林巴简谱`, `<title> 简和谱`, `<title> 五线谱`, `<title> MIDI`, `<title> MusicXML`, and `<title> 吉他谱`.
+1. Search for sources before asking the user for more material. For this project's preferred 拇指琴圈 WeChat index, first read [references/wechat-opencli.md](references/wechat-opencli.md) and use OpenCLI with the existing Chrome extension. If the index has no suitable version, search variants such as `<title> 简谱`, `<title> 卡林巴简谱`, `<title> 简和谱`, `<title> 五线谱`, `<title> MIDI`, `<title> MusicXML`, and `<title> 吉他谱`.
 2. Identify the composer/performer, recognizable section and version. Prefer complete rhythmic sources: full score, MusicXML, MIDI, complete jianpu with rhythm, or clear kalimba notation. Use chord-only pages only as harmony support. Assess song fit before transcribing the full arrangement.
 3. Save useful source images, screenshots, PDFs, or page captures under `private/sheets/raw/<song-id>/`. Do not commit these files. If a source is web-only, save the URL and review notes under `private/sheets/review/<song-id>.json`.
 4. Cross-check at least two independent sources when possible. Melody contour, rhythm, pickup beats, and rests matter more than adding accompaniment.
 5. If the best available sources conflict or are too weak, ask the user for specific material: a clearer sheet photo, source URL, MIDI/MusicXML, target performance link, target section, or confirmation that a melody-only import is acceptable.
 6. Compile the song only to the confidence level the sources support. Use melody-only V2 when harmony is uncertain; add chord targets, auto-accompaniment, and `rhythm.restWindows` only after checking the unaccompanied melody. Never use accompaniment to hide unresolved melody errors.
 7. For built-in library additions, create or update `data/songs/<song-id>.json` and, when appropriate, `data/songs/<song-id>-chord.json`, then rebuild `src/songs.js`.
+
+Use the user's latest scope: when they accept the published arrangement as-is, compile only that arrangement's supplied extent and label a short arrangement accurately. Do not keep requiring the complete original song, invent missing sections, or repeat an already granted GitHub push approval. Source access, musical suitability, and permission to reproduce source material remain separate checks.
 
 ## Workflow
 

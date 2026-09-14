@@ -63,4 +63,78 @@ assert.deepEqual(phrase(oars, 54, 60), [
 ]);
 assert.equal(oars.sourceFeatures.transcriptionScope, "one-strophe-and-refrain");
 
-console.log("Song transcription regression checks passed (2 melodies, source phrases, rests, ties and range).");
+// These checks are anchored to the supplied sheet images, including rhythms
+// finer than the quarter-beat grid used by the two older arrangements above.
+const suppliedIds = ["ye-de-gang-qin-qu-wu", "one-summers-day", "sheng-sheng-man", "jie-wang", "gao-bai-qi-qiu"];
+const supplied = new Map();
+for (const id of suppliedIds) {
+  const song = await readSong(id);
+  let previousEnd = 0;
+  for (const [name, beat, duration] of song.steps) {
+    assert.ok(allowedNotes.has(name), `${id}: unsupported ${name}`);
+    assert.ok(beat >= previousEnd - 1e-8, `${id}: overlapping melody at ${beat}`);
+    assert.ok(duration > 0);
+    previousEnd = beat + duration;
+  }
+  assert.equal(song.key, "C");
+  assert.equal(song.beatsPerMeasure, 4);
+  supplied.set(id, song);
+}
+
+const night = supplied.get("ye-de-gang-qin-qu-wu");
+assert.equal(night.bpm, 120);
+assert.equal(night.sourceFeatures.sourceMeasureCount, 33);
+assert.equal(night.sourceFeatures.transpositionSemitones, -7);
+assert.deepEqual(phrase(night, 0, 4), [
+  ["A3", 2, 0.5], ["B3", 2.5, 0.5], ["C4", 3, 0.5], ["E4", 3.5, 0.5]
+]);
+for (const start of [57.5, 121.5]) {
+  const triplet = phrase(night, start, start + 0.5);
+  assert.deepEqual(triplet.map(([name]) => name), ["C4", "E4", "G4"]);
+  triplet.forEach(([, beat, duration], index) => {
+    assert.ok(Math.abs(beat - start - index / 6) < 1e-8);
+    assert.ok(Math.abs(duration - 1 / 6) < 1e-8);
+  });
+}
+assert.deepEqual(phrase(night, 128, 132), [["A4", 128, 1]]);
+
+const summer = supplied.get("one-summers-day");
+assert.equal(summer.bpm, 70);
+assert.equal(summer.sourceFeatures.sourceMeasureCount, 59);
+assert.deepEqual(phrase(summer, 0, 4), [["E5", 0, 1.5], ["D5", 1.5, 1.5], ["G5", 3, 1]]);
+assert.deepEqual(phrase(summer, 72, 76), [
+  ["C6", 72, 0.5], ["C6", 72.5, 0.5], ["D6", 73, 0.5], ["C6", 73.5, 0.5],
+  ["B5", 74, 1], ["E5", 75, 0.5], ["G5", 75.5, 0.5]
+]);
+assert.deepEqual(phrase(summer, 124.75, 128.5), [["D5", 124.75, 3.75]]);
+assert.deepEqual(summer.steps.at(-1), ["E5", 232, 4]);
+
+const sheng = supplied.get("sheng-sheng-man");
+assert.equal(sheng.bpm, 62);
+assert.equal(sheng.sourceFeatures.sourceMeasureCount, 16);
+assert.deepEqual(phrase(sheng, 32, 36), [
+  ["A4", 32, 0.75], ["A4", 32.75, 0.75], ["E5", 33.5, 0.5], ["D5", 34, 2]
+]);
+assert.deepEqual(sheng.steps.at(-1), ["C5", 60, 4]);
+
+const jie = supplied.get("jie-wang");
+assert.equal(jie.bpm, 75);
+assert.equal(jie.sourceFeatures.sourceMeasureCount, 18);
+assert.deepEqual(phrase(jie, 0, 4), [["A4", 3, 0.5], ["B4", 3.5, 0.5]]);
+for (const start of [15.5, 47.5]) {
+  assert.deepEqual(phrase(jie, start, start + 1), [["E6", start, 1]]);
+}
+assert.deepEqual(phrase(jie, 18, 18.5), []);
+assert.deepEqual(jie.steps.at(-1), ["A4", 68, 4]);
+
+const balloon = supplied.get("gao-bai-qi-qiu");
+assert.equal(balloon.bpm, 90);
+assert.equal(balloon.sourceFeatures.sourceMeasureCount, 33);
+assert.deepEqual(phrase(balloon, 36, 38), [
+  ["A4", 36, 0.5], ["C5", 36.5, 0.125], ["C5", 36.625, 0.375],
+  ["B4", 37, 0.125], ["C5", 37.125, 0.75], ["B4", 37.875, 0.125]
+]);
+assert.deepEqual(balloon.steps.at(-1), ["C5", 127.5, 1.5]);
+assert.deepEqual(phrase(balloon, 128, 132), []);
+
+console.log("Song transcription regression checks passed (7 melodies, source phrases, rests, ties, tuplets and range).");
