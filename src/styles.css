@@ -71,6 +71,51 @@
       gap: 12px;
     }
 
+    .version-refresh-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      min-height: 34px;
+      padding: 7px;
+      margin-left: 2px;
+      vertical-align: middle;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--subtle);
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+    .version-refresh-btn svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    .version-refresh-btn:hover {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .version-refresh-btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .version-refresh-btn[aria-busy="true"] svg {
+      animation: update-spin 1s linear infinite;
+    }
+
+    @keyframes update-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .version-refresh-btn[aria-busy="true"] svg { animation: none; }
+    }
+
     .hero {
       display: grid;
       grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1fr);
@@ -2634,6 +2679,10 @@
       display: none !important;
     }
 
+    .update-toast button[hidden] {
+      display: none !important;
+    }
+
     .update-toast {
       position: fixed;
       left: max(12px, env(safe-area-inset-left));
@@ -2660,9 +2709,8 @@
 
     .update-toast span {
       min-width: 0;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      white-space: normal;
+      overflow-wrap: anywhere;
     }
 
     .update-toast button {

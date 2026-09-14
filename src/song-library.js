@@ -13,8 +13,6 @@ import {
   storeSongId
 } from "./song-store.js";
 
-const APP_NAME = "卡林巴循音";
-
 const songList = document.getElementById("songList");
 const songSearchInput = document.getElementById("songSearchInput");
 const songCountText = document.getElementById("songCountText");
@@ -37,18 +35,12 @@ const deleteConfirmTitle = document.getElementById("deleteConfirmTitle");
 const deleteConfirmText = document.getElementById("deleteConfirmText");
 const cancelDeleteBtn = document.getElementById("cancelDeleteBtn");
 const confirmDeleteBtn = document.getElementById("confirmDeleteBtn");
-const updateToast = document.getElementById("updateToast");
-const updateNowBtn = document.getElementById("updateNowBtn");
-const updateLaterBtn = document.getElementById("updateLaterBtn");
 const AI_THINKING_MIN_MS = 900;
 
 let songLibrary = getSongLibrary();
 let activeDifficulty = "all";
 let importingSong = false;
 let pendingDeleteBaseSongId = null;
-let waitingServiceWorker = null;
-let reloadRequestedForUpdate = false;
-let refreshingForUpdate = false;
 
 function getSelectedSongId() {
   const params = new URLSearchParams(window.location.search);
@@ -480,88 +472,6 @@ async function importSongFromJson() {
   }
 }
 
-function hasActiveServiceWorkerController() {
-  return Boolean("serviceWorker" in navigator && navigator.serviceWorker.controller);
-}
-
-function showUpdatePrompt(worker) {
-  if (!worker || !hasActiveServiceWorkerController() || !updateToast) {
-    return;
-  }
-
-  waitingServiceWorker = worker;
-  updateToast.hidden = false;
-  updateNowBtn.disabled = false;
-  updateLaterBtn.disabled = false;
-}
-
-function trackInstallingServiceWorker(worker) {
-  if (!worker) {
-    return;
-  }
-
-  worker.addEventListener("statechange", () => {
-    if (worker.state === "installed" && hasActiveServiceWorkerController()) {
-      showUpdatePrompt(worker);
-    }
-  });
-}
-
-function setupServiceWorkerUpdatePrompt(registration) {
-  if (!registration) {
-    return;
-  }
-
-  if (registration.waiting && hasActiveServiceWorkerController()) {
-    showUpdatePrompt(registration.waiting);
-  }
-
-  trackInstallingServiceWorker(registration.installing);
-  registration.addEventListener("updatefound", () => {
-    trackInstallingServiceWorker(registration.installing);
-  });
-}
-
-function requestServiceWorkerUpdate() {
-  if (!waitingServiceWorker) {
-    return;
-  }
-
-  reloadRequestedForUpdate = true;
-  updateNowBtn.disabled = true;
-  updateLaterBtn.disabled = true;
-  waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
-}
-
-function dismissServiceWorkerUpdate() {
-  updateToast.hidden = true;
-  waitingServiceWorker = null;
-}
-
-function setupServiceWorker() {
-  if (!("serviceWorker" in navigator)) {
-    return;
-  }
-
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-    if (!reloadRequestedForUpdate || refreshingForUpdate) {
-      return;
-    }
-
-    refreshingForUpdate = true;
-    window.location.reload();
-  });
-
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("./service-worker.js")
-      .then(setupServiceWorkerUpdatePrompt)
-      .catch((error) => {
-        console.warn(`${APP_NAME} 离线缓存注册失败`, error);
-      });
-  });
-}
-
 aiPromptText.value = AI_SONG_PROMPT;
 if (appVersionText) {
   appVersionText.textContent = `v${APP_VERSION}`;
@@ -583,8 +493,5 @@ document.addEventListener("keydown", (event) => {
     closeDeleteConfirm();
   }
 });
-updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
-updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
 
 refreshLibraryViews();
-setupServiceWorker();

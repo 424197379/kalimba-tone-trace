@@ -215,9 +215,6 @@ const APP_NAME = "卡林巴循音";
     const scoreTitle = document.getElementById("scoreTitle");
     const landscapeBtn = document.getElementById("landscapeBtn");
     const appVersionText = document.getElementById("appVersionText");
-    const updateToast = document.getElementById("updateToast");
-    const updateNowBtn = document.getElementById("updateNowBtn");
-    const updateLaterBtn = document.getElementById("updateLaterBtn");
     const portraitPracticeQuery = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
 
     function setCompactIcon(button, icon, label) {
@@ -269,9 +266,6 @@ const APP_NAME = "卡林巴循音";
     let accompanimentVolume = storedAccompanimentVolume ?? getDefaultAccompanimentVolume(currentSong);
     let signalPeakUntil = 0;
     let activeInputUntil = 0;
-    let waitingServiceWorker = null;
-    let reloadRequestedForUpdate = false;
-    let refreshingForUpdate = false;
     let seekingWithProgress = false;
     let progressSeekPointerId = null;
     let progressSeekRect = null;
@@ -1840,74 +1834,6 @@ const APP_NAME = "卡林巴循音";
       window.location.href = `./songs.html?selected=${encodeURIComponent(currentSongId)}`;
     }
 
-    function hasActiveServiceWorkerController() {
-      return Boolean("serviceWorker" in navigator && navigator.serviceWorker.controller);
-    }
-
-    function showUpdatePrompt(worker) {
-      if (!worker || !hasActiveServiceWorkerController() || !updateToast) {
-        return;
-      }
-
-      waitingServiceWorker = worker;
-      updateToast.hidden = false;
-      if (updateNowBtn) {
-        updateNowBtn.disabled = false;
-      }
-      if (updateLaterBtn) {
-        updateLaterBtn.disabled = false;
-      }
-    }
-
-    function trackInstallingServiceWorker(worker) {
-      if (!worker) {
-        return;
-      }
-
-      worker.addEventListener("statechange", () => {
-        if (worker.state === "installed" && hasActiveServiceWorkerController()) {
-          showUpdatePrompt(worker);
-        }
-      });
-    }
-
-    function setupServiceWorkerUpdatePrompt(registration) {
-      if (!registration) {
-        return;
-      }
-
-      if (registration.waiting && hasActiveServiceWorkerController()) {
-        showUpdatePrompt(registration.waiting);
-      }
-
-      trackInstallingServiceWorker(registration.installing);
-      registration.addEventListener("updatefound", () => {
-        trackInstallingServiceWorker(registration.installing);
-      });
-    }
-
-    function requestServiceWorkerUpdate() {
-      if (!waitingServiceWorker) {
-        return;
-      }
-
-      reloadRequestedForUpdate = true;
-      if (updateNowBtn) {
-        updateNowBtn.disabled = true;
-      }
-      if (updateLaterBtn) {
-        updateLaterBtn.disabled = true;
-      }
-      waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
-    }
-
-    function dismissServiceWorkerUpdate() {
-      if (updateToast) {
-        updateToast.hidden = true;
-      }
-      waitingServiceWorker = null;
-    }
-
     applyStaticControlIcons();
 
     startBtn.addEventListener("click", startPractice);
@@ -1933,12 +1859,6 @@ const APP_NAME = "卡林巴循音";
       songProgress.addEventListener("pointerdown", startProgressSeek);
       songProgress.addEventListener("keydown", handleProgressKeydown);
     }
-    if (updateNowBtn) {
-      updateNowBtn.addEventListener("click", requestServiceWorkerUpdate);
-    }
-    if (updateLaterBtn) {
-      updateLaterBtn.addEventListener("click", dismissServiceWorkerUpdate);
-    }
     speedSlider.addEventListener("input", applySpeed);
     window.addEventListener("pointermove", moveProgressSeek);
     window.addEventListener("pointerup", finishProgressSeek);
@@ -1959,23 +1879,3 @@ const APP_NAME = "卡林巴循音";
     }
     setCurrentSong(currentSongId);
     applyInitialLandscapeMode();
-
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if (!reloadRequestedForUpdate || refreshingForUpdate) {
-          return;
-        }
-
-        refreshingForUpdate = true;
-        window.location.reload();
-      });
-
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("./service-worker.js")
-          .then(setupServiceWorkerUpdatePrompt)
-          .catch((error) => {
-            console.warn(`${APP_NAME} 离线缓存注册失败`, error);
-          });
-      });
-    }

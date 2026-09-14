@@ -1,4 +1,4 @@
-const APP_VERSION = "2.2.21";
+const APP_VERSION = "2.2.22";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -36,6 +36,7 @@ const APP_SHELL = [
   "./manifest.webmanifest",
   "./src/app.js",
   "./src/song-library.js",
+  "./src/app-update.js",
   "./src/song-store.js",
   "./src/songs.js",
   "./src/styles.css",
@@ -70,7 +71,7 @@ self.addEventListener("install", (event) => {
       .open(CACHE_NAME)
       .then((cache) =>
         cache
-          .addAll(APP_SHELL)
+          .addAll(APP_SHELL.map((asset) => new Request(asset, { cache: "reload" })))
           .then(() => Promise.all(SAMPLE_ASSETS.map((asset) => cacheSampleAsset(cache, asset))))
       )
   );
@@ -78,7 +79,10 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
+    event.waitUntil(self.skipWaiting());
+  }
+  if (event.data && event.data.type === "GET_VERSION") {
+    event.ports[0]?.postMessage({ version: APP_VERSION });
   }
 });
 
@@ -112,6 +116,11 @@ self.addEventListener("fetch", (event) => {
   const { request } = event;
 
   if (request.method !== "GET") {
+    return;
+  }
+
+  if (new URL(request.url).pathname === new URL("./package.json", self.registration.scope).pathname) {
+    event.respondWith(fetch(request, { cache: "no-store" }));
     return;
   }
 

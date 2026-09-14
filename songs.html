@@ -19,7 +19,7 @@
   <main class="page library-page">
     <header class="card library-header">
       <div class="library-title">
-        <div class="app-kicker">曲库 · <span id="appVersionText">v2.2.21</span></div>
+        <div class="app-kicker">曲库 · <span id="appVersionText">v2.2.22</span> <button class="version-refresh-btn" id="refreshAppBtn" type="button" title="检查并更新到最新版本" aria-label="检查并更新到最新版本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button></div>
         <h1>选择歌曲</h1>
       </div>
       <div class="library-actions">
@@ -89,7 +89,7 @@
   </main>
 
   <div class="update-toast" id="updateToast" hidden role="status" aria-live="polite">
-    <span>发现新版本，点击更新</span>
+    <span id="updateStatusText">发现新版本，点击更新</span>
     <button id="updateNowBtn" type="button">立即更新</button>
     <button class="ghost" id="updateLaterBtn" type="button">稍后</button>
   </div>
@@ -110,5 +110,6 @@
     </div>
   </div>
   <script type="module" src="./src/song-library.js"></script>
+  <script type="module" src="./src/app-update.js"></script>
 </body>
 </html>
