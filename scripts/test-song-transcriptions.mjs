@@ -4,7 +4,7 @@ import { DISPLAY_KEYS } from "./build-song-library.mjs";
 
 const allowedNotes = new Set(DISPLAY_KEYS.map(({ name }) => name));
 const readSong = async (id) => JSON.parse(await readFile(new URL(`../data/songs/${id}.json`, import.meta.url), "utf8"));
-const phrase = (song, start, end) => song.steps.filter(([, beat]) => beat >= start && beat < end);
+const phrase = (song, start, end) => song.steps.filter(([, beat]) => beat >= start - 1e-8 && beat < end - 1e-8);
 
 function validateMelody(song) {
   let previousEnd = 0;
@@ -65,7 +65,7 @@ assert.equal(oars.sourceFeatures.transcriptionScope, "one-strophe-and-refrain");
 
 // These checks are anchored to the supplied sheet images, including rhythms
 // finer than the quarter-beat grid used by the two older arrangements above.
-const suppliedIds = ["ye-de-gang-qin-qu-wu", "one-summers-day", "sheng-sheng-man", "jie-wang", "gao-bai-qi-qiu", "mo-he-wu-ting-verse", "ping-fan-zhi-lu"];
+const suppliedIds = ["ye-de-gang-qin-qu-wu", "one-summers-day", "sheng-sheng-man", "jie-wang", "gao-bai-qi-qiu", "mo-he-wu-ting-verse", "ping-fan-zhi-lu", "fu-shi-shan-xia", "meng-zhong-de-hun-li", "qing-hua-ci", "qi-feng-le", "tong-hua-zhen"];
 const supplied = new Map();
 for (const id of suppliedIds) {
   const song = await readSong(id);
@@ -175,4 +175,52 @@ assert.deepEqual(phrase(pingfan, 73, 74), [
 ]);
 assert.deepEqual(pingfan.steps.at(-1), ["B4", 110, 2]);
 
-console.log("Song transcription regression checks passed (9 melodies, source phrases, rests, ties, tuplets and range).");
+const fuji = supplied.get("fu-shi-shan-xia");
+assert.deepEqual(phrase(fuji, 0, 4), [["C5", 1, 1], ["C6", 2, 1], ["B5", 3, 1]]);
+assert.equal(fuji.sourceFeatures.sourceMeasureCount, 5);
+for (const start of [8, 16]) {
+  const triplet = phrase(fuji, start, start + 1);
+  assert.deepEqual(triplet.map(([name]) => name), Array(3).fill(start === 8 ? "A5" : "C6"));
+  triplet.forEach(([, beat, duration], index) => {
+    assert.ok(Math.abs(beat - start - index / 3) < 1e-8);
+    assert.ok(Math.abs(duration - 1 / 3) < 1e-8);
+  });
+}
+assert.deepEqual(phrase(fuji, 6.75, 7.25), [["G5", 6.75, 0.5]]);
+
+const dream = supplied.get("meng-zhong-de-hun-li");
+assert.equal(dream.bpm, 69);
+assert.equal(dream.sourceFeatures.sourceTotalBeats, 103.5);
+assert.deepEqual(dream.sourceFeatures.meterMap.slice(2, 7).map(({beat,meter}) => [beat,meter]), [
+  [8,"3/4"], [11,"7/8"], [14.5,"7/8"], [18,"12/8"], [24,"9/8"]
+]);
+assert.deepEqual(phrase(dream, 0, 4), [["A5", 3.75, 0.25]]);
+assert.deepEqual(phrase(dream, 7, 8), [["C5",7,0.25],["A4",7.25,0.25],["A4",7.5,0.25],["G5",7.75,0.25]]);
+assert.deepEqual(phrase(dream, 9.5, 11), [["F5",9.5,1.5]]);
+assert.deepEqual(dream.steps.at(-1), ["A5",96,7.5]);
+assert.deepEqual(phrase(dream, 97.5, 103.5), []);
+
+const porcelain = supplied.get("qing-hua-ci");
+assert.deepEqual(phrase(porcelain, 12, 13), [["D5",12,0.5],["E5",12.5,0.5]]);
+assert.deepEqual(phrase(porcelain, 56, 60), [
+  ["E5",56,0.5],["G5",56.5,1],["E5",57.5,0.5],["E5",58.5,0.5],["E5",59,0.5],["E5",59.5,0.5]
+]);
+assert.deepEqual(porcelain.steps.at(-1), ["C5",91.5,4.5]);
+
+const wind = supplied.get("qi-feng-le");
+assert.deepEqual(phrase(wind, 0, 2), [
+  ["B4",0,0.25],["C5",0.25,0.25],["D5",0.5,0.25],["E5",0.75,0.5],
+  ["C5",1.25,0.25],["G5",1.5,0.25],["E5",1.75,0.25]
+]);
+assert.deepEqual(phrase(wind, 18, 18.5), [["D5",18,0.5]]);
+assert.deepEqual(phrase(wind, 72.5, 73.5), [["E6",72.5,0.25],["E6",72.75,0.75]]);
+assert.deepEqual(wind.steps.at(-1), ["A5",76,1]);
+
+const fairy = supplied.get("tong-hua-zhen");
+assert.deepEqual(phrase(fairy, 0, 4), [["E5",3.5,0.25],["E5",3.75,0.25]]);
+assert.deepEqual(phrase(fairy, 30, 32), [
+  ["A5",30,0.5],["G5",30.5,0.5],["G5",31,0.25],["G5",31.25,0.5],["E5",31.75,0.25]
+]);
+assert.deepEqual(phrase(fairy, 41.75, 44), [["A4",41.75,0.5],["B4",42.25,1.75]]);
+
+console.log("Song transcription regression checks passed (14 melodies, source phrases, rests, ties, tuplets, variable meter and range).");
