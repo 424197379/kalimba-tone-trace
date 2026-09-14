@@ -65,7 +65,7 @@ assert.equal(oars.sourceFeatures.transcriptionScope, "one-strophe-and-refrain");
 
 // These checks are anchored to the supplied sheet images, including rhythms
 // finer than the quarter-beat grid used by the two older arrangements above.
-const suppliedIds = ["ye-de-gang-qin-qu-wu", "one-summers-day", "sheng-sheng-man", "jie-wang", "gao-bai-qi-qiu"];
+const suppliedIds = ["ye-de-gang-qin-qu-wu", "one-summers-day", "sheng-sheng-man", "jie-wang", "gao-bai-qi-qiu", "mo-he-wu-ting-verse", "ping-fan-zhi-lu"];
 const supplied = new Map();
 for (const id of suppliedIds) {
   const song = await readSong(id);
@@ -137,4 +137,42 @@ assert.deepEqual(phrase(balloon, 36, 38), [
 assert.deepEqual(balloon.steps.at(-1), ["C5", 127.5, 1.5]);
 assert.deepEqual(phrase(balloon, 128, 132), []);
 
-console.log("Song transcription regression checks passed (7 melodies, source phrases, rests, ties, tuplets and range).");
+const mohe = supplied.get("mo-he-wu-ting-verse");
+assert.equal(mohe.steps.length, 88);
+assert.equal(mohe.bpm, 71);
+assert.deepEqual(mohe.sourceFeatures.sourceMeasureRange, [9, 24]);
+assert.equal(mohe.sourceFeatures.transpositionSemitones, -4);
+assert.deepEqual(phrase(mohe, 0, 4), [
+  ["A3", 0, 0.5], ["A3", 0.5, 0.5], ["A3", 1, 0.5], ["B3", 1.5, 0.25],
+  ["C4", 1.75, 0.75], ["D4", 2.5, 0.5], ["E4", 3, 0.5], ["C4", 3.5, 0.5]
+]);
+assert.deepEqual(phrase(mohe, 11.5, 16), [
+  ["G3", 11.5, 0.5], ["E4", 12, 0.5], ["E4", 12.5, 0.5],
+  ["E4", 13, 0.25], ["D4", 13.25, 0.5], ["B3", 13.75, 2.25]
+]);
+assert.deepEqual(phrase(mohe, 56, 58), [
+  ["E4", 56, 0.5], ["F4", 56.5, 0.5], ["E4", 57, 0.25],
+  ["F4", 57.25, 0.5], ["F4", 57.75, 0.25]
+]);
+assert.deepEqual(mohe.steps.at(-1), ["E4", 60, 4]);
+
+const pingfan = supplied.get("ping-fan-zhi-lu");
+assert.equal(pingfan.steps.length, 235);
+assert.equal(pingfan.sourceFeatures.sourceMeasureCount, 28);
+assert.equal(pingfan.sourceFeatures.tempoStatus, "reference-practice-tempo-source-image-unmarked");
+assert.deepEqual(phrase(pingfan, 0, 4), [
+  ["A4", 0, 0.5], ["A4", 0.5, 0.5], ["E5", 1, 0.5], ["C5", 1.5, 0.5],
+  ["C5", 2, 0.5], ["F4", 2.5, 0.5], ["F5", 3, 0.5], ["C5", 3.5, 0.5]
+]);
+assert.deepEqual(phrase(pingfan, 48, 50), [
+  ["C6", 48, 0.5], ["B5", 48.5, 0.25], ["C6", 48.75, 0.5],
+  ["G5", 49.25, 0.25], ["A5", 49.5, 0.5]
+]);
+assert.deepEqual(phrase(pingfan, 54, 54.5), [["D4", 54, 0.5]]);
+assert.deepEqual(phrase(pingfan, 65.5, 66), [["E6", 65.5, 0.5]]);
+assert.deepEqual(phrase(pingfan, 73, 74), [
+  ["C6", 73, 0.25], ["D6", 73.25, 0.5], ["C6", 73.75, 0.25]
+]);
+assert.deepEqual(pingfan.steps.at(-1), ["B4", 110, 2]);
+
+console.log("Song transcription regression checks passed (9 melodies, source phrases, rests, ties, tuplets and range).");
