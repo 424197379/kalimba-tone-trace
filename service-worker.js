@@ -1,4 +1,4 @@
-const APP_VERSION = "2.2.22";
+const APP_VERSION = "2.2.23";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 

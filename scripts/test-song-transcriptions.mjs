@@ -223,4 +223,23 @@ assert.deepEqual(phrase(fairy, 30, 32), [
 ]);
 assert.deepEqual(phrase(fairy, 41.75, 44), [["A4",41.75,0.5],["B4",42.25,1.75]]);
 
-console.log("Song transcription regression checks passed (14 melodies, source phrases, rests, ties, tuplets, variable meter and range).");
+// G-key folk theme: retain the low octave and merge the tied repeated 2.
+const geese = await readSong("hong-yan");
+validateMelody(geese);
+assert.equal(geese.bpm, 56);
+assert.equal(geese.steps.length, 82);
+assert.deepEqual(phrase(geese, 0, 8), [
+  ["E4",0,1], ["C4",1,0.5], ["A3",1.5,0.5], ["G3",2,2],
+  ["G4",4,1], ["A4",5,0.5], ["C5",5.5,0.5], ["A4",6,2]
+]);
+assert.deepEqual(phrase(geese, 12, 16), [["D4",12,1], ["D4",13,3]]);
+assert.deepEqual(phrase(geese, 24, 32), [
+  ["E4",24,1], ["C4",25,0.5], ["A3",25.5,0.5],
+  ["G3",26,0.5], ["A3",26.5,0.5], ["E4",27,1], ["A3",28,4]
+]);
+assert.deepEqual(phrase(geese,32,64).map(([n,b,d])=>[n,b-32,d]), phrase(geese,0,32));
+assert.deepEqual(phrase(geese,64,80).map(([n,b,d])=>[n,b-48,d]), phrase(geese,16,32));
+assert.deepEqual(geese.steps.at(-1), ["A3",76,4]);
+assert.equal(geese.sourceFeatures.transpositionSemitones, -7);
+
+console.log("Song transcription regression checks passed (15 melodies, source phrases, rests, ties, tuplets, variable meter and range).");
