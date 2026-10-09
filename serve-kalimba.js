@@ -44,7 +44,24 @@ function getLanUrls() {
   return urls;
 }
 
-const server = http.createServer((req, res) => {
+const publicFiles = new Set([
+  "index.html", "songs.html", "changelog.html", "support.html",
+  "kalimba-practice.html", "manifest.webmanifest", "service-worker.js", "package.json"
+]);
+const publicDirectories = new Set(["src", "assets"]);
+
+function isPublicPath(relativePath) {
+  const segments = relativePath.split(path.sep);
+  return !segments.some((segment) => segment.startsWith(".")) &&
+    (publicFiles.has(relativePath) || (segments.length > 1 && publicDirectories.has(segments[0])));
+}
+
+function serveRequest(req, res) {
+  if (req.method !== "GET" && req.method !== "HEAD") {
+    res.setHeader("Allow", "GET, HEAD");
+    send(res, 405, "Method not allowed", "text/plain; charset=utf-8");
+    return;
+  }
   let requested = "/";
   try {
     requested = decodeURIComponent((req.url || "/").split("?")[0]);
@@ -57,32 +74,54 @@ const server = http.createServer((req, res) => {
   const absolutePath = path.normalize(path.join(rootDir, relativePath));
   const relativeToRoot = path.relative(rootDir, absolutePath);
 
-  if (relativeToRoot.startsWith("..") || path.isAbsolute(relativeToRoot)) {
+  if (relativeToRoot.startsWith("..") || path.isAbsolute(relativeToRoot) || !isPublicPath(relativeToRoot)) {
     send(res, 403, "Forbidden", "text/plain; charset=utf-8");
     return;
   }
 
-  fs.readFile(absolutePath, (error, data) => {
-    if (error) {
+  fs.realpath(absolutePath, (resolveError, resolvedPath) => {
+    if (resolveError) {
       send(res, 404, "Not found", "text/plain; charset=utf-8");
       return;
     }
+    // A public directory must not expose private files through a symlink or junction.
+    const resolvedRelative = path.relative(rootDir, resolvedPath);
+    if (path.isAbsolute(resolvedRelative) || !isPublicPath(resolvedRelative)) {
+      send(res, 403, "Forbidden", "text/plain; charset=utf-8");
+      return;
+    }
+    fs.readFile(resolvedPath, (error, data) => {
+      if (error) {
+        send(res, 404, "Not found", "text/plain; charset=utf-8");
+        return;
+      }
 
-    const ext = path.extname(absolutePath).toLowerCase();
-    send(res, 200, data, mimeTypes[ext] || "application/octet-stream");
+      const ext = path.extname(absolutePath).toLowerCase();
+      send(res, 200, data, mimeTypes[ext] || "application/octet-stream");
+    });
   });
-});
+}
 
-server.on("error", (error) => {
-  if (error.code === "EADDRINUSE") {
-    console.log(`Kalimba ToneTrace server is already running at http://localhost:${port}/index.html`);
+function createKalimbaServer() {
+  return http.createServer(serveRequest);
+}
+
+module.exports = { createKalimbaServer };
+
+if (require.main === module) {
+  const server = createKalimbaServer();
+
+  server.on("error", (error) => {
+    if (error.code === "EADDRINUSE") {
+      console.log(`Kalimba ToneTrace server is already running at http://localhost:${port}/index.html`);
+      getLanUrls().forEach((url) => console.log(`Phone on same Wi-Fi: ${url}`));
+      return;
+    }
+    throw error;
+  });
+
+  server.listen(port, host, () => {
+    console.log(`Kalimba ToneTrace server running at http://localhost:${port}/index.html`);
     getLanUrls().forEach((url) => console.log(`Phone on same Wi-Fi: ${url}`));
-    return;
-  }
-  throw error;
-});
-
-server.listen(port, host, () => {
-  console.log(`Kalimba ToneTrace server running at http://localhost:${port}/index.html`);
-  getLanUrls().forEach((url) => console.log(`Phone on same Wi-Fi: ${url}`));
-});
+  });
+}

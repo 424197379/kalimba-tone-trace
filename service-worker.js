@@ -1,4 +1,4 @@
-const APP_VERSION = "2.2.24";
+const APP_VERSION = "2.2.25";
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -112,6 +112,18 @@ function getNavigationFallback(request) {
     .then((cached) => cached || caches.match("./index.html"));
 }
 
+function cacheRuntimeResponse(event, response) {
+  if (response && response.ok && response.status !== 204 && response.status !== 206) {
+    const copy = response.clone();
+    event.waitUntil(
+      caches.open(CACHE_NAME)
+        .then((cache) => cache.put(event.request, copy))
+        .catch((error) => console.warn("Unable to update offline cache", error))
+    );
+  }
+  return response;
+}
+
 self.addEventListener("fetch", (event) => {
   const { request } = event;
 
@@ -127,11 +139,7 @@ self.addEventListener("fetch", (event) => {
   if (request.mode === "navigate") {
     event.respondWith(
       fetch(request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
-          return response;
-        })
+        .then((response) => cacheRuntimeResponse(event, response))
         .catch(() => getNavigationFallback(request))
     );
     return;
@@ -143,13 +151,7 @@ self.addEventListener("fetch", (event) => {
         return cached;
       }
 
-      return fetch(request).then((response) => {
-        if (response && response.ok && response.status !== 204 && response.status !== 206) {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
-        }
-        return response;
-      });
+      return fetch(request).then((response) => cacheRuntimeResponse(event, response));
     })
   );
 });

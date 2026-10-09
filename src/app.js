@@ -1,5 +1,5 @@
 import { DISPLAY_KEYS, NOTE_INDEX } from "./songs.js";
-import { APP_VERSION, getSongLibrary, readStoredSongId, storeSongId } from "./song-store.js";
+import { APP_VERSION, getEventTotalBeats, getSongBaseId, getSongVersionRank, getSongLibrary, readStoredSongId, storeSongId } from "./song-store.js";
 
 const APP_NAME = "卡林巴循音";
 
@@ -47,6 +47,8 @@ const APP_NAME = "卡林巴循音";
             notes,
             judgeNotes,
             judgeLanes,
+            minLane: notes[0].lane,
+            laneSpan: notes[notes.length - 1].lane - notes[0].lane + 1,
             demoPlayed: false
           };
         })
@@ -128,13 +130,6 @@ const APP_NAME = "卡林巴循音";
         .sort((a, b) => a.beat - b.beat || a.id - b.id);
     }
 
-    function getSongTotalBeats(events) {
-      if (!events.length) {
-        return 0;
-      }
-      return Math.max(...events.map((event) => event.beat + event.duration));
-    }
-
     function getInitialSongId() {
       const params = new URLSearchParams(window.location.search);
       const urlSongId = params.get("song");
@@ -153,7 +148,8 @@ const APP_NAME = "卡林巴循音";
     let currentSong = songLibrary[currentSongId];
     let songEvents = buildSongEvents(currentSong);
     let accompanimentEvents = buildAutoAccompanimentEvents(currentSong);
-    let songTotalBeats = getSongTotalBeats(songEvents);
+    let songTotalBeats = getEventTotalBeats(songEvents);
+    let accompanimentTotalBeats = getEventTotalBeats(accompanimentEvents);
     const scoreBeatWidth = 78;
     const scoreTrackPadding = 56;
     const noteLaneInsetRatio = 0.08;
@@ -257,6 +253,7 @@ const APP_NAME = "卡林巴循音";
 
     let practiceRunning = false;
     let demoMode = false;
+    let playbackRequestId = 0;
     let practiceStartAt = 0;
     let pausedElapsed = 0;
     let activeBeamLane = null;
@@ -349,12 +346,22 @@ const APP_NAME = "卡林巴循音";
       keyScaleBtn.title = "双指捏合练习区调整琴键宽度，点击恢复 100%";
       setCompactIcon(keyScaleBtn, "↔", `琴键宽度 ${Math.round(keyScale * 100)}%，点击恢复 100%`);
       if (persist) {
-        localStorage.setItem(keyScaleStorageKey, keyScale.toFixed(3));
+        try {
+          localStorage.setItem(keyScaleStorageKey, keyScale.toFixed(3));
+        } catch {
+          // The current gesture still works when browser storage is unavailable.
+        }
       }
     }
 
     function restoreKeyScale() {
-      const savedScale = Number(localStorage.getItem(keyScaleStorageKey));
+      let savedScale = null;
+      try {
+        const stored = localStorage.getItem(keyScaleStorageKey);
+        if (stored != null && stored.trim()) savedScale = Number(stored);
+      } catch {
+        // Use the default width when browser storage is unavailable.
+      }
       applyKeyScale(Number.isFinite(savedScale) ? savedScale : 1, false);
     }
 
@@ -563,17 +570,6 @@ const APP_NAME = "卡林巴循音";
       return Number(currentSong.defaultSpeedFactor || 1);
     }
 
-    function getSongBaseId(song) {
-      return song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id);
-    }
-
-    function getSongVersionRank(song) {
-      if (song.arrangementKind === "chord" || song.judgementMode === "chord") {
-        return 1;
-      }
-      return 0;
-    }
-
     function getSongVariants(song) {
       const baseSongId = getSongBaseId(song);
       return Object.values(songLibrary)
@@ -644,7 +640,8 @@ const APP_NAME = "卡林巴循音";
       accompanimentEvents = buildAutoAccompanimentEvents(currentSong);
       accompanimentEnabled = storedAccompanimentEnabled ?? getDefaultAccompanimentEnabled(currentSong);
       accompanimentVolume = storedAccompanimentVolume ?? getDefaultAccompanimentVolume(currentSong);
-      songTotalBeats = getSongTotalBeats(songEvents);
+      songTotalBeats = getEventTotalBeats(songEvents);
+      accompanimentTotalBeats = getEventTotalBeats(accompanimentEvents);
       applySongMeta();
       renderStaticBoard();
       resetPracticeState();
@@ -833,9 +830,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     function renderEventNotesMarkup(event, modifier = "note") {
-      const minLane = Math.min(...event.notes.map((note) => note.lane));
-      const maxLane = Math.max(...event.notes.map((note) => note.lane));
-      const laneSpan = Math.max(1, maxLane - minLane + 1);
+      const { minLane, laneSpan } = event;
       const alignFallingChordTones = modifier === "note" && event.notes.length > 1;
       const tones = event.notes
         .map((eventNote) => {
@@ -981,13 +976,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     function getSongEndSeconds() {
-      const songEventEnd = songEvents.length
-        ? Math.max(...songEvents.map((event) => getEventTime(event) + getEventDurationSeconds(event)))
-        : 0;
-      const accompanimentEnd = accompanimentEvents.length
-        ? Math.max(...accompanimentEvents.map((event) => getAccompanimentTime(event) + getAccompanimentDurationSeconds(event)))
-        : 0;
-      return Math.max(songEventEnd, accompanimentEnd) + 0.9;
+      return Math.max(songTotalBeats, accompanimentTotalBeats) * getScaledBeatSeconds() + 0.9;
     }
 
     function renderScoreProgress(seconds, expectedEvent) {
@@ -1538,6 +1527,7 @@ const APP_NAME = "卡林巴循音";
       clearHighlights();
 
       const boardHeight = boardTop.clientHeight;
+      const columnWidth = noteLayer.clientWidth / DISPLAY_KEYS.length;
       const judgeLineTop = boardHeight - 10;
       const spawnBottomY = -8;
       const travelDistance = judgeLineTop - spawnBottomY;
@@ -1610,10 +1600,7 @@ const APP_NAME = "卡林巴循音";
           : Math.max(58, 34 + event.duration * 20);
         const bottomY = spawnBottomY + progress * travelDistance;
         const topY = bottomY - height;
-        const columnWidth = noteLayer.clientWidth / DISPLAY_KEYS.length;
-        const minLane = Math.min(...event.notes.map((note) => note.lane));
-        const maxLane = Math.max(...event.notes.map((note) => note.lane));
-        const laneSpan = Math.max(1, maxLane - minLane + 1);
+        const { minLane, laneSpan } = event;
         const left = minLane * columnWidth + columnWidth * noteLaneInsetRatio;
         const visible = progress >= 0 && progress <= 1.04 && (!compactView || (compactVisibleIds.has(event.id) && topY >= 0));
         const closeness = clamp(progress, 0, 1);
@@ -1695,6 +1682,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     async function startPractice() {
+      const requestId = ++playbackRequestId;
       if (shouldUseLandscapeFullscreen() && !document.fullscreenElement) {
         await requestFullscreenMode({ quiet: true });
       }
@@ -1705,15 +1693,10 @@ const APP_NAME = "卡林巴循音";
       } catch (error) {
         console.warn(`${APP_NAME} could not prepare screen keys`, error);
       }
+      if (requestId !== playbackRequestId) return;
 
       if (pausedElapsed >= getSongEndSeconds()) {
         resetPracticeState();
-        try {
-          await ensureAudioContext();
-          preloadKalimbaSamples();
-        } catch (error) {
-          console.warn(`${APP_NAME} could not restart screen keys`, error);
-        }
       }
 
       demoMode = false;
@@ -1726,6 +1709,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     function pausePractice() {
+      playbackRequestId += 1;
       if (!practiceRunning && !demoMode) {
         return;
       }
@@ -1738,6 +1722,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     function resetPracticeState() {
+      playbackRequestId += 1;
       practiceRunning = false;
       demoMode = false;
       pausedElapsed = 0;
@@ -1766,6 +1751,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     async function playDemo() {
+      const requestId = ++playbackRequestId;
       try {
         await ensureAudioContext();
         await preloadKalimbaSamples();
@@ -1773,6 +1759,7 @@ const APP_NAME = "卡林巴循音";
         console.error(error);
         return;
       }
+      if (requestId !== playbackRequestId) return;
 
       resetPracticeState();
       demoMode = true;
@@ -1786,9 +1773,18 @@ const APP_NAME = "卡林巴循音";
     }
 
     function applySpeed() {
+      const seconds = currentPracticeTime();
+      const previousSpeed = speedFactor;
       speedFactor = Number(speedSlider.value || "0.55");
       fallLeadSeconds = baseFallLeadSeconds / Math.sqrt(speedFactor);
       speedValue.textContent = `${speedFactor.toFixed(2)}x`;
+      if (seconds > 0) {
+        // Keep the current musical beat when the seconds-per-beat changes.
+        pausedElapsed = seconds * previousSpeed / speedFactor;
+        if (practiceRunning || demoMode) {
+          practiceStartAt = performance.now() - pausedElapsed * 1000;
+        }
+      }
       if (!practiceRunning && !demoMode && pausedElapsed <= 0) {
         pausedElapsed = -getSessionLeadSeconds();
       }

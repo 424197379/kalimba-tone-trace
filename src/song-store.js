@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.2.24";
+export const APP_VERSION = "2.2.25";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -165,19 +165,41 @@ export function storeSongId(songId) {
   }
 }
 
-function getCustomSongArray() {
+function getCustomSongArray(strict = false) {
   try {
     const raw = localStorage.getItem(CUSTOM_SONGS_STORAGE_KEY);
     const parsed = raw ? JSON.parse(raw) : [];
-    return Array.isArray(parsed) ? parsed : [];
+    if (!Array.isArray(parsed)) {
+      throw new Error("本地曲库格式异常");
+    }
+    return parsed;
   } catch (error) {
+    if (strict) {
+      throw new Error("无法读取原有本地曲库，未修改已保存的数据。", { cause: error });
+    }
     console.warn("卡林巴循音 无法读取本地曲库", error);
     return [];
   }
 }
 
 function saveCustomSongArray(songs) {
-  localStorage.setItem(CUSTOM_SONGS_STORAGE_KEY, JSON.stringify(songs));
+  try {
+    localStorage.setItem(CUSTOM_SONGS_STORAGE_KEY, JSON.stringify(songs));
+  } catch (error) {
+    throw new Error("无法保存本地曲库，请检查浏览器存储权限或可用空间。", { cause: error });
+  }
+}
+
+export function getSongBaseId(song) {
+  return song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id);
+}
+
+export function getSongVersionRank(song) {
+  return song.arrangementKind === "chord" || song.judgementMode === "chord" ? 1 : 0;
+}
+
+export function getEventTotalBeats(events) {
+  return events.reduce((end, event) => Math.max(end, event.beat + event.duration), 0);
 }
 
 function isFiniteNumber(value) {
@@ -231,7 +253,7 @@ function makeLocalSongId(rawId, title, existingLibrary) {
 }
 
 function isRestDegree(degree) {
-  const value = String(degree || "").trim().toLowerCase();
+  const value = String(degree ?? "").trim().toLowerCase();
   return value === "0" || value === "rest" || value === "-";
 }
 
@@ -551,11 +573,7 @@ function countArrangementNotes(events) {
 }
 
 function getStepTotalBeats(steps) {
-  if (!steps.length) {
-    return 0;
-  }
-
-  return Math.max(...steps.map(([, beat, duration]) => Number(beat) + Number(duration)));
+  return steps.reduce((end, [, beat, duration]) => Math.max(end, Number(beat) + Number(duration)), 0);
 }
 
 function getPhysicalJumpScore(steps) {
@@ -656,7 +674,7 @@ function normalizeNotation(rawNotation) {
       throw new Error(`notation 第 ${index + 1} 项必须是对象`);
     }
 
-    const degree = String(item.degree || "").trim();
+    const degree = String(item.degree ?? "").trim();
     if (!isRestDegree(degree) && !DEGREE_TO_NOTE[degree]) {
       throw new Error(`notation 第 ${index + 1} 项 degree 必须是 1 到 7`);
     }
@@ -694,7 +712,7 @@ function assertStepSong(song) {
 }
 
 function normalizeStoredSong(song) {
-  if (!song || typeof song !== "object") {
+  if (!isPlainObject(song) || typeof song.id !== "string" || !song.id.trim()) {
     return null;
   }
 
@@ -767,16 +785,16 @@ function normalizeStoredSong(song) {
 
 export function getCustomSongs() {
   return getCustomSongArray()
-    .map(normalizeStoredSong)
+    .map((song) => normalizeStoredSong(isPlainObject(song) ? { ...song, source: "local" } : song))
     .filter(Boolean);
 }
 
 export function getSongLibrary() {
-  const library = Object.fromEntries(
-    Object.entries(SONG_LIBRARY)
-      .map(([id, song]) => [id, normalizeStoredSong({ ...song, source: "system" })])
-      .filter(([, song]) => Boolean(song))
-  );
+  const library = Object.create(null);
+  for (const [id, song] of Object.entries(SONG_LIBRARY)) {
+    const normalized = normalizeStoredSong({ ...song, source: "system" });
+    if (normalized) library[id] = normalized;
+  }
   getCustomSongs().forEach((song) => {
     library[song.id] = song;
   });
@@ -1039,7 +1057,11 @@ export function saveCustomSongs(importedSongs) {
     .map(normalizeStoredSong)
     .filter(Boolean);
   const importedIds = new Set(normalizedSongs.map((song) => song.id));
-  const songs = getCustomSongs().filter((item) => !importedIds.has(item.id));
+  if (!normalizedSongs.length) {
+    throw new Error("没有可保存的歌曲");
+  }
+  // Preserve unrelated records verbatim, including records this version cannot read.
+  const songs = getCustomSongArray(true).filter((item) => !importedIds.has(item?.id));
   songs.push(...normalizedSongs);
   saveCustomSongArray(songs);
   return normalizedSongs;
@@ -1057,7 +1079,7 @@ export function deleteCustomSong(songId) {
     return null;
   }
 
-  saveCustomSongArray(songs.filter((song) => song.id !== id));
+  saveCustomSongArray(getCustomSongArray(true).filter((song) => song?.id !== id));
   return deletedSong;
 }
 
@@ -1074,7 +1096,7 @@ export function deleteCustomSongGroup(baseSongId) {
   }
 
   const deletedIds = new Set(deletedSongs.map((song) => song.id));
-  saveCustomSongArray(songs.filter((song) => !deletedIds.has(song.id)));
+  saveCustomSongArray(getCustomSongArray(true).filter((song) => !deletedIds.has(song?.id)));
   return {
     title: deletedSongs[0].title,
     ids: [...deletedIds]

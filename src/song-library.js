@@ -6,6 +6,9 @@ import {
   deleteCustomSongGroup,
   getCustomSongs,
   getSongLibrary,
+  getSongBaseId,
+  getSongVersionRank,
+  getEventTotalBeats,
   normalizeDifficulty,
   parseImportedSongs,
   readStoredSongId,
@@ -58,7 +61,7 @@ function getSelectedSongId() {
 function getSongTotalBeats(song) {
   const events = Array.isArray(song.events) ? song.events : [];
   if (events.length) {
-    return Math.max(...events.map((event) => event.beat + event.duration));
+    return getEventTotalBeats(events);
   }
   if (!song.steps.length) {
     return 0;
@@ -70,8 +73,9 @@ function formatDuration(seconds) {
   if (seconds < 60) {
     return `约 ${Math.max(1, Math.round(seconds))} 秒`;
   }
-  const minutes = Math.floor(seconds / 60);
-  const remainSeconds = Math.round(seconds % 60).toString().padStart(2, "0");
+  const roundedSeconds = Math.round(seconds);
+  const minutes = Math.floor(roundedSeconds / 60);
+  const remainSeconds = String(roundedSeconds % 60).padStart(2, "0");
   return `约 ${minutes}:${remainSeconds}`;
 }
 
@@ -95,18 +99,6 @@ function getSongVersionLabel(song) {
   return song.versionLabel || (song.arrangementKind === "chord" ? "和弦版" : "主旋律版");
 }
 
-function getSongBaseId(song) {
-  return song.baseSongId || (song.id.endsWith("-chord") ? song.id.slice(0, -6) : song.id);
-}
-
-function getSongVersionRank(song) {
-  return song.arrangementKind === "chord" || song.judgementMode === "chord" ? 1 : 0;
-}
-
-function getPrimarySong(songGroup) {
-  return [...songGroup].sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"))[0];
-}
-
 function getGroupedSongs(songs) {
   const groups = new Map();
   songs.forEach((song) => {
@@ -117,11 +109,10 @@ function getGroupedSongs(songs) {
     groups.get(baseSongId).push(song);
   });
 
-  return [...groups.values()].map((variants) => ({
-    baseSongId: getSongBaseId(variants[0]),
-    primary: getPrimarySong(variants),
-    variants: [...variants].sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"))
-  }));
+  return [...groups.values()].map((variants) => {
+    variants.sort((a, b) => getSongVersionRank(a) - getSongVersionRank(b) || a.id.localeCompare(b.id, "en"));
+    return { baseSongId: getSongBaseId(variants[0]), primary: variants[0], variants };
+  });
 }
 
 function getSongNoteSummary(song) {
@@ -383,7 +374,14 @@ function confirmDeleteCustomSong() {
 
   const baseSongId = pendingDeleteBaseSongId;
   const selectedSongId = getSelectedSongId();
-  const deletedSong = deleteCustomSongGroup(baseSongId);
+  let deletedSong;
+  try {
+    deletedSong = deleteCustomSongGroup(baseSongId);
+  } catch (error) {
+    closeDeleteConfirm();
+    showImportMessage(error.message, "error");
+    return;
+  }
   closeDeleteConfirm();
 
   if (!deletedSong) {
