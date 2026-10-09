@@ -1026,12 +1026,16 @@ const APP_NAME = "卡林巴循音";
       });
     }
 
-    function getProgressSeekSeconds(clientX, rect = null) {
+    function getProgressSeekSeconds(event) {
       if (!songProgress) {
         return 0;
       }
-      const targetRect = rect || progressSeekRect || songProgress.getBoundingClientRect();
-      const ratio = targetRect.width ? clamp((clientX - targetRect.left) / targetRect.width, 0, 1) : 0;
+      const targetRect = progressSeekRect || songProgress.getBoundingClientRect();
+      // The portrait practice layout rotates the track 90 degrees clockwise.
+      const rotated = document.documentElement.classList.contains("software-landscape");
+      const position = rotated ? event.clientY - targetRect.top : event.clientX - targetRect.left;
+      const length = rotated ? targetRect.height : targetRect.width;
+      const ratio = length ? clamp(position / length, 0, 1) : 0;
       return ratio * getSongProgressDuration();
     }
 
@@ -1073,7 +1077,7 @@ const APP_NAME = "卡林巴循音";
     }
 
     function handleProgressPointer(event) {
-      seekToSongTime(getProgressSeekSeconds(event.clientX));
+      seekToSongTime(getProgressSeekSeconds(event));
     }
 
     function startProgressSeek(event) {
