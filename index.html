@@ -27,7 +27,7 @@
   <main class="page">
     <section class="hero">
       <article class="card title-card">
-        <div class="app-kicker">听音跟练 · <span id="appVersionText">v2.2.25</span> <button class="version-refresh-btn" id="refreshAppBtn" type="button" title="检查并更新到最新版本" aria-label="检查并更新到最新版本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button></div>
+        <div class="app-kicker">听音跟练 · <span id="appVersionText">v2.2.26</span> <button class="version-refresh-btn" id="refreshAppBtn" type="button" title="检查并更新到最新版本" aria-label="检查并更新到最新版本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button></div>
         <h1>卡林巴循音</h1>
       </article>
 
@@ -81,15 +81,8 @@
         </div>
       </div>
 
-      <div class="score-card">
-        <div class="score-head">
-          <strong id="scoreTitle">《生日快乐》简谱进度</strong>
-          <div class="score-now" id="scoreNow">准备中</div>
-        </div>
-        <div class="score-strip" id="scoreStrip">
-          <div class="score-grid" id="scoreGrid"></div>
-          <div class="score-notes" id="scoreNotes"></div>
-          <div class="score-cursor" id="scoreCursor"></div>
+      <div class="practice-progress">
+          <span id="songElapsed">0:00</span>
           <div
             class="song-progress"
             id="songProgress"
@@ -105,10 +98,11 @@
             <span class="song-progress-fill" id="songProgressFill" aria-hidden="true"></span>
             <span class="song-progress-thumb" id="songProgressThumb" aria-hidden="true"></span>
           </div>
-        </div>
+          <span id="songRemaining">剩余 0:00</span>
       </div>
 
       <div class="board-shell">
+        <div id="keyWidthStatus" class="key-width-status" role="status" aria-live="polite" hidden></div>
         <div class="board-top" id="boardTop">
           <div class="lane-grid" id="laneGrid"></div>
           <div class="target-strip" id="targetStrip"></div>

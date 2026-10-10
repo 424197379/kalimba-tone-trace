@@ -15,12 +15,14 @@ import {
   saveCustomSongs,
   storeSongId
 } from "./song-store.js";
+import { browserPreferenceStorage, readPracticeHistory, PRACTICE_HISTORY_STORAGE_KEY } from "./practice-preferences.js";
 
 const songList = document.getElementById("songList");
 const songSearchInput = document.getElementById("songSearchInput");
 const songCountText = document.getElementById("songCountText");
 const difficultyTabs = document.getElementById("difficultyTabs");
 const emptySongText = document.getElementById("emptySongText");
+const practiceHistoryMessage = document.getElementById("practiceHistoryMessage");
 const appVersionText = document.getElementById("appVersionText");
 const addSongBtn = document.getElementById("addSongBtn");
 const importPanel = document.getElementById("importPanel");
@@ -313,7 +315,13 @@ function renderSongList() {
   const searchedSongs = query
     ? songs.filter((song) => getSearchText(song).includes(query))
     : songs;
-  const matchedSongs = searchedSongs.filter((songGroup) => songGroupMatchesDifficulty(songGroup, activeDifficulty));
+  const history = readPracticeHistory(browserPreferenceStorage);
+  practiceHistoryMessage.hidden = !history.error;
+  practiceHistoryMessage.textContent = history.error || "";
+  // 同一首歌的主旋律与和弦共用最近练习时间；未练曲目保持原顺序。
+  const matchedSongs = searchedSongs
+    .filter((songGroup) => songGroupMatchesDifficulty(songGroup, activeDifficulty))
+    .sort((a, b) => (history.records[b.baseSongId]?.lastPracticedAt || 0) - (history.records[a.baseSongId]?.lastPracticedAt || 0));
 
   renderDifficultyTabs(searchedSongs);
   songList.replaceChildren();
@@ -476,6 +484,10 @@ if (appVersionText) {
 }
 
 songSearchInput.addEventListener("input", renderSongList);
+window.addEventListener("pageshow", renderSongList);
+window.addEventListener("storage", (event) => {
+  if (event.key === PRACTICE_HISTORY_STORAGE_KEY || event.key === null) renderSongList();
+});
 addSongBtn.addEventListener("click", toggleImportPanel);
 copyPromptBtn.addEventListener("click", copyPrompt);
 importSongBtn.addEventListener("click", importSongFromJson);

@@ -1264,7 +1264,51 @@
       box-shadow: 0 0 0 5px rgba(187, 93, 56, 0.14), 0 3px 8px rgba(41, 27, 18, 0.16);
     }
 
+    .practice-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      height: 28px;
+      margin-bottom: 8px;
+      padding: 0 10px;
+      color: var(--subtle);
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .board-card .practice-progress .song-progress {
+      position: relative;
+      flex: 1;
+      min-width: 30px;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      height: 24px;
+    }
+
+    .key-width-status {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      z-index: 12;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fffaf3;
+      color: var(--subtle);
+      font-size: 12px;
+      pointer-events: none;
+    }
+
+    .key-width-status.failed,
+    .practice-history-message { color: #a4452b; }
+
+    .practice-history-message { font-size: 12px; }
+
     .board-shell {
+      position: relative;
       overflow: hidden;
       border-radius: calc(var(--radius) + 4px);
       border: 1px solid var(--border);
@@ -2031,7 +2075,7 @@
         padding: 5px;
         border-radius: 12px;
         display: grid;
-        grid-template-rows: 50px minmax(0, 1fr);
+        grid-template-rows: 28px minmax(0, 1fr);
         gap: 4px;
       }
 
@@ -2533,7 +2577,7 @@
         padding: 5px;
         border-radius: 12px;
         display: grid;
-        grid-template-rows: 50px minmax(0, 1fr);
+        grid-template-rows: 28px minmax(0, 1fr);
         gap: 4px;
       }
 

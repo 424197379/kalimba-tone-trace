@@ -1,3 +1,4 @@
+import { browserPreferenceStorage, readKeyWidth, effectiveKeyScale, saveKeyWidth, recordPractice } from "./practice-preferences.js";
 import { DISPLAY_KEYS, NOTE_INDEX } from "./songs.js";
 import { APP_VERSION, getEventTotalBeats, getSongBaseId, getSongVersionRank, getSongLibrary, readStoredSongId, storeSongId } from "./song-store.js";
 
@@ -150,8 +151,6 @@ const APP_NAME = "卡林巴循音";
     let accompanimentEvents = buildAutoAccompanimentEvents(currentSong);
     let songTotalBeats = getEventTotalBeats(songEvents);
     let accompanimentTotalBeats = getEventTotalBeats(accompanimentEvents);
-    const scoreBeatWidth = 78;
-    const scoreTrackPadding = 56;
     const noteLaneInsetRatio = 0.08;
 
     let bpm = currentSong.bpm;
@@ -160,7 +159,6 @@ const APP_NAME = "卡林巴循音";
     const prepareSeconds = 2.2;
     let speedFactor = 0.55;
     let fallLeadSeconds = 4.25;
-    const keyScaleStorageKey = "kalimba-key-scale";
     const accompanimentEnabledStorageKey = "kalimba-accompaniment-enabled";
     const accompanimentVolumeStorageKey = "kalimba-accompaniment-volume";
     const keyScaleMin = 0.72;
@@ -168,6 +166,10 @@ const APP_NAME = "卡林巴循音";
     let keyScale = 1;
     let pinchStartDistance = 0;
     let pinchStartScale = 1;
+    let savedKeyPitch = null;
+    let keyWidthDirty = false;
+    let keyWidthSaveTimer = 0;
+    let keyWidthStatusTimer = 0;
     const focusWindowSeconds = 0.28;
     const lateGraceSeconds = 0.36;
     const beamSwitchLeadSeconds = 0.12;
@@ -178,12 +180,10 @@ const APP_NAME = "卡林巴循音";
     const keyRow = document.getElementById("keyRow");
     const boardTop = document.getElementById("boardTop");
     const boardShell = document.querySelector(".board-shell");
-    const scoreStrip = document.getElementById("scoreStrip");
-    const scoreGrid = document.getElementById("scoreGrid");
-    const scoreNotes = document.getElementById("scoreNotes");
-    const scoreCursor = document.getElementById("scoreCursor");
-    const scoreNow = document.getElementById("scoreNow");
     const songProgress = document.getElementById("songProgress");
+    const songElapsed = document.getElementById("songElapsed");
+    const songRemaining = document.getElementById("songRemaining");
+    const keyWidthStatus = document.getElementById("keyWidthStatus");
     const songProgressFill = document.getElementById("songProgressFill");
     const songProgressThumb = document.getElementById("songProgressThumb");
 
@@ -208,7 +208,6 @@ const APP_NAME = "卡林巴循音";
     const accompanimentVolumeValue = document.getElementById("accompanimentVolumeValue");
     const practiceTitle = document.getElementById("practiceTitle");
     const practiceHint = document.getElementById("practiceHint");
-    const scoreTitle = document.getElementById("scoreTitle");
     const landscapeBtn = document.getElementById("landscapeBtn");
     const appVersionText = document.getElementById("appVersionText");
     const portraitPracticeQuery = window.matchMedia("(orientation: portrait) and (max-width: 760px)");
@@ -238,7 +237,6 @@ const APP_NAME = "卡林巴循音";
     const keyEls = [];
     const noteEls = new Map();
     const beamEls = [];
-    const scoreNoteEls = new Map();
 
     const KALIMBA_SAMPLE_PATHS = new Map(
       DISPLAY_KEYS.map((note) => [note.name, `./assets/samples/${note.name.toLowerCase()}.mp3`])
@@ -339,34 +337,54 @@ const APP_NAME = "卡林巴循音";
       return Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
     }
 
+    function getKeyWidthReference() {
+      // 用未旋转的网格尺寸计算中心间距，扣除内边距并计入列缝。
+      const style = getComputedStyle(keyRow);
+      const padding = (parseFloat(style.paddingLeft) || 0) + (parseFloat(style.paddingRight) || 0);
+      const gap = parseFloat(style.columnGap) || 0;
+      return keyRow.clientWidth - padding + gap;
+    }
+
+    function showKeyWidthStatus(text, failed = false) {
+      clearTimeout(keyWidthStatusTimer);
+      keyWidthStatus.textContent = text;
+      keyWidthStatus.classList.toggle("failed", failed);
+      keyWidthStatus.hidden = false;
+      keyWidthStatusTimer = setTimeout(() => { keyWidthStatus.hidden = true; }, failed ? 6000 : 1800);
+    }
+
+    function persistKeyWidth() {
+      clearTimeout(keyWidthSaveTimer);
+      if (!keyWidthDirty) return;
+      const result = saveKeyWidth(browserPreferenceStorage, savedKeyPitch);
+      if (result.saved) keyWidthDirty = false;
+      showKeyWidthStatus(result.error || "键宽已保存", Boolean(result.error));
+    }
+
     function applyKeyScale(nextScale, persist = true) {
       keyScale = clamp(nextScale, keyScaleMin, keyScaleMax);
-      document.documentElement.style.setProperty("--key-scale", keyScale.toFixed(3));
+      document.documentElement.style.setProperty("--key-scale", keyScale.toFixed(5));
       keyScaleBtn.textContent = `键宽 ${Math.round(keyScale * 100)}%`;
       keyScaleBtn.title = "双指捏合练习区调整琴键宽度，点击恢复 100%";
       setCompactIcon(keyScaleBtn, "↔", `琴键宽度 ${Math.round(keyScale * 100)}%，点击恢复 100%`);
       if (persist) {
-        try {
-          localStorage.setItem(keyScaleStorageKey, keyScale.toFixed(3));
-        } catch {
-          // The current gesture still works when browser storage is unavailable.
-        }
+        savedKeyPitch = getKeyWidthReference() * keyScale / 21;
+        keyWidthDirty = true;
+        clearTimeout(keyWidthSaveTimer);
+        keyWidthSaveTimer = setTimeout(persistKeyWidth, 300);
       }
     }
 
     function restoreKeyScale() {
-      let savedScale = null;
-      try {
-        const stored = localStorage.getItem(keyScaleStorageKey);
-        if (stored != null && stored.trim()) savedScale = Number(stored);
-      } catch {
-        // Use the default width when browser storage is unavailable.
-      }
-      applyKeyScale(Number.isFinite(savedScale) ? savedScale : 1, false);
+      const saved = readKeyWidth(browserPreferenceStorage);
+      savedKeyPitch = saved.pitchCssPx ?? null;
+      applyKeyScale(effectiveKeyScale(savedKeyPitch, getKeyWidthReference(), saved.scale ?? 1), false);
+      if (saved.error) showKeyWidthStatus(saved.error, true);
     }
 
     function resetKeyScale() {
       applyKeyScale(1);
+      persistKeyWidth();
     }
 
     function setupKeyScaleGesture() {
@@ -378,19 +396,30 @@ const APP_NAME = "卡林巴循音";
       }, { passive: true });
 
       boardShell.addEventListener("touchmove", (event) => {
-        if (event.touches.length !== 2 || !pinchStartDistance) {
-          return;
-        }
+        if (event.touches.length !== 2 || !pinchStartDistance) return;
         event.preventDefault();
         const nextDistance = getTouchDistance(event.touches);
         applyKeyScale(pinchStartScale * (nextDistance / pinchStartDistance));
       }, { passive: false });
 
-      boardShell.addEventListener("touchend", (event) => {
+      const finishPinch = (event) => {
         if (event.touches.length < 2) {
           pinchStartDistance = 0;
+          persistKeyWidth();
         }
-      }, { passive: true });
+      };
+      boardShell.addEventListener("touchend", finishPinch, { passive: true });
+      boardShell.addEventListener("touchcancel", finishPinch, { passive: true });
+      // 只重算显示比例，不能将临时窗口宽度覆盖到用户已校准的间距。
+      new ResizeObserver(() => {
+        if (savedKeyPitch !== null && !pinchStartDistance) {
+          applyKeyScale(effectiveKeyScale(savedKeyPitch, getKeyWidthReference()), false);
+        }
+      }).observe(boardTop);
+      window.addEventListener("pagehide", persistKeyWidth);
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) persistKeyWidth();
+      });
     }
 
     function scheduleLayoutRefresh() {
@@ -554,7 +583,6 @@ const APP_NAME = "卡林巴循音";
       document.title = `卡林巴听弹练习 - ${currentSong.title}`;
       practiceTitle.textContent = currentSong.practiceTitle;
       practiceHint.textContent = currentSong.hint;
-      scoreTitle.textContent = currentSong.scoreTitle;
       if (currentSongText) {
         currentSongText.textContent = currentSong.title;
       }
@@ -650,21 +678,7 @@ const APP_NAME = "卡林巴循音";
 
     function renderStaticBoard() {
       noteLayer.replaceChildren();
-      scoreGrid.replaceChildren();
-      scoreNotes.replaceChildren();
       noteEls.clear();
-      scoreNoteEls.clear();
-
-      const scoreTrackWidth = scoreTrackPadding * 2 + (songTotalBeats + 1) * scoreBeatWidth;
-      scoreGrid.style.width = `${scoreTrackWidth}px`;
-      scoreNotes.style.width = `${scoreTrackWidth}px`;
-
-      for (let beat = 0; beat <= Math.ceil(songTotalBeats); beat += 1) {
-        const line = document.createElement("div");
-        line.className = `score-grid-line${beat % currentSong.beatsPerMeasure === 0 ? " strong" : ""}`;
-        line.style.left = `${scoreTrackPadding + beat * scoreBeatWidth}px`;
-        scoreGrid.appendChild(line);
-      }
 
       if (!laneEls.length) {
         DISPLAY_KEYS.forEach((note, index) => {
@@ -721,21 +735,6 @@ const APP_NAME = "卡林巴循音";
         noteEl.innerHTML = renderEventNotesMarkup(event, "note");
         noteLayer.appendChild(noteEl);
         noteEls.set(event.id, noteEl);
-
-        const chip = document.createElement("div");
-        const scoreChipWidth = Math.max(28, event.duration * scoreBeatWidth - 10);
-        chip.className = "score-note-chip";
-        if (event.notes.length > 1) {
-          chip.classList.add("score-chord-chip");
-        }
-        if (scoreChipWidth < 44) {
-          chip.classList.add("compact-score-note");
-        }
-        chip.style.left = `${scoreTrackPadding + event.beat * scoreBeatWidth}px`;
-        chip.style.width = `${scoreChipWidth}px`;
-        chip.innerHTML = renderEventNotesMarkup(event, "score-note");
-        scoreNotes.appendChild(chip);
-        scoreNoteEls.set(event.id, chip);
       });
     }
 
@@ -884,6 +883,8 @@ const APP_NAME = "卡林巴循音";
       songProgress.setAttribute("aria-valuenow", String(Math.round(progressSeconds)));
       songProgress.setAttribute("aria-valuetext", valueText);
       songProgress.title = valueText;
+      songElapsed.textContent = formatSongTime(progressSeconds);
+      songRemaining.textContent = `剩余 ${formatSongTime(duration - progressSeconds)}`;
     }
 
     function setStatus(text) {
@@ -977,42 +978,6 @@ const APP_NAME = "卡林巴循音";
 
     function getSongEndSeconds() {
       return Math.max(songTotalBeats, accompanimentTotalBeats) * getScaledBeatSeconds() + 0.9;
-    }
-
-    function renderScoreProgress(seconds, expectedEvent) {
-      const stripWidth = scoreStrip.clientWidth;
-      const cursorX = Math.max(112, stripWidth * 0.24);
-      const currentBeat = seconds / getScaledBeatSeconds();
-      const trackOffset = cursorX - (scoreTrackPadding + currentBeat * scoreBeatWidth);
-      const visualFallLeadSeconds = getVisualFallLeadSeconds();
-
-      renderSongProgress(seconds);
-      scoreCursor.style.left = `${cursorX}px`;
-      scoreGrid.style.transform = `translateX(${trackOffset}px)`;
-      scoreNotes.style.transform = `translateX(${trackOffset}px)`;
-
-      if (seconds < -visualFallLeadSeconds) {
-        scoreNow.textContent = "准备中";
-      } else if (seconds < 0) {
-        scoreNow.textContent = "音块下落中";
-      } else if (expectedEvent) {
-        scoreNow.textContent = formatEventTargetText(expectedEvent);
-      } else if (seconds >= getSongEndSeconds()) {
-        scoreNow.textContent = "结束";
-      } else {
-        scoreNow.textContent = "--";
-      }
-
-      songEvents.forEach((event) => {
-        const chip = scoreNoteEls.get(event.id);
-        if (!chip) {
-          return;
-        }
-        const eventTime = getEventTime(event);
-        const eventEnd = eventTime + getEventDurationSeconds(event);
-        chip.classList.toggle("active", expectedEvent && expectedEvent.id === event.id);
-        chip.classList.toggle("passed", seconds > eventEnd);
-      });
     }
 
     function getProgressSeekSeconds(event) {
@@ -1581,7 +1546,7 @@ const APP_NAME = "卡林巴循音";
         judgementEvent.judgeLanes.forEach((lane) => highlightLane(lane, "expected"));
       }
 
-      renderScoreProgress(seconds, expectedEvent);
+      renderSongProgress(seconds);
 
       if (activeDetection.lane != null) {
         highlightLane(activeDetection.lane, "heard");
@@ -1701,6 +1666,8 @@ const APP_NAME = "卡林巴循音";
 
       demoMode = false;
       boardShell.classList.remove("demo-playing");
+      const historyResult = recordPractice(browserPreferenceStorage, getSongBaseId(currentSong));
+      if (historyResult.error) showKeyWidthStatus(historyResult.error, true);
       practiceRunning = true;
       practiceStartAt = performance.now() - pausedElapsed * 1000;
       pauseBtn.disabled = false;
@@ -1747,7 +1714,7 @@ const APP_NAME = "卡林巴循音";
       boardShell.classList.remove("signal", "demo-playing");
       resetSongEvents();
       renderBoard(pausedElapsed);
-      renderScoreProgress(pausedElapsed, null);
+      renderSongProgress(pausedElapsed);
     }
 
     async function playDemo() {
