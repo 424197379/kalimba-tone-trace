@@ -1,0 +1,44 @@
+changelog.html
+  s_2cdda31889671c::t_e0443ae15c4394 112
+  s_2cdda31889671c::t_6c204766a563f8 109-111,113-116
+  s_2cdda31889671c::t_8136322787abf8 108
+src/app.js
+  s_2cdda31889671c::t_e0443ae15c4394 946-948
+  s_2cdda31889671c::t_670dd3f8e5d865 1548-1549
+src/song-store.js
+  s_2cdda31889671c::t_6c204766a563f8 3
+CHANGELOG.md
+  s_2cdda31889671c::t_6c204766a563f8 5-7,9-11
+  s_2cdda31889671c::t_e0443ae15c4394 8
+scripts/test-practice-rendering.mjs
+  s_2cdda31889671c::t_86aa90c383c6cc 1-7,9-43,58-94
+  s_2cdda31889671c::t_e0443ae15c4394 8,44-57
+package.json
+  s_2cdda31889671c::t_6c204766a563f8 3
+  s_2cdda31889671c::t_670dd3f8e5d865 17
+service-worker.js
+  s_2cdda31889671c::t_6c204766a563f8 1
+  s_2cdda31889671c::t_24cb5424a7737f 2
+scripts/test-practice-preferences.mjs
+  s_2cdda31889671c::t_0e9efed0738bec 16-17,28-30,35-41,159-195
+index.html
+  s_2cdda31889671c::t_d9f9b128801f46 30
+songs.html
+  s_2cdda31889671c::t_06d0f553286153 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "73041efc803b6c4f16046c8fc0ceaefc08fcc507",
+  "prompts": {},
+  "sessions": {
+    "s_2cdda31889671c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a124fe-ae3f-7eb2-b7ab-324784e96538",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "faber.fubo <faber.fubo@ksher.com>"
+    }
+  }
+}
