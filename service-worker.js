@@ -1,4 +1,5 @@
-const APP_VERSION = "2.2.26";
+const APP_VERSION = "2.2.27";
+// 练习页显示规则与离线应用壳同步更新，避免离线继续使用旧的音符裁剪逻辑。
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 

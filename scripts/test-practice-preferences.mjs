@@ -13,6 +13,8 @@ const gestureSource = appSource.slice(appSource.indexOf("    function getTouchDi
 function gestureHarness(store) {
   const listeners = new Map();
   const timers = new Map();
+  const pageListeners = new Map();
+  let resize;
   let timerId = 0;
   const context = {
     browserPreferenceStorage: store, readKeyWidth, effectiveKeyScale, saveKeyWidth,
@@ -23,14 +25,20 @@ function gestureHarness(store) {
     getComputedStyle: () => ({ paddingLeft: "0px", paddingRight: "0px", columnGap: "0px" }),
     keyWidthStatus: { classList: { toggle() {} } },
     boardShell: { addEventListener: (name, handler) => listeners.set(name, handler) },
-    document: { documentElement: { style: { setProperty() {} } }, addEventListener() {} },
-    window: { addEventListener() {} },
-    ResizeObserver: class { observe() {} },
+    document: { documentElement: { style: { setProperty() {} } }, addEventListener: (name, handler) => pageListeners.set(name, handler) },
+    window: { addEventListener: (name, handler) => pageListeners.set(name, handler) },
+    ResizeObserver: class { constructor(callback) { resize = callback; } observe() {} },
     setTimeout: callback => { timers.set(++timerId, callback); return timerId; },
     clearTimeout: id => timers.delete(id)
   };
   runInNewContext(gestureSource + "\nsetupKeyScaleGesture();", context);
-  return { context, fire: (name, touches) => listeners.get(name)({ touches, preventDefault() {} }) };
+  return {
+    context,
+    fire: (name, touches) => listeners.get(name)({ touches, preventDefault() {} }),
+    resize: () => resize(),
+    pageEvent: name => pageListeners.get(name)(),
+    flushSave: () => timers.get(context.keyWidthSaveTimer)?.()
+  };
 }
 
 function storage() {
@@ -147,4 +155,41 @@ test("saved pitch accounts for key grid padding and gap without using rotated sc
   gesture.fire("touchmove", [{ clientX:0, clientY:0 }, { clientX:120, clientY:0 }]);
   gesture.fire("touchend", []);
   assert.equal(readKeyWidth(store).pitchCssPx, 830 * 1.2 / 21);
+});
+
+test("actual saved pinch width restores on reload and survives constrained layout changes without writes", () => {
+  const store = storage();
+  const pair = width => [{ clientX:0, clientY:0 }, { clientX:width, clientY:0 }];
+  const first = gestureHarness(store);
+  first.fire("touchstart", pair(100));
+  first.fire("touchmove", pair(120));
+  first.fire("touchend", []);
+  const raw = store.getItem(KEY_WIDTH_STORAGE_KEY);
+  const restored = gestureHarness(store);
+  restored.context.restoreKeyScale();
+  assert.equal(restored.context.keyScale, 1.2);
+  assert.equal(restored.context.keyWidthDirty, false);
+  for (const [width, scale] of [[300,1.55], [1600,.72], [840,1.2]]) {
+    restored.context.keyRow.clientWidth = width;
+    restored.resize();
+    assert.equal(restored.context.keyScale, scale);
+    assert.equal(store.getItem(KEY_WIDTH_STORAGE_KEY), raw);
+    assert.equal(restored.context.keyWidthDirty, false);
+  }
+});
+
+test("pending adjustment is saved by debounce, pagehide and hidden-page flush", () => {
+  const pair = width => [{ clientX:0, clientY:0 }, { clientX:width, clientY:0 }];
+  for (const finish of [g => g.flushSave(), g => g.pageEvent("pagehide"), g => {
+    g.context.document.hidden = true;
+    g.pageEvent("visibilitychange");
+  }]) {
+    const store = storage();
+    const gesture = gestureHarness(store);
+    gesture.fire("touchstart", pair(100));
+    gesture.fire("touchmove", pair(90));
+    finish(gesture);
+    assert.equal(readKeyWidth(store).pitchCssPx, 36);
+    assert.equal(gesture.context.keyWidthDirty, false);
+  }
 });

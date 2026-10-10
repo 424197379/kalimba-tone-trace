@@ -943,7 +943,9 @@ const APP_NAME = "卡林巴循音";
     }
 
     function isCompactPracticeView() {
-      return window.matchMedia("(orientation: landscape) and (max-height: 560px)").matches;
+      // 竖屏手机的软件旋转也使用现有横屏预告时长，避免按桌面轨道堆叠音块。
+      return document.documentElement.classList.contains("software-landscape")
+        || window.matchMedia("(orientation: landscape) and (max-height: 560px)").matches;
     }
 
     function getVisualFallLeadSeconds() {
@@ -1499,34 +1501,10 @@ const APP_NAME = "卡林巴循音";
       const now = performance.now() / 1000;
       const compactView = isCompactPracticeView();
       const visualFallLeadSeconds = getVisualFallLeadSeconds();
-      const maxCompactVisibleNotes = boardHeight < 155 ? 4 : 5;
       if (activeDetection.lane != null && now > activeInputUntil) {
         resetDetectionReadout();
       }
       boardShell.classList.toggle("demo-playing", demoMode);
-      const compactVisibleIds = compactView
-        ? new Set(
-          (() => {
-            const usedLanes = new Set();
-            const visibleIds = [];
-            songEvents
-              .filter((event) => {
-                const eventTime = getEventTime(event);
-                return eventTime >= seconds - 0.08 && eventTime <= seconds + visualFallLeadSeconds;
-              })
-              .sort((a, b) => getEventTime(a) - getEventTime(b) || a.id - b.id)
-              .forEach((event) => {
-                if (visibleIds.length >= maxCompactVisibleNotes || usedLanes.has(event.lane)) {
-                  return;
-                }
-                usedLanes.add(event.lane);
-                visibleIds.push(event.id);
-              });
-            return visibleIds;
-          })()
-        )
-        : null;
-
       boardShell.classList.toggle("signal", now < signalPeakUntil);
 
       const expectedEvent = seconds >= -visualFallLeadSeconds ? getExpectedEvent(seconds) : null;
@@ -1567,7 +1545,8 @@ const APP_NAME = "卡林巴循音";
         const topY = bottomY - height;
         const { minLane, laneSpan } = event;
         const left = minLane * columnWidth + columnWidth * noteLaneInsetRatio;
-        const visible = progress >= 0 && progress <= 1.04 && (!compactView || (compactVisibleIds.has(event.id) && topY >= 0));
+        // 每个音符独立显示；同列重复音不能去重，入场时由轨道裁切露出的部分。
+        const visible = progress >= 0 && progress <= 1.04 && (!compactView || bottomY > 0);
         const closeness = clamp(progress, 0, 1);
 
         noteEl.style.left = `${left}px`;
