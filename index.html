@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>卡林巴循音</title>
-  <meta name="description" content="卡林巴听音识别与跟练练习 App，支持离线使用。">
+  <meta name="description" content="21 音 C 调卡林巴下落块跟谱练习，支持片段循环、示范播放和离线使用。">
   <meta name="theme-color" content="#bd5f3b">
   <meta name="application-name" content="卡林巴循音">
   <meta name="mobile-web-app-capable" content="yes">
@@ -27,7 +27,7 @@
   <main class="page">
     <section class="hero">
       <article class="card title-card">
-        <div class="app-kicker">听音跟练 · <span id="appVersionText">v2.2.27</span> <button class="version-refresh-btn" id="refreshAppBtn" type="button" title="检查并更新到最新版本" aria-label="检查并更新到最新版本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button></div>
+        <div class="app-kicker">听音跟练 · <span id="appVersionText">v2.4.52</span> <button class="version-refresh-btn" id="refreshAppBtn" type="button" title="检查并更新到最新版本" aria-label="检查并更新到最新版本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button></div>
         <h1>卡林巴循音</h1>
       </article>
 
@@ -51,16 +51,21 @@
             <button class="ghost compact" id="pauseBtn" type="button" disabled>暂停</button>
             <button class="ghost compact" id="changeSongBtn" type="button">换曲</button>
           </div>
-          <button class="accent" id="startBtn">开始练习</button>
+          <button class="accent" id="startBtn" title="自己弹旋律，手机只播放选定伴奏">自己弹</button>
           <button class="ghost" id="resetBtn">重置</button>
-          <button id="demoBtn">示范播放</button>
-          <label class="speed-wrap">
-            速度倍率
-            <input id="speedSlider" type="range" min="0.35" max="1.4" step="0.05" value="0.55">
-            <span class="speed-value" id="speedValue">0.55x</span>
-          </label>
-          <button class="ghost compact" id="songSpeedBtn" type="button">曲目默认速率</button>
-          <button class="ghost compact" id="keyScaleBtn" type="button">键宽 100%</button>
+          <button id="demoBtn" title="手机播放旋律和选定伴奏">听示范</button>
+          <div class="speed-wrap playback-speed-wrap">
+            <label for="speedSlider">速度倍率</label>
+            <div class="speed-slider-control">
+              <input id="speedSlider" type="range" min="0.35" max="1.4" step="0.05" value="1">
+              <button class="normal-speed-mark" id="songSpeedBtn" type="button" title="恢复 1.0 倍原速" aria-label="恢复 1.0 倍原速">1.0</button>
+            </div>
+            <span class="speed-value" id="speedValue">1.00x</span>
+          </div>
+          <select id="accompanimentStyleSelect" class="accompaniment-style" aria-label="伴奏编配" title="只由手机播放支持音，不增加需要弹的琴键" hidden>
+            <option value="off">无伴奏</option>
+            <option value="light">轻伴奏</option>
+          </select>
           <button class="ghost compact accompaniment-toggle" id="accompanimentBtn" type="button" hidden>伴奏 开</button>
           <label class="speed-wrap accompaniment-wrap" id="accompanimentVolumeWrap" hidden>
             伴奏音量
@@ -82,7 +87,9 @@
       </div>
 
       <div class="practice-progress">
+          <button id="restartBtn" class="practice-tool-btn practice-icon-btn ghost" type="button" aria-label="从头再练，退出分段练习并倒数后重来" title="退出分段练习，倒数后从全曲开头重来"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button>
           <span id="songElapsed">0:00</span>
+          <div class="progress-track">
           <div
             class="song-progress"
             id="songProgress"
@@ -98,12 +105,23 @@
             <span class="song-progress-fill" id="songProgressFill" aria-hidden="true"></span>
             <span class="song-progress-thumb" id="songProgressThumb" aria-hidden="true"></span>
           </div>
+          <span class="loop-selection" id="loopSelection" hidden aria-hidden="true"></span>
+          <button id="loopStartHandle" class="loop-handle loop-start" type="button" role="slider" aria-label="循环起点" hidden>起</button>
+          <button id="loopEndHandle" class="loop-handle loop-end" type="button" role="slider" aria-label="循环终点" hidden>终</button>
+          </div>
           <span id="songRemaining">剩余 0:00</span>
+          <button id="repeatBtn" class="practice-tool-btn repeat-btn ghost" type="button" aria-label="开启分段练习" title="开启分段练习" aria-pressed="false">分段练习</button>
+          <div class="practice-view-tools">
+            <button class="practice-tool-btn ghost compact" id="keyScaleBtn" type="button">键宽 100%</button>
+          <button id="fullscreenBtn" class="practice-tool-btn practice-icon-btn ghost" type="button" aria-label="全屏开始" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/></svg></button>
+          </div>
       </div>
 
       <div class="board-shell">
         <div id="keyWidthStatus" class="key-width-status" role="status" aria-live="polite" hidden></div>
         <div class="board-top" id="boardTop">
+          <div id="playbackNotice" class="playback-notice" role="status" aria-live="polite" hidden></div>
+          <div id="preparationCue" class="preparation-cue" hidden aria-hidden="true"></div>
           <div class="lane-grid" id="laneGrid"></div>
           <div class="target-strip" id="targetStrip"></div>
           <div class="note-layer" id="noteLayer"></div>

@@ -1,414 +1,1211 @@
 {
   "schemaVersion": 1,
   "id": "xuan-cao-hua",
-  "title": "《萱草花》",
+  "title": "《萱草花》（声乐版）",
   "uploader": "system",
-  "practiceTitle": "《萱草花》练习轨道",
-  "scoreTitle": "《萱草花》简谱进度",
-  "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
-  "difficulty": "easy",
+  "practiceTitle": "《萱草花》（声乐版）练习轨道",
+  "scoreTitle": "《萱草花》（声乐版）简谱进度",
+  "hint": "选用山山吉他版完整声乐路线，183个单音、64个3/4小节共192拍；保留主歌、副歌、第二段主歌、尾声及20处人声休止，省略吉他前奏与伴奏。84 BPM为练习设定，八分音与同侧连弹建议先慢练。",
+  "difficulty": "medium",
   "bpm": 84,
   "defaultSpeedFactor": 0.9,
-  "beatsPerMeasure": 4,
+  "beatsPerMeasure": 3,
+  "key": "C",
   "steps": [
     [
       "E4",
-      0.0,
-      1.5
+      0,
+      1
     ],
     [
       "E4",
-      1.5,
-      1.25
+      1,
+      1
     ],
     [
       "E4",
-      2.75,
-      1.25
+      2,
+      1
     ],
     [
       "G4",
-      4.0,
-      1.5
-    ],
-    [
-      "A4",
-      5.5,
-      1.25
-    ],
-    [
-      "G4",
-      6.75,
-      1.25
-    ],
-    [
-      "C4",
-      8.0,
-      1.0
-    ],
-    [
-      "D4",
-      9.0,
-      1.0
-    ],
-    [
-      "E4",
-      10.0,
-      1.0
-    ],
-    [
-      "C4",
-      11.0,
-      1.0
-    ],
-    [
-      "G4",
-      12.0,
+      3,
       1.5
     ],
     [
       "A4",
-      16.0,
-      1.0
-    ],
-    [
-      "C4",
-      17.0,
-      1.0
-    ],
-    [
-      "A4",
-      18.0,
-      1.0
+      4.5,
+      0.5
     ],
     [
       "G4",
-      20.0,
-      1.0
+      5,
+      1
     ],
     [
       "C4",
-      21.0,
-      1.0
-    ],
-    [
-      "G4",
-      22.0,
-      1.0
-    ],
-    [
-      "A4",
-      24.0,
-      1.0
-    ],
-    [
-      "B4",
-      25.0,
-      1.0
-    ],
-    [
-      "C4",
-      26.0,
-      1.0
-    ],
-    [
-      "E4",
-      27.0,
-      1.0
-    ],
-    [
-      "D4",
-      28.0,
-      1.0
-    ],
-    [
-      "C4",
-      30.0,
-      1.0
-    ],
-    [
-      "D4",
-      31.0,
-      1.0
-    ],
-    [
-      "E4",
-      32.0,
+      6,
       1.5
     ],
     [
-      "E4",
-      33.5,
-      1.25
+      "D4",
+      7.5,
+      0.5
     ],
     [
       "E4",
-      34.75,
-      1.25
+      8,
+      0.5
+    ],
+    [
+      "C4",
+      8.5,
+      0.5
+    ],
+    [
+      "G3",
+      9,
+      3
+    ],
+    [
+      "A3",
+      12,
+      0.5
+    ],
+    [
+      "C4",
+      12.5,
+      0.5
+    ],
+    [
+      "A3",
+      13,
+      1
+    ],
+    [
+      "G3",
+      15,
+      0.5
+    ],
+    [
+      "C4",
+      15.5,
+      0.5
+    ],
+    [
+      "G3",
+      16,
+      1
+    ],
+    [
+      "A3",
+      18,
+      1.5
+    ],
+    [
+      "B3",
+      19.5,
+      0.5
+    ],
+    [
+      "C4",
+      20,
+      0.5
+    ],
+    [
+      "E4",
+      20.5,
+      0.5
+    ],
+    [
+      "D4",
+      21,
+      2
+    ],
+    [
+      "C4",
+      23,
+      0.5
+    ],
+    [
+      "D4",
+      23.5,
+      0.5
+    ],
+    [
+      "E4",
+      24,
+      1
+    ],
+    [
+      "E4",
+      25,
+      1
+    ],
+    [
+      "E4",
+      26,
+      1
     ],
     [
       "G4",
-      36.0,
+      27,
       1.5
     ],
     [
       "A4",
-      37.5,
-      1.25
+      28.5,
+      0.5
     ],
     [
       "G4",
-      38.75,
-      1.25
+      29,
+      1
     ],
     [
       "C4",
-      40.0,
-      1.0
-    ],
-    [
-      "D4",
-      41.0,
-      1.0
-    ],
-    [
-      "E4",
-      42.0,
-      1.0
-    ],
-    [
-      "G4",
-      43.0,
-      1.0
-    ],
-    [
-      "E4",
-      44.0,
+      30,
       1.5
     ],
     [
-      "A4",
-      48.0,
-      1.0
-    ],
-    [
-      "C4",
-      49.0,
-      1.0
-    ],
-    [
-      "A4",
-      50.0,
-      1.0
-    ],
-    [
-      "G4",
-      52.0,
-      1.0
-    ],
-    [
-      "C4",
-      53.0,
-      1.0
-    ],
-    [
-      "G4",
-      54.0,
-      1.0
+      "D4",
+      31.5,
+      0.5
     ],
     [
       "E4",
-      55.0,
-      1.0
+      32,
+      0.5
+    ],
+    [
+      "G4",
+      32.5,
+      0.5
+    ],
+    [
+      "E4",
+      33,
+      2
+    ],
+    [
+      "A3",
+      36,
+      0.5
+    ],
+    [
+      "C4",
+      36.5,
+      0.5
+    ],
+    [
+      "A3",
+      37,
+      1
+    ],
+    [
+      "G3",
+      39,
+      0.5
+    ],
+    [
+      "C4",
+      39.5,
+      0.5
+    ],
+    [
+      "G3",
+      40,
+      1
+    ],
+    [
+      "E4",
+      41,
+      1
     ],
     [
       "D4",
-      56.0,
-      1.0
+      42,
+      1.5
     ],
     [
-      "A4",
-      57.75,
-      0.75
+      "A3",
+      43.5,
+      0.5
     ],
     [
       "C4",
-      58.5,
-      0.75
+      44,
+      0.5
     ],
     [
       "D4",
-      59.25,
-      0.75
+      44.5,
+      0.5
     ],
     [
       "C4",
-      60.0,
-      2.75
+      45,
+      2
     ],
     [
       "C4",
-      64.0,
-      1.0
+      48,
+      1.5
     ],
     [
-      "A4",
-      65.0,
-      1.0
+      "A3",
+      49.5,
+      0.5
     ],
     [
       "C4",
-      66.0,
-      1.0
+      50,
+      0.5
     ],
     [
       "E4",
-      67.0,
-      1.0
+      50.5,
+      0.5
     ],
     [
       "G4",
-      68.0,
-      2.75
+      51,
+      2
     ],
     [
       "A4",
-      72.0,
-      1.0
+      54,
+      0.5
     ],
     [
       "G4",
-      73.0,
-      0.75
+      54.5,
+      0.5
     ],
     [
       "E4",
-      73.75,
-      0.75
+      55,
+      0.5
     ],
     [
       "C4",
+      55.5,
+      0.5
+    ],
+    [
+      "D4",
+      56,
+      1
+    ],
+    [
+      "E4",
+      57,
+      2
+    ],
+    [
+      "C4",
+      60,
+      1.5
+    ],
+    [
+      "A3",
+      61.5,
+      0.5
+    ],
+    [
+      "C4",
+      62,
+      0.5
+    ],
+    [
+      "E4",
+      62.5,
+      0.5
+    ],
+    [
+      "G4",
+      63,
+      1
+    ],
+    [
+      "E4",
+      64,
+      1
+    ],
+    [
+      "C4",
+      65,
+      1
+    ],
+    [
+      "A3",
+      66,
+      1.5
+    ],
+    [
+      "B3",
+      67.5,
+      0.5
+    ],
+    [
+      "C4",
+      68,
+      0.5
+    ],
+    [
+      "E4",
+      68.5,
+      0.5
+    ],
+    [
+      "D4",
+      69,
+      2
+    ],
+    [
+      "C4",
+      72,
+      1.5
+    ],
+    [
+      "A3",
+      73.5,
+      0.5
+    ],
+    [
+      "C4",
+      74,
+      0.5
+    ],
+    [
+      "E4",
       74.5,
-      0.75
-    ],
-    [
-      "D4",
-      75.25,
-      0.75
-    ],
-    [
-      "E4",
-      76.0,
-      2.75
-    ],
-    [
-      "C4",
-      80.0,
-      1.0
-    ],
-    [
-      "A4",
-      81.0,
-      1.0
-    ],
-    [
-      "C4",
-      82.0,
-      1.0
-    ],
-    [
-      "E4",
-      83.0,
-      1.0
+      0.5
     ],
     [
       "G4",
-      84.0,
-      2.75
+      75,
+      2
     ],
     [
       "A4",
-      88.0,
+      78,
+      1
+    ],
+    [
+      "B4",
+      79,
+      1
+    ],
+    [
+      "C5",
+      80,
+      1
+    ],
+    [
+      "G4",
+      81,
+      2
+    ],
+    [
+      "A4",
+      84,
       1.5
     ],
     [
       "B4",
-      89.5,
-      1.25
+      85.5,
+      0.5
     ],
     [
       "C5",
-      90.75,
-      1.25
+      86,
+      1
     ],
     [
       "G4",
-      92.0,
-      2.75
-    ],
-    [
-      "A4",
-      96.0,
-      1.5
-    ],
-    [
-      "B4",
-      97.5,
-      1.25
-    ],
-    [
-      "C5",
-      98.75,
-      1.25
-    ],
-    [
-      "G4",
-      100.0,
-      1.5
+      87,
+      1
     ],
     [
       "E4",
-      101.5,
-      1.25
+      88,
+      1
     ],
     [
       "C4",
-      102.75,
-      1.25
+      89,
+      1
     ],
     [
-      "G4",
-      104.0,
+      "A3",
+      90,
       1.5
     ],
     [
       "E4",
-      105.5,
-      1.25
+      91.5,
+      0.5
     ],
     [
       "D4",
-      106.75,
-      1.25
+      92,
+      1
     ],
     [
       "C4",
-      108.0,
-      2.75
+      93,
+      3
+    ],
+    [
+      "E4",
+      96,
+      1
+    ],
+    [
+      "E4",
+      97,
+      1
+    ],
+    [
+      "E4",
+      98,
+      1
     ],
     [
       "G4",
-      112.0,
-      4.0
+      99,
+      1.5
+    ],
+    [
+      "A4",
+      100.5,
+      0.5
+    ],
+    [
+      "G4",
+      101,
+      1
+    ],
+    [
+      "C4",
+      102,
+      1.5
+    ],
+    [
+      "D4",
+      103.5,
+      0.5
+    ],
+    [
+      "E4",
+      104,
+      0.5
+    ],
+    [
+      "C4",
+      104.5,
+      0.5
+    ],
+    [
+      "G3",
+      105,
+      3
+    ],
+    [
+      "A3",
+      108,
+      0.5
+    ],
+    [
+      "C4",
+      108.5,
+      0.5
+    ],
+    [
+      "A3",
+      109,
+      1
+    ],
+    [
+      "G3",
+      111,
+      0.5
+    ],
+    [
+      "C4",
+      111.5,
+      0.5
+    ],
+    [
+      "G3",
+      112,
+      1
+    ],
+    [
+      "A3",
+      114,
+      1.5
+    ],
+    [
+      "B3",
+      115.5,
+      0.5
+    ],
+    [
+      "C4",
+      116,
+      0.5
+    ],
+    [
+      "E4",
+      116.5,
+      0.5
+    ],
+    [
+      "D4",
+      117,
+      2
+    ],
+    [
+      "C4",
+      119,
+      0.5
+    ],
+    [
+      "D4",
+      119.5,
+      0.5
+    ],
+    [
+      "E4",
+      120,
+      1
+    ],
+    [
+      "E4",
+      121,
+      1
+    ],
+    [
+      "E4",
+      122,
+      1
+    ],
+    [
+      "G4",
+      123,
+      1.5
+    ],
+    [
+      "A4",
+      124.5,
+      0.5
+    ],
+    [
+      "G4",
+      125,
+      1
+    ],
+    [
+      "C4",
+      126,
+      1.5
+    ],
+    [
+      "D4",
+      127.5,
+      0.5
+    ],
+    [
+      "E4",
+      128,
+      0.5
+    ],
+    [
+      "G4",
+      128.5,
+      0.5
+    ],
+    [
+      "E4",
+      129,
+      2
+    ],
+    [
+      "A3",
+      132,
+      0.5
+    ],
+    [
+      "C4",
+      132.5,
+      0.5
+    ],
+    [
+      "A3",
+      133,
+      1
+    ],
+    [
+      "G3",
+      135,
+      0.5
+    ],
+    [
+      "C4",
+      135.5,
+      0.5
+    ],
+    [
+      "G3",
+      136,
+      1
+    ],
+    [
+      "E4",
+      137,
+      1
+    ],
+    [
+      "D4",
+      138,
+      1.5
+    ],
+    [
+      "A3",
+      139.5,
+      0.5
+    ],
+    [
+      "C4",
+      140,
+      0.5
+    ],
+    [
+      "D4",
+      140.5,
+      0.5
+    ],
+    [
+      "C4",
+      141,
+      2
+    ],
+    [
+      "E4",
+      144,
+      1
+    ],
+    [
+      "E4",
+      145,
+      1
+    ],
+    [
+      "E4",
+      146,
+      1
+    ],
+    [
+      "G4",
+      147,
+      1.5
+    ],
+    [
+      "A4",
+      148.5,
+      0.5
+    ],
+    [
+      "G4",
+      149,
+      1
+    ],
+    [
+      "C4",
+      150,
+      1.5
+    ],
+    [
+      "D4",
+      151.5,
+      0.5
+    ],
+    [
+      "E4",
+      152,
+      0.5
+    ],
+    [
+      "C4",
+      152.5,
+      0.5
+    ],
+    [
+      "G3",
+      153,
+      3
+    ],
+    [
+      "A3",
+      156,
+      0.5
+    ],
+    [
+      "C4",
+      156.5,
+      0.5
+    ],
+    [
+      "A3",
+      157,
+      1
+    ],
+    [
+      "G3",
+      159,
+      0.5
+    ],
+    [
+      "C4",
+      159.5,
+      0.5
+    ],
+    [
+      "G3",
+      160,
+      1
+    ],
+    [
+      "A3",
+      162,
+      1.5
+    ],
+    [
+      "B3",
+      163.5,
+      0.5
+    ],
+    [
+      "C4",
+      164,
+      0.5
+    ],
+    [
+      "E4",
+      164.5,
+      0.5
+    ],
+    [
+      "D4",
+      165,
+      2
+    ],
+    [
+      "C4",
+      167,
+      0.5
+    ],
+    [
+      "D4",
+      167.5,
+      0.5
+    ],
+    [
+      "E4",
+      168,
+      1
+    ],
+    [
+      "E4",
+      169,
+      1
+    ],
+    [
+      "E4",
+      170,
+      1
+    ],
+    [
+      "G4",
+      171,
+      1.5
+    ],
+    [
+      "A4",
+      172.5,
+      0.5
+    ],
+    [
+      "G4",
+      173,
+      1
+    ],
+    [
+      "C4",
+      174,
+      1.5
+    ],
+    [
+      "D4",
+      175.5,
+      0.5
+    ],
+    [
+      "E4",
+      176,
+      0.5
+    ],
+    [
+      "G4",
+      176.5,
+      0.5
+    ],
+    [
+      "E4",
+      177,
+      2
+    ],
+    [
+      "A3",
+      180,
+      0.5
+    ],
+    [
+      "C4",
+      180.5,
+      0.5
+    ],
+    [
+      "A3",
+      181,
+      1
+    ],
+    [
+      "G3",
+      183,
+      0.5
+    ],
+    [
+      "C4",
+      183.5,
+      0.5
+    ],
+    [
+      "G3",
+      184,
+      1
+    ],
+    [
+      "E4",
+      185,
+      1
+    ],
+    [
+      "D4",
+      186,
+      1.5
+    ],
+    [
+      "A3",
+      187.5,
+      0.5
+    ],
+    [
+      "C4",
+      188,
+      0.5
+    ],
+    [
+      "D4",
+      188.5,
+      0.5
+    ],
+    [
+      "C4",
+      189,
+      2
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "hasArpeggio": false,
+    "hasArpeggio": true,
     "hasRepeats": true,
     "unsupported": [
-      "原照片歌名印作“萱雨花”，按用户要求修正为《萱草花》；源谱 1=C#，已按 C 调卡林巴度数映射；反复段按练习版展开。"
+      "仅取山山吉他版歌词对位的独立声乐行，按该版反复和第一、第二房子完整展开；省略16小节吉他前奏及全部吉他伴奏，不从和弦选择最高音。",
+      "这是明确选择的另一份完整声乐路线，不等同于原唱完整曲式，也不证明原照片对应的旧78音版本有错；原照片仍未找回。",
+      "所选谱未标速度，84 BPM与medium难度均为编辑练习选择；原0.9建议倍率保留，不覆盖应用初次或已保存的速度。",
+      "20处休止只表示人声休止，末小节吉他仍有声音；不宣称原谱所有声部静音。浏览器试听、参考录音比较与实体琴验收仍待完成。"
     ],
-    "unsureMeasures": []
-  }
+    "unsureMeasures": [],
+    "arranger": "山山吉他",
+    "sources": [
+      {
+        "label": "山山吉他两页吉他与声乐谱，21qupu公开镜像；采用完整歌词对位声乐路线",
+        "url": "https://www.21qupu.com/guitar/45750.html"
+      }
+    ],
+    "transcriptionScope": "selected-shanshan-complete-vocal-route",
+    "sourceMeasureCount": 64,
+    "sourceTotalBeats": 192,
+    "sourceKey": "C",
+    "transpositionSemitones": 0,
+    "tempoStatus": "editorial-practice-tempo-source-unmarked",
+    "meterStatus": "printed-3/4",
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-complete-vocal-edition",
+        "reviewDate": "2026-10-12",
+        "adoptedInVersion": "2.4.28",
+        "selectedEdition": "shanshan-selected-c-complete-vocal-route",
+        "sourceUrl": "https://www.21qupu.com/guitar/45750.html",
+        "sourceImageUrls": [
+          "https://www.21qupu.com/upload/img3/xgstlatmvxf2147.png",
+          "https://www.21qupu.com/upload/img3/vohuqp3ro152147.png"
+        ],
+        "sourceAssetHashes": {
+          "page1Sha256": "c76f6f616781e867855ccfba5ab13426fef41fb3cc5c4ad788a76cc27481ce9f",
+          "page2Sha256": "3f1e9ad3e7078f50ab53c78af3778bc9f778a93d18f6751787c05a02e4c4bce1"
+        },
+        "sourceMeasureNumbers": "Editorially counted from the first guitar-introduction bar; the source prints no measure numbers.",
+        "sourceMeasureCount": 64,
+        "distinctPrintedVocalMeasures": 48,
+        "reviewedBeatRanges": [
+          [
+            0,
+            192
+          ]
+        ],
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              17,
+              48
+            ],
+            "beats": [
+              0,
+              96
+            ],
+            "attacks": 89
+          },
+          {
+            "sourceMeasures": [
+              17,
+              32
+            ],
+            "beats": [
+              96,
+              144
+            ],
+            "attacks": 47
+          },
+          {
+            "sourceMeasures": [
+              49,
+              64
+            ],
+            "beats": [
+              144,
+              192
+            ],
+            "attacks": 47
+          }
+        ],
+        "excludedSections": [
+          "guitar-only introduction m1–16",
+          "all guitar support, chord diagrams and tablature"
+        ],
+        "sourceVoice": "explicit-lyric-aligned-numbered-vocal-line",
+        "voiceDecision": "The lyric-aligned vocal line is separate from the six-line guitar tablature; no highest/first-note extraction or physical chord targets.",
+        "sourceKey": "1=C",
+        "sourceOriginalKeyLabel": "1=Bb",
+        "sourceMeter": "3/4",
+        "beatUnit": "quarter-note",
+        "sourceQuarterBpm": null,
+        "sourceTempoPrinted": false,
+        "tempoDecision": "84 BPM is an editorial practice choice, not a printed source or recording tempo. The historical defaultSpeedFactor=0.9 suggestion stays unchanged; initial and remembered speed are not changed by this adoption.",
+        "difficultyDecision": "medium is an editorial conditional practice choice, not a source marking or a claim of easier physical playing than the historical edition.",
+        "registerConvention": "Unmarked 1=C4; one lower octave dot gives octave3 and one upper dot octave5. Scientific octave names follow the project convention, not a printed absolute-octave label.",
+        "sourceRange": [
+          "G3",
+          "C5"
+        ],
+        "compiledRange": [
+          "G3",
+          "C5"
+        ],
+        "sourcePitchClasses": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          11
+        ],
+        "transpositionSemitones": 0,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "melodyAccidentals": [],
+        "localPitchAlterations": [],
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 0,
+        "openingDecision": "Counted m17 begins at beat0 with three independent E4 quarter attacks at0,1,2. The omitted16 intro bars are not a newly inserted vocal rest.",
+        "repeatExpansion": "m17–48, m17–32, m49–64; first ending begins at m33 and end repeat follows m48; second pass skips m33–48 for the separately printed coda.",
+        "selectedAttacks": 183,
+        "tieContinuationCount": 0,
+        "ties": [],
+        "occurrenceDecisions": [
+          "No same-pitch vocal ties are visible. Repeated E4 quarter notes at0/1/2,24/25/26,96/97/98,120/121/122,144/145/146 and168/169/170 remain separate attacks; prolongation dashes extend one note.",
+          "The selected edition holds A3@13 for one beat, then has a vocal rest at14. The other compared edition holds A3 for two beats; do not blend that hold into this route.",
+          "Selected route bar29 (counted m45) is A4@84/1.5, B4@85.5/0.5, C5@86/1. The compared edition has a lower dot on A3; the edition difference does not prove either source wrong.",
+          "Coda counted m49–64 was read from its own printed occurrences; only the explicit m17–32 repeat reuses the same printed notation."
+        ],
+        "melodyOnlyRestWindows": [
+          {
+            "beat": 14,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 17,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 35,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 38,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 47,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 53,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 59,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 71,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 77,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 83,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 110,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 113,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 131,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 134,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 143,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 158,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 161,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 179,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 182,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 191,
+            "duration": 1,
+            "voice": "selected-vocal-only"
+          }
+        ],
+        "restScope": "Twenty explicit one-beat vocal rests total20 beats. Guitar remains notated at several of them, including the last bar; zero all-layer source-silence claims.",
+        "allLayerSilenceClaim": false,
+        "endingRestBeats": 1,
+        "selectedEndIsFullSongEnding": false,
+        "selectedEndIsSelectedEditionVocalEnding": true,
+        "endingDecision": "Final C4 attacks at189 for2 beats; the printed vocal zero preserves[191,192). Guitar remains active. Do not stretch C4, truncate at191, or equate written duration with PCM/effects-tail cutoff.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "versionDecision": "Deliberately selected complete 山山吉他 vocal edition, not proof that the old78-attack edition is wrong. The unavailable photo historically described as1=C# with misprinted title is not recovered or reverified by this same-arranger public mirror.",
+        "supportDecision": "No backing is added or borrowed. The unchanged historical xuan-cao-hua-chord sibling fails the actual content compatibility guard despite sharing the title/base id and84 BPM.",
+        "sourcePixelReview": "The source author inspected both full pages and all selected vocal rows. An independent reader checked all183 tuples,64 complete bars, repeat/ending routing and20 vocal rests. These are separate readings of one edition, not independent source editions. Implementation also viewed both complete pages.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only",
+        "rightsNotice": "Public source access does not establish reproduction or public distribution permission. No raw source images or full private glyph maps are packaged; this adoption does not authorize push, publication or deployment."
+      },
+      "archivedEdition": {
+        "file": "data/archives/xuan-cao-hua-v2.4.27.json",
+        "fileSha256": "e9cd5a2a7ec4912fb208983a279b4f40f05eb524422c2bf5914e77fc4f1e9798",
+        "purpose": "Byte-exact developer recovery of all78 steps, original display strings,84 BPM,4/4,0.9 suggestion and full source metadata. No additional built-in card, user restore UI, HTTP route or precache entry."
+      },
+      "historicalSourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "unsupported": [
+          "原照片歌名印作“萱雨花”，按用户要求修正为《萱草花》；源谱 1=C#，已按 C 调卡林巴度数映射；反复段按练习版展开。"
+        ],
+        "unsureMeasures": []
+      },
+      "historicalEditionStatus": "Original misprinted-title1=C# photo remains unavailable. Its78 attacks,4/4 timing and historical degree-mapping/repeat claims are retained without re-verification; adopting another edition does not certify or invalidate them."
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "complete-selected-vocal-edition",
+      "reason": "完整所选声乐路线183音、192拍，G3–C5自然音无移调或折八度；保留独立重弹与20处人声休止。八分音、同侧连弹及更长曲长仍需分段慢练，数值范围不保证实体更易。",
+      "reviewRequired": [
+        "84 BPM是练习选择；最短0.5拍约357毫秒，0.9建议倍率约397毫秒，不代表实际网页当前速度。",
+        "参考录音比较、浏览器音频验收、实体琴同侧走向与自然衰减仍待完成。"
+      ]
+    }
+  },
+  "tuning": "21-key-c"
 }

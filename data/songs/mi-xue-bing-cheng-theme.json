@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《蜜雪冰城主题曲》练习轨道",
   "scoreTitle": "《蜜雪冰城主题曲》简谱进度",
-  "hint": "主旋律版按 1=D、2/4 双手简谱转写为 C 调，保留弱起、附点和完整中文段落。",
+  "hint": "按Jeanie的21小节简谱由D调整体降2半音至C调，保留完整中文主旋律；前奏第5小节滚奏和弦整段省略，留出1拍改编空隙。",
   "difficulty": "easy",
   "bpm": 115,
   "defaultSpeedFactor": 0.9,
@@ -90,7 +90,7 @@
     [
       "C5",
       8,
-      2
+      1
     ],
     [
       "E5",
@@ -346,21 +346,190 @@
   "sourceFeatures": {
     "hasChords": true,
     "hasArpeggio": true,
-    "hasRepeats": true,
-    "sourceImages": [
-      "private/sheets/raw/mi-xue-bing-cheng-theme/everyonepiano-number-01.png"
-    ],
+    "hasRepeats": false,
+    "sourceMeasureCount": 21,
+    "sourceTotalBeats": 42,
+    "transcriptionScope": "complete-selected-melody-with-intro-chord-omission",
+    "tempoStatus": "source-printed-quarter-note-115",
     "unsupported": [
-      "谱面英文段与循环播放结构未重复展开；本版本保留完整中文主题段。"
+      "The single-note reduction omits the entire instrumental rolled chord at source bar 5 beat 2, global [9,10); this adaptation gap is not a source-written rest or all-layer silence.",
+      "The piano accompaniment and remaining source harmony are not physical practice targets. The source does not identify a separate single melody within the omitted rolled chord; no highest-note selection is made."
     ],
     "unsureMeasures": [],
     "sourceReview": {
-      "confidence": "high",
+      "confidence": "high-for-selected-single-note-line-with-disclosed-intro-omission",
       "sources": [
         {
-          "label": "人人钢琴网《蜜雪冰城甜蜜蜜》双手简谱",
+          "label": "人人钢琴网 Jeanie《蜜雪冰城甜蜜蜜》双手简谱，1页21小节",
           "url": "https://www.everyonepiano.cn/Number-13218-1.html"
+        },
+        {
+          "label": "Same Jeanie arrangement in staff notation; corroboration, not an independent musical edition",
+          "url": "https://www.everyonepiano.cn/Stave-13218-1.html"
         }
+      ],
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/mi-xue-bing-cheng-theme/everyonepiano-number-01.png"
+        ],
+        "unsupported": [
+          "谱面英文段与循环播放结构未重复展开；本版本保留完整中文主题段。"
+        ],
+        "unsureMeasures": [],
+        "sourceReview": {
+          "confidence": "high",
+          "sources": [
+            {
+              "label": "人人钢琴网《蜜雪冰城甜蜜蜜》双手简谱",
+              "url": "https://www.everyonepiano.cn/Number-13218-1.html"
+            }
+          ]
+        }
+      },
+      "originalV1": {
+        "fileSha256": "354e2a8a878c519c0e581450872041f9a0b69bdfc680c5666501a2d7c9dfec14",
+        "hint": "主旋律版按 1=D、2/4 双手简谱转写为 C 调，保留弱起、附点和完整中文段落。",
+        "reconstruction": "Restore this hint and historicalReviewNotes as sourceFeatures, and change only the C5 at beat 8 back to duration 2; JSON.stringify(song, null, 2) plus a final newline reconstructs the original bytes."
+      },
+      "preservedV2": {
+        "file": "data/songs/mi-xue-bing-cheng-theme-chord.json",
+        "fileSha256": "df1100d1587c3b297ab0f6cc60a6a78696f00bf0b8c37e98e26bebcacf7b247e",
+        "status": "historical-unchanged-incompatible-melody",
+        "limitation": "Its C5 at beat 8 still lasts 2 beats. Its older verified rhythm label does not approve this reduction or its harmony. Do not borrow its support for the corrected melody."
+      },
+      "currentScopeReview": {
+        "status": "reviewed-melody-with-intro-chord-omission",
+        "reviewedAt": "2026-10-12",
+        "adoptedInVersion": "2.4.5",
+        "selectedEdition": "jeanie-21-bar-one-page",
+        "sourceUrl": "https://www.everyonepiano.cn/Number-13218-1.html",
+        "sourceImageUrl": "https://www.everyonepiano.cn/pianomusic/014/0013218/0013218-j-b-1.png",
+        "sourceImageSha256": "c4243d0d65455d71f7b2774fcfc287680ecfff50255132431eff3240cb83db35",
+        "sourceImageDimensions": [
+          2381,
+          3368
+        ],
+        "corroboratingSourceUrl": "https://www.everyonepiano.cn/Stave-13218-1.html",
+        "corroboratingImageUrl": "https://www.everyonepiano.cn/pianomusic/014/0013218/0013218-w-b-1.png",
+        "corroboratingImageSha256": "5528d825785582b686222ecfe795940345506c857c0e4bf58fd54215dcad0ee3",
+        "corroborationScope": "Same edition: opening, bar 5 quarter note and rolled chord, bar 15 same-pitch tie and final double bar. Not a second independent arrangement.",
+        "sourceKey": "D",
+        "sourceMeter": "2/4",
+        "sourceTempo": 115,
+        "sourceTempoBeatUnit": "quarter",
+        "beatOrigin": "Start of complete source bar 1; bar n spans [2(n-1),2n).",
+        "initialWrittenRestBeats": 1.5,
+        "audiblePickupBeats": 0.5,
+        "legacyPickupFieldMeaning": "The unchanged V2 pickupBeats value 1.5 denotes lead-in silence, not the 0.5-beat audible pickup.",
+        "transpositionSemitones": -2,
+        "octaveFolding": false,
+        "reviewedBeatRanges": [
+          [
+            0,
+            42
+          ]
+        ],
+        "reviewedMeasures": [
+          1,
+          21
+        ],
+        "selectedAttackCount": 66,
+        "chineseLyricSection": {
+          "measures": [
+            6,
+            21
+          ],
+          "beatRange": [
+            10,
+            42
+          ],
+          "attackCount": 50,
+          "status": "all-pitch-onset-duration-tuples-unchanged"
+        },
+        "sourceForm": {
+          "measureCount": 21,
+          "englishSectionPrinted": false,
+          "repeatSignsPrinted": false,
+          "endingRestBeats": 0
+        },
+        "melodyRole": "Exposed instrumental upper line in bars 1-5 and lyric-aligned upper line in bars 6-21; no chord-member melody is inferred.",
+        "correction": {
+          "measure": 5,
+          "beat": 8,
+          "note": "C5",
+          "previousDuration": 2,
+          "duration": 1,
+          "evidence": "The upper tonic is a quarter note, followed by a separate rolled chord on beat 9. Neither preview shows a tie, half note or continuation of this C5 into the chord."
+        },
+        "melodyOnlyAdaptationGaps": [
+          {
+            "beat": 9,
+            "duration": 1,
+            "reason": "omitted-instrumental-rolled-chord",
+            "sourceWrittenRest": false,
+            "sourceAllLayerSilence": false
+          }
+        ],
+        "omittedSourceGestures": [
+          {
+            "measure": 5,
+            "beat": 9,
+            "duration": 1,
+            "type": "rolled-chord",
+            "sourceNotes": [
+              "F#5",
+              "A5",
+              "D6"
+            ],
+            "transposedNotes": [
+              "E5",
+              "G5",
+              "C6"
+            ],
+            "melodyMember": "not-assigned",
+            "withinRollOffsets": "not-quantified-by-arpeggio-sign"
+          }
+        ],
+        "silentWindows": [
+          {
+            "beat": 0,
+            "duration": 1.5
+          }
+        ],
+        "preservedTie": {
+          "measure": 15,
+          "note": "A5",
+          "beat": 28.5,
+          "duration": 1.5,
+          "continuationBeat": 29
+        },
+        "ending": {
+          "measure": 21,
+          "note": "C5",
+          "beat": 40,
+          "duration": 2,
+          "totalBeats": 42,
+          "finalRestBeats": 0
+        },
+        "practiceSpeed": "The retained defaultSpeedFactor 0.9 is a legacy suggestion, not evidence of runtime speed. The app starts a new song at 0.55x and otherwise respects remembered per-song speed.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "Notation correspondence for the selected 66-attack single-note reduction only. Not a literal complete two-hand piano transcription, verified backing arrangement or completed listening/physical-instrument assessment. Source reproduction/publication rights are not established."
+      }
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "jeanie-21-bar-single-note-reduction-with-intro-chord-omission",
+      "reason": "The reviewed line fits C5-A5 on the fixed 21-key C instrument after one interval-preserving -2-semitone transposition; all 50 Chinese-section attacks remain intact. Bar 5 omits a separate instrumental rolled chord.",
+      "reviewRequired": [
+        "Reference-performance listening pending.",
+        "Browser audio check pending; use actual selected speed.",
+        "Physical 21-key C kalimba play-through pending.",
+        "Any new optional support needs its own source and listening review."
       ]
     }
   }

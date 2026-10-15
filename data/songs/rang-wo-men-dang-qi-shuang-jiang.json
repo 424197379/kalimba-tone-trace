@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "rang-wo-men-dang-qi-shuang-jiang",
-  "title": "《让我们荡起双桨》",
+  "title": "《让我们荡起双桨》（教材版）",
   "uploader": "system",
-  "practiceTitle": "《让我们荡起双桨》练习轨道",
-  "scoreTitle": "《让我们荡起双桨》简谱进度",
-  "hint": "完整一段主歌与副歌，略去前奏和间奏；保留半拍起唱、附点及连音。整体升高八度，保持结尾低音走向。",
+  "practiceTitle": "《让我们荡起双桨》（教材版）练习轨道",
+  "scoreTitle": "《让我们荡起双桨》（教材版）简谱进度",
+  "hint": "山东教育出版社教材版：完整30小节主歌与副歌主声部，63次起音、60拍；降E调统一降3半音至C调（A3–C5），保留三处延音线及四处休止。省略第7小节非定量倚音与副歌下声部，不按三行歌词增加反复；96 BPM为练习设定。",
   "difficulty": "medium",
   "bpm": 96,
   "defaultSpeedFactor": 0.9,
@@ -13,272 +13,272 @@
   "key": "C",
   "steps": [
     [
-      "A4",
+      "A3",
       0.5,
       0.5
     ],
     [
-      "C5",
+      "C4",
       1,
       0.5
     ],
     [
-      "D5",
+      "D4",
       1.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       2,
       1.5
     ],
     [
-      "G5",
+      "G4",
       3.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       4,
       0.5
     ],
     [
-      "C5",
+      "C4",
       4.5,
       0.5
     ],
     [
-      "D5",
+      "D4",
       5,
       1
     ],
     [
-      "A4",
+      "A3",
       6,
       2
     ],
     [
-      "C5",
+      "C4",
       8.5,
       0.5
     ],
     [
-      "D5",
+      "D4",
       9,
       0.5
     ],
     [
-      "E5",
+      "E4",
       9.5,
       0.5
     ],
     [
-      "G5",
+      "G4",
       10,
       1.5
     ],
     [
-      "G5",
+      "G4",
       11.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       12,
       1
     ],
     [
-      "D5",
+      "D4",
       13,
       1
     ],
     [
-      "E5",
+      "E4",
       14,
       3
     ],
     [
-      "E5",
+      "E4",
       17,
       0.5
     ],
     [
-      "G5",
+      "G4",
       17.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       18,
       2
     ],
     [
-      "G5",
+      "G4",
       20,
       1.5
     ],
     [
-      "A5",
+      "A4",
       21.5,
       0.5
     ],
     [
-      "C6",
+      "C5",
       22,
       0.5
     ],
     [
-      "B5",
+      "B4",
       22.5,
       0.25
     ],
     [
-      "A5",
+      "A4",
       22.75,
       0.25
     ],
     [
-      "G5",
+      "G4",
       23,
       0.5
     ],
     [
-      "A5",
+      "A4",
       23.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       24,
       1
     ],
     [
-      "C5",
+      "C4",
       25,
       0.5
     ],
     [
-      "D5",
+      "D4",
       25.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       26,
       1.5
     ],
     [
-      "G5",
+      "G4",
       27.5,
       0.5
     ],
     [
-      "C5",
+      "C4",
       28,
       1
     ],
     [
-      "A4",
+      "A3",
       29,
       1
     ],
     [
-      "C5",
+      "C4",
       30,
       0.5
     ],
     [
-      "D5",
+      "D4",
       30.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       31,
       0.5
     ],
     [
-      "A5",
+      "A4",
       31.5,
       0.5
     ],
     [
-      "G5",
+      "G4",
       32,
       3
     ],
     [
-      "E5",
+      "E4",
       36,
       2
     ],
     [
-      "A5",
+      "A4",
       38,
       1.5
     ],
     [
-      "A5",
+      "A4",
       39.5,
       0.5
     ],
     [
-      "G5",
+      "G4",
       40,
       0.5
     ],
     [
-      "F5",
+      "F4",
       40.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       41,
       1
     ],
     [
-      "D5",
+      "D4",
       42,
       2
     ],
     [
-      "E5",
+      "E4",
       44,
       1.5
     ],
     [
-      "G5",
+      "G4",
       45.5,
       0.5
     ],
     [
-      "A4",
+      "A3",
       46,
       0.5
     ],
     [
-      "C5",
+      "C4",
       46.5,
       0.5
     ],
     [
-      "D5",
+      "D4",
       47,
       1
     ],
     [
-      "C5",
+      "C4",
       49,
       0.5
     ],
     [
-      "D5",
+      "D4",
       49.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       50,
       1
     ],
@@ -333,30 +333,272 @@
     "hasArpeggio": false,
     "hasRepeats": false,
     "unsupported": [
-      "不含器乐前奏、歌词换段间奏及重复演唱；末尾采用最终结束句。",
-      "省略装饰倚音与第二合唱声部，仅保留主旋律。",
-      "整条旋律升高一个八度，避免结尾E3超出21音C调琴音域。"
+      "采用山东教育出版社教材完整30小节的主歌及歌词对应副歌上声部，略去副歌下声部；未添加或借用伴奏。",
+      "第7小节小字倚音5没有定量时值，明确省略，不凭空分配节拍、偷走主音时值或增加判定音。",
+      "三行主歌歌词没有可见反复指令；仅演奏完整印刷曲调一遍，不代表所有演唱段落或原唱全曲。",
+      "统一降3半音至C调，不局部折叠八度；这是另选教材版本，不证明未找回的旧曲谱错误。旧版完整数据及全部来源历史原样保留。",
+      "原谱仅标“稍快 优美地”，96 BPM与medium难度为练习选择；0.9建议保留，不覆盖实际已选速度。参考录音、浏览器音频及实琴是独立验收项；公开发行权尚未确认。"
     ],
     "unsureMeasures": [],
     "sources": [
       {
-        "label": "中国曲谱网《让我们荡起双桨》领唱合唱谱（版本三）",
-        "url": "https://www.qupu123.com/shaoer/qizi/p53613.html"
-      },
-      {
-        "label": "人人钢琴网 降E调双手简谱（对照）",
-        "url": "https://www.everyonepiano.cn/Number-1144.html"
+        "label": "山东教育出版社《音乐（简谱）五年级 下册》（五·四学制），印刷页36–37 / PDF页41–42",
+        "url": "https://v.sjs.com.cn/ebooks/58E2823C.pdf"
       }
     ],
-    "transcriptionScope": "one-strophe-and-refrain",
+    "transcriptionScope": "selected-complete-printed-strophe-and-refrain-principal-voice",
+    "sourceMeasureCount": 30,
+    "sourceTotalBeats": 60,
+    "sourceKey": "Eb",
+    "transpositionSemitones": -3,
+    "tempoStatus": "editorial-practice-tempo-source-verbal-only",
+    "meterStatus": "printed-2/4",
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-complete-textbook-melody",
+        "reviewDate": "2026-10-12",
+        "adoptedInVersion": "2.4.35",
+        "selectedEdition": "shandong-grade-five-second-volume-principal-vocal-melody",
+        "sourceUrl": "https://v.sjs.com.cn/ebooks/58E2823C.pdf",
+        "sourcePublication": "《义务教育教科书（五·四学制）音乐（简谱）五年级 下册》，山东教育出版社，2015年1月第1版 / 2020年1月第6次印刷，ISBN 978-7-5328-8591-6",
+        "sourceCredits": "乔羽词 / 刘炽曲；电影《祖国的花朵》插曲",
+        "sourcePdfSha256": "07cc8f5d3815c0e481e72cf31e843d24735875b7bb2cecf1b9911375f7ff9d37",
+        "printedPages": [
+          36,
+          37
+        ],
+        "pdfPages": [
+          41,
+          42
+        ],
+        "sourceMeasureRange": [
+          1,
+          30
+        ],
+        "sourceMeasureCount": 30,
+        "distinctPrintedMelodyMeasures": 30,
+        "sourceMeasureNumbers": "Editorially counted 30 bars in five six-bar systems; no printed bar numbers. First 18 bars are verse, final 12 are bracketed two-voice chorus.",
+        "reviewedBeatRanges": [
+          [
+            0,
+            60
+          ]
+        ],
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              1,
+              18
+            ],
+            "beats": [
+              0,
+              36
+            ],
+            "voice": "lyric-aligned-single-verse"
+          },
+          {
+            "sourceMeasures": [
+              19,
+              30
+            ],
+            "beats": [
+              36,
+              60
+            ],
+            "voice": "lyric-aligned-upper-chorus"
+          }
+        ],
+        "excludedSections": [],
+        "sourceVoice": "explicit-lyric-aligned-verse-and-bracketed-upper-chorus",
+        "voiceDecision": "The verse is monophonic. Chorus lyrics align with the upper of two explicitly bracketed voice lines. Select that identified principal vocal part, not the highest note or an array-order heuristic. The lower chorus voice is omitted; no backing is inferred.",
+        "sourceKey": "Eb",
+        "sourceMeter": "2/4",
+        "beatUnit": "quarter-note",
+        "sourceQuarterBpm": null,
+        "sourceTempoPrinted": true,
+        "sourceNumericTempoPrinted": false,
+        "sourceTempoText": "稍快 优美地",
+        "tempoDecision": "96 BPM is an editorial practice choice retained from the previous built-in, not a printed numeric source or recording tempo. The 0.9 suggestion remains unchanged and does not overwrite initial or saved actual browser speed.",
+        "difficultyDecision": "medium is an editorial conditional practice suggestion, not a source grading or completed physical-playability finding.",
+        "registerConvention": "Unmarked numbered degree 1 is read as Eb4; lower-dot 6 is C4 and upper-dot 1 is Eb5. A single -3-semitone transposition gives C4 tonic and A3–C5. No extra global octave change or local folds.",
+        "sourceRange": [
+          "C4",
+          "Eb5"
+        ],
+        "compiledRange": [
+          "A3",
+          "C5"
+        ],
+        "sourcePitchClasses": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10
+        ],
+        "transpositionSemitones": -3,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "sourceKeySignatureAccidentals": [
+          "Bb",
+          "Eb",
+          "Ab"
+        ],
+        "additionalMelodyAccidentals": [],
+        "localPitchAlterations": [],
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 0.5,
+        "repeatExpansion": "none-all-30-selected-bars-written-out",
+        "repeatSignsPresent": false,
+        "lyricRowsAuthorizeRepeat": false,
+        "formDecision": "Play all 30 printed bars once through the final double bar. The three verse lyric rows do not authorize repeat expansion. This retains the complete printed one-strophe tune and refrain, not every sung stanza or a complete recorded-song form.",
+        "selectedAttacks": 63,
+        "metricNoteheadCount": 66,
+        "tieContinuationCount": 3,
+        "ties": [
+          {
+            "bars": [
+              8,
+              9
+            ],
+            "note": "E4",
+            "beat": 14,
+            "duration": 3
+          },
+          {
+            "bars": [
+              17,
+              18
+            ],
+            "note": "G4",
+            "beat": 32,
+            "duration": 3
+          },
+          {
+            "bars": [
+              29,
+              30
+            ],
+            "note": "A4",
+            "beat": 56,
+            "duration": 4
+          }
+        ],
+        "tuplets": [],
+        "occurrenceDecisions": [
+          "m8–9: E4@14/3 spans the barline; E4@17/0.5 remains a new attack. m17–18: G4@32/3 ends before the quarter rest at 35. m29–30: A4@56/4 spans the final two bars as one attack.",
+          "m6 G4@10/1.5 and G4@11.5/0.5, m20 A4@38/1.5 and A4@39.5/0.5, and m26 G4@51/0.75 and G4@51.75/0.25 are separate attacks, not ties.",
+          "m12 preserves the upper-tonic C5 followed by B4 and A4 sixteenths; m24 lower-dot 6 becomes A3 at 46. Every later occurrence was read rather than copied from an earlier phrase.",
+          "Different-pitch arcs remain slurs. Breath marks at m13 and m21 add no quantified silence and shorten no note."
+        ],
+        "omittedOrnaments": [
+          {
+            "sourceMeasure": 7,
+            "beat": 12,
+            "sourceDegree": "small grace 5 before main 6",
+            "sourcePitch": "Bb4",
+            "compiledPitch": "G4",
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          }
+        ],
+        "ornamentDecision": "One unquantified grace degree 5 before m7 is deliberately omitted from metric single-note practice. No guessed duration, extra attack or stolen beat is introduced. This is a disclosed adaptation, not an ornament-complete literal engraving realization.",
+        "silentWindows": [
+          {
+            "beat": 0,
+            "duration": 0.5
+          },
+          {
+            "beat": 8,
+            "duration": 0.5
+          },
+          {
+            "beat": 35,
+            "duration": 1
+          },
+          {
+            "beat": 48,
+            "duration": 1
+          }
+        ],
+        "allLayerSilenceClaim": true,
+        "restScope": "Four source rests in the selected principal vocal line: [0,0.5), [8,8.5), [35,36), [48,49). The last rest is also printed in the lower chorus voice. No backing is selected, so these are silent windows of this single-melody adaptation; they do not certify silence in other arrangements or stop natural decay.",
+        "breathMarks": [
+          {
+            "sourceMeasure": 13,
+            "addsBeats": 0
+          },
+          {
+            "sourceMeasure": 21,
+            "addsBeats": 0
+          }
+        ],
+        "endingRestBeats": 0,
+        "selectedEndIsFullSongEnding": false,
+        "selectedEndIsSelectedEditionEnding": true,
+        "endingDecision": "Final A4 attacks at 56 and lasts four beats through m29–30 to the double bar at 60. Do not reattack at 58, clip the tie, invent an ending rest or turn notation duration into a PCM/effects-tail cutoff.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "versionDecision": "This deliberately selected textbook edition does not prove the unavailable Qupu version-three source or old encoding wrong. All 63 onset/duration pairs agree, while the first 54 old pitches through beat 50 are one octave higher and the last nine from 51 already agree; this is not a global octave-down operation on the old file.",
+        "supportDecision": "No backing is added or borrowed. There is no existing source sibling for this id. The old melody fails the actual compatibility guard despite identical timings, title family and 96 BPM; synthetic old-backed candidates must be rejected by both provider paths.",
+        "sourcePixelReview": "The compiler and independent reviewer each read the actual textbook pages before comparison; all 63 tuples, 30 bar spans, three ties and four rests agree. The implementation worker also viewed pages 41–42, the colophon and following unrelated page 43. These are independent readings of one edition, not independent source editions.",
+        "independentSourceTupleSha256": "f24dc597902e95be98b3888ffa98a561a901762fab014b8fa83041851cb326e0",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only",
+        "rightsNotice": "The textbook colophon reserves copyright. Public readability is not reproduction or publication permission. Source PDF, page images, lyrics and full private source fixtures stay outside project packages. This reversible private-preview adoption does not authorize commit, push, publication or deployment."
+      },
+      "archivedEdition": {
+        "file": "data/archives/rang-wo-men-dang-qi-shuang-jiang-v2.4.34.json",
+        "fileSha256": "62a0aa1a5621116ebb8d0b10691f8aaeccc0ff90ee4291019ca95b40aa795052",
+        "purpose": "Byte-exact developer recovery of all 63 old steps, original display strings, 96 BPM, 2/4, 0.9 suggestion and complete source metadata. No additional card, restore UI, HTTP archive route or precache entry."
+      },
+      "historicalSourceFeatures": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "unsupported": [
+          "不含器乐前奏、歌词换段间奏及重复演唱；末尾采用最终结束句。",
+          "省略装饰倚音与第二合唱声部，仅保留主旋律。",
+          "整条旋律升高一个八度，避免结尾E3超出21音C调琴音域。"
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "中国曲谱网《让我们荡起双桨》领唱合唱谱（版本三）",
+            "url": "https://www.qupu123.com/shaoer/qizi/p53613.html"
+          },
+          {
+            "label": "人人钢琴网 降E调双手简谱（对照）",
+            "url": "https://www.everyonepiano.cn/Number-1144.html"
+          }
+        ],
+        "transcriptionScope": "one-strophe-and-refrain",
+        "suitability": {
+          "status": "conditional",
+          "scope": "one-strophe-and-refrain",
+          "reason": "保留一段主歌与副歌；整体升八度至 E4-C6，避免孤立替换结尾低音，保留长音和休止。",
+          "reviewRequired": [
+            "高音区音色、快速经过音及长音衰减需实体琴试听；不能仅因包含长音判为不适合。",
+            "已完成源谱乐句、浏览器音高与起音时序核对，未做原唱录音盲听或实体琴验收。"
+          ]
+        }
+      }
+    },
     "suitability": {
       "status": "conditional",
-      "scope": "one-strophe-and-refrain",
-      "reason": "保留一段主歌与副歌；整体升八度至 E4-C6，避免孤立替换结尾低音，保留长音和休止。",
+      "scope": "selected-complete-printed-strophe-and-refrain-principal-voice",
+      "reason": "30小节、60拍的63次主旋律起音经独立源谱复核；统一降3半音后为A3–C5，保留全部音程、延音与休止。十六分音符及G4到A3同侧跳进仍需实琴检验。",
       "reviewRequired": [
-        "高音区音色、快速经过音及长音衰减需实体琴试听；不能仅因包含长音判为不适合。",
-        "已完成源谱乐句、浏览器音高与起音时序核对，未做原唱录音盲听或实体琴验收。"
+        "参考录音比较、浏览器音频验收及实体琴演奏仍须分别完成，不能由JSON或源谱检验代替。",
+        "最快间隔为0.25拍：96 BPM下156.25毫秒，0.9建议倍率下约173.61毫秒；不据较低音区自动声称更容易。",
+        "公开可读不等于授权出版；版权及公开发行许可仍未确认。"
       ]
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

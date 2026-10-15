@@ -1,161 +1,291 @@
 {
   "schemaVersion": 1,
   "id": "ju-ci-lang-de-xia-tian",
-  "title": "《菊次郎的夏天》",
+  "title": "《菊次郎的夏天》（首主题）",
   "uploader": "system",
-  "practiceTitle": "《菊次郎的夏天》练习轨道",
-  "scoreTitle": "《菊次郎的夏天》简谱进度",
-  "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴单音演奏谱整理。",
-  "difficulty": "easy",
-  "bpm": 80,
-  "defaultSpeedFactor": 0.9,
-  "beatsPerMeasure": 4,
+  "practiceTitle": "《菊次郎的夏天》（首主题）练习轨道",
+  "scoreTitle": "《菊次郎的夏天》（首主题）简谱进度",
+  "hint": "EOP C调钢琴版第8–23小节上声部首主题，61个单音、32拍；保留原谱2/4、96 BPM、七处同音延音和五处旋律休止。十六分音与同侧连拨建议先用0.4倍速分段练习；仅练单音，省略前奏、伴奏及后续段落。",
+  "difficulty": "medium",
+  "bpm": 96,
+  "defaultSpeedFactor": 0.4,
+  "beatsPerMeasure": 2,
   "key": "C",
   "steps": [
     [
       "G4",
+      1,
+      0.25
+    ],
+    [
+      "C5",
+      1.25,
+      0.25
+    ],
+    [
+      "D5",
+      1.5,
+      0.25
+    ],
+    [
+      "E5",
+      1.75,
+      0.25
+    ],
+    [
+      "D5",
       2,
       0.5
     ],
     [
       "C5",
       2.5,
-      0.5
+      0.25
+    ],
+    [
+      "C5",
+      2.75,
+      1.25
+    ],
+    [
+      "G4",
+      5,
+      0.25
+    ],
+    [
+      "C5",
+      5.25,
+      0.25
     ],
     [
       "D5",
-      3,
+      5.5,
+      0.25
+    ],
+    [
+      "E5",
+      5.75,
+      0.25
+    ],
+    [
+      "D5",
+      6,
+      0.5
+    ],
+    [
+      "C5",
+      6.5,
+      0.25
+    ],
+    [
+      "D5",
+      6.75,
+      0.75
+    ],
+    [
+      "E5",
+      7.5,
       0.5
     ],
     [
       "E5",
-      3.5,
-      0.5
-    ],
-    [
-      "D5",
-      4,
+      8,
       1
     ],
     [
-      "C5",
-      5,
-      0.5
-    ],
-    [
-      "C5",
-      5.5,
-      0.5
-    ],
-    [
-      "C5",
-      6,
-      2
-    ],
-    [
       "G4",
+      9,
+      0.25
+    ],
+    [
+      "C5",
+      9.25,
+      0.25
+    ],
+    [
+      "D5",
+      9.5,
+      0.25
+    ],
+    [
+      "E5",
+      9.75,
+      0.25
+    ],
+    [
+      "D5",
       10,
       0.5
     ],
     [
       "C5",
       10.5,
-      0.5
-    ],
-    [
-      "D5",
-      11,
-      0.5
-    ],
-    [
-      "E5",
-      11.5,
-      0.5
-    ],
-    [
-      "D5",
-      12,
-      1
+      0.25
     ],
     [
       "C5",
+      10.75,
+      1.25
+    ],
+    [
+      "G4",
       13,
-      0.5
+      0.25
+    ],
+    [
+      "C5",
+      13.25,
+      0.25
     ],
     [
       "D5",
       13.5,
-      0.5
+      0.25
+    ],
+    [
+      "E5",
+      13.75,
+      0.25
     ],
     [
       "D5",
       14,
-      1
+      0.5
     ],
     [
-      "E5",
-      15,
-      1
+      "C5",
+      14.5,
+      0.25
+    ],
+    [
+      "D5",
+      14.75,
+      0.75
+    ],
+    [
+      "G5",
+      15.5,
+      0.5
     ],
     [
       "E5",
       16,
-      2
+      1
     ],
     [
-      "G4",
+      "E5",
+      17,
+      0.5
+    ],
+    [
+      "F5",
+      17.5,
+      0.5
+    ],
+    [
+      "G5",
       18,
       0.5
     ],
     [
-      "C5",
+      "G5",
       18.5,
-      0.5
+      0.25
     ],
     [
-      "D5",
-      19,
-      0.5
+      "G5",
+      18.75,
+      0.75
     ],
     [
-      "E5",
+      "G5",
       19.5,
       0.5
     ],
     [
-      "D5",
+      "G5",
       20,
-      1
-    ],
-    [
-      "C5",
-      21,
       0.5
     ],
     [
+      "E5",
+      20.5,
+      0.25
+    ],
+    [
       "C5",
+      20.75,
+      0.25
+    ],
+    [
+      "E5",
       21.5,
+      0.25
+    ],
+    [
+      "F5",
+      21.75,
+      0.25
+    ],
+    [
+      "G5",
+      22,
       0.5
     ],
     [
-      "C5",
-      22,
-      2
+      "G5",
+      22.5,
+      0.25
     ],
     [
-      "G4",
+      "G5",
+      22.75,
+      0.75
+    ],
+    [
+      "G5",
+      23.5,
+      0.5
+    ],
+    [
+      "G5",
+      24,
+      0.5
+    ],
+    [
+      "E5",
+      24.5,
+      0.25
+    ],
+    [
+      "C5",
+      24.75,
+      0.25
+    ],
+    [
+      "C5",
+      25.5,
+      0.25
+    ],
+    [
+      "D5",
+      25.75,
+      0.25
+    ],
+    [
+      "E5",
       26,
       0.5
     ],
     [
-      "C5",
+      "E5",
       26.5,
-      0.5
+      0.25
     ],
     [
-      "D5",
-      27,
-      0.5
+      "E5",
+      26.75,
+      0.75
     ],
     [
       "E5",
@@ -163,219 +293,361 @@
       0.5
     ],
     [
-      "D5",
+      "E5",
       28,
-      1
+      0.5
     ],
     [
-      "C5",
+      "A5",
+      28.5,
+      0.5
+    ],
+    [
+      "E5",
       29,
       0.5
     ],
     [
-      "D5",
+      "C5",
       29.5,
       0.5
     ],
     [
       "D5",
       30,
-      1
-    ],
-    [
-      "G5",
-      31,
-      1
-    ],
-    [
-      "E5",
-      32,
       2
-    ],
-    [
-      "E5",
-      34,
-      1
-    ],
-    [
-      "F5",
-      35,
-      1
-    ],
-    [
-      "G5",
-      36,
-      1
-    ],
-    [
-      "G5",
-      37,
-      0.5
-    ],
-    [
-      "G5",
-      37.5,
-      0.5
-    ],
-    [
-      "G5",
-      38,
-      1
-    ],
-    [
-      "G5",
-      39,
-      1
-    ],
-    [
-      "G5",
-      40,
-      0.5
-    ],
-    [
-      "E5",
-      40.5,
-      0.5
-    ],
-    [
-      "C5",
-      41,
-      1
-    ],
-    [
-      "E5",
-      43,
-      0.5
-    ],
-    [
-      "F5",
-      43.5,
-      0.5
-    ],
-    [
-      "G5",
-      44,
-      1
-    ],
-    [
-      "G5",
-      45,
-      0.5
-    ],
-    [
-      "G5",
-      45.5,
-      0.5
-    ],
-    [
-      "G5",
-      46,
-      1
-    ],
-    [
-      "G5",
-      47,
-      1
-    ],
-    [
-      "G5",
-      48,
-      0.5
-    ],
-    [
-      "E5",
-      48.5,
-      0.5
-    ],
-    [
-      "C5",
-      49,
-      1
-    ],
-    [
-      "C5",
-      51,
-      0.5
-    ],
-    [
-      "D5",
-      51.5,
-      0.5
-    ],
-    [
-      "E5",
-      52,
-      1
-    ],
-    [
-      "E5",
-      53,
-      0.5
-    ],
-    [
-      "E5",
-      53.5,
-      0.5
-    ],
-    [
-      "E5",
-      54,
-      1
-    ],
-    [
-      "E5",
-      55,
-      1
-    ],
-    [
-      "E5",
-      56,
-      1
-    ],
-    [
-      "A5",
-      57,
-      1
-    ],
-    [
-      "E5",
-      58,
-      1
-    ],
-    [
-      "C5",
-      59,
-      1
-    ],
-    [
-      "D5",
-      60,
-      4
     ]
   ],
   "sourceFeatures": {
     "hasChords": false,
     "hasArpeggio": false,
-    "hasRepeats": true,
+    "hasRepeats": false,
+    "sourceTotalBeats": 32,
+    "sourceMeasureCount": 16,
+    "transcriptionScope": "selected-piano-first-theme",
+    "tempoStatus": "printed-quarter-note-tempo",
+    "sources": [
+      {
+        "label": "EOP 5457 C调简易钢琴编配",
+        "url": "https://www.everyonepiano.cn/Music-5457.html"
+      },
+      {
+        "label": "EOP 5457 公开五线谱预览第1页",
+        "url": "https://www.everyonepiano.cn/pianomusic/006/0005457/0005457-w-b-1.png"
+      }
+    ],
     "unsupported": [
-      "Source is a single-note 17-key C kalimba melody score; no chord/accompaniment layer is present."
+      "The source piano lower staff is deliberately omitted, including its written activity under the five upper-staff melody rests. No chords, backing or highest-note extraction are used.",
+      "The source accompaniment-only introduction m1–7 and continuation m24–89 are outside this editorial first-theme selection."
     ],
-    "unsureMeasures": [
-      "Source does not explicitly print a time signature; encoded as 4/4 phrases with visible long notes and rests preserved."
-    ],
+    "unsureMeasures": [],
     "sourceReview": {
-      "confidence": "high-for-melody-medium-for-rhythm",
-      "decision": "Added the visible 16-measure single-note melody; each line-start long note and trailing pickup group are kept in the same measure.",
-      "sources": [
-        {
-          "label": "中国曲谱网 菊次郎的夏天（拇指琴卡林巴琴单音简谱）",
-          "url": "https://qupu123.com/puyou/shangchuan/p348385.html"
-        },
-        {
-          "label": "中国曲谱网源图",
-          "url": "https://qupu123.com/Public/Uploads/2019/07/16/5078795d2d7a9005a8a.jpg"
+      "confidence": "source-pixel-reviewed-selected-piano-first-theme",
+      "decision": "Adopt the explicitly selected EOP first theme as an alternate edition, keeping the unavailable historical Qupu edition separate and unverified.",
+      "historicalReviewNotes": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "unsupported": [
+          "Source is a single-note 17-key C kalimba melody score; no chord/accompaniment layer is present."
+        ],
+        "unsureMeasures": [
+          "Source does not explicitly print a time signature; encoded as 4/4 phrases with visible long notes and rests preserved."
+        ],
+        "sourceReview": {
+          "confidence": "high-for-melody-medium-for-rhythm",
+          "decision": "Added the visible 16-measure single-note melody; each line-start long note and trailing pickup group are kept in the same measure.",
+          "sources": [
+            {
+              "label": "中国曲谱网 菊次郎的夏天（拇指琴卡林巴琴单音简谱）",
+              "url": "https://qupu123.com/puyou/shangchuan/p348385.html"
+            },
+            {
+              "label": "中国曲谱网源图",
+              "url": "https://qupu123.com/Public/Uploads/2019/07/16/5078795d2d7a9005a8a.jpg"
+            }
+          ]
         }
+      },
+      "historicalEditionStatus": "The prior 68-attack Qupu edition is preserved exactly. Its source remains unavailable and was not recovered or reverified; the alternate edition does not establish that it was wrong.",
+      "archivedEdition": {
+        "file": "data/archives/ju-ci-lang-de-xia-tian-v2.4.25.json",
+        "fileSha256": "d9217930906156ca047d542d1008cdcfe0c681fcdde829d8b71709275b078d3d",
+        "schemaVersion": 1,
+        "attackCount": 68,
+        "totalBeats": 64,
+        "preservation": "Exact original JSON bytes, including display strings, tempo, timing and all sourceFeatures. Developer recovery only; no restore UI or extra library card.",
+        "status": "Source-unrecovered historical edition; not declared wrong."
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-piano-first-theme",
+        "selectedEdition": "eop-5457-c-piano-upper-staff-m8-23",
+        "adoptedInVersion": "2.4.26",
+        "reviewDate": "2026-10-12",
+        "contentRevision": "summer-eop5457-first-theme-2026-10-12",
+        "scope": "Explicitly monophonic piano upper staff m8–23, including the initial quarter rest. First theme is an editorial phrase label, not a printed section title or full-composition ending.",
+        "sourceUrl": "https://www.everyonepiano.cn/Music-5457.html",
+        "sourceImageSha256": "23450167f24de4804bac3446155c8b9a119644b943ac615a85c5ccab0766f906",
+        "sourceMeasureRange": [
+          8,
+          23
+        ],
+        "sourceBeatRange": [
+          14,
+          46
+        ],
+        "sourceToExcerptBeatOffset": -14,
+        "reviewedBeatRanges": [
+          [
+            0,
+            32
+          ]
+        ],
+        "attackCount": 61,
+        "printedNoteheadCount": 68,
+        "sourceMeter": "2/4",
+        "beatUnit": "quarter-note",
+        "sourceQuarterBpm": 96,
+        "sourceKey": "C",
+        "sourceKeySignature": "none; selected melody has no accidentals",
+        "sourceVoice": "explicit-monophonic-piano-upper-staff",
+        "vocalLineCertified": false,
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 1,
+        "firstAttackBeat": 1,
+        "endingRestBeats": 0,
+        "sourceRange": [
+          "G4",
+          "A5"
+        ],
+        "compiledRange": [
+          "G4",
+          "A5"
+        ],
+        "transpositionSemitones": 0,
+        "octaveShift": 0,
+        "octaveFolding": false,
+        "melodyAccidentals": [],
+        "localPitchAlterations": [],
+        "ties": [
+          {
+            "sourceMeasure": 9,
+            "mergedAttack": [
+              "C5",
+              2.75,
+              1.25
+            ],
+            "segments": [
+              [
+                "C5",
+                2.75,
+                0.25
+              ],
+              [
+                "C5",
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 11,
+            "mergedAttack": [
+              "D5",
+              6.75,
+              0.75
+            ],
+            "segments": [
+              [
+                "D5",
+                6.75,
+                0.25
+              ],
+              [
+                "D5",
+                7,
+                0.5
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 13,
+            "mergedAttack": [
+              "C5",
+              10.75,
+              1.25
+            ],
+            "segments": [
+              [
+                "C5",
+                10.75,
+                0.25
+              ],
+              [
+                "C5",
+                11,
+                1
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 15,
+            "mergedAttack": [
+              "D5",
+              14.75,
+              0.75
+            ],
+            "segments": [
+              [
+                "D5",
+                14.75,
+                0.25
+              ],
+              [
+                "D5",
+                15,
+                0.5
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 17,
+            "mergedAttack": [
+              "G5",
+              18.75,
+              0.75
+            ],
+            "segments": [
+              [
+                "G5",
+                18.75,
+                0.25
+              ],
+              [
+                "G5",
+                19,
+                0.5
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 19,
+            "mergedAttack": [
+              "G5",
+              22.75,
+              0.75
+            ],
+            "segments": [
+              [
+                "G5",
+                22.75,
+                0.25
+              ],
+              [
+                "G5",
+                23,
+                0.5
+              ]
+            ]
+          },
+          {
+            "sourceMeasure": 21,
+            "mergedAttack": [
+              "E5",
+              26.75,
+              0.75
+            ],
+            "segments": [
+              [
+                "E5",
+                26.75,
+                0.25
+              ],
+              [
+                "E5",
+                27,
+                0.5
+              ]
+            ]
+          }
+        ],
+        "melodyOnlyRestWindows": [
+          {
+            "beat": 0,
+            "duration": 1,
+            "sourceMeasure": 8,
+            "voice": "selected-piano-upper-staff-only",
+            "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+          },
+          {
+            "beat": 4,
+            "duration": 1,
+            "sourceMeasure": 10,
+            "voice": "selected-piano-upper-staff-only",
+            "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+          },
+          {
+            "beat": 12,
+            "duration": 1,
+            "sourceMeasure": 14,
+            "voice": "selected-piano-upper-staff-only",
+            "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+          },
+          {
+            "beat": 21,
+            "duration": 0.5,
+            "sourceMeasure": 18,
+            "voice": "selected-piano-upper-staff-only",
+            "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+          },
+          {
+            "beat": 25,
+            "duration": 0.5,
+            "sourceMeasure": 20,
+            "voice": "selected-piano-upper-staff-only",
+            "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+          }
+        ],
+        "repeatExpansion": "none-all-selected-bars-written-out",
+        "formDecision": "Omit accompaniment-only m1–7. Retain all of m8–23. D5 at excerpt beat 30 lasts 2 beats to the boundary at 32. Stop before the fresh m24 pickup; later written-out returns, contrasting material and the full ending through m89 are outside this selection.",
+        "sourceEndingCertified": false,
+        "independentReview": "All 61 final tuples, seven ties, five melody rests, meter, tempo and boundary agree after independent source-pixel review. The first independent m22 reading was G5; reinspection of the first ledger line above F5 resolved it to A5. Initial readings were not identical.",
+        "tempoDecision": "Preserve printed quarter=96 and actual 2/4. The editorial defaultSpeedFactor 0.4 is a deliberate slow-practice button suggestion, not a printed marking or a change to current/remembered speed. The runtime first-visit 0.55 selection is separate.",
+        "difficultyDecision": "Medium is an editorial conditional slow-practice rating, not a source marking or a claim that the source tempo is easy. Seven ties remove retriggers; fewer attacks alone do not establish easier playing.",
+        "practiceSignals": {
+          "minimumAttackSpacingBeats": 0.25,
+          "minimumSpacingMsAtSourceTempo": 156.25,
+          "minimumSpacingMsAtFirstVisit055": 284.09090909090907,
+          "minimumSpacingMsAtSuggested04": 390.625,
+          "consecutiveSamePitchPairs": 17,
+          "consecutiveSameSidePairs": 24,
+          "longestSameSideAttackRun": 8,
+          "maxMelodicLeapSemitones": 9,
+          "maxDisplayIndexJump": 15,
+          "interpretation": "Encoded timing and app-layout signals only; no fingering or physical-comfort guarantee."
+        },
+        "oldEditionReverified": false,
+        "versionDecision": "Select this alternate EOP first-theme edition; this is not proof that the old edition is wrong. The unavailable Qupu source is not recovered or reverified. After unfolding seven EOP ties, all 68 pitch heads agree in sequence with the old version; six notehead timing tuples at EOP m18/m20 differ after a comparison-only halving of old beat values.",
+        "timebaseDecision": "The EOP 32 quarter beats and historical 64 encoded beats use different notation/timebases. This does not mean that half of the familiar thematic outline was removed. Do not halve the new tempo or splice in the historical rhythm.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only",
+        "rightsNotice": "The public source describes personal-study arrangements and restricts redistribution/commercial use. Public readability is not permission to publish this arrangement; this work is a private preview.",
+        "limitations": "Source-pixel agreement and executable checks protect scoped notation decisions. They do not establish reference-performance recognition, browser audio acceptance, physical kalimba ease or public distribution rights."
+      }
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-piano-first-theme-m8-23",
+      "reason": "所选首主题原样落在G4–A5，无需移调或改八度；保留熟悉的主题内容。七处延音减少重拨，不代表更容易：96 BPM下最快间隔156.25毫秒，十六分音、同音连拨和同侧移动需要明显慢练。medium与0.4倍速均为编辑练习建议，实体舒适速度待验。",
+      "reviewRequired": [
+        "Reference-recording recognition comparison pending.",
+        "Browser playback/scheduling and sample response at source tempo and the actual visible selected speed need separate verification.",
+        "Physical 21-key C kalimba play-through, fingering comfort and real decay are not performed.",
+        "Public distribution rights are not established; retain this work as a private preview."
       ]
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

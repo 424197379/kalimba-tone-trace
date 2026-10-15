@@ -1,50 +1,50 @@
 {
   "schemaVersion": 1,
   "id": "qing-cheng-shan-xia-bai-su-zhen",
-  "title": "《青城山下白素贞》",
+  "title": "《青城山下白素贞》（鞠婧祎版人声）",
   "uploader": "system",
-  "practiceTitle": "《青城山下白素贞》练习轨道",
-  "scoreTitle": "《青城山下白素贞》简谱进度",
-  "hint": "主旋律练习版；按中国曲谱网 1=C、4/4 简谱整理，主歌与副歌主要乐句已展开。",
+  "practiceTitle": "《青城山下白素贞》（鞠婧祎版人声）练习轨道",
+  "scoreTitle": "《青城山下白素贞》（鞠婧祎版人声）简谱进度",
+  "hint": "罗林斯 / ROLLINS 鞠婧祎版完整30小节人声主线，196次起音、120拍；原C调、4/4、谱面82 BPM。省略前奏、尾奏和5个非定量倚音，保留全部主音及两遍写明的收尾；无伴奏。16分音符与同音重拨宜分段慢练。",
   "difficulty": "medium",
-  "bpm": 80,
+  "bpm": 82,
   "defaultSpeedFactor": 0.9,
   "beatsPerMeasure": 4,
   "key": "C",
   "steps": [
     [
       "C5",
-      0,
-      0.75
+      0.0,
+      1.0
     ],
     [
       "A4",
-      0.75,
-      0.25
-    ],
-    [
-      "C5",
-      1,
+      1.0,
       0.5
     ],
     [
-      "G4",
+      "C5",
       1.5,
       0.5
     ],
     [
       "G4",
-      2,
+      2.0,
+      0.25
+    ],
+    [
+      "G4",
+      2.25,
       0.5
     ],
     [
       "A4",
-      2.5,
-      0.5
+      2.75,
+      0.25
     ],
     [
       "G4",
-      3,
+      3.0,
       0.5
     ],
     [
@@ -54,7 +54,7 @@
     ],
     [
       "E4",
-      4,
+      4.0,
       0.5
     ],
     [
@@ -64,7 +64,7 @@
     ],
     [
       "D4",
-      5,
+      5.0,
       0.5
     ],
     [
@@ -74,12 +74,12 @@
     ],
     [
       "G4",
-      6,
-      2
+      6.0,
+      2.0
     ],
     [
-      "A3",
-      8,
+      "A4",
+      8.0,
       0.75
     ],
     [
@@ -89,42 +89,47 @@
     ],
     [
       "D5",
-      9,
-      0.5
+      9.0,
+      0.25
     ],
     [
       "C5",
+      9.25,
+      0.25
+    ],
+    [
+      "A4",
       9.5,
+      0.25
+    ],
+    [
+      "G4",
+      9.75,
+      0.25
+    ],
+    [
+      "G4",
+      10.0,
       0.5
     ],
     [
       "A4",
-      10,
-      0.5
-    ],
-    [
-      "G4",
       10.5,
-      0.5
-    ],
-    [
-      "G4",
-      11,
-      0.5
-    ],
-    [
-      "A4",
-      11.5,
       0.25
     ],
     [
       "G4",
-      11.75,
+      10.75,
       0.25
+    ],
+    [
+      "E4",
+      11.0,
+      1.0
     ],
     [
       "D4",
-      12,
+      12.0,
       0.5
     ],
     [
@@ -134,7 +139,7 @@
     ],
     [
       "A3",
-      13,
+      13.0,
       0.5
     ],
     [
@@ -143,13 +148,13 @@
       0.5
     ],
     [
-      "G4",
-      14,
-      2
+      "G3",
+      14.0,
+      2.0
     ],
     [
       "A3",
-      16,
+      16.0,
       0.5
     ],
     [
@@ -159,7 +164,7 @@
     ],
     [
       "D4",
-      17,
+      17.0,
       0.5
     ],
     [
@@ -169,12 +174,12 @@
     ],
     [
       "G4",
-      18,
-      2
+      18.0,
+      2.0
     ],
     [
       "C5",
-      20,
+      20.0,
       0.5
     ],
     [
@@ -184,7 +189,7 @@
     ],
     [
       "G4",
-      21,
+      21.0,
       0.5
     ],
     [
@@ -194,42 +199,42 @@
     ],
     [
       "G4",
-      22,
-      2
+      22.0,
+      2.0
     ],
     [
       "C5",
-      24,
-      0.75
+      24.0,
+      1.0
     ],
     [
       "A4",
-      24.75,
-      0.25
-    ],
-    [
-      "C5",
-      25,
+      25.0,
       0.5
     ],
     [
-      "G4",
+      "C5",
       25.5,
       0.5
     ],
     [
       "G4",
-      26,
+      26.0,
+      0.25
+    ],
+    [
+      "G4",
+      26.25,
       0.5
     ],
     [
       "A4",
-      26.5,
-      0.5
+      26.75,
+      0.25
     ],
     [
       "G4",
-      27,
+      27.0,
       0.5
     ],
     [
@@ -239,7 +244,7 @@
     ],
     [
       "E4",
-      28,
+      28.0,
       0.5
     ],
     [
@@ -249,7 +254,7 @@
     ],
     [
       "D4",
-      29,
+      29.0,
       0.5
     ],
     [
@@ -259,12 +264,12 @@
     ],
     [
       "G4",
-      30,
-      2
+      30.0,
+      2.0
     ],
     [
-      "A3",
-      32,
+      "A4",
+      32.0,
       0.75
     ],
     [
@@ -274,42 +279,47 @@
     ],
     [
       "D5",
-      33,
-      0.5
+      33.0,
+      0.25
     ],
     [
       "C5",
+      33.25,
+      0.25
+    ],
+    [
+      "A4",
       33.5,
+      0.25
+    ],
+    [
+      "G4",
+      33.75,
+      0.25
+    ],
+    [
+      "G4",
+      34.0,
       0.5
     ],
     [
       "A4",
-      34,
-      0.5
-    ],
-    [
-      "G4",
       34.5,
-      0.5
-    ],
-    [
-      "G4",
-      35,
-      0.5
-    ],
-    [
-      "A4",
-      35.5,
       0.25
     ],
     [
       "G4",
-      35.75,
+      34.75,
       0.25
+    ],
+    [
+      "E4",
+      35.0,
+      1.0
     ],
     [
       "D4",
-      36,
+      36.0,
       0.5
     ],
     [
@@ -319,7 +329,7 @@
     ],
     [
       "A3",
-      37,
+      37.0,
       0.5
     ],
     [
@@ -328,23 +338,23 @@
       0.5
     ],
     [
+      "G3",
+      38.0,
+      2.0
+    ],
+    [
+      "A3",
+      40.0,
+      0.5
+    ],
+    [
       "C4",
-      38,
-      2
+      40.5,
+      0.5
     ],
     [
       "D4",
-      40,
-      0.75
-    ],
-    [
-      "E4",
-      40.75,
-      0.25
-    ],
-    [
-      "D4",
-      41,
+      41.0,
       0.5
     ],
     [
@@ -353,58 +363,43 @@
       0.5
     ],
     [
-      "D4",
-      42,
-      0.5
-    ],
-    [
-      "D4",
-      42.5,
-      1.5
-    ],
-    [
       "G4",
-      44,
-      0.75
+      42.0,
+      2.0
     ],
     [
-      "A4",
-      44.75,
-      0.25
-    ],
-    [
-      "G4",
-      45,
+      "C5",
+      44.0,
       0.5
     ],
     [
       "A4",
+      44.5,
+      0.5
+    ],
+    [
+      "G4",
+      45.0,
+      0.5
+    ],
+    [
+      "E4",
       45.5,
       0.5
     ],
     [
       "G4",
-      46,
-      0.5
-    ],
-    [
-      "G4",
-      46.5,
-      1.5
-    ],
-    [
-      "A3",
-      48,
-      0.75
+      46.0,
+      2.0
     ],
     [
       "C5",
-      48.75,
-      0.25
+      48.0,
+      1.0
     ],
     [
-      "D5",
-      49,
+      "A4",
+      49.0,
       0.5
     ],
     [
@@ -413,211 +408,828 @@
       0.5
     ],
     [
+      "G4",
+      50.0,
+      0.25
+    ],
+    [
+      "G4",
+      50.25,
+      0.5
+    ],
+    [
       "A4",
-      50,
-      0.5
+      50.75,
+      0.25
     ],
     [
       "G4",
-      50.5,
-      0.5
-    ],
-    [
-      "G4",
-      51,
+      51.0,
       0.5
     ],
     [
       "A4",
       51.5,
-      0.25
-    ],
-    [
-      "G4",
-      51.75,
-      0.25
-    ],
-    [
-      "D4",
-      52,
       0.5
     ],
     [
-      "C4",
+      "E4",
+      52.0,
+      0.5
+    ],
+    [
+      "G4",
       52.5,
       0.5
     ],
     [
-      "A3",
-      53,
+      "D4",
+      53.0,
       0.5
     ],
     [
-      "C4",
+      "E4",
       53.5,
       0.5
     ],
     [
-      "C4",
-      54,
-      2
+      "G4",
+      54.0,
+      2.0
     ],
     [
-      "D4",
-      56,
+      "A4",
+      56.0,
       0.75
     ],
     [
-      "E4",
+      "C5",
       56.75,
       0.25
     ],
     [
-      "D4",
-      57,
-      0.5
+      "D5",
+      57.0,
+      0.25
     ],
     [
-      "E4",
-      57.5,
-      0.5
-    ],
-    [
-      "D4",
-      58,
-      0.5
-    ],
-    [
-      "D4",
-      58.5,
-      1.5
-    ],
-    [
-      "G4",
-      60,
-      0.75
+      "C5",
+      57.25,
+      0.25
     ],
     [
       "A4",
-      60.75,
+      57.5,
       0.25
     ],
     [
       "G4",
-      61,
+      57.75,
+      0.25
+    ],
+    [
+      "G4",
+      58.0,
       0.5
     ],
     [
       "A4",
+      58.5,
+      0.25
+    ],
+    [
+      "G4",
+      58.75,
+      0.25
+    ],
+    [
+      "E4",
+      59.0,
+      1.0
+    ],
+    [
+      "D4",
+      60.0,
+      0.5
+    ],
+    [
+      "C4",
+      60.5,
+      0.5
+    ],
+    [
+      "A3",
+      61.0,
+      0.5
+    ],
+    [
+      "C4",
       61.5,
       0.5
     ],
     [
-      "G4",
-      62,
-      0.5
-    ],
-    [
-      "G4",
-      62.5,
-      1.5
+      "G3",
+      62.0,
+      2.0
     ],
     [
       "A3",
-      64,
-      0.75
-    ],
-    [
-      "C5",
-      64.75,
-      0.25
-    ],
-    [
-      "D5",
-      65,
+      64.0,
       0.5
     ],
     [
-      "C5",
+      "C4",
+      64.5,
+      0.5
+    ],
+    [
+      "D4",
+      65.0,
+      0.5
+    ],
+    [
+      "E4",
       65.5,
       0.5
     ],
     [
-      "A4",
-      66,
-      0.5
+      "G4",
+      66.0,
+      2.0
     ],
     [
-      "G4",
-      66.5,
-      0.5
-    ],
-    [
-      "G4",
-      67,
+      "C5",
+      68.0,
       0.5
     ],
     [
       "A4",
-      67.5,
-      0.25
-    ],
-    [
-      "G4",
-      67.75,
-      0.25
-    ],
-    [
-      "D4",
-      68,
-      0.5
-    ],
-    [
-      "C4",
       68.5,
       0.5
     ],
     [
-      "A3",
-      69,
+      "G4",
+      69.0,
       0.5
     ],
     [
-      "C4",
+      "E4",
       69.5,
       0.5
     ],
     [
+      "G4",
+      70.0,
+      2.0
+    ],
+    [
+      "C5",
+      72.0,
+      1.0
+    ],
+    [
+      "A4",
+      73.0,
+      0.5
+    ],
+    [
+      "C5",
+      73.5,
+      0.5
+    ],
+    [
+      "G4",
+      74.0,
+      0.25
+    ],
+    [
+      "G4",
+      74.25,
+      0.5
+    ],
+    [
+      "A4",
+      74.75,
+      0.25
+    ],
+    [
+      "G4",
+      75.0,
+      0.5
+    ],
+    [
+      "A4",
+      75.5,
+      0.5
+    ],
+    [
+      "E4",
+      76.0,
+      0.5
+    ],
+    [
+      "G4",
+      76.5,
+      0.5
+    ],
+    [
+      "D4",
+      77.0,
+      0.5
+    ],
+    [
+      "E4",
+      77.5,
+      0.5
+    ],
+    [
+      "G4",
+      78.0,
+      2.0
+    ],
+    [
+      "A4",
+      80.0,
+      0.75
+    ],
+    [
+      "C5",
+      80.75,
+      0.25
+    ],
+    [
+      "D5",
+      81.0,
+      0.25
+    ],
+    [
+      "C5",
+      81.25,
+      0.25
+    ],
+    [
+      "A4",
+      81.5,
+      0.25
+    ],
+    [
+      "G4",
+      81.75,
+      0.25
+    ],
+    [
+      "G4",
+      82.0,
+      0.5
+    ],
+    [
+      "A4",
+      82.5,
+      0.25
+    ],
+    [
+      "G4",
+      82.75,
+      0.25
+    ],
+    [
+      "E4",
+      83.0,
+      1.0
+    ],
+    [
+      "D4",
+      84.0,
+      0.5
+    ],
+    [
       "C4",
-      70,
-      2
+      84.5,
+      0.5
+    ],
+    [
+      "A3",
+      85.0,
+      0.5
+    ],
+    [
+      "C4",
+      85.5,
+      0.5
+    ],
+    [
+      "G3",
+      86.0,
+      2.0
+    ],
+    [
+      "D4",
+      88.0,
+      0.75
+    ],
+    [
+      "E4",
+      88.75,
+      0.25
+    ],
+    [
+      "D4",
+      89.0,
+      0.5
+    ],
+    [
+      "E4",
+      89.5,
+      0.25
+    ],
+    [
+      "D4",
+      89.75,
+      0.25
+    ],
+    [
+      "D4",
+      90.0,
+      2.0
+    ],
+    [
+      "G4",
+      92.0,
+      0.75
+    ],
+    [
+      "A4",
+      92.75,
+      0.25
+    ],
+    [
+      "G4",
+      93.0,
+      0.5
+    ],
+    [
+      "A4",
+      93.5,
+      0.25
+    ],
+    [
+      "G4",
+      93.75,
+      0.25
+    ],
+    [
+      "G4",
+      94.0,
+      2.0
+    ],
+    [
+      "A4",
+      96.0,
+      0.75
+    ],
+    [
+      "C5",
+      96.75,
+      0.25
+    ],
+    [
+      "D5",
+      97.0,
+      0.25
+    ],
+    [
+      "C5",
+      97.25,
+      0.25
+    ],
+    [
+      "A4",
+      97.5,
+      0.25
+    ],
+    [
+      "G4",
+      97.75,
+      0.25
+    ],
+    [
+      "G4",
+      98.0,
+      0.5
+    ],
+    [
+      "A4",
+      98.5,
+      0.25
+    ],
+    [
+      "G4",
+      98.75,
+      0.25
+    ],
+    [
+      "E4",
+      99.0,
+      1.0
+    ],
+    [
+      "D4",
+      100.0,
+      0.5
+    ],
+    [
+      "C4",
+      100.5,
+      0.5
+    ],
+    [
+      "A3",
+      101.0,
+      0.5
+    ],
+    [
+      "C4",
+      101.5,
+      0.5
+    ],
+    [
+      "C4",
+      102.0,
+      2.0
+    ],
+    [
+      "D4",
+      104.0,
+      0.75
+    ],
+    [
+      "E4",
+      104.75,
+      0.25
+    ],
+    [
+      "D4",
+      105.0,
+      0.5
+    ],
+    [
+      "E4",
+      105.5,
+      0.25
+    ],
+    [
+      "D4",
+      105.75,
+      0.25
+    ],
+    [
+      "D4",
+      106.0,
+      2.0
+    ],
+    [
+      "G4",
+      108.0,
+      0.75
+    ],
+    [
+      "A4",
+      108.75,
+      0.25
+    ],
+    [
+      "G4",
+      109.0,
+      0.5
+    ],
+    [
+      "A4",
+      109.5,
+      0.25
+    ],
+    [
+      "G4",
+      109.75,
+      0.25
+    ],
+    [
+      "G4",
+      110.0,
+      2.0
+    ],
+    [
+      "A4",
+      112.0,
+      0.75
+    ],
+    [
+      "C5",
+      112.75,
+      0.25
+    ],
+    [
+      "D5",
+      113.0,
+      0.25
+    ],
+    [
+      "C5",
+      113.25,
+      0.25
+    ],
+    [
+      "A4",
+      113.5,
+      0.25
+    ],
+    [
+      "G4",
+      113.75,
+      0.25
+    ],
+    [
+      "G4",
+      114.0,
+      0.5
+    ],
+    [
+      "A4",
+      114.5,
+      0.25
+    ],
+    [
+      "G4",
+      114.75,
+      0.25
+    ],
+    [
+      "E4",
+      115.0,
+      1.0
+    ],
+    [
+      "D4",
+      116.0,
+      0.5
+    ],
+    [
+      "C4",
+      116.5,
+      0.5
+    ],
+    [
+      "A3",
+      117.0,
+      0.5
+    ],
+    [
+      "C4",
+      117.5,
+      0.5
+    ],
+    [
+      "C4",
+      118.0,
+      2.0
     ]
   ],
   "sourceFeatures": {
     "hasChords": false,
     "hasArpeggio": false,
-    "hasRepeats": true,
-    "sourceImages": [
-      "private/sheets/raw/qing-cheng-shan-xia-bai-su-zhen/qupu123-385868.jpg"
+    "hasRepeats": false,
+    "sourceTotalBeats": 120,
+    "sourceMeasureCount": 30,
+    "sourceUrls": [
+      "https://www.cnjpw.net/tongsu/88391.html",
+      "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png"
     ],
     "unsupported": [
-      "原谱有引子、D.S. 与多段歌词；本版本保留最有辨识度的主旋律段落并展开一次，未录入完整戏曲式反复。"
+      "省略原页第1–5小节器乐前奏和第36–40小节器乐尾奏；所选为完整人声主线，不是带伴奏整首录音。",
+      "省略原页第14、20、26、30、34小节各一个无定量G4倚音；E4主音时值及后续起音不变。"
     ],
-    "unsureMeasures": [
-      "m10/m16/m23 的低 6 按原谱低音点处理为 A3；若后续有演唱版音频指定，可再做细节复核。"
-    ],
+    "unsureMeasures": [],
+    "suitability": {
+      "status": "conditional",
+      "scope": "rollins-ju-jing-yi-complete-principal-vocal-m6-35",
+      "reason": "原C调G3–D5全在固定21音内，无转调或折八度。最短起音间隔0.25拍，82 BPM约183毫秒；16组相邻同音重拨、最大相邻7半音跳进及同侧快速移动仍需慢速分段与实体琴验证，不能据音域较低宣称更容易。",
+      "reviewRequired": [
+        "Reference-recording comparison not performed.",
+        "Browser/audio acceptance is separate from data adoption.",
+        "Physical kalimba play-through not performed.",
+        "Public distribution rights remain unestablished."
+      ]
+    },
     "sourceReview": {
-      "confidence": "medium-high-for-main-vocal-theme",
+      "confidence": "high-for-selected-principal-vocal-notation-only",
       "sources": [
         {
-          "label": "中国曲谱网 青城山下白素贞简谱",
-          "url": "https://www.qupu123.com/Mobile-view-id-385868.html"
+          "label": "罗林斯 / ROLLINS《青城山下白素贞》《新白娘子传奇》插曲 鞠婧祎版",
+          "url": "https://www.cnjpw.net/tongsu/88391.html"
         },
         {
-          "label": "中国曲谱网源图",
-          "url": "https://www.qupu123.com/data2/uploads/2024/07/02/8463166683621139e7f.JPG"
+          "label": "Fixed ROLLINS score image",
+          "url": "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png"
         }
-      ]
+      ],
+      "currentScopeReview": {
+        "status": "reviewed-selected-complete-vocal-edition",
+        "adoptedInVersion": "2.4.36",
+        "selectedEdition": "rollins-ju-jing-yi-complete-principal-vocal",
+        "sourceLabel": "罗林斯 / ROLLINS《青城山下白素贞》《新白娘子传奇》插曲 鞠婧祎版",
+        "sourceUrl": "https://www.cnjpw.net/tongsu/88391.html",
+        "sourceImageUrl": "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png",
+        "sourceImageSha256": "8cd195fb40ad63a2ebbb21af1e18b079ef47b0289bd3934a7e492de37cb11224",
+        "identityDecision": "The fixed image explicitly identifies 鞠婧祎版 and ROLLINS / 罗林斯. The web directory labels 庄惠茹; that inconsistent catalog performer is not used as the selected image identity.",
+        "sourceMeasureNumbers": "Editorially counted left to right and top to bottom; measure numbers are not printed.",
+        "sourcePrintedMeasureCount": 40,
+        "sourceMeasureRange": [
+          6,
+          35
+        ],
+        "distinctPrintedMelodyMeasures": 30,
+        "sourcePageBeatRange": [
+          20,
+          140
+        ],
+        "reviewedBeatRanges": [
+          [
+            0,
+            120
+          ]
+        ],
+        "sourceQuarterBpm": 82,
+        "sourceNumericTempoPrinted": true,
+        "sourceKey": "C",
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "tempoDecision": "82 BPM is the printed quarter-note tempo of this selected edition, replacing the prior 80 BPM. The preserved 0.9 suggestion and user-saved speed multiplier are separate settings.",
+        "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+        "voiceDecision": "Lyrics align directly with one monophonic numbered line; this is not the highest note of an accompaniment or a reconstructed vocal from bass/harmony.",
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              6,
+              35
+            ],
+            "beats": [
+              0,
+              120
+            ],
+            "voice": "lyric-aligned-single-vocal-line"
+          }
+        ],
+        "excludedSections": [
+          {
+            "sourceMeasures": [
+              1,
+              5
+            ],
+            "kind": "instrumental-intro"
+          },
+          {
+            "sourceMeasures": [
+              36,
+              40
+            ],
+            "kind": "instrumental-outro"
+          }
+        ],
+        "omittedSectionsAreRests": false,
+        "selectedEndIsSelectedEditionEnding": true,
+        "selectedEndIsFullSongEnding": false,
+        "formDecision": "All 30 lyric-aligned bars and both separately written closing sequences are retained. No repeat, D.S./D.C., alternate ending or coda is expanded; similar passages were read occurrence by occurrence.",
+        "repeatSignsPresent": false,
+        "repeatExpansion": "none-all-30-selected-bars-written-out",
+        "allPrintedOccurrencesReviewed": true,
+        "metricNoteheadCount": 196,
+        "principalAttackCount": 196,
+        "ties": [],
+        "tieContinuationCount": 0,
+        "tuplets": [],
+        "slurDecision": "Different-pitch and multi-pitch arcs are slurs. G-A-G has intervening A and is not a same-pitch tie. All 16 adjacent same-pitch pairs retain separate attacks.",
+        "independentSamePitchReattackPairs": 16,
+        "silentWindows": [],
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 0,
+        "endingRestBeats": 0,
+        "ornamentDecision": "Five unquantified G4 grace notes are deliberately omitted. No guessed duration is added and no main-note time is stolen. This is not an ornament-complete literal realization.",
+        "omittedOrnaments": [
+          {
+            "sourceMeasure": 14,
+            "beat": 35,
+            "sourcePitch": "G4",
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 20,
+            "beat": 59,
+            "sourcePitch": "G4",
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 26,
+            "beat": 83,
+            "sourcePitch": "G4",
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 30,
+            "beat": 99,
+            "sourcePitch": "G4",
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 34,
+            "beat": 115,
+            "sourcePitch": "G4",
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          }
+        ],
+        "absoluteOctaveConvention": "Undotted 1 = C4; one upper dot raises an octave and one lower dot lowers it. This compiler convention does not assert the singer recording register.",
+        "sourceRange": [
+          "G3",
+          "D5"
+        ],
+        "compiledRange": [
+          "G3",
+          "D5"
+        ],
+        "sourcePitchClasses": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ],
+        "additionalMelodyAccidentals": [],
+        "transpositionSemitones": 0,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "localPitchAlterations": [],
+        "accompanimentDecision": "No accompaniment selected or inferred; the prior edition cannot supply either accompaniment provider path.",
+        "versionDecision": "A deliberate complete vocal edition replaces the shorter unavailable-source reading. This does not prove the prior edition wrong and does not splice its local reading into the new selection.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "independentSourceReaders": 2,
+        "sourceReviewMethod": "Two independent readings of the same fixed score image matched every principal pitch/onset/duration tuple and all 30 bars before adoption; this is not two independent published sources.",
+        "firstFrozenSourceReadingSha256": "802f3f7941e3c95cb30ecf3f3733343f4a3d88e1bc3bb14146f20a888880174f",
+        "independentSourceFixtureSha256": "1777fdcc60b8b34727bb3d711cc3de63f35c9d5b66312bad6b77f5fc9149a96b",
+        "independentSourceTupleSha256": "f0e8609f9e93d42ebbb8558affcf6958581e717c2b517767dcfb399b29ae4cf5",
+        "sourcePixels": "complete fixed image and lyric-aligned vocal boundary viewed at data adoption",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only"
+      },
+      "historicalSourceFeatures": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/qing-cheng-shan-xia-bai-su-zhen/qupu123-385868.jpg"
+        ],
+        "unsupported": [
+          "原谱有引子、D.S. 与多段歌词；本版本保留最有辨识度的主旋律段落并展开一次，未录入完整戏曲式反复。"
+        ],
+        "unsureMeasures": [
+          "m10/m16/m23 的低 6 按原谱低音点处理为 A3；若后续有演唱版音频指定，可再做细节复核。"
+        ],
+        "sourceReview": {
+          "confidence": "medium-high-for-main-vocal-theme",
+          "sources": [
+            {
+              "label": "中国曲谱网 青城山下白素贞简谱",
+              "url": "https://www.qupu123.com/Mobile-view-id-385868.html"
+            },
+            {
+              "label": "中国曲谱网源图",
+              "url": "https://www.qupu123.com/data2/uploads/2024/07/02/8463166683621139e7f.JPG"
+            }
+          ]
+        }
+      },
+      "archivedEdition": {
+        "file": "data/archives/qing-cheng-shan-xia-bai-su-zhen-v2.4.35.json",
+        "fileSha256": "60ef963602fd3a4a7cd83d340d60ff424af4e04d7ab5d69497f37c322c1df7c9",
+        "scope": "Complete byte-exact prior 2.4.35 file, 116 attacks / 72 beats / 80 BPM; unavailable source image is not reverified. Developer recovery only; no extra card or restore UI."
+      }
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

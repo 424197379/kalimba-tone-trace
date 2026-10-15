@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "id": "qing-hua-ci",
-  "title": "《青花瓷》",
+  "title": "《青花瓷》（主题短版）",
   "uploader": "system",
-  "practiceTitle": "《青花瓷》练习轨道",
-  "scoreTitle": "《青花瓷》简谱进度",
-  "hint": "采用用户提供的一页24小节编配，共24小节，约61秒，收录范围以此谱为准。按图片C调和94 BPM保留上声部旋律、休止与延音，省略伴奏。",
+  "practiceTitle": "《青花瓷》（主题短版）练习轨道",
+  "scoreTitle": "《青花瓷》（主题短版）简谱进度",
+  "hint": "采用EOP简易钢琴谱第25–40小节的单音上声部，83次拨音、64拍；96 BPM为谱面速度。保留休止和延音，无伴奏；仍有同音连拨与跳进，建议慢练。",
   "difficulty": "hard",
-  "bpm": 94,
+  "bpm": 96,
   "defaultSpeedFactor": 1,
   "beatsPerMeasure": 4,
   "key": "C",
@@ -19,7 +19,7 @@
     ],
     [
       "G5",
-      3,
+      3.0,
       0.5
     ],
     [
@@ -39,12 +39,12 @@
     ],
     [
       "A4",
-      5,
+      5.0,
       1
     ],
     [
       "D5",
-      6,
+      6.0,
       0.5
     ],
     [
@@ -54,7 +54,7 @@
     ],
     [
       "G5",
-      7,
+      7.0,
       0.5
     ],
     [
@@ -74,7 +74,7 @@
     ],
     [
       "G5",
-      11,
+      11.0,
       0.5
     ],
     [
@@ -94,12 +94,12 @@
     ],
     [
       "G4",
-      13,
+      13.0,
       1
     ],
     [
       "D5",
-      14,
+      14.0,
       0.5
     ],
     [
@@ -109,7 +109,7 @@
     ],
     [
       "G5",
-      15,
+      15.0,
       0.5
     ],
     [
@@ -129,7 +129,7 @@
     ],
     [
       "D5",
-      19,
+      19.0,
       0.5
     ],
     [
@@ -149,7 +149,7 @@
     ],
     [
       "G5",
-      21,
+      21.0,
       0.5
     ],
     [
@@ -159,7 +159,7 @@
     ],
     [
       "G5",
-      22,
+      22.0,
       0.5
     ],
     [
@@ -169,7 +169,7 @@
     ],
     [
       "E5",
-      23,
+      23.0,
       0.5
     ],
     [
@@ -189,7 +189,7 @@
     ],
     [
       "D5",
-      27,
+      27.0,
       0.5
     ],
     [
@@ -223,138 +223,133 @@
       0.5
     ],
     [
-      "E5",
+      "G5",
       32,
-      2
+      0.5
     ],
     [
-      "D5",
+      "E5",
+      32.5,
+      1.5
+    ],
+    [
+      "G5",
       34.5,
       0.5
     ],
     [
-      "C5",
-      35,
-      0.5
-    ],
-    [
-      "A4",
-      35.5,
-      0.5
-    ],
-    [
-      "C5",
-      36,
-      1
-    ],
-    [
-      "C5",
-      37,
-      0.5
-    ],
-    [
-      "A4",
-      37.5,
-      0.5
-    ],
-    [
-      "C5",
-      38,
-      1
-    ],
-    [
-      "C5",
-      39,
-      0.5
-    ],
-    [
-      "A4",
-      39.5,
-      0.5
-    ],
-    [
-      "C5",
-      40,
-      0.5
-    ],
-    [
-      "A4",
-      40.5,
-      0.5
-    ],
-    [
-      "G4",
-      41,
-      1
-    ],
-    [
-      "D5",
-      42.5,
-      0.5
-    ],
-    [
-      "C5",
-      43,
-      0.5
-    ],
-    [
-      "A4",
-      43.5,
-      0.5
-    ],
-    [
-      "C5",
-      44,
-      1
-    ],
-    [
-      "C5",
-      45,
-      0.5
-    ],
-    [
-      "A4",
-      45.5,
-      0.5
-    ],
-    [
-      "C5",
-      46,
-      1
-    ],
-    [
-      "C5",
-      47,
+      "G5",
+      35.0,
       0.5
     ],
     [
       "E5",
-      47.5,
+      35.5,
       0.5
     ],
     [
       "D5",
-      48,
+      36,
       0.5
     ],
     [
-      "C5",
-      48.5,
-      0.5
-    ],
-    [
-      "C5",
-      49,
-      1
-    ],
-    [
-      "G4",
-      50.5,
+      "E5",
+      36.5,
       0.5
     ],
     [
       "A4",
-      51,
+      37.0,
+      1
+    ],
+    [
+      "D5",
+      38.0,
+      0.5
+    ],
+    [
+      "E5",
+      38.5,
+      0.5
+    ],
+    [
+      "G5",
+      39.0,
+      0.5
+    ],
+    [
+      "E5",
+      39.5,
+      0.5
+    ],
+    [
+      "D5",
+      40,
+      2
+    ],
+    [
+      "G5",
+      42.5,
+      0.5
+    ],
+    [
+      "G5",
+      43.0,
+      0.5
+    ],
+    [
+      "E5",
+      43.5,
+      0.5
+    ],
+    [
+      "D5",
+      44,
+      0.5
+    ],
+    [
+      "E5",
+      44.5,
+      0.5
+    ],
+    [
+      "G4",
+      45.0,
+      1
+    ],
+    [
+      "D5",
+      46.0,
+      0.5
+    ],
+    [
+      "E5",
+      46.5,
+      0.5
+    ],
+    [
+      "G5",
+      47.0,
+      0.5
+    ],
+    [
+      "D5",
+      47.5,
+      0.5
+    ],
+    [
+      "C5",
+      48,
+      2
+    ],
+    [
+      "C5",
+      50.5,
+      0.5
+    ],
+    [
+      "D5",
+      51.0,
       0.5
     ],
     [
@@ -363,28 +358,38 @@
       0.5
     ],
     [
-      "E5",
+      "G5",
       52,
-      1
-    ],
-    [
-      "E5",
-      53,
       0.5
     ],
     [
-      "D5",
+      "A5",
+      52.5,
+      0.5
+    ],
+    [
+      "G5",
+      53.0,
+      0.5
+    ],
+    [
+      "E5",
       53.5,
       0.5
     ],
     [
-      "E5",
-      54,
-      1
+      "G5",
+      54.0,
+      0.5
     ],
     [
       "E5",
-      55,
+      54.5,
+      0.5
+    ],
+    [
+      "E5",
+      55.0,
       0.5
     ],
     [
@@ -393,279 +398,34 @@
       0.5
     ],
     [
-      "E5",
+      "D5",
       56,
-      0.5
-    ],
-    [
-      "G5",
-      56.5,
       1
     ],
     [
-      "E5",
+      "G4",
       57.5,
       0.5
     ],
     [
       "E5",
-      58.5,
+      58.0,
+      1
+    ],
+    [
+      "D5",
+      59.0,
       0.5
     ],
     [
-      "E5",
-      59,
-      0.5
-    ],
-    [
-      "E5",
+      "D5",
       59.5,
-      0.5
+      1
     ],
     [
-      "D5",
-      60,
-      0.5
-    ],
-    [
-      "D5",
+      "C5",
       60.5,
-      0.5
-    ],
-    [
-      "D5",
-      61,
-      0.5
-    ],
-    [
-      "D5",
-      61.5,
-      0.5
-    ],
-    [
-      "D5",
-      62,
-      1
-    ],
-    [
-      "C5",
-      63,
-      0.5
-    ],
-    [
-      "E5",
-      63.5,
-      1
-    ],
-    [
-      "D5",
-      64.5,
-      1.5
-    ],
-    [
-      "D5",
-      66.5,
-      0.5
-    ],
-    [
-      "C5",
-      67,
-      0.5
-    ],
-    [
-      "A4",
-      67.5,
-      0.5
-    ],
-    [
-      "C5",
-      68,
-      1
-    ],
-    [
-      "C5",
-      69,
-      0.5
-    ],
-    [
-      "A4",
-      69.5,
-      0.5
-    ],
-    [
-      "C5",
-      70,
-      1
-    ],
-    [
-      "C5",
-      71,
-      0.5
-    ],
-    [
-      "A4",
-      71.5,
-      0.5
-    ],
-    [
-      "C5",
-      72,
-      0.5
-    ],
-    [
-      "A4",
-      72.5,
-      0.5
-    ],
-    [
-      "G4",
-      73,
-      1
-    ],
-    [
-      "G4",
-      74.5,
-      0.5
-    ],
-    [
-      "A4",
-      75,
-      0.5
-    ],
-    [
-      "E5",
-      75.5,
-      0.5
-    ],
-    [
-      "G5",
-      76,
-      1
-    ],
-    [
-      "G5",
-      77,
-      0.5
-    ],
-    [
-      "E5",
-      77.5,
-      0.5
-    ],
-    [
-      "G5",
-      78,
-      1
-    ],
-    [
-      "G5",
-      79,
-      0.5
-    ],
-    [
-      "E5",
-      79.5,
-      0.5
-    ],
-    [
-      "D5",
-      80,
-      0.5
-    ],
-    [
-      "C5",
-      80.5,
-      0.5
-    ],
-    [
-      "C5",
-      81,
-      1
-    ],
-    [
-      "D5",
-      82.5,
-      0.5
-    ],
-    [
-      "C5",
-      83,
-      0.5
-    ],
-    [
-      "D5",
-      83.5,
-      0.5
-    ],
-    [
-      "E5",
-      84,
-      0.5
-    ],
-    [
-      "D5",
-      84.5,
-      0.5
-    ],
-    [
-      "D5",
-      85,
-      0.5
-    ],
-    [
-      "C5",
-      85.5,
-      0.5
-    ],
-    [
-      "D5",
-      86,
-      1
-    ],
-    [
-      "C5",
-      87,
-      0.5
-    ],
-    [
-      "A4",
-      87.5,
-      0.5
-    ],
-    [
-      "D5",
-      88,
-      0.5
-    ],
-    [
-      "C5",
-      88.5,
-      0.5
-    ],
-    [
-      "C5",
-      89,
-      0.5
-    ],
-    [
-      "A4",
-      89.5,
-      0.5
-    ],
-    [
-      "C5",
-      90,
-      1
-    ],
-    [
-      "C5",
-      91,
-      0.5
-    ],
-    [
-      "C5",
-      91.5,
-      4.5
+      3.5
     ]
   ],
   "sourceFeatures": {
@@ -673,30 +433,265 @@
     "hasArpeggio": true,
     "hasRepeats": false,
     "unsupported": [
-      "本版为单音主旋律练习；省略下声部伴奏，主声部叠音取最高音。",
-      "仅编译用户提供图片的完整编配范围，不补写图片之外的原曲段落。"
+      "选取简易钢琴编配中明确的单音上声部，省略全部下声部伴奏及末尾琶音；不是从叠音中猜最高音。",
+      "主题短版只限定练习范围，不是完整原曲或已核准人声转谱；当前不加入自动伴奏。",
+      "谱源公开再发布权限尚未确定，仅作本地预览；参考录音、浏览器试听与实体琴验收分别待查。"
     ],
     "unsureMeasures": [],
-    "arranger": "羊阿宝工作室",
     "sources": [
       {
-        "label": "用户直接提供的羊阿宝工作室《青花瓷》一页图片谱；音高、速度、节奏均来自该图"
+        "label": "EveryonePiano #1676 简易钢琴编配，选第25–40小节上声部",
+        "url": "https://www.everyonepiano.cn/Number-1676.html"
+      },
+      {
+        "label": "同一EOP编配的五线谱输出，供节奏及延音端点核对；非第二个独立来源",
+        "url": "https://www.everyonepiano.cn/Stave-1676.html"
       }
     ],
-    "transcriptionScope": "supplied-arrangement-24-measures",
-    "sourceMeasureCount": 24,
-    "sourceTotalBeats": 96,
+    "transcriptionScope": "selected-piano-theme-excerpt-source-m25-40",
+    "sourceMeasureCount": 16,
+    "sourceTotalBeats": 64,
     "sourceKey": "C",
     "transpositionSemitones": 0,
     "tempoStatus": "printed-quarter-note-tempo",
     "meterStatus": "printed-4/4",
     "suitability": {
       "status": "conditional",
-      "scope": "supplied-arrangement-24-measures",
-      "reason": "所提供C调编配的旋律音均落在固定21音自然音范围；保留旋律轮廓、节奏和延音，伴奏简化。",
+      "scope": "selected-piano-theme-excerpt-source-m25-40",
+      "reason": "16小节主题练习范围更短，但不代表技巧更简单：G4–A5音域、最短半拍及最大9半音跳进均未降低。明确单音上声部原调可落在固定21音范围，同音连拨、换手与长音自然衰减仍须慢练确认。",
       "reviewRequired": [
-        "实体琴换手、音色衰减与主观旋律辨识度尚待试听。"
+        "参考录音对照及主观旋律辨识度尚未试听。",
+        "实际浏览器1.0×和所选练习倍率的音频、起音与休止待核；曲谱defaultSpeedFactor不代表用户当前倍率。",
+        "实体21音卡林巴换手、同侧连续拨音、跳进及衰减待实弹。",
+        "公开发布前另行确定作品及所选编配的再发布权限。"
       ]
+    },
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-piano-theme-excerpt",
+        "reviewDate": "2026-10-12",
+        "adoptedInVersion": "2.4.20",
+        "contentRevision": "porcelain-eop-upper-theme-m25-40-2026-10-12",
+        "selectedEdition": "eop-1676-simple-piano-upper-staff-m25-40",
+        "sourceUrl": "https://www.everyonepiano.cn/Number-1676.html",
+        "parallelStaffUrl": "https://www.everyonepiano.cn/Stave-1676.html",
+        "parallelExportsAreIndependentSources": false,
+        "sourceAssetHashes": {
+          "eop-number1.png": "e290886fce2779720fbd7f76442d6d8af50f7e7657f53803dc77f1b9a01845d9",
+          "eop-number2.png": "3ebedd2a975d6408fffd11dfe341b1a0f8a847aec50ad6aa4e4b544c96b5b283",
+          "eop-number3.png": "01525afd9dafecc8121e9cb5787c463928d463c99a3efbb94c075fc65b08eba4",
+          "eop-staff1.png": "42ebcbd57528eeccd704e92968bc74a12a8141faa168971d05f641ecda63dcd7",
+          "eop-staff2.png": "3156d9269f9a5e61d7eda009ec90897e6e129d70ef1a1a6a2350b05e37682f51"
+        },
+        "sourceMeasureRange": [
+          25,
+          40
+        ],
+        "sourceBeatRange": [
+          96,
+          160
+        ],
+        "sourceToExcerptBeatOffset": -96,
+        "reviewedBeatRanges": [
+          [
+            0,
+            64
+          ]
+        ],
+        "sourceVoice": "explicit-monophonic-upper-staff",
+        "voiceDecision": "Select the separately notated monophonic piano treble part, not the highest note of a chord. Omit the entire lower staff, including its closing arpeggio.",
+        "vocalLineCertified": false,
+        "sectionLabel": "Theme excerpt is an editorial scope label. The EOP score labels Piano and has no printed chorus heading or lyrics; this is not a certified vocal transcription or the complete recording.",
+        "sourceKey": "C",
+        "sourceQuarterBpm": 96,
+        "sourceMeter": "4/4",
+        "sourceRange": [
+          "G4",
+          "A5"
+        ],
+        "compiledRange": [
+          "G4",
+          "A5"
+        ],
+        "transpositionSemitones": 0,
+        "octaveFolding": false,
+        "melodyAccidentals": [],
+        "localPitchAlterations": [],
+        "pickupBeats": 0,
+        "openingDecision": "Source m25 is a full four-beat bar with 2.5 beats of written melody rest; first attack G5 at 2.5. No incoming tie, removed pickup or added note.",
+        "repeatExpansion": "none-all-selected-bars-written-out",
+        "melodyRestScope": "upper-staff-only-lower-source-accompaniment-omitted",
+        "melodyRestWindows": [
+          {
+            "beat": 0,
+            "duration": 2.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 10,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 18,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 26,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 34,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 42,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 50,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          },
+          {
+            "beat": 57,
+            "duration": 0.5,
+            "kind": "written-melody-rest"
+          }
+        ],
+        "ties": [
+          {
+            "sourceMeasures": [
+              32
+            ],
+            "mergedAttack": [
+              "D5",
+              29.5,
+              1
+            ],
+            "segments": [
+              [
+                "D5",
+                29.5,
+                0.5
+              ],
+              [
+                "D5",
+                30,
+                0.5
+              ]
+            ],
+            "evidence": "Same D5 eighths joined by an explicit arc in the staff and numbered exports."
+          },
+          {
+            "sourceMeasures": [
+              39,
+              40
+            ],
+            "mergedAttack": [
+              "D5",
+              59.5,
+              1
+            ],
+            "segments": [
+              [
+                "D5",
+                59.5,
+                0.5
+              ],
+              [
+                "D5",
+                60,
+                0.5
+              ]
+            ],
+            "evidence": "Explicit cross-bar eighth-to-eighth tie; preceding D5 at 59 is a separate attack."
+          },
+          {
+            "sourceMeasures": [
+              40
+            ],
+            "mergedAttack": [
+              "C5",
+              60.5,
+              3.5
+            ],
+            "segments": [
+              [
+                "C5",
+                60.5,
+                1.5
+              ],
+              [
+                "C5",
+                62,
+                2
+              ]
+            ],
+            "evidence": "Dotted quarter tied to half; no retrigger at beat 62."
+          }
+        ],
+        "separateAttackExamples": [
+          [
+            [
+              "G5",
+              31.5,
+              0.5
+            ],
+            [
+              "G5",
+              32,
+              0.5
+            ]
+          ],
+          [
+            [
+              "D5",
+              59,
+              0.5
+            ],
+            [
+              "D5",
+              59.5,
+              1
+            ]
+          ]
+        ],
+        "endingRestBeats": 0,
+        "endingDecision": "Final C5 at 60.5 lasts 3.5 beats to the printed final double bar at 64. No invented ending silence, repeat, extension or replacement of natural kalimba decay.",
+        "oldEditionReverified": false,
+        "versionDecision": "Deliberately selected shorter piano edition, not proof that the old edition is wrong. Old beats [0,32) contain the same first 42 tuples; later form and timing differ. Do not splice missing original material into this excerpt.",
+        "legacyComparison": {
+          "sharedFirstTuples": 42,
+          "sharedBeatRange": [
+            0,
+            32
+          ],
+          "archivedLaterAttacks": 89,
+          "selectedLaterAttacks": 41,
+          "archivedBpm": 94,
+          "selectedPrintedBpm": 96,
+          "meaning": "94 is the previous encoding. Its historical claim of a printed tempo cannot be rechecked without the original photo; it is not declared wrong."
+        },
+        "supportDecision": "No original qing-hua-ci V2/backing sibling was found. Add no support; the exact compatibility guard rejects the archived melody/timebase even if its BPM is set to 96.",
+        "sourcePixelReview": "All selected bars checked in both parallel exports; independent pre-edit reading agrees on all 83 pitch/onset/duration tuples. Parallel exports remain one edition.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-local-preview-only",
+        "rightsNotice": "EOP preview says 禁止转载. Public access and successful transcription do not establish public reproduction/distribution permission; no public push or publication is authorized by this local preview."
+      },
+      "archivedEdition": {
+        "file": "data/archives/qing-hua-ci-v2.4.19.json",
+        "fileSha256": "ae805daffe79f68916a8c88afe0b931b45fd14ec6bc65eb06761c7993e918b21",
+        "purpose": "Byte-exact developer provenance only; retain every historical field without a second built-in, restore UI, route allowlist or precache."
+      },
+      "historicalEditionStatus": "The original 羊阿宝工作室 24-bar user photo is missing. Its highest-note extraction and historical source/tempo/suitability claims remain unresolved; the complete unchanged JSON preserves those claims as history, not current verification."
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

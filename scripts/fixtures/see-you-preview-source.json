@@ -1,0 +1,397 @@
+{
+  "format": "compact-reviewed-source-decisions-v1",
+  "songId": "see-you-again",
+  "source": {
+    "reference": "GuitarWorld q79160, 乐星人 C-major easy piano arrangement, selected public staff preview",
+    "scope": "All 12 visible monophonic treble-staff bars, [0,48) quarter beats; this is a public preview excerpt, not a full-song ending.",
+    "pageUrl": "https://www.guitarworld.com.cn/pu/q79160",
+    "imageUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png",
+    "imageSha256": "8ba82cb8c119bb739bc44a3e433fd8804aa8dc6eb2752c13f42671aa8ec198c7",
+    "pixelSize": [1200, 831],
+    "identity": "Monophonic upper treble staff, separate from bass-staff dyads. No highest-note selection.",
+    "meter": "4/4",
+    "quarterBpm": 80,
+    "key": "C",
+    "semitoneShift": 0,
+    "limitations": [
+      "The numbered-format asset failed normal requests with HTTP 502 connection refused; it was not pixel-inspected.",
+      "The two GuitarWorld formats are one edition, not independent sources.",
+      "No paid continuation accessed or reconstructed.",
+      "Reference/audio/physical listening gates have not been performed."
+    ]
+  },
+  "notation": "Each row is one written 4/4 bar. Pitches are literal staff pitches; ~ marks only a source-confirmed same-pitch tie continuation. Durations are quarter-note beats. Independent equal pitches have no ~.",
+  "writtenBars": [
+    {
+      "measure": 1,
+      "pitches": "G5 D6 C6 G5 ~G5 C6 D6 E6 D6 C6 D6",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25]
+    },
+    {
+      "measure": 2,
+      "pitches": "G5 D6 C6 G5 ~G5 C6 D6 E6 D6 C6 D6",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25]
+    },
+    {
+      "measure": 3,
+      "pitches": "G5 D6 C6 G5 ~G5 C6 D6 E6 D6 C6 D6",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25]
+    },
+    {
+      "measure": 4,
+      "pitches": "G5 D6 C6 G5 ~G5 C5 E5 G5",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "measure": 5,
+      "pitches": "A5 G5 ~G5 A5 ~A5 C5",
+      "durations": [1.5, 0.5, 0.5, 1, 0.25, 0.25]
+    },
+    {
+      "measure": 6,
+      "pitches": "D5 D5 C5 E5 ~E5 E5 G5",
+      "durations": [0.5, 0.5, 0.5, 0.5, 1.5, 0.25, 0.25]
+    },
+    {
+      "measure": 7,
+      "pitches": "A5 B5 A5 G5 E5 D5 D5 C5",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "measure": 8,
+      "pitches": "D5 D5 E5 C5 ~C5 ~C5 C5 E5 G5",
+      "durations": [0.5, 0.5, 0.5, 0.5, 1, 0.25, 0.25, 0.25, 0.25]
+    },
+    {
+      "measure": 9,
+      "pitches": "A5 G5 ~G5 A5 ~A5 C5",
+      "durations": [1.5, 0.5, 0.5, 1, 0.25, 0.25]
+    },
+    {
+      "measure": 10,
+      "pitches": "D5 D5 C5 E5 ~E5 E5 G5",
+      "durations": [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5]
+    },
+    {
+      "measure": 11,
+      "pitches": "A5 C6 D6 E6 D6 C6 A5 C6",
+      "durations": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    {
+      "measure": 12,
+      "pitches": "D6 D6 C6 C6 ~C6 A5 C6",
+      "durations": [0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5]
+    }
+  ],
+  "sourceTotalBeats": 48,
+  "pitchFit": {
+    "sourcePitchClasses": [0, 2, 4, 7, 9, 11],
+    "semitoneShift": 0
+  },
+  "tieChains": [
+    {
+      "measure": 1,
+      "pitch": "G5",
+      "components": [
+        [1.5, 0.5],
+        [2, 0.5]
+      ],
+      "merged": [1.5, 1]
+    },
+    {
+      "measure": 2,
+      "pitch": "G5",
+      "components": [
+        [5.5, 0.5],
+        [6, 0.5]
+      ],
+      "merged": [5.5, 1]
+    },
+    {
+      "measure": 3,
+      "pitch": "G5",
+      "components": [
+        [9.5, 0.5],
+        [10, 0.5]
+      ],
+      "merged": [9.5, 1]
+    },
+    {
+      "measure": 4,
+      "pitch": "G5",
+      "components": [
+        [13.5, 0.5],
+        [14, 0.5]
+      ],
+      "merged": [13.5, 1]
+    },
+    {
+      "measure": 5,
+      "pitch": "G5",
+      "components": [
+        [17.5, 0.5],
+        [18, 0.5]
+      ],
+      "merged": [17.5, 1]
+    },
+    {
+      "measure": 5,
+      "pitch": "A5",
+      "components": [
+        [18.5, 1],
+        [19.5, 0.25]
+      ],
+      "merged": [18.5, 1.25]
+    },
+    {
+      "measure": 9,
+      "pitch": "G5",
+      "components": [
+        [33.5, 0.5],
+        [34, 0.5]
+      ],
+      "merged": [33.5, 1]
+    },
+    {
+      "measure": 9,
+      "pitch": "A5",
+      "components": [
+        [34.5, 1],
+        [35.5, 0.25]
+      ],
+      "merged": [34.5, 1.25]
+    },
+    {
+      "measure": 6,
+      "pitch": "E5",
+      "components": [
+        [21.5, 0.5],
+        [22, 1.5]
+      ],
+      "merged": [21.5, 2],
+      "preserveIndependentAttack": ["E5", 23.5, 0.25]
+    },
+    {
+      "measure": 8,
+      "pitch": "C5",
+      "components": [
+        [29.5, 0.5],
+        [30, 1],
+        [31, 0.25]
+      ],
+      "merged": [29.5, 1.75],
+      "preserveIndependentAttack": ["C5", 31.25, 0.25]
+    },
+    {
+      "measure": 10,
+      "pitch": "E5",
+      "components": [
+        [37.5, 0.5],
+        [38, 1]
+      ],
+      "merged": [37.5, 1.5],
+      "preserveIndependentAttack": ["E5", 39, 0.5]
+    },
+    {
+      "measure": 12,
+      "pitch": "C6",
+      "components": [
+        [45.5, 0.5],
+        [46, 1]
+      ],
+      "merged": [45.5, 1.5]
+    }
+  ],
+  "expected": {
+    "writtenFragmentCount": 99,
+    "tieContinuationCount": 13,
+    "tieChainCount": 12,
+    "attackCount": 86,
+    "tupleSha256": "0bcaf2d5daed29e3c2d8420436910a5faa27306d4f13211a4a91d0ec554aa4ad",
+    "unchangedTuples": [
+      ["G5", 0, 0.5],
+      ["G5", 4, 0.5],
+      ["G5", 8, 0.5],
+      ["G5", 12, 0.5],
+      ["C5", 14.5, 0.5],
+      ["E5", 15, 0.5],
+      ["G5", 15.5, 0.5],
+      ["D5", 20, 0.5],
+      ["D5", 20.5, 0.5],
+      ["C5", 21, 0.5],
+      ["E5", 23.5, 0.25],
+      ["G5", 23.75, 0.25],
+      ["A5", 24, 0.5],
+      ["B5", 24.5, 0.5],
+      ["A5", 25, 0.5],
+      ["G5", 25.5, 0.5],
+      ["E5", 26, 0.5],
+      ["D5", 26.5, 0.5],
+      ["D5", 27, 0.5],
+      ["C5", 27.5, 0.5],
+      ["D5", 28, 0.5],
+      ["D5", 28.5, 0.5],
+      ["E5", 29, 0.5],
+      ["D5", 36, 0.5],
+      ["D5", 36.5, 0.5],
+      ["C5", 37, 0.5],
+      ["A5", 40, 0.5]
+    ],
+    "unchangedTuplesSha256": "888023d0e39958a183b45c0d485f5874b1daf3dcd33a0b5c4bf25f7a192ed807",
+    "unchangedMeasure": 7,
+    "unchangedMeasureSha256": "feedbea66a3ca1ace3ae34b40b3315f498ece6eeaa549ca822043c89c33ef0e5"
+  },
+  "history": {
+    "restoration": "JSON.stringify(originalV1, null, 2) + a final newline reconstructs all original V1 bytes, including key order, titles, steps and source metadata. The original V2 remains byte-identical at data/songs/see-you-again-chord.json.",
+    "originalV1Sha256": "be4ac589564559cb43e4985257471902f4bf611b08d3652e7c56900383dd50bb",
+    "originalV1StepsSha256": "0cea38494d9bce08649e825c8fb7def2a7a19e7e90025a0b70973a3a224497ba",
+    "originalV2Sha256": "f22f7a54d6ee3d9caa20dc21925470337bd43cf3d134e4e912b261ddcabe76fb",
+    "originalV1": {
+      "schemaVersion": 1,
+      "id": "see-you-again",
+      "title": "《See You Again》",
+      "uploader": "system",
+      "practiceTitle": "《See You Again》练习轨道",
+      "scoreTitle": "《See You Again》简谱进度",
+      "hint": "主旋律练习版；按 1=C、4/4 钢琴简谱预览整理，保留最具辨识度的引子与主题 hook。",
+      "difficulty": "medium",
+      "bpm": 80,
+      "defaultSpeedFactor": 0.88,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "steps": [
+        ["G5", 0, 0.5],
+        ["D5", 0.5, 0.5],
+        ["C5", 1, 0.5],
+        ["G5", 1.5, 0.5],
+        ["G5", 2, 0.5],
+        ["C5", 2.5, 0.25],
+        ["D5", 2.75, 0.25],
+        ["E5", 3, 0.25],
+        ["D5", 3.25, 0.25],
+        ["C5", 3.5, 0.25],
+        ["D5", 3.75, 0.25],
+        ["G5", 4, 0.5],
+        ["D5", 4.5, 0.5],
+        ["C5", 5, 0.5],
+        ["G5", 5.5, 0.5],
+        ["G5", 6, 0.5],
+        ["C5", 6.5, 0.25],
+        ["D5", 6.75, 0.25],
+        ["E5", 7, 0.25],
+        ["D5", 7.25, 0.25],
+        ["C5", 7.5, 0.25],
+        ["D5", 7.75, 0.25],
+        ["G5", 8, 0.5],
+        ["D5", 8.5, 0.5],
+        ["C5", 9, 0.5],
+        ["G5", 9.5, 0.5],
+        ["G5", 10, 0.5],
+        ["C5", 10.5, 0.25],
+        ["D5", 10.75, 0.25],
+        ["E5", 11, 0.25],
+        ["D5", 11.25, 0.25],
+        ["C5", 11.5, 0.25],
+        ["D5", 11.75, 0.25],
+        ["G5", 12, 0.5],
+        ["D5", 12.5, 0.5],
+        ["C5", 13, 0.5],
+        ["G5", 13.5, 0.75],
+        ["G5", 14.25, 0.25],
+        ["C5", 14.5, 0.5],
+        ["E5", 15, 0.5],
+        ["G5", 15.5, 0.5],
+        ["A5", 16, 1],
+        ["G5", 17, 0.5],
+        ["G5", 17.5, 0.5],
+        ["A5", 18, 1],
+        ["A5", 19, 0.5],
+        ["C5", 19.5, 0.5],
+        ["D5", 20, 0.5],
+        ["D5", 20.5, 0.5],
+        ["C5", 21, 0.5],
+        ["E5", 21.5, 0.5],
+        ["E5", 22, 1.5],
+        ["E5", 23.5, 0.25],
+        ["G5", 23.75, 0.25],
+        ["A5", 24, 0.5],
+        ["B5", 24.5, 0.5],
+        ["A5", 25, 0.5],
+        ["G5", 25.5, 0.5],
+        ["E5", 26, 0.5],
+        ["D5", 26.5, 0.5],
+        ["D5", 27, 0.5],
+        ["C5", 27.5, 0.5],
+        ["D5", 28, 0.5],
+        ["D5", 28.5, 0.5],
+        ["E5", 29, 0.5],
+        ["C5", 29.5, 0.5],
+        ["C5", 30, 0.5],
+        ["C5", 30.5, 0.5],
+        ["E5", 31, 0.5],
+        ["G5", 31.5, 0.5],
+        ["A5", 32, 1],
+        ["G5", 33, 0.5],
+        ["G5", 33.5, 0.5],
+        ["A5", 34, 1],
+        ["A5", 35, 0.5],
+        ["C5", 35.5, 0.5],
+        ["D5", 36, 0.5],
+        ["D5", 36.5, 0.5],
+        ["C5", 37, 0.5],
+        ["E5", 37.5, 0.5],
+        ["E5", 38, 1.5],
+        ["E5", 39.5, 0.25],
+        ["G5", 39.75, 0.25],
+        ["A5", 40, 0.5],
+        ["B5", 40.5, 0.5],
+        ["A5", 41, 0.5],
+        ["G5", 41.5, 0.5],
+        ["E5", 42, 0.5],
+        ["D5", 42.5, 0.5],
+        ["D5", 43, 0.5],
+        ["C5", 43.5, 0.5],
+        ["D5", 44, 0.5],
+        ["D5", 44.5, 0.5],
+        ["E5", 45, 0.5],
+        ["C5", 45.5, 0.5],
+        ["C5", 46, 0.5],
+        ["C5", 46.5, 0.5],
+        ["E5", 47, 0.5],
+        ["G5", 47.5, 0.5]
+      ],
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/see-you-again/guitarworld-jianpu-preview.png",
+          "private/sheets/raw/see-you-again/guitarworld-staff-preview.png"
+        ],
+        "unsupported": [
+          "吉他世界页面只公开预览页；本版本录入可核对的钢琴引子/主题 hook，不声明为全曲完整版。",
+          "和声按预览低音区与常见 C 大调/Am-F-C-G 走向稀疏化，避免自动伴奏压过主旋律。"
+        ],
+        "unsureMeasures": [],
+        "sourceReview": {
+          "confidence": "medium-high-for-intro-hook-medium-for-full-song-form",
+          "sources": [
+            {
+              "label": "吉他世界 See You Again 钢琴谱预览",
+              "url": "https://www.guitarworld.com.cn/pu/q79160"
+            },
+            {
+              "label": "吉他世界简谱预览图",
+              "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "evidenceFingerprints": {
+    "preEditSourceFixtureSha256": "5b10ccd20451c135ab1343abf4222398374c1c1ce95c4c96944a3230b3792989",
+    "tieEndpointsSha256": "801abc0cce0d7884316e03da39c2bb93dad3bfac4043fda56008c45cad895583",
+    "preEditComparisonSha256": "b0da7f062ae2bcf6fba5484d961c26c4e694976da4d6b96ed675e2480f9653d0"
+  }
+}

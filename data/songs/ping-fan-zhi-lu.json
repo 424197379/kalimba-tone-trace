@@ -1,276 +1,146 @@
 {
   "schemaVersion": 1,
   "id": "ping-fan-zhi-lu",
-  "title": "《平凡之路》",
+  "title": "《平凡之路》（主歌＋副歌短版）",
   "uploader": "system",
-  "practiceTitle": "《平凡之路》练习轨道",
-  "scoreTitle": "《平凡之路》简谱进度",
-  "hint": "采用所提供趣弹音乐一页28小节编配，约80秒，非原唱全曲。叠音保留上声部，保留谱面单音及延音；按C调演奏。原图未标速度，暂设84 BPM练习速度。",
-  "difficulty": "hard",
-  "bpm": 84,
+  "practiceTitle": "《平凡之路》（主歌＋副歌短版）练习轨道",
+  "scoreTitle": "《平凡之路》（主歌＋副歌短版）简谱进度",
+  "hint": "选用破晓/弹琴吧主歌＋副歌短版，第5–21小节共93个单音、68拍，保留原谱80 BPM；省略吉他前奏与伴奏，保留开头、句间及末尾人声休止。含十六分音符与A5高音，建议先慢速分段练习。",
+  "difficulty": "medium",
+  "bpm": 80,
   "defaultSpeedFactor": 1,
   "beatsPerMeasure": 4,
   "key": "C",
   "steps": [
     [
-      "A4",
-      0,
-      0.5
-    ],
-    [
-      "A4",
+      "E4",
       0.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       1,
       0.5
     ],
     [
-      "C5",
+      "A4",
       1.5,
-      0.5
+      0.25
     ],
     [
-      "C5",
-      2,
-      0.5
+      "A4",
+      1.75,
+      0.75
     ],
     [
-      "F4",
+      "C4",
       2.5,
       0.5
     ],
     [
-      "F5",
+      "D4",
       3,
       0.5
     ],
     [
-      "C5",
+      "E4",
       3.5,
-      0.5
+      0.25
     ],
     [
-      "C5",
-      4,
-      0.5
+      "E4",
+      3.75,
+      2.25
     ],
     [
-      "G4",
-      4.5,
-      0.5
-    ],
-    [
-      "E5",
-      5,
-      0.5
-    ],
-    [
-      "C5",
-      5.5,
-      0.5
-    ],
-    [
-      "B4",
-      6,
-      0.5
-    ],
-    [
-      "C5",
-      6.5,
-      0.5
-    ],
-    [
-      "D5",
-      7,
-      0.5
-    ],
-    [
-      "G4",
-      7.5,
-      0.5
-    ],
-    [
-      "A4",
-      8,
-      0.5
-    ],
-    [
-      "A4",
+      "E4",
       8.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       9,
       0.5
     ],
     [
-      "C5",
+      "A4",
       9.5,
-      0.5
-    ],
-    [
-      "C5",
-      10,
-      0.5
-    ],
-    [
-      "F4",
-      10.5,
-      0.5
-    ],
-    [
-      "F5",
-      11,
-      0.5
-    ],
-    [
-      "C5",
-      11.5,
-      0.5
-    ],
-    [
-      "C5",
-      12,
-      0.5
-    ],
-    [
-      "G4",
-      12.5,
-      0.5
-    ],
-    [
-      "E5",
-      13,
-      0.5
-    ],
-    [
-      "C5",
-      13.5,
-      0.5
-    ],
-    [
-      "B4",
-      14,
-      2
+      0.25
     ],
     [
       "A4",
-      16,
-      0.5
+      9.75,
+      0.75
     ],
     [
-      "E5",
+      "G4",
+      10.5,
+      0.25
+    ],
+    [
+      "G4",
+      10.75,
+      1.25
+    ],
+    [
+      "F4",
+      12,
+      0.25
+    ],
+    [
+      "E4",
+      12.25,
+      1.75
+    ],
+    [
+      "E4",
       16.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       17,
       0.5
     ],
     [
-      "A5",
+      "A4",
       17.5,
-      0.25
+      1
     ],
     [
-      "A5",
-      17.75,
-      0.25
-    ],
-    [
-      "F4",
-      18,
-      0.5
-    ],
-    [
-      "C5",
+      "C4",
       18.5,
       0.5
     ],
     [
-      "D5",
+      "C4",
       19,
       0.5
     ],
     [
-      "E5",
+      "D4",
       19.5,
       0.25
     ],
     [
-      "E5",
+      "E4",
       19.75,
-      0.25
+      2.25
     ],
     [
-      "C4",
-      20,
-      0.5
-    ],
-    [
-      "G4",
-      20.5,
-      0.5
-    ],
-    [
-      "E5",
-      21,
-      0.5
-    ],
-    [
-      "C5",
-      21.5,
-      0.5
-    ],
-    [
-      "B4",
-      22,
-      0.5
-    ],
-    [
-      "C5",
-      22.5,
-      0.5
-    ],
-    [
-      "D5",
-      23,
-      0.5
-    ],
-    [
-      "G4",
-      23.5,
-      0.5
-    ],
-    [
-      "A4",
-      24,
-      0.5
-    ],
-    [
-      "E5",
+      "E4",
       24.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       25,
       0.5
     ],
     [
-      "A5",
+      "C4",
       25.5,
-      0.25
-    ],
-    [
-      "A5",
-      25.75,
-      0.25
+      0.5
     ],
     [
       "F4",
@@ -278,187 +148,167 @@
       0.5
     ],
     [
-      "A4",
+      "F4",
       26.5,
-      0.25
+      0.5
     ],
     [
-      "G5",
-      26.75,
-      0.25
-    ],
-    [
-      "G5",
+      "E4",
       27,
       0.5
     ],
     [
-      "F4",
+      "C4",
       27.5,
       0.25
     ],
     [
-      "F5",
+      "C4",
       27.75,
-      0.25
-    ],
-    [
-      "E5",
-      28,
-      0.5
+      2.25
     ],
     [
       "G4",
-      28.5,
-      0.5
-    ],
-    [
-      "E5",
-      29,
-      0.5
-    ],
-    [
-      "C5",
-      29.5,
-      0.5
-    ],
-    [
-      "B4",
-      30,
-      0.5
-    ],
-    [
-      "C5",
       30.5,
       0.5
     ],
     [
-      "D5",
+      "A4",
       31,
       0.5
     ],
     [
-      "G4",
+      "B4",
       31.5,
       0.5
     ],
     [
-      "A4",
+      "C5",
       32,
       0.5
     ],
     [
-      "E5",
+      "B4",
       32.5,
-      0.5
-    ],
-    [
-      "E5",
-      33,
-      0.5
-    ],
-    [
-      "A5",
-      33.5,
-      0.5
-    ],
-    [
-      "F4",
-      34,
-      0.5
+      0.25
     ],
     [
       "C5",
-      34.5,
+      32.75,
       0.5
     ],
     [
-      "D5",
+      "G4",
+      33.25,
+      0.25
+    ],
+    [
+      "A4",
+      33.5,
+      0.25
+    ],
+    [
+      "A4",
+      33.75,
+      0.25
+    ],
+    [
+      "A4",
+      34,
+      1
+    ],
+    [
+      "G4",
       35,
       0.5
     ],
     [
-      "E5",
+      "F4",
       35.5,
       0.5
     ],
     [
-      "C4",
+      "E4",
       36,
       0.5
     ],
     [
-      "G4",
+      "E4",
       36.5,
       0.5
     ],
     [
-      "E5",
+      "E4",
       37,
       0.5
     ],
     [
-      "C5",
+      "F4",
       37.5,
-      0.5
+      0.25
     ],
     [
-      "B4",
-      38,
-      0.5
+      "D4",
+      37.75,
+      0.75
     ],
     [
-      "C5",
+      "G4",
       38.5,
       0.5
     ],
     [
-      "D5",
+      "A4",
       39,
       0.5
     ],
     [
-      "G4",
+      "B4",
       39.5,
       0.5
     ],
     [
-      "A4",
+      "C5",
       40,
       0.5
     ],
     [
-      "E5",
+      "B4",
       40.5,
-      0.5
-    ],
-    [
-      "E5",
-      41,
-      0.5
-    ],
-    [
-      "C5",
-      41.5,
-      0.5
-    ],
-    [
-      "F5",
-      42,
-      0.5
-    ],
-    [
-      "F5",
-      42.5,
       0.25
     ],
     [
-      "F5",
-      42.75,
-      0.75
+      "C5",
+      40.75,
+      0.5
     ],
     [
-      "E5",
+      "G4",
+      41.25,
+      0.25
+    ],
+    [
+      "A4",
+      41.5,
+      0.25
+    ],
+    [
+      "A4",
+      41.75,
+      0.25
+    ],
+    [
+      "A4",
+      42,
+      1
+    ],
+    [
+      "A4",
+      43,
+      0.5
+    ],
+    [
+      "B4",
       43.5,
       0.5
     ],
@@ -468,79 +318,74 @@
       0.5
     ],
     [
-      "G4",
+      "C5",
       44.5,
-      0.5
+      0.25
     ],
     [
-      "E5",
-      45,
+      "C5",
+      44.75,
       0.5
     ],
     [
       "C5",
+      45.25,
+      0.25
+    ],
+    [
+      "C5",
       45.5,
-      0.5
+      0.25
     ],
     [
-      "B4",
-      46,
-      0.5
+      "D5",
+      45.75,
+      1
     ],
     [
-      "G5",
-      46.5,
-      0.5
+      "G4",
+      46.75,
+      0.25
     ],
     [
-      "A5",
+      "A4",
       47,
       0.5
     ],
     [
-      "B5",
+      "B4",
       47.5,
       0.5
     ],
     [
-      "C6",
+      "C5",
       48,
       0.5
     ],
     [
-      "B5",
+      "B4",
       48.5,
       0.25
     ],
     [
-      "C6",
+      "C5",
       48.75,
-      0.5
+      0.75
     ],
     [
-      "G5",
-      49.25,
-      0.25
-    ],
-    [
-      "A5",
+      "E5",
       49.5,
       0.5
     ],
     [
       "A5",
       50,
-      0.5
-    ],
-    [
-      "A4",
-      50.5,
-      0.5
+      0.75
     ],
     [
       "G5",
-      51,
-      0.5
+      50.75,
+      0.75
     ],
     [
       "F5",
@@ -550,681 +395,392 @@
     [
       "E5",
       52,
-      0.5
-    ],
-    [
-      "G4",
-      52.5,
-      0.5
+      1
     ],
     [
       "E5",
       53,
-      0.25
-    ],
-    [
-      "F5",
-      53.25,
-      0.5
+      0.75
     ],
     [
       "D5",
       53.75,
-      0.25
-    ],
-    [
-      "D4",
-      54,
-      0.5
-    ],
-    [
-      "G5",
-      54.5,
-      0.5
-    ],
-    [
-      "A5",
-      55,
-      0.5
-    ],
-    [
-      "B5",
-      55.5,
-      0.5
-    ],
-    [
-      "C6",
-      56,
-      0.5
-    ],
-    [
-      "B5",
-      56.5,
-      0.25
-    ],
-    [
-      "C6",
-      56.75,
-      0.5
-    ],
-    [
-      "G5",
-      57.25,
-      0.25
-    ],
-    [
-      "A5",
-      57.5,
-      0.5
-    ],
-    [
-      "A5",
-      58,
-      0.5
+      1
     ],
     [
       "A4",
-      58.5,
+      54.75,
       0.5
     ],
     [
-      "A5",
+      "B4",
+      55.25,
+      0.75
+    ],
+    [
+      "C5",
+      56,
+      1
+    ],
+    [
+      "C5",
+      57,
+      0.5
+    ],
+    [
+      "D5",
+      57.5,
+      0.25
+    ],
+    [
+      "C5",
+      57.75,
+      1
+    ],
+    [
+      "G4",
+      58.75,
+      0.25
+    ],
+    [
+      "B4",
       59,
-      0.5
-    ],
-    [
-      "B5",
-      59.5,
       0.25
     ],
     [
-      "C6",
-      59.75,
-      0.25
+      "C5",
+      59.25,
+      0.75
     ],
     [
-      "C6",
+      "D5",
       60,
-      0.5
+      1
     ],
     [
-      "C6",
-      60.5,
-      0.5
-    ],
-    [
-      "C6",
+      "C5",
       61,
       0.5
     ],
     [
-      "C6",
+      "B4",
       61.5,
       0.25
     ],
     [
-      "D6",
+      "C5",
       61.75,
       0.25
     ],
     [
-      "D6",
+      "C5",
       62,
-      0.5
-    ],
-    [
-      "G5",
-      62.5,
-      0.5
-    ],
-    [
-      "A5",
-      63,
-      0.5
-    ],
-    [
-      "B5",
-      63.5,
-      0.5
-    ],
-    [
-      "C6",
-      64,
-      0.5
-    ],
-    [
-      "B5",
-      64.5,
-      0.25
-    ],
-    [
-      "C6",
-      64.75,
-      0.75
-    ],
-    [
-      "E6",
-      65.5,
-      0.5
-    ],
-    [
-      "A5",
-      66,
-      0.5
-    ],
-    [
-      "A4",
-      66.5,
-      0.5
-    ],
-    [
-      "G5",
-      67,
-      0.5
-    ],
-    [
-      "F5",
-      67.5,
-      0.5
-    ],
-    [
-      "E5",
-      68,
-      0.5
-    ],
-    [
-      "E4",
-      68.5,
-      0.5
-    ],
-    [
-      "E5",
-      69,
-      0.5
-    ],
-    [
-      "D5",
-      69.5,
-      0.5
-    ],
-    [
-      "G4",
-      70,
-      0.5
-    ],
-    [
-      "G5",
-      70.5,
-      0.5
-    ],
-    [
-      "A5",
-      71,
-      0.5
-    ],
-    [
-      "B5",
-      71.5,
-      0.5
-    ],
-    [
-      "C6",
-      72,
-      0.5
-    ],
-    [
-      "E5",
-      72.5,
-      0.5
-    ],
-    [
-      "C6",
-      73,
-      0.25
-    ],
-    [
-      "D6",
-      73.25,
-      0.5
-    ],
-    [
-      "C6",
-      73.75,
-      0.25
-    ],
-    [
-      "F4",
-      74,
-      0.5
-    ],
-    [
-      "C6",
-      74.5,
-      0.5
-    ],
-    [
-      "B5",
-      75,
-      0.5
-    ],
-    [
-      "C6",
-      75.5,
-      0.5
-    ],
-    [
-      "D6",
-      76,
-      0.5
-    ],
-    [
-      "G5",
-      76.5,
-      0.5
-    ],
-    [
-      "C6",
-      77,
-      0.25
-    ],
-    [
-      "B5",
-      77.25,
-      0.5
-    ],
-    [
-      "C6",
-      77.75,
-      0.25
-    ],
-    [
-      "C6",
-      78,
-      0.5
-    ],
-    [
-      "C6",
-      78.5,
-      0.5
-    ],
-    [
-      "B5",
-      79,
-      0.5
-    ],
-    [
-      "G5",
-      79.5,
-      0.5
-    ],
-    [
-      "A4",
-      80,
-      0.5
-    ],
-    [
-      "E5",
-      80.5,
-      0.5
-    ],
-    [
-      "E5",
-      81,
-      0.5
-    ],
-    [
-      "A5",
-      81.5,
-      0.25
-    ],
-    [
-      "A5",
-      81.75,
-      0.25
-    ],
-    [
-      "F4",
-      82,
-      0.5
-    ],
-    [
-      "C5",
-      82.5,
-      0.5
-    ],
-    [
-      "D5",
-      83,
-      0.5
-    ],
-    [
-      "E5",
-      83.5,
-      0.25
-    ],
-    [
-      "E5",
-      83.75,
-      0.25
-    ],
-    [
-      "C4",
-      84,
-      0.5
-    ],
-    [
-      "G4",
-      84.5,
-      0.5
-    ],
-    [
-      "E5",
-      85,
-      0.5
-    ],
-    [
-      "C5",
-      85.5,
-      0.5
-    ],
-    [
-      "B4",
-      86,
-      0.5
-    ],
-    [
-      "C5",
-      86.5,
-      0.5
-    ],
-    [
-      "D5",
-      87,
-      0.5
-    ],
-    [
-      "G4",
-      87.5,
-      0.5
-    ],
-    [
-      "A4",
-      88,
-      0.5
-    ],
-    [
-      "E5",
-      88.5,
-      0.5
-    ],
-    [
-      "E5",
-      89,
-      0.5
-    ],
-    [
-      "A5",
-      89.5,
-      0.25
-    ],
-    [
-      "A5",
-      89.75,
-      0.25
-    ],
-    [
-      "F4",
-      90,
-      0.5
-    ],
-    [
-      "A4",
-      90.5,
-      0.25
-    ],
-    [
-      "G5",
-      90.75,
-      0.25
-    ],
-    [
-      "G5",
-      91,
-      0.5
-    ],
-    [
-      "F4",
-      91.5,
-      0.25
-    ],
-    [
-      "F5",
-      91.75,
-      0.25
-    ],
-    [
-      "E5",
-      92,
-      0.5
-    ],
-    [
-      "G4",
-      92.5,
-      0.5
-    ],
-    [
-      "E5",
-      93,
-      0.5
-    ],
-    [
-      "C5",
-      93.5,
-      0.5
-    ],
-    [
-      "B4",
-      94,
-      0.5
-    ],
-    [
-      "C5",
-      94.5,
-      0.5
-    ],
-    [
-      "D5",
-      95,
-      0.5
-    ],
-    [
-      "G4",
-      95.5,
-      0.5
-    ],
-    [
-      "A4",
-      96,
-      0.5
-    ],
-    [
-      "E5",
-      96.5,
-      0.5
-    ],
-    [
-      "E5",
-      97,
-      0.5
-    ],
-    [
-      "A5",
-      97.5,
-      0.5
-    ],
-    [
-      "F4",
-      98,
-      0.5
-    ],
-    [
-      "C5",
-      98.5,
-      0.5
-    ],
-    [
-      "D5",
-      99,
-      0.5
-    ],
-    [
-      "E5",
-      99.5,
-      0.5
-    ],
-    [
-      "C4",
-      100,
-      0.5
-    ],
-    [
-      "G4",
-      100.5,
-      0.5
-    ],
-    [
-      "E5",
-      101,
-      0.5
-    ],
-    [
-      "C5",
-      101.5,
-      0.5
-    ],
-    [
-      "B4",
-      102,
-      0.5
-    ],
-    [
-      "C5",
-      102.5,
-      0.5
-    ],
-    [
-      "D5",
-      103,
-      0.5
-    ],
-    [
-      "G4",
-      103.5,
-      0.5
-    ],
-    [
-      "A4",
-      104,
-      0.5
-    ],
-    [
-      "E5",
-      104.5,
-      0.5
-    ],
-    [
-      "E5",
-      105,
-      0.5
-    ],
-    [
-      "C5",
-      105.5,
-      0.5
-    ],
-    [
-      "F5",
-      106,
-      0.5
-    ],
-    [
-      "F5",
-      106.5,
-      0.25
-    ],
-    [
-      "F5",
-      106.75,
-      0.75
-    ],
-    [
-      "E5",
-      107.5,
-      0.5
-    ],
-    [
-      "C5",
-      108,
-      0.5
-    ],
-    [
-      "G4",
-      108.5,
-      0.5
-    ],
-    [
-      "E5",
-      109,
-      0.5
-    ],
-    [
-      "C5",
-      109.5,
-      0.5
-    ],
-    [
-      "B4",
-      110,
       2
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "hasArpeggio": true,
+    "hasArpeggio": false,
     "hasRepeats": false,
     "unsupported": [
-      "主旋律版叠音仅保留最高声部，省略同时和声音；谱面独立单音均保留，包含编配中的分解音型。",
-      "图片选调为C；说明中的演示用琴为B调不作为本版调号，不要求重新调琴。",
-      "原图未印拍号和BPM：按每小节四组节拍及减时线推定4/4；84 BPM为参考练习速度，不声称与趣弹演示速度一致。",
-      "仅所提供28小节编配，不补原唱完整曲式；高音E6和C6/D6换手需实际练习。"
+      "只保留所选短编配第5–21小节有歌词逐音对位的全部人声线；省略4小节吉他前奏和所有吉他分解、扫弦及和弦图，不从和弦中选择最高音。",
+      "这是明确选择的另一份主歌＋副歌短版，不是原唱完整曲式，也不证明旧235音趣弹编配有错；历史资料及未复核限制完整保留。",
+      "六段开头、句间和谱尾空拍只表示所选人声休止；原谱吉他在末小节仍有C和弦扫弦，不宣称原编配所有声部静音。",
+      "80 BPM为谱面四分音符速度；慢速分段是练习建议，未改变应用初次默认或已保存的速度选择。",
+      "本次数据采纳未进行参考录音听辨、浏览器音频验收或实体琴演奏；源谱复核和结构测试不等于更易弹或更好听的保证。"
     ],
     "unsureMeasures": [],
     "composer": "朴树",
-    "arranger": "石头（趣弹音乐）",
+    "arranger": "破晓（弹琴吧）",
     "sources": [
       {
-        "label": "用户直接提供的趣弹音乐《平凡之路》一页图片谱；全部音高和节奏来自此图"
-      },
-      {
-        "label": "MidiShow 上传者的同曲编配标注84 BPM，仅作为练习速度参考，未读取其音符",
-        "url": "https://www.midishow.com/midi/55115.html"
+        "label": "破晓编配/弹琴吧谱，吉他屋公开两页；选择全部歌词对位的人声简谱第5–21小节",
+        "url": "https://www.jita5.cc/jitapu/7766.html"
       }
     ],
-    "transcriptionScope": "supplied-arrangement-28-measures",
-    "sourceMeasureCount": 28,
-    "sourceTotalBeats": 112,
+    "transcriptionScope": "selected-poxiao-complete-short-vocal-m5-through-m21",
+    "sourceMeasureCount": 17,
+    "sourceTotalBeats": 68,
     "sourceKey": "C",
     "transpositionSemitones": 0,
-    "tempoStatus": "reference-practice-tempo-source-image-unmarked",
-    "meterStatus": "inferred-from-four-beat-groups",
+    "tempoStatus": "printed-quarter-note-80",
+    "meterStatus": "printed-4/4",
     "suitability": {
       "status": "conditional",
-      "scope": "supplied-arrangement-28-measures",
-      "reason": "所提供C调编配的上声部及单音在C4–E6范围内，无额外升降音；叠音简化为单音练习，保留旋律走向和节奏。",
+      "scope": "selected-complete-short-edition-vocal-only",
+      "reason": "所选17个人声小节共93次起音，C4–A5自然音无需移调或折八度；保留延音、真实重弹和六段人声休止。最短起音间隔0.25拍、最大跳进9半音，缩短曲长不保证新手容易或主观更好听。",
       "reviewRequired": [
-        "84 BPM未与这份编配的原演示核对。",
-        "实体琴最高音衰减、换手及主观旋律辨识度试听尚未进行。"
+        "原速80 BPM的十六分音符间隔187.5毫秒；真实同音连弹、九半音跳进及A5需慢速分段练习。",
+        "参考录音辨识度试听、浏览器音频与实体琴验收未在本次数据阶段执行；保持各自独立的验收记录。"
       ]
+    },
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-short-vocal-edition",
+        "reviewDate": "2026-10-12",
+        "adoptedInVersion": "2.4.24",
+        "contentRevision": "ordinary-road-poxiao-short-vocal-2026-10-12",
+        "selectedEdition": "poxiao-tanqinba-short-vocal-m5-21",
+        "sourceUrl": "https://www.jita5.cc/jitapu/7766.html",
+        "sourceImageUrls": [
+          "https://img.jita5.cc//20181020/C-pingfanzhilu1.png",
+          "https://img.jita5.cc//20181020/C-pingfanzhilu2.png"
+        ],
+        "sourceAssetHashes": {
+          "page1Sha256": "2037090108df36cd23e3840c722262dab806ac27d2c857564f0a29ab1c13e17f",
+          "page2Sha256": "cc118e74c7bebadddc8646c8738719b42e8e300e0c82336c7459f32a1dbb2a63"
+        },
+        "attribution": "Public Jita5 listing credits 破晓; listing prose and visible watermark identify 弹琴吧. Two-page short guitar-and-vocal edition, not the absent 石头/趣弹 source.",
+        "sourceMeasureRange": [
+          5,
+          21
+        ],
+        "sourceMeasureCount": 17,
+        "sourceBeatRange": [
+          16,
+          84
+        ],
+        "sourceToExcerptBeatOffset": -16,
+        "reviewedBeatRanges": [
+          [
+            0,
+            68
+          ]
+        ],
+        "selectedSections": [
+          {
+            "label": "主歌",
+            "sourceMeasures": [
+              5,
+              12
+            ],
+            "beats": [
+              0,
+              30.5
+            ]
+          },
+          {
+            "label": "副歌（含小节内弱起）",
+            "sourceMeasures": [
+              12,
+              20
+            ],
+            "beats": [
+              30.5,
+              64
+            ]
+          },
+          {
+            "label": "谱尾人声休止",
+            "sourceMeasures": [
+              21,
+              21
+            ],
+            "beats": [
+              64,
+              68
+            ]
+          }
+        ],
+        "excludedSections": [
+          "guitar-only intro m1–4",
+          "all guitar arpeggios, strums and chord diagrams"
+        ],
+        "sourceVoice": "explicit-lyric-aligned-numbered-vocal-line",
+        "voiceDecision": "The single lyric-aligned numbered line identifies the vocal melody directly. Guitar notation is a separate staff; no highest-note or first-note extraction and no physical chord targets.",
+        "sourceKey": "1=C",
+        "sourceMeter": "4/4",
+        "sourceQuarterBpm": 80,
+        "sourceTempoPrinted": true,
+        "speedDecision": "Printed quarter=80 is retained. The previous built-in defaultSpeedFactor=1 remains unchanged; slow practice is editorial advice. No runtime initial/saved speed is observed or overridden by this data review.",
+        "registerConvention": "Unmarked 1=C4; one upper octave dot maps to octave5. This is the repository scientific-pitch convention, not an absolute-octave label printed on the numbered score.",
+        "sourceRange": [
+          "C4",
+          "A5"
+        ],
+        "compiledRange": [
+          "C4",
+          "A5"
+        ],
+        "sourcePitchClasses": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ],
+        "transpositionSemitones": 0,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "melodyAccidentals": [],
+        "localPitchAlterations": [],
+        "pickupBeats": 0,
+        "firstFullMeasureAtBeat": 0,
+        "openingDecision": "The complete source bar m5 begins at selected beat0. Its written eighth rest occupies [0,0.5), then E4 attacks at0.5. The selection has no opening pickup or inserted padding; the chorus pickup remains inside source m12 at selected30.5.",
+        "repeatExpansion": "none-all-selected-bars-written-out",
+        "melodyOnlyRestWindows": [
+          {
+            "beat": 0,
+            "duration": 0.5,
+            "sourceMeasures": [
+              5
+            ],
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 6,
+            "duration": 2.5,
+            "sourceMeasures": [
+              6,
+              7
+            ],
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 14,
+            "duration": 2.5,
+            "sourceMeasures": [
+              8,
+              9
+            ],
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 22,
+            "duration": 2.5,
+            "sourceMeasures": [
+              10,
+              11
+            ],
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 30,
+            "duration": 0.5,
+            "sourceMeasures": [
+              12
+            ],
+            "voice": "selected-vocal-only"
+          },
+          {
+            "beat": 64,
+            "duration": 4,
+            "sourceMeasures": [
+              21
+            ],
+            "voice": "selected-vocal-only"
+          }
+        ],
+        "restScope": "Six contiguous written vocal-rest windows, totaling12.5 beats. Adjacent rests across barlines are grouped. The guitar staff remains separately active, including a C strum in m21; no source-all-layer silence is asserted.",
+        "rawNoteheadCount": 131,
+        "tieContinuationCount": 38,
+        "selectedAttacks": 93,
+        "crossBarTies": [
+          {
+            "note": "E4",
+            "attackBeat": 3.75,
+            "duration": 2.25,
+            "sourceBars": [
+              5,
+              6
+            ]
+          },
+          {
+            "note": "E4",
+            "attackBeat": 19.75,
+            "duration": 2.25,
+            "sourceBars": [
+              9,
+              10
+            ]
+          },
+          {
+            "note": "C4",
+            "attackBeat": 27.75,
+            "duration": 2.25,
+            "sourceBars": [
+              11,
+              12
+            ]
+          }
+        ],
+        "occurrenceDecisions": [
+          "m5 A4@1.5/0.25 and A4@1.75/0.75 are distinct attacks; m9 A4@17.5/1 is one confirmed tied attack. Similar verse phrases are not copied.",
+          "m7 G4@10.5/0.25 remains separate from G4@10.75/1.25; the last un-underlined G4 glyph is a quarter tied to the preceding sixteenth.",
+          "m17 upper dots retain E5, A5, G5 and F5; the preceding B4 remains undotted. Verse C4 notes remain undotted even after A4.",
+          "All62 previously independently reviewed chorus attacks are preserved exactly with beat offset+30.5. Final C5@61.75/0.25 and C5@62/2 remain separate."
+        ],
+        "endingRestBeats": 4,
+        "selectedEndIsFullSongEnding": false,
+        "selectedEndIsShortEditionVocalEnding": true,
+        "endingDecision": "The last C5 attacks at62 and ends at64. Source m21 writes four beats of vocal rest through68 while guitar still strums; all guitar is omitted from this selected melody-only edition. This is not the complete original recording form.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "versionDecision": "Deliberately selected alternate short vocal edition, not proof that the old235-attack 趣弹 arrangement is wrong. The absent original photo has not been recovered or reverified; no musical values are borrowed from it.",
+        "supportDecision": "No backing is added or borrowed. There is no historical ping-fan-zhi-lu-chord sibling; the old235-attack melody fails content compatibility with this selected93-attack edition.",
+        "sourcePixelReview": "The source lead read all17 bars occurrence by occurrence. Two independent pixel readers agreed on the earlier62-attack chorus, and a separate full-scope reviewer viewed the additional verse crops, independently entered31 additional attacks and compared all93 tuples exactly. Implementation also viewed both pages and all selected crops. These are multiple readings of one edition, not independent source editions.",
+        "evidenceFingerprints": {
+          "fullVocalCandidateSha256": "bd8b53bb9b0d9543fcab0717e416e20d5cda835b3aacda36ab3fd44c7dca827e",
+          "fullVocalSourceEvidenceSha256": "9862e69ecd2fda07f9221e2bc5691893575d27834c706143fc7e8743fade6795",
+          "fullVocalRawReadingSha256": "0a70b76f81e565f03ddfc9345e714ab6bcdcf5ed462392fe574d97560f6fd71b",
+          "selectedTupleSha256": "8c269ecd68549a1218d75f80b6657b4fe96833924583a03f7f3d01bb1abe2ac9",
+          "chorusTupleSha256AtOriginalOrigin": "67992088814177533203b4291705d883ff4f8cb013d3009e054f47d5653466b1"
+        },
+        "referenceListening": "not-performed-at-data-adoption",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-local-preview-only",
+        "rightsNotice": "Public source access does not establish reproduction or public distribution permission. This local adoption includes no raw scans, private full source maps, public push or deployment."
+      },
+      "archivedEdition": {
+        "file": "data/archives/ping-fan-zhi-lu-v2.4.23.json",
+        "fileSha256": "6098bdc9bffbc2c3e3097c6a7d4343556a679f52a2151564c0b99cd2bebcbd4b",
+        "purpose": "Byte-exact full developer history, including original title,235 steps,84 BPM and all source metadata. No new canonical card, restore UI, HTTP route or service-worker precache."
+      },
+      "historicalSourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": false,
+        "unsupported": [
+          "主旋律版叠音仅保留最高声部，省略同时和声音；谱面独立单音均保留，包含编配中的分解音型。",
+          "图片选调为C；说明中的演示用琴为B调不作为本版调号，不要求重新调琴。",
+          "原图未印拍号和BPM：按每小节四组节拍及减时线推定4/4；84 BPM为参考练习速度，不声称与趣弹演示速度一致。",
+          "仅所提供28小节编配，不补原唱完整曲式；高音E6和C6/D6换手需实际练习。"
+        ],
+        "unsureMeasures": [],
+        "composer": "朴树",
+        "arranger": "石头（趣弹音乐）",
+        "sources": [
+          {
+            "label": "用户直接提供的趣弹音乐《平凡之路》一页图片谱；全部音高和节奏来自此图"
+          },
+          {
+            "label": "MidiShow 上传者的同曲编配标注84 BPM，仅作为练习速度参考，未读取其音符",
+            "url": "https://www.midishow.com/midi/55115.html"
+          }
+        ],
+        "transcriptionScope": "supplied-arrangement-28-measures",
+        "sourceMeasureCount": 28,
+        "sourceTotalBeats": 112,
+        "sourceKey": "C",
+        "transpositionSemitones": 0,
+        "tempoStatus": "reference-practice-tempo-source-image-unmarked",
+        "meterStatus": "inferred-from-four-beat-groups",
+        "suitability": {
+          "status": "conditional",
+          "scope": "supplied-arrangement-28-measures",
+          "reason": "所提供C调编配的上声部及单音在C4–E6范围内，无额外升降音；叠音简化为单音练习，保留旋律走向和节奏。",
+          "reviewRequired": [
+            "84 BPM未与这份编配的原演示核对。",
+            "实体琴最高音衰减、换手及主观旋律辨识度试听尚未进行。"
+          ]
+        }
+      },
+      "historicalEditionStatus": "The original235-attack V1 source photo, historically attributed to 石头/趣弹音乐 and described as28 measures, is missing from this checkout. Historical highest-note selection, arpeggio and tie claims remain unverified. Keeping those original claims in the byte-exact archive does not recertify them."
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

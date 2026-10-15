@@ -1,5 +1,8 @@
-const APP_VERSION = "2.2.27";
-// 练习页显示规则与离线应用壳同步更新，避免离线继续使用旧的音符裁剪逻辑。
+const APP_VERSION = "2.4.52";
+// Compact requested controls, normal-speed marker and silent segment boundary preview.
+// Candidate52: natural-demo completion retains terminal progress.
+// First-frame preparation and post-audio-graph deadline checks; no musical-data edits.
+// 片段循环、准备拍和速度偏好与离线应用壳同步更新。
 const CACHE_PREFIX = "kalimba-tone-trace";
 const CACHE_NAME = `${CACHE_PREFIX}-v${APP_VERSION}`;
 
@@ -35,8 +38,16 @@ const APP_SHELL = [
   "./songs.html",
   "./kalimba-practice.html",
   "./manifest.webmanifest",
+  "./data/archives/jasmine-walter-v2.4.3.json",
+  "./data/archives/ling-er-xiang-ding-dang-v2.4.15.json",
   "./src/app.js",
   "./src/practice-preferences.js",
+  "./src/practice-loop.js",
+  "./src/phrase-boundary-preview.js",
+  "./src/phrase-boundary-renderer.js",
+  "./src/key-guidance.js",
+  "./src/song-presentation.js",
+  "./src/practice-fullscreen.js",
   "./src/song-library.js",
   "./src/app-update.js",
   "./src/song-store.js",
@@ -75,6 +86,16 @@ self.addEventListener("install", (event) => {
         cache
           .addAll(APP_SHELL.map((asset) => new Request(asset, { cache: "reload" })))
           .then(() => Promise.all(SAMPLE_ASSETS.map((asset) => cacheSampleAsset(cache, asset))))
+          .then(async () => {
+            // One-time recovery: v48 can fail before any page JS or Update
+            // button loads. Only promote this corrective release after its
+            // complete offline shell installed, and only if v48 is present.
+            // Do not reload clients or modify their songs, drafts or storage.
+            if (APP_VERSION === "2.4.49" &&
+                (await caches.keys()).includes(`${CACHE_PREFIX}-v2.4.48`)) {
+              await self.skipWaiting();
+            }
+          })
       )
   );
 });
@@ -103,23 +124,53 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-function getNavigationFallback(request) {
+function getNavigationShellPage(request) {
   const url = new URL(request.url);
-  const fileName = url.pathname.split("/").pop() || "index.html";
-  const shellPage = `./${fileName}`;
-
-  return caches
-    .match(request)
-    .then((cached) => cached || caches.match(shellPage))
-    .then((cached) => cached || caches.match("./index.html"));
+  const scope = new URL(self.registration.scope);
+  if (url.origin !== scope.origin) return null;
+  if (url.pathname === scope.pathname) return "./index.html";
+  // Sites serves /songs as an alias for songs.html. Match only our exact shell
+  // routes, not an unrelated path ending in the same filename. Query parameters
+  // select the song in client code and do not change the static HTML document.
+  return APP_SHELL.find((asset) => {
+    if (!asset.endsWith(".html")) return false;
+    const path = new URL(asset, scope).pathname;
+    return url.pathname === path || url.pathname === path.slice(0, -5);
+  }) || null;
 }
 
-function cacheRuntimeResponse(event, response) {
+async function getCachedNavigation(request) {
+  const shellPage = getNavigationShellPage(request);
+  if (!shellPage) return null;
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    const response = await cache.match(shellPage);
+    if (!response?.redirected) return response;
+    // Static hosts redirect songs.html -> /songs and index.html -> /. Their
+    // precached responses retain that URL chain. Navigation requests use manual
+    // redirects, so returning the chained response directly causes ERR_FAILED.
+    // Rebuild only a successful same-page HTML response; never launder a login,
+    // unrelated route, cross-origin, partial, or opaque redirect into our shell.
+    if (!response.ok || response.status === 204 || response.status === 206 ||
+        !/^text\/html(?:\s*;|$)/i.test(response.headers.get("Content-Type") || "") ||
+        getNavigationShellPage({ url: response.url }) !== shellPage) return null;
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: response.headers
+    });
+  } catch (error) {
+    console.warn("Unable to read offline page", error);
+    return null;
+  }
+}
+
+function cacheRuntimeResponse(event, response, cacheKey = event.request) {
   if (response && response.ok && response.status !== 204 && response.status !== 206) {
     const copy = response.clone();
     event.waitUntil(
       caches.open(CACHE_NAME)
-        .then((cache) => cache.put(event.request, copy))
+        .then((cache) => cache.put(cacheKey, copy))
         .catch((error) => console.warn("Unable to update offline cache", error))
     );
   }
@@ -128,21 +179,26 @@ function cacheRuntimeResponse(event, response) {
 
 self.addEventListener("fetch", (event) => {
   const { request } = event;
+  const url = new URL(request.url);
 
-  if (request.method !== "GET") {
+  if (request.method !== "GET" || url.origin !== new URL(self.registration.scope).origin) {
     return;
   }
 
-  if (new URL(request.url).pathname === new URL("./package.json", self.registration.scope).pathname) {
+  if (url.pathname === new URL("./package.json", self.registration.scope).pathname) {
     event.respondWith(fetch(request, { cache: "no-store" }));
     return;
   }
 
   if (request.mode === "navigate") {
+    // The installed shell is a versioned unit. Do not put a server round trip
+    // (or a new HTML/old JS mixture) in front of every Change Song / Back action.
+    // app-update.js still checks and installs updates separately; after explicit
+    // activation, reloads including ?app-update use the new worker's full shell.
     event.respondWith(
-      fetch(request)
-        .then((response) => cacheRuntimeResponse(event, response))
-        .catch(() => getNavigationFallback(request))
+      getCachedNavigation(request).then((cached) => cached ||
+        fetch(request).then((response) => cacheRuntimeResponse(event, response,
+          getNavigationShellPage(request) || request)))
     );
     return;
   }

@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《太阳照常升起》练习轨道",
   "scoreTitle": "《太阳照常升起》简谱进度",
-  "hint": "主旋律练习版；据1=F钢琴简谱转为C调21音卡林巴，保留句尾长音与跨小节连音。",
+  "hint": "EOP 17小节短编配右手主旋律，56个单音、68拍；1=F整体降5半音为C调，112 BPM。校正4处同音延音，末音保留4拍，无结尾休止；旧伴奏暂不使用，录音对听与实体琴检查待完成。",
   "difficulty": "medium",
   "bpm": 112,
   "defaultSpeedFactor": 0.82,
@@ -40,12 +40,7 @@
     [
       "E4",
       4,
-      2
-    ],
-    [
-      "E4",
-      6,
-      0.5
+      2.5
     ],
     [
       "E4",
@@ -180,12 +175,7 @@
     [
       "A4",
       37,
-      2
-    ],
-    [
-      "A4",
-      39,
-      0.75
+      2.75
     ],
     [
       "G4",
@@ -220,12 +210,7 @@
     [
       "E4",
       44,
-      4
-    ],
-    [
-      "E4",
-      48,
-      1
+      5
     ],
     [
       "D4",
@@ -255,12 +240,7 @@
     [
       "E4",
       53,
-      3
-    ],
-    [
-      "E4",
-      56,
-      1
+      4
     ],
     [
       "D4",
@@ -322,6 +302,329 @@
     ],
     "unsureMeasures": [
       "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。"
-    ]
+    ],
+    "sourceTotalBeats": 68,
+    "sourceMeasureCount": 17,
+    "sources": [
+      {
+        "label": "EveryonePiano 1896 / Ritchie, selected short piano arrangement",
+        "url": "https://www.everyonepiano.cn/Music-1896.html"
+      },
+      {
+        "label": "Same-edition numbered notation, complete one-page melody review",
+        "url": "https://www.everyonepiano.cn/Number-1896-1.html"
+      },
+      {
+        "label": "Same-edition staff notation, pitch and articulation cross-check",
+        "url": "https://www.everyonepiano.cn/Stave-1896-1.html"
+      }
+    ],
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-eop-17-measure-right-hand-melody",
+      "reason": "The complete visible selected melody fits A3–A4 after one global -5-semitone shift. Four source-confirmed ties remove false reattacks while retaining all 52 other tuples. This does not establish recognizability against a recording or physical ease.",
+      "reviewRequired": [
+        "Reference recording comparison not performed.",
+        "Browser audio at source and actual practice speed not performed in this data review.",
+        "Physical kalimba play-through, fast dotted-note cells, jumps and long-note decay remain untested.",
+        "Source harmony is not approved; the unchanged older V2 cannot accompany this corrected melody."
+      ]
+    },
+    "sourceReview": {
+      "originalV1": {
+        "title": "《太阳照常升起》",
+        "practiceTitle": "《太阳照常升起》练习轨道",
+        "scoreTitle": "《太阳照常升起》简谱进度",
+        "hint": "主旋律练习版；据1=F钢琴简谱转为C调21音卡林巴，保留句尾长音与跨小节连音。",
+        "fileSha256": "33b31f030d96cd09a1a682c9dd40c9e12d44d80a098c4f2037bf1ac6fc78f698",
+        "stepsSha256": "8cee368e7bffb1851c26ec14d665f0f3cd84bc4859a8b43accb6bb46d09a4481",
+        "attackCount": 60,
+        "melodyEndBeat": 68,
+        "restoration": "Restore the original display strings, split the four merged tuples using currentScopeReview.tieCorrections.original, restore historicalReviewNotes as sourceFeatures, and serialize with two-space JSON indentation plus a final newline to reconstruct the full original file byte-for-byte."
+      },
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "unsupported": [
+          "钢琴谱下方伴奏未进入主旋律版；原谱1=F已整体转为C调。"
+        ],
+        "unsureMeasures": [
+          "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。"
+        ]
+      },
+      "historicalV2SourceHistory": {
+        "meaning": "Preserved provenance from the unchanged V2 sibling, not newly verified sources or harmony approval.",
+        "sourceStatus": "verified",
+        "sources": [
+          {
+            "label": "中国曲谱网《太阳照常升起》钢琴简谱",
+            "url": "https://qupu123.com/Mobile-view-id-378530.html"
+          },
+          {
+            "label": "中国曲谱网《太阳照常升起》五线谱",
+            "url": "https://www.qupu123.com/Mobile-view-id-256604.html"
+          },
+          {
+            "label": "EveryonePiano The Sun Also Rises preview",
+            "url": "https://www.everyonepiano.cn/Music-1896.html"
+          }
+        ]
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-eop-melody",
+        "adoptedInVersion": "2.4.10",
+        "reviewedOn": "2026-10-12",
+        "edition": "EveryonePiano 1896, Joe Hisaishi / arr. Ritchie: the complete visible 17-measure short piano arrangement, right-hand melody only.",
+        "sourceEditions": [
+          {
+            "label": "EveryonePiano 1896 / Ritchie, parallel numbered and staff notation of one arrangement",
+            "url": "https://www.everyonepiano.cn/Music-1896.html",
+            "numberPage": "https://www.everyonepiano.cn/Number-1896-1.html",
+            "numberImage": "https://www.everyonepiano.cn/pianomusic/002/0001896/0001896-j-b-1.png",
+            "numberImageSha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0",
+            "staffPage": "https://www.everyonepiano.cn/Stave-1896-1.html",
+            "staffImage": "https://www.everyonepiano.cn/pianomusic/002/0001896/0001896-w-b-1.png",
+            "staffImageSha256": "0e1f1554d98fbaefbefb187de8a71ef3a039d879685af29f4b971ffc7a2cb223",
+            "inspectedPages": 1,
+            "inspectedMeasures": [
+              1,
+              17
+            ],
+            "sourceKey": "F",
+            "sourceMeter": "4/4",
+            "sourceTempo": 112,
+            "sourceTempoBeatUnit": "quarter",
+            "tempoEvidence": "The numbered page prints quarter=112; the staff page confirms pitches and articulation but prints no numeric tempo.",
+            "sourceBeatOrigin": 0,
+            "mapping": "Right-hand/upper melody of every printed m1–17; app beat = (measure - 1) * 4 + quarter-beat offset. Read the explicit melody voice, not the highest note of an accompaniment chord.",
+            "independence": "Numbered and staff pages are parallel representations of the same arrangement, not two independent musical sources. A visually matching repost is not independent corroboration."
+          }
+        ],
+        "reviewedBeatRanges": [
+          [
+            0,
+            68
+          ]
+        ],
+        "changedBeatRanges": [
+          [
+            4,
+            6.5
+          ],
+          [
+            37,
+            39.75
+          ],
+          [
+            44,
+            49
+          ],
+          [
+            53,
+            57
+          ]
+        ],
+        "tieCorrections": [
+          {
+            "span": [
+              4,
+              6.5
+            ],
+            "original": [
+              [
+                "E4",
+                4,
+                2
+              ],
+              [
+                "E4",
+                6,
+                0.5
+              ]
+            ],
+            "merged": [
+              "E4",
+              4,
+              2.5
+            ],
+            "sourceMeasures": [
+              2
+            ]
+          },
+          {
+            "span": [
+              37,
+              39.75
+            ],
+            "original": [
+              [
+                "A4",
+                37,
+                2
+              ],
+              [
+                "A4",
+                39,
+                0.75
+              ]
+            ],
+            "merged": [
+              "A4",
+              37,
+              2.75
+            ],
+            "sourceMeasures": [
+              10
+            ]
+          },
+          {
+            "span": [
+              44,
+              49
+            ],
+            "original": [
+              [
+                "E4",
+                44,
+                4
+              ],
+              [
+                "E4",
+                48,
+                1
+              ]
+            ],
+            "merged": [
+              "E4",
+              44,
+              5
+            ],
+            "sourceMeasures": [
+              12,
+              13
+            ]
+          },
+          {
+            "span": [
+              53,
+              57
+            ],
+            "original": [
+              [
+                "E4",
+                53,
+                3
+              ],
+              [
+                "E4",
+                56,
+                1
+              ]
+            ],
+            "merged": [
+              "E4",
+              53,
+              4
+            ],
+            "sourceMeasures": [
+              14,
+              15
+            ]
+          }
+        ],
+        "notationDecision": "All five explicit same-pitch ties are one attack each. Four previously split ties are merged; the existing A3@28/5 tie across m8–9 is retained. E4@6.5 and A3@33 are separate following attacks. G4@43/.75 and G4@43.75/.25 are genuine separate attacks; the m7 B3@27 to C4@27.75 different-pitch slur keeps both attacks.",
+        "unchangedMelody": {
+          "untouchedAttackCount": 52,
+          "untouchedTuplesSha256": "b05957e591931bc0c1dedb7b86e3e8ae1a1341a74090cc2e38f9da00723944cb",
+          "changedPitchCount": 0,
+          "changedOnsetCount": 0,
+          "extendedDurationCount": 4,
+          "removedTieContinuationCount": 4
+        },
+        "selectedMelody": {
+          "attackCount": 56,
+          "tupleSha256": "4952d08ef81cf1b3e59ccede3d10f90f75d4247e5ea04b5e6708e6c6d4c50517",
+          "physicalTarget": "single-melody",
+          "voice": "explicit-right-hand-melody",
+          "melodyRestWindows": []
+        },
+        "sourceForm": {
+          "printedMeasureCount": 17,
+          "selectedMeasureCount": 17,
+          "beatsPerMeasure": 4,
+          "pickupBeats": 0,
+          "repeatExpansion": false,
+          "finalBarline": "double final barline",
+          "scope": "Complete visible short arrangement, not the complete film score or an exact recording transcription."
+        },
+        "ending": {
+          "note": "A3",
+          "beat": 64,
+          "duration": 4,
+          "totalBeats": 68,
+          "finalRestBeats": 0
+        },
+        "sourceTotalBeatsMeaning": "68 quarter-note beats in the reviewed 17-bar short arrangement. The last A3 sounds from 64 through 68; no ending rest, added pickup or repeat is implied.",
+        "transposition": {
+          "sourceKey": "F",
+          "compiledKey": "C",
+          "semitoneShift": -5,
+          "sourceRange": [
+            "D4",
+            "D5"
+          ],
+          "compiledRange": [
+            "A3",
+            "A4"
+          ],
+          "sourcePitchClasses": [
+            0,
+            2,
+            4,
+            5,
+            7,
+            9,
+            10
+          ],
+          "octaveFolding": false,
+          "accidentalNaturalization": false,
+          "decision": "One interval-preserving global shift maps the complete right-hand melody into the fixed 21-key natural-note vocabulary; source Bb maps to F, rather than being replaced with a neighboring source natural."
+        },
+        "retainedPracticeTempo": "112 BPM agrees with the printed numbered-source quarter=112. The unchanged 0.82 default suggests 91.84 BPM, not the actual selected/remembered runtime speed.",
+        "evidenceFingerprints": {
+          "sourceReadingSha256": "da27e5b6c96e258f219f50c2eaac8012ef08fb4a032e5ec1b6cdeab4ebe1d844",
+          "fullMelodyEvidenceSha256": "7aabe343da96b054c33a92b940fca65db722246142e370b440b4f87b88aa908c",
+          "fourTiesEvidenceSha256": "f3935e1214d9a35f1bb4249afc20b4aadc00c86ccf4a75e1308f17021e3f82ee",
+          "preEditComparisonSha256": "8db344efa0a141edaafac5dbaf69bee322dfeb3e925a7b1fea7a6e8e77696629"
+        },
+        "historicalConflict": {
+          "measure": 9,
+          "status": "preserved-original-source-conflict",
+          "originalNote": "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。",
+          "decision": "Adopt the selected EOP m9 continuation and separately attacked A3@33, C4@34, E4@35. The original handwritten image and Qupu editions were not reverified; this does not establish that another edition is wrong."
+        },
+        "originalSourceLimits": "The original handwritten image was not reverified. Both historical Qupu source URLs remain unverified in this pass; no access warning was bypassed. The prior V2 verified label is historical and is not approval of its pitches or harmony.",
+        "accompanimentReview": {
+          "status": "legacy-sibling-preserved-incompatible",
+          "siblingId": "tai-yang-zhao-chang-sheng-qi-chord",
+          "siblingFileSha256": "32dea134fc4a85418044dac13b7014d594fcf879f2874d8c4bbe421f1f894199",
+          "contentCompatible": false,
+          "sourceHarmonyApproved": false,
+          "addedSupport": false,
+          "physicalTarget": "single-melody",
+          "decision": "The preserved V2 still has 60 explicit melody attacks and 26 automatic accompaniment events. Its old melody is incompatible with the reviewed 56-attack V1; do not borrow its backing. No harmony or new support is approved."
+        },
+        "selectedMelodyNotationReviewed": true,
+        "fullOriginalSongApproved": false,
+        "exactRecordingApproved": false,
+        "originalHandwrittenImageReverified": false,
+        "independentEditionCorroborated": false,
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "Selected EOP right-hand notation only. This is not approval of the complete original film work, an exact recording, source harmony or physical ease. Browser audio, reference listening and physical-kalimba acceptance remain separate checks. Public access does not establish public-distribution rights; raw source images stay outside the repository."
+      }
+    }
   }
 }

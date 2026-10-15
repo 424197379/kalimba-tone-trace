@@ -1,10 +1,10 @@
 {
   "id": "bluebird",
-  "title": "《青鸟》",
+  "title": "《青鸟》（待核简化版）",
   "uploader": "system",
-  "practiceTitle": "《青鸟》练习轨道",
+  "practiceTitle": "《青鸟》待核简化版单音练习",
   "scoreTitle": "《青鸟》简谱进度",
-  "hint": "这里放的是适合 21 音卡林巴的新手副歌简化练习版，保留快速上行和高音落点，默认速率会放慢一些。",
+  "hint": "保留现有82音简化练习数据，旋律与编配来源对应仍待核；不作为已核准原旋律或新手易弹版本。146 BPM与速度建议保留为历史练习设置，先用慢速；不按公开指弹预览猜改音。",
   "difficulty": "hard",
   "bpm": 146,
   "defaultSpeedFactor": 0.8,
@@ -432,7 +432,55 @@
       "Public source includes chords or accompaniment; V1 steps keep melody only."
     ],
     "unsureMeasures": [
-      "Simplified chorus practice version in C; full original form still needs review."
-    ]
+      "现有82音改编的明确主旋律来源、音区与时值映射尚未建立；公开指弹预览不能核准整段副歌。"
+    ],
+    "sourceReview": {
+      "historicalSongMetadata": {
+        "id": "bluebird",
+        "title": "《青鸟》",
+        "uploader": "system",
+        "practiceTitle": "《青鸟》练习轨道",
+        "scoreTitle": "《青鸟》简谱进度",
+        "hint": "这里放的是适合 21 音卡林巴的新手副歌简化练习版，保留快速上行和高音落点，默认速率会放慢一些。",
+        "difficulty": "hard",
+        "bpm": 146,
+        "defaultSpeedFactor": 0.8,
+        "beatsPerMeasure": 4,
+        "schemaVersion": 1,
+        "key": "C",
+        "sourceFeatures": {
+          "hasChords": true,
+          "hasArpeggio": true,
+          "hasRepeats": false,
+          "unsupported": [
+            "V1 keeps only the playable 21-key kalimba melody; original speed, accompaniment, and ornaments are not fully encoded.",
+            "Public source includes chords or accompaniment; V1 steps keep melody only."
+          ],
+          "unsureMeasures": [
+            "Simplified chorus practice version in C; full original form still needs review."
+          ]
+        }
+      },
+      "currentScopeReview": {
+        "status": "unresolved-simplified-chorus-source-mapping",
+        "reviewedOn": "2026-10-12",
+        "changedTupleCount": 0,
+        "retainedAttackCount": 82,
+        "originalFileSha256": "aaaf6290337fa76f6c5924164992ed812566930a575ab533526afea6328f5463",
+        "tupleSha256": "3427f55b1b2d8a1bfcab50edabc5b2310c469e5c2aed96a56333957d9b80de2b",
+        "inspectedComparison": {
+          "url": "https://www.guitarworld.com.cn/pu/q91150",
+          "imageUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/1348800/view/4be163ac2a3d118a0dd2ba5a920b9a5c.png",
+          "imageSha256": "e798ee70d73d203b57536bdcb54b96e89ef96dc6f4835b5ec5701b3208d38bb9",
+          "scope": "fingerstyle public preview through partially visible m9, not adopted melody",
+          "printedQuarterBpm": 144,
+          "printedMeter": "4/4"
+        },
+        "decision": "Keep all existing 82 tuples. Preview opening E4-A4-B4 after 2.5 beats of rest is not a uniform transposition of current E4-G4-A4. This comparison does not establish that every retained note is wrong. No explicit melody voice or full later source establishes the current simplified chorus.",
+        "chromaticBoundary": "The visible G-sharp is an inner chord pitch. It cannot alone establish a chromatic main melody or justify naturalizing any melody note.",
+        "tempoBoundary": "146 BPM and .8 suggestion are retained historical practice settings; do not replace them with a different preview edition’s 144 BPM.",
+        "requiredEvidence": "A clearly identified source for the retained adapted chorus, with main voice and exact onset/duration/register mapping."
+      }
+    }
   }
 }

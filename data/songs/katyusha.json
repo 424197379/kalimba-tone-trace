@@ -1,10 +1,10 @@
 {
   "id": "katyusha",
-  "title": "《喀秋莎》",
+  "title": "《喀秋莎》（待核版）",
   "uploader": "system",
   "practiceTitle": "《喀秋莎》练习轨道",
   "scoreTitle": "《喀秋莎》简谱进度",
-  "hint": "这里放的是适合 21 音卡林巴的《喀秋莎》简化主旋律练习版，按 4/4 推进，保留了民歌式上行和句尾停顿。",
+  "hint": "保留旧版73音、44拍的单音练习轨道；当前旋律与所列来源的对应关系尚未解决，未获来源校准。4/4分组、音高和时值暂不改动，不能仅凭自然音范围认定改编准确或整份原谱适合21音卡林巴。",
   "difficulty": "medium",
   "bpm": 112,
   "defaultSpeedFactor": 0.9,
@@ -383,11 +383,196 @@
     "hasArpeggio": true,
     "hasRepeats": true,
     "unsupported": [
-      "V1 steps keep the 21-key kalimba 4/4 practice melody; Jitabang 1=C 2/4 guitar source is not fully expanded.",
-      "The 2/4 source grouping differs from the current 4/4 practice grouping."
+      "The retained 73-attack melody has unresolved correspondence with the cited Jitabang vocal opening and instrumental introduction; the discrepancy includes pitches and rhythm, not only 4/4 versus 2/4 grouping.",
+      "No source-confirmed correction, source ending, new excerpt, repeat expansion or accompaniment is adopted in this metadata-only review.",
+      "The complete cited Jitabang printed edition includes essential melody F# and G# in its fifth ending and cannot fit the fixed natural-note instrument through a single global transposition. This finding is about that complete edition, not the retained all-natural 73-note encoding or every Katyusha arrangement."
     ],
     "unsureMeasures": [
-      "Current practice version and Jitabang 2/4 source need meter and repeat review."
-    ]
+      "All 73 retained attacks over encoded beats [0,44) need an identified edition and source-to-melody mapping; no source-aligned current measure numbers are established.",
+      "Jitabang first vocal pass m17–40 was inspected separately but not adopted; its low-E readings, intended register, edition choice, full form and listening acceptance remain unresolved."
+    ],
+    "sourceReview": {
+      "confidence": "unresolved-melody-source-mapping",
+      "decision": "Retain all existing melody tuples and timing while disclosing the source gap. Do not substitute a different uncertain edition, silently correct notes, or describe this version as source-calibrated.",
+      "sources": [
+        {
+          "label": "Jitabang, 深蓝雨吉他 2019-25, 廖昌永版《喀秋莎》guitar/vocal score",
+          "url": "https://www.jitabang.com/jiaoxue/8653.html"
+        },
+        {
+          "label": "Jitabang printed score, page 1",
+          "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png"
+        },
+        {
+          "label": "Jitabang printed score, page 2",
+          "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png"
+        },
+        {
+          "label": "Barynya Katyusha, separate edition used only for scoped comparison",
+          "url": "https://www.barynya.com/balalaika/images/katyusha.pdf"
+        }
+      ],
+      "originalV1": {
+        "file": "data/songs/katyusha.json",
+        "fileSha256": "7de14e131a9055ff88a21310e8e6095496152b21034469eee851caec9458fbf3",
+        "stepsSha256": "2da07ced7b54f17cf8fdabe793b354adf3bff7b4da635f3c8762904d727a55ac",
+        "title": "《喀秋莎》",
+        "hint": "这里放的是适合 21 音卡林巴的《喀秋莎》简化主旋律练习版，按 4/4 推进，保留了民歌式上行和句尾停顿。",
+        "reconstruction": "Restore this title and hint, replace sourceFeatures with historicalReviewNotes, serialize with two-space JSON indentation and one final newline. All other original fields and every melody tuple are unchanged."
+      },
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": true,
+        "unsupported": [
+          "V1 steps keep the 21-key kalimba 4/4 practice melody; Jitabang 1=C 2/4 guitar source is not fully expanded.",
+          "The 2/4 source grouping differs from the current 4/4 practice grouping."
+        ],
+        "unsureMeasures": [
+          "Current practice version and Jitabang 2/4 source need meter and repeat review."
+        ]
+      },
+      "historicalProvenance": {
+        "status": "Historical source claims are retained for provenance and reconstruction, not renewed source verification.",
+        "firstVisibleRepositoryCommit": "fc8712e",
+        "sourceMetadataCommit": "c0df063",
+        "earliestRepositoryMelody": "All 73 current pitch/onset/duration tuples already occur in the earliest inspected repository version.",
+        "sourceLinkOrigin": "The Jitabang page and both source images were recorded in the historical V2 sibling.",
+        "originalPrivatePhotosReverified": false
+      },
+      "preservedV2": {
+        "file": "data/songs/katyusha-chord.json",
+        "fileSha256": "de452ca36de8add09257934ec3cb1e59f09c0f8b181ba14fb02fefe19367640c",
+        "status": "historical-unchanged-source-mapping-unresolved",
+        "explicitMelodyMatchesCurrent": true,
+        "independence": "Its identical 73 explicit melody-role tuples are shared historical data, not independent source corroboration.",
+        "supportReview": "Harmony and automatic backing remain unchanged and unapproved by this review. No new support is added or borrowed."
+      },
+      "currentScopeReview": {
+        "date": "2026-10-12",
+        "reviewedInVersion": "2.4.8",
+        "status": "unresolved-melody-source-mapping",
+        "sourceUrl": "https://www.jitabang.com/jiaoxue/8653.html",
+        "sourceImages": [
+          {
+            "page": 1,
+            "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png",
+            "sha256": "1e735786aa5fa396c236be5c281e2ed1282bfbed8c89985590bd5f6c5b3058f0",
+            "dimensions": [
+              1200,
+              1604
+            ]
+          },
+          {
+            "page": 2,
+            "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png",
+            "sha256": "4e428b9d15282fc1d09b98a0a5ae9b9d474534a13676515aaf3e40cb4cc93c65",
+            "dimensions": [
+              1200,
+              1704
+            ]
+          }
+        ],
+        "independentComparison": {
+          "url": "https://www.barynya.com/balalaika/images/katyusha.pdf",
+          "sha256": "1879259b25a95c095b3f8febb08ecb62fbbf7e6e21f2c52cae01d2b49175d108",
+          "scope": "Opening anchors and clear A/B fragments only; this is a different edition with conflicting later rhythm/register. It is not adopted or spliced into the current melody."
+        },
+        "sourceHeader": {
+          "key": "C",
+          "meter": "2/4",
+          "bpm": 112,
+          "pitchBasis": "Printed note names without capo transposition; male capo 5 sounding pitch is not mixed into this review."
+        },
+        "sourcePixelReview": "Both Jitabang pages were inspected. Independent pixel review corroborated the disputed low-E readings and melody accidentals in the fifth ending. This does not resolve arranger intent or map the current 73 attacks.",
+        "retainedEncoding": {
+          "attackCount": 73,
+          "endBeat": 44,
+          "soundingBeats": 41,
+          "range": [
+            "E4",
+            "E5"
+          ],
+          "bpm": 112,
+          "beatsPerMeasure": 4,
+          "allTuplesUnchanged": true
+        },
+        "reviewedBeatRanges": [],
+        "unresolvedBeatRanges": [
+          [
+            0,
+            44
+          ]
+        ],
+        "currentMelodySourceMapping": "unresolved",
+        "openingComparison": "Neither the printed vocal opening m17–18 nor the instrumental start m9 matches the current opening pitch/rhythm sequence. Changing meter, globally transposing or uniformly scaling durations cannot establish those mappings; no safe isolated note correction is proved.",
+        "inspectedAlternativeExcerpt": {
+          "status": "inspected-not-adopted",
+          "edition": "Jitabang first vocal pass only",
+          "measures": [
+            17,
+            40
+          ],
+          "attackCount": 61,
+          "measureCount": 24,
+          "printedRange": [
+            "E3",
+            "A4"
+          ],
+          "candidateGlobalOctaveShiftSemitones": 12,
+          "candidateRange": [
+            "E4",
+            "A5"
+          ],
+          "naturalPitchFit": "Only this selected first vocal pass fits the fixed natural-note set after a uniform +12 shift. It is not the complete printed arrangement or the current production melody.",
+          "remainingDecision": "Select the intended edition/scope and verify low-E engraving/register intent against the arranger demonstration before any separate adoption. Do not replace those notes from Barynya or encode this candidate as a playable production version."
+        },
+        "completePrintedEditionConstraint": {
+          "scope": "Complete Jitabang printed edition, including the fifth-ending melody at m41–42",
+          "melodyAccidentals": [
+            "F#",
+            "G#"
+          ],
+          "melodyPitchClasses": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11
+          ],
+          "validGlobalPitchClassTranspositions": [],
+          "result": "At least nine melody pitch classes cannot map into the seven natural pitch classes under any of the 12 global transpositions. An octave shift does not remove that constraint.",
+          "currentEncodingVerdict": "This is not a chromatic rejection of the current all-natural 73-note encoding, proof that its notes were naturalized, or a verdict on every Katyusha edition."
+        },
+        "evidenceFingerprints": {
+          "privateAuditSha256": "e83f20f87cf98f9c1d59f5aa0253ba5c8d9f6f6b9ae2ef1b0a0a66d1d18405c6",
+          "privateFixtureSha256": "ca63dba40cf0b6f828e735b34fc450afca67850c66e87fa4236b027e719959ea",
+          "comparisonSha256": "3319b9fe753ca88a30b3b29ed6a1da11e5e64a6ed5c8bbcb120e87fc4da02b8f"
+        },
+        "originalPrivatePhotosReverified": false,
+        "fullSongApproved": false,
+        "sourceCalibrated": false,
+        "browserAudio": "not-performed",
+        "referenceListening": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "Pixel and data review only. No current-note source mapping, new arrangement, source-confirmed ending, harmony approval, recognizability judgment, A/B listening or physical play-through is claimed. Source access does not establish public-distribution rights; raw scans and the complete independent fixture stay outside the public repository. The unchanged 44-beat encoded end is not a verified source ending."
+      }
+    },
+    "suitability": {
+      "status": "needs-review",
+      "scope": "Retained 73-attack, 44-beat single-note encoding; melody-to-source mapping unresolved",
+      "reason": "All retained pitches are within the fixed natural-note range, but that does not establish source fidelity or musical recognizability. The separate inspected excerpt is not adopted; the complete Jitabang edition has its own verified chromatic constraint, which is not a blanket rejection of this song.",
+      "reviewRequired": [
+        "Identify the intended edition and scope, then establish a source-to-melody mapping before changing the preserved notes or claiming a source-calibrated arrangement.",
+        "Keep the Jitabang first-vocal-pass candidate and Barynya edition separate; resolve low-E register/engraving intent before adopting either.",
+        "Verify any selected source ending and repeats before asserting sourceTotalBeats; keep the existing encoded end at 44 meanwhile.",
+        "Compare unaccompanied melody against the intended reference at source tempo and the actual selected practice multiplier; browser audio and physical kalimba checks remain pending.",
+        "Review harmony, rests and A/B listening independently before adding or borrowing support for any later melody version."
+      ]
+    }
   }
 }

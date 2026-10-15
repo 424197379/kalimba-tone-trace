@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "hong-yan",
-  "title": "《鸿雁》",
+  "title": "《鸿雁》（教材定拍版）",
   "uploader": "system",
-  "practiceTitle": "《鸿雁》练习轨道",
-  "scoreTitle": "《鸿雁》简谱进度",
-  "hint": "乌拉特民歌主题版：两遍主题加收束句，共20小节，约86秒。G调整体移至C调，适配21音琴，无需调琴。保留长音和延音；省略句尾倚音，不含录音版前奏、间奏和后半段转调。",
+  "practiceTitle": "《鸿雁》（教材定拍版）练习轨道",
+  "scoreTitle": "《鸿雁》（教材定拍版）简谱进度",
+  "hint": "粤教花城五上教材定拍版：8小节主题两遍，再接完整8小节结束句，98次起音、96拍。D调整体降2半音至C调，保留四处真实延音；省略8组无定量倚音，延长记号不另加拍。56 BPM为练习设定；仅练主旋律，无伴奏。",
   "difficulty": "easy",
   "bpm": 56,
   "defaultSpeedFactor": 1,
@@ -13,9 +13,14 @@
   "key": "C",
   "steps": [
     [
-      "E4",
+      "D4",
       0,
-      1
+      0.5
+    ],
+    [
+      "E4",
+      0.5,
+      0.5
     ],
     [
       "C4",
@@ -40,12 +45,12 @@
     [
       "A4",
       5,
-      0.5
+      0.75
     ],
     [
       "C5",
-      5.5,
-      0.5
+      5.75,
+      0.25
     ],
     [
       "A4",
@@ -85,17 +90,12 @@
     [
       "E4",
       11.5,
-      0.5
-    ],
-    [
-      "D4",
-      12,
       1
     ],
     [
       "D4",
-      13,
-      3
+      12.5,
+      3.5
     ],
     [
       "G4",
@@ -105,12 +105,12 @@
     [
       "A4",
       17,
-      0.5
+      0.75
     ],
     [
       "C5",
-      17.5,
-      0.5
+      17.75,
+      0.25
     ],
     [
       "A4",
@@ -178,9 +178,14 @@
       4
     ],
     [
-      "E4",
+      "D4",
       32,
-      1
+      0.5
+    ],
+    [
+      "E4",
+      32.5,
+      0.5
     ],
     [
       "C4",
@@ -205,12 +210,12 @@
     [
       "A4",
       37,
-      0.5
+      0.75
     ],
     [
       "C5",
-      37.5,
-      0.5
+      37.75,
+      0.25
     ],
     [
       "A4",
@@ -250,17 +255,12 @@
     [
       "E4",
       43.5,
-      0.5
-    ],
-    [
-      "D4",
-      44,
       1
     ],
     [
       "D4",
-      45,
-      3
+      44.5,
+      3.5
     ],
     [
       "G4",
@@ -270,12 +270,12 @@
     [
       "A4",
       49,
-      0.5
+      0.75
     ],
     [
       "C5",
-      49.5,
-      0.5
+      49.75,
+      0.25
     ],
     [
       "A4",
@@ -350,12 +350,12 @@
     [
       "A4",
       65,
-      0.5
+      0.75
     ],
     [
       "C5",
-      65.5,
-      0.5
+      65.75,
+      0.25
     ],
     [
       "A4",
@@ -421,44 +421,553 @@
       "A3",
       76,
       4
+    ],
+    [
+      "G4",
+      80,
+      1
+    ],
+    [
+      "A4",
+      81,
+      0.75
+    ],
+    [
+      "C5",
+      81.75,
+      0.25
+    ],
+    [
+      "A4",
+      82,
+      2
+    ],
+    [
+      "D4",
+      84,
+      0.5
+    ],
+    [
+      "E4",
+      84.5,
+      0.5
+    ],
+    [
+      "C4",
+      85,
+      0.5
+    ],
+    [
+      "A3",
+      85.5,
+      0.5
+    ],
+    [
+      "G3",
+      86,
+      2
+    ],
+    [
+      "E4",
+      88,
+      1
+    ],
+    [
+      "C4",
+      89,
+      0.5
+    ],
+    [
+      "A3",
+      89.5,
+      0.5
+    ],
+    [
+      "G3",
+      90,
+      0.5
+    ],
+    [
+      "A3",
+      90.5,
+      0.5
+    ],
+    [
+      "E4",
+      91,
+      1
+    ],
+    [
+      "A3",
+      92,
+      4
     ]
   ],
   "sourceFeatures": {
     "hasChords": false,
     "hasArpeggio": false,
     "hasRepeats": true,
-    "unsupported": [
-      "单音传统主题练习版；省略句尾小字121倚音，主音保持原有四拍时值。",
-      "不收录现代录音编曲的前奏、间奏、转调和伴奏；无歌词。"
-    ],
-    "unsureMeasures": [],
+    "sourceTotalBeats": 96,
+    "sourceMeasureCount": 24,
+    "sourceKey": "D",
+    "transpositionSemitones": -2,
+    "tempoStatus": "editorial-practice-tempo-source-has-text-only",
+    "meterStatus": "printed-4/4",
+    "repeatStructure": "The right repeat after m8 returns to the beginning once. Both separately written four-bar ending phrases m9–16 then follow. 结束句 is not a numbered alternate ending, and lyric rows alone do not authorize repeats.",
+    "transcriptionScope": "school-complete-principal-route-fixed-beat-no-grace",
+    "composer": "蒙古族民歌（乌拉特传统曲调）",
     "sources": [
       {
-        "label": "中国曲谱网《鸿雁》（内蒙民歌、3个版本）：版本一、三的G调声乐主题，核对音高、节奏、反复与收束句",
-        "url": "https://www.qupu123.com/minge/erziyixia/p116313.html"
-      },
-      {
-        "label": "学校公开音乐教材第40页：独立核对传统主题轮廓、低音终止与反复结构；D调版装饰及附点处理不同，不混入主谱",
+        "label": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
         "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
       }
     ],
-    "composer": "乌拉特民歌（传统曲调）",
-    "transcriptionScope": "traditional-theme-two-strophes-and-cadence",
-    "sourceMeasureCount": 20,
-    "sourceTotalBeats": 80,
-    "sourceKey": "G",
-    "transpositionSemitones": -7,
-    "tempoStatus": "printed-quarter-note-tempo-56-in-version-one",
-    "meterStatus": "printed-4/4",
-    "repeatStructure": "8小节主题两遍，再重复第5—8小节作为收束句；显式展开。",
-    "rightsBasis": "仅整理传统乌拉特民歌曲调；不包含现代填词、伴奏、录音或第三方谱图。",
+    "unsupported": [
+      "省略6组印刷／8组展开的无定量倚音，共16个展开小音头；保留全部主音时值，不猜倚音定时。",
+      "所选定拍练习在原页第15小节延长记号处不额外加拍；96拍不代表原唱精确演唱时长。",
+      "不含伴奏、现代录音编配或歌词；来源图像和完整私人证据不随仓库分发。"
+    ],
+    "unsureMeasures": [],
     "suitability": {
       "status": "conditional",
-      "scope": "traditional-theme-two-strophes-and-cadence",
-      "reason": "整体移调后音域G3—C5，仅使用21音C调琴已有自然音；没有局部折叠八度或替换半音。主题及收束句经两份G调记谱和独立教材对照。",
+      "scope": "school-complete-principal-route-fixed-beat-no-grace",
+      "reason": "统一降2半音后G3–C5全在固定21音自然音琴范围；保留音程及实际八度点，无局部折八度。最短0.25拍在56 BPM约268毫秒，长音衰减与跳进仍待参考试听和实体琴检验；easy为保留的练习分类。",
       "reviewRequired": [
-        "实体琴音色衰减、换手与主观旋律辨识度尚待用户实际试听。"
+        "Reference-recording comparison not performed.",
+        "Browser/audio acceptance is separate from data adoption.",
+        "Physical kalimba play-through not performed.",
+        "Public distribution rights remain unestablished."
       ]
+    },
+    "sourceReview": {
+      "confidence": "high-for-selected-principal-notation-and-disclosed-fixed-beat-adaptation-only",
+      "sources": [
+        {
+          "label": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
+          "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
+        }
+      ],
+      "currentScopeReview": {
+        "status": "reviewed-selected-school-fixed-beat-edition",
+        "reviewedInVersion": "2.4.37",
+        "adoptedInVersion": "2.4.37",
+        "sourceLabel": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
+        "sourceUrl": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf",
+        "sourcePdfSha256": "b7debe04803aed2637f68f56b081ad35848bc929f1b978e1c5be6a187729b66f",
+        "sourcePageImageSha256": "b3a5471ced0093ef5d143a1d93e4230b920cf94ec7f32013234ba6c3aa201162",
+        "book": "义务教育教科书 音乐 走进音乐世界 五年级 上册 简谱",
+        "publishers": [
+          "广东教育出版社",
+          "花城出版社"
+        ],
+        "edition": "2021年6月第1版，第1次印刷",
+        "isbn": "978-7-5548-4120-4",
+        "scoreCredits": [
+          "蒙古族民歌",
+          "吕燕卫词",
+          "张宏光编曲"
+        ],
+        "pdfPages": [
+          41
+        ],
+        "printedPages": [
+          40
+        ],
+        "sourceMeasureNumbers": "Editorially counted m1–16; no measure numerals printed.",
+        "sourceMeasureRange": [
+          1,
+          16
+        ],
+        "distinctPrintedMelodyMeasures": 16,
+        "expandedMeasureCount": 24,
+        "reviewedBeatRanges": [
+          [
+            0,
+            96
+          ]
+        ],
+        "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+        "voiceDecision": "A single numbered melody line is printed. No highest-note heuristic or accompaniment voice was used.",
+        "sourceKey": "D",
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "sourceQuarterBpm": null,
+        "sourceNumericTempoPrinted": false,
+        "sourceTempoPrinted": true,
+        "sourceTempoText": "慢 歌唱地",
+        "tempoDecision": "56 BPM is a retained editorial practice choice, not a numeric source marking. The source only prints 慢 歌唱地. The 1.0 suggestion and existing user-saved multiplier remain separate.",
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              1,
+              8
+            ],
+            "beats": [
+              0,
+              32
+            ],
+            "pass": 1
+          },
+          {
+            "sourceMeasures": [
+              1,
+              8
+            ],
+            "beats": [
+              32,
+              64
+            ],
+            "pass": 2
+          },
+          {
+            "sourceMeasures": [
+              9,
+              16
+            ],
+            "beats": [
+              64,
+              96
+            ],
+            "pass": 1
+          }
+        ],
+        "expandedSourceMeasures": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "repeatSignsPresent": true,
+        "lyricRowsAuthorizeRepeat": false,
+        "repeatExpansion": "m1-8-twice-then-both-written-ending-phrases-m9-16",
+        "formDecision": "The right repeat after m8 returns to the beginning once. Both separately written four-bar ending phrases m9–16 then follow. 结束句 is not a numbered alternate ending, and lyric rows alone do not authorize repeats.",
+        "allPrintedOccurrencesReviewed": true,
+        "excludedSections": [],
+        "omittedSectionsAreRests": false,
+        "selectedEndIsSelectedEditionEnding": true,
+        "selectedEndIsFullSongEnding": false,
+        "printedMetricNoteheadCount": 67,
+        "metricNoteheadCount": 102,
+        "principalAttackCount": 98,
+        "ties": [
+          {
+            "sourceHeads": [
+              "m3.n7",
+              "m4.n1"
+            ],
+            "routeMeasures": [
+              3,
+              4
+            ],
+            "note": "E4",
+            "beat": 11.5,
+            "duration": 1
+          },
+          {
+            "sourceHeads": [
+              "m4.n2",
+              "m4.n3"
+            ],
+            "routeMeasures": [
+              4,
+              4
+            ],
+            "note": "D4",
+            "beat": 12.5,
+            "duration": 3.5
+          },
+          {
+            "sourceHeads": [
+              "m3.n7",
+              "m4.n1"
+            ],
+            "routeMeasures": [
+              11,
+              12
+            ],
+            "note": "E4",
+            "beat": 43.5,
+            "duration": 1
+          },
+          {
+            "sourceHeads": [
+              "m4.n2",
+              "m4.n3"
+            ],
+            "routeMeasures": [
+              12,
+              12
+            ],
+            "note": "D4",
+            "beat": 44.5,
+            "duration": 3.5
+          }
+        ],
+        "tieContinuationCount": 4,
+        "tuplets": [],
+        "slurDecision": "Different-pitch slurs retain all principal attacks; the larger m3.n6 to m4.n1 arc does not erase G4 at beat 11. Only the nested same-pitch E4 and the m4 D4 arcs merge attacks.",
+        "slurEvidence": "The second independent reader lists 14 printed slurs (22 expanded occurrences); the first reader has no complete slur registry. Do not claim every slur endpoint was independently agreed by both readers.",
+        "silentWindows": [],
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 0,
+        "endingRestBeats": 0,
+        "ornamentDecision": "Eight expanded unmeasured grace groups (16 small noteheads; six printed groups) are deliberately omitted. No guessed duration is added and no principal-note time is stolen. This is not an ornament-complete realization.",
+        "omittedOrnaments": [
+          {
+            "sourceMeasure": 7,
+            "routeMeasure": 7,
+            "beat": 27,
+            "sourcePitches": [
+              "B3"
+            ],
+            "compiledPitches": [
+              "A3"
+            ],
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 8,
+            "routeMeasure": 8,
+            "beat": 28,
+            "sourcePitches": [
+              "D4",
+              "E4",
+              "D4"
+            ],
+            "compiledPitches": [
+              "C4",
+              "D4",
+              "C4"
+            ],
+            "principalPitch": "A3",
+            "principalDuration": 4,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 7,
+            "routeMeasure": 15,
+            "beat": 59,
+            "sourcePitches": [
+              "B3"
+            ],
+            "compiledPitches": [
+              "A3"
+            ],
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 8,
+            "routeMeasure": 16,
+            "beat": 60,
+            "sourcePitches": [
+              "D4",
+              "E4",
+              "D4"
+            ],
+            "compiledPitches": [
+              "C4",
+              "D4",
+              "C4"
+            ],
+            "principalPitch": "A3",
+            "principalDuration": 4,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 11,
+            "routeMeasure": 19,
+            "beat": 75,
+            "sourcePitches": [
+              "B3"
+            ],
+            "compiledPitches": [
+              "A3"
+            ],
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 12,
+            "routeMeasure": 20,
+            "beat": 76,
+            "sourcePitches": [
+              "D4",
+              "E4",
+              "D4"
+            ],
+            "compiledPitches": [
+              "C4",
+              "D4",
+              "C4"
+            ],
+            "principalPitch": "A3",
+            "principalDuration": 4,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 15,
+            "routeMeasure": 23,
+            "beat": 91,
+            "sourcePitches": [
+              "B3"
+            ],
+            "compiledPitches": [
+              "A3"
+            ],
+            "principalPitch": "E4",
+            "principalDuration": 1,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          },
+          {
+            "sourceMeasure": 16,
+            "routeMeasure": 24,
+            "beat": 92,
+            "sourcePitches": [
+              "D4",
+              "E4",
+              "D4"
+            ],
+            "compiledPitches": [
+              "C4",
+              "D4",
+              "C4"
+            ],
+            "principalPitch": "A3",
+            "principalDuration": 4,
+            "duration": null,
+            "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+          }
+        ],
+        "fermata": {
+          "sourceMeasure": 15,
+          "sourceHead": 6,
+          "routeMeasure": 23,
+          "note": "E4",
+          "beat": 91,
+          "writtenDuration": 1,
+          "sourceExtraDuration": null,
+          "addedPracticeBeats": 0,
+          "decision": "fixed-beat-practice-with-no-extra-fermata-time"
+        },
+        "fixedBeatDecision": "96 quarter beats is the selected fixed-time practice grid, not an exact original-singing duration. The unmeasured fermata at source m15.n6 adds zero practice beats; final A3 starts at 92 and keeps all four written beats through 96.",
+        "absoluteOctaveConvention": "Undotted source 1 = D4 and target 1 = C4; actual upper/lower octave dots are retained. This reference does not claim a singer recording octave.",
+        "sourceRange": [
+          "A3",
+          "D5"
+        ],
+        "compiledRange": [
+          "G3",
+          "C5"
+        ],
+        "sourcePitchClasses": [
+          2,
+          4,
+          6,
+          9,
+          11
+        ],
+        "sourceKeySignatureAccidentals": [
+          "F#",
+          "C#"
+        ],
+        "additionalMelodyAccidentals": [],
+        "transpositionSemitones": -2,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "localPitchAlterations": [],
+        "accompanimentDecision": "No accompaniment printed, selected or inferred. No old edition or synthetic same-id sibling may supply incompatible backing.",
+        "versionDecision": "This deliberate school fixed-beat edition does not prove the prior edition wrong. The selected historical G-key Qupu image remains unavailable and no other edition is spliced into this reading.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "independentSourceReaders": 2,
+        "sourceReviewMethod": "Two complete blind readings of the same school page agreed on every normal-note occurrence, merged principal tuple, full route, tie, grace group and fermata. These are two readers, not two independent published sources; full slur-endpoint agreement is not claimed.",
+        "firstFrozenSourceReadingSha256": "609842bb9f76cfe69b1c3a45aeda9e75d5f9bac2474e607451104e932f467ed0",
+        "independentSourceFixtureSha256": "42ec562af6cef38acf71ec1a4d5628eba084e237e3f50d9ec09fedf03c2eaf74",
+        "comparisonSha256": "5c16ca9717ef438e1d93314c0c4ca60cf037f7146dba59bee5685e1be2efcda5",
+        "independentSourceTupleSha256": "0d288e95d7729f543461ad8b76040bb69fbaca3dffc5983b8678a5d4a9e6f6ac",
+        "sourcePixels": "Complete score page, title page and colophon viewed at data adoption; source-boundary pages were also viewed by both independent readers.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only"
+      },
+      "historicalSourceFeatures": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "unsupported": [
+          "单音传统主题练习版；省略句尾小字121倚音，主音保持原有四拍时值。",
+          "不收录现代录音编曲的前奏、间奏、转调和伴奏；无歌词。"
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "中国曲谱网《鸿雁》（内蒙民歌、3个版本）：版本一、三的G调声乐主题，核对音高、节奏、反复与收束句",
+            "url": "https://www.qupu123.com/minge/erziyixia/p116313.html"
+          },
+          {
+            "label": "学校公开音乐教材第40页：独立核对传统主题轮廓、低音终止与反复结构；D调版装饰及附点处理不同，不混入主谱",
+            "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
+          }
+        ],
+        "composer": "乌拉特民歌（传统曲调）",
+        "transcriptionScope": "traditional-theme-two-strophes-and-cadence",
+        "sourceMeasureCount": 20,
+        "sourceTotalBeats": 80,
+        "sourceKey": "G",
+        "transpositionSemitones": -7,
+        "tempoStatus": "printed-quarter-note-tempo-56-in-version-one",
+        "meterStatus": "printed-4/4",
+        "repeatStructure": "8小节主题两遍，再重复第5—8小节作为收束句；显式展开。",
+        "rightsBasis": "仅整理传统乌拉特民歌曲调；不包含现代填词、伴奏、录音或第三方谱图。",
+        "suitability": {
+          "status": "conditional",
+          "scope": "traditional-theme-two-strophes-and-cadence",
+          "reason": "整体移调后音域G3—C5，仅使用21音C调琴已有自然音；没有局部折叠八度或替换半音。主题及收束句经两份G调记谱和独立教材对照。",
+          "reviewRequired": [
+            "实体琴音色衰减、换手与主观旋律辨识度尚待用户实际试听。"
+          ]
+        }
+      },
+      "archivedEdition": {
+        "file": "data/archives/hong-yan-v2.4.36.json",
+        "fileSha256": "a1793a1d4108dcc926f660bf65025d3958deb44b58baf762261fe53be7234b54",
+        "scope": "Complete byte-exact prior 2.4.36 file, 82 attacks / 80 beats / 56 BPM. Historical G-key source unavailable and not reverified; developer recovery only, no extra card or restore UI."
+      }
     }
-  }
+  },
+  "tuning": "21-key-c"
 }

@@ -25,10 +25,10 @@ There is no universal maximum note length or genre whitelist. Do not generate a 
 - Align the first recognizable phrase, a phrase ending, and a contrasting/high-risk section with a rhythmic primary source and an independent reference where available. Keep per-measure beat totals and source-to-event offsets in private notes.
 - Read upper/lower octave dots separately from augmentation dots. A stacked `4/4` printed immediately after `1=C` is not a sharp sign.
 - One underline halves the value; two quarter it. Do not spread notes evenly across the measure or replace a varied rhythm with repeated 0.75/0.5 values to make it add up.
-- A tie between identical pitches merges duration and does not retrigger the note. A slur between different pitches preserves separate attacks. Preserve rests and pickup placement.
+- A source-confirmed tie between identical pitches merges duration and does not retrigger the note. Independent repeated notes remain separate, as do different pitches under a slur. Preserve tuplets by their exact group ratios, rests, pickup placement and the notated final extent; do not infer ties from adjacency or force fractions onto a quarter grid.
 - A source tempo is not changed merely for library consistency; use the speed control for practice. Document whether the source beat unit differs from a quarter note.
 - Compare source note intervals and octave contour before adding chords. An all-natural, in-range output does not prove that the source lacked accidentals or octave mistakes.
-- Check the melody shared by melody/chord variants. Check accompaniment separately, including its default on/off state; a shared wrong melody cannot be repaired by switching variants.
+- Check the melody shared by melody/source-arrangement records. The main physical task stays single-melody; identify its role from the source, not the highest/first note. Check optional support separately, including its default on/off state and conflicts with judged harmony; a shared wrong melody cannot be repaired by adding backing.
 - `rhythm.sourceStatus: verified` describes supported rhythm decisions only, not pitch, song identity, harmony or an entire arrangement's approval. Do not infer approval from an old metadata label.
 
 ## Record And Verify
@@ -48,7 +48,7 @@ Keep source URLs, score images, checked bars, transformations and comparison res
 
 In this repository run `npm run report:suitability` (or append `-- --json`). The read-only report lists encoded range, long notes, gaps, suspicious duration concentration, large leaps and existing unresolved measures. It does not infer musical approval, alter songs, or replace reading the source. Old songs without the new summary remain `needs-review` in the report, not automatically deleted.
 
-For actual playback, verify that samples decode and sound, notes start at expected times, and source rests/ties survive. First use source tempo (`1.0x`) with accompaniment off, then the configured practice speed and optional support. Matching playback to JSON tests the player; matching JSON to a score tests transcription. Neither alone proves recognizable performance.
+For actual playback, follow the scoped [A/B acceptance checks](evidence-and-regressions.md#ab-listening-and-physical-acceptance): verify that samples decode and sound, notes start at expected times, and source rests/ties survive. First use source tempo (`1.0x`) with accompaniment off, then the configured practice speed and optional support. Matching playback to JSON tests the player; matching JSON to a score tests transcription. Neither alone proves recognizable performance.
 
 If a gate cannot be completed, ask one precise question for the missing source, intended version, target section or performance link. Prefer a supported smaller scope over a fabricated full arrangement.
 
@@ -56,3 +56,39 @@ If a gate cannot be completed, ask one precise question for the missing source, 
 
 - [Kalimba Magic: high-note sustain](https://www.kalimbamagic.com/blog/item/how-do-you-get-the-high-notes-to-sound-good): low/middle and highest tines can have substantially different decay behavior; check the actual instrument.
 - [Kalimba Magic: chromatic kalimba](https://www.kalimbamagic.com/info/how-to-play/how-to-play-the-chromatic-kalimba): fixed diatonic tuning omits some pitches; a chromatic instrument addresses a different capability boundary.
+
+### Voice-specific accidentals
+
+Determine the actual melody voice before collecting its pitch classes or testing
+fixed-C suitability. A sharp in an inner chord or bass does not by itself make
+the main melody chromatic, and does not authorize changing that melody to fit.
+If a fingerstyle preview lacks explicit melody mapping to an existing simplified
+chorus, keep the adaptation pending instead of selecting its highest notes or
+using the preview's tempo to relabel the retained arrangement.
+
+## Interpreting source extent and ending gaps
+
+The suitability report preserves its legacy API: `totalBeats` means the maximum
+melody endpoint, and `gaps` includes initial/internal gaps of at least one beat,
+not endings. Do not copy those fields into `sourceFeatures.sourceTotalBeats`
+without viewing the source boundary. `melodyEndBeat` is the explicit alias;
+`sourceEventEndBeat` includes main events in other retained voices. Separate
+`accompanimentEndBeats` entries describe written auto/practice layers; they are
+alternatives and never automatically merged.
+
+Read `selectedSourceExtentBeats` together with `sourceExtentStatus`,
+`sourceExtentSelection` and `sourceExtentIssues`. A valid numeric declaration
+must cover all written spans, rest windows and pickup. Missing declarations
+have a labeled main-event fallback, with beyond-fallback content diagnosed;
+invalid, too-short or malformed timing remains unresolved rather than repaired.
+Pickup extending beyond that fallback needs the same diagnostic as backing or
+rest windows, but is not permission to enlarge the source scope.
+
+`endingMelodyGap` and detailed `melodyGaps` are inferred intervals, including
+sub-beat gaps. They do not establish notated rests, all-layer silence, physical
+sustain, PCM duration or harmonic quality. Empty/unresolved melody must not be
+reported as proof of a zero-gap success. Use source inspection and explicit
+voice-specific rest claims separately. The current eight encoded ending gaps
+include Farewell94→96 and Daylily191→192; future editions require renewed
+source boundaries, not fixed arbitrary totals. See
+`../../../docs/SUITABILITY_TIMELINE_EXTENTS.md`.

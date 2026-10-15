@@ -338,11 +338,11 @@ export const SONG_LIBRARY = {
   "jasmine": {
       "schemaVersion": 1,
       "id": "jasmine",
-      "title": "《茉莉花》",
+      "title": "《茉莉花》（短版）",
       "uploader": "system",
-      "practiceTitle": "《茉莉花》练习轨道",
-      "scoreTitle": "《茉莉花》简谱进度",
-      "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
+      "practiceTitle": "《茉莉花》（短版）练习轨道",
+      "scoreTitle": "《茉莉花》（短版）简谱进度",
+      "hint": "黄秀泉制谱14小节短版，67次拨音；完整采用所选公开谱页，末尾保留1拍休止。21音C调单音练习，不加伴奏；88 BPM沿用旧练习设定，非谱面标速。",
       "difficulty": "easy",
       "bpm": 88,
       "defaultSpeedFactor": 0.95,
@@ -352,12 +352,12 @@ export const SONG_LIBRARY = {
         [
           "E4",
           0,
-          0.75
+          1
         ],
         [
           "E4",
-          0.75,
-          0.75
+          1,
+          0.5
         ],
         [
           "G4",
@@ -392,27 +392,27 @@ export const SONG_LIBRARY = {
         [
           "G4",
           5,
-          0.75
+          0.5
         ],
         [
           "A4",
-          5.75,
-          0.75
+          5.5,
+          0.5
         ],
         [
           "G4",
-          6.5,
-          1.5
+          6,
+          2
         ],
         [
           "E4",
           8,
-          0.75
+          1
         ],
         [
           "E4",
-          8.75,
-          0.75
+          9,
+          0.5
         ],
         [
           "G4",
@@ -447,17 +447,17 @@ export const SONG_LIBRARY = {
         [
           "G4",
           13,
-          0.75
+          0.5
         ],
         [
           "A4",
-          13.75,
-          0.75
+          13.5,
+          0.5
         ],
         [
           "G4",
-          14.5,
-          1.5
+          14,
+          2
         ],
         [
           "G4",
@@ -467,22 +467,22 @@ export const SONG_LIBRARY = {
         [
           "G4",
           17,
-          0.75
+          1
         ],
         [
           "G4",
-          17.75,
-          0.75
+          18,
+          1
         ],
         [
           "E4",
-          18.5,
-          0.75
+          19,
+          0.5
         ],
         [
           "G4",
-          19.25,
-          0.75
+          19.5,
+          0.5
         ],
         [
           "A4",
@@ -492,37 +492,32 @@ export const SONG_LIBRARY = {
         [
           "A4",
           21,
-          0.75
+          1
         ],
         [
           "G4",
-          21.75,
-          0.75
-        ],
-        [
-          "G4",
-          22.5,
-          1.5
+          22,
+          2
         ],
         [
           "E4",
           24,
-          0.75
+          1
         ],
         [
           "D4",
-          24.75,
-          0.75
+          25,
+          0.5
         ],
         [
           "E4",
           25.5,
-          0.75
+          0.5
         ],
         [
           "G4",
-          26.25,
-          0.75
+          26,
+          1
         ],
         [
           "E4",
@@ -542,42 +537,42 @@ export const SONG_LIBRARY = {
         [
           "C4",
           29,
-          0.75
+          0.5
         ],
         [
           "D4",
-          29.75,
-          0.75
+          29.5,
+          0.5
         ],
         [
           "C4",
-          30.5,
-          1.5
+          30,
+          2
         ],
         [
           "E4",
           32,
-          0.75
+          0.5
         ],
         [
           "D4",
-          32.75,
-          0.75
+          32.5,
+          0.5
         ],
         [
           "C4",
-          33.5,
-          0.75
+          33,
+          0.5
         ],
         [
           "E4",
-          34.25,
-          0.75
+          33.5,
+          0.5
         ],
         [
           "D4",
-          35,
-          0.5
+          34,
+          1.5
         ],
         [
           "E4",
@@ -592,30 +587,30 @@ export const SONG_LIBRARY = {
         [
           "A4",
           37,
-          0.75
+          0.5
         ],
         [
           "C5",
-          37.75,
-          0.75
+          37.5,
+          0.5
         ],
         [
           "G4",
-          38.5,
-          1.5
+          38,
+          2
         ],
         [
           "D4",
           40,
-          0.75
+          1
         ],
         [
           "E4",
-          40.75,
-          0.75
+          41,
+          0.5
         ],
         [
-          "A4",
+          "G4",
           41.5,
           0.5
         ],
@@ -635,17 +630,17 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           43.5,
           0.5
         ],
         [
-          "G4",
+          "G3",
           44,
           2
         ],
         [
-          "A4",
+          "A3",
           46,
           1
         ],
@@ -657,22 +652,22 @@ export const SONG_LIBRARY = {
         [
           "D4",
           48,
-          0.75
+          1.5
         ],
         [
           "E4",
-          48.75,
-          0.75
+          49.5,
+          0.5
         ],
         [
           "C4",
-          49.5,
-          0.75
+          50,
+          0.5
         ],
         [
           "D4",
-          50.25,
-          0.75
+          50.5,
+          0.5
         ],
         [
           "C4",
@@ -680,439 +675,152 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           51.5,
           0.5
         ],
         [
-          "G4",
+          "G3",
           52,
-          4
-        ],
-        [
-          "E4",
-          56,
-          0.75
-        ],
-        [
-          "E4",
-          56.75,
-          0.75
-        ],
-        [
-          "G4",
-          57.5,
-          0.5
-        ],
-        [
-          "A4",
-          58,
-          0.5
-        ],
-        [
-          "C5",
-          58.5,
-          0.5
-        ],
-        [
-          "C5",
-          59,
-          0.5
-        ],
-        [
-          "A4",
-          59.5,
-          0.5
-        ],
-        [
-          "G4",
-          60,
-          1
-        ],
-        [
-          "G4",
-          61,
-          0.75
-        ],
-        [
-          "A4",
-          61.75,
-          0.75
-        ],
-        [
-          "G4",
-          62.5,
-          1.5
-        ],
-        [
-          "E4",
-          64,
-          0.75
-        ],
-        [
-          "E4",
-          64.75,
-          0.75
-        ],
-        [
-          "G4",
-          65.5,
-          0.5
-        ],
-        [
-          "A4",
-          66,
-          0.5
-        ],
-        [
-          "C5",
-          66.5,
-          0.5
-        ],
-        [
-          "C5",
-          67,
-          0.5
-        ],
-        [
-          "A4",
-          67.5,
-          0.5
-        ],
-        [
-          "G4",
-          68,
-          1
-        ],
-        [
-          "G4",
-          69,
-          0.75
-        ],
-        [
-          "A4",
-          69.75,
-          0.75
-        ],
-        [
-          "G4",
-          70.5,
-          1.5
-        ],
-        [
-          "G4",
-          72,
-          1
-        ],
-        [
-          "G4",
-          73,
-          0.75
-        ],
-        [
-          "G4",
-          73.75,
-          0.75
-        ],
-        [
-          "E4",
-          74.5,
-          0.75
-        ],
-        [
-          "G4",
-          75.25,
-          0.75
-        ],
-        [
-          "A4",
-          76,
-          1
-        ],
-        [
-          "A4",
-          77,
-          0.75
-        ],
-        [
-          "G4",
-          77.75,
-          0.75
-        ],
-        [
-          "G4",
-          78.5,
-          1.5
-        ],
-        [
-          "E4",
-          80,
-          0.75
-        ],
-        [
-          "D4",
-          80.75,
-          0.75
-        ],
-        [
-          "E4",
-          81.5,
-          0.75
-        ],
-        [
-          "G4",
-          82.25,
-          0.75
-        ],
-        [
-          "E4",
-          83,
-          0.5
-        ],
-        [
-          "D4",
-          83.5,
-          0.5
-        ],
-        [
-          "C4",
-          84,
-          1
-        ],
-        [
-          "C4",
-          85,
-          0.75
-        ],
-        [
-          "D4",
-          85.75,
-          0.75
-        ],
-        [
-          "C4",
-          86.5,
-          1.5
-        ],
-        [
-          "E4",
-          88,
-          1
-        ],
-        [
-          "D4",
-          89,
-          0.75
-        ],
-        [
-          "C4",
-          89.75,
-          0.75
-        ],
-        [
-          "E4",
-          90.5,
-          0.75
-        ],
-        [
-          "D4",
-          91.25,
-          0.75
-        ],
-        [
-          "G4",
-          92,
-          1
-        ],
-        [
-          "A4",
-          93,
-          0.75
-        ],
-        [
-          "C5",
-          93.75,
-          0.75
-        ],
-        [
-          "G4",
-          94.5,
-          1.5
-        ],
-        [
-          "D4",
-          96,
-          0.75
-        ],
-        [
-          "E4",
-          96.75,
-          0.75
-        ],
-        [
-          "G4",
-          97.5,
-          0.5
-        ],
-        [
-          "D4",
-          98,
-          0.5
-        ],
-        [
-          "E4",
-          98.5,
-          0.5
-        ],
-        [
-          "C4",
-          99,
-          0.5
-        ],
-        [
-          "A4",
-          99.5,
-          0.5
-        ],
-        [
-          "G4",
-          100,
-          2
-        ],
-        [
-          "A4",
-          102,
-          1
-        ],
-        [
-          "C4",
-          103,
-          1
-        ],
-        [
-          "D4",
-          104,
-          0.75
-        ],
-        [
-          "E4",
-          104.75,
-          0.75
-        ],
-        [
-          "C4",
-          105.5,
-          0.75
-        ],
-        [
-          "D4",
-          106.25,
-          0.75
-        ],
-        [
-          "C4",
-          107,
-          0.5
-        ],
-        [
-          "A4",
-          107.5,
-          0.5
-        ],
-        [
-          "G4",
-          108,
-          1.75
-        ],
-        [
-          "A4",
-          109.75,
-          0.75
-        ],
-        [
-          "A4",
-          110.5,
-          0.75
-        ],
-        [
-          "C5",
-          111.25,
-          0.75
-        ],
-        [
-          "D4",
-          112,
-          0.75
-        ],
-        [
-          "E4",
-          112.75,
-          0.75
-        ],
-        [
-          "C4",
-          113.5,
-          0.75
-        ],
-        [
-          "D4",
-          114.25,
-          0.75
-        ],
-        [
-          "C4",
-          115,
-          0.5
-        ],
-        [
-          "A4",
-          115.5,
-          0.5
-        ],
-        [
-          "G4",
-          116,
-          4
+          3
         ]
       ],
       "sourceFeatures": {
-        "hasChords": false,
+        "hasChords": true,
         "hasArpeggio": false,
         "hasRepeats": false,
-        "sourceImages": [
-          "private/sheets/raw/IMG_20260613_182954.jpg"
+        "transcriptionScope": "complete-selected-short-arrangement",
+        "sourceMeasureCount": 14,
+        "sourceTotalBeats": 56,
+        "transpositionSemitones": 0,
+        "tempoStatus": "retained-practice-choice-source-unmarked",
+        "sourceChordSymbols": [
+          "C",
+          "F",
+          "Am",
+          "G",
+          "Dm"
         ],
         "unsupported": [
-          "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments.",
-          "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
+          "The selected Huang Xiuquan (黄秀泉) public-preview page is a complete 14-bar short arrangement ending at beat 56, not the earlier 30-bar Walter edition.",
+          "Printed chord symbols are retained only as source information; this V1 melody contains no chords, arpeggios or automatic accompaniment.",
+          "The source has no visible tempo mark. 88 BPM and defaultSpeedFactor 0.95 are retained practice settings, not source-verified tempo.",
+          "The selected melody spans G3-C5 on the actual natural-note 21-key C tuning (F3-E6), with no transposition, octave folding, added repeats or ornaments."
         ],
-        "unsureMeasures": [
-          "m25-m30",
-          "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
-        ],
+        "unsureMeasures": [],
         "sources": [
           {
-            "label": "Yipuku Mo Li Hua C 4/4 chord sheet",
-            "url": "https://www.yipuku.com/jitapu/9873.html"
-          },
-          {
-            "label": "Zuoqu Mo Li Hua folk song reference",
-            "url": "https://www.zuoqu.net/works-356716.html"
-          },
-          {
-            "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+            "label": "黄秀泉制谱《好一朵美丽的茉莉花》拇指琴简谱，公开预览第1页（14小节短版）",
             "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
           }
-        ]
-      }
+        ],
+        "sourceReview": {
+          "historicalReviewNotes": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "sourceImages": [
+              "private/sheets/raw/IMG_20260613_182954.jpg"
+            ],
+            "unsupported": [
+              "Local source photo is 1=C, 4/4, q=88 21-key kalimba melody notation; slurs are treated as phrasing, not added ornaments.",
+              "Quark source is a shorter one-page Hao Yi Duo Mei Li De Mo Li Hua version; it cross-checks the opening melody but does not cover the Walter 21-key measures 15-30."
+            ],
+            "unsureMeasures": [
+              "m25-m30",
+              "m25-m30 still rely on the local Walter 21-key source photo; the Quark short version ends earlier."
+            ],
+            "sources": [
+              {
+                "label": "Yipuku Mo Li Hua C 4/4 chord sheet",
+                "url": "https://www.yipuku.com/jitapu/9873.html"
+              },
+              {
+                "label": "Zuoqu Mo Li Hua folk song reference",
+                "url": "https://www.zuoqu.net/works-356716.html"
+              },
+              {
+                "label": "Quark Doc Hao Yi Duo Mei Li De Mo Li Hua kalimba jianpu",
+                "url": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113"
+              }
+            ]
+          },
+          "archivedEdition": {
+            "label": "Walter 21-key 30-bar V1 preserved from v2.4.3",
+            "releaseVersion": "2.4.3",
+            "file": "data/archives/jasmine-walter-v2.4.3.json",
+            "fileSha256": "55ec47b07ff9ea6a5030d135043f85a8d381a42ba13e4268ca119c84e7353088",
+            "schemaVersion": 1,
+            "attackCount": 145,
+            "totalBeats": 120,
+            "preservation": "Exact original JSON bytes, including all 145 steps and provenance; compatible with the legacy V1 import path.",
+            "status": "Preserved separate edition; its unavailable local source image was not reverified. This adoption does not establish that the Walter edition is wrong."
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-short-arrangement",
+            "selectedEdition": "huang-xiuquan-14-bar-short",
+            "adoptedInVersion": "2.4.4",
+            "reviewDate": "2026-10-12",
+            "scope": "Complete 14-bar arrangement visible on public preview page 1, ending with its printed rest and double bar; no continuation or hidden page is inferred.",
+            "sourceUrl": "https://doc.quark.cn/preview/tongyongshenghuo-geciqupu-qupu%E3%80%81jianpu/6EF265ECBE7A8C6DEE28100CF4DA7113",
+            "sourceImageSha256": "15a14cd2dc354c6212d914ee860700317bd5fa14bd4c2a1bf64083c53f8c667c",
+            "reviewedBeatRanges": [
+              [
+                0,
+                56
+              ]
+            ],
+            "attackCount": 67,
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "pickupBeats": 0,
+            "sourceTempo": "unmarked",
+            "tempoDecision": "Retain the previous practice choice of 88 BPM and defaultSpeedFactor 0.95; no tempo is attributed to the selected score.",
+            "independentReview": "Two full-page pixel readings agreed on every pitch/onset/duration tuple, all 14 bar totals, octave dots, dotted rhythms and the ending rest.",
+            "rhythmDecisions": [
+              "m9: D4 at beat 34 lasts 1.5 beats, then E4 at beat 35.5 lasts 0.5; m13: D4 at beat 48 lasts 1.5, then E4 at 49.5 lasts 0.5.",
+              "Visible arcs join different pitches and are phrasing slurs, not same-pitch ties. Separate repeated E4, G4, A4, C4 and C5 attacks are retained.",
+              "m11-m14 preserve the lower-octave A3/G3 cadence. Final G3 at beat 52 lasts 3 beats, followed by a silent quarter rest at beats 55-56."
+            ],
+            "silentWindows": [
+              {
+                "beat": 55,
+                "duration": 1
+              }
+            ],
+            "transpositionSemitones": 0,
+            "octaveFolding": false,
+            "oldWalterReverified": false,
+            "versionDecision": "Adopt this explicitly labeled short edition in full. Do not splice it into the unreviewed Walter continuation or treat the source disagreement as proof that the old edition is wrong.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Notation review and executable tuple checks do not establish reference-performance listening, browser sound, physical-instrument acceptance or publication permission.",
+            "archiveImportPath": "data/archives/jasmine-walter-v2.4.3.json",
+            "contentRevision": "jasmine-huang-xiuquan-14bars-2026-10-12"
+          }
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "complete-selected-short-arrangement",
+          "reason": "All 67 source-backed melody attacks fit the natural-note 21-key C instrument in G3-C5 without pitch changes. The complete selected short edition is retained, with its final silent beat; listening and physical play-through remain pending.",
+          "reviewRequired": [
+            "Compare the melody against a reference performance; the score has no printed tempo.",
+            "Check browser playback at 88 BPM (1.0x) and the retained 0.95x practice speed, especially dotted rhythms and the final rest.",
+            "Physical 21-key C kalimba play-through, thumb movement and real note decay are not performed.",
+            "Public distribution rights for this selected source arrangement are not established by notation or structural checks."
+          ]
+        }
+      },
+      "tuning": "21-key-c"
     },
   "bluebird": {
       "id": "bluebird",
-      "title": "《青鸟》",
+      "title": "《青鸟》（待核简化版）",
       "uploader": "system",
-      "practiceTitle": "《青鸟》练习轨道",
+      "practiceTitle": "《青鸟》待核简化版单音练习",
       "scoreTitle": "《青鸟》简谱进度",
-      "hint": "这里放的是适合 21 音卡林巴的新手副歌简化练习版，保留快速上行和高音落点，默认速率会放慢一些。",
+      "hint": "保留现有82音简化练习数据，旋律与编配来源对应仍待核；不作为已核准原旋律或新手易弹版本。146 BPM与速度建议保留为历史练习设置，先用慢速；不按公开指弹预览猜改音。",
       "difficulty": "hard",
       "bpm": 146,
       "defaultSpeedFactor": 0.8,
@@ -1540,17 +1248,65 @@ export const SONG_LIBRARY = {
           "Public source includes chords or accompaniment; V1 steps keep melody only."
         ],
         "unsureMeasures": [
-          "Simplified chorus practice version in C; full original form still needs review."
-        ]
+          "现有82音改编的明确主旋律来源、音区与时值映射尚未建立；公开指弹预览不能核准整段副歌。"
+        ],
+        "sourceReview": {
+          "historicalSongMetadata": {
+            "id": "bluebird",
+            "title": "《青鸟》",
+            "uploader": "system",
+            "practiceTitle": "《青鸟》练习轨道",
+            "scoreTitle": "《青鸟》简谱进度",
+            "hint": "这里放的是适合 21 音卡林巴的新手副歌简化练习版，保留快速上行和高音落点，默认速率会放慢一些。",
+            "difficulty": "hard",
+            "bpm": 146,
+            "defaultSpeedFactor": 0.8,
+            "beatsPerMeasure": 4,
+            "schemaVersion": 1,
+            "key": "C",
+            "sourceFeatures": {
+              "hasChords": true,
+              "hasArpeggio": true,
+              "hasRepeats": false,
+              "unsupported": [
+                "V1 keeps only the playable 21-key kalimba melody; original speed, accompaniment, and ornaments are not fully encoded.",
+                "Public source includes chords or accompaniment; V1 steps keep melody only."
+              ],
+              "unsureMeasures": [
+                "Simplified chorus practice version in C; full original form still needs review."
+              ]
+            }
+          },
+          "currentScopeReview": {
+            "status": "unresolved-simplified-chorus-source-mapping",
+            "reviewedOn": "2026-10-12",
+            "changedTupleCount": 0,
+            "retainedAttackCount": 82,
+            "originalFileSha256": "aaaf6290337fa76f6c5924164992ed812566930a575ab533526afea6328f5463",
+            "tupleSha256": "3427f55b1b2d8a1bfcab50edabc5b2310c469e5c2aed96a56333957d9b80de2b",
+            "inspectedComparison": {
+              "url": "https://www.guitarworld.com.cn/pu/q91150",
+              "imageUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/1348800/view/4be163ac2a3d118a0dd2ba5a920b9a5c.png",
+              "imageSha256": "e798ee70d73d203b57536bdcb54b96e89ef96dc6f4835b5ec5701b3208d38bb9",
+              "scope": "fingerstyle public preview through partially visible m9, not adopted melody",
+              "printedQuarterBpm": 144,
+              "printedMeter": "4/4"
+            },
+            "decision": "Keep all existing 82 tuples. Preview opening E4-A4-B4 after 2.5 beats of rest is not a uniform transposition of current E4-G4-A4. This comparison does not establish that every retained note is wrong. No explicit melody voice or full later source establishes the current simplified chorus.",
+            "chromaticBoundary": "The visible G-sharp is an inner chord pitch. It cannot alone establish a chromatic main melody or justify naturalizing any melody note.",
+            "tempoBoundary": "146 BPM and .8 suggestion are retained historical practice settings; do not replace them with a different preview edition’s 144 BPM.",
+            "requiredEvidence": "A clearly identified source for the retained adapted chorus, with main voice and exact onset/duration/register mapping."
+          }
+        }
       }
     },
   "katyusha": {
       "id": "katyusha",
-      "title": "《喀秋莎》",
+      "title": "《喀秋莎》（待核版）",
       "uploader": "system",
       "practiceTitle": "《喀秋莎》练习轨道",
       "scoreTitle": "《喀秋莎》简谱进度",
-      "hint": "这里放的是适合 21 音卡林巴的《喀秋莎》简化主旋律练习版，按 4/4 推进，保留了民歌式上行和句尾停顿。",
+      "hint": "保留旧版73音、44拍的单音练习轨道；当前旋律与所列来源的对应关系尚未解决，未获来源校准。4/4分组、音高和时值暂不改动，不能仅凭自然音范围认定改编准确或整份原谱适合21音卡林巴。",
       "difficulty": "medium",
       "bpm": 112,
       "defaultSpeedFactor": 0.9,
@@ -1929,22 +1685,207 @@ export const SONG_LIBRARY = {
         "hasArpeggio": true,
         "hasRepeats": true,
         "unsupported": [
-          "V1 steps keep the 21-key kalimba 4/4 practice melody; Jitabang 1=C 2/4 guitar source is not fully expanded.",
-          "The 2/4 source grouping differs from the current 4/4 practice grouping."
+          "The retained 73-attack melody has unresolved correspondence with the cited Jitabang vocal opening and instrumental introduction; the discrepancy includes pitches and rhythm, not only 4/4 versus 2/4 grouping.",
+          "No source-confirmed correction, source ending, new excerpt, repeat expansion or accompaniment is adopted in this metadata-only review.",
+          "The complete cited Jitabang printed edition includes essential melody F# and G# in its fifth ending and cannot fit the fixed natural-note instrument through a single global transposition. This finding is about that complete edition, not the retained all-natural 73-note encoding or every Katyusha arrangement."
         ],
         "unsureMeasures": [
-          "Current practice version and Jitabang 2/4 source need meter and repeat review."
-        ]
+          "All 73 retained attacks over encoded beats [0,44) need an identified edition and source-to-melody mapping; no source-aligned current measure numbers are established.",
+          "Jitabang first vocal pass m17–40 was inspected separately but not adopted; its low-E readings, intended register, edition choice, full form and listening acceptance remain unresolved."
+        ],
+        "sourceReview": {
+          "confidence": "unresolved-melody-source-mapping",
+          "decision": "Retain all existing melody tuples and timing while disclosing the source gap. Do not substitute a different uncertain edition, silently correct notes, or describe this version as source-calibrated.",
+          "sources": [
+            {
+              "label": "Jitabang, 深蓝雨吉他 2019-25, 廖昌永版《喀秋莎》guitar/vocal score",
+              "url": "https://www.jitabang.com/jiaoxue/8653.html"
+            },
+            {
+              "label": "Jitabang printed score, page 1",
+              "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png"
+            },
+            {
+              "label": "Jitabang printed score, page 2",
+              "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png"
+            },
+            {
+              "label": "Barynya Katyusha, separate edition used only for scoped comparison",
+              "url": "https://www.barynya.com/balalaika/images/katyusha.pdf"
+            }
+          ],
+          "originalV1": {
+            "file": "data/songs/katyusha.json",
+            "fileSha256": "7de14e131a9055ff88a21310e8e6095496152b21034469eee851caec9458fbf3",
+            "stepsSha256": "2da07ced7b54f17cf8fdabe793b354adf3bff7b4da635f3c8762904d727a55ac",
+            "title": "《喀秋莎》",
+            "hint": "这里放的是适合 21 音卡林巴的《喀秋莎》简化主旋律练习版，按 4/4 推进，保留了民歌式上行和句尾停顿。",
+            "reconstruction": "Restore this title and hint, replace sourceFeatures with historicalReviewNotes, serialize with two-space JSON indentation and one final newline. All other original fields and every melody tuple are unchanged."
+          },
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": true,
+            "unsupported": [
+              "V1 steps keep the 21-key kalimba 4/4 practice melody; Jitabang 1=C 2/4 guitar source is not fully expanded.",
+              "The 2/4 source grouping differs from the current 4/4 practice grouping."
+            ],
+            "unsureMeasures": [
+              "Current practice version and Jitabang 2/4 source need meter and repeat review."
+            ]
+          },
+          "historicalProvenance": {
+            "status": "Historical source claims are retained for provenance and reconstruction, not renewed source verification.",
+            "firstVisibleRepositoryCommit": "fc8712e",
+            "sourceMetadataCommit": "c0df063",
+            "earliestRepositoryMelody": "All 73 current pitch/onset/duration tuples already occur in the earliest inspected repository version.",
+            "sourceLinkOrigin": "The Jitabang page and both source images were recorded in the historical V2 sibling.",
+            "originalPrivatePhotosReverified": false
+          },
+          "preservedV2": {
+            "file": "data/songs/katyusha-chord.json",
+            "fileSha256": "de452ca36de8add09257934ec3cb1e59f09c0f8b181ba14fb02fefe19367640c",
+            "status": "historical-unchanged-source-mapping-unresolved",
+            "explicitMelodyMatchesCurrent": true,
+            "independence": "Its identical 73 explicit melody-role tuples are shared historical data, not independent source corroboration.",
+            "supportReview": "Harmony and automatic backing remain unchanged and unapproved by this review. No new support is added or borrowed."
+          },
+          "currentScopeReview": {
+            "date": "2026-10-12",
+            "reviewedInVersion": "2.4.8",
+            "status": "unresolved-melody-source-mapping",
+            "sourceUrl": "https://www.jitabang.com/jiaoxue/8653.html",
+            "sourceImages": [
+              {
+                "page": 1,
+                "url": "https://www.jitabang.com/img/2022/03/2022031503441716.png",
+                "sha256": "1e735786aa5fa396c236be5c281e2ed1282bfbed8c89985590bd5f6c5b3058f0",
+                "dimensions": [
+                  1200,
+                  1604
+                ]
+              },
+              {
+                "page": 2,
+                "url": "https://www.jitabang.com/img/2022/03/2022031503445225.png",
+                "sha256": "4e428b9d15282fc1d09b98a0a5ae9b9d474534a13676515aaf3e40cb4cc93c65",
+                "dimensions": [
+                  1200,
+                  1704
+                ]
+              }
+            ],
+            "independentComparison": {
+              "url": "https://www.barynya.com/balalaika/images/katyusha.pdf",
+              "sha256": "1879259b25a95c095b3f8febb08ecb62fbbf7e6e21f2c52cae01d2b49175d108",
+              "scope": "Opening anchors and clear A/B fragments only; this is a different edition with conflicting later rhythm/register. It is not adopted or spliced into the current melody."
+            },
+            "sourceHeader": {
+              "key": "C",
+              "meter": "2/4",
+              "bpm": 112,
+              "pitchBasis": "Printed note names without capo transposition; male capo 5 sounding pitch is not mixed into this review."
+            },
+            "sourcePixelReview": "Both Jitabang pages were inspected. Independent pixel review corroborated the disputed low-E readings and melody accidentals in the fifth ending. This does not resolve arranger intent or map the current 73 attacks.",
+            "retainedEncoding": {
+              "attackCount": 73,
+              "endBeat": 44,
+              "soundingBeats": 41,
+              "range": [
+                "E4",
+                "E5"
+              ],
+              "bpm": 112,
+              "beatsPerMeasure": 4,
+              "allTuplesUnchanged": true
+            },
+            "reviewedBeatRanges": [],
+            "unresolvedBeatRanges": [
+              [
+                0,
+                44
+              ]
+            ],
+            "currentMelodySourceMapping": "unresolved",
+            "openingComparison": "Neither the printed vocal opening m17–18 nor the instrumental start m9 matches the current opening pitch/rhythm sequence. Changing meter, globally transposing or uniformly scaling durations cannot establish those mappings; no safe isolated note correction is proved.",
+            "inspectedAlternativeExcerpt": {
+              "status": "inspected-not-adopted",
+              "edition": "Jitabang first vocal pass only",
+              "measures": [
+                17,
+                40
+              ],
+              "attackCount": 61,
+              "measureCount": 24,
+              "printedRange": [
+                "E3",
+                "A4"
+              ],
+              "candidateGlobalOctaveShiftSemitones": 12,
+              "candidateRange": [
+                "E4",
+                "A5"
+              ],
+              "naturalPitchFit": "Only this selected first vocal pass fits the fixed natural-note set after a uniform +12 shift. It is not the complete printed arrangement or the current production melody.",
+              "remainingDecision": "Select the intended edition/scope and verify low-E engraving/register intent against the arranger demonstration before any separate adoption. Do not replace those notes from Barynya or encode this candidate as a playable production version."
+            },
+            "completePrintedEditionConstraint": {
+              "scope": "Complete Jitabang printed edition, including the fifth-ending melody at m41–42",
+              "melodyAccidentals": [
+                "F#",
+                "G#"
+              ],
+              "melodyPitchClasses": [
+                0,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                11
+              ],
+              "validGlobalPitchClassTranspositions": [],
+              "result": "At least nine melody pitch classes cannot map into the seven natural pitch classes under any of the 12 global transpositions. An octave shift does not remove that constraint.",
+              "currentEncodingVerdict": "This is not a chromatic rejection of the current all-natural 73-note encoding, proof that its notes were naturalized, or a verdict on every Katyusha edition."
+            },
+            "evidenceFingerprints": {
+              "privateAuditSha256": "e83f20f87cf98f9c1d59f5aa0253ba5c8d9f6f6b9ae2ef1b0a0a66d1d18405c6",
+              "privateFixtureSha256": "ca63dba40cf0b6f828e735b34fc450afca67850c66e87fa4236b027e719959ea",
+              "comparisonSha256": "3319b9fe753ca88a30b3b29ed6a1da11e5e64a6ed5c8bbcb120e87fc4da02b8f"
+            },
+            "originalPrivatePhotosReverified": false,
+            "fullSongApproved": false,
+            "sourceCalibrated": false,
+            "browserAudio": "not-performed",
+            "referenceListening": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Pixel and data review only. No current-note source mapping, new arrangement, source-confirmed ending, harmony approval, recognizability judgment, A/B listening or physical play-through is claimed. Source access does not establish public-distribution rights; raw scans and the complete independent fixture stay outside the public repository. The unchanged 44-beat encoded end is not a verified source ending."
+          }
+        },
+        "suitability": {
+          "status": "needs-review",
+          "scope": "Retained 73-attack, 44-beat single-note encoding; melody-to-source mapping unresolved",
+          "reason": "All retained pitches are within the fixed natural-note range, but that does not establish source fidelity or musical recognizability. The separate inspected excerpt is not adopted; the complete Jitabang edition has its own verified chromatic constraint, which is not a blanket rejection of this song.",
+          "reviewRequired": [
+            "Identify the intended edition and scope, then establish a source-to-melody mapping before changing the preserved notes or claiming a source-calibrated arrangement.",
+            "Keep the Jitabang first-vocal-pass candidate and Barynya edition separate; resolve low-E register/engraving intent before adopting either.",
+            "Verify any selected source ending and repeats before asserting sourceTotalBeats; keep the existing encoded end at 44 meanwhile.",
+            "Compare unaccompanied melody against the intended reference at source tempo and the actual selected practice multiplier; browser audio and physical kalimba checks remain pending.",
+            "Review harmony, rests and A/B listening independently before adding or borrowing support for any later melody version."
+          ]
+        }
       }
     },
   "bie-kan-wo-zhi-shi-yi-zhi-yang": {
       "schemaVersion": 1,
       "id": "bie-kan-wo-zhi-shi-yi-zhi-yang",
-      "title": "《别看我只是一只羊》",
+      "title": "《别看我只是一只羊》（主歌选段）",
       "uploader": "system",
-      "practiceTitle": "《别看我只是一只羊》练习轨道",
-      "scoreTitle": "《别看我只是一只羊》简谱进度",
-      "hint": "主歌选段；依据线简谱混排谱保留附点节奏。副歌含升4，不纳入21音自然音版本；非全曲。",
+      "practiceTitle": "《别看我只是一只羊》主歌选段练习轨道",
+      "scoreTitle": "《别看我只是一只羊》主歌选段简谱进度",
+      "hint": "C调主歌选段，68个单音、63拍；保留附点、十六分音符与8处附点八分休止，末音结束即止，不含其后的八分休止与副歌弱起。副歌需F#，非全曲；120 BPM 为沿用的练习设定。",
       "difficulty": "medium",
       "bpm": 120,
       "defaultSpeedFactor": 0.8,
@@ -2293,42 +2234,256 @@ export const SONG_LIBRARY = {
         ]
       ],
       "sourceFeatures": {
-        "hasChords": false,
+        "hasChords": true,
         "hasArpeggio": false,
         "hasRepeats": false,
         "unsupported": [
-          "只选主歌16小节，不含前奏、角色念唱与含F#的副歌。",
-          "末音按原谱保留3拍，截去随后的副歌弱起；V1音符时间轴止于63拍，整小节长度警告属于选段边界。",
-          "仅保留主旋律，未加入和弦或自动伴奏。"
+          "仅收录主歌选段：15个完整4/4小节及第16小节前3拍，共63拍；不含前奏、角色念唱、随后休止、含F#的副歌及尾奏。",
+          "末音C5从第60拍起保留3拍；选段截止于63拍，源谱随后[63,63.5)的八分休止及[63.5,64)的副歌C5弱起均在选段之外，不补齐为64拍。",
+          "原谱印有和弦符号，hasChords仅描述来源；练习仅保留68个单音主旋律，未加入和弦目标、自动伴奏或可选支持。",
+          "当前所选C调线简谱未印数字速度；120 BPM及默认0.8倍速沿用历史练习设定，不借用其他F调版本的120 BPM作为本版来源速度。",
+          "公开重印谱支持所选68个音符，但中国曲谱网原链接及《最易上手！口琴独奏超精选》书目归属未重新验证；其他F调版本有旋律与节奏差异，不拼接。"
         ],
         "unsureMeasures": [],
         "sources": [
           {
-            "label": "中国曲谱网《最易上手！口琴独奏超精选》线简谱混排版",
-            "url": "https://www.qupu123.com/qiyue/kouqin/p89823.html"
-          },
-          {
-            "label": "人人钢琴网 F调双手简谱（对照）",
-            "url": "https://www.everyonepiano.cn/Number-531.html"
-          },
-          {
-            "label": "简谱之家 F调歌谱（对照）",
-            "url": "https://www.jianpujia.com/jianpu/7208.html"
-          },
-          {
-            "label": "吉他世界公开主歌预览（对照）",
-            "url": "https://www.guitarworld.com.cn/pu/q129513"
+            "label": "曲谱图《别看我只是一只羊》C调线简谱混排公开重印谱（当前选段核对）",
+            "url": "https://www.quputu.com/qiyuequpu/kouqin/10234.html"
           }
         ],
         "transcriptionScope": "verse-excerpt",
         "suitability": {
           "status": "conditional",
           "scope": "verse-excerpt",
-          "reason": "所选主歌为自然音 E4-E5；保留附点与十六分音符。副歌含 F#，不作为全曲收录。",
+          "reason": "所选C调主歌68个单音、63拍，音域E4-E5并使用全部七个自然音级；不移调、不折叠八度。含F#的副歌未纳入，不能据此声称固定自然音琴可原样演奏全曲。",
           "reviewRequired": [
-            "仅主歌选段，不代表固定自然音琴可原样演奏全曲。",
-            "旋律按选定印刷版本逐句对谱；浏览器发声与时序已检查，实体琴试听验收未完成。"
+            "所选范围已逐音核对两页线简谱，未改变任何音高、起拍或时值；这不等于完整原曲或和声验收。",
+            "所选版本参考录音对听、当前浏览器音频与实际练习速度验收、实体琴重复音/双手分配/衰减检查仍待完成。",
+            "旧注记“浏览器发声与时序已检查”仅保留为历史，本次未重新验证；公开访问也不代表取得传播授权。"
           ]
+        },
+        "sourceTotalBeats": 63,
+        "sourceReview": {
+          "originalV1": {
+            "title": "《别看我只是一只羊》",
+            "practiceTitle": "《别看我只是一只羊》练习轨道",
+            "scoreTitle": "《别看我只是一只羊》简谱进度",
+            "hint": "主歌选段；依据线简谱混排谱保留附点节奏。副歌含升4，不纳入21音自然音版本；非全曲。",
+            "fileSha256": "0b0a2b4cc768f2c3e2f0e36e536550ee23633fab9dc0a3253aa170ef90ef5a3b",
+            "stepsSha256": "c057503da62fed876734291dc44531687a2a0277fe9a708cf9cc1759be500055",
+            "attackCount": 68,
+            "melodyEndBeat": 63,
+            "restoration": "Restore these four display strings and replace sourceFeatures with historicalReviewNotes; retain steps unchanged. Two-space JSON plus one final newline reconstructs the entire original file byte-for-byte."
+          },
+          "historicalReviewNotes": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "unsupported": [
+              "只选主歌16小节，不含前奏、角色念唱与含F#的副歌。",
+              "末音按原谱保留3拍，截去随后的副歌弱起；V1音符时间轴止于63拍，整小节长度警告属于选段边界。",
+              "仅保留主旋律，未加入和弦或自动伴奏。"
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "中国曲谱网《最易上手！口琴独奏超精选》线简谱混排版",
+                "url": "https://www.qupu123.com/qiyue/kouqin/p89823.html"
+              },
+              {
+                "label": "人人钢琴网 F调双手简谱（对照）",
+                "url": "https://www.everyonepiano.cn/Number-531.html"
+              },
+              {
+                "label": "简谱之家 F调歌谱（对照）",
+                "url": "https://www.jianpujia.com/jianpu/7208.html"
+              },
+              {
+                "label": "吉他世界公开主歌预览（对照）",
+                "url": "https://www.guitarworld.com.cn/pu/q129513"
+              }
+            ],
+            "transcriptionScope": "verse-excerpt",
+            "suitability": {
+              "status": "conditional",
+              "scope": "verse-excerpt",
+              "reason": "所选主歌为自然音 E4-E5；保留附点与十六分音符。副歌含 F#，不作为全曲收录。",
+              "reviewRequired": [
+                "仅主歌选段，不代表固定自然音琴可原样演奏全曲。",
+                "旋律按选定印刷版本逐句对谱；浏览器发声与时序已检查，实体琴试听验收未完成。"
+              ]
+            }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-verse-excerpt",
+            "adoptedInVersion": "2.4.8",
+            "reviewedOn": "2026-10-12",
+            "selectedEdition": "c-major-staff-and-numbered-harmonica-engraving",
+            "sourceUrl": "https://www.quputu.com/qiyuequpu/kouqin/10234.html",
+            "sourceImages": [
+              {
+                "url": "https://www.quputu.com/uploads/allimg/221228/2-22122Q94334J1.jpg",
+                "sha256": "1045752a16a6eb6ea20f48cdae0e714093130a7313de54985135f993562b9dd3",
+                "dimensions": [
+                  1015,
+                  1275
+                ]
+              },
+              {
+                "url": "https://www.quputu.com/uploads/allimg/221228/2-22122Q94336262.jpg",
+                "sha256": "9931f94a9d41945a14e5a439259da256a3d1b2a6a0522e00ddbac698c4a500fd",
+                "dimensions": [
+                  972,
+                  1302
+                ]
+              }
+            ],
+            "provenanceLimit": "This accessible repost matches the distinctive musical text, but is not an independent musical arrangement. Original Qupu123 image identity, original page and claimed book attribution were not reverified; no new claim of identical source bytes, arranger identity or book provenance is made.",
+            "sourceKey": "C",
+            "sourceMeter": "4/4",
+            "sourceTempo": null,
+            "sourceTempoBeatUnit": "quarter",
+            "retainedPracticeTempo": "120 BPM is the retained historical practice setting; numeric tempo is not printed in the selected C engraving. The 0.8 default is only a suggestion (96 BPM), not the actual selected or remembered runtime multiplier. Other F editions printing 120 do not establish this edition's tempo.",
+            "transpositionSemitones": 0,
+            "octaveFolding": false,
+            "sourceBeatOrigin": 36,
+            "beatOriginMeaning": "Local beat 0 is the downbeat of editorial source measure 10, after nine 4/4 bars; the source itself prints no measure numbers.",
+            "reviewedMeasures": [
+              10,
+              25
+            ],
+            "reviewedBeatRanges": [
+              [
+                0,
+                63
+              ]
+            ],
+            "selectedAttackCount": 68,
+            "unchangedMelody": {
+              "attackCount": 68,
+              "changedPitchCount": 0,
+              "changedOnsetCount": 0,
+              "changedDurationCount": 0,
+              "status": "all-pitch-onset-duration-tuples-unchanged"
+            },
+            "sourceForm": {
+              "selectedCompleteMeasureCount": 15,
+              "selectedTerminalMeasureBeats": 3,
+              "selectedMeasureSpan": 16,
+              "repeatSignsInSelectedVerse": false,
+              "writtenOutRecurringMaterial": true,
+              "omittedOutroHasRepeatSigns": true
+            },
+            "sourceTotalBeatsMeaning": "63 is the selected verse excerpt extent, ending exactly with its last held note. It is not the full-score extent, sixteen complete bars or an ending-rest claim; the following eighth rest and chorus pickup are both outside the selected excerpt.",
+            "ending": {
+              "localMeasure": 16,
+              "editorialSourceMeasure": 25,
+              "note": "C5",
+              "beat": 60,
+              "duration": 3,
+              "totalBeats": 63,
+              "finalRestBeats": 0
+            },
+            "excludedBoundaryEvents": [
+              {
+                "beat": 63,
+                "duration": 0.5,
+                "type": "written-eighth-rest",
+                "outsideSelectedScope": true
+              },
+              {
+                "beat": 63.5,
+                "duration": 0.5,
+                "type": "chorus-pickup",
+                "note": "C5",
+                "outsideSelectedScope": true
+              }
+            ],
+            "selectedMelodyRests": [
+              {
+                "beat": 0,
+                "duration": 0.75
+              },
+              {
+                "beat": 8,
+                "duration": 0.75
+              },
+              {
+                "beat": 16,
+                "duration": 0.75
+              },
+              {
+                "beat": 24,
+                "duration": 0.75
+              },
+              {
+                "beat": 32,
+                "duration": 0.75
+              },
+              {
+                "beat": 40,
+                "duration": 0.75
+              },
+              {
+                "beat": 48,
+                "duration": 0.75
+              },
+              {
+                "beat": 56,
+                "duration": 0.75
+              }
+            ],
+            "notationDecision": "Both staff and numbered lines were inspected for all selected attacks. Preserve dotted-eighth/sixteenth values, eight dotted-eighth rests, long holds and every separately written repeated attack; no same-pitch ties occur in the selected verse. E4 at 27.75 and 28 are separate attacks. No repeat expansion or phantom attack is added.",
+            "pitchFit": {
+              "selectedSourcePitchClasses": [
+                0,
+                2,
+                4,
+                5,
+                7,
+                9,
+                11
+              ],
+              "selectedRange": [
+                "E4",
+                "E5"
+              ],
+              "omittedEssentialPitch": "F#",
+              "combinedPitchClassCount": 8,
+              "fullSongNaturalNoteFit": false,
+              "scopeLimit": "The selected verse uses seven natural pitch classes; the omitted chorus adds essential #4. Eight distinct classes cannot fit seven natural classes under any interval-preserving global transposition. This is a vocabulary constraint, not a full-chorus transcription or full-song approval."
+            },
+            "chordSymbolDecision": "Printed chord symbols are source features only. Their voicings and timing are not transcribed or approved; physical practice remains one main-melody note at a time.",
+            "alternateEditionReview": [
+              {
+                "url": "https://www.jianpujia.com/jianpu/7208.html",
+                "status": "different-f-major-vocal-edition",
+                "decision": "Straight eighths and differing phrase pitches remain an edition conflict; do not merge with this C engraving's dotted rhythm."
+              },
+              {
+                "url": "https://www.everyonepiano.cn/Number-531.html",
+                "status": "different-f-major-piano-edition",
+                "decision": "The public numbered previews use straight eighths and alternate endings; their additional final-verse lead-in attack is not an error in the selected C engraving."
+              },
+              {
+                "url": "https://www.guitarworld.com.cn/pu/q129513",
+                "status": "public-preview-not-recovered",
+                "decision": "The ordinary page identifies a paid full score; its explicitly public preview returned 502. No musical conclusion uses it and no paid continuation was accessed."
+              }
+            ],
+            "accompanimentReview": {
+              "status": "no-existing-v2-sibling",
+              "addedSupport": false,
+              "physicalTarget": "single-melody"
+            },
+            "sourcePixels": "all-68-selected-attacks-and-boundary-reviewed",
+            "independentPixelReview": "all-68-tuples-and-eight-rests-agree",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "historicalBrowserClaim": "The previous suitability note claims browser sound/timing checks; it is retained only in historicalReviewNotes and was not rerun as part of this source review.",
+            "limitations": "Source-pixel agreement and executable fixtures do not establish reference-listening, browser-audio or physical-kalimba acceptance. Full-song transcription, harmony approval, original-book attribution and public-distribution rights remain unapproved."
+          }
         }
       }
     },
@@ -2854,6 +3009,265 @@ export const SONG_LIBRARY = {
           "pattern": "phrase/downbeat bass-harmony support",
           "restPolicy": "silent restWindows are not filled",
           "reviewRequired": []
+        },
+        "practiceAccompaniment": {
+          "status": "needs-review",
+          "confidence": "source-chord-reviewed-voicing-candidate",
+          "generatedFrom": "Existing sparse support with three pitch substitutions derived from the Michael Kravchuk C-major lead-sheet chord symbols; the pickup C harmony remains inferred.",
+          "method": "Retain all nine onsets, two-note density and quiet playback parameters; replace only F3 with G3 at beat 14, G3 with F3 at beat 16, and D4 with C4 at beat 20. These are sparse chord-symbol voicings, not an exact written accompaniment score.",
+          "independentlyVerified": false,
+          "provenance": "The printed primary-source chord timeline was visually reviewed. The derived two-note voicings, inferred pickup harmony and complete listening/physical result are not independently verified. Original V2 layers and the earlier intersection candidate remain unchanged and recoverable.",
+          "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+          "unresolvedConflictBeats": [],
+          "correctedConflictBeats": [
+            14,
+            16,
+            20
+          ],
+          "sourceReview": {
+            "title": "Michael Kravchuk Happy Birthday, C-major lead sheet",
+            "url": "https://michaelkravchuk.com/free-lead-sheet-happy-birthday/",
+            "pdfUrl": "https://michaelkravchuk.com/wp-content/uploads/2017/02/Happy-Birthday-To-You-C-Major.pdf",
+            "page": 1,
+            "scope": "All nine existing light-support onsets checked against the primary chord-symbol timeline; the source provides chord symbols, not these exact accompaniment notes or their attacks. No approval of the preserved original V2 harmony is implied.",
+            "notationReview": "Primary-page start, fermata and ending pixels were inspected; the source chord symbols were separately checked by an independent reviewer. This is notation review, not completed audible or physical acceptance.",
+            "beatMapping": "App beat 0 is the first sounding pickup. First full measure starts at app beat 1. Melody is one octave above the source. After the A4 fermata at beat 17, retain the existing one extra practice beat in all later anchors.",
+            "printedChordTimeline": [
+              {
+                "beat": 1,
+                "symbol": "C"
+              },
+              {
+                "beat": 4,
+                "symbol": "G7"
+              },
+              {
+                "beat": 10,
+                "symbol": "C"
+              },
+              {
+                "beat": 16,
+                "symbol": "F"
+              },
+              {
+                "beat": 20,
+                "symbol": "C/G"
+              },
+              {
+                "beat": 22,
+                "symbol": "G7"
+              },
+              {
+                "beat": 23,
+                "symbol": "C"
+              }
+            ],
+            "pickupHarmony": {
+              "beat": 0,
+              "symbol": "C",
+              "status": "inferred",
+              "reason": "No chord symbol is printed above the pickup. Retained G3+C4 anticipates the first printed C; its chord membership is inferred rather than directly sourced."
+            },
+            "fermata": {
+              "melodyNote": "A4",
+              "beat": 17,
+              "writtenDuration": 1,
+              "retainedDuration": 2,
+              "extraPracticeBeats": 1,
+              "reason": "The source quarter note has a fermata. One extra beat is the retained fixed-time practice realization, not a duration prescribed by the notation."
+            },
+            "ending": {
+              "melodyNote": "C5",
+              "beat": 23,
+              "duration": 2,
+              "soundingEnd": 25,
+              "finalRestBeats": 0,
+              "reason": "Primary edition ends on a half note without the secondary Teachers edition's final quarter rest; do not combine the two editions."
+            }
+          },
+          "reviewRequired": [
+            "Fresh audible A/B comparison at the retained 104 BPM and configured practice speed is pending for the three changed pitches; the source prints no metronome mark, and prior acceptance of the old light support does not automatically accept this revision.",
+            "Pickup C harmony is inferred because the primary source prints no pickup chord; exact sparse voicings are derived rather than a written accompaniment score.",
+            "Physical 21-key kalimba play-through has not been performed."
+          ],
+          "historicalCandidates": [
+            {
+              "id": "conservative-layer-intersection-v2.4.2",
+              "practiceAccompaniment": {
+                "enabledByDefault": false,
+                "volume": 0.34,
+                "events": [
+                  {
+                    "beat": 0,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 4,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "D4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 6,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "D4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 10,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 12,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 14,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "F3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 16,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 20,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "D4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  },
+                  {
+                    "beat": 23,
+                    "duration": 0.75,
+                    "pattern": "conservative-anchor-intersection",
+                    "notes": [
+                      {
+                        "name": "G3",
+                        "role": "bass",
+                        "velocity": 0.4
+                      },
+                      {
+                        "name": "C4",
+                        "role": "harmony",
+                        "velocity": 0.34
+                      }
+                    ]
+                  }
+                ]
+              },
+              "review": {
+                "status": "needs-review",
+                "confidence": "conservative-existing-layer-intersection",
+                "generatedFrom": "Existing autoAccompaniment onsets coincident with judged non-melody chord anchors; retain only pitches shared by both layers.",
+                "method": "Conservative intersection, at most one bass and one harmony note per existing anchor; no new pitches or onsets.",
+                "independentlyVerified": false,
+                "provenance": "A reduced practice candidate derived from the current arrangement, not independently verified new harmony. Existing source and harmony-review labels do not verify this candidate.",
+                "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+                "unresolvedConflictBeats": [],
+                "reviewRequired": [
+                  "Independent source comparison and audible A/B/C listening review are still required; structural tests are not musical approval.",
+                  "Physical 21-key kalimba play-through has not been performed."
+                ]
+              }
+            }
+          ]
         }
       },
       "autoAccompaniment": {
@@ -3042,6 +3456,165 @@ export const SONG_LIBRARY = {
           {
             "label": "Music-for-Music-Teachers Happy Birthday chords",
             "url": "https://www.music-for-music-teachers.com/happy-birthday.html"
+          }
+        ]
+      },
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.34,
+        "events": [
+          {
+            "beat": 0,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 4,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 6,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 10,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 14,
+            "duration": 0.75,
+            "pattern": "source-chord-symbol-correction",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 0.75,
+            "pattern": "source-chord-symbol-correction",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 0.75,
+            "pattern": "source-chord-symbol-correction",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 23,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
           }
         ]
       }
@@ -4487,15 +5060,17 @@ export const SONG_LIBRARY = {
   "da-yu": {
       "schemaVersion": 1,
       "id": "da-yu",
-      "title": "《大鱼》",
+      "title": "《大鱼》（前奏至副歌选段）",
       "uploader": "system",
-      "practiceTitle": "《大鱼》练习轨道",
-      "scoreTitle": "《大鱼》简谱进度",
-      "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
+      "practiceTitle": "《大鱼》（前奏至副歌选段）练习轨道",
+      "scoreTitle": "《大鱼》（前奏至副歌选段）简谱进度",
+      "hint": "采用简谱家所载简和谱的前奏1至首段副歌单行旋律，32小节、162次拨音；1=♯C整体降半音至C，音域G3–C5。80 BPM为练习设定，谱面未印速度。",
       "difficulty": "medium",
       "bpm": 80,
       "defaultSpeedFactor": 0.9,
       "beatsPerMeasure": 4,
+      "key": "C",
+      "tuning": "21-key-c",
       "steps": [
         [
           "E4",
@@ -4538,34 +5113,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "E4",
           4,
-          0.75
+          0.5
         ],
         [
           "D4",
-          4.75,
-          0.75
+          4.5,
+          0.5
         ],
         [
           "E4",
-          5.5,
-          0.75
+          5,
+          0.5
         ],
         [
-          "C4",
-          6.25,
-          0.75
+          "C5",
+          5.5,
+          0.5
         ],
         [
           "B4",
-          7,
-          0.5
+          6,
+          1
         ],
         [
           "G4",
-          7.5,
-          0.5
+          7,
+          1
         ],
         [
           "E4",
@@ -4610,27 +5185,7 @@ export const SONG_LIBRARY = {
         [
           "G4",
           12,
-          1
-        ],
-        [
-          "E4",
-          13,
-          0.75
-        ],
-        [
-          "G4",
-          13.75,
-          0.75
-        ],
-        [
-          "B4",
-          14.5,
-          0.75
-        ],
-        [
-          "G4",
-          15.25,
-          0.75
+          4
         ],
         [
           "E4",
@@ -4673,52 +5228,52 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "E4",
           20,
-          0.75
+          0.5
         ],
         [
           "D4",
-          20.75,
-          0.75
+          20.5,
+          0.5
         ],
         [
           "E4",
-          21.5,
-          0.75
+          21,
+          0.5
         ],
         [
-          "C4",
-          22.25,
-          0.75
+          "C5",
+          21.5,
+          0.5
         ],
         [
           "B4",
-          23,
-          0.5
+          22,
+          1
         ],
         [
           "G4",
-          23.5,
-          0.5
+          23,
+          1
         ],
         [
           "D4",
           24,
-          0.75
-        ],
-        [
-          "E4",
-          24.75,
-          0.75
-        ],
-        [
-          "A4",
-          25.5,
           0.5
         ],
         [
-          "B4",
+          "E4",
+          24.5,
+          0.5
+        ],
+        [
+          "A3",
+          25,
+          1
+        ],
+        [
+          "D4",
           26,
           0.5
         ],
@@ -4728,22 +5283,22 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           27,
           0.5
         ],
         [
-          "G4",
+          "G3",
           27.5,
           0.5
         ],
         [
-          "A4",
+          "A3",
           28,
-          1
+          4
         ],
         [
-          "A4",
+          "A3",
           32,
           0.5
         ],
@@ -4785,45 +5340,35 @@ export const SONG_LIBRARY = {
         [
           "G4",
           36,
-          0.75
-        ],
-        [
-          "G4",
-          36.75,
-          0.75
-        ],
-        [
-          "B4",
-          37.5,
-          0.75
+          1.5
         ],
         [
           "E4",
-          38.25,
-          0.75
+          37.5,
+          0.5
         ],
         [
           "D4",
-          39,
-          0.5
+          38,
+          2
         ],
         [
-          "G4",
-          39.5,
-          0.5
-        ],
-        [
-          "A4",
+          "A3",
           40,
-          0.75
+          0.5
         ],
         [
           "C4",
-          40.75,
-          0.75
+          40.5,
+          0.5
         ],
         [
           "C4",
+          41,
+          0.5
+        ],
+        [
+          "D4",
           41.5,
           0.5
         ],
@@ -4833,47 +5378,27 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D4",
+          "E4",
           42.5,
           0.5
         ],
         [
           "E4",
           43,
-          0.5
+          1
         ],
         [
-          "E4",
-          43.5,
-          0.5
-        ],
-        [
-          "A4",
+          "A3",
           44,
           1
         ],
         [
-          "E4",
+          "G3",
           45,
-          0.75
+          3
         ],
         [
-          "G4",
-          45.75,
-          0.75
-        ],
-        [
-          "E4",
-          46.5,
-          0.75
-        ],
-        [
-          "G4",
-          47.25,
-          0.75
-        ],
-        [
-          "A4",
+          "A3",
           48,
           0.5
         ],
@@ -4915,50 +5440,35 @@ export const SONG_LIBRARY = {
         [
           "G4",
           52,
-          0.75
-        ],
-        [
-          "G4",
-          52.75,
-          0.75
-        ],
-        [
-          "B4",
-          53.5,
-          0.75
+          1.5
         ],
         [
           "E4",
-          54.25,
-          0.75
+          53.5,
+          0.5
         ],
         [
           "D4",
-          55,
-          0.5
+          54,
+          2
         ],
         [
-          "G4",
-          55.5,
-          0.5
-        ],
-        [
-          "A4",
+          "D4",
           56,
-          0.75
+          0.5
         ],
         [
           "E4",
-          56.75,
-          0.75
-        ],
-        [
-          "A4",
-          57.5,
+          56.5,
           0.5
         ],
         [
-          "B4",
+          "A3",
+          57,
+          1
+        ],
+        [
+          "D4",
           58,
           0.5
         ],
@@ -4968,67 +5478,47 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           59,
           0.5
         ],
         [
-          "G4",
+          "G3",
           59.5,
           0.5
         ],
         [
-          "A4",
+          "A3",
           60,
-          1
+          3
+        ],
+        [
+          "A3",
+          63,
+          0.5
         ],
         [
           "C4",
-          61,
-          0.75
-        ],
-        [
-          "E4",
-          61.75,
-          0.75
-        ],
-        [
-          "A4",
-          62.5,
-          0.75
-        ],
-        [
-          "C4",
-          63.25,
-          0.75
+          63.5,
+          0.5
         ],
         [
           "D4",
           64,
-          0.75
+          1.5
         ],
         [
-          "F4",
-          64.75,
-          0.75
-        ],
-        [
-          "A4",
+          "C4",
           65.5,
           0.5
         ],
         [
-          "C4",
+          "A3",
           66,
-          0.5
+          1
         ],
         [
-          "A4",
-          66.5,
-          0.5
-        ],
-        [
-          "A4",
+          "A3",
           67,
           0.5
         ],
@@ -5040,22 +5530,17 @@ export const SONG_LIBRARY = {
         [
           "D4",
           68,
-          0.75
-        ],
-        [
-          "G4",
-          68.75,
-          0.75
+          1.5
         ],
         [
           "C4",
           69.5,
-          0.75
+          0.5
         ],
         [
           "E4",
-          70.25,
-          0.75
+          70,
+          1
         ],
         [
           "E4",
@@ -5070,60 +5555,45 @@ export const SONG_LIBRARY = {
         [
           "A4",
           72,
-          0.75
+          1
         ],
         [
           "A4",
-          72.75,
-          0.75
-        ],
-        [
-          "A4",
-          73.5,
+          73,
           0.5
         ],
         [
           "G4",
+          73.5,
+          0.5
+        ],
+        [
+          "E4",
           74,
           0.5
         ],
         [
-          "E4",
+          "D4",
           74.5,
           0.5
         ],
         [
-          "D4",
-          75,
-          0.5
-        ],
-        [
           "C4",
-          75.5,
-          0.5
+          75,
+          1
         ],
         [
           "D4",
           76,
-          0.75
-        ],
-        [
-          "E4",
-          76.75,
-          0.75
-        ],
-        [
-          "E4",
-          77.5,
           0.5
         ],
         [
           "E4",
-          78,
-          0.5
+          76.5,
+          2.5
         ],
         [
-          "A4",
+          "A3",
           79,
           0.5
         ],
@@ -5133,32 +5603,22 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
-          80,
-          0.75
-        ],
-        [
           "D4",
-          80.75,
-          0.75
+          80,
+          1.5
         ],
         [
-          "F4",
+          "C4",
           81.5,
           0.5
         ],
         [
-          "C4",
+          "A3",
           82,
-          0.5
+          1
         ],
         [
-          "A4",
-          82.5,
-          0.5
-        ],
-        [
-          "A4",
+          "A3",
           83,
           0.5
         ],
@@ -5170,42 +5630,32 @@ export const SONG_LIBRARY = {
         [
           "D4",
           84,
-          1
-        ],
-        [
-          "G4",
-          85,
-          0.75
+          1.5
         ],
         [
           "C4",
-          85.75,
-          0.75
+          85.5,
+          0.5
         ],
         [
           "E4",
-          86.5,
-          0.75
-        ],
-        [
-          "E4",
-          87.25,
-          0.75
+          86,
+          2
         ],
         [
           "D4",
           88,
-          0.75
+          0.5
         ],
         [
           "E4",
-          88.75,
-          0.75
+          88.5,
+          0.5
         ],
         [
-          "A4",
-          89.5,
-          0.5
+          "A3",
+          89,
+          1
         ],
         [
           "D4",
@@ -5218,44 +5668,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           91,
           0.5
         ],
         [
-          "G4",
+          "G3",
           91.5,
           0.5
         ],
         [
-          "A4",
+          "A3",
           92,
-          1
+          3
         ],
         [
           "E4",
-          94.5,
-          0.75
+          95,
+          0.5
         ],
         [
           "G4",
-          95.25,
-          0.75
+          95.5,
+          0.5
         ],
         [
-          "C4",
+          "C5",
           96,
-          0.5
-        ],
-        [
-          "A4",
-          96.5,
-          0.5
-        ],
-        [
-          "C4",
-          97,
-          0.5
+          1.5
         ],
         [
           "B4",
@@ -5265,12 +5705,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           98,
-          0.5
-        ],
-        [
-          "B4",
-          98.5,
-          0.5
+          1
         ],
         [
           "E4",
@@ -5285,27 +5720,22 @@ export const SONG_LIBRARY = {
         [
           "C4",
           100,
-          0.75
+          1
         ],
         [
           "C4",
-          100.75,
-          0.75
-        ],
-        [
-          "C4",
-          101.5,
+          101,
           0.5
         ],
         [
           "D4",
-          102,
+          101.5,
           0.5
         ],
         [
           "E4",
-          102.5,
-          0.5
+          102,
+          1
         ],
         [
           "E4",
@@ -5320,12 +5750,7 @@ export const SONG_LIBRARY = {
         [
           "C4",
           104,
-          0.5
-        ],
-        [
-          "A4",
-          104.5,
-          0.5
+          1
         ],
         [
           "A4",
@@ -5333,7 +5758,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           105.5,
           0.5
         ],
@@ -5360,22 +5785,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           108,
-          0.75
-        ],
-        [
-          "E4",
-          108.75,
-          0.75
-        ],
-        [
-          "G4",
-          109.5,
-          0.75
-        ],
-        [
-          "B4",
-          110.25,
-          0.75
+          3
         ],
         [
           "E4",
@@ -5388,19 +5798,9 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "C5",
           112,
-          0.5
-        ],
-        [
-          "A4",
-          112.5,
-          0.5
-        ],
-        [
-          "C4",
-          113,
-          0.5
+          1.5
         ],
         [
           "B4",
@@ -5410,12 +5810,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           114,
-          0.5
-        ],
-        [
-          "B4",
-          114.5,
-          0.5
+          1
         ],
         [
           "E4",
@@ -5430,50 +5825,40 @@ export const SONG_LIBRARY = {
         [
           "C4",
           116,
-          0.75
+          1
         ],
         [
           "C4",
-          116.75,
-          0.75
-        ],
-        [
-          "C4",
-          117.5,
-          0.75
+          117,
+          0.5
         ],
         [
           "D4",
-          118.25,
-          0.75
-        ],
-        [
-          "E4",
-          119,
+          117.5,
           0.5
         ],
         [
           "E4",
-          119.5,
-          0.5
+          118,
+          2
         ],
         [
           "D4",
           120,
-          0.75
-        ],
-        [
-          "E4",
-          120.75,
-          0.75
-        ],
-        [
-          "A4",
-          121.5,
           0.5
         ],
         [
-          "B4",
+          "E4",
+          120.5,
+          0.5
+        ],
+        [
+          "A3",
+          121,
+          1
+        ],
+        [
+          "D4",
           122,
           0.5
         ],
@@ -5483,17 +5868,17 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "A3",
           123,
           0.5
         ],
         [
-          "G4",
+          "G3",
           123.5,
           0.5
         ],
         [
-          "A4",
+          "A3",
           124,
           4
         ]
@@ -5503,13 +5888,311 @@ export const SONG_LIBRARY = {
         "hasArpeggio": false,
         "hasRepeats": false,
         "unsupported": [
-          "下方伴奏和多音支撑未进入 steps；整体移入 21 音 C 调可弹区。"
+          "仅取明确的单行旋律，下方圈号是和弦标记，未编入自动伴奏或实体多音目标。",
+          "选段止于首段副歌；省略此前四小节引子、后续反复路线、间奏、副歌2与尾奏，不代表完整原曲。",
+          "公开阅览不等于再发布许可，本次仅作本地预览。"
         ],
-        "unsureMeasures": [
-          "m7",
-          "m15-m16",
-          "m30"
-        ]
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "简谱家所载《大鱼》简和谱，前奏1至首段副歌单行旋律",
+            "url": "https://www.jianpujia.com/jianpu/340541.html"
+          }
+        ],
+        "transcriptionScope": "selected-numbered-melody-preludes-through-first-chorus",
+        "sourceMeasureCount": 32,
+        "sourceTotalBeats": 128,
+        "sourceKey": "C#",
+        "transpositionSemitones": -1,
+        "tempoStatus": "unprinted-practice-choice",
+        "meterStatus": "printed-4/4",
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-numbered-melody-preludes-through-first-chorus",
+          "reason": "已逐小节读取单行旋律并保留字面八度点；整体降半音后G3–C5落在固定21音范围。此选段不保证更简单或更好听，副歌八度意图、录音辨识度和实际拨奏仍待分别验证。",
+          "reviewRequired": [
+            "同编配参考演奏尚未取得；副歌八度点清楚，待核的是作者意图与听感，不是OCR。",
+            "浏览器音频与实际所选练习倍率的试听待核；defaultSpeedFactor不代表当前或首次进入倍率。",
+            "实体21音卡林巴换手、跳进、连续拨音与自然衰减尚未实弹。",
+            "公开发布前另行确定作品及所选编配的再发布权限。"
+          ]
+        },
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-numbered-melody-excerpt",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.22",
+            "contentRevision": "bigfish-numbered-preludes-first-chorus-2026-10-12",
+            "selectedEdition": "jianpujia-340541-jianhepu-preludes-through-first-chorus",
+            "sourceUrl": "https://www.jianpujia.com/jianpu/340541.html",
+            "sourceImageUrl": "https://image.jianpujia.com/jianpudq/jianpu50/e0fb277fe86b96b5186636ca0df76344.png",
+            "sourceAssetHashes": {
+              "pageHtmlSha256": "17018a426789f5bcdc2586cbf12449dd0586bbf70955966c44848ce46990125b",
+              "scoreImageSha256": "d3665ec8d9c3155122e440ed36f860213971b86c34265fda78b47ebced441e25"
+            },
+            "attribution": "Visible title 大鱼; performer 周深; engraver appears 写轮指, first small glyph medium confidence; watermark www.KTVC8.com. Accessible repost, not a demonstrated original publisher.",
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "sourceMeasureRange": [
+              5,
+              36
+            ],
+            "sourceMeasureNumbering": "linear printed bars before repeat expansion; no printed bar numbers",
+            "sourceBeatRange": [
+              16,
+              144
+            ],
+            "sourceToExcerptBeatOffset": -16,
+            "reviewedBeatRanges": [
+              [
+                0,
+                128
+              ]
+            ],
+            "selectedSections": [
+              {
+                "label": "前奏1",
+                "selectedMeasures": [
+                  1,
+                  4
+                ],
+                "sourceMeasures": [
+                  5,
+                  8
+                ],
+                "beats": [
+                  0,
+                  16
+                ]
+              },
+              {
+                "label": "前奏2",
+                "selectedMeasures": [
+                  5,
+                  8
+                ],
+                "sourceMeasures": [
+                  9,
+                  12
+                ],
+                "beats": [
+                  16,
+                  32
+                ]
+              },
+              {
+                "label": "主歌",
+                "selectedMeasures": [
+                  9,
+                  16
+                ],
+                "sourceMeasures": [
+                  13,
+                  20
+                ],
+                "beats": [
+                  32,
+                  64
+                ]
+              },
+              {
+                "label": "桥段",
+                "selectedMeasures": [
+                  17,
+                  24
+                ],
+                "sourceMeasures": [
+                  21,
+                  28
+                ],
+                "beats": [
+                  64,
+                  96
+                ]
+              },
+              {
+                "label": "首段副歌",
+                "selectedMeasures": [
+                  25,
+                  32
+                ],
+                "sourceMeasures": [
+                  29,
+                  36
+                ],
+                "beats": [
+                  96,
+                  128
+                ]
+              }
+            ],
+            "excludedSections": [
+              "four-bar 引子",
+              "later gray-band repeat route 前奏2 主歌 桥段 副歌",
+              "间奏",
+              "副歌2",
+              "尾奏"
+            ],
+            "sourceVoice": "explicit-single-numbered-melody",
+            "voiceDecision": "The single numbered line identifies the melody directly; the lower circled numbers are chord symbols, not extra melody notes. No highest-note or first-note extraction.",
+            "sourceKey": "1=♯C",
+            "sourceMeter": "4/4",
+            "sourceQuarterBpm": null,
+            "practiceBpmChoice": 80,
+            "sourceTempoPrinted": false,
+            "registerConvention": "C normalization uses unmarked 1=C4; apply the printed octave dots literally. The corresponding source reference uses unmarked 1=C#4; this is the documented scientific-pitch convention, not an absolute-octave label printed on the page.",
+            "sourceRange": [
+              "G#3",
+              "C#5"
+            ],
+            "compiledRange": [
+              "G3",
+              "C5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              1,
+              3,
+              5,
+              8,
+              10
+            ],
+            "transpositionSemitones": -1,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "melodyAccidentals": [],
+            "localPitchAlterations": [],
+            "melodyAccidentalScope": "No additional accidental on the selected melody. The sharp by selected m22 belongs to the lower chord symbol and does not establish the full harmony as all-natural.",
+            "pickupBeats": 0,
+            "openingDecision": "Start at the downbeat of 前奏1 after excluding all four 引子 bars; the selected first bar is complete, without rest or incoming tie.",
+            "repeatExpansion": "none-all-selected-bars-written-out; later printed repeat route excluded",
+            "melodyRestWindows": [],
+            "ties": [
+              {
+                "selectedMeasures": [
+                  20
+                ],
+                "sourceMeasures": [
+                  24
+                ],
+                "mergedAttack": [
+                  "E4",
+                  76.5,
+                  2.5
+                ],
+                "segments": [
+                  [
+                    "E4",
+                    76.5,
+                    0.5
+                  ],
+                  [
+                    "E4",
+                    77,
+                    2
+                  ]
+                ],
+                "crossPage": false,
+                "crossSystem": false,
+                "evidence": "Explicit same-pitch arc joins the underlined 3 to the following 3 and its continuation dash within one bar."
+              }
+            ],
+            "separateAttackExamples": [
+              [
+                [
+                  "A3",
+                  60,
+                  3
+                ],
+                [
+                  "A3",
+                  63,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  "E4",
+                  108,
+                  3
+                ],
+                [
+                  "E4",
+                  111,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  "C4",
+                  116,
+                  1
+                ],
+                [
+                  "C4",
+                  117,
+                  0.5
+                ]
+              ]
+            ],
+            "octaveReading": "Literal dots are clear and independently agreed: m25/m29 first 1 has an upper dot; m26/m27/m30 first 1 does not; m27 paired 61 has an upper dot on 1. No missing dot or engraving error is established, and no editorial dot is inserted.",
+            "octaveIntentStatus": "same-edition-reference-performance-unverified",
+            "endingRestBeats": 0,
+            "selectedEndIsFullSongEnding": false,
+            "endingDecision": "A3 at 124 lasts 4 beats to the selected cut at 128, after the first chorus. This is not the complete song ending; no extra rest or extension is invented.",
+            "oldEditionReverified": false,
+            "versionDecision": "Deliberately selected alternative numbered-melody excerpt, not proof that the old edition is wrong. Only old m1, m3 and m5 match exactly; do not splice the absent old source into this selected edition.",
+            "legacyComparison": {
+              "archivedAttacks": 200,
+              "selectedAttacks": 162,
+              "identicalMeasures": [
+                1,
+                3,
+                5
+              ],
+              "differingMeasureCount": 29,
+              "archivedEncodedEnd": 128,
+              "selectedCutBeat": 128,
+              "meaning": "Shared total length and partial phrases do not recover the absent source or identify editions."
+            },
+            "supportDecision": "No support is added or borrowed. The unchanged old da-yu-chord 200-attack melody fails content compatibility with this 162-attack selection; its 62 automatic backing events remain historical data only. No reduced practiceAccompaniment layer exists in the old sibling.",
+            "sourcePixelReview": "Two independent pre-edit readings agree on all 162 tuples and 32 four-beat bars; independent review and implementation also inspected the selected crops. These are multiple readings of one edition, not independent source editions.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-local-preview-only",
+            "rightsNotice": "Public preview/download access does not establish reproduction or public distribution permission. No raw scan, private full source transcription, public push or deployment is authorized by this local preview."
+          },
+          "archivedEdition": {
+            "file": "data/archives/da-yu-v2.4.21.json",
+            "fileSha256": "5f3aff34c32bf77aef78df70f8ec54d4181ee88d14f640feda2217395a797397",
+            "purpose": "Byte-exact full developer history, including original title, 200 steps and all source metadata; no new canonical card, restore UI, HTTP allowlist or service-worker precache."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "unsupported": [
+              "下方伴奏和多音支撑未进入 steps；整体移入 21 音 C 调可弹区。"
+            ],
+            "unsureMeasures": [
+              "m7",
+              "m15-m16",
+              "m30"
+            ]
+          },
+          "historicalEditionStatus": "The original 200-attack V1 source photo is missing; unsure m7, m15-m16 and m30 remain historical unresolved questions. The old V2 uses the same melody and is not an independent source. No old source claim is reverified by selecting this repost.",
+          "historicalReferences": [
+            {
+              "url": "https://www.qupu123.com/Mobile-view-id-339695.html",
+              "status": "Known certificate/TLS restriction was not retried or bypassed; no image identity recovered."
+            },
+            {
+              "url": "https://m.2qupu.com/jita/20210814/23329.html",
+              "status": "Guitar/vocal HTML accessible, but both actual images returned403; no retry or bypass. Not this selected source."
+            }
+          ]
+        }
       }
     },
   "da-yu-chord": {
@@ -9850,7 +10533,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《大雨小雨》练习轨道",
       "scoreTitle": "《大雨小雨》简谱进度",
-      "hint": "主旋律练习版；按 1=D、4/4 来源谱转为 C 调。",
+      "hint": "保留11小节演唱主旋律，单遍44拍；按 1=D、4/4 来源谱整体降2半音为 C 调，省略末尾4拍括号间奏。92 BPM 为练习设定。",
       "difficulty": "easy",
       "bpm": 92,
       "defaultSpeedFactor": 0.9,
@@ -10095,7 +10778,12 @@ export const SONG_LIBRARY = {
         [
           "G4",
           32,
-          1
+          0.5
+        ],
+        [
+          "G4",
+          32.5,
+          0.5
         ],
         [
           "G4",
@@ -10103,39 +10791,79 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "G4",
+          "E4",
           33.5,
           0.5
         ],
         [
-          "E4",
+          "G4",
           34,
-          2
+          0.5
         ],
         [
           "G4",
+          34.5,
+          0.5
+        ],
+        [
+          "G4",
+          35,
+          0.5
+        ],
+        [
+          "E4",
+          35.5,
+          0.5
+        ],
+        [
+          "F4",
           36,
-          1
+          0.5
         ],
         [
-          "G4",
+          "F4",
+          36.5,
+          0.5
+        ],
+        [
+          "F4",
           37,
           0.5
         ],
         [
-          "G4",
+          "D4",
           37.5,
           0.5
         ],
         [
-          "E4",
+          "F4",
           38,
-          2
+          0.5
         ],
         [
           "F4",
+          38.5,
+          0.5
+        ],
+        [
+          "F4",
+          39,
+          0.5
+        ],
+        [
+          "D4",
+          39.5,
+          0.5
+        ],
+        [
+          "G4",
           40,
-          1
+          0.5
+        ],
+        [
+          "E4",
+          40.5,
+          0.5
         ],
         [
           "F4",
@@ -10143,68 +10871,23 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "F4",
+          "D4",
           41.5,
           0.5
         ],
         [
-          "D4",
+          "C4",
           42,
-          2
-        ],
-        [
-          "F4",
-          44,
-          1
-        ],
-        [
-          "F4",
-          45,
-          0.5
-        ],
-        [
-          "F4",
-          45.5,
-          0.5
-        ],
-        [
-          "D4",
-          46,
-          2
-        ],
-        [
-          "G4",
-          48,
-          0.5
-        ],
-        [
-          "E4",
-          48.5,
-          0.5
-        ],
-        [
-          "F4",
-          49,
-          0.5
-        ],
-        [
-          "D4",
-          49.5,
           0.5
         ],
         [
           "C4",
-          50,
+          42.5,
           0.5
         ],
         [
           "C4",
-          50.5,
-          0.5
-        ],
-        [
-          "C4",
-          51,
+          43,
           1
         ]
       ],
@@ -10212,23 +10895,195 @@ export const SONG_LIBRARY = {
         "hasChords": false,
         "hasArpeggio": false,
         "hasRepeats": false,
-        "sourceImages": [
-          "private/sheets/raw/da-yu-xiao-yu/ccguitar-da-yu-xiao-yu.jpg"
-        ],
         "unsupported": [
-          "括号标注的间奏未作为主旋律练习段展开。"
+          "括号标注的间奏未作为主旋律练习段展开。",
+          "Selected vocal-only scope is 44 beats. The separate parenthesized interlude occupies source beats [44,48) and contains seven attacks; its omission is not a written rest or all-layer silence.",
+          "The source prints two lyric rows without a repeat instruction; the selected melody is retained once, not expanded into an inferred second verse."
         ],
         "unsureMeasures": [],
         "sources": [
           {
             "label": "虫虫乐谱《大雨小雨》简谱",
             "url": "https://www.ccguitar.cn/cchtml/12894419.htm"
-          },
-          {
-            "label": "百度文库《儿童趣味发声练声曲谱》搜索摘录",
-            "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html"
           }
-        ]
+        ],
+        "sourceTotalBeats": 44,
+        "sourceMeasureCount": 11,
+        "sourceReview": {
+          "historicalReviewNotes": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "sourceImages": [
+              "private/sheets/raw/da-yu-xiao-yu/ccguitar-da-yu-xiao-yu.jpg"
+            ],
+            "unsupported": [
+              "括号标注的间奏未作为主旋律练习段展开。"
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "虫虫乐谱《大雨小雨》简谱",
+                "url": "https://www.ccguitar.cn/cchtml/12894419.htm"
+              },
+              {
+                "label": "百度文库《儿童趣味发声练声曲谱》搜索摘录",
+                "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html"
+              }
+            ]
+          },
+          "originalV1": {
+            "fileSha256": "e7a90499d051ed5afc10ec564f9bd6dbb870786119b3e9be8e8dc02344173ea0",
+            "hint": "主旋律练习版；按 1=D、4/4 来源谱转为 C 调。",
+            "reconstruction": "Restore this hint and historicalReviewNotes as sourceFeatures. Reverse only timing for attack indices 47-62 to four [1,0.5,0.5,2]-beat cells starting at 32,36,40,44, then add 8 beats to indices 63-69. Serialize with two-space JSON indentation, compact each steps tuple on one line, and append one newline; the focused regression reconstructs the exact original bytes."
+          },
+          "currentScopeReview": {
+            "status": "reviewed-vocal-melody-interlude-omitted",
+            "reviewedAt": "2026-10-12",
+            "adoptedInVersion": "2.4.6",
+            "selectedEdition": "ccguitar-12894419-vocal-once",
+            "sourceUrl": "https://www.ccguitar.cn/cchtml/12894419.htm",
+            "sourceImageUrl": "https://s201.lzjoy.com/res/statics/fileupload/opern666/score_400000_500000/0321/3f5f572b52892028574824bfed66c0375e7586ab8a6d1.jpg",
+            "sourceImageSha256": "20f666fdba68000b80f72d0254d561e81189742804d2b5f906f22ec8464cde03",
+            "sourceImageDimensions": [
+              1000,
+              1430
+            ],
+            "sourceKey": "D",
+            "sourceMeter": "4/4",
+            "sourceTempo": null,
+            "sourceTempoBeatUnit": "quarter",
+            "beatOrigin": "Beginning of the first complete 4/4 bar; audit-assigned bar n spans [4(n-1),4n). The source has no printed bar numbers.",
+            "transpositionSemitones": -2,
+            "octaveFolding": false,
+            "reviewedMeasures": [
+              1,
+              11
+            ],
+            "reviewedBeatRanges": [
+              [
+                0,
+                44
+              ]
+            ],
+            "selectedAttackCount": 70,
+            "selectedVocalScopeBeats": 44,
+            "unchangedOpening": {
+              "measures": [
+                1,
+                8
+              ],
+              "beatRange": [
+                0,
+                32
+              ],
+              "attackCount": 47,
+              "status": "all-pitch-onset-duration-tuples-unchanged"
+            },
+            "timingCorrection": {
+              "changedAttackIndices": [
+                47,
+                69
+              ],
+              "changedTupleCount": 23,
+              "changedPitchCount": 0,
+              "eighthNoteMeasures": [
+                9,
+                10
+              ],
+              "eighthNoteAttackCountPerMeasure": 8,
+              "eighthNoteDuration": 0.5,
+              "previousMeasureBeatRanges": [
+                [
+                  32,
+                  40
+                ],
+                [
+                  40,
+                  48
+                ],
+                [
+                  48,
+                  52
+                ]
+              ],
+              "correctedMeasureBeatRanges": [
+                [
+                  32,
+                  36
+                ],
+                [
+                  36,
+                  40
+                ],
+                [
+                  40,
+                  44
+                ]
+              ],
+              "finalMeasureShiftBeats": -8,
+              "finalMeasureDurations": "unchanged",
+              "evidence": "Each of source bars 9 and 10 has eight single-underlined eighth notes, filling four beats. The old four-attack quarter/eighth/eighth/half pattern doubled these two bars. Bar 11 keeps all seven attacks and durations, eight beats earlier."
+            },
+            "sourceForm": {
+              "printedMeasureCount": 12,
+              "printedLinearScoreBeats": 48,
+              "selectedVocalMeasureCount": 11,
+              "selectedVocalBeats": 44,
+              "lyricRows": 2,
+              "repeatSignsPrinted": false,
+              "expandedRepeats": false,
+              "writtenRestBeats": 0
+            },
+            "omittedSourceGestures": [
+              {
+                "measure": 12,
+                "beat": 44,
+                "duration": 4,
+                "type": "parenthesized-interlude",
+                "attackCount": 7,
+                "outsideSelectedScope": true,
+                "sourceWrittenRest": false,
+                "sourceAllLayerSilence": false
+              }
+            ],
+            "notationDecision": "Single underlines halve quarter-note values. Curves connect different pitches as slurs and retain both attacks; repeated equal pitches have no same-pitch ties and remain separate. No octave dots, incidental accidentals, written rests, repeat signs or alternate endings were found in the selected vocal line.",
+            "ending": {
+              "measure": 11,
+              "note": "C4",
+              "beat": 43,
+              "duration": 1,
+              "totalBeats": 44,
+              "finalRestBeats": 0
+            },
+            "sourceTotalBeatsMeaning": "44 is the retained 11-bar vocal-only extent. The full printed linear page including its separate interlude lasts 48 beats; the omitted four beats are not ending silence.",
+            "retainedPracticeTempo": "No metronome tempo is printed. The unchanged 92 BPM is a practice choice; defaultSpeedFactor 0.9 is a historical suggestion, not evidence of the actual selected or remembered runtime multiplier.",
+            "secondarySourceReview": {
+              "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html",
+              "status": "notation-not-recovered",
+              "reason": "The recorded Baidu URL returned a JavaScript loading shell rather than notation. No independent secondary-source corroboration is claimed."
+            },
+            "accompanimentReview": {
+              "status": "no-existing-v2-sibling",
+              "scope": "No da-yu-xiao-yu V2 source arrangement exists. da-yu and da-yu-chord identify a different song. No support is added or borrowed; any future candidate must match the corrected melody, BPM and 44-beat extent."
+            },
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Pixel and tuple review cover the selected vocal melody only, not the omitted interlude as a practice arrangement. Independent secondary-source corroboration, reference listening, browser-audio acceptance and physical kalimba playing remain pending. Public access does not establish republication rights; public-distribution rights remain unapproved."
+          }
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "reviewed-11-bar-vocal-melody-once-interlude-omitted",
+          "reason": "The source-backed single melody fits C4-A4 after one uniform -2-semitone transposition. All 70 attacks and the 44-beat selected extent are reviewed; maximum encoded density is two attacks per quarter beat. The separate four-beat interlude is omitted.",
+          "reviewRequired": [
+            "Reference-performance recognition comparison pending.",
+            "Browser-audio verification at the actual selected practice speed pending.",
+            "Physical kalimba play-through and same-thumb repeated eighth notes pending.",
+            "Independent secondary-source corroboration and publication rights are not established."
+          ]
+        }
       }
     },
   "fu-shi-shan-xia": {
@@ -11685,7 +12540,7 @@ export const SONG_LIBRARY = {
         "unsupported": [
           "主旋律版省略原谱下声部伴奏与同时和声音。",
           "第10、11、14、15小节保留0.125与0.375拍的切分节奏，不平均分拍。",
-          "第32至33小节C5延音合并；最后3拍静音保留在谱面范围元数据，V1播放器按最后发声音符结束。"
+          "第32至33小节C5延音合并；2.4.1 起播放器按来源总拍数保留末尾纯休止，不延长最后音符。"
         ],
         "unsureMeasures": [],
         "composer": "周杰伦",
@@ -11714,11 +12569,11 @@ export const SONG_LIBRARY = {
   "hong-yan": {
       "schemaVersion": 1,
       "id": "hong-yan",
-      "title": "《鸿雁》",
+      "title": "《鸿雁》（教材定拍版）",
       "uploader": "system",
-      "practiceTitle": "《鸿雁》练习轨道",
-      "scoreTitle": "《鸿雁》简谱进度",
-      "hint": "乌拉特民歌主题版：两遍主题加收束句，共20小节，约86秒。G调整体移至C调，适配21音琴，无需调琴。保留长音和延音；省略句尾倚音，不含录音版前奏、间奏和后半段转调。",
+      "practiceTitle": "《鸿雁》（教材定拍版）练习轨道",
+      "scoreTitle": "《鸿雁》（教材定拍版）简谱进度",
+      "hint": "粤教花城五上教材定拍版：8小节主题两遍，再接完整8小节结束句，98次起音、96拍。D调整体降2半音至C调，保留四处真实延音；省略8组无定量倚音，延长记号不另加拍。56 BPM为练习设定；仅练主旋律，无伴奏。",
       "difficulty": "easy",
       "bpm": 56,
       "defaultSpeedFactor": 1,
@@ -11726,9 +12581,14 @@ export const SONG_LIBRARY = {
       "key": "C",
       "steps": [
         [
-          "E4",
+          "D4",
           0,
-          1
+          0.5
+        ],
+        [
+          "E4",
+          0.5,
+          0.5
         ],
         [
           "C4",
@@ -11753,12 +12613,12 @@ export const SONG_LIBRARY = {
         [
           "A4",
           5,
-          0.5
+          0.75
         ],
         [
           "C5",
-          5.5,
-          0.5
+          5.75,
+          0.25
         ],
         [
           "A4",
@@ -11798,17 +12658,12 @@ export const SONG_LIBRARY = {
         [
           "E4",
           11.5,
-          0.5
-        ],
-        [
-          "D4",
-          12,
           1
         ],
         [
           "D4",
-          13,
-          3
+          12.5,
+          3.5
         ],
         [
           "G4",
@@ -11818,12 +12673,12 @@ export const SONG_LIBRARY = {
         [
           "A4",
           17,
-          0.5
+          0.75
         ],
         [
           "C5",
-          17.5,
-          0.5
+          17.75,
+          0.25
         ],
         [
           "A4",
@@ -11891,9 +12746,14 @@ export const SONG_LIBRARY = {
           4
         ],
         [
-          "E4",
+          "D4",
           32,
-          1
+          0.5
+        ],
+        [
+          "E4",
+          32.5,
+          0.5
         ],
         [
           "C4",
@@ -11918,12 +12778,12 @@ export const SONG_LIBRARY = {
         [
           "A4",
           37,
-          0.5
+          0.75
         ],
         [
           "C5",
-          37.5,
-          0.5
+          37.75,
+          0.25
         ],
         [
           "A4",
@@ -11963,17 +12823,12 @@ export const SONG_LIBRARY = {
         [
           "E4",
           43.5,
-          0.5
-        ],
-        [
-          "D4",
-          44,
           1
         ],
         [
           "D4",
-          45,
-          3
+          44.5,
+          3.5
         ],
         [
           "G4",
@@ -11983,12 +12838,12 @@ export const SONG_LIBRARY = {
         [
           "A4",
           49,
-          0.5
+          0.75
         ],
         [
           "C5",
-          49.5,
-          0.5
+          49.75,
+          0.25
         ],
         [
           "A4",
@@ -12063,12 +12918,12 @@ export const SONG_LIBRARY = {
         [
           "A4",
           65,
-          0.5
+          0.75
         ],
         [
           "C5",
-          65.5,
-          0.5
+          65.75,
+          0.25
         ],
         [
           "A4",
@@ -12134,46 +12989,555 @@ export const SONG_LIBRARY = {
           "A3",
           76,
           4
+        ],
+        [
+          "G4",
+          80,
+          1
+        ],
+        [
+          "A4",
+          81,
+          0.75
+        ],
+        [
+          "C5",
+          81.75,
+          0.25
+        ],
+        [
+          "A4",
+          82,
+          2
+        ],
+        [
+          "D4",
+          84,
+          0.5
+        ],
+        [
+          "E4",
+          84.5,
+          0.5
+        ],
+        [
+          "C4",
+          85,
+          0.5
+        ],
+        [
+          "A3",
+          85.5,
+          0.5
+        ],
+        [
+          "G3",
+          86,
+          2
+        ],
+        [
+          "E4",
+          88,
+          1
+        ],
+        [
+          "C4",
+          89,
+          0.5
+        ],
+        [
+          "A3",
+          89.5,
+          0.5
+        ],
+        [
+          "G3",
+          90,
+          0.5
+        ],
+        [
+          "A3",
+          90.5,
+          0.5
+        ],
+        [
+          "E4",
+          91,
+          1
+        ],
+        [
+          "A3",
+          92,
+          4
         ]
       ],
       "sourceFeatures": {
         "hasChords": false,
         "hasArpeggio": false,
         "hasRepeats": true,
-        "unsupported": [
-          "单音传统主题练习版；省略句尾小字121倚音，主音保持原有四拍时值。",
-          "不收录现代录音编曲的前奏、间奏、转调和伴奏；无歌词。"
-        ],
-        "unsureMeasures": [],
+        "sourceTotalBeats": 96,
+        "sourceMeasureCount": 24,
+        "sourceKey": "D",
+        "transpositionSemitones": -2,
+        "tempoStatus": "editorial-practice-tempo-source-has-text-only",
+        "meterStatus": "printed-4/4",
+        "repeatStructure": "The right repeat after m8 returns to the beginning once. Both separately written four-bar ending phrases m9–16 then follow. 结束句 is not a numbered alternate ending, and lyric rows alone do not authorize repeats.",
+        "transcriptionScope": "school-complete-principal-route-fixed-beat-no-grace",
+        "composer": "蒙古族民歌（乌拉特传统曲调）",
         "sources": [
           {
-            "label": "中国曲谱网《鸿雁》（内蒙民歌、3个版本）：版本一、三的G调声乐主题，核对音高、节奏、反复与收束句",
-            "url": "https://www.qupu123.com/minge/erziyixia/p116313.html"
-          },
-          {
-            "label": "学校公开音乐教材第40页：独立核对传统主题轮廓、低音终止与反复结构；D调版装饰及附点处理不同，不混入主谱",
+            "label": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
             "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
           }
         ],
-        "composer": "乌拉特民歌（传统曲调）",
-        "transcriptionScope": "traditional-theme-two-strophes-and-cadence",
-        "sourceMeasureCount": 20,
-        "sourceTotalBeats": 80,
-        "sourceKey": "G",
-        "transpositionSemitones": -7,
-        "tempoStatus": "printed-quarter-note-tempo-56-in-version-one",
-        "meterStatus": "printed-4/4",
-        "repeatStructure": "8小节主题两遍，再重复第5—8小节作为收束句；显式展开。",
-        "rightsBasis": "仅整理传统乌拉特民歌曲调；不包含现代填词、伴奏、录音或第三方谱图。",
+        "unsupported": [
+          "省略6组印刷／8组展开的无定量倚音，共16个展开小音头；保留全部主音时值，不猜倚音定时。",
+          "所选定拍练习在原页第15小节延长记号处不额外加拍；96拍不代表原唱精确演唱时长。",
+          "不含伴奏、现代录音编配或歌词；来源图像和完整私人证据不随仓库分发。"
+        ],
+        "unsureMeasures": [],
         "suitability": {
           "status": "conditional",
-          "scope": "traditional-theme-two-strophes-and-cadence",
-          "reason": "整体移调后音域G3—C5，仅使用21音C调琴已有自然音；没有局部折叠八度或替换半音。主题及收束句经两份G调记谱和独立教材对照。",
+          "scope": "school-complete-principal-route-fixed-beat-no-grace",
+          "reason": "统一降2半音后G3–C5全在固定21音自然音琴范围；保留音程及实际八度点，无局部折八度。最短0.25拍在56 BPM约268毫秒，长音衰减与跳进仍待参考试听和实体琴检验；easy为保留的练习分类。",
           "reviewRequired": [
-            "实体琴音色衰减、换手与主观旋律辨识度尚待用户实际试听。"
+            "Reference-recording comparison not performed.",
+            "Browser/audio acceptance is separate from data adoption.",
+            "Physical kalimba play-through not performed.",
+            "Public distribution rights remain unestablished."
           ]
+        },
+        "sourceReview": {
+          "confidence": "high-for-selected-principal-notation-and-disclosed-fixed-beat-adaptation-only",
+          "sources": [
+            {
+              "label": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
+              "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
+            }
+          ],
+          "currentScopeReview": {
+            "status": "reviewed-selected-school-fixed-beat-edition",
+            "reviewedInVersion": "2.4.37",
+            "adoptedInVersion": "2.4.37",
+            "sourceLabel": "粤教花城版《音乐·走进音乐世界》五年级上册（简谱），2021年6月第1版，PDF第41页／印刷第40页",
+            "sourceUrl": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf",
+            "sourcePdfSha256": "b7debe04803aed2637f68f56b081ad35848bc929f1b978e1c5be6a187729b66f",
+            "sourcePageImageSha256": "b3a5471ced0093ef5d143a1d93e4230b920cf94ec7f32013234ba6c3aa201162",
+            "book": "义务教育教科书 音乐 走进音乐世界 五年级 上册 简谱",
+            "publishers": [
+              "广东教育出版社",
+              "花城出版社"
+            ],
+            "edition": "2021年6月第1版，第1次印刷",
+            "isbn": "978-7-5548-4120-4",
+            "scoreCredits": [
+              "蒙古族民歌",
+              "吕燕卫词",
+              "张宏光编曲"
+            ],
+            "pdfPages": [
+              41
+            ],
+            "printedPages": [
+              40
+            ],
+            "sourceMeasureNumbers": "Editorially counted m1–16; no measure numerals printed.",
+            "sourceMeasureRange": [
+              1,
+              16
+            ],
+            "distinctPrintedMelodyMeasures": 16,
+            "expandedMeasureCount": 24,
+            "reviewedBeatRanges": [
+              [
+                0,
+                96
+              ]
+            ],
+            "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+            "voiceDecision": "A single numbered melody line is printed. No highest-note heuristic or accompaniment voice was used.",
+            "sourceKey": "D",
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": null,
+            "sourceNumericTempoPrinted": false,
+            "sourceTempoPrinted": true,
+            "sourceTempoText": "慢 歌唱地",
+            "tempoDecision": "56 BPM is a retained editorial practice choice, not a numeric source marking. The source only prints 慢 歌唱地. The 1.0 suggestion and existing user-saved multiplier remain separate.",
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  1,
+                  8
+                ],
+                "beats": [
+                  0,
+                  32
+                ],
+                "pass": 1
+              },
+              {
+                "sourceMeasures": [
+                  1,
+                  8
+                ],
+                "beats": [
+                  32,
+                  64
+                ],
+                "pass": 2
+              },
+              {
+                "sourceMeasures": [
+                  9,
+                  16
+                ],
+                "beats": [
+                  64,
+                  96
+                ],
+                "pass": 1
+              }
+            ],
+            "expandedSourceMeasures": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "repeatSignsPresent": true,
+            "lyricRowsAuthorizeRepeat": false,
+            "repeatExpansion": "m1-8-twice-then-both-written-ending-phrases-m9-16",
+            "formDecision": "The right repeat after m8 returns to the beginning once. Both separately written four-bar ending phrases m9–16 then follow. 结束句 is not a numbered alternate ending, and lyric rows alone do not authorize repeats.",
+            "allPrintedOccurrencesReviewed": true,
+            "excludedSections": [],
+            "omittedSectionsAreRests": false,
+            "selectedEndIsSelectedEditionEnding": true,
+            "selectedEndIsFullSongEnding": false,
+            "printedMetricNoteheadCount": 67,
+            "metricNoteheadCount": 102,
+            "principalAttackCount": 98,
+            "ties": [
+              {
+                "sourceHeads": [
+                  "m3.n7",
+                  "m4.n1"
+                ],
+                "routeMeasures": [
+                  3,
+                  4
+                ],
+                "note": "E4",
+                "beat": 11.5,
+                "duration": 1
+              },
+              {
+                "sourceHeads": [
+                  "m4.n2",
+                  "m4.n3"
+                ],
+                "routeMeasures": [
+                  4,
+                  4
+                ],
+                "note": "D4",
+                "beat": 12.5,
+                "duration": 3.5
+              },
+              {
+                "sourceHeads": [
+                  "m3.n7",
+                  "m4.n1"
+                ],
+                "routeMeasures": [
+                  11,
+                  12
+                ],
+                "note": "E4",
+                "beat": 43.5,
+                "duration": 1
+              },
+              {
+                "sourceHeads": [
+                  "m4.n2",
+                  "m4.n3"
+                ],
+                "routeMeasures": [
+                  12,
+                  12
+                ],
+                "note": "D4",
+                "beat": 44.5,
+                "duration": 3.5
+              }
+            ],
+            "tieContinuationCount": 4,
+            "tuplets": [],
+            "slurDecision": "Different-pitch slurs retain all principal attacks; the larger m3.n6 to m4.n1 arc does not erase G4 at beat 11. Only the nested same-pitch E4 and the m4 D4 arcs merge attacks.",
+            "slurEvidence": "The second independent reader lists 14 printed slurs (22 expanded occurrences); the first reader has no complete slur registry. Do not claim every slur endpoint was independently agreed by both readers.",
+            "silentWindows": [],
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 0,
+            "endingRestBeats": 0,
+            "ornamentDecision": "Eight expanded unmeasured grace groups (16 small noteheads; six printed groups) are deliberately omitted. No guessed duration is added and no principal-note time is stolen. This is not an ornament-complete realization.",
+            "omittedOrnaments": [
+              {
+                "sourceMeasure": 7,
+                "routeMeasure": 7,
+                "beat": 27,
+                "sourcePitches": [
+                  "B3"
+                ],
+                "compiledPitches": [
+                  "A3"
+                ],
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 8,
+                "routeMeasure": 8,
+                "beat": 28,
+                "sourcePitches": [
+                  "D4",
+                  "E4",
+                  "D4"
+                ],
+                "compiledPitches": [
+                  "C4",
+                  "D4",
+                  "C4"
+                ],
+                "principalPitch": "A3",
+                "principalDuration": 4,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 7,
+                "routeMeasure": 15,
+                "beat": 59,
+                "sourcePitches": [
+                  "B3"
+                ],
+                "compiledPitches": [
+                  "A3"
+                ],
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 8,
+                "routeMeasure": 16,
+                "beat": 60,
+                "sourcePitches": [
+                  "D4",
+                  "E4",
+                  "D4"
+                ],
+                "compiledPitches": [
+                  "C4",
+                  "D4",
+                  "C4"
+                ],
+                "principalPitch": "A3",
+                "principalDuration": 4,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 11,
+                "routeMeasure": 19,
+                "beat": 75,
+                "sourcePitches": [
+                  "B3"
+                ],
+                "compiledPitches": [
+                  "A3"
+                ],
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 12,
+                "routeMeasure": 20,
+                "beat": 76,
+                "sourcePitches": [
+                  "D4",
+                  "E4",
+                  "D4"
+                ],
+                "compiledPitches": [
+                  "C4",
+                  "D4",
+                  "C4"
+                ],
+                "principalPitch": "A3",
+                "principalDuration": 4,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 15,
+                "routeMeasure": 23,
+                "beat": 91,
+                "sourcePitches": [
+                  "B3"
+                ],
+                "compiledPitches": [
+                  "A3"
+                ],
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 16,
+                "routeMeasure": 24,
+                "beat": 92,
+                "sourcePitches": [
+                  "D4",
+                  "E4",
+                  "D4"
+                ],
+                "compiledPitches": [
+                  "C4",
+                  "D4",
+                  "C4"
+                ],
+                "principalPitch": "A3",
+                "principalDuration": 4,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              }
+            ],
+            "fermata": {
+              "sourceMeasure": 15,
+              "sourceHead": 6,
+              "routeMeasure": 23,
+              "note": "E4",
+              "beat": 91,
+              "writtenDuration": 1,
+              "sourceExtraDuration": null,
+              "addedPracticeBeats": 0,
+              "decision": "fixed-beat-practice-with-no-extra-fermata-time"
+            },
+            "fixedBeatDecision": "96 quarter beats is the selected fixed-time practice grid, not an exact original-singing duration. The unmeasured fermata at source m15.n6 adds zero practice beats; final A3 starts at 92 and keeps all four written beats through 96.",
+            "absoluteOctaveConvention": "Undotted source 1 = D4 and target 1 = C4; actual upper/lower octave dots are retained. This reference does not claim a singer recording octave.",
+            "sourceRange": [
+              "A3",
+              "D5"
+            ],
+            "compiledRange": [
+              "G3",
+              "C5"
+            ],
+            "sourcePitchClasses": [
+              2,
+              4,
+              6,
+              9,
+              11
+            ],
+            "sourceKeySignatureAccidentals": [
+              "F#",
+              "C#"
+            ],
+            "additionalMelodyAccidentals": [],
+            "transpositionSemitones": -2,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "localPitchAlterations": [],
+            "accompanimentDecision": "No accompaniment printed, selected or inferred. No old edition or synthetic same-id sibling may supply incompatible backing.",
+            "versionDecision": "This deliberate school fixed-beat edition does not prove the prior edition wrong. The selected historical G-key Qupu image remains unavailable and no other edition is spliced into this reading.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "independentSourceReaders": 2,
+            "sourceReviewMethod": "Two complete blind readings of the same school page agreed on every normal-note occurrence, merged principal tuple, full route, tie, grace group and fermata. These are two readers, not two independent published sources; full slur-endpoint agreement is not claimed.",
+            "firstFrozenSourceReadingSha256": "609842bb9f76cfe69b1c3a45aeda9e75d5f9bac2474e607451104e932f467ed0",
+            "independentSourceFixtureSha256": "42ec562af6cef38acf71ec1a4d5628eba084e237e3f50d9ec09fedf03c2eaf74",
+            "comparisonSha256": "5c16ca9717ef438e1d93314c0c4ca60cf037f7146dba59bee5685e1be2efcda5",
+            "independentSourceTupleSha256": "0d288e95d7729f543461ad8b76040bb69fbaca3dffc5983b8678a5d4a9e6f6ac",
+            "sourcePixels": "Complete score page, title page and colophon viewed at data adoption; source-boundary pages were also viewed by both independent readers.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only"
+          },
+          "historicalSourceFeatures": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "unsupported": [
+              "单音传统主题练习版；省略句尾小字121倚音，主音保持原有四拍时值。",
+              "不收录现代录音编曲的前奏、间奏、转调和伴奏；无歌词。"
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "中国曲谱网《鸿雁》（内蒙民歌、3个版本）：版本一、三的G调声乐主题，核对音高、节奏、反复与收束句",
+                "url": "https://www.qupu123.com/minge/erziyixia/p116313.html"
+              },
+              {
+                "label": "学校公开音乐教材第40页：独立核对传统主题轮廓、低音终止与反复结构；D调版装饰及附点处理不同，不混入主谱",
+                "url": "https://lywgyxx.szftedu.cn/xkjc/yinyue/202209/P020220910587728087297.pdf"
+              }
+            ],
+            "composer": "乌拉特民歌（传统曲调）",
+            "transcriptionScope": "traditional-theme-two-strophes-and-cadence",
+            "sourceMeasureCount": 20,
+            "sourceTotalBeats": 80,
+            "sourceKey": "G",
+            "transpositionSemitones": -7,
+            "tempoStatus": "printed-quarter-note-tempo-56-in-version-one",
+            "meterStatus": "printed-4/4",
+            "repeatStructure": "8小节主题两遍，再重复第5—8小节作为收束句；显式展开。",
+            "rightsBasis": "仅整理传统乌拉特民歌曲调；不包含现代填词、伴奏、录音或第三方谱图。",
+            "suitability": {
+              "status": "conditional",
+              "scope": "traditional-theme-two-strophes-and-cadence",
+              "reason": "整体移调后音域G3—C5，仅使用21音C调琴已有自然音；没有局部折叠八度或替换半音。主题及收束句经两份G调记谱和独立教材对照。",
+              "reviewRequired": [
+                "实体琴音色衰减、换手与主观旋律辨识度尚待用户实际试听。"
+              ]
+            }
+          },
+          "archivedEdition": {
+            "file": "data/archives/hong-yan-v2.4.36.json",
+            "fileSha256": "a1793a1d4108dcc926f660bf65025d3958deb44b58baf762261fe53be7234b54",
+            "scope": "Complete byte-exact prior 2.4.36 file, 82 attacks / 80 beats / 56 BPM. Historical G-key source unavailable and not reverified; developer recovery only, no extra card or restore UI."
+          }
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "interstellar-main-theme": {
       "schemaVersion": 1,
@@ -12182,7 +13546,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《星际穿越主题曲》练习轨道",
       "scoreTitle": "《星际穿越主题曲》简谱进度",
-      "hint": "Interstellar Main Theme melody practice version; opening ostinato moved into the higher register and source stack/accompaniment is available in the chord version.",
+      "hint": "单音练习版；仅第44—49小节采用 EOP 谱，恢复每音1/6拍的三连音与原谱八度。原速较难，建议慢速短句循环；第10—41小节主旋律选声部、第42—43小节音区及开头反复仍待核对。",
       "difficulty": "hard",
       "bpm": 90,
       "defaultSpeedFactor": 0.82,
@@ -12917,482 +14281,722 @@ export const SONG_LIBRARY = {
         [
           "C5",
           131,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          131.25,
-          0.25
+          131.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          131.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           131.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          131.75,
-          0.25
+          131.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          131.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           132,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          132.25,
-          0.25
+          132.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          132.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           132.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          132.75,
-          0.25
+          132.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          132.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           133,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          133.25,
-          0.25
+          133.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          133.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           133.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          133.75,
-          0.25
+          133.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          133.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           134,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          134.25,
-          0.25
+          134.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          134.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           134.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          134.75,
-          0.25
+          134.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          134.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           135,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          135.25,
-          0.25
+          135.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          135.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           135.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          135.75,
-          0.25
+          135.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          135.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           136,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          136.25,
-          0.25
+          136.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          136.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           136.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          136.75,
-          0.25
+          136.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          136.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           137,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          137.25,
-          0.25
+          137.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          137.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           137.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          137.75,
-          0.25
+          137.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          137.83333333333334,
+          0.16666666666666666
         ],
         [
           "C5",
           138,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          138.25,
-          0.25
+          138.16666666666666,
+          0.16666666666666666
         ],
         [
           "E4",
+          138.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C5",
           138.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "A4",
-          138.75,
-          0.25
+          138.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E4",
+          138.83333333333334,
+          0.16666666666666666
         ],
         [
           "F5",
           139,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          139.25,
-          0.25
+          139.16666666666666,
+          0.16666666666666666
         ],
         [
           "A4",
+          139.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "F5",
           139.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          139.75,
-          0.25
+          139.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "A4",
+          139.83333333333334,
+          0.16666666666666666
         ],
         [
           "F5",
           140,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          140.25,
-          0.25
+          140.16666666666666,
+          0.16666666666666666
         ],
         [
           "A4",
+          140.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "F5",
           140.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          140.75,
-          0.25
+          140.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "A4",
+          140.83333333333334,
+          0.16666666666666666
         ],
         [
           "F5",
           141,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          141.25,
-          0.25
+          141.16666666666666,
+          0.16666666666666666
         ],
         [
           "A4",
+          141.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "F5",
           141.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          141.75,
-          0.25
+          141.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "A4",
+          141.83333333333334,
+          0.16666666666666666
         ],
         [
           "F5",
           142,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          142.25,
-          0.25
+          142.16666666666666,
+          0.16666666666666666
         ],
         [
           "A4",
+          142.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "F5",
           142.5,
-          0.25
+          0.16666666666666666
         ],
         [
           "C5",
-          142.75,
-          0.25
+          142.66666666666666,
+          0.16666666666666666
         ],
         [
-          "B4",
+          "A4",
+          142.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           143,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          143.25,
-          0.25
+          "G5",
+          143.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          143.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           143.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          143.75,
-          0.25
+          "G5",
+          143.66666666666666,
+          0.16666666666666666
         ],
         [
-          "B4",
+          "E5",
+          143.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           144,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          144.25,
-          0.25
+          "G5",
+          144.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          144.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           144.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          144.75,
-          0.25
+          "G5",
+          144.66666666666666,
+          0.16666666666666666
         ],
         [
-          "B4",
+          "E5",
+          144.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           145,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          145.25,
-          0.25
+          "G5",
+          145.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          145.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           145.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          145.75,
-          0.25
+          "G5",
+          145.66666666666666,
+          0.16666666666666666
         ],
         [
-          "B4",
+          "E5",
+          145.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           146,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          146.25,
-          0.25
+          "G5",
+          146.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          146.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "B5",
           146.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          146.75,
-          0.25
+          "G5",
+          146.66666666666666,
+          0.16666666666666666
         ],
         [
-          "C5",
+          "E5",
+          146.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           147,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          147.25,
-          0.25
+          "G5",
+          147.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          147.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           147.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          147.75,
-          0.25
+          "G5",
+          147.66666666666666,
+          0.16666666666666666
         ],
         [
-          "C5",
+          "E5",
+          147.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           148,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          148.25,
-          0.25
+          "G5",
+          148.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          148.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           148.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          148.75,
-          0.25
+          "G5",
+          148.66666666666666,
+          0.16666666666666666
         ],
         [
-          "C5",
+          "E5",
+          148.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           149,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          149.25,
-          0.25
+          "G5",
+          149.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          149.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           149.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          149.75,
-          0.25
+          "G5",
+          149.66666666666666,
+          0.16666666666666666
         ],
         [
-          "C5",
+          "E5",
+          149.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           150,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          150.25,
-          0.25
+          "G5",
+          150.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          150.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "C6",
           150.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "G4",
-          150.75,
-          0.25
+          "G5",
+          150.66666666666666,
+          0.16666666666666666
         ],
         [
-          "D5",
+          "E5",
+          150.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           151,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          151.25,
-          0.25
+          "B5",
+          151.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          151.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           151.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          151.75,
-          0.25
+          "B5",
+          151.66666666666666,
+          0.16666666666666666
         ],
         [
-          "D5",
+          "E5",
+          151.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           152,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          152.25,
-          0.25
+          "B5",
+          152.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          152.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           152.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          152.75,
-          0.25
+          "B5",
+          152.66666666666666,
+          0.16666666666666666
         ],
         [
-          "D5",
+          "E5",
+          152.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           153,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          153.25,
-          0.25
+          "B5",
+          153.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          153.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           153.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          153.75,
-          0.25
+          "B5",
+          153.66666666666666,
+          0.16666666666666666
         ],
         [
-          "D5",
+          "E5",
+          153.83333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           154,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          154.25,
-          0.25
+          "B5",
+          154.16666666666666,
+          0.16666666666666666
         ],
         [
-          "E4",
+          "E5",
+          154.33333333333334,
+          0.16666666666666666
+        ],
+        [
+          "D6",
           154.5,
-          0.25
+          0.16666666666666666
         ],
         [
-          "B4",
-          154.75,
-          0.25
+          "B5",
+          154.66666666666666,
+          0.16666666666666666
+        ],
+        [
+          "E5",
+          154.83333333333334,
+          0.16666666666666666
         ],
         [
           "E5",
@@ -13401,6 +15005,14 @@ export const SONG_LIBRARY = {
         ]
       ],
       "sourceFeatures": {
+        "meterDisplay": "3/4 → 4/4",
+        "meterDisplayReview": {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+          "scope": "Printed opening 3/4 and m42 change to 4/4 only; display metadata, not additional melody or rhythm approval.",
+          "decision": "Correct the library meter label without changing beatsPerMeasure: 3, any pitch/onset/duration tuple, tempo, speed, loop behavior or playback. Historical review wording about displayed bar divisions is preserved as history; the current app uses an absolute-beat timeline and onset-aligned loops, not meter-based bar divisions.",
+          "limitations": "The reviewed melody range remains [131,155). Earlier voice selection, m42-43 register, opening-repeat expansion and the retained ending [155,159) remain deferred; no new source extent or whole-song certification."
+        },
         "hasChords": true,
         "hasArpeggio": true,
         "hasRepeats": true,
@@ -13410,18 +15022,23 @@ export const SONG_LIBRARY = {
           "private/sheets/raw/interstellar-main-theme/doc88-page-03.png"
         ],
         "unsupported": [
-          "V1 keeps only the readable main melody / top-line motion; use the chord version for the lower organ-like support that makes the theme recognizable.",
+          "V1 remains a one-note-at-a-time practice path. Mainline m10-41 voice extraction from stacked notation is unresolved; the old top-line choice is retained without new melody-role approval.",
           "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
-          "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
+          "Only EOP 0005180 m44-49 [131,155) is adopted in this pass: source sixteenth triplets and octaves are restored. This is not a whole-song correction, Doc88 re-verification, accompaniment review or beginner recommendation.",
+          "The source opening repeat is not expanded in the retained timeline; m42-43 register and earlier transformations remain unresolved. Existing V2 source/support records were not changed or revalidated against this adopted tail.",
+          "The adopted tail has 24 attacks per 4/4 bar: about 111 ms per note at source tempo 90 BPM, about 136 ms at the unchanged 0.82x default. Use the existing slower playback and short phrase loops; physical playability and recognition require separate checks.",
           "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
         ],
         "unsureMeasures": [
-          "m10-m41 use the upper note and sustained E5 from stacked chord notation; inner voices are intentionally omitted from V1.",
-          "m44-m49 are playable arpeggio simplifications rather than exact triplet transcription."
+          "m10-m41: the inherited upper-note/sustained-E5 extraction from stacked notation has not been source-resolved as a main melody.",
+          "m1-m2 opening repeat and earlier register choices remain unchanged and unreviewed; this pass preserves the existing absolute beat origin.",
+          "m42-m43: EOP prints E4 while the current melody retains eight E5 quarter-note attacks; this register difference is deferred, not silently corrected.",
+          "m44-m49: literal EOP notes, octaves and 1/6-beat triplets are reviewed; independent reference listening, recognition, physical-kalimba performance and optional-support alignment remain pending.",
+          "m50 final E5@155/4 is frozen outside the reviewed range, not newly certified by the tail correction."
         ],
         "sourceReview": {
-          "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
-          "decision": "Updated the melody version by moving the opening ostinato into the higher playable register, and added a V2 chord/accompaniment version from the supplied Doc88 three-page jianpu screenshots.",
+          "confidence": "high-for-eop-m44-49-literal-pitches-and-triplets-only-rest-of-song-needs-review",
+          "decision": "Adopt EveryonePiano 0005180 only for the sequential upper-staff arpeggio at m44-49, beats [131,155). Restore all 144 sixteenth-triplet attacks and source octaves, without changing any of the 146 outside tuples or the existing source tempo.",
           "savedFiles": [
             "private/sheets/raw/interstellar-main-theme/doc88-interstellar.html",
             "private/sheets/raw/interstellar-main-theme/doc88-page-01.png",
@@ -13436,7 +15053,125 @@ export const SONG_LIBRARY = {
             {
               "label": "User supplied page screenshots",
               "url": "local-private-source"
+            },
+            {
+              "label": "EveryonePiano 0005180 selected source for m44-49 only",
+              "url": "https://www.everyonepiano.cn/Music-5180.html"
             }
+          ],
+          "historicalReviewNotes": {
+            "date": "2026-10-12",
+            "stage": "before-2.4.3-eop-tail-adoption",
+            "unsupported": [
+              "V1 keeps only the readable main melody / top-line motion; use the chord version for the lower organ-like support that makes the theme recognizable.",
+              "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
+              "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
+              "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
+            ],
+            "unsureMeasures": [
+              "m10-m41 use the upper note and sustained E5 from stacked chord notation; inner voices are intentionally omitted from V1.",
+              "m44-m49 are playable arpeggio simplifications rather than exact triplet transcription."
+            ],
+            "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
+            "decision": "Updated the melody version by moving the opening ostinato into the higher playable register, and added a V2 chord/accompaniment version from the supplied Doc88 three-page jianpu screenshots.",
+            "reason": "Preserve the earlier Doc88 provenance, simplification rationale and unresolved voice decisions verbatim. The old triplet-quantization statement is historical, not the current state of the adopted m44-49 span."
+          },
+          "scopedSourceAdoptions": [
+            {
+              "date": "2026-10-12",
+              "scope": "printed-measures-44-49-sequential-upper-line-only",
+              "beatRange": [
+                131,
+                155
+              ],
+              "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+              "imageUrls": [
+                "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-2.png",
+                "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-3.png",
+                "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-w-b-2.png"
+              ],
+              "sourceImageSha256": [
+                "5922836333c1683532e272aefb291cde8329eb1c66cda3b3866ef5d12b2735a5",
+                "4b57280bad19be3d328554a998983ab16bd8d359a487c7300d6794eb4be9629b",
+                "3bd8aab33c077197a7705bcdd3d8929dec0ff271f9abf393e772466151f6388d"
+              ],
+              "previousHint": "Interstellar Main Theme melody practice version; opening ostinato moved into the higher register and source stack/accompaniment is available in the chord version.",
+              "sourceDiscrepancy": "The legacy Doc88 screenshots are unavailable in this checkout; Doc88 was not reverified. EOP is explicitly adopted only for this span. The matching title, form and note patterns suggest the same master arrangement but do not prove screenshot identity.",
+              "decision": "Replace 96 quarter-beat attacks with 144 source attacks: eight three-note cells per 4/4 bar, each cell 1/2 quarter-note beat and each note 1/6 beat. Restore m47-49 from the previous octave-down fold to the source register. No transposition is applied.",
+              "limitations": "This is a single-line arpeggio figure, not source-accompaniment approval or proof of melodic recognizability. All data outside [131,155), including m42-43 and the final E5 at 155 for 4 beats, is preserved without new approval."
+            }
+          ],
+          "currentScopeReview": {
+            "date": "2026-10-12",
+            "status": "reviewed-tail-only-rest-needs-review",
+            "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+            "imageUrls": [
+              "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-2.png",
+              "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-3.png",
+              "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-w-b-2.png"
+            ],
+            "sourceImageSha256": [
+              "5922836333c1683532e272aefb291cde8329eb1c66cda3b3866ef5d12b2735a5",
+              "4b57280bad19be3d328554a998983ab16bd8d359a487c7300d6794eb4be9629b",
+              "3bd8aab33c077197a7705bcdd3d8929dec0ff271f9abf393e772466151f6388d"
+            ],
+            "selectedVersion": "EveryonePiano fan arrangement 0005180, jianpu pages 2-3 cross-checked against staff page 2; m44-49 upper/right-hand sequential single-note line only",
+            "inspectedBeatRanges": [
+              [
+                131,
+                155
+              ]
+            ],
+            "reviewedBeatRanges": [
+              [
+                131,
+                155
+              ]
+            ],
+            "deferredBeatRanges": [
+              [
+                0,
+                131
+              ],
+              [
+                155,
+                159
+              ]
+            ],
+            "sourceMeterInScope": "4/4",
+            "beatsPerQuarter": 1,
+            "tempoQuarterBpm": 90,
+            "notesPerMeasure": 24,
+            "cellsPerMeasure": 8,
+            "tripletCellBeats": "1/2",
+            "tripletNoteBeats": "1/6",
+            "barStartBeats": [
+              131,
+              135,
+              139,
+              143,
+              147,
+              151
+            ],
+            "transpositionSemitones": 0,
+            "timebase": "Retain the existing unexpanded opening-repeat timeline. Source m42 changes to 4/4 at beat 123; m43 starts at 127 and m44 at 131. Global beatsPerMeasure stays 3, so displayed bar divisions remain a known limitation.",
+            "oldDoc88Reverified": false,
+            "deferredReason": "Earlier mainline m10-41 voice extraction remains unresolved. Source m42-43 shows E4 while the preserved data has E5; the opening-repeat expansion and earlier register transformations also remain unresolved. The retained final E5@155/4 is outside this adoption.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-by-this-source-review",
+            "physicalKalimba": "not-performed",
+            "limitations": "Literal pitch/rhythm evidence is high confidence only in the adopted span. The same publisher staff/jianpu cross-check is not an independent arrangement or listening reference. Whole-song fidelity, single-line recognizability, physical playability, support alignment and public-distribution rights remain unapproved."
+          }
+        },
+        "suitability": {
+          "status": "needs-review",
+          "scope": "eop-m44-49-tail-only-with-earlier-melody-and-form-deferred",
+          "reason": "The reviewed E4-D6 pitch vocabulary fits the fixed F3-E6 natural-note range, but this demanding 90-BPM sixteenth-triplet passage is not a beginner recommendation or whole-song approval.",
+          "reviewRequired": [
+            "Resolve m10-41 main-melody extraction, m42-43 register and the opening-repeat timeline from reliable source evidence.",
+            "Compare the isolated arpeggio line against a reference at source and actual practice tempo; check optional support separately.",
+            "Check tine movement, thumb alternation, fast attacks and real sustain on a physical kalimba.",
+            "Review public-distribution rights before publishing this modern film-theme arrangement."
           ]
         }
       }
@@ -20873,161 +22608,291 @@ export const SONG_LIBRARY = {
   "ju-ci-lang-de-xia-tian": {
       "schemaVersion": 1,
       "id": "ju-ci-lang-de-xia-tian",
-      "title": "《菊次郎的夏天》",
+      "title": "《菊次郎的夏天》（首主题）",
       "uploader": "system",
-      "practiceTitle": "《菊次郎的夏天》练习轨道",
-      "scoreTitle": "《菊次郎的夏天》简谱进度",
-      "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴单音演奏谱整理。",
-      "difficulty": "easy",
-      "bpm": 80,
-      "defaultSpeedFactor": 0.9,
-      "beatsPerMeasure": 4,
+      "practiceTitle": "《菊次郎的夏天》（首主题）练习轨道",
+      "scoreTitle": "《菊次郎的夏天》（首主题）简谱进度",
+      "hint": "EOP C调钢琴版第8–23小节上声部首主题，61个单音、32拍；保留原谱2/4、96 BPM、七处同音延音和五处旋律休止。十六分音与同侧连拨建议先用0.4倍速分段练习；仅练单音，省略前奏、伴奏及后续段落。",
+      "difficulty": "medium",
+      "bpm": 96,
+      "defaultSpeedFactor": 0.4,
+      "beatsPerMeasure": 2,
       "key": "C",
       "steps": [
         [
           "G4",
+          1,
+          0.25
+        ],
+        [
+          "C5",
+          1.25,
+          0.25
+        ],
+        [
+          "D5",
+          1.5,
+          0.25
+        ],
+        [
+          "E5",
+          1.75,
+          0.25
+        ],
+        [
+          "D5",
           2,
           0.5
         ],
         [
           "C5",
           2.5,
-          0.5
+          0.25
+        ],
+        [
+          "C5",
+          2.75,
+          1.25
+        ],
+        [
+          "G4",
+          5,
+          0.25
+        ],
+        [
+          "C5",
+          5.25,
+          0.25
         ],
         [
           "D5",
-          3,
+          5.5,
+          0.25
+        ],
+        [
+          "E5",
+          5.75,
+          0.25
+        ],
+        [
+          "D5",
+          6,
+          0.5
+        ],
+        [
+          "C5",
+          6.5,
+          0.25
+        ],
+        [
+          "D5",
+          6.75,
+          0.75
+        ],
+        [
+          "E5",
+          7.5,
           0.5
         ],
         [
           "E5",
-          3.5,
-          0.5
-        ],
-        [
-          "D5",
-          4,
+          8,
           1
         ],
         [
-          "C5",
-          5,
-          0.5
-        ],
-        [
-          "C5",
-          5.5,
-          0.5
-        ],
-        [
-          "C5",
-          6,
-          2
-        ],
-        [
           "G4",
+          9,
+          0.25
+        ],
+        [
+          "C5",
+          9.25,
+          0.25
+        ],
+        [
+          "D5",
+          9.5,
+          0.25
+        ],
+        [
+          "E5",
+          9.75,
+          0.25
+        ],
+        [
+          "D5",
           10,
           0.5
         ],
         [
           "C5",
           10.5,
-          0.5
-        ],
-        [
-          "D5",
-          11,
-          0.5
-        ],
-        [
-          "E5",
-          11.5,
-          0.5
-        ],
-        [
-          "D5",
-          12,
-          1
+          0.25
         ],
         [
           "C5",
+          10.75,
+          1.25
+        ],
+        [
+          "G4",
           13,
-          0.5
+          0.25
+        ],
+        [
+          "C5",
+          13.25,
+          0.25
         ],
         [
           "D5",
           13.5,
-          0.5
+          0.25
+        ],
+        [
+          "E5",
+          13.75,
+          0.25
         ],
         [
           "D5",
           14,
-          1
+          0.5
         ],
         [
-          "E5",
-          15,
-          1
+          "C5",
+          14.5,
+          0.25
+        ],
+        [
+          "D5",
+          14.75,
+          0.75
+        ],
+        [
+          "G5",
+          15.5,
+          0.5
         ],
         [
           "E5",
           16,
-          2
+          1
         ],
         [
-          "G4",
+          "E5",
+          17,
+          0.5
+        ],
+        [
+          "F5",
+          17.5,
+          0.5
+        ],
+        [
+          "G5",
           18,
           0.5
         ],
         [
-          "C5",
+          "G5",
           18.5,
-          0.5
+          0.25
         ],
         [
-          "D5",
-          19,
-          0.5
+          "G5",
+          18.75,
+          0.75
         ],
         [
-          "E5",
+          "G5",
           19.5,
           0.5
         ],
         [
-          "D5",
+          "G5",
           20,
-          1
-        ],
-        [
-          "C5",
-          21,
           0.5
         ],
         [
+          "E5",
+          20.5,
+          0.25
+        ],
+        [
           "C5",
+          20.75,
+          0.25
+        ],
+        [
+          "E5",
           21.5,
+          0.25
+        ],
+        [
+          "F5",
+          21.75,
+          0.25
+        ],
+        [
+          "G5",
+          22,
           0.5
         ],
         [
-          "C5",
-          22,
-          2
+          "G5",
+          22.5,
+          0.25
         ],
         [
-          "G4",
+          "G5",
+          22.75,
+          0.75
+        ],
+        [
+          "G5",
+          23.5,
+          0.5
+        ],
+        [
+          "G5",
+          24,
+          0.5
+        ],
+        [
+          "E5",
+          24.5,
+          0.25
+        ],
+        [
+          "C5",
+          24.75,
+          0.25
+        ],
+        [
+          "C5",
+          25.5,
+          0.25
+        ],
+        [
+          "D5",
+          25.75,
+          0.25
+        ],
+        [
+          "E5",
           26,
           0.5
         ],
         [
-          "C5",
+          "E5",
           26.5,
-          0.5
+          0.25
         ],
         [
-          "D5",
-          27,
-          0.5
+          "E5",
+          26.75,
+          0.75
         ],
         [
           "E5",
@@ -21035,221 +22900,363 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D5",
+          "E5",
           28,
-          1
+          0.5
         ],
         [
-          "C5",
+          "A5",
+          28.5,
+          0.5
+        ],
+        [
+          "E5",
           29,
           0.5
         ],
         [
-          "D5",
+          "C5",
           29.5,
           0.5
         ],
         [
           "D5",
           30,
-          1
-        ],
-        [
-          "G5",
-          31,
-          1
-        ],
-        [
-          "E5",
-          32,
           2
-        ],
-        [
-          "E5",
-          34,
-          1
-        ],
-        [
-          "F5",
-          35,
-          1
-        ],
-        [
-          "G5",
-          36,
-          1
-        ],
-        [
-          "G5",
-          37,
-          0.5
-        ],
-        [
-          "G5",
-          37.5,
-          0.5
-        ],
-        [
-          "G5",
-          38,
-          1
-        ],
-        [
-          "G5",
-          39,
-          1
-        ],
-        [
-          "G5",
-          40,
-          0.5
-        ],
-        [
-          "E5",
-          40.5,
-          0.5
-        ],
-        [
-          "C5",
-          41,
-          1
-        ],
-        [
-          "E5",
-          43,
-          0.5
-        ],
-        [
-          "F5",
-          43.5,
-          0.5
-        ],
-        [
-          "G5",
-          44,
-          1
-        ],
-        [
-          "G5",
-          45,
-          0.5
-        ],
-        [
-          "G5",
-          45.5,
-          0.5
-        ],
-        [
-          "G5",
-          46,
-          1
-        ],
-        [
-          "G5",
-          47,
-          1
-        ],
-        [
-          "G5",
-          48,
-          0.5
-        ],
-        [
-          "E5",
-          48.5,
-          0.5
-        ],
-        [
-          "C5",
-          49,
-          1
-        ],
-        [
-          "C5",
-          51,
-          0.5
-        ],
-        [
-          "D5",
-          51.5,
-          0.5
-        ],
-        [
-          "E5",
-          52,
-          1
-        ],
-        [
-          "E5",
-          53,
-          0.5
-        ],
-        [
-          "E5",
-          53.5,
-          0.5
-        ],
-        [
-          "E5",
-          54,
-          1
-        ],
-        [
-          "E5",
-          55,
-          1
-        ],
-        [
-          "E5",
-          56,
-          1
-        ],
-        [
-          "A5",
-          57,
-          1
-        ],
-        [
-          "E5",
-          58,
-          1
-        ],
-        [
-          "C5",
-          59,
-          1
-        ],
-        [
-          "D5",
-          60,
-          4
         ]
       ],
       "sourceFeatures": {
         "hasChords": false,
         "hasArpeggio": false,
-        "hasRepeats": true,
+        "hasRepeats": false,
+        "sourceTotalBeats": 32,
+        "sourceMeasureCount": 16,
+        "transcriptionScope": "selected-piano-first-theme",
+        "tempoStatus": "printed-quarter-note-tempo",
+        "sources": [
+          {
+            "label": "EOP 5457 C调简易钢琴编配",
+            "url": "https://www.everyonepiano.cn/Music-5457.html"
+          },
+          {
+            "label": "EOP 5457 公开五线谱预览第1页",
+            "url": "https://www.everyonepiano.cn/pianomusic/006/0005457/0005457-w-b-1.png"
+          }
+        ],
         "unsupported": [
-          "Source is a single-note 17-key C kalimba melody score; no chord/accompaniment layer is present."
+          "The source piano lower staff is deliberately omitted, including its written activity under the five upper-staff melody rests. No chords, backing or highest-note extraction are used.",
+          "The source accompaniment-only introduction m1–7 and continuation m24–89 are outside this editorial first-theme selection."
         ],
-        "unsureMeasures": [
-          "Source does not explicitly print a time signature; encoded as 4/4 phrases with visible long notes and rests preserved."
-        ],
+        "unsureMeasures": [],
         "sourceReview": {
-          "confidence": "high-for-melody-medium-for-rhythm",
-          "decision": "Added the visible 16-measure single-note melody; each line-start long note and trailing pickup group are kept in the same measure.",
-          "sources": [
-            {
-              "label": "中国曲谱网 菊次郎的夏天（拇指琴卡林巴琴单音简谱）",
-              "url": "https://qupu123.com/puyou/shangchuan/p348385.html"
-            },
-            {
-              "label": "中国曲谱网源图",
-              "url": "https://qupu123.com/Public/Uploads/2019/07/16/5078795d2d7a9005a8a.jpg"
+          "confidence": "source-pixel-reviewed-selected-piano-first-theme",
+          "decision": "Adopt the explicitly selected EOP first theme as an alternate edition, keeping the unavailable historical Qupu edition separate and unverified.",
+          "historicalReviewNotes": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "unsupported": [
+              "Source is a single-note 17-key C kalimba melody score; no chord/accompaniment layer is present."
+            ],
+            "unsureMeasures": [
+              "Source does not explicitly print a time signature; encoded as 4/4 phrases with visible long notes and rests preserved."
+            ],
+            "sourceReview": {
+              "confidence": "high-for-melody-medium-for-rhythm",
+              "decision": "Added the visible 16-measure single-note melody; each line-start long note and trailing pickup group are kept in the same measure.",
+              "sources": [
+                {
+                  "label": "中国曲谱网 菊次郎的夏天（拇指琴卡林巴琴单音简谱）",
+                  "url": "https://qupu123.com/puyou/shangchuan/p348385.html"
+                },
+                {
+                  "label": "中国曲谱网源图",
+                  "url": "https://qupu123.com/Public/Uploads/2019/07/16/5078795d2d7a9005a8a.jpg"
+                }
+              ]
             }
+          },
+          "historicalEditionStatus": "The prior 68-attack Qupu edition is preserved exactly. Its source remains unavailable and was not recovered or reverified; the alternate edition does not establish that it was wrong.",
+          "archivedEdition": {
+            "file": "data/archives/ju-ci-lang-de-xia-tian-v2.4.25.json",
+            "fileSha256": "d9217930906156ca047d542d1008cdcfe0c681fcdde829d8b71709275b078d3d",
+            "schemaVersion": 1,
+            "attackCount": 68,
+            "totalBeats": 64,
+            "preservation": "Exact original JSON bytes, including display strings, tempo, timing and all sourceFeatures. Developer recovery only; no restore UI or extra library card.",
+            "status": "Source-unrecovered historical edition; not declared wrong."
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-piano-first-theme",
+            "selectedEdition": "eop-5457-c-piano-upper-staff-m8-23",
+            "adoptedInVersion": "2.4.26",
+            "reviewDate": "2026-10-12",
+            "contentRevision": "summer-eop5457-first-theme-2026-10-12",
+            "scope": "Explicitly monophonic piano upper staff m8–23, including the initial quarter rest. First theme is an editorial phrase label, not a printed section title or full-composition ending.",
+            "sourceUrl": "https://www.everyonepiano.cn/Music-5457.html",
+            "sourceImageSha256": "23450167f24de4804bac3446155c8b9a119644b943ac615a85c5ccab0766f906",
+            "sourceMeasureRange": [
+              8,
+              23
+            ],
+            "sourceBeatRange": [
+              14,
+              46
+            ],
+            "sourceToExcerptBeatOffset": -14,
+            "reviewedBeatRanges": [
+              [
+                0,
+                32
+              ]
+            ],
+            "attackCount": 61,
+            "printedNoteheadCount": 68,
+            "sourceMeter": "2/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": 96,
+            "sourceKey": "C",
+            "sourceKeySignature": "none; selected melody has no accidentals",
+            "sourceVoice": "explicit-monophonic-piano-upper-staff",
+            "vocalLineCertified": false,
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 1,
+            "firstAttackBeat": 1,
+            "endingRestBeats": 0,
+            "sourceRange": [
+              "G4",
+              "A5"
+            ],
+            "compiledRange": [
+              "G4",
+              "A5"
+            ],
+            "transpositionSemitones": 0,
+            "octaveShift": 0,
+            "octaveFolding": false,
+            "melodyAccidentals": [],
+            "localPitchAlterations": [],
+            "ties": [
+              {
+                "sourceMeasure": 9,
+                "mergedAttack": [
+                  "C5",
+                  2.75,
+                  1.25
+                ],
+                "segments": [
+                  [
+                    "C5",
+                    2.75,
+                    0.25
+                  ],
+                  [
+                    "C5",
+                    3,
+                    1
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 11,
+                "mergedAttack": [
+                  "D5",
+                  6.75,
+                  0.75
+                ],
+                "segments": [
+                  [
+                    "D5",
+                    6.75,
+                    0.25
+                  ],
+                  [
+                    "D5",
+                    7,
+                    0.5
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 13,
+                "mergedAttack": [
+                  "C5",
+                  10.75,
+                  1.25
+                ],
+                "segments": [
+                  [
+                    "C5",
+                    10.75,
+                    0.25
+                  ],
+                  [
+                    "C5",
+                    11,
+                    1
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 15,
+                "mergedAttack": [
+                  "D5",
+                  14.75,
+                  0.75
+                ],
+                "segments": [
+                  [
+                    "D5",
+                    14.75,
+                    0.25
+                  ],
+                  [
+                    "D5",
+                    15,
+                    0.5
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 17,
+                "mergedAttack": [
+                  "G5",
+                  18.75,
+                  0.75
+                ],
+                "segments": [
+                  [
+                    "G5",
+                    18.75,
+                    0.25
+                  ],
+                  [
+                    "G5",
+                    19,
+                    0.5
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 19,
+                "mergedAttack": [
+                  "G5",
+                  22.75,
+                  0.75
+                ],
+                "segments": [
+                  [
+                    "G5",
+                    22.75,
+                    0.25
+                  ],
+                  [
+                    "G5",
+                    23,
+                    0.5
+                  ]
+                ]
+              },
+              {
+                "sourceMeasure": 21,
+                "mergedAttack": [
+                  "E5",
+                  26.75,
+                  0.75
+                ],
+                "segments": [
+                  [
+                    "E5",
+                    26.75,
+                    0.25
+                  ],
+                  [
+                    "E5",
+                    27,
+                    0.5
+                  ]
+                ]
+              }
+            ],
+            "melodyOnlyRestWindows": [
+              {
+                "beat": 0,
+                "duration": 1,
+                "sourceMeasure": 8,
+                "voice": "selected-piano-upper-staff-only",
+                "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+              },
+              {
+                "beat": 4,
+                "duration": 1,
+                "sourceMeasure": 10,
+                "voice": "selected-piano-upper-staff-only",
+                "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+              },
+              {
+                "beat": 12,
+                "duration": 1,
+                "sourceMeasure": 14,
+                "voice": "selected-piano-upper-staff-only",
+                "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+              },
+              {
+                "beat": 21,
+                "duration": 0.5,
+                "sourceMeasure": 18,
+                "voice": "selected-piano-upper-staff-only",
+                "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+              },
+              {
+                "beat": 25,
+                "duration": 0.5,
+                "sourceMeasure": 20,
+                "voice": "selected-piano-upper-staff-only",
+                "reason": "Written melody rest; the omitted lower piano staff remains active, so this is not all-layer silence."
+              }
+            ],
+            "repeatExpansion": "none-all-selected-bars-written-out",
+            "formDecision": "Omit accompaniment-only m1–7. Retain all of m8–23. D5 at excerpt beat 30 lasts 2 beats to the boundary at 32. Stop before the fresh m24 pickup; later written-out returns, contrasting material and the full ending through m89 are outside this selection.",
+            "sourceEndingCertified": false,
+            "independentReview": "All 61 final tuples, seven ties, five melody rests, meter, tempo and boundary agree after independent source-pixel review. The first independent m22 reading was G5; reinspection of the first ledger line above F5 resolved it to A5. Initial readings were not identical.",
+            "tempoDecision": "Preserve printed quarter=96 and actual 2/4. The editorial defaultSpeedFactor 0.4 is a deliberate slow-practice button suggestion, not a printed marking or a change to current/remembered speed. The runtime first-visit 0.55 selection is separate.",
+            "difficultyDecision": "Medium is an editorial conditional slow-practice rating, not a source marking or a claim that the source tempo is easy. Seven ties remove retriggers; fewer attacks alone do not establish easier playing.",
+            "practiceSignals": {
+              "minimumAttackSpacingBeats": 0.25,
+              "minimumSpacingMsAtSourceTempo": 156.25,
+              "minimumSpacingMsAtFirstVisit055": 284.09090909090907,
+              "minimumSpacingMsAtSuggested04": 390.625,
+              "consecutiveSamePitchPairs": 17,
+              "consecutiveSameSidePairs": 24,
+              "longestSameSideAttackRun": 8,
+              "maxMelodicLeapSemitones": 9,
+              "maxDisplayIndexJump": 15,
+              "interpretation": "Encoded timing and app-layout signals only; no fingering or physical-comfort guarantee."
+            },
+            "oldEditionReverified": false,
+            "versionDecision": "Select this alternate EOP first-theme edition; this is not proof that the old edition is wrong. The unavailable Qupu source is not recovered or reverified. After unfolding seven EOP ties, all 68 pitch heads agree in sequence with the old version; six notehead timing tuples at EOP m18/m20 differ after a comparison-only halving of old beat values.",
+            "timebaseDecision": "The EOP 32 quarter beats and historical 64 encoded beats use different notation/timebases. This does not mean that half of the familiar thematic outline was removed. Do not halve the new tempo or splice in the historical rhythm.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only",
+            "rightsNotice": "The public source describes personal-study arrangements and restricts redistribution/commercial use. Public readability is not permission to publish this arrangement; this work is a private preview.",
+            "limitations": "Source-pixel agreement and executable checks protect scoped notation decisions. They do not establish reference-performance recognition, browser audio acceptance, physical kalimba ease or public distribution rights."
+          }
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-piano-first-theme-m8-23",
+          "reason": "所选首主题原样落在G4–A5，无需移调或改八度；保留熟悉的主题内容。七处延音减少重拨，不代表更容易：96 BPM下最快间隔156.25毫秒，十六分音、同音连拨和同侧移动需要明显慢练。medium与0.4倍速均为编辑练习建议，实体舒适速度待验。",
+          "reviewRequired": [
+            "Reference-recording recognition comparison pending.",
+            "Browser playback/scheduling and sample response at source tempo and the actual visible selected speed need separate verification.",
+            "Physical 21-key C kalimba play-through, fingering comfort and real decay are not performed.",
+            "Public distribution rights are not established; retain this work as a private preview."
           ]
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "jue-bie-shu": {
       "schemaVersion": 1,
@@ -22969,7 +24976,19 @@ export const SONG_LIBRARY = {
               "label": "吉他世界《诀别书》C 调指弹预览",
               "url": "https://www.guitarworld.com.cn/pu/q90052"
             }
-          ]
+          ],
+          "currentScopeReview": {
+            "status": "unresolved-full-script-melody-role",
+            "checkedAt": "2026-10-12",
+            "reviewScope": "source-recovery-and-melody-role-boundary-only",
+            "historicalEvidenceBoundary": "原入库记录仅对开头主题作跨谱复核；原confidence、hint与四条缺失源图路径保留为历史记录，不代表本次重复完成开头或全程核验。",
+            "recoveredScriptBoundary": "当前公开脚本有334个词法数字组：206单数字、34双数字、94三数字组，未单列旋律声部；组数相同不证明与334个生产音逐项相符。",
+            "recoveredPianoBoundary": "EOP16458完整32个实写小节为双手钢琴编配，含共同符干叠音与分解织体；未确定全程唯一旋律声部，不采用其60 BPM或截取8小节冒称完整主题。",
+            "productionTupleComparison": false,
+            "fullSpanMelodyReview": false,
+            "preservedExistingMusic": true,
+            "documentationPath": "docs/JUEBIE_SOURCE_GAP.md"
+          }
         }
       }
     },
@@ -30144,11 +32163,11 @@ export const SONG_LIBRARY = {
   "ling-er-xiang-ding-dang": {
       "schemaVersion": 1,
       "id": "ling-er-xiang-ding-dang",
-      "title": "《铃儿响叮当》",
+      "title": "《铃儿响叮当》（短版副歌主题）",
       "uploader": "system",
-      "practiceTitle": "《铃儿响叮当》练习轨道",
-      "scoreTitle": "《铃儿响叮当》简谱进度",
-      "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
+      "practiceTitle": "《铃儿响叮当》（短版副歌主题）练习轨道",
+      "scoreTitle": "《铃儿响叮当》（短版副歌主题）简谱进度",
+      "hint": "Kyle Coughlin 16小节短版副歌主题，51个单音、64拍；G调整体升5半音到C调。80 BPM为练习速度，可选同谱根音轻伴奏。",
       "difficulty": "easy",
       "bpm": 80,
       "defaultSpeedFactor": 0.9,
@@ -30158,271 +32177,402 @@ export const SONG_LIBRARY = {
         [
           "E5",
           0,
-          0.5
-        ],
-        [
-          "E5",
-          0.5,
-          0.5
+          1
         ],
         [
           "E5",
           1,
-          0.5
+          1
         ],
         [
           "E5",
           2,
-          0.5
-        ],
-        [
-          "E5",
-          2.5,
-          0.5
-        ],
-        [
-          "E5",
-          3,
-          0.5
+          2
         ],
         [
           "E5",
           4,
-          0.75
-        ],
-        [
-          "G5",
-          4.75,
-          0.75
-        ],
-        [
-          "C5",
-          5.5,
-          0.75
-        ],
-        [
-          "D5",
-          6.25,
-          0.75
-        ],
-        [
-          "E5",
-          7,
           1
         ],
         [
-          "F5",
+          "E5",
+          5,
+          1
+        ],
+        [
+          "E5",
+          6,
+          2
+        ],
+        [
+          "E5",
           8,
-          0.5
+          1
         ],
         [
-          "F5",
-          8.5,
-          0.5
-        ],
-        [
-          "F5",
+          "G5",
           9,
-          0.5
+          1
         ],
         [
-          "F5",
-          9.5,
-          0.5
-        ],
-        [
-          "F5",
+          "C5",
           10,
-          0.5
+          1
         ],
         [
-          "E5",
-          10.5,
-          0.5
-        ],
-        [
-          "E5",
+          "D5",
           11,
-          0.5
-        ],
-        [
-          "E5",
-          11.5,
-          0.5
+          1
         ],
         [
           "E5",
           12,
-          0.75
+          4
         ],
         [
-          "D5",
-          12.75,
-          0.75
-        ],
-        [
-          "D5",
-          13.5,
-          0.75
-        ],
-        [
-          "E5",
-          14.25,
-          0.75
-        ],
-        [
-          "D5",
-          15,
-          0.5
-        ],
-        [
-          "G5",
-          15.5,
-          0.5
-        ],
-        [
-          "E5",
+          "F5",
           16,
-          0.5
+          1
         ],
         [
-          "E5",
-          16.5,
-          0.5
-        ],
-        [
-          "E5",
+          "F5",
           17,
-          0.5
+          1
         ],
         [
-          "E5",
+          "F5",
           18,
-          0.5
+          1
         ],
         [
-          "E5",
-          18.5,
-          0.5
-        ],
-        [
-          "E5",
+          "F5",
           19,
-          0.5
+          1
+        ],
+        [
+          "F5",
+          20,
+          1
         ],
         [
           "E5",
-          20,
-          0.75
+          21,
+          1
         ],
         [
-          "G5",
-          20.75,
-          0.75
-        ],
-        [
-          "C5",
-          21.5,
-          0.75
-        ],
-        [
-          "D5",
-          22.25,
-          0.75
+          "E5",
+          22,
+          1
         ],
         [
           "E5",
           23,
-          1
-        ],
-        [
-          "F5",
-          24,
-          0.5
-        ],
-        [
-          "F5",
-          24.5,
-          0.5
-        ],
-        [
-          "F5",
-          25,
-          0.5
-        ],
-        [
-          "F5",
-          25.5,
-          0.5
-        ],
-        [
-          "F5",
-          26,
           0.5
         ],
         [
           "E5",
-          26.5,
+          23.5,
           0.5
+        ],
+        [
+          "E5",
+          24,
+          1
+        ],
+        [
+          "D5",
+          25,
+          1
+        ],
+        [
+          "D5",
+          26,
+          1
         ],
         [
           "E5",
           27,
+          1
+        ],
+        [
+          "D5",
+          28,
+          2
+        ],
+        [
+          "G5",
+          30,
+          2
+        ],
+        [
+          "E5",
+          32,
+          1
+        ],
+        [
+          "E5",
+          33,
+          1
+        ],
+        [
+          "E5",
+          34,
+          2
+        ],
+        [
+          "E5",
+          36,
+          1
+        ],
+        [
+          "E5",
+          37,
+          1
+        ],
+        [
+          "E5",
+          38,
+          2
+        ],
+        [
+          "E5",
+          40,
+          1
+        ],
+        [
+          "G5",
+          41,
+          1
+        ],
+        [
+          "C5",
+          42,
+          1
+        ],
+        [
+          "D5",
+          43,
+          1
+        ],
+        [
+          "E5",
+          44,
+          4
+        ],
+        [
+          "F5",
+          48,
+          1
+        ],
+        [
+          "F5",
+          49,
+          1
+        ],
+        [
+          "F5",
+          50,
+          1
+        ],
+        [
+          "F5",
+          51,
+          1
+        ],
+        [
+          "F5",
+          52,
+          1
+        ],
+        [
+          "E5",
+          53,
+          1
+        ],
+        [
+          "E5",
+          54,
+          1
+        ],
+        [
+          "E5",
+          55,
           0.5
         ],
         [
           "E5",
-          27.5,
+          55.5,
           0.5
         ],
         [
           "G5",
-          28,
-          0.75
+          56,
+          1
         ],
         [
           "G5",
-          28.75,
-          0.75
+          57,
+          1
         ],
         [
           "F5",
-          29.5,
-          0.75
+          58,
+          1
         ],
         [
           "D5",
-          30.25,
-          0.75
+          59,
+          1
         ],
         [
           "C5",
-          31,
-          1
+          60,
+          4
         ]
       ],
       "sourceFeatures": {
         "hasChords": true,
         "hasArpeggio": false,
         "hasRepeats": false,
-        "sourceImages": [
-          "private/sheets/raw/IMG_20260613_182556.jpg"
+        "transcriptionScope": "complete-selected-short-refrain",
+        "sourceMeasureCount": 16,
+        "sourceTotalBeats": 64,
+        "transpositionSemitones": 5,
+        "tempoStatus": "retained-practice-choice-source-unmarked",
+        "sourceChordSymbols": [
+          "G",
+          "C",
+          "A7",
+          "D",
+          "D7"
+        ],
+        "transposedChordSymbols": [
+          "C",
+          "F",
+          "D7",
+          "G",
+          "G7"
         ],
         "unsupported": [
-          "Local source photo is 1=C, 4/4, q=80; lower bass accompaniment row is omitted from V1 steps."
+          "The complete selected Kyle Coughlin short page contains the 16-bar refrain/theme, not the original verse-and-refrain song. No missing verse, continuation or extra repeat is inferred.",
+          "Printed chord symbols in source key G are retained only as source information. After global +5 transposition, A7 becomes D7 with F#, unavailable on the fixed natural-note instrument; that accidental is not in the melody. No chord is naturalized and no harmony, bass or automatic accompaniment is added.",
+          "Breath commas after source measures 4, 8 and 12 have no measured duration. Keep the printed note lengths; do not invent silence or extend the 64-beat score.",
+          "The selected score has no visible tempo mark. 80 BPM and the historical 0.9 speed suggestion are practice settings, not a source tempo. Actual runtime speed follows the current new-song default or saved per-song preference.",
+          "Every source melody pitch is transposed globally by +5 semitones from G4-D5 to C5-G5; there is no individual octave folding, pitch naturalization or added retrigger.",
+          "The historical 49-attack V2 source/arrangement has a different 32-beat timeline and must not provide support for this selected 51-attack melody."
         ],
         "unsureMeasures": [],
         "sources": [
           {
-            "label": "Doctor Uke Jingle Bells C chord sheet",
-            "url": "https://www.doctoruke.com/jinglebellsc.pdf"
-          },
-          {
-            "label": "Easy Breezy Jingle Bells piano notes",
-            "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+            "label": "Kyle Coughlin: Jingle Bells, Short version in the key of G (complete 16-bar refrain/theme)",
+            "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
           }
-        ]
-      }
+        ],
+        "sourceReview": {
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "sourceImages": [
+              "private/sheets/raw/IMG_20260613_182556.jpg"
+            ],
+            "unsupported": [
+              "Local source photo is 1=C, 4/4, q=80; lower bass accompaniment row is omitted from V1 steps."
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "Doctor Uke Jingle Bells C chord sheet",
+                "url": "https://www.doctoruke.com/jinglebellsc.pdf"
+              },
+              {
+                "label": "Easy Breezy Jingle Bells piano notes",
+                "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+              }
+            ]
+          },
+          "archivedEdition": {
+            "label": "Original 49-attack V1 preserved from v2.4.15",
+            "releaseVersion": "2.4.15",
+            "file": "data/archives/ling-er-xiang-ding-dang-v2.4.15.json",
+            "fileSha256": "8309ad1fea7f60b373e204c2fb952b345999b9981e139b8db8c68fbc3782f9d9",
+            "schemaVersion": 1,
+            "attackCount": 49,
+            "totalBeats": 32,
+            "preservation": "Exact original JSON bytes, including original title, all 49 steps, tempo, default speed and source metadata; accepted by the legacy V1 import path as an independent local melody.",
+            "status": "Preserved separate edition; its unavailable original local source image was not reverified. Selection of the Coughlin edition does not establish that the old edition is wrong."
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-short-refrain",
+            "selectedEdition": "coughlin-16-bar-short-refrain",
+            "adoptedInVersion": "2.4.16",
+            "reviewDate": "2026-10-12",
+            "scope": "Complete one-page 16-bar short refrain/theme, printed in full and ending with a whole G4 and final barline. This scope excludes the original verse; no continuation or repeat expansion is inferred.",
+            "sourceUrl": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf",
+            "sourcePdfSha256": "6938f9d76dc4be1daf4cdc12b128bba0916bde6cdcc86a86829fda460018ae70",
+            "sourceImageSha256": "83ef33ff7ec86a6852ba4dce5cb83da8187475971b8a7758dfef9c4f2193944f",
+            "reviewedBeatRanges": [
+              [
+                0,
+                64
+              ]
+            ],
+            "attackCount": 51,
+            "sourceKey": "G",
+            "sourceRange": [
+              "G4",
+              "D5"
+            ],
+            "compiledRange": [
+              "C5",
+              "G5"
+            ],
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "pickupBeats": 0,
+            "sourceTempo": "unmarked",
+            "tempoDecision": "Retain 80 quarter BPM and the historical defaultSpeedFactor 0.9 as practice choices. The source has no tempo marking; actual visible runtime speed must be recorded during playback checks.",
+            "independentReview": "The actual saved source pixels were independently re-read across all four systems before adoption; all 51 pitch/onset/duration tuples agree with the earlier independent source fixture. Similar occurrences and the two different cadences were read separately.",
+            "rhythmDecisions": [
+              "All 16 bars contain exactly four quarter beats, with no pickup, printed rest, tie, slur, tuplet or repeat instruction. All repeated pitches remain separate attacks.",
+              "m6 and m14 end with separate source B4 eighth notes, compiled as E5 at 23/23.5 and 55/55.5; the E5 at 24 is another attack, not a tied continuation.",
+              "m8 is D5 at 28 for two beats and G5 at 30 for two beats after transposition. m15 is G5/G5/F5/D5 at 56/57/58/59; it is not copied from the first-half cadence.",
+              "Breath commas after m4/m8/m12 are unmeasured phrasing signs. No guessed rest is inserted and no printed note is shortened.",
+              "Final compiled C5 at beat 60 lasts four beats to 64. No final rest or extra score-time ring-out is added."
+            ],
+            "breathMarksAfterMeasures": [
+              4,
+              8,
+              12
+            ],
+            "silentWindows": [],
+            "repeatExpansion": "none-all-16-bars-written-out",
+            "transpositionSemitones": 5,
+            "octaveFolding": false,
+            "oldEditionReverified": false,
+            "versionDecision": "Adopt the explicitly selected Coughlin short refrain in full. Its differences are not proof that the old edition is wrong; preserve the old source claims as historical information and never splice its timing or accompaniment into this edition.",
+            "supportDecision": "No new support. Printed A7 becomes D7 containing F# under the same +5 transposition; do not naturalize it or infer a playable lower voice. The historical V2 melody/timebase is incompatible and its support must be rejected.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Notation correspondence and executable tuple checks do not establish external-reference listening, browser sound, physical-instrument acceptance or publication rights. The inspected PDF bears a Kyle Coughlin copyright notice.",
+            "archiveImportPath": "data/archives/ling-er-xiang-ding-dang-v2.4.15.json",
+            "contentRevision": "jingle-coughlin-16bars-2026-10-12"
+          }
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "complete-selected-short-refrain",
+          "reason": "The source-backed single melody uses five natural pitches C5-G5 with no simultaneous targets. Fastest repeated attacks are half a beat (375 ms at the chosen 80 BPM), with at most two tine positions of same-thumb movement. Listening and physical play-through remain pending.",
+          "reviewRequired": [
+            "Compare the unaccompanied selected refrain against a suitable reference performance; the source tempo is unmarked.",
+            "Check browser audio at 80 BPM (1.0x) and the actual visible new-song or saved practice speed, especially E5 eighth-note repeats, the distinct cadences and the final four-beat C5.",
+            "Physical 21-key C kalimba play-through, thumb movement and real decay have not been checked. Preserve separate attacks and natural plucked-note decay.",
+            "Public distribution rights for this selected arrangement are not established by notation or structural checks."
+          ]
+        }
+      },
+      "tuning": "21-key-c"
     },
   "ling-er-xiang-ding-dang-chord": {
       "schemaVersion": 2,
@@ -31419,6 +33569,1463 @@ export const SONG_LIBRARY = {
           {
             "label": "Easy Breezy Jingle Bells piano notes",
             "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+          }
+        ]
+      }
+    },
+  "ling-er-xiang-ding-dang-reviewed-support": {
+      "schemaVersion": 2,
+      "id": "ling-er-xiang-ding-dang-reviewed-support",
+      "baseSongId": "ling-er-xiang-ding-dang",
+      "title": "《铃儿响叮当》（短版副歌主题）",
+      "versionLabel": "所选短版副歌主题 · 可选根音轻伴奏",
+      "arrangementKind": "melody",
+      "judgementMode": "melody",
+      "uploader": "system",
+      "practiceTitle": "《铃儿响叮当》（短版副歌主题）练习轨道",
+      "scoreTitle": "《铃儿响叮当》（短版副歌主题）简谱进度",
+      "hint": "51音单旋律不变；可选轻伴奏每小节一枚根音。由所选谱和弦符号减配，省略三音、七音等色彩；不是原谱低音声部。",
+      "difficulty": "easy",
+      "bpm": 80,
+      "defaultSpeedFactor": 0.9,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "tuning": "21-key-c",
+      "events": [
+        {
+          "beat": 0,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 1,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 2,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 9,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 10,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 16,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 17,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 18,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 22,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 25,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 26,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 30,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 33,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 34,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 38,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 41,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 42,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 48,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 49,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 50,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 51,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 52,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 53,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 54,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 56,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 57,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 58,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "F5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 59,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 60,
+          "duration": 4,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        }
+      ],
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "events": [
+          {
+            "beat": 0,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 4,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 8,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 40,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 48,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 52,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 56,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 60,
+            "duration": 0.75,
+            "pattern": "source-chord-root-only-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          }
+        ]
+      },
+      "rhythm": {
+        "sourceStatus": "inferred",
+        "pickupBeats": 0,
+        "restWindows": [],
+        "sources": [
+          {
+            "label": "Kyle Coughlin Jingle Bells short G lead sheet, page 1",
+            "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
+          }
+        ]
+      },
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "sourceTotalBeats": 64,
+        "unsupported": [
+          "Root-only support is derived from the selected Coughlin chord symbols. The source has no bass staff or prescribed bass attack pattern, octave, duration or dynamics; those are explicitly inferred arrangement choices.",
+          "All non-root chord tones are omitted. Source A7 transposes to D7: its F# third is omitted, never naturalized to F. The support does not reproduce complete chord quality or dominant-seventh color.",
+          "Printed source C at measures 3 and 11 beat 3 becomes F at app beats 10 and 42. Both changes remain in the source timeline but are deliberately omitted as support attacks for the one-root-per-bar reduction.",
+          "Written support durations do not truncate decoded samples. Original sample-buffer bounds and complete output effects tails require separate checks; no PCM trim or score-time extension is authorized.",
+          "Browser audio and full-graph diagnostics are separate integration checks; audible reference comparison and physical-instrument playing have not been completed in this data stage. Source access does not establish public reproduction rights."
+        ],
+        "unsureMeasures": [],
+        "practiceAccompaniment": {
+          "status": "needs-review",
+          "confidence": "source-symbol-reviewed-root-voicing-candidate",
+          "scope": "complete-selected-short-refrain-[0,64)",
+          "candidate": "sixteen-downbeat-roots",
+          "physicalTarget": "single-melody",
+          "sourceVoice": "derived-chord-root-not-literal-scored-bass",
+          "independentlyVerified": false,
+          "sourceSymbolReview": {
+            "reviewedOn": "2026-10-12",
+            "sourceUrl": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf",
+            "page": 1,
+            "sourceImageSha256": "83ef33ff7ec86a6852ba4dce5cb83da8187475971b8a7758dfef9c4f2193944f",
+            "sourceKey": "G",
+            "transposedKey": "C",
+            "semitoneShift": 5,
+            "sourceMeter": "4/4",
+            "pickupBeats": 0,
+            "sourceTempo": "unmarked",
+            "notationEvidence": "All four systems and all 18 printed symbols were read directly from the saved source pixels; a second independent reader agreed on every position and symbol. Both readings are of one edition, not two sources. In particular, m8 is plain D, whereas m15 is D7.",
+            "printedChordTimeline": [
+              {
+                "system": 1,
+                "measure": 1,
+                "beatInMeasure": 1,
+                "beat": 0,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 1,
+                "measure": 2,
+                "beatInMeasure": 1,
+                "beat": 4,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": false,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 1,
+                "measure": 3,
+                "beatInMeasure": 1,
+                "beat": 8,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": false,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 1,
+                "measure": 3,
+                "beatInMeasure": 3,
+                "beat": 10,
+                "printedSymbol": "C",
+                "sourceMelodyNote": "G4",
+                "transposedSymbol": "F",
+                "transposedPitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "F3",
+                "retainedInCandidate": false
+              },
+              {
+                "system": 1,
+                "measure": 4,
+                "beatInMeasure": 1,
+                "beat": 12,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 2,
+                "measure": 5,
+                "beatInMeasure": 1,
+                "beat": 16,
+                "printedSymbol": "C",
+                "sourceMelodyNote": "C5",
+                "transposedSymbol": "F",
+                "transposedPitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "F3",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 2,
+                "measure": 6,
+                "beatInMeasure": 1,
+                "beat": 20,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "C5",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 2,
+                "measure": 7,
+                "beatInMeasure": 1,
+                "beat": 24,
+                "printedSymbol": "A7",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "D7",
+                "transposedPitchClasses": [
+                  "D",
+                  "F#",
+                  "A",
+                  "C"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "D4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 2,
+                "measure": 8,
+                "beatInMeasure": 1,
+                "beat": 28,
+                "printedSymbol": "D",
+                "sourceMelodyNote": "A4",
+                "transposedSymbol": "G",
+                "transposedPitchClasses": [
+                  "G",
+                  "B",
+                  "D"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "G3",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 3,
+                "measure": 9,
+                "beatInMeasure": 1,
+                "beat": 32,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 3,
+                "measure": 10,
+                "beatInMeasure": 1,
+                "beat": 36,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": false,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 3,
+                "measure": 11,
+                "beatInMeasure": 1,
+                "beat": 40,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": false,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 3,
+                "measure": 11,
+                "beatInMeasure": 3,
+                "beat": 42,
+                "printedSymbol": "C",
+                "sourceMelodyNote": "G4",
+                "transposedSymbol": "F",
+                "transposedPitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "F3",
+                "retainedInCandidate": false
+              },
+              {
+                "system": 3,
+                "measure": 12,
+                "beatInMeasure": 1,
+                "beat": 44,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "B4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 4,
+                "measure": 13,
+                "beatInMeasure": 1,
+                "beat": 48,
+                "printedSymbol": "C",
+                "sourceMelodyNote": "C5",
+                "transposedSymbol": "F",
+                "transposedPitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "F3",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 4,
+                "measure": 14,
+                "beatInMeasure": 1,
+                "beat": 52,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "C5",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 4,
+                "measure": 15,
+                "beatInMeasure": 1,
+                "beat": 56,
+                "printedSymbol": "D7",
+                "sourceMelodyNote": "D5",
+                "transposedSymbol": "G7",
+                "transposedPitchClasses": [
+                  "G",
+                  "B",
+                  "D",
+                  "F"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "G3",
+                "retainedInCandidate": true
+              },
+              {
+                "system": 4,
+                "measure": 16,
+                "beatInMeasure": 1,
+                "beat": 60,
+                "printedSymbol": "G",
+                "sourceMelodyNote": "G4",
+                "transposedSymbol": "C",
+                "transposedPitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "isHarmonicChange": true,
+                "proposedRoot": "C4",
+                "retainedInCandidate": true
+              }
+            ],
+            "harmonicIntervals": [
+              {
+                "beat": 0,
+                "duration": 10,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 10,
+                "duration": 2,
+                "symbol": "F",
+                "pitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ]
+              },
+              {
+                "beat": 12,
+                "duration": 4,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 16,
+                "duration": 4,
+                "symbol": "F",
+                "pitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ]
+              },
+              {
+                "beat": 20,
+                "duration": 4,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 24,
+                "duration": 4,
+                "symbol": "D7",
+                "pitchClasses": [
+                  "D",
+                  "F#",
+                  "A",
+                  "C"
+                ]
+              },
+              {
+                "beat": 28,
+                "duration": 4,
+                "symbol": "G",
+                "pitchClasses": [
+                  "G",
+                  "B",
+                  "D"
+                ]
+              },
+              {
+                "beat": 32,
+                "duration": 10,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 42,
+                "duration": 2,
+                "symbol": "F",
+                "pitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ]
+              },
+              {
+                "beat": 44,
+                "duration": 4,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 48,
+                "duration": 4,
+                "symbol": "F",
+                "pitchClasses": [
+                  "F",
+                  "A",
+                  "C"
+                ]
+              },
+              {
+                "beat": 52,
+                "duration": 4,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              },
+              {
+                "beat": 56,
+                "duration": 4,
+                "symbol": "G7",
+                "pitchClasses": [
+                  "G",
+                  "B",
+                  "D",
+                  "F"
+                ]
+              },
+              {
+                "beat": 60,
+                "duration": 4,
+                "symbol": "C",
+                "pitchClasses": [
+                  "C",
+                  "E",
+                  "G"
+                ]
+              }
+            ]
+          },
+          "reviewedBeatRanges": [
+            [
+              0,
+              64
+            ]
+          ],
+          "reduction": {
+            "rootRegister": {
+              "C": "C4",
+              "F": "F3",
+              "D7": "D4",
+              "G": "G3",
+              "G7": "G3"
+            },
+            "registerDecision": "Choose the lowest available representative of each transposed root pitch class in the fixed F3-E6 vocabulary. Chord symbols specify no bass octave; this is derived voicing, not literal scored bass or an octave-folded lower staff.",
+            "onsetDecision": "One root at each bar start. Printed repeated chord symbols justify harmonic membership but do not prescribe these bass reattacks.",
+            "durationDecision": "0.75-beat sparse trial events, inferred rather than source-written bass values; sample playback still uses full original buffers.",
+            "omittedChangeBeats": [
+              10,
+              42
+            ],
+            "omittedChanges": "The printed source C changes at m3/m11 local beat3 become F. They remain real source changes; omit their support attacks, not the source harmony. Earlier C4 decay is also a chord member of F.",
+            "omittedChordPitchClasses": {
+              "C": [
+                "E",
+                "G"
+              ],
+              "F": [
+                "A",
+                "C"
+              ],
+              "D7": [
+                "F#",
+                "A",
+                "C"
+              ],
+              "G": [
+                "B",
+                "D"
+              ],
+              "G7": [
+                "B",
+                "D",
+                "F"
+              ]
+            },
+            "accidentalNaturalization": false,
+            "completeChordFidelity": false,
+            "literalBassTranscription": false
+          },
+          "settings": {
+            "enabledByDefault": false,
+            "volume": 0.3,
+            "noteVelocity": 0.32,
+            "parameterStatus": "Conservative inferred trial settings, not printed dynamics or proof of audible balance. Preserve explicitly remembered user settings."
+          },
+          "restAndEnding": {
+            "melodyRestWindows": [],
+            "allLayerSilentWindows": [],
+            "breathMarksAfterMeasures": [
+              4,
+              8,
+              12
+            ],
+            "breathDecision": "Unmeasured commas, not timed silence; no invented rests or shortened holds.",
+            "lastMelodyTuple": [
+              "C5",
+              60,
+              4
+            ],
+            "lastSupportTuple": [
+              "C4",
+              60,
+              0.75
+            ],
+            "supportWrittenEnd": 60.75,
+            "scoreEnd": 64,
+            "tailDecision": "Duration metadata does not trim the native sample. Preserve all PCM tails and do not add retriggers or score time."
+          },
+          "melodyCompatibility": {
+            "baseSongId": "ling-er-xiang-ding-dang",
+            "attackCount": 51,
+            "tupleSha256": "08ef07a4891bb24811c232a2237a7885a3fd43b98d9ef8b2d8507c83130726ef",
+            "bpm": 80,
+            "totalBeats": 64,
+            "contentCompatible": true,
+            "decision": "Keep the current V1 and all 51 pitches/onsets/durations unchanged; only this identical companion can provide the new reduced support."
+          },
+          "historicalSibling": {
+            "id": "ling-er-xiang-ding-dang-chord",
+            "fileSha256": "c28df5631e09a1dcce5e28fc7b32c3ec86d1ff858c2032daff9c91de888bafa8",
+            "attackCount": 49,
+            "totalBeats": 32,
+            "contentCompatible": false,
+            "decision": "Preserve all historical events, automatic backing and metadata unchanged; do not lend them to the selected 51-note melody."
+          },
+          "writtenSpanReview": "Each complete 0.75-beat support span is inside its source harmonic interval, below the active melody, and free of exact same-onset same-pitch duplication. No rest fill, new physical target or added score beat is created.",
+          "acousticTailBoundary": "Written spans, decoded original sample-buffer spans and complete effects-output tails are different. The app plays full samples and adds a 0.55-second convolution response plus filtering/compression. Buffer membership alone cannot certify complete-output harmonic overlap or headroom. Review fast-speed F3-to-C, C4-to-G7 and final ring-out without trimming PCM.",
+          "evidenceFingerprints": {
+            "candidateBlockSha256": "4a81081cf6a430d8e85ab4fc9380b7f22e01dbc68b027dcc572c730530a632ef"
+          },
+          "browserAudio": "not-performed-in-data-stage",
+          "referenceListening": "not-performed",
+          "physicalKalimba": "not-performed",
+          "reviewRequired": [
+            "Separate browser/audio scheduling and complete-graph measurements at 80 BPM 1.0x and actual selected practice speed; record the multiplier rather than inferring it from defaultSpeedFactor.",
+            "Assess C4 under F5 at20/52 and D4 under E5 at24, both inherited from the printed chord/melody relation; do not alter source melody or naturalize F# to remove their tension.",
+            "Check effects tails separately from source spans and sample-buffer lengths, including maximum1.4x and end64. No automatic source-fidelity or perceived-quality approval follows from numeric output tests.",
+            "Physical 21-key single-melody play-through and public distribution permission remain separate."
+          ],
+          "limits": "This record preserves source chord membership and a disclosed root reduction. It does not claim a literal source bass part, full harmonic reproduction, completed listening/physical acceptance or publication rights."
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "complete-selected-short-refrain-with-optional-root-support",
+          "reason": "The unchanged single melody fits the fixed instrument. Sixteen optional single roots use F3/G3/C4/D4 below the melody; exact register, attack rhythm, durations and gain are inferred. Omitted chord tones and two short F changes are disclosed.",
+          "reviewRequired": [
+            "Keep independent source notation, structural checks, browser output measurements, audible comparison and physical play-through separate; refer to the scoped integration verification for later checks."
+          ]
+        },
+        "sources": [
+          {
+            "label": "Kyle Coughlin: Jingle Bells, Short version in the key of G, complete selected 16-bar refrain",
+            "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
           }
         ]
       }
@@ -32827,7 +36434,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《蜜雪冰城主题曲》练习轨道",
       "scoreTitle": "《蜜雪冰城主题曲》简谱进度",
-      "hint": "主旋律版按 1=D、2/4 双手简谱转写为 C 调，保留弱起、附点和完整中文段落。",
+      "hint": "按Jeanie的21小节简谱由D调整体降2半音至C调，保留完整中文主旋律；前奏第5小节滚奏和弦整段省略，留出1拍改编空隙。",
       "difficulty": "easy",
       "bpm": 115,
       "defaultSpeedFactor": 0.9,
@@ -32912,7 +36519,7 @@ export const SONG_LIBRARY = {
         [
           "C5",
           8,
-          2
+          1
         ],
         [
           "E5",
@@ -33168,21 +36775,190 @@ export const SONG_LIBRARY = {
       "sourceFeatures": {
         "hasChords": true,
         "hasArpeggio": true,
-        "hasRepeats": true,
-        "sourceImages": [
-          "private/sheets/raw/mi-xue-bing-cheng-theme/everyonepiano-number-01.png"
-        ],
+        "hasRepeats": false,
+        "sourceMeasureCount": 21,
+        "sourceTotalBeats": 42,
+        "transcriptionScope": "complete-selected-melody-with-intro-chord-omission",
+        "tempoStatus": "source-printed-quarter-note-115",
         "unsupported": [
-          "谱面英文段与循环播放结构未重复展开；本版本保留完整中文主题段。"
+          "The single-note reduction omits the entire instrumental rolled chord at source bar 5 beat 2, global [9,10); this adaptation gap is not a source-written rest or all-layer silence.",
+          "The piano accompaniment and remaining source harmony are not physical practice targets. The source does not identify a separate single melody within the omitted rolled chord; no highest-note selection is made."
         ],
         "unsureMeasures": [],
         "sourceReview": {
-          "confidence": "high",
+          "confidence": "high-for-selected-single-note-line-with-disclosed-intro-omission",
           "sources": [
             {
-              "label": "人人钢琴网《蜜雪冰城甜蜜蜜》双手简谱",
+              "label": "人人钢琴网 Jeanie《蜜雪冰城甜蜜蜜》双手简谱，1页21小节",
               "url": "https://www.everyonepiano.cn/Number-13218-1.html"
+            },
+            {
+              "label": "Same Jeanie arrangement in staff notation; corroboration, not an independent musical edition",
+              "url": "https://www.everyonepiano.cn/Stave-13218-1.html"
             }
+          ],
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": true,
+            "sourceImages": [
+              "private/sheets/raw/mi-xue-bing-cheng-theme/everyonepiano-number-01.png"
+            ],
+            "unsupported": [
+              "谱面英文段与循环播放结构未重复展开；本版本保留完整中文主题段。"
+            ],
+            "unsureMeasures": [],
+            "sourceReview": {
+              "confidence": "high",
+              "sources": [
+                {
+                  "label": "人人钢琴网《蜜雪冰城甜蜜蜜》双手简谱",
+                  "url": "https://www.everyonepiano.cn/Number-13218-1.html"
+                }
+              ]
+            }
+          },
+          "originalV1": {
+            "fileSha256": "354e2a8a878c519c0e581450872041f9a0b69bdfc680c5666501a2d7c9dfec14",
+            "hint": "主旋律版按 1=D、2/4 双手简谱转写为 C 调，保留弱起、附点和完整中文段落。",
+            "reconstruction": "Restore this hint and historicalReviewNotes as sourceFeatures, and change only the C5 at beat 8 back to duration 2; JSON.stringify(song, null, 2) plus a final newline reconstructs the original bytes."
+          },
+          "preservedV2": {
+            "file": "data/songs/mi-xue-bing-cheng-theme-chord.json",
+            "fileSha256": "df1100d1587c3b297ab0f6cc60a6a78696f00bf0b8c37e98e26bebcacf7b247e",
+            "status": "historical-unchanged-incompatible-melody",
+            "limitation": "Its C5 at beat 8 still lasts 2 beats. Its older verified rhythm label does not approve this reduction or its harmony. Do not borrow its support for the corrected melody."
+          },
+          "currentScopeReview": {
+            "status": "reviewed-melody-with-intro-chord-omission",
+            "reviewedAt": "2026-10-12",
+            "adoptedInVersion": "2.4.5",
+            "selectedEdition": "jeanie-21-bar-one-page",
+            "sourceUrl": "https://www.everyonepiano.cn/Number-13218-1.html",
+            "sourceImageUrl": "https://www.everyonepiano.cn/pianomusic/014/0013218/0013218-j-b-1.png",
+            "sourceImageSha256": "c4243d0d65455d71f7b2774fcfc287680ecfff50255132431eff3240cb83db35",
+            "sourceImageDimensions": [
+              2381,
+              3368
+            ],
+            "corroboratingSourceUrl": "https://www.everyonepiano.cn/Stave-13218-1.html",
+            "corroboratingImageUrl": "https://www.everyonepiano.cn/pianomusic/014/0013218/0013218-w-b-1.png",
+            "corroboratingImageSha256": "5528d825785582b686222ecfe795940345506c857c0e4bf58fd54215dcad0ee3",
+            "corroborationScope": "Same edition: opening, bar 5 quarter note and rolled chord, bar 15 same-pitch tie and final double bar. Not a second independent arrangement.",
+            "sourceKey": "D",
+            "sourceMeter": "2/4",
+            "sourceTempo": 115,
+            "sourceTempoBeatUnit": "quarter",
+            "beatOrigin": "Start of complete source bar 1; bar n spans [2(n-1),2n).",
+            "initialWrittenRestBeats": 1.5,
+            "audiblePickupBeats": 0.5,
+            "legacyPickupFieldMeaning": "The unchanged V2 pickupBeats value 1.5 denotes lead-in silence, not the 0.5-beat audible pickup.",
+            "transpositionSemitones": -2,
+            "octaveFolding": false,
+            "reviewedBeatRanges": [
+              [
+                0,
+                42
+              ]
+            ],
+            "reviewedMeasures": [
+              1,
+              21
+            ],
+            "selectedAttackCount": 66,
+            "chineseLyricSection": {
+              "measures": [
+                6,
+                21
+              ],
+              "beatRange": [
+                10,
+                42
+              ],
+              "attackCount": 50,
+              "status": "all-pitch-onset-duration-tuples-unchanged"
+            },
+            "sourceForm": {
+              "measureCount": 21,
+              "englishSectionPrinted": false,
+              "repeatSignsPrinted": false,
+              "endingRestBeats": 0
+            },
+            "melodyRole": "Exposed instrumental upper line in bars 1-5 and lyric-aligned upper line in bars 6-21; no chord-member melody is inferred.",
+            "correction": {
+              "measure": 5,
+              "beat": 8,
+              "note": "C5",
+              "previousDuration": 2,
+              "duration": 1,
+              "evidence": "The upper tonic is a quarter note, followed by a separate rolled chord on beat 9. Neither preview shows a tie, half note or continuation of this C5 into the chord."
+            },
+            "melodyOnlyAdaptationGaps": [
+              {
+                "beat": 9,
+                "duration": 1,
+                "reason": "omitted-instrumental-rolled-chord",
+                "sourceWrittenRest": false,
+                "sourceAllLayerSilence": false
+              }
+            ],
+            "omittedSourceGestures": [
+              {
+                "measure": 5,
+                "beat": 9,
+                "duration": 1,
+                "type": "rolled-chord",
+                "sourceNotes": [
+                  "F#5",
+                  "A5",
+                  "D6"
+                ],
+                "transposedNotes": [
+                  "E5",
+                  "G5",
+                  "C6"
+                ],
+                "melodyMember": "not-assigned",
+                "withinRollOffsets": "not-quantified-by-arpeggio-sign"
+              }
+            ],
+            "silentWindows": [
+              {
+                "beat": 0,
+                "duration": 1.5
+              }
+            ],
+            "preservedTie": {
+              "measure": 15,
+              "note": "A5",
+              "beat": 28.5,
+              "duration": 1.5,
+              "continuationBeat": 29
+            },
+            "ending": {
+              "measure": 21,
+              "note": "C5",
+              "beat": 40,
+              "duration": 2,
+              "totalBeats": 42,
+              "finalRestBeats": 0
+            },
+            "practiceSpeed": "The retained defaultSpeedFactor 0.9 is a legacy suggestion, not evidence of runtime speed. The app starts a new song at 0.55x and otherwise respects remembered per-song speed.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Notation correspondence for the selected 66-attack single-note reduction only. Not a literal complete two-hand piano transcription, verified backing arrangement or completed listening/physical-instrument assessment. Source reproduction/publication rights are not established."
+          }
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "jeanie-21-bar-single-note-reduction-with-intro-chord-omission",
+          "reason": "The reviewed line fits C5-A5 on the fixed 21-key C instrument after one interval-preserving -2-semitone transposition; all 50 Chinese-section attacks remain intact. Bar 5 omits a separate instrumental rolled chord.",
+          "reviewRequired": [
+            "Reference-performance listening pending.",
+            "Browser audio check pending; use actual selected speed.",
+            "Physical 21-key C kalimba play-through pending.",
+            "Any new optional support needs its own source and listening review."
           ]
         }
       }
@@ -36991,276 +40767,146 @@ export const SONG_LIBRARY = {
   "ping-fan-zhi-lu": {
       "schemaVersion": 1,
       "id": "ping-fan-zhi-lu",
-      "title": "《平凡之路》",
+      "title": "《平凡之路》（主歌＋副歌短版）",
       "uploader": "system",
-      "practiceTitle": "《平凡之路》练习轨道",
-      "scoreTitle": "《平凡之路》简谱进度",
-      "hint": "采用所提供趣弹音乐一页28小节编配，约80秒，非原唱全曲。叠音保留上声部，保留谱面单音及延音；按C调演奏。原图未标速度，暂设84 BPM练习速度。",
-      "difficulty": "hard",
-      "bpm": 84,
+      "practiceTitle": "《平凡之路》（主歌＋副歌短版）练习轨道",
+      "scoreTitle": "《平凡之路》（主歌＋副歌短版）简谱进度",
+      "hint": "选用破晓/弹琴吧主歌＋副歌短版，第5–21小节共93个单音、68拍，保留原谱80 BPM；省略吉他前奏与伴奏，保留开头、句间及末尾人声休止。含十六分音符与A5高音，建议先慢速分段练习。",
+      "difficulty": "medium",
+      "bpm": 80,
       "defaultSpeedFactor": 1,
       "beatsPerMeasure": 4,
       "key": "C",
       "steps": [
         [
-          "A4",
-          0,
-          0.5
-        ],
-        [
-          "A4",
+          "E4",
           0.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           1,
           0.5
         ],
         [
-          "C5",
+          "A4",
           1.5,
-          0.5
+          0.25
         ],
         [
-          "C5",
-          2,
-          0.5
+          "A4",
+          1.75,
+          0.75
         ],
         [
-          "F4",
+          "C4",
           2.5,
           0.5
         ],
         [
-          "F5",
+          "D4",
           3,
           0.5
         ],
         [
-          "C5",
+          "E4",
           3.5,
-          0.5
+          0.25
         ],
         [
-          "C5",
-          4,
-          0.5
+          "E4",
+          3.75,
+          2.25
         ],
         [
-          "G4",
-          4.5,
-          0.5
-        ],
-        [
-          "E5",
-          5,
-          0.5
-        ],
-        [
-          "C5",
-          5.5,
-          0.5
-        ],
-        [
-          "B4",
-          6,
-          0.5
-        ],
-        [
-          "C5",
-          6.5,
-          0.5
-        ],
-        [
-          "D5",
-          7,
-          0.5
-        ],
-        [
-          "G4",
-          7.5,
-          0.5
-        ],
-        [
-          "A4",
-          8,
-          0.5
-        ],
-        [
-          "A4",
+          "E4",
           8.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           9,
           0.5
         ],
         [
-          "C5",
+          "A4",
           9.5,
-          0.5
-        ],
-        [
-          "C5",
-          10,
-          0.5
-        ],
-        [
-          "F4",
-          10.5,
-          0.5
-        ],
-        [
-          "F5",
-          11,
-          0.5
-        ],
-        [
-          "C5",
-          11.5,
-          0.5
-        ],
-        [
-          "C5",
-          12,
-          0.5
-        ],
-        [
-          "G4",
-          12.5,
-          0.5
-        ],
-        [
-          "E5",
-          13,
-          0.5
-        ],
-        [
-          "C5",
-          13.5,
-          0.5
-        ],
-        [
-          "B4",
-          14,
-          2
+          0.25
         ],
         [
           "A4",
-          16,
-          0.5
+          9.75,
+          0.75
         ],
         [
-          "E5",
+          "G4",
+          10.5,
+          0.25
+        ],
+        [
+          "G4",
+          10.75,
+          1.25
+        ],
+        [
+          "F4",
+          12,
+          0.25
+        ],
+        [
+          "E4",
+          12.25,
+          1.75
+        ],
+        [
+          "E4",
           16.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           17,
           0.5
         ],
         [
-          "A5",
+          "A4",
           17.5,
-          0.25
+          1
         ],
         [
-          "A5",
-          17.75,
-          0.25
-        ],
-        [
-          "F4",
-          18,
-          0.5
-        ],
-        [
-          "C5",
+          "C4",
           18.5,
           0.5
         ],
         [
-          "D5",
+          "C4",
           19,
           0.5
         ],
         [
-          "E5",
+          "D4",
           19.5,
           0.25
         ],
         [
-          "E5",
+          "E4",
           19.75,
-          0.25
+          2.25
         ],
         [
-          "C4",
-          20,
-          0.5
-        ],
-        [
-          "G4",
-          20.5,
-          0.5
-        ],
-        [
-          "E5",
-          21,
-          0.5
-        ],
-        [
-          "C5",
-          21.5,
-          0.5
-        ],
-        [
-          "B4",
-          22,
-          0.5
-        ],
-        [
-          "C5",
-          22.5,
-          0.5
-        ],
-        [
-          "D5",
-          23,
-          0.5
-        ],
-        [
-          "G4",
-          23.5,
-          0.5
-        ],
-        [
-          "A4",
-          24,
-          0.5
-        ],
-        [
-          "E5",
+          "E4",
           24.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           25,
           0.5
         ],
         [
-          "A5",
+          "C4",
           25.5,
-          0.25
-        ],
-        [
-          "A5",
-          25.75,
-          0.25
+          0.5
         ],
         [
           "F4",
@@ -37268,187 +40914,167 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "F4",
           26.5,
-          0.25
+          0.5
         ],
         [
-          "G5",
-          26.75,
-          0.25
-        ],
-        [
-          "G5",
+          "E4",
           27,
           0.5
         ],
         [
-          "F4",
+          "C4",
           27.5,
           0.25
         ],
         [
-          "F5",
+          "C4",
           27.75,
-          0.25
-        ],
-        [
-          "E5",
-          28,
-          0.5
+          2.25
         ],
         [
           "G4",
-          28.5,
-          0.5
-        ],
-        [
-          "E5",
-          29,
-          0.5
-        ],
-        [
-          "C5",
-          29.5,
-          0.5
-        ],
-        [
-          "B4",
-          30,
-          0.5
-        ],
-        [
-          "C5",
           30.5,
           0.5
         ],
         [
-          "D5",
+          "A4",
           31,
           0.5
         ],
         [
-          "G4",
+          "B4",
           31.5,
           0.5
         ],
         [
-          "A4",
+          "C5",
           32,
           0.5
         ],
         [
-          "E5",
+          "B4",
           32.5,
-          0.5
-        ],
-        [
-          "E5",
-          33,
-          0.5
-        ],
-        [
-          "A5",
-          33.5,
-          0.5
-        ],
-        [
-          "F4",
-          34,
-          0.5
+          0.25
         ],
         [
           "C5",
-          34.5,
+          32.75,
           0.5
         ],
         [
-          "D5",
+          "G4",
+          33.25,
+          0.25
+        ],
+        [
+          "A4",
+          33.5,
+          0.25
+        ],
+        [
+          "A4",
+          33.75,
+          0.25
+        ],
+        [
+          "A4",
+          34,
+          1
+        ],
+        [
+          "G4",
           35,
           0.5
         ],
         [
-          "E5",
+          "F4",
           35.5,
           0.5
         ],
         [
-          "C4",
+          "E4",
           36,
           0.5
         ],
         [
-          "G4",
+          "E4",
           36.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           37,
           0.5
         ],
         [
-          "C5",
+          "F4",
           37.5,
-          0.5
+          0.25
         ],
         [
-          "B4",
-          38,
-          0.5
+          "D4",
+          37.75,
+          0.75
         ],
         [
-          "C5",
+          "G4",
           38.5,
           0.5
         ],
         [
-          "D5",
+          "A4",
           39,
           0.5
         ],
         [
-          "G4",
+          "B4",
           39.5,
           0.5
         ],
         [
-          "A4",
+          "C5",
           40,
           0.5
         ],
         [
-          "E5",
+          "B4",
           40.5,
-          0.5
-        ],
-        [
-          "E5",
-          41,
-          0.5
-        ],
-        [
-          "C5",
-          41.5,
-          0.5
-        ],
-        [
-          "F5",
-          42,
-          0.5
-        ],
-        [
-          "F5",
-          42.5,
           0.25
         ],
         [
-          "F5",
-          42.75,
-          0.75
+          "C5",
+          40.75,
+          0.5
         ],
         [
-          "E5",
+          "G4",
+          41.25,
+          0.25
+        ],
+        [
+          "A4",
+          41.5,
+          0.25
+        ],
+        [
+          "A4",
+          41.75,
+          0.25
+        ],
+        [
+          "A4",
+          42,
+          1
+        ],
+        [
+          "A4",
+          43,
+          0.5
+        ],
+        [
+          "B4",
           43.5,
           0.5
         ],
@@ -37458,79 +41084,74 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "G4",
+          "C5",
           44.5,
-          0.5
+          0.25
         ],
         [
-          "E5",
-          45,
+          "C5",
+          44.75,
           0.5
         ],
         [
           "C5",
+          45.25,
+          0.25
+        ],
+        [
+          "C5",
           45.5,
-          0.5
+          0.25
         ],
         [
-          "B4",
-          46,
-          0.5
+          "D5",
+          45.75,
+          1
         ],
         [
-          "G5",
-          46.5,
-          0.5
+          "G4",
+          46.75,
+          0.25
         ],
         [
-          "A5",
+          "A4",
           47,
           0.5
         ],
         [
-          "B5",
+          "B4",
           47.5,
           0.5
         ],
         [
-          "C6",
+          "C5",
           48,
           0.5
         ],
         [
-          "B5",
+          "B4",
           48.5,
           0.25
         ],
         [
-          "C6",
+          "C5",
           48.75,
-          0.5
+          0.75
         ],
         [
-          "G5",
-          49.25,
-          0.25
-        ],
-        [
-          "A5",
+          "E5",
           49.5,
           0.5
         ],
         [
           "A5",
           50,
-          0.5
-        ],
-        [
-          "A4",
-          50.5,
-          0.5
+          0.75
         ],
         [
           "G5",
-          51,
-          0.5
+          50.75,
+          0.75
         ],
         [
           "F5",
@@ -37540,683 +41161,394 @@ export const SONG_LIBRARY = {
         [
           "E5",
           52,
-          0.5
-        ],
-        [
-          "G4",
-          52.5,
-          0.5
+          1
         ],
         [
           "E5",
           53,
-          0.25
-        ],
-        [
-          "F5",
-          53.25,
-          0.5
+          0.75
         ],
         [
           "D5",
           53.75,
-          0.25
-        ],
-        [
-          "D4",
-          54,
-          0.5
-        ],
-        [
-          "G5",
-          54.5,
-          0.5
-        ],
-        [
-          "A5",
-          55,
-          0.5
-        ],
-        [
-          "B5",
-          55.5,
-          0.5
-        ],
-        [
-          "C6",
-          56,
-          0.5
-        ],
-        [
-          "B5",
-          56.5,
-          0.25
-        ],
-        [
-          "C6",
-          56.75,
-          0.5
-        ],
-        [
-          "G5",
-          57.25,
-          0.25
-        ],
-        [
-          "A5",
-          57.5,
-          0.5
-        ],
-        [
-          "A5",
-          58,
-          0.5
+          1
         ],
         [
           "A4",
-          58.5,
+          54.75,
           0.5
         ],
         [
-          "A5",
+          "B4",
+          55.25,
+          0.75
+        ],
+        [
+          "C5",
+          56,
+          1
+        ],
+        [
+          "C5",
+          57,
+          0.5
+        ],
+        [
+          "D5",
+          57.5,
+          0.25
+        ],
+        [
+          "C5",
+          57.75,
+          1
+        ],
+        [
+          "G4",
+          58.75,
+          0.25
+        ],
+        [
+          "B4",
           59,
-          0.5
-        ],
-        [
-          "B5",
-          59.5,
           0.25
         ],
         [
-          "C6",
-          59.75,
-          0.25
+          "C5",
+          59.25,
+          0.75
         ],
         [
-          "C6",
+          "D5",
           60,
-          0.5
+          1
         ],
         [
-          "C6",
-          60.5,
-          0.5
-        ],
-        [
-          "C6",
+          "C5",
           61,
           0.5
         ],
         [
-          "C6",
+          "B4",
           61.5,
           0.25
         ],
         [
-          "D6",
+          "C5",
           61.75,
           0.25
         ],
         [
-          "D6",
+          "C5",
           62,
-          0.5
-        ],
-        [
-          "G5",
-          62.5,
-          0.5
-        ],
-        [
-          "A5",
-          63,
-          0.5
-        ],
-        [
-          "B5",
-          63.5,
-          0.5
-        ],
-        [
-          "C6",
-          64,
-          0.5
-        ],
-        [
-          "B5",
-          64.5,
-          0.25
-        ],
-        [
-          "C6",
-          64.75,
-          0.75
-        ],
-        [
-          "E6",
-          65.5,
-          0.5
-        ],
-        [
-          "A5",
-          66,
-          0.5
-        ],
-        [
-          "A4",
-          66.5,
-          0.5
-        ],
-        [
-          "G5",
-          67,
-          0.5
-        ],
-        [
-          "F5",
-          67.5,
-          0.5
-        ],
-        [
-          "E5",
-          68,
-          0.5
-        ],
-        [
-          "E4",
-          68.5,
-          0.5
-        ],
-        [
-          "E5",
-          69,
-          0.5
-        ],
-        [
-          "D5",
-          69.5,
-          0.5
-        ],
-        [
-          "G4",
-          70,
-          0.5
-        ],
-        [
-          "G5",
-          70.5,
-          0.5
-        ],
-        [
-          "A5",
-          71,
-          0.5
-        ],
-        [
-          "B5",
-          71.5,
-          0.5
-        ],
-        [
-          "C6",
-          72,
-          0.5
-        ],
-        [
-          "E5",
-          72.5,
-          0.5
-        ],
-        [
-          "C6",
-          73,
-          0.25
-        ],
-        [
-          "D6",
-          73.25,
-          0.5
-        ],
-        [
-          "C6",
-          73.75,
-          0.25
-        ],
-        [
-          "F4",
-          74,
-          0.5
-        ],
-        [
-          "C6",
-          74.5,
-          0.5
-        ],
-        [
-          "B5",
-          75,
-          0.5
-        ],
-        [
-          "C6",
-          75.5,
-          0.5
-        ],
-        [
-          "D6",
-          76,
-          0.5
-        ],
-        [
-          "G5",
-          76.5,
-          0.5
-        ],
-        [
-          "C6",
-          77,
-          0.25
-        ],
-        [
-          "B5",
-          77.25,
-          0.5
-        ],
-        [
-          "C6",
-          77.75,
-          0.25
-        ],
-        [
-          "C6",
-          78,
-          0.5
-        ],
-        [
-          "C6",
-          78.5,
-          0.5
-        ],
-        [
-          "B5",
-          79,
-          0.5
-        ],
-        [
-          "G5",
-          79.5,
-          0.5
-        ],
-        [
-          "A4",
-          80,
-          0.5
-        ],
-        [
-          "E5",
-          80.5,
-          0.5
-        ],
-        [
-          "E5",
-          81,
-          0.5
-        ],
-        [
-          "A5",
-          81.5,
-          0.25
-        ],
-        [
-          "A5",
-          81.75,
-          0.25
-        ],
-        [
-          "F4",
-          82,
-          0.5
-        ],
-        [
-          "C5",
-          82.5,
-          0.5
-        ],
-        [
-          "D5",
-          83,
-          0.5
-        ],
-        [
-          "E5",
-          83.5,
-          0.25
-        ],
-        [
-          "E5",
-          83.75,
-          0.25
-        ],
-        [
-          "C4",
-          84,
-          0.5
-        ],
-        [
-          "G4",
-          84.5,
-          0.5
-        ],
-        [
-          "E5",
-          85,
-          0.5
-        ],
-        [
-          "C5",
-          85.5,
-          0.5
-        ],
-        [
-          "B4",
-          86,
-          0.5
-        ],
-        [
-          "C5",
-          86.5,
-          0.5
-        ],
-        [
-          "D5",
-          87,
-          0.5
-        ],
-        [
-          "G4",
-          87.5,
-          0.5
-        ],
-        [
-          "A4",
-          88,
-          0.5
-        ],
-        [
-          "E5",
-          88.5,
-          0.5
-        ],
-        [
-          "E5",
-          89,
-          0.5
-        ],
-        [
-          "A5",
-          89.5,
-          0.25
-        ],
-        [
-          "A5",
-          89.75,
-          0.25
-        ],
-        [
-          "F4",
-          90,
-          0.5
-        ],
-        [
-          "A4",
-          90.5,
-          0.25
-        ],
-        [
-          "G5",
-          90.75,
-          0.25
-        ],
-        [
-          "G5",
-          91,
-          0.5
-        ],
-        [
-          "F4",
-          91.5,
-          0.25
-        ],
-        [
-          "F5",
-          91.75,
-          0.25
-        ],
-        [
-          "E5",
-          92,
-          0.5
-        ],
-        [
-          "G4",
-          92.5,
-          0.5
-        ],
-        [
-          "E5",
-          93,
-          0.5
-        ],
-        [
-          "C5",
-          93.5,
-          0.5
-        ],
-        [
-          "B4",
-          94,
-          0.5
-        ],
-        [
-          "C5",
-          94.5,
-          0.5
-        ],
-        [
-          "D5",
-          95,
-          0.5
-        ],
-        [
-          "G4",
-          95.5,
-          0.5
-        ],
-        [
-          "A4",
-          96,
-          0.5
-        ],
-        [
-          "E5",
-          96.5,
-          0.5
-        ],
-        [
-          "E5",
-          97,
-          0.5
-        ],
-        [
-          "A5",
-          97.5,
-          0.5
-        ],
-        [
-          "F4",
-          98,
-          0.5
-        ],
-        [
-          "C5",
-          98.5,
-          0.5
-        ],
-        [
-          "D5",
-          99,
-          0.5
-        ],
-        [
-          "E5",
-          99.5,
-          0.5
-        ],
-        [
-          "C4",
-          100,
-          0.5
-        ],
-        [
-          "G4",
-          100.5,
-          0.5
-        ],
-        [
-          "E5",
-          101,
-          0.5
-        ],
-        [
-          "C5",
-          101.5,
-          0.5
-        ],
-        [
-          "B4",
-          102,
-          0.5
-        ],
-        [
-          "C5",
-          102.5,
-          0.5
-        ],
-        [
-          "D5",
-          103,
-          0.5
-        ],
-        [
-          "G4",
-          103.5,
-          0.5
-        ],
-        [
-          "A4",
-          104,
-          0.5
-        ],
-        [
-          "E5",
-          104.5,
-          0.5
-        ],
-        [
-          "E5",
-          105,
-          0.5
-        ],
-        [
-          "C5",
-          105.5,
-          0.5
-        ],
-        [
-          "F5",
-          106,
-          0.5
-        ],
-        [
-          "F5",
-          106.5,
-          0.25
-        ],
-        [
-          "F5",
-          106.75,
-          0.75
-        ],
-        [
-          "E5",
-          107.5,
-          0.5
-        ],
-        [
-          "C5",
-          108,
-          0.5
-        ],
-        [
-          "G4",
-          108.5,
-          0.5
-        ],
-        [
-          "E5",
-          109,
-          0.5
-        ],
-        [
-          "C5",
-          109.5,
-          0.5
-        ],
-        [
-          "B4",
-          110,
           2
         ]
       ],
       "sourceFeatures": {
         "hasChords": true,
-        "hasArpeggio": true,
+        "hasArpeggio": false,
         "hasRepeats": false,
         "unsupported": [
-          "主旋律版叠音仅保留最高声部，省略同时和声音；谱面独立单音均保留，包含编配中的分解音型。",
-          "图片选调为C；说明中的演示用琴为B调不作为本版调号，不要求重新调琴。",
-          "原图未印拍号和BPM：按每小节四组节拍及减时线推定4/4；84 BPM为参考练习速度，不声称与趣弹演示速度一致。",
-          "仅所提供28小节编配，不补原唱完整曲式；高音E6和C6/D6换手需实际练习。"
+          "只保留所选短编配第5–21小节有歌词逐音对位的全部人声线；省略4小节吉他前奏和所有吉他分解、扫弦及和弦图，不从和弦中选择最高音。",
+          "这是明确选择的另一份主歌＋副歌短版，不是原唱完整曲式，也不证明旧235音趣弹编配有错；历史资料及未复核限制完整保留。",
+          "六段开头、句间和谱尾空拍只表示所选人声休止；原谱吉他在末小节仍有C和弦扫弦，不宣称原编配所有声部静音。",
+          "80 BPM为谱面四分音符速度；慢速分段是练习建议，未改变应用初次默认或已保存的速度选择。",
+          "本次数据采纳未进行参考录音听辨、浏览器音频验收或实体琴演奏；源谱复核和结构测试不等于更易弹或更好听的保证。"
         ],
         "unsureMeasures": [],
         "composer": "朴树",
-        "arranger": "石头（趣弹音乐）",
+        "arranger": "破晓（弹琴吧）",
         "sources": [
           {
-            "label": "用户直接提供的趣弹音乐《平凡之路》一页图片谱；全部音高和节奏来自此图"
-          },
-          {
-            "label": "MidiShow 上传者的同曲编配标注84 BPM，仅作为练习速度参考，未读取其音符",
-            "url": "https://www.midishow.com/midi/55115.html"
+            "label": "破晓编配/弹琴吧谱，吉他屋公开两页；选择全部歌词对位的人声简谱第5–21小节",
+            "url": "https://www.jita5.cc/jitapu/7766.html"
           }
         ],
-        "transcriptionScope": "supplied-arrangement-28-measures",
-        "sourceMeasureCount": 28,
-        "sourceTotalBeats": 112,
+        "transcriptionScope": "selected-poxiao-complete-short-vocal-m5-through-m21",
+        "sourceMeasureCount": 17,
+        "sourceTotalBeats": 68,
         "sourceKey": "C",
         "transpositionSemitones": 0,
-        "tempoStatus": "reference-practice-tempo-source-image-unmarked",
-        "meterStatus": "inferred-from-four-beat-groups",
+        "tempoStatus": "printed-quarter-note-80",
+        "meterStatus": "printed-4/4",
         "suitability": {
           "status": "conditional",
-          "scope": "supplied-arrangement-28-measures",
-          "reason": "所提供C调编配的上声部及单音在C4–E6范围内，无额外升降音；叠音简化为单音练习，保留旋律走向和节奏。",
+          "scope": "selected-complete-short-edition-vocal-only",
+          "reason": "所选17个人声小节共93次起音，C4–A5自然音无需移调或折八度；保留延音、真实重弹和六段人声休止。最短起音间隔0.25拍、最大跳进9半音，缩短曲长不保证新手容易或主观更好听。",
           "reviewRequired": [
-            "84 BPM未与这份编配的原演示核对。",
-            "实体琴最高音衰减、换手及主观旋律辨识度试听尚未进行。"
+            "原速80 BPM的十六分音符间隔187.5毫秒；真实同音连弹、九半音跳进及A5需慢速分段练习。",
+            "参考录音辨识度试听、浏览器音频与实体琴验收未在本次数据阶段执行；保持各自独立的验收记录。"
           ]
+        },
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-short-vocal-edition",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.24",
+            "contentRevision": "ordinary-road-poxiao-short-vocal-2026-10-12",
+            "selectedEdition": "poxiao-tanqinba-short-vocal-m5-21",
+            "sourceUrl": "https://www.jita5.cc/jitapu/7766.html",
+            "sourceImageUrls": [
+              "https://img.jita5.cc//20181020/C-pingfanzhilu1.png",
+              "https://img.jita5.cc//20181020/C-pingfanzhilu2.png"
+            ],
+            "sourceAssetHashes": {
+              "page1Sha256": "2037090108df36cd23e3840c722262dab806ac27d2c857564f0a29ab1c13e17f",
+              "page2Sha256": "cc118e74c7bebadddc8646c8738719b42e8e300e0c82336c7459f32a1dbb2a63"
+            },
+            "attribution": "Public Jita5 listing credits 破晓; listing prose and visible watermark identify 弹琴吧. Two-page short guitar-and-vocal edition, not the absent 石头/趣弹 source.",
+            "sourceMeasureRange": [
+              5,
+              21
+            ],
+            "sourceMeasureCount": 17,
+            "sourceBeatRange": [
+              16,
+              84
+            ],
+            "sourceToExcerptBeatOffset": -16,
+            "reviewedBeatRanges": [
+              [
+                0,
+                68
+              ]
+            ],
+            "selectedSections": [
+              {
+                "label": "主歌",
+                "sourceMeasures": [
+                  5,
+                  12
+                ],
+                "beats": [
+                  0,
+                  30.5
+                ]
+              },
+              {
+                "label": "副歌（含小节内弱起）",
+                "sourceMeasures": [
+                  12,
+                  20
+                ],
+                "beats": [
+                  30.5,
+                  64
+                ]
+              },
+              {
+                "label": "谱尾人声休止",
+                "sourceMeasures": [
+                  21,
+                  21
+                ],
+                "beats": [
+                  64,
+                  68
+                ]
+              }
+            ],
+            "excludedSections": [
+              "guitar-only intro m1–4",
+              "all guitar arpeggios, strums and chord diagrams"
+            ],
+            "sourceVoice": "explicit-lyric-aligned-numbered-vocal-line",
+            "voiceDecision": "The single lyric-aligned numbered line identifies the vocal melody directly. Guitar notation is a separate staff; no highest-note or first-note extraction and no physical chord targets.",
+            "sourceKey": "1=C",
+            "sourceMeter": "4/4",
+            "sourceQuarterBpm": 80,
+            "sourceTempoPrinted": true,
+            "speedDecision": "Printed quarter=80 is retained. The previous built-in defaultSpeedFactor=1 remains unchanged; slow practice is editorial advice. No runtime initial/saved speed is observed or overridden by this data review.",
+            "registerConvention": "Unmarked 1=C4; one upper octave dot maps to octave5. This is the repository scientific-pitch convention, not an absolute-octave label printed on the numbered score.",
+            "sourceRange": [
+              "C4",
+              "A5"
+            ],
+            "compiledRange": [
+              "C4",
+              "A5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              2,
+              4,
+              5,
+              7,
+              9,
+              11
+            ],
+            "transpositionSemitones": 0,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "melodyAccidentals": [],
+            "localPitchAlterations": [],
+            "pickupBeats": 0,
+            "firstFullMeasureAtBeat": 0,
+            "openingDecision": "The complete source bar m5 begins at selected beat0. Its written eighth rest occupies [0,0.5), then E4 attacks at0.5. The selection has no opening pickup or inserted padding; the chorus pickup remains inside source m12 at selected30.5.",
+            "repeatExpansion": "none-all-selected-bars-written-out",
+            "melodyOnlyRestWindows": [
+              {
+                "beat": 0,
+                "duration": 0.5,
+                "sourceMeasures": [
+                  5
+                ],
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 6,
+                "duration": 2.5,
+                "sourceMeasures": [
+                  6,
+                  7
+                ],
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 14,
+                "duration": 2.5,
+                "sourceMeasures": [
+                  8,
+                  9
+                ],
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 22,
+                "duration": 2.5,
+                "sourceMeasures": [
+                  10,
+                  11
+                ],
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 30,
+                "duration": 0.5,
+                "sourceMeasures": [
+                  12
+                ],
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 64,
+                "duration": 4,
+                "sourceMeasures": [
+                  21
+                ],
+                "voice": "selected-vocal-only"
+              }
+            ],
+            "restScope": "Six contiguous written vocal-rest windows, totaling12.5 beats. Adjacent rests across barlines are grouped. The guitar staff remains separately active, including a C strum in m21; no source-all-layer silence is asserted.",
+            "rawNoteheadCount": 131,
+            "tieContinuationCount": 38,
+            "selectedAttacks": 93,
+            "crossBarTies": [
+              {
+                "note": "E4",
+                "attackBeat": 3.75,
+                "duration": 2.25,
+                "sourceBars": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "note": "E4",
+                "attackBeat": 19.75,
+                "duration": 2.25,
+                "sourceBars": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "note": "C4",
+                "attackBeat": 27.75,
+                "duration": 2.25,
+                "sourceBars": [
+                  11,
+                  12
+                ]
+              }
+            ],
+            "occurrenceDecisions": [
+              "m5 A4@1.5/0.25 and A4@1.75/0.75 are distinct attacks; m9 A4@17.5/1 is one confirmed tied attack. Similar verse phrases are not copied.",
+              "m7 G4@10.5/0.25 remains separate from G4@10.75/1.25; the last un-underlined G4 glyph is a quarter tied to the preceding sixteenth.",
+              "m17 upper dots retain E5, A5, G5 and F5; the preceding B4 remains undotted. Verse C4 notes remain undotted even after A4.",
+              "All62 previously independently reviewed chorus attacks are preserved exactly with beat offset+30.5. Final C5@61.75/0.25 and C5@62/2 remain separate."
+            ],
+            "endingRestBeats": 4,
+            "selectedEndIsFullSongEnding": false,
+            "selectedEndIsShortEditionVocalEnding": true,
+            "endingDecision": "The last C5 attacks at62 and ends at64. Source m21 writes four beats of vocal rest through68 while guitar still strums; all guitar is omitted from this selected melody-only edition. This is not the complete original recording form.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "versionDecision": "Deliberately selected alternate short vocal edition, not proof that the old235-attack 趣弹 arrangement is wrong. The absent original photo has not been recovered or reverified; no musical values are borrowed from it.",
+            "supportDecision": "No backing is added or borrowed. There is no historical ping-fan-zhi-lu-chord sibling; the old235-attack melody fails content compatibility with this selected93-attack edition.",
+            "sourcePixelReview": "The source lead read all17 bars occurrence by occurrence. Two independent pixel readers agreed on the earlier62-attack chorus, and a separate full-scope reviewer viewed the additional verse crops, independently entered31 additional attacks and compared all93 tuples exactly. Implementation also viewed both pages and all selected crops. These are multiple readings of one edition, not independent source editions.",
+            "evidenceFingerprints": {
+              "fullVocalCandidateSha256": "bd8b53bb9b0d9543fcab0717e416e20d5cda835b3aacda36ab3fd44c7dca827e",
+              "fullVocalSourceEvidenceSha256": "9862e69ecd2fda07f9221e2bc5691893575d27834c706143fc7e8743fade6795",
+              "fullVocalRawReadingSha256": "0a70b76f81e565f03ddfc9345e714ab6bcdcf5ed462392fe574d97560f6fd71b",
+              "selectedTupleSha256": "8c269ecd68549a1218d75f80b6657b4fe96833924583a03f7f3d01bb1abe2ac9",
+              "chorusTupleSha256AtOriginalOrigin": "67992088814177533203b4291705d883ff4f8cb013d3009e054f47d5653466b1"
+            },
+            "referenceListening": "not-performed-at-data-adoption",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-local-preview-only",
+            "rightsNotice": "Public source access does not establish reproduction or public distribution permission. This local adoption includes no raw scans, private full source maps, public push or deployment."
+          },
+          "archivedEdition": {
+            "file": "data/archives/ping-fan-zhi-lu-v2.4.23.json",
+            "fileSha256": "6098bdc9bffbc2c3e3097c6a7d4343556a679f52a2151564c0b99cd2bebcbd4b",
+            "purpose": "Byte-exact full developer history, including original title,235 steps,84 BPM and all source metadata. No new canonical card, restore UI, HTTP route or service-worker precache."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": false,
+            "unsupported": [
+              "主旋律版叠音仅保留最高声部，省略同时和声音；谱面独立单音均保留，包含编配中的分解音型。",
+              "图片选调为C；说明中的演示用琴为B调不作为本版调号，不要求重新调琴。",
+              "原图未印拍号和BPM：按每小节四组节拍及减时线推定4/4；84 BPM为参考练习速度，不声称与趣弹演示速度一致。",
+              "仅所提供28小节编配，不补原唱完整曲式；高音E6和C6/D6换手需实际练习。"
+            ],
+            "unsureMeasures": [],
+            "composer": "朴树",
+            "arranger": "石头（趣弹音乐）",
+            "sources": [
+              {
+                "label": "用户直接提供的趣弹音乐《平凡之路》一页图片谱；全部音高和节奏来自此图"
+              },
+              {
+                "label": "MidiShow 上传者的同曲编配标注84 BPM，仅作为练习速度参考，未读取其音符",
+                "url": "https://www.midishow.com/midi/55115.html"
+              }
+            ],
+            "transcriptionScope": "supplied-arrangement-28-measures",
+            "sourceMeasureCount": 28,
+            "sourceTotalBeats": 112,
+            "sourceKey": "C",
+            "transpositionSemitones": 0,
+            "tempoStatus": "reference-practice-tempo-source-image-unmarked",
+            "meterStatus": "inferred-from-four-beat-groups",
+            "suitability": {
+              "status": "conditional",
+              "scope": "supplied-arrangement-28-measures",
+              "reason": "所提供C调编配的上声部及单音在C4–E6范围内，无额外升降音；叠音简化为单音练习，保留旋律走向和节奏。",
+              "reviewRequired": [
+                "84 BPM未与这份编配的原演示核对。",
+                "实体琴最高音衰减、换手及主观旋律辨识度试听尚未进行。"
+              ]
+            }
+          },
+          "historicalEditionStatus": "The original235-attack V1 source photo, historically attributed to 石头/趣弹音乐 and described as28 measures, is missing from this checkout. Historical highest-note selection, arpeggio and tie claims remain unverified. Keeping those original claims in the byte-exact archive does not recertify them."
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "qi-feng-le": {
       "schemaVersion": 1,
@@ -39125,7 +42457,7 @@ export const SONG_LIBRARY = {
         "unsupported": [
           "本版为单音主旋律练习；省略下声部伴奏，主声部叠音取最高音。",
           "仅编译用户提供图片的完整编配范围，不补写图片之外的原曲段落。",
-          "末小节后三拍为纯休止，保留在来源总拍数80中；V1播放长度按最后音符推导至第77拍，不把休止伪造为延音。"
+          "末小节后三拍为纯休止，保留在来源总拍数80中；2.4.1 起播放器按来源总拍数保留末尾纯休止，不延长最后音符。"
         ],
         "unsureMeasures": [],
         "arranger": "羊阿宝 & Sun",
@@ -39154,13 +42486,13 @@ export const SONG_LIBRARY = {
   "qing-cheng-shan-xia-bai-su-zhen": {
       "schemaVersion": 1,
       "id": "qing-cheng-shan-xia-bai-su-zhen",
-      "title": "《青城山下白素贞》",
+      "title": "《青城山下白素贞》（鞠婧祎版人声）",
       "uploader": "system",
-      "practiceTitle": "《青城山下白素贞》练习轨道",
-      "scoreTitle": "《青城山下白素贞》简谱进度",
-      "hint": "主旋律练习版；按中国曲谱网 1=C、4/4 简谱整理，主歌与副歌主要乐句已展开。",
+      "practiceTitle": "《青城山下白素贞》（鞠婧祎版人声）练习轨道",
+      "scoreTitle": "《青城山下白素贞》（鞠婧祎版人声）简谱进度",
+      "hint": "罗林斯 / ROLLINS 鞠婧祎版完整30小节人声主线，196次起音、120拍；原C调、4/4、谱面82 BPM。省略前奏、尾奏和5个非定量倚音，保留全部主音及两遍写明的收尾；无伴奏。16分音符与同音重拨宜分段慢练。",
       "difficulty": "medium",
-      "bpm": 80,
+      "bpm": 82,
       "defaultSpeedFactor": 0.9,
       "beatsPerMeasure": 4,
       "key": "C",
@@ -39168,32 +42500,32 @@ export const SONG_LIBRARY = {
         [
           "C5",
           0,
-          0.75
+          1
         ],
         [
           "A4",
-          0.75,
-          0.25
-        ],
-        [
-          "C5",
           1,
           0.5
         ],
         [
-          "G4",
+          "C5",
           1.5,
           0.5
         ],
         [
           "G4",
           2,
+          0.25
+        ],
+        [
+          "G4",
+          2.25,
           0.5
         ],
         [
           "A4",
-          2.5,
-          0.5
+          2.75,
+          0.25
         ],
         [
           "G4",
@@ -39231,7 +42563,7 @@ export const SONG_LIBRARY = {
           2
         ],
         [
-          "A3",
+          "A4",
           8,
           0.75
         ],
@@ -39243,37 +42575,42 @@ export const SONG_LIBRARY = {
         [
           "D5",
           9,
-          0.5
+          0.25
         ],
         [
           "C5",
-          9.5,
-          0.5
+          9.25,
+          0.25
         ],
         [
           "A4",
+          9.5,
+          0.25
+        ],
+        [
+          "G4",
+          9.75,
+          0.25
+        ],
+        [
+          "G4",
           10,
           0.5
         ],
         [
-          "G4",
-          10.5,
-          0.5
-        ],
-        [
-          "G4",
-          11,
-          0.5
-        ],
-        [
           "A4",
-          11.5,
+          10.5,
           0.25
         ],
         [
           "G4",
-          11.75,
+          10.75,
           0.25
+        ],
+        [
+          "E4",
+          11,
+          1
         ],
         [
           "D4",
@@ -39296,7 +42633,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "G4",
+          "G3",
           14,
           2
         ],
@@ -39353,32 +42690,32 @@ export const SONG_LIBRARY = {
         [
           "C5",
           24,
-          0.75
+          1
         ],
         [
           "A4",
-          24.75,
-          0.25
-        ],
-        [
-          "C5",
           25,
           0.5
         ],
         [
-          "G4",
+          "C5",
           25.5,
           0.5
         ],
         [
           "G4",
           26,
+          0.25
+        ],
+        [
+          "G4",
+          26.25,
           0.5
         ],
         [
           "A4",
-          26.5,
-          0.5
+          26.75,
+          0.25
         ],
         [
           "G4",
@@ -39416,7 +42753,7 @@ export const SONG_LIBRARY = {
           2
         ],
         [
-          "A3",
+          "A4",
           32,
           0.75
         ],
@@ -39428,37 +42765,42 @@ export const SONG_LIBRARY = {
         [
           "D5",
           33,
-          0.5
+          0.25
         ],
         [
           "C5",
-          33.5,
-          0.5
+          33.25,
+          0.25
         ],
         [
           "A4",
+          33.5,
+          0.25
+        ],
+        [
+          "G4",
+          33.75,
+          0.25
+        ],
+        [
+          "G4",
           34,
           0.5
         ],
         [
-          "G4",
-          34.5,
-          0.5
-        ],
-        [
-          "G4",
-          35,
-          0.5
-        ],
-        [
           "A4",
-          35.5,
+          34.5,
           0.25
         ],
         [
           "G4",
-          35.75,
+          34.75,
           0.25
+        ],
+        [
+          "E4",
+          35,
+          1
         ],
         [
           "D4",
@@ -39481,19 +42823,19 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C4",
+          "G3",
           38,
           2
         ],
         [
-          "D4",
+          "A3",
           40,
-          0.75
+          0.5
         ],
         [
-          "E4",
-          40.75,
-          0.25
+          "C4",
+          40.5,
+          0.5
         ],
         [
           "D4",
@@ -39506,24 +42848,19 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D4",
+          "G4",
           42,
+          2
+        ],
+        [
+          "C5",
+          44,
           0.5
         ],
         [
-          "D4",
-          42.5,
-          1.5
-        ],
-        [
-          "G4",
-          44,
-          0.75
-        ],
-        [
           "A4",
-          44.75,
-          0.25
+          44.5,
+          0.5
         ],
         [
           "G4",
@@ -39531,32 +42868,22 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "E4",
           45.5,
           0.5
         ],
         [
           "G4",
           46,
-          0.5
-        ],
-        [
-          "G4",
-          46.5,
-          1.5
-        ],
-        [
-          "A3",
-          48,
-          0.75
+          2
         ],
         [
           "C5",
-          48.75,
-          0.25
+          48,
+          1
         ],
         [
-          "D5",
+          "A4",
           49,
           0.5
         ],
@@ -39566,14 +42893,19 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "A4",
+          "G4",
           50,
-          0.5
+          0.25
         ],
         [
           "G4",
-          50.5,
+          50.25,
           0.5
+        ],
+        [
+          "A4",
+          50.75,
+          0.25
         ],
         [
           "G4",
@@ -39583,207 +42915,819 @@ export const SONG_LIBRARY = {
         [
           "A4",
           51.5,
-          0.25
+          0.5
         ],
         [
-          "G4",
-          51.75,
-          0.25
-        ],
-        [
-          "D4",
+          "E4",
           52,
           0.5
         ],
         [
-          "C4",
+          "G4",
           52.5,
           0.5
         ],
         [
-          "A3",
+          "D4",
           53,
           0.5
         ],
         [
-          "C4",
+          "E4",
           53.5,
           0.5
         ],
         [
-          "C4",
+          "G4",
           54,
           2
         ],
         [
-          "D4",
+          "A4",
           56,
           0.75
         ],
         [
-          "E4",
+          "C5",
           56.75,
           0.25
         ],
         [
-          "D4",
+          "D5",
           57,
-          0.5
+          0.25
         ],
         [
-          "E4",
+          "C5",
+          57.25,
+          0.25
+        ],
+        [
+          "A4",
           57.5,
-          0.5
+          0.25
         ],
         [
-          "D4",
+          "G4",
+          57.75,
+          0.25
+        ],
+        [
+          "G4",
           58,
           0.5
         ],
         [
-          "D4",
-          58.5,
-          1.5
-        ],
-        [
-          "G4",
-          60,
-          0.75
-        ],
-        [
           "A4",
-          60.75,
+          58.5,
           0.25
         ],
         [
           "G4",
+          58.75,
+          0.25
+        ],
+        [
+          "E4",
+          59,
+          1
+        ],
+        [
+          "D4",
+          60,
+          0.5
+        ],
+        [
+          "C4",
+          60.5,
+          0.5
+        ],
+        [
+          "A3",
           61,
           0.5
         ],
         [
-          "A4",
+          "C4",
           61.5,
           0.5
         ],
         [
-          "G4",
+          "G3",
           62,
-          0.5
-        ],
-        [
-          "G4",
-          62.5,
-          1.5
+          2
         ],
         [
           "A3",
           64,
-          0.75
+          0.5
         ],
         [
-          "C5",
-          64.75,
-          0.25
+          "C4",
+          64.5,
+          0.5
         ],
         [
-          "D5",
+          "D4",
           65,
           0.5
         ],
         [
-          "C5",
+          "E4",
           65.5,
           0.5
         ],
         [
-          "A4",
+          "G4",
           66,
-          0.5
+          2
         ],
         [
-          "G4",
-          66.5,
-          0.5
-        ],
-        [
-          "G4",
-          67,
-          0.5
-        ],
-        [
-          "A4",
-          67.5,
-          0.25
-        ],
-        [
-          "G4",
-          67.75,
-          0.25
-        ],
-        [
-          "D4",
+          "C5",
           68,
           0.5
         ],
         [
-          "C4",
+          "A4",
           68.5,
           0.5
         ],
         [
-          "A3",
+          "G4",
           69,
           0.5
         ],
         [
-          "C4",
+          "E4",
           69.5,
           0.5
         ],
         [
-          "C4",
+          "G4",
           70,
+          2
+        ],
+        [
+          "C5",
+          72,
+          1
+        ],
+        [
+          "A4",
+          73,
+          0.5
+        ],
+        [
+          "C5",
+          73.5,
+          0.5
+        ],
+        [
+          "G4",
+          74,
+          0.25
+        ],
+        [
+          "G4",
+          74.25,
+          0.5
+        ],
+        [
+          "A4",
+          74.75,
+          0.25
+        ],
+        [
+          "G4",
+          75,
+          0.5
+        ],
+        [
+          "A4",
+          75.5,
+          0.5
+        ],
+        [
+          "E4",
+          76,
+          0.5
+        ],
+        [
+          "G4",
+          76.5,
+          0.5
+        ],
+        [
+          "D4",
+          77,
+          0.5
+        ],
+        [
+          "E4",
+          77.5,
+          0.5
+        ],
+        [
+          "G4",
+          78,
+          2
+        ],
+        [
+          "A4",
+          80,
+          0.75
+        ],
+        [
+          "C5",
+          80.75,
+          0.25
+        ],
+        [
+          "D5",
+          81,
+          0.25
+        ],
+        [
+          "C5",
+          81.25,
+          0.25
+        ],
+        [
+          "A4",
+          81.5,
+          0.25
+        ],
+        [
+          "G4",
+          81.75,
+          0.25
+        ],
+        [
+          "G4",
+          82,
+          0.5
+        ],
+        [
+          "A4",
+          82.5,
+          0.25
+        ],
+        [
+          "G4",
+          82.75,
+          0.25
+        ],
+        [
+          "E4",
+          83,
+          1
+        ],
+        [
+          "D4",
+          84,
+          0.5
+        ],
+        [
+          "C4",
+          84.5,
+          0.5
+        ],
+        [
+          "A3",
+          85,
+          0.5
+        ],
+        [
+          "C4",
+          85.5,
+          0.5
+        ],
+        [
+          "G3",
+          86,
+          2
+        ],
+        [
+          "D4",
+          88,
+          0.75
+        ],
+        [
+          "E4",
+          88.75,
+          0.25
+        ],
+        [
+          "D4",
+          89,
+          0.5
+        ],
+        [
+          "E4",
+          89.5,
+          0.25
+        ],
+        [
+          "D4",
+          89.75,
+          0.25
+        ],
+        [
+          "D4",
+          90,
+          2
+        ],
+        [
+          "G4",
+          92,
+          0.75
+        ],
+        [
+          "A4",
+          92.75,
+          0.25
+        ],
+        [
+          "G4",
+          93,
+          0.5
+        ],
+        [
+          "A4",
+          93.5,
+          0.25
+        ],
+        [
+          "G4",
+          93.75,
+          0.25
+        ],
+        [
+          "G4",
+          94,
+          2
+        ],
+        [
+          "A4",
+          96,
+          0.75
+        ],
+        [
+          "C5",
+          96.75,
+          0.25
+        ],
+        [
+          "D5",
+          97,
+          0.25
+        ],
+        [
+          "C5",
+          97.25,
+          0.25
+        ],
+        [
+          "A4",
+          97.5,
+          0.25
+        ],
+        [
+          "G4",
+          97.75,
+          0.25
+        ],
+        [
+          "G4",
+          98,
+          0.5
+        ],
+        [
+          "A4",
+          98.5,
+          0.25
+        ],
+        [
+          "G4",
+          98.75,
+          0.25
+        ],
+        [
+          "E4",
+          99,
+          1
+        ],
+        [
+          "D4",
+          100,
+          0.5
+        ],
+        [
+          "C4",
+          100.5,
+          0.5
+        ],
+        [
+          "A3",
+          101,
+          0.5
+        ],
+        [
+          "C4",
+          101.5,
+          0.5
+        ],
+        [
+          "C4",
+          102,
+          2
+        ],
+        [
+          "D4",
+          104,
+          0.75
+        ],
+        [
+          "E4",
+          104.75,
+          0.25
+        ],
+        [
+          "D4",
+          105,
+          0.5
+        ],
+        [
+          "E4",
+          105.5,
+          0.25
+        ],
+        [
+          "D4",
+          105.75,
+          0.25
+        ],
+        [
+          "D4",
+          106,
+          2
+        ],
+        [
+          "G4",
+          108,
+          0.75
+        ],
+        [
+          "A4",
+          108.75,
+          0.25
+        ],
+        [
+          "G4",
+          109,
+          0.5
+        ],
+        [
+          "A4",
+          109.5,
+          0.25
+        ],
+        [
+          "G4",
+          109.75,
+          0.25
+        ],
+        [
+          "G4",
+          110,
+          2
+        ],
+        [
+          "A4",
+          112,
+          0.75
+        ],
+        [
+          "C5",
+          112.75,
+          0.25
+        ],
+        [
+          "D5",
+          113,
+          0.25
+        ],
+        [
+          "C5",
+          113.25,
+          0.25
+        ],
+        [
+          "A4",
+          113.5,
+          0.25
+        ],
+        [
+          "G4",
+          113.75,
+          0.25
+        ],
+        [
+          "G4",
+          114,
+          0.5
+        ],
+        [
+          "A4",
+          114.5,
+          0.25
+        ],
+        [
+          "G4",
+          114.75,
+          0.25
+        ],
+        [
+          "E4",
+          115,
+          1
+        ],
+        [
+          "D4",
+          116,
+          0.5
+        ],
+        [
+          "C4",
+          116.5,
+          0.5
+        ],
+        [
+          "A3",
+          117,
+          0.5
+        ],
+        [
+          "C4",
+          117.5,
+          0.5
+        ],
+        [
+          "C4",
+          118,
           2
         ]
       ],
       "sourceFeatures": {
         "hasChords": false,
         "hasArpeggio": false,
-        "hasRepeats": true,
-        "sourceImages": [
-          "private/sheets/raw/qing-cheng-shan-xia-bai-su-zhen/qupu123-385868.jpg"
+        "hasRepeats": false,
+        "sourceTotalBeats": 120,
+        "sourceMeasureCount": 30,
+        "sourceUrls": [
+          "https://www.cnjpw.net/tongsu/88391.html",
+          "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png"
         ],
         "unsupported": [
-          "原谱有引子、D.S. 与多段歌词；本版本保留最有辨识度的主旋律段落并展开一次，未录入完整戏曲式反复。"
+          "省略原页第1–5小节器乐前奏和第36–40小节器乐尾奏；所选为完整人声主线，不是带伴奏整首录音。",
+          "省略原页第14、20、26、30、34小节各一个无定量G4倚音；E4主音时值及后续起音不变。"
         ],
-        "unsureMeasures": [
-          "m10/m16/m23 的低 6 按原谱低音点处理为 A3；若后续有演唱版音频指定，可再做细节复核。"
-        ],
+        "unsureMeasures": [],
+        "suitability": {
+          "status": "conditional",
+          "scope": "rollins-ju-jing-yi-complete-principal-vocal-m6-35",
+          "reason": "原C调G3–D5全在固定21音内，无转调或折八度。最短起音间隔0.25拍，82 BPM约183毫秒；16组相邻同音重拨、最大相邻7半音跳进及同侧快速移动仍需慢速分段与实体琴验证，不能据音域较低宣称更容易。",
+          "reviewRequired": [
+            "Reference-recording comparison not performed.",
+            "Browser/audio acceptance is separate from data adoption.",
+            "Physical kalimba play-through not performed.",
+            "Public distribution rights remain unestablished."
+          ]
+        },
         "sourceReview": {
-          "confidence": "medium-high-for-main-vocal-theme",
+          "confidence": "high-for-selected-principal-vocal-notation-only",
           "sources": [
             {
-              "label": "中国曲谱网 青城山下白素贞简谱",
-              "url": "https://www.qupu123.com/Mobile-view-id-385868.html"
+              "label": "罗林斯 / ROLLINS《青城山下白素贞》《新白娘子传奇》插曲 鞠婧祎版",
+              "url": "https://www.cnjpw.net/tongsu/88391.html"
             },
             {
-              "label": "中国曲谱网源图",
-              "url": "https://www.qupu123.com/data2/uploads/2024/07/02/8463166683621139e7f.JPG"
+              "label": "Fixed ROLLINS score image",
+              "url": "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png"
             }
-          ]
+          ],
+          "currentScopeReview": {
+            "status": "reviewed-selected-complete-vocal-edition",
+            "adoptedInVersion": "2.4.36",
+            "selectedEdition": "rollins-ju-jing-yi-complete-principal-vocal",
+            "sourceLabel": "罗林斯 / ROLLINS《青城山下白素贞》《新白娘子传奇》插曲 鞠婧祎版",
+            "sourceUrl": "https://www.cnjpw.net/tongsu/88391.html",
+            "sourceImageUrl": "https://www.cnjpw.net/d/file/081916/ezgd13fq2bm.png",
+            "sourceImageSha256": "8cd195fb40ad63a2ebbb21af1e18b079ef47b0289bd3934a7e492de37cb11224",
+            "identityDecision": "The fixed image explicitly identifies 鞠婧祎版 and ROLLINS / 罗林斯. The web directory labels 庄惠茹; that inconsistent catalog performer is not used as the selected image identity.",
+            "sourceMeasureNumbers": "Editorially counted left to right and top to bottom; measure numbers are not printed.",
+            "sourcePrintedMeasureCount": 40,
+            "sourceMeasureRange": [
+              6,
+              35
+            ],
+            "distinctPrintedMelodyMeasures": 30,
+            "sourcePageBeatRange": [
+              20,
+              140
+            ],
+            "reviewedBeatRanges": [
+              [
+                0,
+                120
+              ]
+            ],
+            "sourceQuarterBpm": 82,
+            "sourceNumericTempoPrinted": true,
+            "sourceKey": "C",
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "tempoDecision": "82 BPM is the printed quarter-note tempo of this selected edition, replacing the prior 80 BPM. The preserved 0.9 suggestion and user-saved speed multiplier are separate settings.",
+            "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+            "voiceDecision": "Lyrics align directly with one monophonic numbered line; this is not the highest note of an accompaniment or a reconstructed vocal from bass/harmony.",
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  6,
+                  35
+                ],
+                "beats": [
+                  0,
+                  120
+                ],
+                "voice": "lyric-aligned-single-vocal-line"
+              }
+            ],
+            "excludedSections": [
+              {
+                "sourceMeasures": [
+                  1,
+                  5
+                ],
+                "kind": "instrumental-intro"
+              },
+              {
+                "sourceMeasures": [
+                  36,
+                  40
+                ],
+                "kind": "instrumental-outro"
+              }
+            ],
+            "omittedSectionsAreRests": false,
+            "selectedEndIsSelectedEditionEnding": true,
+            "selectedEndIsFullSongEnding": false,
+            "formDecision": "All 30 lyric-aligned bars and both separately written closing sequences are retained. No repeat, D.S./D.C., alternate ending or coda is expanded; similar passages were read occurrence by occurrence.",
+            "repeatSignsPresent": false,
+            "repeatExpansion": "none-all-30-selected-bars-written-out",
+            "allPrintedOccurrencesReviewed": true,
+            "metricNoteheadCount": 196,
+            "principalAttackCount": 196,
+            "ties": [],
+            "tieContinuationCount": 0,
+            "tuplets": [],
+            "slurDecision": "Different-pitch and multi-pitch arcs are slurs. G-A-G has intervening A and is not a same-pitch tie. All 16 adjacent same-pitch pairs retain separate attacks.",
+            "independentSamePitchReattackPairs": 16,
+            "silentWindows": [],
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 0,
+            "endingRestBeats": 0,
+            "ornamentDecision": "Five unquantified G4 grace notes are deliberately omitted. No guessed duration is added and no main-note time is stolen. This is not an ornament-complete literal realization.",
+            "omittedOrnaments": [
+              {
+                "sourceMeasure": 14,
+                "beat": 35,
+                "sourcePitch": "G4",
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 20,
+                "beat": 59,
+                "sourcePitch": "G4",
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 26,
+                "beat": 83,
+                "sourcePitch": "G4",
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 30,
+                "beat": 99,
+                "sourcePitch": "G4",
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              },
+              {
+                "sourceMeasure": 34,
+                "beat": 115,
+                "sourcePitch": "G4",
+                "principalPitch": "E4",
+                "principalDuration": 1,
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              }
+            ],
+            "absoluteOctaveConvention": "Undotted 1 = C4; one upper dot raises an octave and one lower dot lowers it. This compiler convention does not assert the singer recording register.",
+            "sourceRange": [
+              "G3",
+              "D5"
+            ],
+            "compiledRange": [
+              "G3",
+              "D5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              2,
+              4,
+              7,
+              9
+            ],
+            "additionalMelodyAccidentals": [],
+            "transpositionSemitones": 0,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "localPitchAlterations": [],
+            "accompanimentDecision": "No accompaniment selected or inferred; the prior edition cannot supply either accompaniment provider path.",
+            "versionDecision": "A deliberate complete vocal edition replaces the shorter unavailable-source reading. This does not prove the prior edition wrong and does not splice its local reading into the new selection.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "independentSourceReaders": 2,
+            "sourceReviewMethod": "Two independent readings of the same fixed score image matched every principal pitch/onset/duration tuple and all 30 bars before adoption; this is not two independent published sources.",
+            "firstFrozenSourceReadingSha256": "802f3f7941e3c95cb30ecf3f3733343f4a3d88e1bc3bb14146f20a888880174f",
+            "independentSourceFixtureSha256": "1777fdcc60b8b34727bb3d711cc3de63f35c9d5b66312bad6b77f5fc9149a96b",
+            "independentSourceTupleSha256": "f0e8609f9e93d42ebbb8558affcf6958581e717c2b517767dcfb399b29ae4cf5",
+            "sourcePixels": "complete fixed image and lyric-aligned vocal boundary viewed at data adoption",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only"
+          },
+          "historicalSourceFeatures": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "sourceImages": [
+              "private/sheets/raw/qing-cheng-shan-xia-bai-su-zhen/qupu123-385868.jpg"
+            ],
+            "unsupported": [
+              "原谱有引子、D.S. 与多段歌词；本版本保留最有辨识度的主旋律段落并展开一次，未录入完整戏曲式反复。"
+            ],
+            "unsureMeasures": [
+              "m10/m16/m23 的低 6 按原谱低音点处理为 A3；若后续有演唱版音频指定，可再做细节复核。"
+            ],
+            "sourceReview": {
+              "confidence": "medium-high-for-main-vocal-theme",
+              "sources": [
+                {
+                  "label": "中国曲谱网 青城山下白素贞简谱",
+                  "url": "https://www.qupu123.com/Mobile-view-id-385868.html"
+                },
+                {
+                  "label": "中国曲谱网源图",
+                  "url": "https://www.qupu123.com/data2/uploads/2024/07/02/8463166683621139e7f.JPG"
+                }
+              ]
+            }
+          },
+          "archivedEdition": {
+            "file": "data/archives/qing-cheng-shan-xia-bai-su-zhen-v2.4.35.json",
+            "fileSha256": "60ef963602fd3a4a7cd83d340d60ff424af4e04d7ab5d69497f37c322c1df7c9",
+            "scope": "Complete byte-exact prior 2.4.35 file, 116 attacks / 72 beats / 80 BPM; unavailable source image is not reverified. Developer recovery only; no extra card or restore UI."
+          }
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "qing-hua-ci": {
       "schemaVersion": 1,
       "id": "qing-hua-ci",
-      "title": "《青花瓷》",
+      "title": "《青花瓷》（主题短版）",
       "uploader": "system",
-      "practiceTitle": "《青花瓷》练习轨道",
-      "scoreTitle": "《青花瓷》简谱进度",
-      "hint": "采用用户提供的一页24小节编配，共24小节，约61秒，收录范围以此谱为准。按图片C调和94 BPM保留上声部旋律、休止与延音，省略伴奏。",
+      "practiceTitle": "《青花瓷》（主题短版）练习轨道",
+      "scoreTitle": "《青花瓷》（主题短版）简谱进度",
+      "hint": "采用EOP简易钢琴谱第25–40小节的单音上声部，83次拨音、64拍；96 BPM为谱面速度。保留休止和延音，无伴奏；仍有同音连拨与跳进，建议慢练。",
       "difficulty": "hard",
-      "bpm": 94,
+      "bpm": 96,
       "defaultSpeedFactor": 1,
       "beatsPerMeasure": 4,
       "key": "C",
@@ -39999,137 +43943,132 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "E5",
+          "G5",
           32,
-          2
+          0.5
         ],
         [
-          "D5",
+          "E5",
+          32.5,
+          1.5
+        ],
+        [
+          "G5",
           34.5,
           0.5
         ],
         [
-          "C5",
+          "G5",
           35,
           0.5
         ],
         [
-          "A4",
+          "E5",
           35.5,
           0.5
         ],
         [
-          "C5",
-          36,
-          1
-        ],
-        [
-          "C5",
-          37,
-          0.5
-        ],
-        [
-          "A4",
-          37.5,
-          0.5
-        ],
-        [
-          "C5",
-          38,
-          1
-        ],
-        [
-          "C5",
-          39,
-          0.5
-        ],
-        [
-          "A4",
-          39.5,
-          0.5
-        ],
-        [
-          "C5",
-          40,
-          0.5
-        ],
-        [
-          "A4",
-          40.5,
-          0.5
-        ],
-        [
-          "G4",
-          41,
-          1
-        ],
-        [
           "D5",
-          42.5,
-          0.5
-        ],
-        [
-          "C5",
-          43,
-          0.5
-        ],
-        [
-          "A4",
-          43.5,
-          0.5
-        ],
-        [
-          "C5",
-          44,
-          1
-        ],
-        [
-          "C5",
-          45,
-          0.5
-        ],
-        [
-          "A4",
-          45.5,
-          0.5
-        ],
-        [
-          "C5",
-          46,
-          1
-        ],
-        [
-          "C5",
-          47,
+          36,
           0.5
         ],
         [
           "E5",
-          47.5,
-          0.5
-        ],
-        [
-          "D5",
-          48,
-          0.5
-        ],
-        [
-          "C5",
-          48.5,
-          0.5
-        ],
-        [
-          "C5",
-          49,
-          1
-        ],
-        [
-          "G4",
-          50.5,
+          36.5,
           0.5
         ],
         [
           "A4",
+          37,
+          1
+        ],
+        [
+          "D5",
+          38,
+          0.5
+        ],
+        [
+          "E5",
+          38.5,
+          0.5
+        ],
+        [
+          "G5",
+          39,
+          0.5
+        ],
+        [
+          "E5",
+          39.5,
+          0.5
+        ],
+        [
+          "D5",
+          40,
+          2
+        ],
+        [
+          "G5",
+          42.5,
+          0.5
+        ],
+        [
+          "G5",
+          43,
+          0.5
+        ],
+        [
+          "E5",
+          43.5,
+          0.5
+        ],
+        [
+          "D5",
+          44,
+          0.5
+        ],
+        [
+          "E5",
+          44.5,
+          0.5
+        ],
+        [
+          "G4",
+          45,
+          1
+        ],
+        [
+          "D5",
+          46,
+          0.5
+        ],
+        [
+          "E5",
+          46.5,
+          0.5
+        ],
+        [
+          "G5",
+          47,
+          0.5
+        ],
+        [
+          "D5",
+          47.5,
+          0.5
+        ],
+        [
+          "C5",
+          48,
+          2
+        ],
+        [
+          "C5",
+          50.5,
+          0.5
+        ],
+        [
+          "D5",
           51,
           0.5
         ],
@@ -40139,24 +44078,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "E5",
+          "G5",
           52,
-          1
+          0.5
         ],
         [
-          "E5",
+          "A5",
+          52.5,
+          0.5
+        ],
+        [
+          "G5",
           53,
           0.5
         ],
         [
-          "D5",
+          "E5",
           53.5,
           0.5
         ],
         [
-          "E5",
+          "G5",
           54,
-          1
+          0.5
+        ],
+        [
+          "E5",
+          54.5,
+          0.5
         ],
         [
           "E5",
@@ -40169,279 +44118,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "E5",
+          "D5",
           56,
-          0.5
-        ],
-        [
-          "G5",
-          56.5,
           1
         ],
         [
-          "E5",
+          "G4",
           57.5,
           0.5
         ],
         [
           "E5",
-          58.5,
-          0.5
+          58,
+          1
         ],
         [
-          "E5",
+          "D5",
           59,
           0.5
         ],
         [
-          "E5",
+          "D5",
           59.5,
-          0.5
+          1
         ],
         [
-          "D5",
-          60,
-          0.5
-        ],
-        [
-          "D5",
+          "C5",
           60.5,
-          0.5
-        ],
-        [
-          "D5",
-          61,
-          0.5
-        ],
-        [
-          "D5",
-          61.5,
-          0.5
-        ],
-        [
-          "D5",
-          62,
-          1
-        ],
-        [
-          "C5",
-          63,
-          0.5
-        ],
-        [
-          "E5",
-          63.5,
-          1
-        ],
-        [
-          "D5",
-          64.5,
-          1.5
-        ],
-        [
-          "D5",
-          66.5,
-          0.5
-        ],
-        [
-          "C5",
-          67,
-          0.5
-        ],
-        [
-          "A4",
-          67.5,
-          0.5
-        ],
-        [
-          "C5",
-          68,
-          1
-        ],
-        [
-          "C5",
-          69,
-          0.5
-        ],
-        [
-          "A4",
-          69.5,
-          0.5
-        ],
-        [
-          "C5",
-          70,
-          1
-        ],
-        [
-          "C5",
-          71,
-          0.5
-        ],
-        [
-          "A4",
-          71.5,
-          0.5
-        ],
-        [
-          "C5",
-          72,
-          0.5
-        ],
-        [
-          "A4",
-          72.5,
-          0.5
-        ],
-        [
-          "G4",
-          73,
-          1
-        ],
-        [
-          "G4",
-          74.5,
-          0.5
-        ],
-        [
-          "A4",
-          75,
-          0.5
-        ],
-        [
-          "E5",
-          75.5,
-          0.5
-        ],
-        [
-          "G5",
-          76,
-          1
-        ],
-        [
-          "G5",
-          77,
-          0.5
-        ],
-        [
-          "E5",
-          77.5,
-          0.5
-        ],
-        [
-          "G5",
-          78,
-          1
-        ],
-        [
-          "G5",
-          79,
-          0.5
-        ],
-        [
-          "E5",
-          79.5,
-          0.5
-        ],
-        [
-          "D5",
-          80,
-          0.5
-        ],
-        [
-          "C5",
-          80.5,
-          0.5
-        ],
-        [
-          "C5",
-          81,
-          1
-        ],
-        [
-          "D5",
-          82.5,
-          0.5
-        ],
-        [
-          "C5",
-          83,
-          0.5
-        ],
-        [
-          "D5",
-          83.5,
-          0.5
-        ],
-        [
-          "E5",
-          84,
-          0.5
-        ],
-        [
-          "D5",
-          84.5,
-          0.5
-        ],
-        [
-          "D5",
-          85,
-          0.5
-        ],
-        [
-          "C5",
-          85.5,
-          0.5
-        ],
-        [
-          "D5",
-          86,
-          1
-        ],
-        [
-          "C5",
-          87,
-          0.5
-        ],
-        [
-          "A4",
-          87.5,
-          0.5
-        ],
-        [
-          "D5",
-          88,
-          0.5
-        ],
-        [
-          "C5",
-          88.5,
-          0.5
-        ],
-        [
-          "C5",
-          89,
-          0.5
-        ],
-        [
-          "A4",
-          89.5,
-          0.5
-        ],
-        [
-          "C5",
-          90,
-          1
-        ],
-        [
-          "C5",
-          91,
-          0.5
-        ],
-        [
-          "C5",
-          91.5,
-          4.5
+          3.5
         ]
       ],
       "sourceFeatures": {
@@ -40449,41 +44153,1948 @@ export const SONG_LIBRARY = {
         "hasArpeggio": true,
         "hasRepeats": false,
         "unsupported": [
-          "本版为单音主旋律练习；省略下声部伴奏，主声部叠音取最高音。",
-          "仅编译用户提供图片的完整编配范围，不补写图片之外的原曲段落。"
+          "选取简易钢琴编配中明确的单音上声部，省略全部下声部伴奏及末尾琶音；不是从叠音中猜最高音。",
+          "主题短版只限定练习范围，不是完整原曲或已核准人声转谱；当前不加入自动伴奏。",
+          "谱源公开再发布权限尚未确定，仅作本地预览；参考录音、浏览器试听与实体琴验收分别待查。"
         ],
         "unsureMeasures": [],
-        "arranger": "羊阿宝工作室",
         "sources": [
           {
-            "label": "用户直接提供的羊阿宝工作室《青花瓷》一页图片谱；音高、速度、节奏均来自该图"
+            "label": "EveryonePiano #1676 简易钢琴编配，选第25–40小节上声部",
+            "url": "https://www.everyonepiano.cn/Number-1676.html"
+          },
+          {
+            "label": "同一EOP编配的五线谱输出，供节奏及延音端点核对；非第二个独立来源",
+            "url": "https://www.everyonepiano.cn/Stave-1676.html"
           }
         ],
-        "transcriptionScope": "supplied-arrangement-24-measures",
-        "sourceMeasureCount": 24,
-        "sourceTotalBeats": 96,
+        "transcriptionScope": "selected-piano-theme-excerpt-source-m25-40",
+        "sourceMeasureCount": 16,
+        "sourceTotalBeats": 64,
         "sourceKey": "C",
         "transpositionSemitones": 0,
         "tempoStatus": "printed-quarter-note-tempo",
         "meterStatus": "printed-4/4",
         "suitability": {
           "status": "conditional",
-          "scope": "supplied-arrangement-24-measures",
-          "reason": "所提供C调编配的旋律音均落在固定21音自然音范围；保留旋律轮廓、节奏和延音，伴奏简化。",
+          "scope": "selected-piano-theme-excerpt-source-m25-40",
+          "reason": "16小节主题练习范围更短，但不代表技巧更简单：G4–A5音域、最短半拍及最大9半音跳进均未降低。明确单音上声部原调可落在固定21音范围，同音连拨、换手与长音自然衰减仍须慢练确认。",
           "reviewRequired": [
-            "实体琴换手、音色衰减与主观旋律辨识度尚待试听。"
+            "参考录音对照及主观旋律辨识度尚未试听。",
+            "实际浏览器1.0×和所选练习倍率的音频、起音与休止待核；曲谱defaultSpeedFactor不代表用户当前倍率。",
+            "实体21音卡林巴换手、同侧连续拨音、跳进及衰减待实弹。",
+            "公开发布前另行确定作品及所选编配的再发布权限。"
           ]
+        },
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-piano-theme-excerpt",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.20",
+            "contentRevision": "porcelain-eop-upper-theme-m25-40-2026-10-12",
+            "selectedEdition": "eop-1676-simple-piano-upper-staff-m25-40",
+            "sourceUrl": "https://www.everyonepiano.cn/Number-1676.html",
+            "parallelStaffUrl": "https://www.everyonepiano.cn/Stave-1676.html",
+            "parallelExportsAreIndependentSources": false,
+            "sourceAssetHashes": {
+              "eop-number1.png": "e290886fce2779720fbd7f76442d6d8af50f7e7657f53803dc77f1b9a01845d9",
+              "eop-number2.png": "3ebedd2a975d6408fffd11dfe341b1a0f8a847aec50ad6aa4e4b544c96b5b283",
+              "eop-number3.png": "01525afd9dafecc8121e9cb5787c463928d463c99a3efbb94c075fc65b08eba4",
+              "eop-staff1.png": "42ebcbd57528eeccd704e92968bc74a12a8141faa168971d05f641ecda63dcd7",
+              "eop-staff2.png": "3156d9269f9a5e61d7eda009ec90897e6e129d70ef1a1a6a2350b05e37682f51"
+            },
+            "sourceMeasureRange": [
+              25,
+              40
+            ],
+            "sourceBeatRange": [
+              96,
+              160
+            ],
+            "sourceToExcerptBeatOffset": -96,
+            "reviewedBeatRanges": [
+              [
+                0,
+                64
+              ]
+            ],
+            "sourceVoice": "explicit-monophonic-upper-staff",
+            "voiceDecision": "Select the separately notated monophonic piano treble part, not the highest note of a chord. Omit the entire lower staff, including its closing arpeggio.",
+            "vocalLineCertified": false,
+            "sectionLabel": "Theme excerpt is an editorial scope label. The EOP score labels Piano and has no printed chorus heading or lyrics; this is not a certified vocal transcription or the complete recording.",
+            "sourceKey": "C",
+            "sourceQuarterBpm": 96,
+            "sourceMeter": "4/4",
+            "sourceRange": [
+              "G4",
+              "A5"
+            ],
+            "compiledRange": [
+              "G4",
+              "A5"
+            ],
+            "transpositionSemitones": 0,
+            "octaveFolding": false,
+            "melodyAccidentals": [],
+            "localPitchAlterations": [],
+            "pickupBeats": 0,
+            "openingDecision": "Source m25 is a full four-beat bar with 2.5 beats of written melody rest; first attack G5 at 2.5. No incoming tie, removed pickup or added note.",
+            "repeatExpansion": "none-all-selected-bars-written-out",
+            "melodyRestScope": "upper-staff-only-lower-source-accompaniment-omitted",
+            "melodyRestWindows": [
+              {
+                "beat": 0,
+                "duration": 2.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 10,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 18,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 26,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 34,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 42,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 50,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              },
+              {
+                "beat": 57,
+                "duration": 0.5,
+                "kind": "written-melody-rest"
+              }
+            ],
+            "ties": [
+              {
+                "sourceMeasures": [
+                  32
+                ],
+                "mergedAttack": [
+                  "D5",
+                  29.5,
+                  1
+                ],
+                "segments": [
+                  [
+                    "D5",
+                    29.5,
+                    0.5
+                  ],
+                  [
+                    "D5",
+                    30,
+                    0.5
+                  ]
+                ],
+                "evidence": "Same D5 eighths joined by an explicit arc in the staff and numbered exports."
+              },
+              {
+                "sourceMeasures": [
+                  39,
+                  40
+                ],
+                "mergedAttack": [
+                  "D5",
+                  59.5,
+                  1
+                ],
+                "segments": [
+                  [
+                    "D5",
+                    59.5,
+                    0.5
+                  ],
+                  [
+                    "D5",
+                    60,
+                    0.5
+                  ]
+                ],
+                "evidence": "Explicit cross-bar eighth-to-eighth tie; preceding D5 at 59 is a separate attack."
+              },
+              {
+                "sourceMeasures": [
+                  40
+                ],
+                "mergedAttack": [
+                  "C5",
+                  60.5,
+                  3.5
+                ],
+                "segments": [
+                  [
+                    "C5",
+                    60.5,
+                    1.5
+                  ],
+                  [
+                    "C5",
+                    62,
+                    2
+                  ]
+                ],
+                "evidence": "Dotted quarter tied to half; no retrigger at beat 62."
+              }
+            ],
+            "separateAttackExamples": [
+              [
+                [
+                  "G5",
+                  31.5,
+                  0.5
+                ],
+                [
+                  "G5",
+                  32,
+                  0.5
+                ]
+              ],
+              [
+                [
+                  "D5",
+                  59,
+                  0.5
+                ],
+                [
+                  "D5",
+                  59.5,
+                  1
+                ]
+              ]
+            ],
+            "endingRestBeats": 0,
+            "endingDecision": "Final C5 at 60.5 lasts 3.5 beats to the printed final double bar at 64. No invented ending silence, repeat, extension or replacement of natural kalimba decay.",
+            "oldEditionReverified": false,
+            "versionDecision": "Deliberately selected shorter piano edition, not proof that the old edition is wrong. Old beats [0,32) contain the same first 42 tuples; later form and timing differ. Do not splice missing original material into this excerpt.",
+            "legacyComparison": {
+              "sharedFirstTuples": 42,
+              "sharedBeatRange": [
+                0,
+                32
+              ],
+              "archivedLaterAttacks": 89,
+              "selectedLaterAttacks": 41,
+              "archivedBpm": 94,
+              "selectedPrintedBpm": 96,
+              "meaning": "94 is the previous encoding. Its historical claim of a printed tempo cannot be rechecked without the original photo; it is not declared wrong."
+            },
+            "supportDecision": "No original qing-hua-ci V2/backing sibling was found. Add no support; the exact compatibility guard rejects the archived melody/timebase even if its BPM is set to 96.",
+            "sourcePixelReview": "All selected bars checked in both parallel exports; independent pre-edit reading agrees on all 83 pitch/onset/duration tuples. Parallel exports remain one edition.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-local-preview-only",
+            "rightsNotice": "EOP preview says 禁止转载. Public access and successful transcription do not establish public reproduction/distribution permission; no public push or publication is authorized by this local preview."
+          },
+          "archivedEdition": {
+            "file": "data/archives/qing-hua-ci-v2.4.19.json",
+            "fileSha256": "ae805daffe79f68916a8c88afe0b931b45fd14ec6bc65eb06761c7993e918b21",
+            "purpose": "Byte-exact developer provenance only; retain every historical field without a second built-in, restore UI, route allowlist or precache."
+          },
+          "historicalEditionStatus": "The original 羊阿宝工作室 24-bar user photo is missing. Its highest-note extraction and historical source/tempo/suitability claims remain unresolved; the complete unchanged JSON preserves those claims as history, not current verification."
+        }
+      },
+      "tuning": "21-key-c"
+    },
+  "qing-hua-ci-reviewed-support": {
+      "schemaVersion": 2,
+      "id": "qing-hua-ci-reviewed-support",
+      "baseSongId": "qing-hua-ci",
+      "title": "《青花瓷》（主题短版）",
+      "versionLabel": "主旋律资料 · 可选根音轻伴奏",
+      "arrangementKind": "melody",
+      "judgementMode": "melody",
+      "uploader": "system",
+      "practiceTitle": "《青花瓷》（主题短版）练习轨道",
+      "scoreTitle": "《青花瓷》（主题短版）简谱进度",
+      "hint": "EOP简易钢琴谱第25–40小节；83个实体单音目标、64拍与96 BPM不变。可选轻伴奏只保留15个小节首根音，低声部统一升八度，默认关闭；拍57的旋律休止处保留原谱低音延续。末根音仅半拍，后续琶音省略；这是稀疏减配，不是完整钢琴和声。",
+      "difficulty": "hard",
+      "bpm": 96,
+      "defaultSpeedFactor": 1,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "tuning": "21-key-c",
+      "events": [
+        {
+          "beat": 2.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 10.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 13,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 14,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 14.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 16,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 18.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 22,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 22.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 26.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 29,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 29.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 30.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 31.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32.5,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 34.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 35,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 35.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 38,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 38.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 42.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 45,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 46,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 46.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 47,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 47.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 48,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 50.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 51,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 51.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 52,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 52.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 53,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 53.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 54,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 54.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 56,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 57.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 58,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 59,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 59.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 60.5,
+          "duration": 3.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        }
+      ],
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "events": [
+          {
+            "beat": 4,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 8,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "E4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 40,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "E4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 48,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 52,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "D4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 56,
+            "duration": 2,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 60,
+            "duration": 0.5,
+            "pattern": "source-downbeat-root-octave-candidate",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          }
+        ]
+      },
+      "rhythm": {
+        "sourceStatus": "verified",
+        "pickupBeats": 0,
+        "restWindows": [
+          {
+            "beat": 0,
+            "duration": 2.5,
+            "policy": "silent",
+            "reason": "Source m25: both staves are written silent only in [0,2.5); lower rest continues to 4 while melody starts at 2.5."
+          },
+          {
+            "beat": 10,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 18,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 26,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 34,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 42,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 50,
+            "duration": 0.5,
+            "policy": "silent",
+            "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+          },
+          {
+            "beat": 57,
+            "duration": 0.5,
+            "policy": "hold",
+            "reason": "Source m39: the first lower G2-B2-D3 half-note chord spans [56,58); retain its root G2 shifted uniformly to G3 for the exact two beats. No new attack occurs in [57,57.5)."
+          }
+        ],
+        "sources": [
+          {
+            "label": "EveryonePiano #1676 简易钢琴编配，所选第25–40小节",
+            "url": "https://www.everyonepiano.cn/Number-1676.html"
+          },
+          {
+            "label": "同一编配五线谱第2页，非第二独立谱源",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-w-b-2.png"
+          },
+          {
+            "label": "同一编配简谱第2页",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-2.png"
+          },
+          {
+            "label": "同一编配简谱第3页",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-3.png"
+          }
+        ]
+      },
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": false,
+        "transcriptionScope": "selected-piano-theme-m25-40-with-optional-downbeat-root-reduction",
+        "sourceMeasureCount": 16,
+        "sourceTotalBeats": 64,
+        "sourceKey": "C",
+        "transpositionSemitones": 0,
+        "tempoStatus": "printed-quarter-note-tempo",
+        "meterStatus": "printed-4/4",
+        "sources": [
+          {
+            "label": "EveryonePiano #1676 简易钢琴编配，所选第25–40小节",
+            "url": "https://www.everyonepiano.cn/Number-1676.html"
+          },
+          {
+            "label": "同一编配五线谱第2页，非第二独立谱源",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-w-b-2.png"
+          },
+          {
+            "label": "同一编配简谱第2页",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-2.png"
+          },
+          {
+            "label": "同一编配简谱第3页",
+            "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-3.png"
+          }
+        ],
+        "unsupported": [
+          "钢琴上声部83个实体目标逐项沿用当前V1；新增支持仅由App播放，不增实体和弦、低音目标或练习卡。",
+          "同谱低声部35次起音、91个音高攻击缩减为15个首根音；保留部分统一升12半音，省略三音、五音、各小节第二和弦及末小节后六次琶音。不是完整低声部或完整和声再现。",
+          "拍57–57.5仅上声部休止，下声部G根音按原谱半音符延续；其余六处短旋律休止的原谱第二和弦一律省略。",
+          "末支持C4在拍60写定0.5拍，不延长、不加终止低音；其后3.5拍是减配省略而非原谱休止。完整采样与效果器仍有自然余响。",
+          "源图及完整私人转谱不进入仓库。谱页禁止转载，公开传播权限未确定；本地候选不构成发布许可。"
+        ],
+        "unsureMeasures": [],
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-piano-theme-m25-40-with-optional-downbeat-root-reduction",
+          "reason": "83个主旋律目标原样保留。15个支持音由原谱首根音统一升八度到F3–E4，均低于重叠旋律；稀疏根音省略完整和弦色彩及末尾上行织体，不能把数值可用或低增益当作听感批准。",
+          "reviewRequired": [
+            "参考录音、源速与实际练习倍率的主观A/B以及实体琴检查仍须分别记录。",
+            "完整采样和效果尾部不是写定duration；不得删PCM、改时值或补拨以制造严格静音。",
+            "公开传播权另行确定。"
+          ]
+        },
+        "practiceAccompaniment": {
+          "status": "needs-review",
+          "independentlyVerified": false,
+          "reviewedOn": "2026-10-12",
+          "candidate": "sparse15-downbeat-root-uniform-plus12",
+          "physicalTarget": "single-melody",
+          "sourceVoice": "written-lower-staff-root-reduction-with-uniform-octave-shift",
+          "sourceMeasureRange": [
+            25,
+            40
+          ],
+          "sourceBeatRange": [
+            96,
+            160
+          ],
+          "sourceToExcerptBeatOffset": -96,
+          "reviewedBeatRanges": [
+            [
+              0,
+              64
+            ]
+          ],
+          "sourcePixels": "All selected lower bars, m39 two-staff rest/hold and m40 sequential ending were inspected; three independent readings and the integration lead agree on the notes and durations. The staff/numbered exports are one arrangement, not independent editions. This evidence does not approve listening or physical performance.",
+          "parallelExportsAreIndependentSources": false,
+          "sourceAssetHashes": {
+            "eop-staff2.png": "3156d9269f9a5e61d7eda009ec90897e6e129d70ef1a1a6a2350b05e37682f51",
+            "eop-number2.png": "3ebedd2a975d6408fffd11dfe341b1a0f8a847aec50ad6aa4e4b544c96b5b283",
+            "eop-number3.png": "01525afd9dafecc8121e9cb5787c463928d463c99a3efbb94c075fc65b08eba4"
+          },
+          "sourceRootReview": {
+            "printedChordLabels": false,
+            "chordNameBasis": "Analytical names inferred from explicit root-position F-A-C, G-B-D, E-G-B, A-C-E, D-F-A and C-E-G triads; m40 is a sequential tonic arpeggio, not a seven-note chord.",
+            "retainedDownbeats": [
+              {
+                "measure": 26,
+                "beat": 4,
+                "sourceRoot": "F2",
+                "analyticalChord": "F",
+                "retainedRoot": "F3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 27,
+                "beat": 8,
+                "sourceRoot": "G2",
+                "analyticalChord": "G",
+                "retainedRoot": "G3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 28,
+                "beat": 12,
+                "sourceRoot": "E3",
+                "analyticalChord": "Em",
+                "retainedRoot": "E4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 29,
+                "beat": 16,
+                "sourceRoot": "A2",
+                "analyticalChord": "Am",
+                "retainedRoot": "A3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 30,
+                "beat": 20,
+                "sourceRoot": "D3",
+                "analyticalChord": "Dm",
+                "retainedRoot": "D4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 31,
+                "beat": 24,
+                "sourceRoot": "G2",
+                "analyticalChord": "G",
+                "retainedRoot": "G3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 32,
+                "beat": 28,
+                "sourceRoot": "C3",
+                "analyticalChord": "C",
+                "retainedRoot": "C4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 33,
+                "beat": 32,
+                "sourceRoot": "C3",
+                "analyticalChord": "C",
+                "retainedRoot": "C4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 34,
+                "beat": 36,
+                "sourceRoot": "F2",
+                "analyticalChord": "F",
+                "retainedRoot": "F3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 35,
+                "beat": 40,
+                "sourceRoot": "G2",
+                "analyticalChord": "G",
+                "retainedRoot": "G3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 36,
+                "beat": 44,
+                "sourceRoot": "E3",
+                "analyticalChord": "Em",
+                "retainedRoot": "E4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 37,
+                "beat": 48,
+                "sourceRoot": "A2",
+                "analyticalChord": "Am",
+                "retainedRoot": "A3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 38,
+                "beat": 52,
+                "sourceRoot": "D3",
+                "analyticalChord": "Dm",
+                "retainedRoot": "D4",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 39,
+                "beat": 56,
+                "sourceRoot": "G2",
+                "analyticalChord": "G",
+                "retainedRoot": "G3",
+                "duration": 2,
+                "basis": "written-root-position-triad"
+              },
+              {
+                "measure": 40,
+                "beat": 60,
+                "sourceRoot": "C3",
+                "analyticalChord": "C",
+                "retainedRoot": "C4",
+                "duration": 0.5,
+                "basis": "first-note-of-written-tonic-arpeggio"
+              }
+            ],
+            "literalLowerEventCount": 35,
+            "literalLowerPitchAttacks": 91,
+            "literalLowerRange": [
+              "F2",
+              "C5"
+            ],
+            "literalLowerTies": 0,
+            "literalLowerAccidentals": [],
+            "sourceLowerRestWindows": [
+              {
+                "beat": 0,
+                "duration": 4
+              }
+            ]
+          },
+          "reduction": {
+            "semitoneShift": 12,
+            "melodySemitoneShift": 0,
+            "octaveFolding": false,
+            "accidentalNaturalization": false,
+            "addedNotes": false,
+            "addedAttacks": false,
+            "completeChordFidelity": false,
+            "literalRegisterPreserved": false,
+            "retainedSourceAttackCount": 15,
+            "omittedFirstChordTones": 28,
+            "omittedSecondChordAttacks": 42,
+            "omittedFinalArpeggioAttacks": 6,
+            "totalOmittedPitchAttacks": 76,
+            "maximumSimultaneousSupportNotes": 1,
+            "retainedRange": [
+              "F3",
+              "E4"
+            ],
+            "onsetDecision": "Retain exactly the first root of every sounding lower bar m26–40. Independently written repeated C roots in m32 and m33 remain separate attacks.",
+            "durationDecision": "Fourteen source half-note roots retain two beats; final source C3 eighth note becomes C4 for 0.5 beat. No source second chord is merged into a four-beat hold.",
+            "secondChordOmittedBeats": [
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58
+            ]
+          },
+          "restAndEnding": {
+            "melodyRestWindows": [
+              {
+                "beat": 0,
+                "duration": 2.5
+              },
+              {
+                "beat": 10,
+                "duration": 0.5
+              },
+              {
+                "beat": 18,
+                "duration": 0.5
+              },
+              {
+                "beat": 26,
+                "duration": 0.5
+              },
+              {
+                "beat": 34,
+                "duration": 0.5
+              },
+              {
+                "beat": 42,
+                "duration": 0.5
+              },
+              {
+                "beat": 50,
+                "duration": 0.5
+              },
+              {
+                "beat": 57,
+                "duration": 0.5
+              }
+            ],
+            "sourceLowerRestWindows": [
+              {
+                "beat": 0,
+                "duration": 4
+              }
+            ],
+            "allLayerSilentWindows": [
+              {
+                "beat": 0,
+                "duration": 2.5
+              }
+            ],
+            "silentReductionRestBeats": [
+              10,
+              18,
+              26,
+              34,
+              42,
+              50
+            ],
+            "retainedHold": {
+              "beat": 57,
+              "duration": 0.5,
+              "sourceMeasure": 39,
+              "sourceChord": [
+                "G2",
+                "B2",
+                "D3"
+              ],
+              "sourceSpan": {
+                "beat": 56,
+                "duration": 2
+              },
+              "retainedTuple": [
+                "G3",
+                56,
+                2
+              ],
+              "decision": "Explicitly retain the evidenced half-note root across the upper rest. This is lower activity, never all-layer silence and never a new rest-fill attack."
+            },
+            "finalReductionOmission": {
+              "beat": 60.5,
+              "duration": 3.5,
+              "sourceSilent": false,
+              "omittedSequentialAttacks": 6
+            },
+            "lastSupportTuple": [
+              "C4",
+              60,
+              0.5
+            ],
+            "supportWrittenEnd": 60.5,
+            "lastMelodyTuple": [
+              "C5",
+              60.5,
+              3.5
+            ],
+            "scoreEnd": 64,
+            "endingRestBeats": 0
+          },
+          "settings": {
+            "enabledByDefault": false,
+            "volume": 0.3,
+            "noteVelocity": 0.32,
+            "provenance": "Conservative quiet trial settings, not source dynamics or subjective sound approval; preserve explicit remembered settings."
+          },
+          "melodyCompatibility": {
+            "baseSongId": "qing-hua-ci",
+            "attackCount": 83,
+            "tupleSha256": "fffdfef74853e1f23ed27be6fa95609750c2f0ed10f7496f5aa6cb274912fa54",
+            "fileSha256": "1c7162c13e5d4e843016dba7f37acaa725a98870a304ce6b649f7269f041e64e",
+            "bpm": 96,
+            "totalBeats": 64,
+            "contentCompatible": true,
+            "decision": "Borrow only when the current exact melody, BPM and ending extent match. Original V1 bytes remain unchanged; its no-support statements record the preceding melody-adoption stage."
+          },
+          "historicalSibling": {
+            "exists": false,
+            "automaticAccompanimentAdded": false,
+            "decision": "No historical Porcelain V2/backing sibling exists. The archived 131-attack melody remains private developer recovery evidence and is not compatible with this 83-attack companion."
+          },
+          "acousticTailBoundary": "Written durations, full decoded sample buffers and complete effects-output tails are separate. Normal playback uses full original PCM plus a 0.55-second convolution response, filtering and compression; two beats or 0.5 beat do not trim a sample. Numerical diagnostics found low but nonzero cross-harmony/end64 tails. Do not assert acoustic silence, listening approval or physical sustain from the data.",
+          "importBoundary": "Built-in practiceAccompaniment is not a lossless external import representation: the current importer drops that playback field while preserving melody/rhythm/metadata. A separately labelled external V2 representation must use autoAccompaniment and retain the exact evidenced hold window; no importer changes are included.",
+          "evidenceFingerprints": {
+            "candidateBlockSha256": "3d146c15f97b3a61c89153caabb8018ab862ad1eaf3f148ada314248ae0d4a69"
+          },
+          "browserAudio": "not-performed-in-data-stage",
+          "referenceListening": "not-performed",
+          "physicalKalimba": "not-performed",
+          "publicDistributionRights": "unestablished-local-preview-only",
+          "limits": "Source-derived root reduction and exact encoding only. Independent score readings are separate from review of the entire arrangement, subjective A/B, physical play-through and publication permission."
         }
       }
     },
   "rang-wo-men-dang-qi-shuang-jiang": {
       "schemaVersion": 1,
       "id": "rang-wo-men-dang-qi-shuang-jiang",
-      "title": "《让我们荡起双桨》",
+      "title": "《让我们荡起双桨》（教材版）",
       "uploader": "system",
-      "practiceTitle": "《让我们荡起双桨》练习轨道",
-      "scoreTitle": "《让我们荡起双桨》简谱进度",
-      "hint": "完整一段主歌与副歌，略去前奏和间奏；保留半拍起唱、附点及连音。整体升高八度，保持结尾低音走向。",
+      "practiceTitle": "《让我们荡起双桨》（教材版）练习轨道",
+      "scoreTitle": "《让我们荡起双桨》（教材版）简谱进度",
+      "hint": "山东教育出版社教材版：完整30小节主歌与副歌主声部，63次起音、60拍；降E调统一降3半音至C调（A3–C5），保留三处延音线及四处休止。省略第7小节非定量倚音与副歌下声部，不按三行歌词增加反复；96 BPM为练习设定。",
       "difficulty": "medium",
       "bpm": 96,
       "defaultSpeedFactor": 0.9,
@@ -40491,272 +46102,272 @@ export const SONG_LIBRARY = {
       "key": "C",
       "steps": [
         [
-          "A4",
+          "A3",
           0.5,
           0.5
         ],
         [
-          "C5",
+          "C4",
           1,
           0.5
         ],
         [
-          "D5",
+          "D4",
           1.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           2,
           1.5
         ],
         [
-          "G5",
+          "G4",
           3.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           4,
           0.5
         ],
         [
-          "C5",
+          "C4",
           4.5,
           0.5
         ],
         [
-          "D5",
+          "D4",
           5,
           1
         ],
         [
-          "A4",
+          "A3",
           6,
           2
         ],
         [
-          "C5",
+          "C4",
           8.5,
           0.5
         ],
         [
-          "D5",
+          "D4",
           9,
           0.5
         ],
         [
-          "E5",
+          "E4",
           9.5,
           0.5
         ],
         [
-          "G5",
+          "G4",
           10,
           1.5
         ],
         [
-          "G5",
+          "G4",
           11.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           12,
           1
         ],
         [
-          "D5",
+          "D4",
           13,
           1
         ],
         [
-          "E5",
+          "E4",
           14,
           3
         ],
         [
-          "E5",
+          "E4",
           17,
           0.5
         ],
         [
-          "G5",
+          "G4",
           17.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           18,
           2
         ],
         [
-          "G5",
+          "G4",
           20,
           1.5
         ],
         [
-          "A5",
+          "A4",
           21.5,
           0.5
         ],
         [
-          "C6",
+          "C5",
           22,
           0.5
         ],
         [
-          "B5",
+          "B4",
           22.5,
           0.25
         ],
         [
-          "A5",
+          "A4",
           22.75,
           0.25
         ],
         [
-          "G5",
+          "G4",
           23,
           0.5
         ],
         [
-          "A5",
+          "A4",
           23.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           24,
           1
         ],
         [
-          "C5",
+          "C4",
           25,
           0.5
         ],
         [
-          "D5",
+          "D4",
           25.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           26,
           1.5
         ],
         [
-          "G5",
+          "G4",
           27.5,
           0.5
         ],
         [
-          "C5",
+          "C4",
           28,
           1
         ],
         [
-          "A4",
+          "A3",
           29,
           1
         ],
         [
-          "C5",
+          "C4",
           30,
           0.5
         ],
         [
-          "D5",
+          "D4",
           30.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           31,
           0.5
         ],
         [
-          "A5",
+          "A4",
           31.5,
           0.5
         ],
         [
-          "G5",
+          "G4",
           32,
           3
         ],
         [
-          "E5",
+          "E4",
           36,
           2
         ],
         [
-          "A5",
+          "A4",
           38,
           1.5
         ],
         [
-          "A5",
+          "A4",
           39.5,
           0.5
         ],
         [
-          "G5",
+          "G4",
           40,
           0.5
         ],
         [
-          "F5",
+          "F4",
           40.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           41,
           1
         ],
         [
-          "D5",
+          "D4",
           42,
           2
         ],
         [
-          "E5",
+          "E4",
           44,
           1.5
         ],
         [
-          "G5",
+          "G4",
           45.5,
           0.5
         ],
         [
-          "A4",
+          "A3",
           46,
           0.5
         ],
         [
-          "C5",
+          "C4",
           46.5,
           0.5
         ],
         [
-          "D5",
+          "D4",
           47,
           1
         ],
         [
-          "C5",
+          "C4",
           49,
           0.5
         ],
         [
-          "D5",
+          "D4",
           49.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           50,
           1
         ],
@@ -40811,41 +46422,283 @@ export const SONG_LIBRARY = {
         "hasArpeggio": false,
         "hasRepeats": false,
         "unsupported": [
-          "不含器乐前奏、歌词换段间奏及重复演唱；末尾采用最终结束句。",
-          "省略装饰倚音与第二合唱声部，仅保留主旋律。",
-          "整条旋律升高一个八度，避免结尾E3超出21音C调琴音域。"
+          "采用山东教育出版社教材完整30小节的主歌及歌词对应副歌上声部，略去副歌下声部；未添加或借用伴奏。",
+          "第7小节小字倚音5没有定量时值，明确省略，不凭空分配节拍、偷走主音时值或增加判定音。",
+          "三行主歌歌词没有可见反复指令；仅演奏完整印刷曲调一遍，不代表所有演唱段落或原唱全曲。",
+          "统一降3半音至C调，不局部折叠八度；这是另选教材版本，不证明未找回的旧曲谱错误。旧版完整数据及全部来源历史原样保留。",
+          "原谱仅标“稍快 优美地”，96 BPM与medium难度为练习选择；0.9建议保留，不覆盖实际已选速度。参考录音、浏览器音频及实琴是独立验收项；公开发行权尚未确认。"
         ],
         "unsureMeasures": [],
         "sources": [
           {
-            "label": "中国曲谱网《让我们荡起双桨》领唱合唱谱（版本三）",
-            "url": "https://www.qupu123.com/shaoer/qizi/p53613.html"
-          },
-          {
-            "label": "人人钢琴网 降E调双手简谱（对照）",
-            "url": "https://www.everyonepiano.cn/Number-1144.html"
+            "label": "山东教育出版社《音乐（简谱）五年级 下册》（五·四学制），印刷页36–37 / PDF页41–42",
+            "url": "https://v.sjs.com.cn/ebooks/58E2823C.pdf"
           }
         ],
-        "transcriptionScope": "one-strophe-and-refrain",
+        "transcriptionScope": "selected-complete-printed-strophe-and-refrain-principal-voice",
+        "sourceMeasureCount": 30,
+        "sourceTotalBeats": 60,
+        "sourceKey": "Eb",
+        "transpositionSemitones": -3,
+        "tempoStatus": "editorial-practice-tempo-source-verbal-only",
+        "meterStatus": "printed-2/4",
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-complete-textbook-melody",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.35",
+            "selectedEdition": "shandong-grade-five-second-volume-principal-vocal-melody",
+            "sourceUrl": "https://v.sjs.com.cn/ebooks/58E2823C.pdf",
+            "sourcePublication": "《义务教育教科书（五·四学制）音乐（简谱）五年级 下册》，山东教育出版社，2015年1月第1版 / 2020年1月第6次印刷，ISBN 978-7-5328-8591-6",
+            "sourceCredits": "乔羽词 / 刘炽曲；电影《祖国的花朵》插曲",
+            "sourcePdfSha256": "07cc8f5d3815c0e481e72cf31e843d24735875b7bb2cecf1b9911375f7ff9d37",
+            "printedPages": [
+              36,
+              37
+            ],
+            "pdfPages": [
+              41,
+              42
+            ],
+            "sourceMeasureRange": [
+              1,
+              30
+            ],
+            "sourceMeasureCount": 30,
+            "distinctPrintedMelodyMeasures": 30,
+            "sourceMeasureNumbers": "Editorially counted 30 bars in five six-bar systems; no printed bar numbers. First 18 bars are verse, final 12 are bracketed two-voice chorus.",
+            "reviewedBeatRanges": [
+              [
+                0,
+                60
+              ]
+            ],
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  1,
+                  18
+                ],
+                "beats": [
+                  0,
+                  36
+                ],
+                "voice": "lyric-aligned-single-verse"
+              },
+              {
+                "sourceMeasures": [
+                  19,
+                  30
+                ],
+                "beats": [
+                  36,
+                  60
+                ],
+                "voice": "lyric-aligned-upper-chorus"
+              }
+            ],
+            "excludedSections": [],
+            "sourceVoice": "explicit-lyric-aligned-verse-and-bracketed-upper-chorus",
+            "voiceDecision": "The verse is monophonic. Chorus lyrics align with the upper of two explicitly bracketed voice lines. Select that identified principal vocal part, not the highest note or an array-order heuristic. The lower chorus voice is omitted; no backing is inferred.",
+            "sourceKey": "Eb",
+            "sourceMeter": "2/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": null,
+            "sourceTempoPrinted": true,
+            "sourceNumericTempoPrinted": false,
+            "sourceTempoText": "稍快 优美地",
+            "tempoDecision": "96 BPM is an editorial practice choice retained from the previous built-in, not a printed numeric source or recording tempo. The 0.9 suggestion remains unchanged and does not overwrite initial or saved actual browser speed.",
+            "difficultyDecision": "medium is an editorial conditional practice suggestion, not a source grading or completed physical-playability finding.",
+            "registerConvention": "Unmarked numbered degree 1 is read as Eb4; lower-dot 6 is C4 and upper-dot 1 is Eb5. A single -3-semitone transposition gives C4 tonic and A3–C5. No extra global octave change or local folds.",
+            "sourceRange": [
+              "C4",
+              "Eb5"
+            ],
+            "compiledRange": [
+              "A3",
+              "C5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10
+            ],
+            "transpositionSemitones": -3,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "sourceKeySignatureAccidentals": [
+              "Bb",
+              "Eb",
+              "Ab"
+            ],
+            "additionalMelodyAccidentals": [],
+            "localPitchAlterations": [],
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 0.5,
+            "repeatExpansion": "none-all-30-selected-bars-written-out",
+            "repeatSignsPresent": false,
+            "lyricRowsAuthorizeRepeat": false,
+            "formDecision": "Play all 30 printed bars once through the final double bar. The three verse lyric rows do not authorize repeat expansion. This retains the complete printed one-strophe tune and refrain, not every sung stanza or a complete recorded-song form.",
+            "selectedAttacks": 63,
+            "metricNoteheadCount": 66,
+            "tieContinuationCount": 3,
+            "ties": [
+              {
+                "bars": [
+                  8,
+                  9
+                ],
+                "note": "E4",
+                "beat": 14,
+                "duration": 3
+              },
+              {
+                "bars": [
+                  17,
+                  18
+                ],
+                "note": "G4",
+                "beat": 32,
+                "duration": 3
+              },
+              {
+                "bars": [
+                  29,
+                  30
+                ],
+                "note": "A4",
+                "beat": 56,
+                "duration": 4
+              }
+            ],
+            "tuplets": [],
+            "occurrenceDecisions": [
+              "m8–9: E4@14/3 spans the barline; E4@17/0.5 remains a new attack. m17–18: G4@32/3 ends before the quarter rest at 35. m29–30: A4@56/4 spans the final two bars as one attack.",
+              "m6 G4@10/1.5 and G4@11.5/0.5, m20 A4@38/1.5 and A4@39.5/0.5, and m26 G4@51/0.75 and G4@51.75/0.25 are separate attacks, not ties.",
+              "m12 preserves the upper-tonic C5 followed by B4 and A4 sixteenths; m24 lower-dot 6 becomes A3 at 46. Every later occurrence was read rather than copied from an earlier phrase.",
+              "Different-pitch arcs remain slurs. Breath marks at m13 and m21 add no quantified silence and shorten no note."
+            ],
+            "omittedOrnaments": [
+              {
+                "sourceMeasure": 7,
+                "beat": 12,
+                "sourceDegree": "small grace 5 before main 6",
+                "sourcePitch": "Bb4",
+                "compiledPitch": "G4",
+                "duration": null,
+                "decision": "omit-unquantified-grace-without-stealing-main-note-time"
+              }
+            ],
+            "ornamentDecision": "One unquantified grace degree 5 before m7 is deliberately omitted from metric single-note practice. No guessed duration, extra attack or stolen beat is introduced. This is a disclosed adaptation, not an ornament-complete literal engraving realization.",
+            "silentWindows": [
+              {
+                "beat": 0,
+                "duration": 0.5
+              },
+              {
+                "beat": 8,
+                "duration": 0.5
+              },
+              {
+                "beat": 35,
+                "duration": 1
+              },
+              {
+                "beat": 48,
+                "duration": 1
+              }
+            ],
+            "allLayerSilenceClaim": true,
+            "restScope": "Four source rests in the selected principal vocal line: [0,0.5), [8,8.5), [35,36), [48,49). The last rest is also printed in the lower chorus voice. No backing is selected, so these are silent windows of this single-melody adaptation; they do not certify silence in other arrangements or stop natural decay.",
+            "breathMarks": [
+              {
+                "sourceMeasure": 13,
+                "addsBeats": 0
+              },
+              {
+                "sourceMeasure": 21,
+                "addsBeats": 0
+              }
+            ],
+            "endingRestBeats": 0,
+            "selectedEndIsFullSongEnding": false,
+            "selectedEndIsSelectedEditionEnding": true,
+            "endingDecision": "Final A4 attacks at 56 and lasts four beats through m29–30 to the double bar at 60. Do not reattack at 58, clip the tie, invent an ending rest or turn notation duration into a PCM/effects-tail cutoff.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "versionDecision": "This deliberately selected textbook edition does not prove the unavailable Qupu version-three source or old encoding wrong. All 63 onset/duration pairs agree, while the first 54 old pitches through beat 50 are one octave higher and the last nine from 51 already agree; this is not a global octave-down operation on the old file.",
+            "supportDecision": "No backing is added or borrowed. There is no existing source sibling for this id. The old melody fails the actual compatibility guard despite identical timings, title family and 96 BPM; synthetic old-backed candidates must be rejected by both provider paths.",
+            "sourcePixelReview": "The compiler and independent reviewer each read the actual textbook pages before comparison; all 63 tuples, 30 bar spans, three ties and four rests agree. The implementation worker also viewed pages 41–42, the colophon and following unrelated page 43. These are independent readings of one edition, not independent source editions.",
+            "independentSourceTupleSha256": "f24dc597902e95be98b3888ffa98a561a901762fab014b8fa83041851cb326e0",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only",
+            "rightsNotice": "The textbook colophon reserves copyright. Public readability is not reproduction or publication permission. Source PDF, page images, lyrics and full private source fixtures stay outside project packages. This reversible private-preview adoption does not authorize commit, push, publication or deployment."
+          },
+          "archivedEdition": {
+            "file": "data/archives/rang-wo-men-dang-qi-shuang-jiang-v2.4.34.json",
+            "fileSha256": "62a0aa1a5621116ebb8d0b10691f8aaeccc0ff90ee4291019ca95b40aa795052",
+            "purpose": "Byte-exact developer recovery of all 63 old steps, original display strings, 96 BPM, 2/4, 0.9 suggestion and complete source metadata. No additional card, restore UI, HTTP archive route or precache entry."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": false,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "unsupported": [
+              "不含器乐前奏、歌词换段间奏及重复演唱；末尾采用最终结束句。",
+              "省略装饰倚音与第二合唱声部，仅保留主旋律。",
+              "整条旋律升高一个八度，避免结尾E3超出21音C调琴音域。"
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "中国曲谱网《让我们荡起双桨》领唱合唱谱（版本三）",
+                "url": "https://www.qupu123.com/shaoer/qizi/p53613.html"
+              },
+              {
+                "label": "人人钢琴网 降E调双手简谱（对照）",
+                "url": "https://www.everyonepiano.cn/Number-1144.html"
+              }
+            ],
+            "transcriptionScope": "one-strophe-and-refrain",
+            "suitability": {
+              "status": "conditional",
+              "scope": "one-strophe-and-refrain",
+              "reason": "保留一段主歌与副歌；整体升八度至 E4-C6，避免孤立替换结尾低音，保留长音和休止。",
+              "reviewRequired": [
+                "高音区音色、快速经过音及长音衰减需实体琴试听；不能仅因包含长音判为不适合。",
+                "已完成源谱乐句、浏览器音高与起音时序核对，未做原唱录音盲听或实体琴验收。"
+              ]
+            }
+          }
+        },
         "suitability": {
           "status": "conditional",
-          "scope": "one-strophe-and-refrain",
-          "reason": "保留一段主歌与副歌；整体升八度至 E4-C6，避免孤立替换结尾低音，保留长音和休止。",
+          "scope": "selected-complete-printed-strophe-and-refrain-principal-voice",
+          "reason": "30小节、60拍的63次主旋律起音经独立源谱复核；统一降3半音后为A3–C5，保留全部音程、延音与休止。十六分音符及G4到A3同侧跳进仍需实琴检验。",
           "reviewRequired": [
-            "高音区音色、快速经过音及长音衰减需实体琴试听；不能仅因包含长音判为不适合。",
-            "已完成源谱乐句、浏览器音高与起音时序核对，未做原唱录音盲听或实体琴验收。"
+            "参考录音比较、浏览器音频验收及实体琴演奏仍须分别完成，不能由JSON或源谱检验代替。",
+            "最快间隔为0.25拍：96 BPM下156.25毫秒，0.9建议倍率下约173.61毫秒；不据较低音区自动声称更容易。",
+            "公开可读不等于授权出版；版权及公开发行许可仍未确认。"
           ]
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "see-you-again": {
       "schemaVersion": 1,
       "id": "see-you-again",
-      "title": "《See You Again》",
+      "title": "《See You Again》12小节预览",
       "uploader": "system",
-      "practiceTitle": "《See You Again》练习轨道",
-      "scoreTitle": "《See You Again》简谱进度",
-      "hint": "主旋律练习版；按 1=C、4/4 钢琴简谱预览整理，保留最具辨识度的引子与主题 hook。",
+      "practiceTitle": "《See You Again》12小节预览单音练习",
+      "scoreTitle": "《See You Again》所选五线谱预览进度",
+      "hint": "所选 GuitarWorld 12小节五线谱预览上声部，86个单音、48拍，非全曲；按印刷 C调、4/4、80 BPM 原音高录入，不移调；12组同音延音合为持续音，另起同音保留。48拍是预览截点，不是全曲终止；C5–E6高音快句宜慢练，旧伴奏暂不使用，录音对听与实体琴检查待完成。",
       "difficulty": "medium",
       "bpm": 80,
       "defaultSpeedFactor": 0.88,
@@ -40858,52 +46711,47 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D5",
+          "D6",
           0.5,
           0.5
         ],
         [
-          "C5",
+          "C6",
           1,
           0.5
         ],
         [
           "G5",
           1.5,
-          0.5
+          1
         ],
         [
-          "G5",
-          2,
-          0.5
-        ],
-        [
-          "C5",
+          "C6",
           2.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           2.75,
           0.25
         ],
         [
-          "E5",
+          "E6",
           3,
           0.25
         ],
         [
-          "D5",
+          "D6",
           3.25,
           0.25
         ],
         [
-          "C5",
+          "C6",
           3.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           3.75,
           0.25
         ],
@@ -40913,52 +46761,47 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D5",
+          "D6",
           4.5,
           0.5
         ],
         [
-          "C5",
+          "C6",
           5,
           0.5
         ],
         [
           "G5",
           5.5,
-          0.5
+          1
         ],
         [
-          "G5",
-          6,
-          0.5
-        ],
-        [
-          "C5",
+          "C6",
           6.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           6.75,
           0.25
         ],
         [
-          "E5",
+          "E6",
           7,
           0.25
         ],
         [
-          "D5",
+          "D6",
           7.25,
           0.25
         ],
         [
-          "C5",
+          "C6",
           7.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           7.75,
           0.25
         ],
@@ -40968,52 +46811,47 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D5",
+          "D6",
           8.5,
           0.5
         ],
         [
-          "C5",
+          "C6",
           9,
           0.5
         ],
         [
           "G5",
           9.5,
-          0.5
+          1
         ],
         [
-          "G5",
-          10,
-          0.5
-        ],
-        [
-          "C5",
+          "C6",
           10.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           10.75,
           0.25
         ],
         [
-          "E5",
+          "E6",
           11,
           0.25
         ],
         [
-          "D5",
+          "D6",
           11.25,
           0.25
         ],
         [
-          "C5",
+          "C6",
           11.5,
           0.25
         ],
         [
-          "D5",
+          "D6",
           11.75,
           0.25
         ],
@@ -41023,24 +46861,19 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "D5",
+          "D6",
           12.5,
           0.5
         ],
         [
-          "C5",
+          "C6",
           13,
           0.5
         ],
         [
           "G5",
           13.5,
-          0.75
-        ],
-        [
-          "G5",
-          14.25,
-          0.25
+          1
         ],
         [
           "C5",
@@ -41060,32 +46893,22 @@ export const SONG_LIBRARY = {
         [
           "A5",
           16,
-          1
-        ],
-        [
-          "G5",
-          17,
-          0.5
+          1.5
         ],
         [
           "G5",
           17.5,
-          0.5
-        ],
-        [
-          "A5",
-          18,
           1
         ],
         [
           "A5",
-          19,
-          0.5
+          18.5,
+          1.25
         ],
         [
           "C5",
-          19.5,
-          0.5
+          19.75,
+          0.25
         ],
         [
           "D5",
@@ -41105,12 +46928,7 @@ export const SONG_LIBRARY = {
         [
           "E5",
           21.5,
-          0.5
-        ],
-        [
-          "E5",
-          22,
-          1.5
+          2
         ],
         [
           "E5",
@@ -41180,57 +46998,42 @@ export const SONG_LIBRARY = {
         [
           "C5",
           29.5,
-          0.5
+          1.75
         ],
         [
           "C5",
-          30,
-          0.5
-        ],
-        [
-          "C5",
-          30.5,
-          0.5
+          31.25,
+          0.25
         ],
         [
           "E5",
-          31,
-          0.5
+          31.5,
+          0.25
         ],
         [
           "G5",
-          31.5,
-          0.5
+          31.75,
+          0.25
         ],
         [
           "A5",
           32,
-          1
-        ],
-        [
-          "G5",
-          33,
-          0.5
+          1.5
         ],
         [
           "G5",
           33.5,
-          0.5
-        ],
-        [
-          "A5",
-          34,
           1
         ],
         [
           "A5",
-          35,
-          0.5
+          34.5,
+          1.25
         ],
         [
           "C5",
-          35.5,
-          0.5
+          35.75,
+          0.25
         ],
         [
           "D5",
@@ -41250,22 +47053,17 @@ export const SONG_LIBRARY = {
         [
           "E5",
           37.5,
-          0.5
-        ],
-        [
-          "E5",
-          38,
           1.5
         ],
         [
           "E5",
-          39.5,
-          0.25
+          39,
+          0.5
         ],
         [
           "G5",
-          39.75,
-          0.25
+          39.5,
+          0.5
         ],
         [
           "A5",
@@ -41273,106 +47071,293 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "B5",
+          "C6",
           40.5,
           0.5
         ],
         [
-          "A5",
+          "D6",
           41,
           0.5
         ],
         [
-          "G5",
+          "E6",
           41.5,
           0.5
         ],
         [
-          "E5",
+          "D6",
           42,
           0.5
         ],
         [
-          "D5",
+          "C6",
           42.5,
           0.5
         ],
         [
-          "D5",
+          "A5",
           43,
           0.5
         ],
         [
-          "C5",
+          "C6",
           43.5,
           0.5
         ],
         [
-          "D5",
+          "D6",
           44,
           0.5
         ],
         [
-          "D5",
+          "D6",
           44.5,
           0.5
         ],
         [
-          "E5",
+          "C6",
           45,
           0.5
         ],
         [
-          "C5",
+          "C6",
           45.5,
-          0.5
+          1.5
         ],
         [
-          "C5",
-          46,
-          0.5
-        ],
-        [
-          "C5",
-          46.5,
-          0.5
-        ],
-        [
-          "E5",
+          "A5",
           47,
           0.5
         ],
         [
-          "G5",
+          "C6",
           47.5,
           0.5
         ]
       ],
       "sourceFeatures": {
         "hasChords": true,
-        "hasArpeggio": true,
-        "hasRepeats": true,
-        "sourceImages": [
-          "private/sheets/raw/see-you-again/guitarworld-jianpu-preview.png",
-          "private/sheets/raw/see-you-again/guitarworld-staff-preview.png"
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "transcriptionScope": "selected-guitarworld-12-measure-treble-preview",
+        "sourceTotalBeats": 48,
+        "sourceMeasureCount": 12,
+        "sources": [
+          {
+            "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+            "url": "https://www.guitarworld.com.cn/pu/q79160"
+          },
+          {
+            "label": "实际检查的五线谱预览图",
+            "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+          }
         ],
         "unsupported": [
-          "吉他世界页面只公开预览页；本版本录入可核对的钢琴引子/主题 hook，不声明为全曲完整版。",
-          "和声按预览低音区与常见 C 大调/Am-F-C-G 走向稀疏化，避免自动伴奏压过主旋律。"
+          "仅采纳所选公开预览的12小节上声部单旋律；48拍是截点，不证明歌曲在此终止，不添加缺失后续。",
+          "钢琴低音声部、旧 Am-F-C-G 式和声及自动伴奏未在此次获得核准；当前 V1 不使用已保留的旧 V2 伴奏。",
+          "同出版者简谱预览未成功取得像素；其他编配的差异不能用于拼补所选版本。"
         ],
         "unsureMeasures": [],
-        "sourceReview": {
-          "confidence": "medium-high-for-intro-hook-medium-for-full-song-form",
-          "sources": [
-            {
-              "label": "吉他世界 See You Again 钢琴谱预览",
-              "url": "https://www.guitarworld.com.cn/pu/q79160"
-            },
-            {
-              "label": "吉他世界简谱预览图",
-              "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png"
-            }
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-guitarworld-12-measure-treble-preview",
+          "reason": "所选上声部在 C5–E6 自然音范围内，无需移调或局部折叠；高音十六分音符、跳进与拨弦衰减仍需慢速及实体检查。",
+          "reviewRequired": [
+            "参考录音对听未执行。",
+            "浏览器实际音频与速度选择检查未执行。",
+            "实体卡林巴高音、手序、快句与真实衰减检查未执行。",
+            "公开可读不等于已取得公开传播权。"
           ]
+        },
+        "sourceReview": {
+          "originalV1": {
+            "fileSha256": "be4ac589564559cb43e4985257471902f4bf611b08d3652e7c56900383dd50bb",
+            "stepsSha256": "0cea38494d9bce08649e825c8fb7def2a7a19e7e90025a0b70973a3a224497ba",
+            "attackCount": 99,
+            "melodyEndBeat": 48,
+            "restoration": "scripts/fixtures/see-you-preview-source.json history.originalV1 preserves the full original file byte-for-byte through JSON.stringify(value, null, 2) plus a final newline; its dedicated regression verifies the hash."
+          },
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": true,
+            "sourceImages": [
+              "private/sheets/raw/see-you-again/guitarworld-jianpu-preview.png",
+              "private/sheets/raw/see-you-again/guitarworld-staff-preview.png"
+            ],
+            "unsupported": [
+              "吉他世界页面只公开预览页；本版本录入可核对的钢琴引子/主题 hook，不声明为全曲完整版。",
+              "和声按预览低音区与常见 C 大调/Am-F-C-G 走向稀疏化，避免自动伴奏压过主旋律。"
+            ],
+            "unsureMeasures": [],
+            "sourceReview": {
+              "confidence": "medium-high-for-intro-hook-medium-for-full-song-form",
+              "sources": [
+                {
+                  "label": "吉他世界 See You Again 钢琴谱预览",
+                  "url": "https://www.guitarworld.com.cn/pu/q79160"
+                },
+                {
+                  "label": "吉他世界简谱预览图",
+                  "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png"
+                }
+              ]
+            }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-guitarworld-preview",
+            "reviewedOn": "2026-10-12",
+            "reviewedBeatRanges": [
+              [
+                0,
+                48
+              ]
+            ],
+            "sourceEditions": [
+              {
+                "publisher": "GuitarWorld",
+                "arranger": "乐星人",
+                "url": "https://www.guitarworld.com.cn/pu/q79160",
+                "staffImage": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png",
+                "staffImageSha256": "8ba82cb8c119bb739bc44a3e433fd8804aa8dc6eb2752c13f42671aa8ec198c7",
+                "staffImageSize": [
+                  1200,
+                  831
+                ],
+                "inspectedMeasures": [
+                  1,
+                  12
+                ],
+                "sourceKey": "C",
+                "sourceMeter": "4/4",
+                "sourceTempo": 80,
+                "sourceTempoBeatUnit": "quarter",
+                "sourceBeatOrigin": 0,
+                "mapping": "The visible upper treble staff is monophonic and separately bracketed from bass-staff dyads; no highest-note or first-array-note selection is used.",
+                "numberedImage": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png",
+                "numberedPixelsInspected": false,
+                "accessLimit": "The staff asset succeeded after one ordinary retry; the numbered asset returned HTTP 502/connection refused and was not inspected. No restriction was bypassed and no paid continuation was requested.",
+                "independence": "The publisher staff and numbered formats are one edition, not independent sources. Independent reviewers of the same pixels do not create an independent source."
+              }
+            ],
+            "selectedMelody": {
+              "attackCount": 86,
+              "tupleSha256": "0bcaf2d5daed29e3c2d8420436910a5faa27306d4f13211a4a91d0ec554aa4ad",
+              "physicalTarget": "single-melody",
+              "voice": "explicit-monophonic-upper-treble-staff",
+              "melodyRestWindows": []
+            },
+            "notationDecision": "Twelve explicit same-pitch tie chains contain thirteen continuation endpoints; each chain sounds once. Independent same-pitch attacks, especially E5@23.5, C5@31.25, E5@39, D6@44 and D6@44.5, remain separate. All twelve visible bars are read independently; m10–12 are not copied from m6–8.",
+            "tieChainCount": 12,
+            "tieContinuationCount": 13,
+            "unchangedMelody": {
+              "untouchedAttackCount": 27,
+              "untouchedTuplesSha256": "888023d0e39958a183b45c0d485f5874b1daf3dcd33a0b5c4bf25f7a192ed807",
+              "completeUnchangedMeasures": [
+                7
+              ],
+              "measure7TuplesSha256": "feedbea66a3ca1ace3ae34b40b3315f498ece6eeaa549ca822043c89c33ef0e5"
+            },
+            "sourceForm": {
+              "printedMeasureCount": 12,
+              "selectedMeasureCount": 12,
+              "beatsPerMeasure": 4,
+              "pickupBeats": 0,
+              "repeatExpansion": false,
+              "endingKind": "preview-excerpt-boundary",
+              "fullSongEndingEstablished": false,
+              "scope": "Entire visible selected 12-bar treble preview [0,48), not a complete song or reconstructed paid continuation."
+            },
+            "ending": {
+              "note": "C6",
+              "beat": 47.5,
+              "duration": 0.5,
+              "totalBeats": 48,
+              "finalRestBeats": 0,
+              "kind": "preview-excerpt-boundary"
+            },
+            "sourceTotalBeatsMeaning": "48 is the selected preview cut after twelve 4/4 bars, not a proven full-song ending. No final rest or sustain beyond 48 is asserted.",
+            "transposition": {
+              "sourceKey": "C",
+              "compiledKey": "C",
+              "semitoneShift": 0,
+              "sourceRange": [
+                "C5",
+                "E6"
+              ],
+              "compiledRange": [
+                "C5",
+                "E6"
+              ],
+              "sourcePitchClasses": [
+                0,
+                2,
+                4,
+                7,
+                9,
+                11
+              ],
+              "octaveFolding": false,
+              "accidentalNaturalization": false,
+              "decision": "Literal source register; the legacy opening mixed D5/C5/E5 with unchanged G5 and was not a global transposition."
+            },
+            "retainedPracticeTempo": "80 BPM agrees with printed quarter=80. The unchanged 0.88 default suggests 70.4 BPM, not the actual selected/remembered runtime speed.",
+            "comparisonEdition": {
+              "publisher": "EveryonePiano",
+              "arranger": "Cody Walton",
+              "numberPage": "https://www.everyonepiano.cn/Number-15813-1.html",
+              "staffPage": "https://www.everyonepiano.cn/Stave-15813-1.html",
+              "sourceKey": "Bb",
+              "quarterBpm": 80,
+              "comparisonSemitoneShift": 2,
+              "inspectedMeasures": [
+                1,
+                12
+              ],
+              "status": "comparison-only-not-adopted",
+              "agreementMeasures": [
+                1,
+                2,
+                3,
+                4,
+                6,
+                7,
+                11,
+                12
+              ],
+              "conflictingMeasures": [
+                5,
+                8,
+                9,
+                10
+              ],
+              "decision": "After +2 semitones, opening register and m11–12 agree, but m5/9, m8 and m10 have real rhythm/pitch differences. In particular its m8 quarter-beat rest is not imported over the selected GuitarWorld tie through 31.25.",
+              "independence": "Separate publisher and arranger credit; independent underlying ancestry is not established. Its two notation formats are one edition."
+            },
+            "evidenceFingerprints": {
+              "preEditSourceFixtureSha256": "5b10ccd20451c135ab1343abf4222398374c1c1ce95c4c96944a3230b3792989",
+              "tieEndpointsSha256": "801abc0cce0d7884316e03da39c2bb93dad3bfac4043fda56008c45cad895583",
+              "preEditComparisonSha256": "b0da7f062ae2bcf6fba5484d961c26c4e694976da4d6b96ed675e2480f9653d0"
+            },
+            "accompanimentReview": {
+              "status": "legacy-sibling-preserved-incompatible",
+              "siblingId": "see-you-again-chord",
+              "siblingFileSha256": "f22f7a54d6ee3d9caa20dc21925470337bd43cf3d134e4e912b261ddcabe76fb",
+              "contentCompatible": false,
+              "sourceHarmonyApproved": false,
+              "addedSupport": false,
+              "physicalTarget": "single-melody",
+              "decision": "The complete V2 bytes, 99 explicit melody attacks and 12 automatic backing events are frozen. Existing content compatibility rejects borrowing its old backing for the revised 86-attack V1."
+            },
+            "selectedMelodyNotationReviewed": true,
+            "fullOriginalSongApproved": false,
+            "exactRecordingApproved": false,
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "This accepts only the selected source preview melody, not the full song, an exact recording, source harmony, or physical ease. Reference listening, browser audio and physical kalimba remain separate checks. Public access does not establish public-distribution rights; raw source images and private review artifacts stay outside the repository."
+          }
         }
       }
     },
@@ -43125,16 +49110,1515 @@ export const SONG_LIBRARY = {
         ]
       }
     },
+  "see-you-again-reviewed-support": {
+      "schemaVersion": 2,
+      "id": "see-you-again-reviewed-support",
+      "baseSongId": "see-you-again",
+      "title": "《See You Again》12小节预览",
+      "versionLabel": "主旋律资料 · 可选轻伴奏",
+      "arrangementKind": "melody",
+      "judgementMode": "melody",
+      "uploader": "system",
+      "practiceTitle": "《See You Again》12小节预览单音练习",
+      "scoreTitle": "《See You Again》所选五线谱预览进度",
+      "hint": "所选 GuitarWorld 12小节预览，86个实体单音目标不变；可选轻伴奏仅保留同谱低声部 F3/G3/A3，24次起音，省略每组双音中的 C4，默认关闭。每小节局部拍点2的延音不重拨；48拍即预览截点，非全曲终止。音量与力度是轻声试用设置，听感与实体琴检查仍需单独验收。",
+      "difficulty": "medium",
+      "bpm": 80,
+      "defaultSpeedFactor": 0.88,
+      "beatsPerMeasure": 4,
+      "key": "C",
+      "tuning": "21-key-c",
+      "events": [
+        {
+          "beat": 0,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 0.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 1,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 1.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 2.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 2.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.25,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.25,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 9,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 9.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 10.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 10.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11.25,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 11.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 13,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 13.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 14.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 16,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 17.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 18.5,
+          "duration": 1.25,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21.5,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 25,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 25.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 26,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 26.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 29,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 29.5,
+          "duration": 1.75,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 31.25,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 31.5,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 31.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 33.5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 34.5,
+          "duration": 1.25,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 35.75,
+          "duration": 0.25,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37.5,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 41,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 41.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 42,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 42.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 45,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 45.5,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 47,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 47.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C6",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        }
+      ],
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "events": [
+          {
+            "beat": 0,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 1.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 4,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 5.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 8,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 9.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 13.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 17.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 21.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 25.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 29.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 33.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 37.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 40,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 41.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 1.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          },
+          {
+            "beat": 45.5,
+            "duration": 2.5,
+            "pattern": "source-lower-voice-only",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.32
+              }
+            ]
+          }
+        ]
+      },
+      "rhythm": {
+        "sourceStatus": "verified",
+        "pickupBeats": 0,
+        "restWindows": [],
+        "sources": [
+          {
+            "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+            "url": "https://www.guitarworld.com.cn/pu/q79160"
+          },
+          {
+            "label": "实际检查的五线谱预览图",
+            "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+          }
+        ]
+      },
+      "sourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "transcriptionScope": "selected-guitarworld-12-measure-preview-melody-and-reduced-lower-voice",
+        "sourceTotalBeats": 48,
+        "sourceMeasureCount": 12,
+        "sources": [
+          {
+            "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+            "url": "https://www.guitarworld.com.cn/pu/q79160"
+          },
+          {
+            "label": "实际检查的五线谱预览图",
+            "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+          }
+        ],
+        "unsupported": [
+          "仅为公开预览12小节；48拍是截点，不是完整歌曲终止，不添加后续或结尾填充。",
+          "每组来源双音的 C4 均明确省略，只保留低声部；不是完整钢琴织体，也不把双音命名为完整和弦。",
+          "伴奏只由 App 可选播放，不增加实体琴目标；音量、力度是编配试用参数，不是印刷力度或听感核准。",
+          "旧99起音 V2 及其自动伴奏原样保留，但与当前86起音旋律不兼容，不能借用旧伴奏。"
+        ],
+        "unsureMeasures": [],
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-guitarworld-12-measure-preview-melody-and-reduced-lower-voice",
+          "reason": "86个主旋律目标保持 C5–E6 原音高；可选支持仅用同谱 F3/G3/A3，零移调、零局部折叠。谱面与数据检查不代替实际音频、参考录音或实体高音快句检查。",
+          "reviewRequired": [
+            "浏览器实际源速与练习速度 A/B 检查须单独记录。",
+            "真实输出的平衡、音色与余量不由音量参数保证。",
+            "参考录音对听与实体卡林巴高音、手序、衰减检查未执行。",
+            "公开可读不等于已取得公开传播权。"
+          ]
+        },
+        "practiceAccompaniment": {
+          "status": "source-reviewed-lower-voice-candidate",
+          "scope": "all-twelve-selected-preview-bars-[0,48)",
+          "candidate": "A-lower-voice-only",
+          "physicalTarget": "single-melody",
+          "sourceVoice": "literal-bass-clef-lower-voice",
+          "sourceImageSha256": "8ba82cb8c119bb739bc44a3e433fd8804aa8dc6eb2752c13f42671aa8ec198c7",
+          "reviewedOn": "2026-10-12",
+          "reviewedBeatRanges": [
+            [
+              0,
+              48
+            ]
+          ],
+          "sourceNotation": "Each separately reviewed bar has a dotted-quarter dyad at local 0 and an eighth dyad at 1.5 tied in both pitches to a half dyad at 2. There is no beat-2 reattack or cross-bar tie. The C4 at 1.5 is a separate source attack, omitted by this reduction.",
+          "reduction": {
+            "retainedPitches": [
+              "F3",
+              "G3",
+              "A3"
+            ],
+            "omittedPitch": "C4",
+            "omissionReason": "Thin every source dyad to its exact lower voice; no range-driven omission.",
+            "semitoneShift": 0,
+            "octaveFolding": false,
+            "accidentalNaturalization": false,
+            "addedNotes": false,
+            "addedAttacks": false,
+            "completeChordNamesInferred": false
+          },
+          "sourceSpanMembership": "Every retained note belongs to every literal source dyad span overlapped by its full duration. Source dyads are exact pitch sets, not complete chord names. Compare the same full event span with the unchanged 86-attack melody; do not test only its onset.",
+          "timing": {
+            "attackCount": 24,
+            "noteAttackCount": 24,
+            "maximumSimultaneousSupportNotes": 1,
+            "localAttackBeats": [
+              0,
+              1.5
+            ],
+            "durations": [
+              1.5,
+              2.5
+            ],
+            "lowerVoiceTieCount": 12,
+            "sourceIndividualPitchTieCount": 24,
+            "lastAttackBeat": 45.5,
+            "endBeat": 48
+          },
+          "rests": {
+            "melodyRestWindows": [],
+            "sourceLowerVoiceRestWindows": [],
+            "allLayerSilentWindows": [],
+            "meaning": "The reviewed melody and left-hand source both cover [0,48) continuously; empty windows mean no written rests in this scope, not permission to fill a future gap. No invented hold policy, rest fill, tremolo or retrigger is added."
+          },
+          "settings": {
+            "enabledByDefault": false,
+            "volume": 0.3,
+            "noteVelocity": 0.32,
+            "provenance": "Conservative arranger trial settings, not source dynamics or a measured loudness/headroom result; preserve explicit remembered user settings."
+          },
+          "melodyCompatibility": {
+            "baseSongId": "see-you-again",
+            "attackCount": 86,
+            "tupleSha256": "0bcaf2d5daed29e3c2d8420436910a5faa27306d4f13211a4a91d0ec554aa4ad",
+            "contentCompatible": true,
+            "decision": "The new source companion has exactly the corrected V1 pitches, onsets, durations, 80 BPM and 48-beat extent. The existing content guard can lend only this compatible reduced support."
+          },
+          "historicalSibling": {
+            "id": "see-you-again-chord",
+            "fileSha256": "f22f7a54d6ee3d9caa20dc21925470337bd43cf3d134e4e912b261ddcabe76fb",
+            "melodyAttackCount": 99,
+            "contentCompatible": false,
+            "autoBassMismatchMeasures": [
+              6,
+              7,
+              8,
+              10,
+              11,
+              12
+            ],
+            "eventAnchorBassMismatchMeasures": [
+              2,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12
+            ],
+            "decision": "Keep the entire historical record unchanged. Its 12 downbeat backing events omit all selected 1.5-beat changes, and each contains a pitch absent from that exact source dyad. This does not judge other arrangements."
+          },
+          "evidenceFingerprints": {
+            "bassSourceFixtureSha256": "9ee9872dcb1da2b853c29d541c88c1a8ff2aba33406230bede8d243727184a71",
+            "candidateBlockSha256": "ab4ffa30e7e6617ce5972ced8c1038c631e1d0ca1671fde3356a0522bb6a1382"
+          },
+          "sourcePixels": "All twelve selected bass bars and tie endpoints reviewed; an independent reviewer agreed on the same pixels. This is one source edition, not two independent sources.",
+          "browserAudio": "not-performed-in-data-stage",
+          "referenceListening": "not-performed",
+          "physicalKalimba": "not-performed",
+          "limits": "Only the literal reduced source line and encoding are accepted here. Timbre, balance, headroom, actual source/practice-tempo playback and instrument behavior are separate checks. Preview duration is score time, not acoustic ring-out. Public reproduction rights remain unestablished."
+        }
+      }
+    },
   "sheng-sheng-man": {
       "schemaVersion": 1,
       "id": "sheng-sheng-man",
-      "title": "《声声慢》",
+      "title": "《声声慢》（戏腔简谱版）",
       "uploader": "system",
-      "practiceTitle": "《声声慢》练习轨道",
-      "scoreTitle": "《声声慢》简谱进度",
-      "hint": "崔开潮演唱版；采用所提供16小节短改编，约62秒。保留附点与延音，仅练习主旋律。",
+      "practiceTitle": "《声声慢》（戏腔简谱版）练习轨道",
+      "scoreTitle": "《声声慢》（戏腔简谱版）简谱进度",
+      "hint": "选用逸兔戏腔简谱24个写出小节，按首尾反复走两遍，共252次主旋律起音、192拍；E调整体移至C调，保留原谱72 BPM。明确省略每遍14个无定时倚音与4处波音，不挪动主旋律；仅单音，无伴奏。",
       "difficulty": "medium",
-      "bpm": 62,
+      "bpm": 72,
       "defaultSpeedFactor": 1,
       "beatsPerMeasure": 4,
       "key": "C",
@@ -43162,7 +50646,12 @@ export const SONG_LIBRARY = {
         [
           "D5",
           2,
-          2
+          1.5
+        ],
+        [
+          "C5",
+          3.5,
+          0.5
         ],
         [
           "A4",
@@ -43340,9 +50829,14 @@ export const SONG_LIBRARY = {
           1.5
         ],
         [
-          "C5",
+          "A4",
           29.5,
-          0.5
+          0.25
+        ],
+        [
+          "C5",
+          29.75,
+          0.25
         ],
         [
           "C5",
@@ -43352,17 +50846,22 @@ export const SONG_LIBRARY = {
         [
           "A4",
           32,
-          0.75
+          0.5
         ],
         [
           "A4",
-          32.75,
-          0.75
+          32.5,
+          1
         ],
         [
           "E5",
           33.5,
-          0.5
+          0.25
+        ],
+        [
+          "D5",
+          33.75,
+          0.25
         ],
         [
           "D5",
@@ -43372,17 +50871,22 @@ export const SONG_LIBRARY = {
         [
           "G4",
           36,
-          0.75
+          0.5
         ],
         [
           "G4",
-          36.75,
-          0.75
+          36.5,
+          1
         ],
         [
           "D5",
           37.5,
-          0.5
+          0.25
+        ],
+        [
+          "C5",
+          37.75,
+          0.25
         ],
         [
           "C5",
@@ -43395,7 +50899,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "B4",
+          "C5",
           40.5,
           0.5
         ],
@@ -43427,27 +50931,32 @@ export const SONG_LIBRARY = {
         [
           "G5",
           43.5,
-          0.5
+          1
         ],
         [
           "E5",
-          44,
-          4
+          44.5,
+          3.5
         ],
         [
           "A4",
           48,
-          0.75
+          0.5
         ],
         [
           "A4",
-          48.75,
-          0.75
+          48.5,
+          1
         ],
         [
           "E5",
           49.5,
-          0.5
+          0.25
+        ],
+        [
+          "D5",
+          49.75,
+          0.25
         ],
         [
           "D5",
@@ -43457,17 +50966,22 @@ export const SONG_LIBRARY = {
         [
           "G4",
           52,
-          0.75
+          0.5
         ],
         [
           "G4",
-          52.75,
-          0.75
+          52.5,
+          1
         ],
         [
           "D5",
           53.5,
-          0.5
+          0.25
+        ],
+        [
+          "C5",
+          53.75,
+          0.25
         ],
         [
           "C5",
@@ -43480,7 +50994,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "B4",
+          "C5",
           56.5,
           0.5
         ],
@@ -43512,54 +51026,1583 @@ export const SONG_LIBRARY = {
         [
           "D5",
           59.5,
+          1
+        ],
+        [
+          "C5",
+          60.5,
+          3.5
+        ],
+        [
+          "E5",
+          64,
+          0.5
+        ],
+        [
+          "G5",
+          64.5,
+          0.5
+        ],
+        [
+          "G5",
+          65,
           0.5
         ],
         [
           "C5",
-          60,
-          4
+          65.5,
+          0.5
+        ],
+        [
+          "D5",
+          66,
+          1.5
+        ],
+        [
+          "C5",
+          67.5,
+          0.5
+        ],
+        [
+          "A4",
+          68,
+          0.5
+        ],
+        [
+          "C5",
+          68.5,
+          0.5
+        ],
+        [
+          "C5",
+          69,
+          0.5
+        ],
+        [
+          "E4",
+          69.5,
+          0.5
+        ],
+        [
+          "G4",
+          70,
+          2
+        ],
+        [
+          "A4",
+          72,
+          0.5
+        ],
+        [
+          "B4",
+          72.5,
+          0.5
+        ],
+        [
+          "C5",
+          73,
+          0.5
+        ],
+        [
+          "A4",
+          73.5,
+          0.5
+        ],
+        [
+          "G4",
+          74,
+          0.5
+        ],
+        [
+          "A4",
+          74.5,
+          0.5
+        ],
+        [
+          "C5",
+          75,
+          1
+        ],
+        [
+          "D5",
+          76,
+          1.5
+        ],
+        [
+          "C5",
+          77.5,
+          0.5
+        ],
+        [
+          "D5",
+          78,
+          2
+        ],
+        [
+          "E5",
+          80,
+          0.5
+        ],
+        [
+          "G5",
+          80.5,
+          0.5
+        ],
+        [
+          "G5",
+          81,
+          0.5
+        ],
+        [
+          "C5",
+          81.5,
+          0.5
+        ],
+        [
+          "D5",
+          82,
+          2
+        ],
+        [
+          "A4",
+          84,
+          0.5
+        ],
+        [
+          "C5",
+          84.5,
+          0.5
+        ],
+        [
+          "C5",
+          85,
+          0.5
+        ],
+        [
+          "E4",
+          85.5,
+          0.5
+        ],
+        [
+          "G4",
+          86,
+          2
+        ],
+        [
+          "A4",
+          88,
+          0.5
+        ],
+        [
+          "B4",
+          88.5,
+          0.5
+        ],
+        [
+          "C5",
+          89,
+          0.5
+        ],
+        [
+          "C5",
+          89.5,
+          0.25
+        ],
+        [
+          "A4",
+          89.75,
+          0.25
+        ],
+        [
+          "G4",
+          90,
+          0.5
+        ],
+        [
+          "A4",
+          90.5,
+          0.5
+        ],
+        [
+          "C5",
+          91,
+          0.5
+        ],
+        [
+          "E5",
+          91.5,
+          0.5
+        ],
+        [
+          "D5",
+          92,
+          1.5
+        ],
+        [
+          "A4",
+          93.5,
+          0.25
+        ],
+        [
+          "B4",
+          93.75,
+          0.25
+        ],
+        [
+          "C5",
+          94,
+          2
+        ],
+        [
+          "E5",
+          96,
+          0.5
+        ],
+        [
+          "G5",
+          96.5,
+          0.5
+        ],
+        [
+          "G5",
+          97,
+          0.5
+        ],
+        [
+          "C5",
+          97.5,
+          0.5
+        ],
+        [
+          "D5",
+          98,
+          1.5
+        ],
+        [
+          "C5",
+          99.5,
+          0.5
+        ],
+        [
+          "A4",
+          100,
+          0.5
+        ],
+        [
+          "C5",
+          100.5,
+          0.5
+        ],
+        [
+          "C5",
+          101,
+          0.5
+        ],
+        [
+          "E4",
+          101.5,
+          0.5
+        ],
+        [
+          "G4",
+          102,
+          2
+        ],
+        [
+          "A4",
+          104,
+          0.5
+        ],
+        [
+          "B4",
+          104.5,
+          0.5
+        ],
+        [
+          "C5",
+          105,
+          0.5
+        ],
+        [
+          "A4",
+          105.5,
+          0.5
+        ],
+        [
+          "G4",
+          106,
+          0.5
+        ],
+        [
+          "A4",
+          106.5,
+          0.5
+        ],
+        [
+          "C5",
+          107,
+          1
+        ],
+        [
+          "D5",
+          108,
+          1.5
+        ],
+        [
+          "C5",
+          109.5,
+          0.5
+        ],
+        [
+          "D5",
+          110,
+          2
+        ],
+        [
+          "E5",
+          112,
+          0.5
+        ],
+        [
+          "G5",
+          112.5,
+          0.5
+        ],
+        [
+          "G5",
+          113,
+          0.5
+        ],
+        [
+          "C5",
+          113.5,
+          0.5
+        ],
+        [
+          "D5",
+          114,
+          1.5
+        ],
+        [
+          "C5",
+          115.5,
+          0.5
+        ],
+        [
+          "A4",
+          116,
+          0.5
+        ],
+        [
+          "C5",
+          116.5,
+          0.5
+        ],
+        [
+          "C5",
+          117,
+          0.5
+        ],
+        [
+          "E4",
+          117.5,
+          0.5
+        ],
+        [
+          "G4",
+          118,
+          2
+        ],
+        [
+          "A4",
+          120,
+          0.5
+        ],
+        [
+          "B4",
+          120.5,
+          0.5
+        ],
+        [
+          "C5",
+          121,
+          0.5
+        ],
+        [
+          "A4",
+          121.5,
+          0.5
+        ],
+        [
+          "G4",
+          122,
+          0.5
+        ],
+        [
+          "A4",
+          122.5,
+          0.5
+        ],
+        [
+          "C5",
+          123,
+          0.5
+        ],
+        [
+          "E5",
+          123.5,
+          0.5
+        ],
+        [
+          "D5",
+          124,
+          1.5
+        ],
+        [
+          "A4",
+          125.5,
+          0.25
+        ],
+        [
+          "C5",
+          125.75,
+          0.25
+        ],
+        [
+          "C5",
+          126,
+          2
+        ],
+        [
+          "A4",
+          128,
+          0.5
+        ],
+        [
+          "A4",
+          128.5,
+          1
+        ],
+        [
+          "E5",
+          129.5,
+          0.25
+        ],
+        [
+          "D5",
+          129.75,
+          0.25
+        ],
+        [
+          "D5",
+          130,
+          2
+        ],
+        [
+          "G4",
+          132,
+          0.5
+        ],
+        [
+          "G4",
+          132.5,
+          1
+        ],
+        [
+          "D5",
+          133.5,
+          0.25
+        ],
+        [
+          "C5",
+          133.75,
+          0.25
+        ],
+        [
+          "C5",
+          134,
+          2
+        ],
+        [
+          "A4",
+          136,
+          0.5
+        ],
+        [
+          "C5",
+          136.5,
+          0.5
+        ],
+        [
+          "C5",
+          137,
+          0.5
+        ],
+        [
+          "A4",
+          137.5,
+          0.5
+        ],
+        [
+          "G4",
+          138,
+          0.5
+        ],
+        [
+          "A4",
+          138.5,
+          0.5
+        ],
+        [
+          "C5",
+          139,
+          0.5
+        ],
+        [
+          "G5",
+          139.5,
+          1
+        ],
+        [
+          "E5",
+          140.5,
+          3.5
+        ],
+        [
+          "A4",
+          144,
+          0.5
+        ],
+        [
+          "A4",
+          144.5,
+          1
+        ],
+        [
+          "E5",
+          145.5,
+          0.25
+        ],
+        [
+          "D5",
+          145.75,
+          0.25
+        ],
+        [
+          "D5",
+          146,
+          2
+        ],
+        [
+          "G4",
+          148,
+          0.5
+        ],
+        [
+          "G4",
+          148.5,
+          1
+        ],
+        [
+          "D5",
+          149.5,
+          0.25
+        ],
+        [
+          "C5",
+          149.75,
+          0.25
+        ],
+        [
+          "C5",
+          150,
+          2
+        ],
+        [
+          "A4",
+          152,
+          0.5
+        ],
+        [
+          "C5",
+          152.5,
+          0.5
+        ],
+        [
+          "C5",
+          153,
+          0.5
+        ],
+        [
+          "A4",
+          153.5,
+          0.5
+        ],
+        [
+          "G4",
+          154,
+          0.5
+        ],
+        [
+          "A4",
+          154.5,
+          0.5
+        ],
+        [
+          "C5",
+          155,
+          0.5
+        ],
+        [
+          "D5",
+          155.5,
+          1
+        ],
+        [
+          "C5",
+          156.5,
+          3.5
+        ],
+        [
+          "E5",
+          160,
+          0.5
+        ],
+        [
+          "G5",
+          160.5,
+          0.5
+        ],
+        [
+          "G5",
+          161,
+          0.5
+        ],
+        [
+          "C5",
+          161.5,
+          0.5
+        ],
+        [
+          "D5",
+          162,
+          1.5
+        ],
+        [
+          "C5",
+          163.5,
+          0.5
+        ],
+        [
+          "A4",
+          164,
+          0.5
+        ],
+        [
+          "C5",
+          164.5,
+          0.5
+        ],
+        [
+          "C5",
+          165,
+          0.5
+        ],
+        [
+          "E4",
+          165.5,
+          0.5
+        ],
+        [
+          "G4",
+          166,
+          2
+        ],
+        [
+          "A4",
+          168,
+          0.5
+        ],
+        [
+          "B4",
+          168.5,
+          0.5
+        ],
+        [
+          "C5",
+          169,
+          0.5
+        ],
+        [
+          "A4",
+          169.5,
+          0.5
+        ],
+        [
+          "G4",
+          170,
+          0.5
+        ],
+        [
+          "A4",
+          170.5,
+          0.5
+        ],
+        [
+          "C5",
+          171,
+          1
+        ],
+        [
+          "D5",
+          172,
+          1.5
+        ],
+        [
+          "C5",
+          173.5,
+          0.5
+        ],
+        [
+          "D5",
+          174,
+          2
+        ],
+        [
+          "E5",
+          176,
+          0.5
+        ],
+        [
+          "G5",
+          176.5,
+          0.5
+        ],
+        [
+          "G5",
+          177,
+          0.5
+        ],
+        [
+          "C5",
+          177.5,
+          0.5
+        ],
+        [
+          "D5",
+          178,
+          2
+        ],
+        [
+          "A4",
+          180,
+          0.5
+        ],
+        [
+          "C5",
+          180.5,
+          0.5
+        ],
+        [
+          "C5",
+          181,
+          0.5
+        ],
+        [
+          "E4",
+          181.5,
+          0.5
+        ],
+        [
+          "G4",
+          182,
+          2
+        ],
+        [
+          "A4",
+          184,
+          0.5
+        ],
+        [
+          "B4",
+          184.5,
+          0.5
+        ],
+        [
+          "C5",
+          185,
+          0.5
+        ],
+        [
+          "C5",
+          185.5,
+          0.25
+        ],
+        [
+          "A4",
+          185.75,
+          0.25
+        ],
+        [
+          "G4",
+          186,
+          0.5
+        ],
+        [
+          "A4",
+          186.5,
+          0.5
+        ],
+        [
+          "C5",
+          187,
+          0.5
+        ],
+        [
+          "E5",
+          187.5,
+          0.5
+        ],
+        [
+          "D5",
+          188,
+          1.5
+        ],
+        [
+          "A4",
+          189.5,
+          0.25
+        ],
+        [
+          "B4",
+          189.75,
+          0.25
+        ],
+        [
+          "C5",
+          190,
+          2
         ]
       ],
       "sourceFeatures": {
-        "hasChords": true,
-        "hasArpeggio": true,
-        "hasRepeats": false,
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "sourceKey": "E",
+        "transpositionSemitones": 8,
+        "sourceMeasureCount": 48,
+        "sourceWrittenMeasureCount": 24,
+        "sourceTotalBeats": 192,
+        "transcriptionScope": "complete-selected-24-written-bar-xiqiang-vocal-jianpu-repeated-twice-principal-melody",
+        "composer": "刘洋",
+        "lyricist": "崔开潮",
+        "arranger": "逸兔",
         "unsupported": [
-          "主旋律版省略原谱下声部伴奏与同时和声音。",
-          "第9、10、13、14小节保留0.75拍起音及后续0.25+0.5拍同音延音，不重复弹灰色延音音符。"
+          "明确采用逸兔《声声慢·戏腔》单线人声简谱；谱面未署演唱者，不借旧版崔开潮演唱标签指认本版录音。",
+          "24个实写小节按首尾反复两遍，48小节192拍；不由前4小节两排歌词另外加遍，也不忽略真正反复。",
+          "每遍省略14个未定时小倚音和4处短波音（展开为28/8）；不猜附属音时值、不偷减主音或新增实体目标，非完整装饰演唱转写。",
+          "采用无点1=E4的计算约定，整段统一+8半音至C调E4–G5；保留主音各自八度，不局部降高音、改半音或复制相似句。",
+          "主旋律无写出休止；保留同音延音与无连线重拨，不把歌词标点改为定量休止，不增加结尾延长。",
+          "72 BPM为原谱印刷速度；初次慢速和用户已保存倍率另算，medium与默认1.0不表示实体舒适度已经通过。",
+          "只选该完整印刷编配的主旋律与反复，不等同任何商业录音全曲；不添加或借用伴奏。",
+          "旧76音/64拍文件内部完整保留，原图未恢复，另一版差异不证明旧谱错误。谱面核对不等于主观听感、实体弹奏或公开传播权通过。"
         ],
         "unsureMeasures": [],
-        "composer": "刘洋",
-        "arranger": "羊阿宝工作室",
         "sources": [
           {
-            "label": "用户直接提供的拇指琴圈图片谱",
-            "url": "https://mp.weixin.qq.com/s?__biz=MzI0ODk1NzAzNg==&mid=2247493066&idx=1&sn=b14213efdb216fa85d6db46e4a3cb3c4&scene=21#wechat_redirect"
+            "label": "苍强曲谱公开可见《声声慢·戏腔》，刘洋曲、崔开潮词、逸兔制谱；完整24实写小节及首尾反复",
+            "url": "https://www.cangqiang.com.cn/bofang/56707.html"
           }
         ],
-        "transcriptionScope": "published-short-arrangement-16-measures",
-        "sourceMeasureCount": 16,
-        "sourceTotalBeats": 64,
-        "sourceKey": "C",
-        "transpositionSemitones": 0,
         "suitability": {
           "status": "conditional",
-          "scope": "published-short-arrangement-16-measures",
-          "reason": "所提供谱面的主旋律保留原节奏与八度关系，音域E4–G5，适配21音C调。",
+          "scope": "Complete selected24-written-bar opera-style principal vocal line, repeated twice:252 attacks/192 quarter beats; global E-to-C +8.",
+          "reason": "Both source-only readers agree on every principal head and timing, including cross-system ties and independently written returns. The selected principal-only reduction fits E4–G5 without local pitch edits. Ornamental performance and subjective/physical comfort are not approved.",
           "reviewRequired": [
-            "实体琴的高音音色、长音衰减与原演示录音辨识度试听待用户验收。"
+            "Compare the selected principal-only edition against an appropriate reference at printed72 BPM and the actual visible practice factor; do not claim a named singer performance.",
+            "Check sixteenth-note pairs, repeated attacks and sustained-note decay on a physical kalimba; the current medium label is retained rather than newly certified.",
+            "Establish reproduction rights before any public distribution; assess harmony separately before adding accompaniment."
           ]
+        },
+        "sourceReview": {
+          "archivedEdition": {
+            "file": "data/archives/sheng-sheng-man-v2.4.40.json",
+            "fileSha256": "3409453b57ca4c84bc62657bb54f8f3afaca34309664006834220d5a9ffdc7e8",
+            "attackCount": 76,
+            "melodyEndBeat": 64,
+            "restoration": "Full original JSON is byte-identical and retained internally for developer recovery. No old-version card, archive-download or restoration UI is added."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": false,
+            "unsupported": [
+              "主旋律版省略原谱下声部伴奏与同时和声音。",
+              "第9、10、13、14小节保留0.75拍起音及后续0.25+0.5拍同音延音，不重复弹灰色延音音符。"
+            ],
+            "unsureMeasures": [],
+            "composer": "刘洋",
+            "arranger": "羊阿宝工作室",
+            "sources": [
+              {
+                "label": "用户直接提供的拇指琴圈图片谱",
+                "url": "https://mp.weixin.qq.com/s?__biz=MzI0ODk1NzAzNg==&mid=2247493066&idx=1&sn=b14213efdb216fa85d6db46e4a3cb3c4&scene=21#wechat_redirect"
+              }
+            ],
+            "transcriptionScope": "published-short-arrangement-16-measures",
+            "sourceMeasureCount": 16,
+            "sourceTotalBeats": 64,
+            "sourceKey": "C",
+            "transpositionSemitones": 0,
+            "suitability": {
+              "status": "conditional",
+              "scope": "published-short-arrangement-16-measures",
+              "reason": "所提供谱面的主旋律保留原节奏与八度关系，音域E4–G5，适配21音C调。",
+              "reviewRequired": [
+                "实体琴的高音音色、长音衰减与原演示录音辨识度试听待用户验收。"
+              ]
+            }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-xiqiang-principal-edition",
+            "adoptedInVersion": "2.4.41",
+            "reviewedOn": "2026-10-12",
+            "sourceTitle": "声声慢",
+            "sourceSubtitle": "戏腔",
+            "sourceComposer": "刘洋",
+            "sourceLyricist": "崔开潮",
+            "sourceEngraver": "逸兔",
+            "sourcePerformer": null,
+            "decision": "Explicitly select the complete visible Yitu opera-style vocal jianpu, follow its actual whole-score repeat twice, and disclose an unmeasured-ornament-omitted principal-melody practice edition. This does not identify the unavailable old image or certify a named recording.",
+            "sourceImageSha256": "65d088eec9babf4d6c22dcfff8c7a5833ec11e9e40157a6aa01727d972dd2277",
+            "sourceImageDimensions": [
+              615,
+              1246
+            ],
+            "sourceUrl": "https://www.cangqiang.com.cn/bofang/56707.html",
+            "sourceImageAcquisition": "Three visible public-page viewport captures, same stable layout, joined at measured scroll positions without redrawing notation. Full frozen pixels and original captures remain private.",
+            "sourceMeasureNumbers": "Editorially counted m1–24; the original prints no bar numbers.",
+            "sourceWrittenMeasureCount": 24,
+            "sourceExpandedMeasureCount": 48,
+            "sourceWrittenTotalBeats": 96,
+            "sourceTotalBeats": 192,
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": 72,
+            "sourceNumericTempoPrinted": true,
+            "tempoDecision": "Preserve printed quarter=72. Existing medium/defaultSpeedFactor1 are suggestions, not source facts or physical comfort approval; user-selected speed persists under the original id.",
+            "sourceKey": "E",
+            "absoluteOctaveConvention": "Undotted source1=E4; this declared movable-do realization preserves every octave dot and does not claim a singer concert register.",
+            "transpositionSemitones": 8,
+            "globalOctaveShift": 1,
+            "sourcePrincipalRange": [
+              "G#3",
+              "B4"
+            ],
+            "compiledRange": [
+              "E4",
+              "G5"
+            ],
+            "sourcePitchClasses": [
+              1,
+              3,
+              4,
+              6,
+              8,
+              11
+            ],
+            "additionalMelodyAccidentals": [],
+            "localPitchAlterations": [],
+            "octaveFolding": false,
+            "pitchDecision": "One +8-semitone E-to-C shift (pitch-class shift minus4 plus one uniform octave) places all principals in E4–G5. Other mathematical fits are not the selected edition; no local naturalization or octave folding.",
+            "literalRoute": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "expandedRoute": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "repeatCount": 2,
+            "repeatDecision": "Actual opening and final repeat signs enclose all24 written bars. Traverse twice, then stop; no numbered endings, D.C./D.S., extra lyric-driven passes, or tie across the repeat boundary.",
+            "principalWrittenHeadCount": 130,
+            "principalWrittenAttackCount": 126,
+            "principalExpandedHeadCount": 260,
+            "principalExpandedAttackCount": 252,
+            "writtenTieJoins": 4,
+            "expandedTieJoins": 8,
+            "samePitchTies": [
+              {
+                "sourceHeads": [
+                  "m11h08",
+                  "m12h01"
+                ],
+                "sourceMeasures": [
+                  11,
+                  12
+                ],
+                "sourcePitch": "B4",
+                "from": [
+                  "G5",
+                  43.5,
+                  0.5
+                ],
+                "to": [
+                  "G5",
+                  44,
+                  0.5
+                ],
+                "location": "cross-system"
+              },
+              {
+                "sourceHeads": [
+                  "m12h02",
+                  "m12h03"
+                ],
+                "sourceMeasures": [
+                  12,
+                  12
+                ],
+                "sourcePitch": "G#4",
+                "from": [
+                  "E5",
+                  44.5,
+                  0.5
+                ],
+                "to": [
+                  "E5",
+                  45,
+                  3
+                ],
+                "location": "within-bar"
+              },
+              {
+                "sourceHeads": [
+                  "m15h08",
+                  "m16h01"
+                ],
+                "sourceMeasures": [
+                  15,
+                  16
+                ],
+                "sourcePitch": "F#4",
+                "from": [
+                  "D5",
+                  59.5,
+                  0.5
+                ],
+                "to": [
+                  "D5",
+                  60,
+                  0.5
+                ],
+                "location": "cross-bar same-system"
+              },
+              {
+                "sourceHeads": [
+                  "m16h02",
+                  "m16h03"
+                ],
+                "sourceMeasures": [
+                  16,
+                  16
+                ],
+                "sourcePitch": "E4",
+                "from": [
+                  "C5",
+                  60.5,
+                  0.5
+                ],
+                "to": [
+                  "C5",
+                  61,
+                  3
+                ],
+                "location": "within-bar"
+              }
+            ],
+            "writtenDifferentPitchSlurs": 9,
+            "differentPitchSlurs": [
+              {
+                "from": "m01h05",
+                "to": "m01h06",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m08h02",
+                "to": "m08h03",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m09h03",
+                "to": "m09h04",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m10h03",
+                "to": "m10h04",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m13h03",
+                "to": "m13h04",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m14h03",
+                "to": "m14h04",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m17h05",
+                "to": "m17h06",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m23h04",
+                "to": "m23h05",
+                "type": "different-pitch slur"
+              },
+              {
+                "from": "m24h02",
+                "to": "m24h03",
+                "type": "different-pitch slur"
+              }
+            ],
+            "writtenUntiedSamePitchPairs": 20,
+            "untiedSamePitchPairs": [
+              {
+                "from": "m01h02",
+                "to": "m01h03",
+                "literalPitch": "B4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m02h02",
+                "to": "m02h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m05h02",
+                "to": "m05h03",
+                "literalPitch": "B4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m06h02",
+                "to": "m06h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m08h03",
+                "to": "m08h04",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m09h01",
+                "to": "m09h02",
+                "literalPitch": "C#4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m09h04",
+                "to": "m09h05",
+                "literalPitch": "F#4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m10h01",
+                "to": "m10h02",
+                "literalPitch": "B3",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m10h04",
+                "to": "m10h05",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m11h02",
+                "to": "m11h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m13h01",
+                "to": "m13h02",
+                "literalPitch": "C#4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m13h04",
+                "to": "m13h05",
+                "literalPitch": "F#4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m14h01",
+                "to": "m14h02",
+                "literalPitch": "B3",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m14h04",
+                "to": "m14h05",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m15h02",
+                "to": "m15h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m17h02",
+                "to": "m17h03",
+                "literalPitch": "B4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m18h02",
+                "to": "m18h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m21h02",
+                "to": "m21h03",
+                "literalPitch": "B4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m22h02",
+                "to": "m22h03",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              },
+              {
+                "from": "m23h03",
+                "to": "m23h04",
+                "literalPitch": "E4",
+                "merge": false,
+                "reason": "no same-pitch connecting tie; preserve both principal attacks"
+              }
+            ],
+            "ornaments": {
+              "decision": "explicitly-omitted-nonmetric-ornaments",
+              "writtenGraceCount": 14,
+              "expandedGraceCount": 28,
+              "writtenWaveCount": 4,
+              "expandedWaveCount": 8,
+              "graces": [
+                {
+                  "sourceMeasure": 1,
+                  "beforeHead": "m01h02",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 0.5,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 2,
+                  "beforeHead": "m02h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": 0,
+                  "sourcePitch": "G#4",
+                  "principalBeat": 6,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 3,
+                  "beforeHead": "m03h04",
+                  "sourceDegree": 7,
+                  "sourceOctave": -1,
+                  "sourcePitch": "D#4",
+                  "principalBeat": 9.5,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 4,
+                  "beforeHead": "m04h03",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 14,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 5,
+                  "beforeHead": "m05h02",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 16.5,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 6,
+                  "beforeHead": "m06h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 22,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 9,
+                  "beforeHead": "m09h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 34,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 10,
+                  "beforeHead": "m10h05",
+                  "sourceDegree": 2,
+                  "sourceOctave": -1,
+                  "sourcePitch": "F#3",
+                  "principalBeat": 38,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 13,
+                  "beforeHead": "m13h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 50,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 14,
+                  "beforeHead": "m14h05",
+                  "sourceDegree": 2,
+                  "sourceOctave": -1,
+                  "sourcePitch": "F#3",
+                  "principalBeat": 54,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 15,
+                  "beforeHead": "m15h02",
+                  "sourceDegree": 7,
+                  "sourceOctave": 0,
+                  "sourcePitch": "D#5",
+                  "principalBeat": 56.5,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 15,
+                  "beforeHead": "m15h04",
+                  "sourceDegree": 7,
+                  "sourceOctave": -1,
+                  "sourcePitch": "D#4",
+                  "principalBeat": 57.5,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 18,
+                  "beforeHead": "m18h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 70,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 21,
+                  "beforeHead": "m21h05",
+                  "sourceDegree": 3,
+                  "sourceOctave": -1,
+                  "sourcePitch": "G#3",
+                  "principalBeat": 82,
+                  "principalTimingChanged": false,
+                  "quantifiedDuration": null
+                }
+              ],
+              "waves": [
+                {
+                  "sourceMeasure": 4,
+                  "onHead": "m04h01",
+                  "sourcePrincipalPitch": "F#4",
+                  "auxiliaryNotesSpecified": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 8,
+                  "onHead": "m08h01",
+                  "sourcePrincipalPitch": "F#4",
+                  "auxiliaryNotesSpecified": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 20,
+                  "onHead": "m20h01",
+                  "sourcePrincipalPitch": "F#4",
+                  "auxiliaryNotesSpecified": false,
+                  "quantifiedDuration": null
+                },
+                {
+                  "sourceMeasure": 24,
+                  "onHead": "m24h01",
+                  "sourcePrincipalPitch": "F#4",
+                  "auxiliaryNotesSpecified": false,
+                  "quantifiedDuration": null
+                }
+              ],
+              "timing": "No fixed ornament duration, auxiliary-note realization or stolen principal time is specified. Omit the18 printed ornament instances on each pass while preserving every principal onset/duration; do not call this the full decorated performance.",
+              "registerReconciliation": "All principal tuples agreed in the first two independent freezes. One grace in m2 differed: A initially read lower3, then corrected it to undotted3 after source-pixel reinspection; the independent addendum and original freeze are both retained. B read it undotted initially. This is not initial independent agreement on every ornament."
+            },
+            "rests": [],
+            "pickupBeats": 0,
+            "endingRestBeats": 0,
+            "fermatas": [],
+            "breathDecision": "No written principal rest or quantified breath is present. Punctuation does not authorize a new rest or cutting a note.",
+            "finalAttack": [
+              "C5",
+              190,
+              2
+            ],
+            "fullSelectedPrincipalMelodyReviewed": true,
+            "fullOrnamentedPerformanceApproved": false,
+            "fullSongApproved": false,
+            "independentSourceReaders": 2,
+            "independentPublishedSources": 1,
+            "firstFrozenSourceReadingSha256": "efa0bee71b9789bc077aeb88d296b1e8dfd982dda7c9cfdb2b16e90f65fab079",
+            "independentSourceFixtureSha256": "46dc801b1ed4d2a46a89d8adb62f4e68334bfea414ab03db82515fd0bdf31eed",
+            "postFreezeGraceCorrectionSha256": "aa301605556dd05d52638e6f3fffd5cb092efc52535995f7772a403fa1a854bc",
+            "sourceReviewMethod": "Compare both independently frozen complete source-only transcriptions: all130 principal heads and notated durations,126 written attacks,4 ties,9 slurs,20 untied same-pitch pairs and252 expanded attacks agree; one nonmetric grace octave is transparently reconciled in a later addendum.",
+            "sourceMidiTupleSha256": "652b0f3083d4d41bbd93bb51147f77319c076ccbcfae311a430dac3c69102e87",
+            "compiledTupleSha256": "91b94ec970bbb71be0d84ed58aad5ded16006c38a2ec7fcac8a83b84081b002e",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "addedSupport": false,
+            "accompanimentDecision": "This selected source is a single vocal line; add no backing. No V2 sibling or legacy automatic layer exists for this id.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only"
+          }
         }
-      }
+      },
+      "tuning": "21-key-c"
     },
   "song-bie": {
       "schemaVersion": 1,
       "id": "song-bie",
-      "title": "《送别》",
+      "title": "《送别》（教学版）",
       "uploader": "system",
-      "practiceTitle": "《送别》练习轨道",
-      "scoreTitle": "《送别》简谱进度",
-      "hint": "依据网上 C 调简谱重新校对的主旋律版，句尾保留两拍呼吸。",
+      "practiceTitle": "《送别》（教学版）练习轨道",
+      "scoreTitle": "《送别》（教学版）简谱进度",
+      "hint": "选用《中国诗乐二十品》完整24小节教学主旋律，86个单音共96拍；降E调统一移至C调，保留六处两拍休止及末尾静默。70 BPM为练习设定。",
       "difficulty": "easy",
       "bpm": 70,
       "defaultSpeedFactor": 0.9,
@@ -43607,32 +52650,32 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "C5",
+          "C4",
           9,
           0.5
         ],
         [
-          "D5",
+          "D4",
           9.5,
           0.5
         ],
         [
-          "E5",
+          "E4",
           10,
           1
         ],
         [
-          "D5",
+          "D4",
           11,
           0.5
         ],
         [
-          "C5",
+          "C4",
           11.5,
           0.5
         ],
         [
-          "D5",
+          "D4",
           12,
           2
         ],
@@ -43682,27 +52725,27 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "D5",
+          "D4",
           25,
           0.5
         ],
         [
-          "E5",
+          "E4",
           25.5,
           0.5
         ],
         [
-          "F5",
+          "F4",
           26,
           1.5
         ],
         [
-          "B4",
+          "B3",
           27.5,
           0.5
         ],
         [
-          "C5",
+          "C4",
           28,
           2
         ],
@@ -43832,59 +52875,479 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "D5",
+          "D4",
           57,
           0.5
         ],
         [
-          "E5",
+          "E4",
           57.5,
           0.5
         ],
         [
-          "F5",
+          "F4",
           58,
           1.5
         ],
         [
-          "B4",
+          "B3",
           59.5,
           0.5
         ],
         [
-          "C5",
+          "C4",
           60,
-          4
+          2
+        ],
+        [
+          "G4",
+          64,
+          1
+        ],
+        [
+          "E4",
+          65,
+          0.5
+        ],
+        [
+          "G4",
+          65.5,
+          0.5
+        ],
+        [
+          "C5",
+          66,
+          2
+        ],
+        [
+          "A4",
+          68,
+          1
+        ],
+        [
+          "C5",
+          69,
+          1
+        ],
+        [
+          "G4",
+          70,
+          2
+        ],
+        [
+          "G4",
+          72,
+          1
+        ],
+        [
+          "C4",
+          73,
+          0.5
+        ],
+        [
+          "D4",
+          73.5,
+          0.5
+        ],
+        [
+          "E4",
+          74,
+          1
+        ],
+        [
+          "D4",
+          75,
+          0.5
+        ],
+        [
+          "C4",
+          75.5,
+          0.5
+        ],
+        [
+          "D4",
+          76,
+          2
+        ],
+        [
+          "G4",
+          80,
+          1
+        ],
+        [
+          "E4",
+          81,
+          0.5
+        ],
+        [
+          "G4",
+          81.5,
+          0.5
+        ],
+        [
+          "C5",
+          82,
+          1.5
+        ],
+        [
+          "B4",
+          83.5,
+          0.5
+        ],
+        [
+          "A4",
+          84,
+          1
+        ],
+        [
+          "C5",
+          85,
+          1
+        ],
+        [
+          "G4",
+          86,
+          2
+        ],
+        [
+          "G4",
+          88,
+          1
+        ],
+        [
+          "D4",
+          89,
+          0.5
+        ],
+        [
+          "E4",
+          89.5,
+          0.5
+        ],
+        [
+          "F4",
+          90,
+          1.5
+        ],
+        [
+          "B3",
+          91.5,
+          0.5
+        ],
+        [
+          "C4",
+          92,
+          2
         ]
       ],
       "sourceFeatures": {
-        "hasChords": true,
+        "hasChords": false,
         "hasArpeggio": false,
         "hasRepeats": false,
-        "sourceImages": [
-          "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
-          "private/sheets/raw/IMG_20260613_182620.jpg"
-        ],
         "unsupported": [
-          "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
-          "重新读谱后修正旧版开头误把伴奏行或低八度音当成主旋律的问题。"
+          "选用《中国诗乐二十品》全页24小节单声部教学谱；五线谱与简谱属于同一版，全部按谱顺序演奏一次，不因多行歌词增加反复。",
+          "降E调全线统一下移三个半音至C调，保留全部音程、八度及六处两拍休止；不混用旧58音版本或吉他世界另一版的八度。",
+          "这是另一份完整教学旋律，不证明原照片对应的旧58音、64拍版本错误；旧版原始数据和复核历史完整留存，原V2伴奏不沿用。",
+          "原谱未标速度，70 BPM与easy难度为编辑练习选择；原0.9建议倍率保留，不覆盖初次或已保存的实际速度。参考录音比较、浏览器试听及实琴验收是独立待验项目。"
         ],
         "unsureMeasures": [],
         "sources": [
           {
-            "label": "吉他世界《送别》C调弹唱谱",
-            "url": "https://www.guitarworld.com.cn/pu/q45790"
-          },
-          {
-            "label": "CNBlogs anbus encoded 《送别》 numbered melody",
-            "url": "https://www.cnblogs.com/anbus/p/11303701.html"
-          },
-          {
-            "label": "维基百科《送别》条目与乐谱片段",
-            "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
+            "label": "《中国诗乐二十品》送别教学谱，外文出版社，印刷页222 / PDF页238",
+            "url": "https://cxqx.jyc.edu.cn/__local/3/D5/71/B7A1BD225359A39D710C8C3021A_A9C90F62_167DC01.pdf#page=238"
           }
-        ]
-      }
+        ],
+        "transcriptionScope": "selected-complete-monophonic-teaching-edition",
+        "sourceMeasureCount": 24,
+        "sourceTotalBeats": 96,
+        "sourceKey": "Eb",
+        "transpositionSemitones": -3,
+        "tempoStatus": "editorial-practice-tempo-source-unmarked",
+        "meterStatus": "printed-4/4",
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-complete-teaching-edition",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.29",
+            "selectedEdition": "chinese-poetry-music-twenty-pieces-complete-teaching-melody",
+            "sourceUrl": "https://cxqx.jyc.edu.cn/__local/3/D5/71/B7A1BD225359A39D710C8C3021A_A9C90F62_167DC01.pdf#page=238",
+            "sourcePublication": "《中国诗乐二十品》，主编张竹筠、沈亚玲，外文出版社；揭阳职业技术学院公开教学资料",
+            "sourceCredits": "李叔同词 / （美）奥德维曲",
+            "sourcePdfSha256": "ca4f41c909d255dfa1817d3988ccb404fc2ed39a96c3682b8814810a29c64e6c",
+            "printedPage": 222,
+            "pdfPage": 238,
+            "sourceMeasureRange": [
+              1,
+              24
+            ],
+            "sourceMeasureCount": 24,
+            "distinctPrintedMelodyMeasures": 24,
+            "sourceMeasureNumbers": "Printed system-start labels 5, 9, 13, 17 and 21 anchor the 24-bar count; intermediate measure numbers are counted.",
+            "reviewedBeatRanges": [
+              [
+                0,
+                96
+              ]
+            ],
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  1,
+                  24
+                ],
+                "beats": [
+                  0,
+                  96
+                ],
+                "attacks": 86
+              }
+            ],
+            "excludedSections": [],
+            "sourceVoice": "explicit-lyric-aligned-monophonic-staff-and-numbered-line",
+            "voiceDecision": "Staff and numbered notation show the same single vocal melody. No chord-tone extraction; these are two representations of one edition, not independent source editions.",
+            "sourceKey": "Eb",
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": null,
+            "sourceTempoPrinted": false,
+            "tempoDecision": "70 BPM is an editorial practice choice, not a printed source or recording tempo. The historical defaultSpeedFactor=0.9 suggestion stays unchanged; initial and remembered speed are not changed by this adoption.",
+            "difficultyDecision": "easy is an editorial conditional practice suggestion, not a printed grading or completed physical-playability finding.",
+            "registerConvention": "Treble staff establishes undotted 1=Eb4; a uniform -3-semitone transposition gives undotted 1=C4. Read each actual octave dot; no local octave folding.",
+            "sourceRange": [
+              "D4",
+              "Eb5"
+            ],
+            "compiledRange": [
+              "B3",
+              "C5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10
+            ],
+            "transpositionSemitones": -3,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "sourceKeySignatureAccidentals": [
+              "Bb",
+              "Eb",
+              "Ab"
+            ],
+            "additionalMelodyAccidentals": [],
+            "localPitchAlterations": [],
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 0,
+            "repeatExpansion": "none-all-24-selected-bars-written-out",
+            "repeatSignsPresent": false,
+            "lyricRowsAuthorizeRepeat": false,
+            "formDecision": "Retain the entire printed m1–24 once through its final double bar. The later eight-bar return is separately printed and independently read. Alternate lyric rows do not authorize another traversal; this is the complete selected teaching melody, not every performance or stanza form.",
+            "selectedAttacks": 86,
+            "tieContinuationCount": 0,
+            "ties": [],
+            "tuplets": [],
+            "occurrenceDecisions": [
+              "At separately printed m3 and m19, source Bb4 drops to Eb4; undotted numbered 1, 2, 3, 2, 1 agree with the staff. Compiled C4/D4/E4/D4/C4 retain that lower register.",
+              "At m7, m15 and m23, the lower dot on the final short degree 7 agrees with staff D4; all three compile to B3. Each occurrence was inspected.",
+              "At m5, m13 and m21, upper tonic is a dotted quarter followed by an eighth-note degree 7. At m7, m15 and m23, degree 4 is dotted quarter followed by lower-7 eighth; augmentation and octave dots remain distinct.",
+              "Every visible arc joins different pitches and remains a slur. Separate high-tonic attacks at m9 and adjacent degree-6 eighth attacks at m11 are not merged; m11 retains eight eighth notes. No same-pitch ties or tuplets are present."
+            ],
+            "silentWindows": [
+              {
+                "beat": 14,
+                "duration": 2
+              },
+              {
+                "beat": 30,
+                "duration": 2
+              },
+              {
+                "beat": 46,
+                "duration": 2
+              },
+              {
+                "beat": 62,
+                "duration": 2
+              },
+              {
+                "beat": 78,
+                "duration": 2
+              },
+              {
+                "beat": 94,
+                "duration": 2
+              }
+            ],
+            "restScope": "Six two-beat rests in the single-voice teaching score, each a half-note followed by two written quarter rests. This monophonic edition contains no backing voice; silence claims do not apply to other arrangements or acoustic decay.",
+            "allLayerSilenceClaim": true,
+            "endingRestBeats": 2,
+            "selectedEndIsFullSongEnding": false,
+            "selectedEndIsSelectedEditionEnding": true,
+            "endingDecision": "Final C4 attacks at 92 for two beats; two printed quarter rests preserve [94,96). Do not extend C4, truncate at 94, or treat written duration as a PCM/effects-tail cutoff.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "versionDecision": "Deliberately selected complete teaching edition, not proof that the old 58-attack / 64-beat edition is wrong. This source does not recover the unavailable original photo or resolve the different GuitarWorld engraving intent.",
+            "supportDecision": "No backing is added or borrowed. The unchanged historical song-bie-chord sibling fails the actual content compatibility guard despite sharing the title/base id and 70 BPM.",
+            "sourcePixelReview": "The source author read all 24 bars in staff and numbered notation. An independent reader entered all 24 bars before comparison and matched all 86 transposed tuples and six rests. Implementation also viewed the complete page. These are separate readings of one edition, not independent source editions.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only",
+            "rightsNotice": "Public source access is not a reproduction or public-distribution license. No source-book images, engraving, lyrics or full private glyph maps are packaged; this adoption does not authorize push, publication or deployment."
+          },
+          "archivedEdition": {
+            "file": "data/archives/song-bie-v2.4.28.json",
+            "fileSha256": "31042a1c640d60dbf2cabfd880aa451d6d2f142916c169fa5bc5eabca19c0a26",
+            "purpose": "Byte-exact developer recovery of all 58 steps, original display strings, 70 BPM, 4/4, 0.9 suggestion and complete source metadata. No additional built-in card, user restore UI, HTTP route or precache entry."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "sourceImages": [
+              "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
+              "private/sheets/raw/IMG_20260613_182620.jpg"
+            ],
+            "unsupported": [
+              "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
+              "仅采用吉他世界公开预览第7–8小节的五处八度校正；不表示缺失的原卡林巴照片或其他版本错误。",
+              "第3–4小节的八度意图仍有冲突；未查看付费第二页，不把本次校正套用到第57–60拍。",
+              "原V2来源版和伴奏保留原样；旋律不一致时不可沿用为本版练习伴奏。"
+            ],
+            "unsureMeasures": [
+              3,
+              4,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "sources": [
+              {
+                "label": "吉他世界《送别》C调弹唱谱",
+                "url": "https://www.guitarworld.com.cn/pu/q45790"
+              },
+              {
+                "label": "CNBlogs anbus encoded 《送别》 numbered melody",
+                "url": "https://www.cnblogs.com/anbus/p/11303701.html"
+              },
+              {
+                "label": "维基百科《送别》条目与乐谱片段",
+                "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
+              }
+            ],
+            "sourceReview": {
+              "confidence": "partial-source-specific",
+              "decision": "Adopt the existing cited GuitarWorld public preview only for the unambiguous m7–8 cadence. Keep the rest of the 58-attack, 64-beat encoding pending review rather than fabricate a full edition.",
+              "historicalReviewNotes": {
+                "previousHint": "依据网上 C 调简谱重新校对的主旋律版，句尾保留两拍呼吸。",
+                "unsupported": [
+                  "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
+                  "重新读谱后修正旧版开头误把伴奏行或低八度音当成主旋律的问题。"
+                ],
+                "unsureMeasures": [],
+                "status": "Historical pre-2.4.5 claims, retained for provenance and exact reconstruction; not current source verification. The original private photos are unavailable."
+              },
+              "currentScopeReview": {
+                "date": "2026-10-12",
+                "status": "reviewed-cadence-only-rest-needs-review",
+                "sourceUrl": "https://www.guitarworld.com.cn/pu/q45790",
+                "previewUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/791924/view/4e7aacc1901fe74235aa752033510542.png",
+                "sourceImageSha256": "1316e3ffb8e3ae391f184ec6881db13d380d3e12a566687532394644a15a5601",
+                "sourceImageDimensions": [
+                  1200,
+                  831
+                ],
+                "reviewedMeasures": [
+                  7,
+                  8
+                ],
+                "reviewedBeatRanges": [
+                  [
+                    24,
+                    32
+                  ]
+                ],
+                "correctedPitchBeats": [
+                  25,
+                  25.5,
+                  26,
+                  27.5,
+                  28
+                ],
+                "sourceConfirmedRestWindows": [
+                  {
+                    "beat": 30,
+                    "duration": 2
+                  }
+                ],
+                "cropBox": [
+                  630,
+                  698,
+                  1110,
+                  830
+                ],
+                "timebase": "Quarter-note beats, zero at the first visible vocal melody attack; 1=C, 4/4, no pickup. No-dot tonic is C4 by repository convention.",
+                "transpositionSemitones": 0,
+                "sourceBpm": null,
+                "retainedPracticeTempo": "70 BPM is the retained playback basis, not a tempo marking established by this preview. The historical defaultSpeedFactor 0.9 field is preserved (63 BPM at 0.9x); the current runtime uses the selected or remembered practice multiplier, initially 0.55x (38.5 BPM) without a saved preference.",
+                "notationDecision": "Keep six separate attacks G4, D4, E4, F4, B3, C4; the different-pitch arc is a slur. The F side dot augments duration, the B lower dot lowers its octave, and the two printed quarter rests preserve beats 30–32.",
+                "unresolvedBeatRanges": [
+                  [
+                    8,
+                    16
+                  ],
+                  [
+                    32,
+                    64
+                  ]
+                ],
+                "unresolvedReason": "Preview m3 has upper dots on C/D but none on the following E/D/C; its engraving intent and m4 register remain unresolved. The paid second half, later repeated-looking cadence at beats 57–60, full form and ending were not inspected. Do not mirror the correction or infer a sourceTotalBeats from the retained encoding.",
+                "originalPrivatePhotosReverified": false,
+                "fullSongApproved": false,
+                "originalMelodyFileSha256": "adaf958d152111ca3a11c0a7b9a6373e9074035d9a464a88504f08e57afb884d",
+                "preservedV2FileSha256": "dd575f1e2db95a54b010d3e9eca6e1f273f58190743fec68e7db55490e61c35c",
+                "browserAudio": "not-performed",
+                "referenceListening": "not-performed",
+                "physicalKalimba": "not-performed",
+                "limitations": "This source-specific two-bar correction does not verify every edition, the unavailable original kalimba photos, complete repeat expansion, unseen paid pages, later rest/ending, harmony, listening quality or public-distribution rights. V2 remains historical source data with a different melody; do not reuse its support until separately reviewed and content-compatible."
+              }
+            },
+            "suitability": {
+              "status": "needs-review",
+              "scope": "existing 64-beat single-note arrangement; source-specific m7–8 cadence corrected only",
+              "reason": "The reviewed cadence fits the fixed F3–E6 natural-note instrument without transposition; the retained song has unresolved register/form evidence and no completed listening or physical play-through. A partial source correction is not whole-song approval.",
+              "reviewRequired": [
+                "Resolve the first-phrase m3–4 octave conflict against the same arrangement or the original kalimba photo.",
+                "Verify the unseen second half, repeat/form decisions, later cadence, third rest and final note/extent.",
+                "Compare the unaccompanied reviewed phrase to a reference at the retained 70 BPM basis and the actual selected practice multiplier. The first-use 0.55x setting yields 38.5 BPM, but remembered settings may differ; the source has no printed tempo.",
+                "Keep incompatible optional support unavailable; any later support needs separate source, rest and A/B listening review.",
+                "Physical kalimba hand alternation, jumps and decay have not been tested."
+              ]
+            }
+          },
+          "historicalEditionStatus": "The old 58-attack / 64-beat version retained only a source-specific GuitarWorld m7–8 cadence review. Its original photos, conflicting m3–4 and unseen later sections remain unverified; the complete historical metadata is preserved without converting its claims into current approval."
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "complete-selected-teaching-edition",
+          "reason": "所选24小节、86音教学旋律以统一降三个半音完整保留音程，音域B3–C5适配21键C调；独立重弹与六处两拍休止按谱保留。easy为练习建议，数值范围不代替实体演奏验收。",
+          "reviewRequired": [
+            "70 BPM是练习选择；最短0.5拍约429毫秒，0.9建议倍率约476毫秒，不代表实际网页当前速度。",
+            "参考录音比较、浏览器音频验收、实体琴手指走向与自然衰减仍待完成。"
+          ]
+        }
+      },
+      "tuning": "21-key-c"
     },
   "song-bie-chord": {
       "schemaVersion": 2,
@@ -45352,7 +54815,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《太阳照常升起》练习轨道",
       "scoreTitle": "《太阳照常升起》简谱进度",
-      "hint": "主旋律练习版；据1=F钢琴简谱转为C调21音卡林巴，保留句尾长音与跨小节连音。",
+      "hint": "EOP 17小节短编配右手主旋律，56个单音、68拍；1=F整体降5半音为C调，112 BPM。校正4处同音延音，末音保留4拍，无结尾休止；旧伴奏暂不使用，录音对听与实体琴检查待完成。",
       "difficulty": "medium",
       "bpm": 112,
       "defaultSpeedFactor": 0.82,
@@ -45387,12 +54850,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           4,
-          2
-        ],
-        [
-          "E4",
-          6,
-          0.5
+          2.5
         ],
         [
           "E4",
@@ -45527,12 +54985,7 @@ export const SONG_LIBRARY = {
         [
           "A4",
           37,
-          2
-        ],
-        [
-          "A4",
-          39,
-          0.75
+          2.75
         ],
         [
           "G4",
@@ -45567,12 +55020,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           44,
-          4
-        ],
-        [
-          "E4",
-          48,
-          1
+          5
         ],
         [
           "D4",
@@ -45602,12 +55050,7 @@ export const SONG_LIBRARY = {
         [
           "E4",
           53,
-          3
-        ],
-        [
-          "E4",
-          56,
-          1
+          4
         ],
         [
           "D4",
@@ -45669,7 +55112,330 @@ export const SONG_LIBRARY = {
         ],
         "unsureMeasures": [
           "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。"
-        ]
+        ],
+        "sourceTotalBeats": 68,
+        "sourceMeasureCount": 17,
+        "sources": [
+          {
+            "label": "EveryonePiano 1896 / Ritchie, selected short piano arrangement",
+            "url": "https://www.everyonepiano.cn/Music-1896.html"
+          },
+          {
+            "label": "Same-edition numbered notation, complete one-page melody review",
+            "url": "https://www.everyonepiano.cn/Number-1896-1.html"
+          },
+          {
+            "label": "Same-edition staff notation, pitch and articulation cross-check",
+            "url": "https://www.everyonepiano.cn/Stave-1896-1.html"
+          }
+        ],
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-eop-17-measure-right-hand-melody",
+          "reason": "The complete visible selected melody fits A3–A4 after one global -5-semitone shift. Four source-confirmed ties remove false reattacks while retaining all 52 other tuples. This does not establish recognizability against a recording or physical ease.",
+          "reviewRequired": [
+            "Reference recording comparison not performed.",
+            "Browser audio at source and actual practice speed not performed in this data review.",
+            "Physical kalimba play-through, fast dotted-note cells, jumps and long-note decay remain untested.",
+            "Source harmony is not approved; the unchanged older V2 cannot accompany this corrected melody."
+          ]
+        },
+        "sourceReview": {
+          "originalV1": {
+            "title": "《太阳照常升起》",
+            "practiceTitle": "《太阳照常升起》练习轨道",
+            "scoreTitle": "《太阳照常升起》简谱进度",
+            "hint": "主旋律练习版；据1=F钢琴简谱转为C调21音卡林巴，保留句尾长音与跨小节连音。",
+            "fileSha256": "33b31f030d96cd09a1a682c9dd40c9e12d44d80a098c4f2037bf1ac6fc78f698",
+            "stepsSha256": "8cee368e7bffb1851c26ec14d665f0f3cd84bc4859a8b43accb6bb46d09a4481",
+            "attackCount": 60,
+            "melodyEndBeat": 68,
+            "restoration": "Restore the original display strings, split the four merged tuples using currentScopeReview.tieCorrections.original, restore historicalReviewNotes as sourceFeatures, and serialize with two-space JSON indentation plus a final newline to reconstruct the full original file byte-for-byte."
+          },
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": false,
+            "unsupported": [
+              "钢琴谱下方伴奏未进入主旋律版；原谱1=F已整体转为C调。"
+            ],
+            "unsureMeasures": [
+              "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。"
+            ]
+          },
+          "historicalV2SourceHistory": {
+            "meaning": "Preserved provenance from the unchanged V2 sibling, not newly verified sources or harmony approval.",
+            "sourceStatus": "verified",
+            "sources": [
+              {
+                "label": "中国曲谱网《太阳照常升起》钢琴简谱",
+                "url": "https://qupu123.com/Mobile-view-id-378530.html"
+              },
+              {
+                "label": "中国曲谱网《太阳照常升起》五线谱",
+                "url": "https://www.qupu123.com/Mobile-view-id-256604.html"
+              },
+              {
+                "label": "EveryonePiano The Sun Also Rises preview",
+                "url": "https://www.everyonepiano.cn/Music-1896.html"
+              }
+            ]
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-eop-melody",
+            "adoptedInVersion": "2.4.10",
+            "reviewedOn": "2026-10-12",
+            "edition": "EveryonePiano 1896, Joe Hisaishi / arr. Ritchie: the complete visible 17-measure short piano arrangement, right-hand melody only.",
+            "sourceEditions": [
+              {
+                "label": "EveryonePiano 1896 / Ritchie, parallel numbered and staff notation of one arrangement",
+                "url": "https://www.everyonepiano.cn/Music-1896.html",
+                "numberPage": "https://www.everyonepiano.cn/Number-1896-1.html",
+                "numberImage": "https://www.everyonepiano.cn/pianomusic/002/0001896/0001896-j-b-1.png",
+                "numberImageSha256": "ad0ca57e223c17f054f469201097de219506834baf79fb4adcfa1117d363e5e0",
+                "staffPage": "https://www.everyonepiano.cn/Stave-1896-1.html",
+                "staffImage": "https://www.everyonepiano.cn/pianomusic/002/0001896/0001896-w-b-1.png",
+                "staffImageSha256": "0e1f1554d98fbaefbefb187de8a71ef3a039d879685af29f4b971ffc7a2cb223",
+                "inspectedPages": 1,
+                "inspectedMeasures": [
+                  1,
+                  17
+                ],
+                "sourceKey": "F",
+                "sourceMeter": "4/4",
+                "sourceTempo": 112,
+                "sourceTempoBeatUnit": "quarter",
+                "tempoEvidence": "The numbered page prints quarter=112; the staff page confirms pitches and articulation but prints no numeric tempo.",
+                "sourceBeatOrigin": 0,
+                "mapping": "Right-hand/upper melody of every printed m1–17; app beat = (measure - 1) * 4 + quarter-beat offset. Read the explicit melody voice, not the highest note of an accompaniment chord.",
+                "independence": "Numbered and staff pages are parallel representations of the same arrangement, not two independent musical sources. A visually matching repost is not independent corroboration."
+              }
+            ],
+            "reviewedBeatRanges": [
+              [
+                0,
+                68
+              ]
+            ],
+            "changedBeatRanges": [
+              [
+                4,
+                6.5
+              ],
+              [
+                37,
+                39.75
+              ],
+              [
+                44,
+                49
+              ],
+              [
+                53,
+                57
+              ]
+            ],
+            "tieCorrections": [
+              {
+                "span": [
+                  4,
+                  6.5
+                ],
+                "original": [
+                  [
+                    "E4",
+                    4,
+                    2
+                  ],
+                  [
+                    "E4",
+                    6,
+                    0.5
+                  ]
+                ],
+                "merged": [
+                  "E4",
+                  4,
+                  2.5
+                ],
+                "sourceMeasures": [
+                  2
+                ]
+              },
+              {
+                "span": [
+                  37,
+                  39.75
+                ],
+                "original": [
+                  [
+                    "A4",
+                    37,
+                    2
+                  ],
+                  [
+                    "A4",
+                    39,
+                    0.75
+                  ]
+                ],
+                "merged": [
+                  "A4",
+                  37,
+                  2.75
+                ],
+                "sourceMeasures": [
+                  10
+                ]
+              },
+              {
+                "span": [
+                  44,
+                  49
+                ],
+                "original": [
+                  [
+                    "E4",
+                    44,
+                    4
+                  ],
+                  [
+                    "E4",
+                    48,
+                    1
+                  ]
+                ],
+                "merged": [
+                  "E4",
+                  44,
+                  5
+                ],
+                "sourceMeasures": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "span": [
+                  53,
+                  57
+                ],
+                "original": [
+                  [
+                    "E4",
+                    53,
+                    3
+                  ],
+                  [
+                    "E4",
+                    56,
+                    1
+                  ]
+                ],
+                "merged": [
+                  "E4",
+                  53,
+                  4
+                ],
+                "sourceMeasures": [
+                  14,
+                  15
+                ]
+              }
+            ],
+            "notationDecision": "All five explicit same-pitch ties are one attack each. Four previously split ties are merged; the existing A3@28/5 tie across m8–9 is retained. E4@6.5 and A3@33 are separate following attacks. G4@43/.75 and G4@43.75/.25 are genuine separate attacks; the m7 B3@27 to C4@27.75 different-pitch slur keeps both attacks.",
+            "unchangedMelody": {
+              "untouchedAttackCount": 52,
+              "untouchedTuplesSha256": "b05957e591931bc0c1dedb7b86e3e8ae1a1341a74090cc2e38f9da00723944cb",
+              "changedPitchCount": 0,
+              "changedOnsetCount": 0,
+              "extendedDurationCount": 4,
+              "removedTieContinuationCount": 4
+            },
+            "selectedMelody": {
+              "attackCount": 56,
+              "tupleSha256": "4952d08ef81cf1b3e59ccede3d10f90f75d4247e5ea04b5e6708e6c6d4c50517",
+              "physicalTarget": "single-melody",
+              "voice": "explicit-right-hand-melody",
+              "melodyRestWindows": []
+            },
+            "sourceForm": {
+              "printedMeasureCount": 17,
+              "selectedMeasureCount": 17,
+              "beatsPerMeasure": 4,
+              "pickupBeats": 0,
+              "repeatExpansion": false,
+              "finalBarline": "double final barline",
+              "scope": "Complete visible short arrangement, not the complete film score or an exact recording transcription."
+            },
+            "ending": {
+              "note": "A3",
+              "beat": 64,
+              "duration": 4,
+              "totalBeats": 68,
+              "finalRestBeats": 0
+            },
+            "sourceTotalBeatsMeaning": "68 quarter-note beats in the reviewed 17-bar short arrangement. The last A3 sounds from 64 through 68; no ending rest, added pickup or repeat is implied.",
+            "transposition": {
+              "sourceKey": "F",
+              "compiledKey": "C",
+              "semitoneShift": -5,
+              "sourceRange": [
+                "D4",
+                "D5"
+              ],
+              "compiledRange": [
+                "A3",
+                "A4"
+              ],
+              "sourcePitchClasses": [
+                0,
+                2,
+                4,
+                5,
+                7,
+                9,
+                10
+              ],
+              "octaveFolding": false,
+              "accidentalNaturalization": false,
+              "decision": "One interval-preserving global shift maps the complete right-hand melody into the fixed 21-key natural-note vocabulary; source Bb maps to F, rather than being replaced with a neighboring source natural."
+            },
+            "retainedPracticeTempo": "112 BPM agrees with the printed numbered-source quarter=112. The unchanged 0.82 default suggests 91.84 BPM, not the actual selected/remembered runtime speed.",
+            "evidenceFingerprints": {
+              "sourceReadingSha256": "da27e5b6c96e258f219f50c2eaac8012ef08fb4a032e5ec1b6cdeab4ebe1d844",
+              "fullMelodyEvidenceSha256": "7aabe343da96b054c33a92b940fca65db722246142e370b440b4f87b88aa908c",
+              "fourTiesEvidenceSha256": "f3935e1214d9a35f1bb4249afc20b4aadc00c86ccf4a75e1308f17021e3f82ee",
+              "preEditComparisonSha256": "8db344efa0a141edaafac5dbaf69bee322dfeb3e925a7b1fea7a6e8e77696629"
+            },
+            "historicalConflict": {
+              "measure": 9,
+              "status": "preserved-original-source-conflict",
+              "originalNote": "用户提供手写骨架第9小节写作6低7低1，在线谱源为6低6低1 3，本曲库以在线谱源为准。",
+              "decision": "Adopt the selected EOP m9 continuation and separately attacked A3@33, C4@34, E4@35. The original handwritten image and Qupu editions were not reverified; this does not establish that another edition is wrong."
+            },
+            "originalSourceLimits": "The original handwritten image was not reverified. Both historical Qupu source URLs remain unverified in this pass; no access warning was bypassed. The prior V2 verified label is historical and is not approval of its pitches or harmony.",
+            "accompanimentReview": {
+              "status": "legacy-sibling-preserved-incompatible",
+              "siblingId": "tai-yang-zhao-chang-sheng-qi-chord",
+              "siblingFileSha256": "32dea134fc4a85418044dac13b7014d594fcf879f2874d8c4bbe421f1f894199",
+              "contentCompatible": false,
+              "sourceHarmonyApproved": false,
+              "addedSupport": false,
+              "physicalTarget": "single-melody",
+              "decision": "The preserved V2 still has 60 explicit melody attacks and 26 automatic accompaniment events. Its old melody is incompatible with the reviewed 56-attack V1; do not borrow its backing. No harmony or new support is approved."
+            },
+            "selectedMelodyNotationReviewed": true,
+            "fullOriginalSongApproved": false,
+            "exactRecordingApproved": false,
+            "originalHandwrittenImageReverified": false,
+            "independentEditionCorroborated": false,
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Selected EOP right-hand notation only. This is not approval of the complete original film work, an exact recording, source harmony or physical ease. Browser audio, reference listening and physical-kalimba acceptance remain separate checks. Public access does not establish public-distribution rights; raw source images stay outside the repository."
+          }
+        }
       }
     },
   "tai-yang-zhao-chang-sheng-qi-chord": {
@@ -47111,11 +56877,11 @@ export const SONG_LIBRARY = {
   "tian-kong-zhi-cheng": {
       "schemaVersion": 1,
       "id": "tian-kong-zhi-cheng",
-      "title": "《天空之城》",
+      "title": "《天空之城》（改音版）",
       "uploader": "system",
-      "practiceTitle": "《天空之城》练习轨道",
+      "practiceTitle": "《天空之城》改音练习轨道",
       "scoreTitle": "《天空之城》简谱进度",
-      "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理的主旋律版；和弦与分解伴奏保留在和弦版。",
+      "hint": "固定21键C调改音版：原主题的升4、升5已自然化，此版不是保真单音谱；原2019编配与第15小节连线仍待复核。",
       "difficulty": "medium",
       "bpm": 72,
       "defaultSpeedFactor": 0.95,
@@ -47530,7 +57296,9 @@ export const SONG_LIBRARY = {
           "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
         ],
         "sourceReview": {
-          "confidence": "high-for-melody-medium-for-harmony",
+          "confidence": "needs-review-naturalized-melody",
+          "previousConfidence": "high-for-melody-medium-for-harmony",
+          "originalDisplayTitle": "《天空之城》",
           "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
           "sources": [
             {
@@ -47541,6 +57309,81 @@ export const SONG_LIBRARY = {
               "label": "中国曲谱网源图",
               "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
             }
+          ],
+          "focusedReview": {
+            "date": "2026-10-12",
+            "method": "Visual inspection of the independently published theme score; not a full revalidation of the chosen 2019 arrangement.",
+            "sources": [
+              {
+                "label": "山东教育出版社《音乐》四年级下册《天空之城》主题曲",
+                "url": "https://v.sjs.com.cn/ebooks/931E845D.pdf",
+                "printedPage": 55,
+                "pdfPage": 58,
+                "inspected": "rendered-score-pixels"
+              }
+            ],
+            "identityMatch": "The single-line 1=C, 4/4 theme score matches the current opening, repeated opening and cadence; its ties and some rhythms differ from the current data.",
+            "explicitMelodyAccidentals": [
+              {
+                "sourcePitch": "F#4",
+                "currentMeasure": 8,
+                "currentStepIndex": 22,
+                "currentBeat": 29.5,
+                "currentPitch": "F4",
+                "currentDuration": 0.5
+              },
+              {
+                "sourcePitch": "G#4",
+                "currentMeasure": 16,
+                "currentStepIndex": 52,
+                "currentBeat": 63,
+                "currentPitch": "G4",
+                "currentDuration": 1
+              }
+            ],
+            "sameBarAccidentalScope": {
+              "currentMeasure": 8,
+              "currentStepIndex": 23,
+              "currentBeat": 30,
+              "currentPitch": "F4",
+              "status": "needs-review-against-chosen-arrangement",
+              "reason": "The next degree 4 in the same printed bar has no natural sign. Check accidental carry-through against the chosen 2019 arrangement; do not assume F-natural."
+            },
+            "measureNumbering": "Current app numbering includes the initial pickup/rest bar as measure 1; step indices are zero-based.",
+            "themePitchClasses": [
+              "C",
+              "D",
+              "E",
+              "F",
+              "F#",
+              "G",
+              "G#",
+              "A",
+              "B"
+            ],
+            "fixedInstrumentPitchClasses": [
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "A",
+              "B"
+            ],
+            "fittingSemitoneTranspositions": [],
+            "fitReason": "All 12 consistent semitone transpositions were checked. Nine distinct melody pitch classes cannot fit the fixed instrument's seven natural pitch classes; octave shifts cannot remove this constraint.",
+            "originalArrangementStatus": "The 2019 Qupu123 source page is readable, but its score image was unavailable: web fetches returned Cache miss/not accessible and ordinary direct public-image requests returned HTTP 502. The full 24-bar arrangement, accompaniment and measure 15 ties were not revalidated.",
+            "changeScope": "Display labels and review metadata only. All 79 melody tuples, timing, tempo and the historical chord source are unchanged."
+          }
+        },
+        "suitability": {
+          "status": "not-recommended",
+          "scope": "faithful-complete-theme-fixed21C",
+          "reason": "已目视核对的同曲主题主旋律含升4、升5，共9种音级，不能用一次整体移调保真适配固定21键C调自然音琴。现有自然化数据属于改音版，不作为原主题保真练习。",
+          "reviewRequired": [
+            "此结论针对完整主题的保真演奏，不排除经源谱核实的自然音选段。",
+            "原2019年24小节编配图片仍不可读；第8小节后续4的变音作用范围、第15小节连线及整段节奏仍待原谱核对。",
+            "独立教材用于核实主题半音与乐器限制，不代表已逐音复核当前编配或通过录音、实体琴验收。"
           ]
         }
       },
@@ -50131,11 +59974,11 @@ export const SONG_LIBRARY = {
   "tong-nian": {
       "schemaVersion": 1,
       "id": "tong-nian",
-      "title": "《童年》",
+      "title": "《童年》（教材人声版）",
       "uploader": "system",
-      "practiceTitle": "《童年》练习轨道",
-      "scoreTitle": "《童年》简谱进度",
-      "hint": "依据网上完整谱面重新校对的主旋律练习段，修正旧版低音点与中音区混读问题。",
+      "practiceTitle": "《童年》（教材人声版）练习轨道",
+      "scoreTitle": "《童年》（教材人声版）简谱进度",
+      "hint": "教材完整16小节单遍人声，79次起音、64个四分拍；只走印刷m1–16一次，不按5排歌词扩为5遍。G调整体降7半音至C调，保留7处延音连接和3处人声休止；105 BPM为练习设定，无伴奏。",
       "difficulty": "medium",
       "bpm": 105,
       "defaultSpeedFactor": 0.9,
@@ -50155,12 +59998,7 @@ export const SONG_LIBRARY = {
         [
           "G4",
           2,
-          1
-        ],
-        [
-          "G4",
-          3,
-          0.5
+          1.5
         ],
         [
           "E4",
@@ -50185,12 +60023,7 @@ export const SONG_LIBRARY = {
         [
           "A4",
           5.5,
-          0.5
-        ],
-        [
-          "A4",
-          6,
-          0.5
+          1
         ],
         [
           "A4",
@@ -50215,7 +60048,12 @@ export const SONG_LIBRARY = {
         [
           "C5",
           9,
-          1
+          0.5
+        ],
+        [
+          "C5",
+          9.5,
+          0.5
         ],
         [
           "C5",
@@ -50255,12 +60093,7 @@ export const SONG_LIBRARY = {
         [
           "G4",
           18,
-          1
-        ],
-        [
-          "G4",
-          19,
-          0.5
+          1.5
         ],
         [
           "E4",
@@ -50285,12 +60118,7 @@ export const SONG_LIBRARY = {
         [
           "A4",
           21.5,
-          0.5
-        ],
-        [
-          "A4",
-          22,
-          0.5
+          1
         ],
         [
           "A4",
@@ -50315,7 +60143,12 @@ export const SONG_LIBRARY = {
         [
           "C5",
           25,
-          1
+          0.5
+        ],
+        [
+          "C5",
+          25.5,
+          0.5
         ],
         [
           "C5",
@@ -50343,49 +60176,44 @@ export const SONG_LIBRARY = {
           4
         ],
         [
-          "G4",
+          "G5",
           32,
-          1
-        ],
-        [
-          "G4",
-          33,
           0.5
         ],
         [
-          "G4",
+          "G5",
+          32.5,
+          1
+        ],
+        [
+          "G5",
           33.5,
           0.5
         ],
         [
-          "G4",
-          34,
-          1
+          "G5",
+          34.5,
+          0.5
         ],
         [
-          "E4",
+          "E5",
           35,
           0.5
         ],
         [
-          "D4",
+          "D5",
           35.5,
           0.5
         ],
         [
           "C5",
           36,
-          1
+          0.5
         ],
         [
           "C5",
-          37,
-          0.5
-        ],
-        [
-          "A4",
-          37.5,
-          0.5
+          36.5,
+          1.5
         ],
         [
           "A4",
@@ -50423,7 +60251,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C5",
+          "D5",
           41.5,
           0.5
         ],
@@ -50455,12 +60283,12 @@ export const SONG_LIBRARY = {
         [
           "E5",
           48,
-          1
+          0.5
         ],
         [
           "E5",
-          49,
-          0.5
+          48.5,
+          1
         ],
         [
           "E5",
@@ -50475,22 +60303,17 @@ export const SONG_LIBRARY = {
         [
           "D5",
           51,
-          0.5
-        ],
-        [
-          "D5",
-          51.5,
-          0.5
-        ],
-        [
-          "C5",
-          52,
           1
         ],
         [
           "C5",
-          53,
+          52,
           0.5
+        ],
+        [
+          "C5",
+          52.5,
+          1
         ],
         [
           "C5",
@@ -50520,12 +60343,12 @@ export const SONG_LIBRARY = {
         [
           "G4",
           56,
-          1
+          0.5
         ],
         [
           "G4",
-          57,
-          0.5
+          56.5,
+          1
         ],
         [
           "G4",
@@ -50561,35 +60384,879 @@ export const SONG_LIBRARY = {
       "sourceFeatures": {
         "hasChords": true,
         "hasArpeggio": false,
-        "hasRepeats": true,
-        "sourceImages": [
-          "private/sheets/raw/tong-nian/qupu123-290148-score.png",
-          "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
-          "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
-          "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
-          "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
-          "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
-        ],
+        "hasRepeats": false,
+        "sourceKey": "G",
+        "transpositionSemitones": -7,
+        "sourceTotalBeats": 64,
+        "sourceMeasureCount": 16,
+        "transcriptionScope": "complete-selected-teaching-vocal-strophe-once",
         "unsupported": [
-          "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
-          "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。"
+          "教材TAB和吉他和弦不进入单音steps，不从最高和弦音猜人声，也不借用旧V2伴奏。",
+          "完整保留16个写明的人声小节；5排歌词不是反复指令，本版不是商业录音完整5段结构。",
+          "保留开头整拍及两处内部人声休止；吉他仍有记谱，不能称为所有声部休止。",
+          "以无点1=G4为绝对八度计算约定，整体-7半音到C调；没有局部折八度或把F#改成原位自然音。",
+          "105 BPM、默认0.9倍率和medium沿用练习设定；源两页无数字或文字速度，不覆盖用户已存速度。",
+          "谱面与结构检查不等于听感或实体演奏通过；作品与出版分发权未确定，仅本地私人预览。"
         ],
         "unsureMeasures": [],
         "sources": [
           {
-            "label": "中国曲谱网《童年》罗大佑简谱",
-            "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
-          },
-          {
-            "label": "吉他世界《童年》C调指弹谱",
-            "url": "https://www.guitarworld.com.cn/pu/q36774"
-          },
-          {
-            "label": "搜狐《琴谱｜童年》双手简谱",
-            "url": "https://www.sohu.com/a/531241905_121124710"
+            "label": "黄冈师范学院托管《普通高中教科书 音乐 必修 演奏·下篇（吉他）》人民音乐出版社；《童年》完整教材人声单遍，PDF46–47／印42–43",
+            "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf"
           }
-        ]
-      }
+        ],
+        "suitability": {
+          "status": "conditional",
+          "scope": "Complete selected 16-bar,79-attack,64-quarter-beat teaching vocal strophe, once; global G-to-C minus7 semitones.",
+          "reason": "The directly identified vocal line and all occurrences match two independent readings of this same published source; its full pitch vocabulary fits E4-G5 without local changes. Reference listening, real decay and physical repeated-note technique remain unverified.",
+          "reviewRequired": [
+            "Compare the complete selected line against a reference and browser sound at the configured105 BPM and actual visible practice multiplier; there is no printed source BPM.",
+            "Check five independent eighth-note D5 attacks in m11, later syncopation and long-note decay on a physical kalimba; medium is retained, not a new comfort claim.",
+            "Review harmony separately before adding support, and establish reproduction rights before any public distribution."
+          ]
+        },
+        "sourceReview": {
+          "archivedEdition": {
+            "file": "data/archives/tong-nian-v2.4.37.json",
+            "fileSha256": "1261f31f6d1194b07fdff52a4bd5ec35b44c4426262575a01698b5fad6bb1ce4",
+            "attackCount": 81,
+            "melodyEndBeat": 64,
+            "restoration": "The complete pre-adoption JSON is byte-identical. Import it as an independent local song for developer recovery; no additional card, archive download or restore UI is added."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "unsupported": [
+              "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
+              "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。",
+              "本次只合并开头G4[2,3.5)与A4[5.5,6.5)的同音延音，其余79个音符元组不变；不是完整开头或整段64拍校准。",
+              "第9–10拍C5是否另起音、第15–16拍是否休止存在来源版本分歧，均保留旧值；后续音区、节奏、反复及结尾仍待核。",
+              "105 BPM和默认0.9倍速为沿用练习设定；吉他世界公开谱标示四分音符=120，不将练习设定冒充来源速度。",
+              "旧V2保留原83音与原伴奏，和修正后的单音旋律不兼容，不借用其自动伴奏。"
+            ],
+            "unsureMeasures": [
+              "App [9,10): GuitarWorld ties the two C5 eighths, while HGNU writes separate attacks; retain legacy C5@9/1.",
+              "App [15,16): GuitarWorld writes a quarter rest, while HGNU holds G4; retain legacy G4@12/4.",
+              "Outside the two adopted tie spans, the 64-beat excerpt has not been source-calibrated; later rhythm, register, form and ending remain pending."
+            ],
+            "sources": [
+              {
+                "label": "吉他世界《童年》吉他老杨C调指弹谱（仅公开预览的人声第1–2小节两处延音）",
+                "url": "https://www.guitarworld.com.cn/pu/q36774"
+              },
+              {
+                "label": "黄冈师范学院托管吉他教材《童年》（印刷第42页前两小节对照，G调统一移至C调比较）",
+                "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf"
+              }
+            ],
+            "transcriptionScope": "retained-64-beat-verse-excerpt",
+            "suitability": {
+              "status": "needs-review",
+              "scope": "Retained 81-attack, 64-beat verse excerpt; only two opening ties reviewed.",
+              "reason": "Both inspected editions support the same two ties. Conflicting articulation/rests and unreviewed later rhythm/register prevent approval of the complete excerpt; this is not a rejection of the composition.",
+              "reviewRequired": [
+                "Resolve the app [9,10) articulation and [15,16) rest against the intended edition; review all other attacks, later octaves and the selected ending.",
+                "Compare the melody with a source/reference at the printed 120 BPM and actual selected practice speed; browser-audio and physical-kalimba acceptance remain pending.",
+                "Review harmony separately before any support reuse; public-distribution rights have not been established."
+              ]
+            },
+            "sourceReview": {
+              "originalV1": {
+                "title": "《童年》",
+                "practiceTitle": "《童年》练习轨道",
+                "scoreTitle": "《童年》简谱进度",
+                "hint": "依据网上完整谱面重新校对的主旋律练习段，修正旧版低音点与中音区混读问题。",
+                "fileSha256": "9689322aa12a8744b4236ab7ab514028819b7078644d014aacb2e17c9d1257b3",
+                "stepsSha256": "2d10a570f331f54c4225db4a6e417352aa9806182112f664c6329a1f44634ee6",
+                "attackCount": 83,
+                "melodyEndBeat": 64,
+                "restoration": "Restore the four original display strings; replace each merged tuple with its two original tuples in currentScopeReview.tieCorrections; replace sourceFeatures with historicalReviewNotes. All other fields and tuples stay unchanged. Serialize with two-space indentation and one final newline to reconstruct the full original file byte-for-byte."
+              },
+              "historicalReviewNotes": {
+                "hasChords": true,
+                "hasArpeggio": false,
+                "hasRepeats": true,
+                "sourceImages": [
+                  "private/sheets/raw/tong-nian/qupu123-290148-score.png",
+                  "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
+                  "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
+                  "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
+                  "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
+                  "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
+                ],
+                "unsupported": [
+                  "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
+                  "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。"
+                ],
+                "unsureMeasures": [],
+                "sources": [
+                  {
+                    "label": "中国曲谱网《童年》罗大佑简谱",
+                    "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
+                  },
+                  {
+                    "label": "吉他世界《童年》C调指弹谱",
+                    "url": "https://www.guitarworld.com.cn/pu/q36774"
+                  },
+                  {
+                    "label": "搜狐《琴谱｜童年》双手简谱",
+                    "url": "https://www.sohu.com/a/531241905_121124710"
+                  }
+                ]
+              },
+              "currentScopeReview": {
+                "status": "reviewed-opening-common-ties",
+                "adoptedInVersion": "2.4.9",
+                "reviewedOn": "2026-10-12",
+                "decision": "Adopt only the two same-pitch ties common to the recorded GuitarWorld public preview and the independent HGNU teaching edition. Do not select either edition for the conflicting next two bars or replace the full excerpt.",
+                "reviewedBeatRanges": [
+                  [
+                    2,
+                    3.5
+                  ],
+                  [
+                    5.5,
+                    6.5
+                  ]
+                ],
+                "tieCorrections": [
+                  {
+                    "span": [
+                      2,
+                      3.5
+                    ],
+                    "original": [
+                      [
+                        "G4",
+                        2,
+                        1
+                      ],
+                      [
+                        "G4",
+                        3,
+                        0.5
+                      ]
+                    ],
+                    "merged": [
+                      "G4",
+                      2,
+                      1.5
+                    ],
+                    "guitarworldMeasure": 5,
+                    "hgnuVocalMeasure": 1,
+                    "sourceDegrees": "Undotted 5 quarter tied to undotted 5 eighth; one attack, 1 + 0.5 beats."
+                  },
+                  {
+                    "span": [
+                      5.5,
+                      6.5
+                    ],
+                    "original": [
+                      [
+                        "A4",
+                        5.5,
+                        0.5
+                      ],
+                      [
+                        "A4",
+                        6,
+                        0.5
+                      ]
+                    ],
+                    "merged": [
+                      "A4",
+                      5.5,
+                      1
+                    ],
+                    "guitarworldMeasure": 6,
+                    "hgnuVocalMeasure": 2,
+                    "sourceDegrees": "Undotted 6 eighth tied to undotted 6 eighth; one attack, 0.5 + 0.5 beats."
+                  }
+                ],
+                "fullOpeningApproved": false,
+                "fullExcerptApproved": false,
+                "fullSongApproved": false,
+                "sourceBeatUnit": "quarter",
+                "sourceMeter": "4/4",
+                "productionTranspositionSemitones": 0,
+                "octaveFolding": false,
+                "sourceEditions": [
+                  {
+                    "id": "guitarworld-q36774-public-preview",
+                    "url": "https://www.guitarworld.com.cn/pu/q36774",
+                    "edition": "吉他老杨编，罗大佑词曲唱，C调指弹谱；仅公开预览。",
+                    "imageUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/490268/view/042a5e76b89274f07b58dcf90787de4e.png",
+                    "imageSha256": "0d8f21d7777836dcc04877ff1a54d15ee3effffdf77dd5c841c76bbca41ccbdc",
+                    "imageDimensions": [
+                      1200,
+                      832
+                    ],
+                    "cropBounds": [
+                      100,
+                      560,
+                      1100,
+                      810
+                    ],
+                    "cropScale": 2,
+                    "cropSha256": "e645fbacef9256871031f90e9ce5669c6b8a5d4de087da3ef67fffb27c6c70a6",
+                    "sourceKey": "C",
+                    "sourceTempo": 120,
+                    "sourceTempoBeatUnit": "quarter",
+                    "sourceBeatOrigin": 16,
+                    "comparisonSemitoneShift": 0,
+                    "mapping": "Source absolute quarter beat minus 16 = app beat: omit instrumental measures 1–4; adopt only the two ties in printed measures 5–6 of the lyric-aligned numbered melody, not guitar tab or highest chord tones.",
+                    "inspectedMeasures": [
+                      5,
+                      8
+                    ],
+                    "adoptedMeasures": [
+                      5,
+                      6
+                    ],
+                    "accessLimit": "Only four vocal bars are visible in the public preview. The full two-page score requires login/purchase and was not accessed; repeat ending and full-song form were not reviewed."
+                  },
+                  {
+                    "id": "hgnu-guitar-teaching-comparison",
+                    "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf",
+                    "edition": "童年／民谣吉他曲／罗大佑词曲；教材印刷第42–43页。",
+                    "pdfSha256": "bee5c8a881de14db9b9c53f8a3f1273ac617f31ef4bad14b6d84597ff987235b",
+                    "pdfPage": 46,
+                    "printedPage": 42,
+                    "renderedPageSha256": "f0783380fd2442fd45cd10e3876d12dce1e8944b8de9e83c83d8663e0be3d31a",
+                    "renderedDimensions": [
+                      1462,
+                      2000
+                    ],
+                    "cropBounds": [
+                      240,
+                      1430,
+                      1200,
+                      1580
+                    ],
+                    "cropScale": 2,
+                    "cropSha256": "4f9960268f5b432e41543da688884a645ebfbee02323c928b8395f78992f8ba6",
+                    "sourceKey": "G",
+                    "sourceTempo": null,
+                    "sourceBeatOrigin": 0,
+                    "comparisonSemitoneShift": -7,
+                    "mapping": "First vocal bar starts at app beat 0. Uniform G-to-C normalization (-7 semitones) retains every octave dot for comparison only; production adopts no transposition or octave folding.",
+                    "inspectedVocalMeasures": [
+                      1,
+                      4
+                    ],
+                    "adoptedVocalMeasures": [
+                      1,
+                      2
+                    ],
+                    "independenceLimit": "Separately published teaching arrangement, not the missing Qupu original. Agreement supports the two ties only; differing later articulation, rest, register and form are not spliced into the legacy melody."
+                  }
+                ],
+                "notationDecision": "Both sources show identical pitch and octave-dot state at each tie endpoint. G4 spans 2–3.5 and A4 spans 5.5–6.5 with no second attack. E4@3.5 and A4@6.5 are separate following attacks; different-pitch slurs and adjacent untied repeated notes retain their attacks.",
+                "excludedEditionConflicts": [
+                  {
+                    "span": [
+                      9,
+                      10
+                    ],
+                    "guitarworld": "Two upper-1 eighths tied as one C5@9/1.",
+                    "hgnu": "Two upper-1 eighths separately attacked at 9 and 9.5.",
+                    "retainedLegacy": [
+                      "C5",
+                      9,
+                      1
+                    ],
+                    "decision": "Unresolved edition choice; no change."
+                  },
+                  {
+                    "span": [
+                      15,
+                      16
+                    ],
+                    "guitarworld": "G4@12 lasts 3 beats, followed by one quarter rest [15,16).",
+                    "hgnu": "G4@12 lasts 4 beats with no final quarter rest.",
+                    "retainedLegacy": [
+                      "G4",
+                      12,
+                      4
+                    ],
+                    "decision": "Unresolved edition choice; no change or new silence claim."
+                  }
+                ],
+                "unchangedMelody": {
+                  "untouchedAttackCount": 79,
+                  "untouchedTuplesSha256": "ec64ef22799d4aa784f768eca5fb45f85736bdbceae83a7079d129bf2e8f0ad6",
+                  "laterBeatOrigin": 8,
+                  "laterAttackCount": 70,
+                  "laterTuplesSha256": "8f624a73ec7a525b5ba2052ca4563e3a03bc17baa2fec73ddb7d5f3593b8e5be"
+                },
+                "encodedExtentBeats": 64,
+                "encodedExtentMeaning": "Retained legacy event end only, not a newly verified source ending, final-rest decision or complete-song extent. No sourceTotalBeats claim is added.",
+                "retainedPracticeTempo": "105 BPM remains the historical practice setting; GuitarWorld prints quarter=120 and HGNU prints no tempo on these pages. The 0.9 default suggests 94.5 BPM, not the actual selected or remembered runtime multiplier. No silent tempo normalization.",
+                "sourceForm": "Retain the existing one-strophe practice extent and hasRepeats classification as historical metadata. Omit instrumental material and later lyric strophes as before; no newly approved repeat expansion or full-song form.",
+                "originalPrivateImagesReverified": false,
+                "originalSourceLimits": "Six historical image paths are absent. Qupu was not reverified following a reported certificate problem; Sohu returned HTTP 403 and was not bypassed. Older hint and metadata are historical claims, not current proof.",
+                "evidenceFingerprints": {
+                  "privateAuditSha256": "c575905d94af2eecd1057223b952259ae48b6aa5f384f198705cb384b8a4a3c8",
+                  "privateOpeningFixtureSha256": "1f4343971a840761af392bb06399949d9a50b220102ddb9c7ae61fc833d79e21",
+                  "privateCommonTiesEvidenceSha256": "49f8ad35e854b45629ee66174f2e746e977430332368eb953becca26fa242e5e"
+                },
+                "accompanimentReview": {
+                  "status": "legacy-sibling-preserved-incompatible",
+                  "siblingId": "tong-nian-chord",
+                  "siblingFileSha256": "f370fb5ddb5e936afd7c16f5c8f9eaa4dab789b4ce5e052b071c6200a4fe8260",
+                  "siblingMelodyAttackCount": 83,
+                  "contentCompatible": false,
+                  "addedSupport": false,
+                  "physicalTarget": "single-melody",
+                  "decision": "Leave the V2 file byte-identical. Its melody still matches the legacy 83 tuples; content compatibility must reject automatic/practice backing reuse for the corrected V1. Historical rhythm.sourceStatus=verified is not new harmony or whole-song approval."
+                },
+                "sourcePixels": "both-opening-crops-inspected-for-two-common-ties-and-excluded-conflicts",
+                "referenceListening": "not-performed",
+                "browserAudio": "not-performed",
+                "physicalKalimba": "not-performed",
+                "limitations": "Only G4[2,3.5) and A4[5.5,6.5) are adopted source decisions. No complete opening, 64-beat excerpt, later octave/rhythm, harmony, form or source-ending approval. Browser scheduling/audio, reference listening and physical play-through remain separate pending checks. Public access does not establish public-distribution rights; raw source images and the complete comparison fixture stay outside the repository."
+              }
+            }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-teaching-vocal-strophe",
+            "adoptedInVersion": "2.4.38",
+            "reviewedInVersion": "2.4.38",
+            "reviewedOn": "2026-10-12",
+            "versionDecision": "Select the complete HGNU-hosted textbook vocal strophe as its own edition. This does not prove the prior edition wrong; historical source claims and both earlier local tie decisions remain unchanged in the archive.",
+            "sourceUrl": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf",
+            "sourceBook": "普通高中教科书 音乐 必修 演奏·下篇（吉他）",
+            "publisher": "人民音乐出版社·北京",
+            "sourceTitle": "童年",
+            "sourceSubtitle": "民谣吉他曲",
+            "sourceCredit": "罗大佑词曲",
+            "sourceSection": "第七节 和弦巩固练习 / 演奏实践",
+            "pdfPages": [
+              46,
+              47
+            ],
+            "printedPages": [
+              42,
+              43
+            ],
+            "sourcePdfSha256": "bee5c8a881de14db9b9c53f8a3f1273ac617f31ef4bad14b6d84597ff987235b",
+            "sourcePageImageSha256": [
+              "f0783380fd2442fd45cd10e3876d12dce1e8944b8de9e83c83d8663e0be3d31a",
+              "168aeb7cd0bc429480995a905210d76a108ade9791a2588e010cbcbeb11608a2"
+            ],
+            "sourceMeasureNumbers": "Editorially counted from the first vocal bar; no measure numbers are printed.",
+            "sourceMeasureRange": [
+              1,
+              16
+            ],
+            "sourcePrintedMeasureCount": 16,
+            "distinctPrintedMelodyMeasures": 16,
+            "sourceSystemCount": 4,
+            "reviewedBeatRanges": [
+              [
+                0,
+                64
+              ]
+            ],
+            "expandedSourceMeasures": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  1,
+                  16
+                ],
+                "beats": [
+                  0,
+                  64
+                ],
+                "pass": 1,
+                "voice": "lyric-aligned-single-vocal-line"
+              }
+            ],
+            "repeatSignsPresent": false,
+            "lyricRowCount": 5,
+            "lyricRowsAuthorizeRepeat": false,
+            "repeatExpansion": "none-all-16-selected-vocal-bars-written-once",
+            "allPrintedOccurrencesReviewed": true,
+            "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+            "voiceEvidence": "The page explicitly requests 弹唱《童年》. A separate numbered melody beneath guitar TAB is aligned to the lyric rows; vocal identity is not inferred from the highest guitar note.",
+            "excludedLayers": [
+              "guitar chord diagrams and TAB strumming"
+            ],
+            "excludedSections": [],
+            "omittedSectionsAreRests": false,
+            "metricNoteheadCount": 86,
+            "principalAttackCount": 79,
+            "tieContinuationCount": 7,
+            "ties": [
+              {
+                "sourceMeasure": 1,
+                "sourceHeads": [
+                  "m01-h03",
+                  "m01-h04"
+                ],
+                "from": [
+                  "G4",
+                  2,
+                  1
+                ],
+                "to": [
+                  "G4",
+                  3,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "G4",
+                  2,
+                  1.5
+                ]
+              },
+              {
+                "sourceMeasure": 2,
+                "sourceHeads": [
+                  "m02-h04",
+                  "m02-h05"
+                ],
+                "from": [
+                  "A4",
+                  5.5,
+                  0.5
+                ],
+                "to": [
+                  "A4",
+                  6,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "A4",
+                  5.5,
+                  1
+                ]
+              },
+              {
+                "sourceMeasure": 5,
+                "sourceHeads": [
+                  "m05-h03",
+                  "m05-h04"
+                ],
+                "from": [
+                  "G4",
+                  18,
+                  1
+                ],
+                "to": [
+                  "G4",
+                  19,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "G4",
+                  18,
+                  1.5
+                ]
+              },
+              {
+                "sourceMeasure": 6,
+                "sourceHeads": [
+                  "m06-h04",
+                  "m06-h05"
+                ],
+                "from": [
+                  "A4",
+                  21.5,
+                  0.5
+                ],
+                "to": [
+                  "A4",
+                  22,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "A4",
+                  21.5,
+                  1
+                ]
+              },
+              {
+                "sourceMeasure": 9,
+                "sourceHeads": [
+                  "m09-h02",
+                  "m09-h03"
+                ],
+                "from": [
+                  "G5",
+                  32.5,
+                  0.5
+                ],
+                "to": [
+                  "G5",
+                  33,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "G5",
+                  32.5,
+                  1
+                ]
+              },
+              {
+                "sourceMeasure": 10,
+                "sourceHeads": [
+                  "m10-h02",
+                  "m10-h03"
+                ],
+                "from": [
+                  "C5",
+                  36.5,
+                  0.5
+                ],
+                "to": [
+                  "C5",
+                  37,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "C5",
+                  36.5,
+                  1.5
+                ]
+              },
+              {
+                "sourceMeasure": 10,
+                "sourceHeads": [
+                  "m10-h03",
+                  "m10-h04"
+                ],
+                "from": [
+                  "C5",
+                  37,
+                  0.5
+                ],
+                "to": [
+                  "C5",
+                  37.5,
+                  0.5
+                ],
+                "mergedAttack": [
+                  "C5",
+                  36.5,
+                  1.5
+                ]
+              }
+            ],
+            "slurCount": 9,
+            "slurs": [
+              {
+                "sourceMeasure": 2,
+                "sourceHeads": [
+                  "m02-h02",
+                  "m02-h03"
+                ],
+                "from": [
+                  "A4",
+                  4.5,
+                  0.5
+                ],
+                "to": [
+                  "B4",
+                  5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 3,
+                "sourceHeads": [
+                  "m03-h06",
+                  "m03-h07"
+                ],
+                "from": [
+                  "C5",
+                  11,
+                  0.5
+                ],
+                "to": [
+                  "A4",
+                  11.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 6,
+                "sourceHeads": [
+                  "m06-h02",
+                  "m06-h03"
+                ],
+                "from": [
+                  "A4",
+                  20.5,
+                  0.5
+                ],
+                "to": [
+                  "B4",
+                  21,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 6,
+                "sourceHeads": [
+                  "m06-h07",
+                  "m06-h08"
+                ],
+                "from": [
+                  "A4",
+                  23,
+                  0.5
+                ],
+                "to": [
+                  "G4",
+                  23.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 7,
+                "sourceHeads": [
+                  "m07-h06",
+                  "m07-h07"
+                ],
+                "from": [
+                  "A4",
+                  27,
+                  0.5
+                ],
+                "to": [
+                  "C5",
+                  27.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 11,
+                "sourceHeads": [
+                  "m11-h07",
+                  "m11-h08"
+                ],
+                "from": [
+                  "E5",
+                  43,
+                  0.5
+                ],
+                "to": [
+                  "D5",
+                  43.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 14,
+                "sourceHeads": [
+                  "m14-h04",
+                  "m14-h05"
+                ],
+                "from": [
+                  "D5",
+                  54,
+                  0.5
+                ],
+                "to": [
+                  "C5",
+                  54.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 14,
+                "sourceHeads": [
+                  "m14-h06",
+                  "m14-h07"
+                ],
+                "from": [
+                  "A4",
+                  55,
+                  0.5
+                ],
+                "to": [
+                  "G4",
+                  55.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              },
+              {
+                "sourceMeasure": 15,
+                "sourceHeads": [
+                  "m15-h06",
+                  "m15-h07"
+                ],
+                "from": [
+                  "D5",
+                  59,
+                  0.5
+                ],
+                "to": [
+                  "E5",
+                  59.5,
+                  0.5
+                ],
+                "separateAttacksRetained": true
+              }
+            ],
+            "arcEvidence": "Both independently frozen readers agree on all 7 same-pitch tie joins and 9 different-pitch slur endpoints. No cross-bar or cross-system arcs. Numeric glyph coordinates were measured by reader A only, not independently measured twice.",
+            "chainDecision": "m10 h2-h3-h4 has two ties and one C5@36.5/1.5 attack; h1 at36 and later C5 at38.5 and39.5 remain independent attacks.",
+            "repeatedAttackDecision": "m11 h1-h5 are five separate D5 eighth-note attacks at40,40.5,41,41.5,42. Their slightly thick lines are single underlines, not two separate sixteenth-note lines.",
+            "vocalRests": [
+              {
+                "sourceMeasure": 1,
+                "beat": 0,
+                "duration": 1,
+                "scope": "vocal-only; guitar remains active in the source"
+              },
+              {
+                "sourceMeasure": 5,
+                "beat": 16,
+                "duration": 1,
+                "scope": "vocal-only; guitar remains active in the source"
+              },
+              {
+                "sourceMeasure": 9,
+                "beat": 34,
+                "duration": 0.5,
+                "scope": "vocal-only; guitar remains active in the source"
+              }
+            ],
+            "silentWindows": [],
+            "restDecision": "Preserve [0,1), [16,17) and [34,34.5) as vocal gaps. The first full 4/4 bar starts at0, not at the first attack. These are not source-wide silence claims; the selected practice omits guitar.",
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 1,
+            "endingRestBeats": 0,
+            "finalAttack": [
+              "C5",
+              60,
+              4
+            ],
+            "sourceTotalBeats": 64,
+            "selectedEndIsSelectedEditionEnding": true,
+            "selectedEndIsFullSongEnding": false,
+            "fullSelectedVocalStropheReviewed": true,
+            "fullSongApproved": false,
+            "sourceEnding": "m16 final upper1 plus three extender dashes reaches beat64 and a final double/thick barline without repeat dots; no tail rest. The complete printed vocal strophe is not the five-strophe recording form.",
+            "sourceMeter": "4/4",
+            "beatUnit": "quarter-note",
+            "sourceKey": "G",
+            "sourceQuarterBpm": null,
+            "sourceNumericTempoPrinted": false,
+            "sourceTempoText": null,
+            "tempoDecision": "105 BPM is a retained editorial practice choice; neither numeric nor verbal tempo is printed on these two source pages. The 0.9 suggestion is separate from a user-selected or remembered multiplier; no speed preference is rewritten.",
+            "absoluteOctaveConvention": "Undotted source 1 = G4 and target 1 = C4; preserve all printed octave dots. This is a declared computational realization of movable-do notation, not proof of a singer's concert octave.",
+            "sourceKeySignatureAccidentals": [
+              "F#"
+            ],
+            "additionalMelodyAccidentals": [],
+            "sourcePitchClasses": [
+              2,
+              4,
+              6,
+              7,
+              9,
+              11
+            ],
+            "sourceRange": [
+              "B4",
+              "D6"
+            ],
+            "compiledRange": [
+              "E4",
+              "G5"
+            ],
+            "transpositionSemitones": -7,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "localPitchAlterations": [],
+            "allowedPitchClassShifts": [
+              5,
+              10
+            ],
+            "registerValidGlobalSemitoneShifts": [
+              -14,
+              -7,
+              -2
+            ],
+            "pitchDecision": "Apply -7 semitones uniformly to every source pitch; source degree7 is F# and becomes B, not a locally naturalized F. No deleted notes, local octave folding or changed intervals.",
+            "tuplets": [],
+            "unmeasuredOrnaments": [],
+            "omittedOrnaments": [],
+            "fermatas": [],
+            "breathMarks": [],
+            "augmentationDots": [],
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "independentSourceReaders": 2,
+            "sourceReviewMethod": "Two complete source-only readings were frozen before comparison; these are two readers of one published source, not two independent published sources. All79 attack tuples,86 noteheads,16 arc endpoint pairs and3 vocal rests agree.",
+            "firstFrozenSourceReadingSha256": "fd1ba4ce5d046dc57372f6eeb89787252621cb83ef019e5404c0e5227f6b733e",
+            "independentSourceFixtureSha256": "62d7c7efda7f505edc9b676e2713b1449fd61fa83955a39f27113c0c2cebc8de",
+            "comparisonSha256": "714f7b6b30931d2bea469baf8ee75a8915f9d039fa211a62a6898d90c8e38921",
+            "independentSourceTupleSha256": "b8ab6f84080f3db2d10cd324ac7f91347e05a4d2eb244f025e5b3940973ea5e8",
+            "sourceMidiTupleSha256": "a7cc380db137270ee1f516dfa5ec0d07ba6cce5c9a60738eaa764b00d7f31e92",
+            "accompanimentReview": {
+              "status": "legacy-sibling-preserved-incompatible",
+              "siblingId": "tong-nian-chord",
+              "siblingFileSha256": "f370fb5ddb5e936afd7c16f5c8f9eaa4dab789b4ce5e052b071c6200a4fe8260",
+              "siblingMelodyAttackCount": 83,
+              "contentCompatible": false,
+              "addedSupport": false,
+              "physicalTarget": "single-melody",
+              "decision": "Keep the original V2 bytes and its historical source metadata unchanged; both automatic and practice backing provider paths must reject its different melody. No guitar reduction is added."
+            },
+            "sourcePixels": "complete-two-score-pages-and-title-page-inspected",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only",
+            "melodyOnlyRestWindows": [
+              [
+                0,
+                1
+              ],
+              [
+                16,
+                1
+              ],
+              [
+                34,
+                0.5
+              ]
+            ]
+          }
+        }
+      },
+      "tuning": "21-key-c"
     },
   "tong-nian-chord": {
       "schemaVersion": 2,
@@ -53483,6 +64150,25 @@ export const SONG_LIBRARY = {
           "pattern": "phrase/downbeat bass-harmony support",
           "restPolicy": "silent restWindows are not filled",
           "reviewRequired": []
+        },
+        "practiceAccompaniment": {
+          "status": "needs-review",
+          "confidence": "conservative-existing-layer-intersection",
+          "generatedFrom": "Existing autoAccompaniment onsets coincident with judged non-melody chord anchors; retain only pitches shared by both layers.",
+          "method": "Conservative intersection, at most one bass and one harmony note per existing anchor; no new pitches or onsets.",
+          "independentlyVerified": false,
+          "provenance": "A reduced practice candidate derived from the current arrangement, not independently verified new harmony. Existing source and harmony-review labels do not verify this candidate.",
+          "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+          "unresolvedConflictBeats": [
+            20,
+            28,
+            30
+          ],
+          "reviewRequired": [
+            "At beats 20, 28 and 30, judged chord anchors and original autoAccompaniment disagree. Retaining only C4, G3 and G3 respectively does not resolve the harmony conflict.",
+            "Independent source comparison and audible A/B/C listening review are still required; structural tests are not musical approval.",
+            "Physical 21-key kalimba play-through has not been performed."
+          ]
         }
       },
       "autoAccompaniment": {
@@ -53938,230 +64624,598 @@ export const SONG_LIBRARY = {
             "url": "https://ukestuff.wordpress.com/wp-content/uploads/2016/08/twinkle-twinkle-little-star-c-f-g71.pdf"
           }
         ]
+      },
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.34,
+        "events": [
+          {
+            "beat": 0,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 4,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 6,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 8,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 14,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 22,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              }
+            ]
+          },
+          {
+            "beat": 30,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              }
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 38,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 40,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "D4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          },
+          {
+            "beat": 46,
+            "duration": 0.75,
+            "pattern": "conservative-anchor-intersection",
+            "notes": [
+              {
+                "name": "G3",
+                "role": "bass",
+                "velocity": 0.4
+              },
+              {
+                "name": "C4",
+                "role": "harmony",
+                "velocity": 0.34
+              }
+            ]
+          }
+        ]
       }
     },
   "xuan-cao-hua": {
       "schemaVersion": 1,
       "id": "xuan-cao-hua",
-      "title": "《萱草花》",
+      "title": "《萱草花》（声乐版）",
       "uploader": "system",
-      "practiceTitle": "《萱草花》练习轨道",
-      "scoreTitle": "《萱草花》简谱进度",
-      "hint": "主旋律练习版；原谱中的伴奏、双音或和弦已记录为待扩展信息。",
-      "difficulty": "easy",
+      "practiceTitle": "《萱草花》（声乐版）练习轨道",
+      "scoreTitle": "《萱草花》（声乐版）简谱进度",
+      "hint": "选用山山吉他版完整声乐路线，183个单音、64个3/4小节共192拍；保留主歌、副歌、第二段主歌、尾声及20处人声休止，省略吉他前奏与伴奏。84 BPM为练习设定，八分音与同侧连弹建议先慢练。",
+      "difficulty": "medium",
       "bpm": 84,
       "defaultSpeedFactor": 0.9,
-      "beatsPerMeasure": 4,
+      "beatsPerMeasure": 3,
+      "key": "C",
       "steps": [
         [
           "E4",
           0,
-          1.5
+          1
         ],
         [
           "E4",
-          1.5,
-          1.25
+          1,
+          1
         ],
         [
           "E4",
-          2.75,
-          1.25
+          2,
+          1
         ],
         [
           "G4",
-          4,
+          3,
           1.5
         ],
         [
           "A4",
-          5.5,
-          1.25
+          4.5,
+          0.5
         ],
         [
           "G4",
-          6.75,
-          1.25
+          5,
+          1
         ],
         [
           "C4",
-          8,
-          1
+          6,
+          1.5
         ],
         [
           "D4",
-          9,
-          1
+          7.5,
+          0.5
         ],
         [
           "E4",
-          10,
-          1
+          8,
+          0.5
         ],
         [
           "C4",
-          11,
+          8.5,
+          0.5
+        ],
+        [
+          "G3",
+          9,
+          3
+        ],
+        [
+          "A3",
+          12,
+          0.5
+        ],
+        [
+          "C4",
+          12.5,
+          0.5
+        ],
+        [
+          "A3",
+          13,
           1
         ],
         [
-          "G4",
-          12,
-          1.5
+          "G3",
+          15,
+          0.5
         ],
         [
-          "A4",
+          "C4",
+          15.5,
+          0.5
+        ],
+        [
+          "G3",
           16,
           1
         ],
         [
-          "C4",
-          17,
-          1
-        ],
-        [
-          "A4",
+          "A3",
           18,
-          1
+          1.5
         ],
         [
-          "G4",
-          20,
-          1
+          "B3",
+          19.5,
+          0.5
         ],
         [
           "C4",
+          20,
+          0.5
+        ],
+        [
+          "E4",
+          20.5,
+          0.5
+        ],
+        [
+          "D4",
           21,
-          1
+          2
         ],
         [
-          "G4",
-          22,
-          1
+          "C4",
+          23,
+          0.5
         ],
         [
-          "A4",
+          "D4",
+          23.5,
+          0.5
+        ],
+        [
+          "E4",
           24,
           1
         ],
         [
-          "B4",
+          "E4",
           25,
           1
         ],
         [
-          "C4",
+          "E4",
           26,
           1
         ],
         [
-          "E4",
+          "G4",
           27,
-          1
+          1.5
         ],
         [
-          "D4",
-          28,
+          "A4",
+          28.5,
+          0.5
+        ],
+        [
+          "G4",
+          29,
           1
         ],
         [
           "C4",
           30,
-          1
+          1.5
         ],
         [
           "D4",
-          31,
-          1
+          31.5,
+          0.5
         ],
         [
           "E4",
           32,
-          1.5
-        ],
-        [
-          "E4",
-          33.5,
-          1.25
-        ],
-        [
-          "E4",
-          34.75,
-          1.25
+          0.5
         ],
         [
           "G4",
+          32.5,
+          0.5
+        ],
+        [
+          "E4",
+          33,
+          2
+        ],
+        [
+          "A3",
           36,
-          1.5
-        ],
-        [
-          "A4",
-          37.5,
-          1.25
-        ],
-        [
-          "G4",
-          38.75,
-          1.25
+          0.5
         ],
         [
           "C4",
+          36.5,
+          0.5
+        ],
+        [
+          "A3",
+          37,
+          1
+        ],
+        [
+          "G3",
+          39,
+          0.5
+        ],
+        [
+          "C4",
+          39.5,
+          0.5
+        ],
+        [
+          "G3",
           40,
           1
         ],
         [
-          "D4",
+          "E4",
           41,
           1
         ],
         [
-          "E4",
+          "D4",
           42,
-          1
-        ],
-        [
-          "G4",
-          43,
-          1
-        ],
-        [
-          "E4",
-          44,
           1.5
         ],
         [
-          "A4",
+          "A3",
+          43.5,
+          0.5
+        ],
+        [
+          "C4",
+          44,
+          0.5
+        ],
+        [
+          "D4",
+          44.5,
+          0.5
+        ],
+        [
+          "C4",
+          45,
+          2
+        ],
+        [
+          "C4",
           48,
-          1
+          1.5
+        ],
+        [
+          "A3",
+          49.5,
+          0.5
         ],
         [
           "C4",
-          49,
-          1
+          50,
+          0.5
+        ],
+        [
+          "E4",
+          50.5,
+          0.5
+        ],
+        [
+          "G4",
+          51,
+          2
         ],
         [
           "A4",
-          50,
-          1
-        ],
-        [
-          "G4",
-          52,
-          1
-        ],
-        [
-          "C4",
-          53,
-          1
-        ],
-        [
-          "G4",
           54,
-          1
+          0.5
+        ],
+        [
+          "G4",
+          54.5,
+          0.5
         ],
         [
           "E4",
           55,
-          1
+          0.5
+        ],
+        [
+          "C4",
+          55.5,
+          0.5
         ],
         [
           "D4",
@@ -54169,190 +65223,916 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "A4",
-          57.75,
-          0.75
-        ],
-        [
-          "C4",
-          58.5,
-          0.75
-        ],
-        [
-          "D4",
-          59.25,
-          0.75
+          "E4",
+          57,
+          2
         ],
         [
           "C4",
           60,
-          2.75
+          1.5
+        ],
+        [
+          "A3",
+          61.5,
+          0.5
         ],
         [
           "C4",
+          62,
+          0.5
+        ],
+        [
+          "E4",
+          62.5,
+          0.5
+        ],
+        [
+          "G4",
+          63,
+          1
+        ],
+        [
+          "E4",
           64,
           1
         ],
         [
-          "A4",
+          "C4",
           65,
           1
         ],
         [
-          "C4",
+          "A3",
           66,
-          1
+          1.5
         ],
         [
-          "E4",
-          67,
-          1
-        ],
-        [
-          "G4",
-          68,
-          2.75
-        ],
-        [
-          "A4",
-          72,
-          1
-        ],
-        [
-          "G4",
-          73,
-          0.75
-        ],
-        [
-          "E4",
-          73.75,
-          0.75
+          "B3",
+          67.5,
+          0.5
         ],
         [
           "C4",
-          74.5,
-          0.75
+          68,
+          0.5
+        ],
+        [
+          "E4",
+          68.5,
+          0.5
         ],
         [
           "D4",
-          75.25,
-          0.75
-        ],
-        [
-          "E4",
-          76,
-          2.75
+          69,
+          2
         ],
         [
           "C4",
+          72,
+          1.5
+        ],
+        [
+          "A3",
+          73.5,
+          0.5
+        ],
+        [
+          "C4",
+          74,
+          0.5
+        ],
+        [
+          "E4",
+          74.5,
+          0.5
+        ],
+        [
+          "G4",
+          75,
+          2
+        ],
+        [
+          "A4",
+          78,
+          1
+        ],
+        [
+          "B4",
+          79,
+          1
+        ],
+        [
+          "C5",
           80,
           1
         ],
         [
-          "A4",
+          "G4",
           81,
-          1
+          2
         ],
         [
-          "C4",
-          82,
-          1
-        ],
-        [
-          "E4",
-          83,
-          1
-        ],
-        [
-          "G4",
+          "A4",
           84,
-          2.75
-        ],
-        [
-          "A4",
-          88,
           1.5
         ],
         [
           "B4",
-          89.5,
-          1.25
+          85.5,
+          0.5
         ],
         [
           "C5",
-          90.75,
-          1.25
+          86,
+          1
         ],
         [
           "G4",
-          92,
-          2.75
-        ],
-        [
-          "A4",
-          96,
-          1.5
-        ],
-        [
-          "B4",
-          97.5,
-          1.25
-        ],
-        [
-          "C5",
-          98.75,
-          1.25
-        ],
-        [
-          "G4",
-          100,
-          1.5
+          87,
+          1
         ],
         [
           "E4",
-          101.5,
-          1.25
+          88,
+          1
         ],
         [
           "C4",
-          102.75,
-          1.25
+          89,
+          1
         ],
         [
-          "G4",
-          104,
+          "A3",
+          90,
           1.5
         ],
         [
           "E4",
-          105.5,
-          1.25
+          91.5,
+          0.5
         ],
         [
           "D4",
-          106.75,
-          1.25
+          92,
+          1
         ],
         [
           "C4",
-          108,
-          2.75
+          93,
+          3
+        ],
+        [
+          "E4",
+          96,
+          1
+        ],
+        [
+          "E4",
+          97,
+          1
+        ],
+        [
+          "E4",
+          98,
+          1
         ],
         [
           "G4",
+          99,
+          1.5
+        ],
+        [
+          "A4",
+          100.5,
+          0.5
+        ],
+        [
+          "G4",
+          101,
+          1
+        ],
+        [
+          "C4",
+          102,
+          1.5
+        ],
+        [
+          "D4",
+          103.5,
+          0.5
+        ],
+        [
+          "E4",
+          104,
+          0.5
+        ],
+        [
+          "C4",
+          104.5,
+          0.5
+        ],
+        [
+          "G3",
+          105,
+          3
+        ],
+        [
+          "A3",
+          108,
+          0.5
+        ],
+        [
+          "C4",
+          108.5,
+          0.5
+        ],
+        [
+          "A3",
+          109,
+          1
+        ],
+        [
+          "G3",
+          111,
+          0.5
+        ],
+        [
+          "C4",
+          111.5,
+          0.5
+        ],
+        [
+          "G3",
           112,
-          4
+          1
+        ],
+        [
+          "A3",
+          114,
+          1.5
+        ],
+        [
+          "B3",
+          115.5,
+          0.5
+        ],
+        [
+          "C4",
+          116,
+          0.5
+        ],
+        [
+          "E4",
+          116.5,
+          0.5
+        ],
+        [
+          "D4",
+          117,
+          2
+        ],
+        [
+          "C4",
+          119,
+          0.5
+        ],
+        [
+          "D4",
+          119.5,
+          0.5
+        ],
+        [
+          "E4",
+          120,
+          1
+        ],
+        [
+          "E4",
+          121,
+          1
+        ],
+        [
+          "E4",
+          122,
+          1
+        ],
+        [
+          "G4",
+          123,
+          1.5
+        ],
+        [
+          "A4",
+          124.5,
+          0.5
+        ],
+        [
+          "G4",
+          125,
+          1
+        ],
+        [
+          "C4",
+          126,
+          1.5
+        ],
+        [
+          "D4",
+          127.5,
+          0.5
+        ],
+        [
+          "E4",
+          128,
+          0.5
+        ],
+        [
+          "G4",
+          128.5,
+          0.5
+        ],
+        [
+          "E4",
+          129,
+          2
+        ],
+        [
+          "A3",
+          132,
+          0.5
+        ],
+        [
+          "C4",
+          132.5,
+          0.5
+        ],
+        [
+          "A3",
+          133,
+          1
+        ],
+        [
+          "G3",
+          135,
+          0.5
+        ],
+        [
+          "C4",
+          135.5,
+          0.5
+        ],
+        [
+          "G3",
+          136,
+          1
+        ],
+        [
+          "E4",
+          137,
+          1
+        ],
+        [
+          "D4",
+          138,
+          1.5
+        ],
+        [
+          "A3",
+          139.5,
+          0.5
+        ],
+        [
+          "C4",
+          140,
+          0.5
+        ],
+        [
+          "D4",
+          140.5,
+          0.5
+        ],
+        [
+          "C4",
+          141,
+          2
+        ],
+        [
+          "E4",
+          144,
+          1
+        ],
+        [
+          "E4",
+          145,
+          1
+        ],
+        [
+          "E4",
+          146,
+          1
+        ],
+        [
+          "G4",
+          147,
+          1.5
+        ],
+        [
+          "A4",
+          148.5,
+          0.5
+        ],
+        [
+          "G4",
+          149,
+          1
+        ],
+        [
+          "C4",
+          150,
+          1.5
+        ],
+        [
+          "D4",
+          151.5,
+          0.5
+        ],
+        [
+          "E4",
+          152,
+          0.5
+        ],
+        [
+          "C4",
+          152.5,
+          0.5
+        ],
+        [
+          "G3",
+          153,
+          3
+        ],
+        [
+          "A3",
+          156,
+          0.5
+        ],
+        [
+          "C4",
+          156.5,
+          0.5
+        ],
+        [
+          "A3",
+          157,
+          1
+        ],
+        [
+          "G3",
+          159,
+          0.5
+        ],
+        [
+          "C4",
+          159.5,
+          0.5
+        ],
+        [
+          "G3",
+          160,
+          1
+        ],
+        [
+          "A3",
+          162,
+          1.5
+        ],
+        [
+          "B3",
+          163.5,
+          0.5
+        ],
+        [
+          "C4",
+          164,
+          0.5
+        ],
+        [
+          "E4",
+          164.5,
+          0.5
+        ],
+        [
+          "D4",
+          165,
+          2
+        ],
+        [
+          "C4",
+          167,
+          0.5
+        ],
+        [
+          "D4",
+          167.5,
+          0.5
+        ],
+        [
+          "E4",
+          168,
+          1
+        ],
+        [
+          "E4",
+          169,
+          1
+        ],
+        [
+          "E4",
+          170,
+          1
+        ],
+        [
+          "G4",
+          171,
+          1.5
+        ],
+        [
+          "A4",
+          172.5,
+          0.5
+        ],
+        [
+          "G4",
+          173,
+          1
+        ],
+        [
+          "C4",
+          174,
+          1.5
+        ],
+        [
+          "D4",
+          175.5,
+          0.5
+        ],
+        [
+          "E4",
+          176,
+          0.5
+        ],
+        [
+          "G4",
+          176.5,
+          0.5
+        ],
+        [
+          "E4",
+          177,
+          2
+        ],
+        [
+          "A3",
+          180,
+          0.5
+        ],
+        [
+          "C4",
+          180.5,
+          0.5
+        ],
+        [
+          "A3",
+          181,
+          1
+        ],
+        [
+          "G3",
+          183,
+          0.5
+        ],
+        [
+          "C4",
+          183.5,
+          0.5
+        ],
+        [
+          "G3",
+          184,
+          1
+        ],
+        [
+          "E4",
+          185,
+          1
+        ],
+        [
+          "D4",
+          186,
+          1.5
+        ],
+        [
+          "A3",
+          187.5,
+          0.5
+        ],
+        [
+          "C4",
+          188,
+          0.5
+        ],
+        [
+          "D4",
+          188.5,
+          0.5
+        ],
+        [
+          "C4",
+          189,
+          2
         ]
       ],
       "sourceFeatures": {
         "hasChords": true,
-        "hasArpeggio": false,
+        "hasArpeggio": true,
         "hasRepeats": true,
         "unsupported": [
-          "原照片歌名印作“萱雨花”，按用户要求修正为《萱草花》；源谱 1=C#，已按 C 调卡林巴度数映射；反复段按练习版展开。"
+          "仅取山山吉他版歌词对位的独立声乐行，按该版反复和第一、第二房子完整展开；省略16小节吉他前奏及全部吉他伴奏，不从和弦选择最高音。",
+          "这是明确选择的另一份完整声乐路线，不等同于原唱完整曲式，也不证明原照片对应的旧78音版本有错；原照片仍未找回。",
+          "所选谱未标速度，84 BPM与medium难度均为编辑练习选择；原0.9建议倍率保留，不覆盖应用初次或已保存的速度。",
+          "20处休止只表示人声休止，末小节吉他仍有声音；不宣称原谱所有声部静音。浏览器试听、参考录音比较与实体琴验收仍待完成。"
         ],
-        "unsureMeasures": []
-      }
+        "unsureMeasures": [],
+        "arranger": "山山吉他",
+        "sources": [
+          {
+            "label": "山山吉他两页吉他与声乐谱，21qupu公开镜像；采用完整歌词对位声乐路线",
+            "url": "https://www.21qupu.com/guitar/45750.html"
+          }
+        ],
+        "transcriptionScope": "selected-shanshan-complete-vocal-route",
+        "sourceMeasureCount": 64,
+        "sourceTotalBeats": 192,
+        "sourceKey": "C",
+        "transpositionSemitones": 0,
+        "tempoStatus": "editorial-practice-tempo-source-unmarked",
+        "meterStatus": "printed-3/4",
+        "sourceReview": {
+          "currentScopeReview": {
+            "status": "reviewed-selected-complete-vocal-edition",
+            "reviewDate": "2026-10-12",
+            "adoptedInVersion": "2.4.28",
+            "selectedEdition": "shanshan-selected-c-complete-vocal-route",
+            "sourceUrl": "https://www.21qupu.com/guitar/45750.html",
+            "sourceImageUrls": [
+              "https://www.21qupu.com/upload/img3/xgstlatmvxf2147.png",
+              "https://www.21qupu.com/upload/img3/vohuqp3ro152147.png"
+            ],
+            "sourceAssetHashes": {
+              "page1Sha256": "c76f6f616781e867855ccfba5ab13426fef41fb3cc5c4ad788a76cc27481ce9f",
+              "page2Sha256": "3f1e9ad3e7078f50ab53c78af3778bc9f778a93d18f6751787c05a02e4c4bce1"
+            },
+            "sourceMeasureNumbers": "Editorially counted from the first guitar-introduction bar; the source prints no measure numbers.",
+            "sourceMeasureCount": 64,
+            "distinctPrintedVocalMeasures": 48,
+            "reviewedBeatRanges": [
+              [
+                0,
+                192
+              ]
+            ],
+            "selectedRoute": [
+              {
+                "sourceMeasures": [
+                  17,
+                  48
+                ],
+                "beats": [
+                  0,
+                  96
+                ],
+                "attacks": 89
+              },
+              {
+                "sourceMeasures": [
+                  17,
+                  32
+                ],
+                "beats": [
+                  96,
+                  144
+                ],
+                "attacks": 47
+              },
+              {
+                "sourceMeasures": [
+                  49,
+                  64
+                ],
+                "beats": [
+                  144,
+                  192
+                ],
+                "attacks": 47
+              }
+            ],
+            "excludedSections": [
+              "guitar-only introduction m1–16",
+              "all guitar support, chord diagrams and tablature"
+            ],
+            "sourceVoice": "explicit-lyric-aligned-numbered-vocal-line",
+            "voiceDecision": "The lyric-aligned vocal line is separate from the six-line guitar tablature; no highest/first-note extraction or physical chord targets.",
+            "sourceKey": "1=C",
+            "sourceOriginalKeyLabel": "1=Bb",
+            "sourceMeter": "3/4",
+            "beatUnit": "quarter-note",
+            "sourceQuarterBpm": null,
+            "sourceTempoPrinted": false,
+            "tempoDecision": "84 BPM is an editorial practice choice, not a printed source or recording tempo. The historical defaultSpeedFactor=0.9 suggestion stays unchanged; initial and remembered speed are not changed by this adoption.",
+            "difficultyDecision": "medium is an editorial conditional practice choice, not a source marking or a claim of easier physical playing than the historical edition.",
+            "registerConvention": "Unmarked 1=C4; one lower octave dot gives octave3 and one upper dot octave5. Scientific octave names follow the project convention, not a printed absolute-octave label.",
+            "sourceRange": [
+              "G3",
+              "C5"
+            ],
+            "compiledRange": [
+              "G3",
+              "C5"
+            ],
+            "sourcePitchClasses": [
+              0,
+              2,
+              4,
+              7,
+              9,
+              11
+            ],
+            "transpositionSemitones": 0,
+            "globalOctaveShift": 0,
+            "octaveFolding": false,
+            "melodyAccidentals": [],
+            "localPitchAlterations": [],
+            "pickupBeats": 0,
+            "initialMelodyRestBeats": 0,
+            "openingDecision": "Counted m17 begins at beat0 with three independent E4 quarter attacks at0,1,2. The omitted16 intro bars are not a newly inserted vocal rest.",
+            "repeatExpansion": "m17–48, m17–32, m49–64; first ending begins at m33 and end repeat follows m48; second pass skips m33–48 for the separately printed coda.",
+            "selectedAttacks": 183,
+            "tieContinuationCount": 0,
+            "ties": [],
+            "occurrenceDecisions": [
+              "No same-pitch vocal ties are visible. Repeated E4 quarter notes at0/1/2,24/25/26,96/97/98,120/121/122,144/145/146 and168/169/170 remain separate attacks; prolongation dashes extend one note.",
+              "The selected edition holds A3@13 for one beat, then has a vocal rest at14. The other compared edition holds A3 for two beats; do not blend that hold into this route.",
+              "Selected route bar29 (counted m45) is A4@84/1.5, B4@85.5/0.5, C5@86/1. The compared edition has a lower dot on A3; the edition difference does not prove either source wrong.",
+              "Coda counted m49–64 was read from its own printed occurrences; only the explicit m17–32 repeat reuses the same printed notation."
+            ],
+            "melodyOnlyRestWindows": [
+              {
+                "beat": 14,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 17,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 35,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 38,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 47,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 53,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 59,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 71,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 77,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 83,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 110,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 113,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 131,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 134,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 143,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 158,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 161,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 179,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 182,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              },
+              {
+                "beat": 191,
+                "duration": 1,
+                "voice": "selected-vocal-only"
+              }
+            ],
+            "restScope": "Twenty explicit one-beat vocal rests total20 beats. Guitar remains notated at several of them, including the last bar; zero all-layer source-silence claims.",
+            "allLayerSilenceClaim": false,
+            "endingRestBeats": 1,
+            "selectedEndIsFullSongEnding": false,
+            "selectedEndIsSelectedEditionVocalEnding": true,
+            "endingDecision": "Final C4 attacks at189 for2 beats; the printed vocal zero preserves[191,192). Guitar remains active. Do not stretch C4, truncate at191, or equate written duration with PCM/effects-tail cutoff.",
+            "oldEditionReverified": false,
+            "historicalSourceImageIdentityVerified": false,
+            "independentSourcesVerified": false,
+            "versionDecision": "Deliberately selected complete 山山吉他 vocal edition, not proof that the old78-attack edition is wrong. The unavailable photo historically described as1=C# with misprinted title is not recovered or reverified by this same-arranger public mirror.",
+            "supportDecision": "No backing is added or borrowed. The unchanged historical xuan-cao-hua-chord sibling fails the actual content compatibility guard despite sharing the title/base id and84 BPM.",
+            "sourcePixelReview": "The source author inspected both full pages and all selected vocal rows. An independent reader checked all183 tuples,64 complete bars, repeat/ending routing and20 vocal rests. These are separate readings of one edition, not independent source editions. Implementation also viewed both complete pages.",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed-at-data-adoption",
+            "physicalKalimba": "not-performed",
+            "publicDistributionRights": "unestablished-private-preview-only",
+            "rightsNotice": "Public source access does not establish reproduction or public distribution permission. No raw source images or full private glyph maps are packaged; this adoption does not authorize push, publication or deployment."
+          },
+          "archivedEdition": {
+            "file": "data/archives/xuan-cao-hua-v2.4.27.json",
+            "fileSha256": "e9cd5a2a7ec4912fb208983a279b4f40f05eb524422c2bf5914e77fc4f1e9798",
+            "purpose": "Byte-exact developer recovery of all78 steps, original display strings,84 BPM,4/4,0.9 suggestion and full source metadata. No additional built-in card, user restore UI, HTTP route or precache entry."
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "unsupported": [
+              "原照片歌名印作“萱雨花”，按用户要求修正为《萱草花》；源谱 1=C#，已按 C 调卡林巴度数映射；反复段按练习版展开。"
+            ],
+            "unsureMeasures": []
+          },
+          "historicalEditionStatus": "Original misprinted-title1=C# photo remains unavailable. Its78 attacks,4/4 timing and historical degree-mapping/repeat claims are retained without re-verification; adopting another edition does not certify or invalidate them."
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "complete-selected-vocal-edition",
+          "reason": "完整所选声乐路线183音、192拍，G3–C5自然音无移调或折八度；保留独立重弹与20处人声休止。八分音、同侧连弹及更长曲长仍需分段慢练，数值范围不保证实体更易。",
+          "reviewRequired": [
+            "84 BPM是练习选择；最短0.5拍约357毫秒，0.9建议倍率约397毫秒，不代表实际网页当前速度。",
+            "参考录音比较、浏览器音频验收、实体琴同侧走向与自然衰减仍待完成。"
+          ]
+        }
+      },
+      "tuning": "21-key-c"
     },
   "xuan-cao-hua-chord": {
       "schemaVersion": 2,
@@ -56867,6 +68647,3033 @@ export const SONG_LIBRARY = {
         ]
       }
     },
+  "xuan-cao-hua-reviewed-support": {
+      "schemaVersion": 2,
+      "id": "xuan-cao-hua-reviewed-support",
+      "baseSongId": "xuan-cao-hua",
+      "title": "《萱草花》（声乐版）",
+      "versionLabel": "声乐版 · 可选根音轻伴奏",
+      "arrangementKind": "melody",
+      "judgementMode": "melody",
+      "uploader": "system",
+      "practiceTitle": "《萱草花》（声乐版）练习轨道",
+      "scoreTitle": "《萱草花》（声乐版）简谱进度",
+      "hint": "完整声乐路线，183个单音；可选轻伴奏每四小节拨一次根音，默认关闭。保留休止与自然余响，84 BPM为练习设定。",
+      "difficulty": "medium",
+      "bpm": 84,
+      "defaultSpeedFactor": 0.9,
+      "beatsPerMeasure": 3,
+      "key": "C",
+      "tuning": "21-key-c",
+      "events": [
+        {
+          "beat": 0,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 1,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 2,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 3,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 4.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 5,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 6,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 7.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 8.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 9,
+          "duration": 3,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 12.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 13,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 15.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 16,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 18,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 19.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 20.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 21,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 23.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 24,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 25,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 26,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 27,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 28.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 29,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 30,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 31.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 32.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 33,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 36.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 37,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 39.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 40,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 41,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 42,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 43.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 44.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 45,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 48,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 49.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 50,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 50.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 51,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 54,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 54.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 55.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 56,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 57,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 60,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 61.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 62,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 62.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 63,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 64,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 65,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 66,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 67.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 68,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 68.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 69,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 72,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 73.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 74,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 74.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 75,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 78,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 79,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "B4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 80,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 81,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 84,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 85.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 86,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C5",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 87,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 88,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 89,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 90,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 91.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 92,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 93,
+          "duration": 3,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 96,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 97,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 98,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 99,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 100.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 101,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 102,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 103.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 104,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 104.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 105,
+          "duration": 3,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 108,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 108.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 109,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 111,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 111.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 112,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 114,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 115.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 116,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 116.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 117,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 119,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 119.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 120,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 121,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 122,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 123,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 124.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 125,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 126,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 127.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 128,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 128.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 129,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 132,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 132.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 133,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 135,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 135.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 136,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 137,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 138,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 139.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 140,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 140.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 141,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 144,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 145,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 146,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 147,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 148.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 149,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 150,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 151.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 152,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 152.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 153,
+          "duration": 3,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 156,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 156.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 157,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 159,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 159.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 160,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 162,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 163.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "B3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 164,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 164.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 165,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 167,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 167.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 168,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 169,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 170,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 171,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 172.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 173,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 174,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 175.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 176,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 176.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 177,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 180,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 180.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 181,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 183,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 183.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 184,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "G3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 185,
+          "duration": 1,
+          "notes": [
+            {
+              "name": "E4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 186,
+          "duration": 1.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 187.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "A3",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 188,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 188.5,
+          "duration": 0.5,
+          "notes": [
+            {
+              "name": "D4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        },
+        {
+          "beat": 189,
+          "duration": 2,
+          "notes": [
+            {
+              "name": "C4",
+              "role": "melody",
+              "judge": true,
+              "velocity": 1
+            }
+          ]
+        }
+      ],
+      "practiceAccompaniment": {
+        "enabledByDefault": false,
+        "volume": 0.28,
+        "events": [
+          {
+            "beat": 0,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 36,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 48,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 60,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 72,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "A3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 84,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 96,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 108,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 120,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 132,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 144,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 156,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 168,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "C4",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          },
+          {
+            "beat": 180,
+            "duration": 0.75,
+            "pattern": "source-chord-root-sparse-four-bar-anchor",
+            "notes": [
+              {
+                "name": "F3",
+                "role": "bass",
+                "velocity": 0.3
+              }
+            ]
+          }
+        ]
+      },
+      "rhythm": {
+        "sourceStatus": "needs-review",
+        "pickupBeats": 0,
+        "restWindows": [
+          {
+            "beat": 14,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 17,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 35,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 38,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 47,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 53,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 59,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 71,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 77,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 83,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 110,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 113,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 131,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 134,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 143,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 158,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 161,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 179,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 182,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          },
+          {
+            "beat": 191,
+            "duration": 1,
+            "policy": "silent",
+            "reason": "Editorial omission of app support during the literal vocal rest; not an all-layer guitar-source silence claim."
+          }
+        ],
+        "sources": [
+          {
+            "label": "山山吉他 selected C edition, same vocal route",
+            "url": "https://www.21qupu.com/guitar/45750.html"
+          }
+        ]
+      },
+      "sourceFeatures": {
+        "sourceTotalBeats": 192,
+        "transcriptionScope": "selected-shanshan-complete-vocal-route",
+        "practiceAccompaniment": {
+          "status": "needs-review",
+          "candidateLabel": "应用自动轻伴奏候选；非实体和弦目标",
+          "basis": "printed-chord-symbol-derived-editorial-root-voicing",
+          "literalBass": false,
+          "independentlyVerified": false,
+          "melodySha256": "cae668aa9911d5ce06d4d3d69dae051ccb270631402a23d9eb72c7472fac22cd",
+          "sourceScope": "Same selected 山山 edition and exact 64-bar vocal route",
+          "choice": "One low root on the first beat of each editorial four-bar block, 16 attacks over 192 beats. This is an editorial sparse subset, not a source bass rhythm or phrase-mark claim.",
+          "sourcePitchTranspositionSemitones": 0,
+          "bassRegisterDecision": "Root octave chosen at the lowest available F3–E6 natural key. No source bass octave exists in the adopted symbol-only evidence; this is voicing, not individual folding of a literal bass line.",
+          "writtenDurationDecision": "0.75 beat is an editorial pluck event length, not source note duration or PCM gating.",
+          "sourceChordQualities": "Preserve C, G, Am, Em, Fmaj7, Dm7 and A7 in private evidence; root-only selected subset does not reproduce full chords. A7 C# is omitted along with all unselected A7 attacks, never naturalized.",
+          "restPolicy": "All 20 literal vocal rests get silent app-support policy by conservative editorial omission. No held-support exceptions or all-layer source-silence claims.",
+          "defaultState": "off",
+          "volumeDecision": "0.28 support volume and 0.30 velocity remain the frozen provisional arrangement settings. Numerical full-graph measurements do not establish subjective quietness or harmonic acceptance.",
+          "sourceTotalBeats": 192,
+          "retainedAttacks": 16,
+          "omittedPrintedSymbolOnsetsAfterExpansion": 52,
+          "sourceLiteralBassTranscribed": false,
+          "sourceGuitarAttackCount": "not-transcribed",
+          "limits": [
+            "Independent symbol/crop reading is complete within the disclosed inherited route numbering; it is not a second independent source edition.",
+            "Actual full-graph numerical rendering is complete; subjective A/B, reference listening, physical kalimba and live-browser scheduler/lifecycle acceptance are separate gates.",
+            "Natural backing tails measurably enter six vocal rests and later chord intervals at 1× and 1.4×; finite numerical checks do not establish inaudibility or strict silence.",
+            "No cadence root is added at beat189; terminal C4 melody and final [191,192) vocal rest are unchanged.",
+            "Source images, full private maps and raw browser diagnostics stay outside this package; public-distribution rights remain unestablished."
+          ],
+          "candidate": "sparse16-four-bar-chord-root",
+          "reviewedOn": "2026-10-12",
+          "adoptedInVersion": "2.4.32",
+          "physicalTarget": "single-melody",
+          "sourceVoice": "derived-chord-root-not-literal-scored-bass",
+          "sourceSymbolReview": {
+            "sourceUrl": "https://www.21qupu.com/guitar/45750.html",
+            "sourceKey": "C",
+            "sourceQuarterBpm": null,
+            "tempoDecision": "84 BPM is the retained editorial practice tempo; no numeric tempo is printed. The 0.9 suggestion is separate from the live selected multiplier.",
+            "printedVocalBars": 48,
+            "printedSymbolCount": 51,
+            "expandedSymbolCount": 68,
+            "route": "m17–48, m17–32, m49–64",
+            "measureNumbering": "Editorially counted from the omitted guitar introduction, not printed source labels.",
+            "symbolQualities": [
+              "C",
+              "G",
+              "Am",
+              "Em",
+              "Fmaj7",
+              "Dm7",
+              "A7"
+            ],
+            "a7Occurrences": [
+              33,
+              129,
+              177
+            ],
+            "a7Members": [
+              "A",
+              "C#",
+              "E",
+              "G"
+            ],
+            "dm7ToGChanges": [
+              [
+                42,
+                44
+              ],
+              [
+                90,
+                92
+              ],
+              [
+                138,
+                140
+              ],
+              [
+                186,
+                188
+              ]
+            ],
+            "slashChordsPrinted": false,
+            "independentPixelReading": "Two readers agree on all 51 symbols and change positions in this one edition. The second reader freshly reviewed eight crops and four repeat/ending glyph locations; the editorial full-route measure count was inherited from the preceding full-page vocal review, not independently recounted.",
+            "independentEditions": false,
+            "sourceAssetHashes": {
+              "page1Sha256": "c76f6f616781e867855ccfba5ab13426fef41fb3cc5c4ad788a76cc27481ce9f",
+              "page2Sha256": "3f1e9ad3e7078f50ab53c78af3778bc9f778a93d18f6751787c05a02e4c4bce1"
+            },
+            "selectedIntervals": [
+              {
+                "beat": 0,
+                "duration": 3,
+                "sourceMeasure": 17,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 12,
+                "duration": 3,
+                "sourceMeasure": 21,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 24,
+                "duration": 3,
+                "sourceMeasure": 25,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 36,
+                "duration": 3,
+                "sourceMeasure": 29,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 48,
+                "duration": 3,
+                "sourceMeasure": 33,
+                "symbol": "Am",
+                "members": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "A3"
+              },
+              {
+                "beat": 60,
+                "duration": 3,
+                "sourceMeasure": 37,
+                "symbol": "Am",
+                "members": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "A3"
+              },
+              {
+                "beat": 72,
+                "duration": 3,
+                "sourceMeasure": 41,
+                "symbol": "Am",
+                "members": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "A3"
+              },
+              {
+                "beat": 84,
+                "duration": 3,
+                "sourceMeasure": 45,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 96,
+                "duration": 3,
+                "sourceMeasure": 17,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 108,
+                "duration": 3,
+                "sourceMeasure": 21,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 120,
+                "duration": 3,
+                "sourceMeasure": 25,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 132,
+                "duration": 3,
+                "sourceMeasure": 29,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 144,
+                "duration": 3,
+                "sourceMeasure": 49,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 156,
+                "duration": 3,
+                "sourceMeasure": 53,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              },
+              {
+                "beat": 168,
+                "duration": 3,
+                "sourceMeasure": 57,
+                "symbol": "C",
+                "members": [
+                  "C",
+                  "E",
+                  "G"
+                ],
+                "root": "C4"
+              },
+              {
+                "beat": 180,
+                "duration": 3,
+                "sourceMeasure": 61,
+                "symbol": "Fmaj7",
+                "members": [
+                  "F",
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "root": "F3"
+              }
+            ]
+          },
+          "reduction": {
+            "rootRegister": {
+              "C": "C4",
+              "Fmaj7": "F3",
+              "Am": "A3"
+            },
+            "retainedRootCounts": {
+              "C4": 6,
+              "F3": 7,
+              "A3": 3
+            },
+            "retainedAttacks": 16,
+            "omittedExpandedSymbolOnsets": 52,
+            "writtenCoverageBeats": 12,
+            "sourceTotalBeats": 192,
+            "omittedChordPitchClasses": {
+              "C": [
+                "E",
+                "G"
+              ],
+              "Fmaj7": [
+                "A",
+                "C",
+                "E"
+              ],
+              "Am": [
+                "C",
+                "E"
+              ]
+            },
+            "allA7AttacksOmitted": true,
+            "accidentalNaturalization": false,
+            "literalBassTranscription": false,
+            "completeChordFidelity": false,
+            "octaveFolding": false,
+            "semitoneShift": 0,
+            "addedCadenceRootAt189": false
+          },
+          "restAndEnding": {
+            "melodyOnlyRestBeats": [
+              14,
+              17,
+              35,
+              38,
+              47,
+              53,
+              59,
+              71,
+              77,
+              83,
+              110,
+              113,
+              131,
+              134,
+              143,
+              158,
+              161,
+              179,
+              182,
+              191
+            ],
+            "allLayerSourceSilenceClaim": false,
+            "holdExceptions": [],
+            "lastMelodyTuple": [
+              "C4",
+              189,
+              2
+            ],
+            "lastSupportTuple": [
+              "F3",
+              180,
+              0.75
+            ],
+            "supportWrittenEnd": 180.75,
+            "melodyEnd": 191,
+            "sourceTotalBeats": 192,
+            "endingVocalRest": [
+              191,
+              192
+            ],
+            "silentPolicyMeaning": "No app-support onset or written span in these vocal rests. Neither source guitar silence nor strict PCM/effects silence is asserted."
+          },
+          "melodyCompatibility": {
+            "baseSongId": "xuan-cao-hua",
+            "attackCount": 183,
+            "tupleSha256": "cae668aa9911d5ce06d4d3d69dae051ccb270631402a23d9eb72c7472fac22cd",
+            "fileSha256": "a8925ffba2e97e579f5fce4be9847c258542fad5ff64920ca986775775c4b4ad",
+            "bpm": 84,
+            "sourceTotalBeats": 192,
+            "contentCompatible": true
+          },
+          "historicalSibling": {
+            "id": "xuan-cao-hua-chord",
+            "fileSha256": "82f43ef27df396c1af0235750a5ea070dbed7997ab821b956d0a1e829a705b57",
+            "contentCompatible": false,
+            "decision": "Preserve the old 78-note source record and its original automatic backing byte-for-byte; never borrow that backing for the 183-note melody. The old sibling has no practiceAccompaniment field."
+          },
+          "acousticTailBoundary": "Written 0.75-beat spans are not PCM cutoffs. Full original sample buffers and the 0.55-second convolution, filter and compressor produce natural tails. At configured 84 BPM with 1× and 1.4×, six vocal-rest windows and all 16 next-chord-boundary windows contain measured backing-only residuals; at 0.55× these windows are zero in this finite render. No sample trimming, strict acoustic silence, perceived loudness or musical acceptance is claimed.",
+          "numericalAudioReview": {
+            "status": "actual-offline-full-graph-numerical-audit-passed",
+            "reviewedOn": "2026-10-12",
+            "sampleRate": 44100,
+            "configuredBpm": 84,
+            "speedMultipliers": [
+              1,
+              0.55,
+              1.4
+            ],
+            "suggestedSpeedFactorAutomaticallyApplied": false,
+            "renderCount": 9,
+            "scheduledSources": 1194,
+            "endedSources": 1194,
+            "sampleClippingCount": 0,
+            "nonfiniteSampleCount": 0,
+            "backingResidualRestBeats": [
+              14,
+              38,
+              110,
+              134,
+              158,
+              182
+            ],
+            "backingOnlyRestNonzeroCounts": [
+              6,
+              0,
+              6
+            ],
+            "backingOnlyPostChordBoundaryNonzeroCounts": [
+              16,
+              0,
+              16
+            ],
+            "backingOnlyPostBookNonzeroCounts": [
+              0,
+              0,
+              0
+            ],
+            "backingOnlyToMixedFullRmsRatios": [
+              0.02504424,
+              0.0250637,
+              0.02532611
+            ],
+            "rmsRatioMeaning": "Separate backing-only / mixed full-duration RMS; not a perceived-loudness percentage or an isolated contribution through the nonlinear shared compressor.",
+            "finalGuardSeconds": 0.25,
+            "allFinalGuardsExactlyZero": true,
+            "fullGraph": true,
+            "liveRafSchedulerTested": false,
+            "subjectiveListening": false,
+            "independentPcmRegeneration": false,
+            "savedPcm": false,
+            "reportFingerprint": "ae8ca6342ab34e3f8b92bb3e2c2e58b2cac6c8cecc1a57d9d6a1608672cbb359"
+          },
+          "evidenceFingerprints": {
+            "frozenCandidateSha256": "13888538b2b784d6bdd2846fee22d3ebb98c33799d89536ae483c10c815cd5b6",
+            "candidateBlockSha256": "7afe06e85a5cfde0cf52bd4c1a7fa2e28b5ac25690128ab8076b0af121b1c8a7",
+            "literalTimelineSha256": "a333286d4ef22e7fdb19653c64d05bfc214f40c0d854692912165d5cbaba75a4",
+            "selectionAndOmissionsSha256": "878173a8b4f63540af9ec3571cb9d4274a65887eb99df805b3f73f988ea542d5"
+          },
+          "importBoundary": "Raw built-in practiceAccompaniment is rejected by the external importer, not silently dropped. A deliberately prepared external V2 autoAccompaniment representation preserves all 183 targets, 16 roots, settings, 20 vocal-rest policies and extent 192.",
+          "browserAudio": "actual-offline-full-graph-numerical-render-only",
+          "referenceListening": "not-performed",
+          "subjectiveAB": "not-performed",
+          "physicalKalimba": "not-performed",
+          "publicDistributionRights": "unestablished-local-preview-only"
+        },
+        "suitability": {
+          "status": "conditional",
+          "scope": "selected-shanshan-complete-vocal-route-with-optional-sparse-roots",
+          "reason": "Frozen 183-note single melody plus 16 source-symbol-derived app roots at disclosed editorial registers, spacing, duration and gain. Numerical feasibility is distinct from listening, harmonic and physical acceptance.",
+          "reviewRequired": [
+            "Subjective A/B at the actual selected practice speeds, reference listening and physical kalimba remain pending.",
+            "Public-distribution rights remain unestablished; this is a local preview."
+          ]
+        },
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "sourceMeasureCount": 64,
+        "tempoStatus": "editorial-practice-choice-no-printed-bpm",
+        "unsupported": [
+          "App-only sparse roots derive from selected printed chord symbols; no literal guitar bass, full voicing, strumming or picking pattern is transcribed.",
+          "All original 183 single-melody targets remain unchanged; support is optional and default-off.",
+          "Twenty vocal rests have no new support onset or written overlap; natural full-sample/effects tails are preserved.",
+          "The original V1 and historical V2 source payloads remain untouched, including their earlier review-stage wording."
+        ],
+        "unsureMeasures": []
+      }
+    },
   "ye-de-gang-qin-qu-wu": {
       "schemaVersion": 1,
       "id": "ye-de-gang-qin-qu-wu",
@@ -57604,7 +72411,7 @@ export const SONG_LIBRARY = {
         "unsupported": [
           "主旋律版省略原谱下声部伴奏与同时和声音。",
           "第15、31小节为十六分三连音，每音1/6拍，不能量化成均匀八分音符。",
-          "第33小节末3拍为静音；V1播放器按最后发声音符结束，元数据保留完整132拍谱面范围。"
+          "第33小节末3拍为静音；2.4.1 起播放器按来源总拍数保留末尾纯休止，不延长最后音符。"
         ],
         "unsureMeasures": [],
         "composer": "石进",
@@ -57637,7 +72444,7 @@ export const SONG_LIBRARY = {
       "uploader": "system",
       "practiceTitle": "《云烟成雨》练习轨道",
       "scoreTitle": "《云烟成雨》简谱进度",
-      "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴卷帘谱与清晰简谱交叉整理，伴奏/和弦暂未编码。",
+      "hint": "搜狐/比三呆31小节编配的单音主旋律，含末尾4拍旋律休止；第28小节暂保留旧数据待核实。旧曲谱网版本未重验，参考录音与实体琴验证待完成；原谱伴奏未编码。",
       "difficulty": "medium",
       "bpm": 69,
       "defaultSpeedFactor": 0.9,
@@ -57647,17 +72454,17 @@ export const SONG_LIBRARY = {
         [
           "E5",
           3,
-          0.25
+          0.3333333333333333
         ],
         [
           "F5",
-          3.25,
-          0.25
+          3.3333333333333335,
+          0.3333333333333333
         ],
         [
           "G5",
-          3.5,
-          0.25
+          3.6666666666666665,
+          0.3333333333333333
         ],
         [
           "A5",
@@ -57682,12 +72489,7 @@ export const SONG_LIBRARY = {
         [
           "D5",
           5.75,
-          0.25
-        ],
-        [
-          "D5",
-          6,
-          0.5
+          0.75
         ],
         [
           "D5",
@@ -57722,12 +72524,7 @@ export const SONG_LIBRARY = {
         [
           "C6",
           9.5,
-          0.5
-        ],
-        [
-          "C6",
-          10,
-          1
+          1.5
         ],
         [
           "D5",
@@ -57752,27 +72549,22 @@ export const SONG_LIBRARY = {
         [
           "A5",
           13.5,
-          0.5
-        ],
-        [
-          "A5",
-          14,
-          1
+          1.5
         ],
         [
           "F5",
           15,
-          0.5
+          0.25
         ],
         [
           "E5",
-          15.5,
+          15.25,
           0.25
         ],
         [
           "C5",
-          15.75,
-          0.25
+          15.5,
+          0.5
         ],
         [
           "G5",
@@ -57780,9 +72572,9 @@ export const SONG_LIBRARY = {
           4
         ],
         [
-          "G5",
-          21,
-          1
+          "G4",
+          21.5,
+          0.5
         ],
         [
           "D5",
@@ -57790,7 +72582,7 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "C6",
+          "C5",
           23,
           1
         ],
@@ -57835,7 +72627,7 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "C6",
+          "C5",
           30,
           0.5
         ],
@@ -57845,7 +72637,7 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           31,
           0.5
         ],
@@ -57870,24 +72662,24 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "G5",
+          "E5",
           34,
           0.5
         ],
         [
-          "F5",
+          "G5",
           34.5,
           0.5
         ],
         [
-          "E5",
+          "F5",
           35,
-          1
+          0.5
         ],
         [
           "E5",
-          36,
-          1
+          35.5,
+          1.5
         ],
         [
           "E5",
@@ -57900,62 +72692,52 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           39,
           0.5
         ],
         [
-          "B5",
+          "B4",
           39.5,
-          0.5
+          1
         ],
         [
-          "B5",
-          40,
-          0.5
-        ],
-        [
-          "A5",
+          "A4",
           40.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           41,
           0.5
         ],
         [
-          "A5",
+          "A4",
           41.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           42,
           0.5
         ],
         [
-          "B5",
+          "B4",
           42.5,
           0.5
         ],
         [
-          "C6",
+          "C5",
           43,
           0.5
         ],
         [
-          "G5",
+          "G4",
           43.5,
-          0.5
+          1
         ],
         [
-          "G5",
-          44,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           44.5,
           0.5
         ],
@@ -57965,14 +72747,9 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           45.5,
-          0.5
-        ],
-        [
-          "C6",
-          46,
-          1
+          1.5
         ],
         [
           "E5",
@@ -57982,12 +72759,7 @@ export const SONG_LIBRARY = {
         [
           "D5",
           47.5,
-          0.5
-        ],
-        [
-          "D5",
-          48,
-          0.5
+          1
         ],
         [
           "D5",
@@ -58000,39 +72772,34 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           49.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           50,
-          1
+          0.5
         ],
         [
           "G5",
-          51,
+          50.5,
           1
         ],
         [
           "D5",
-          52,
-          1
+          51.5,
+          1.5
         ],
         [
-          "D5",
-          53,
+          "G4",
+          54,
           1
         ],
         [
           "G5",
           55,
-          0.5
-        ],
-        [
-          "G5",
-          55.5,
-          0.5
+          1
         ],
         [
           "E5",
@@ -58097,42 +72864,37 @@ export const SONG_LIBRARY = {
         [
           "D5",
           64,
-          1
+          0.75
         ],
         [
-          "C6",
-          65,
-          0.5
+          "C5",
+          64.75,
+          0.75
         ],
         [
-          "C6",
+          "A5",
           65.5,
           0.5
         ],
         [
-          "A5",
+          "G5",
           66,
           0.5
         ],
         [
-          "G5",
+          "F5",
           66.5,
           0.5
         ],
         [
-          "F5",
+          "E5",
           67,
           0.5
         ],
         [
-          "E5",
-          67.5,
-          0.25
-        ],
-        [
           "F5",
-          67.75,
-          0.25
+          67.5,
+          0.5
         ],
         [
           "E5",
@@ -58155,42 +72917,37 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           72,
           1.5
         ],
         [
-          "A5",
+          "A4",
           73.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           74,
           0.5
         ],
         [
-          "B5",
+          "B4",
           74.5,
           0.5
         ],
         [
-          "C6",
+          "C5",
           75,
           0.5
         ],
         [
-          "G5",
+          "G4",
           75.5,
-          0.5
+          1
         ],
         [
-          "G5",
-          76,
-          0.5
-        ],
-        [
-          "G5",
+          "G4",
           76.5,
           0.5
         ],
@@ -58200,34 +72957,24 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           77.5,
           0.5
         ],
         [
-          "C6",
-          79,
-          0.25
+          "C5",
+          78.5,
+          0.5
         ],
         [
           "E5",
-          79.25,
-          0.25
+          79,
+          0.5
         ],
         [
           "D5",
           79.5,
-          0.5
-        ],
-        [
-          "D5",
-          80,
-          1
-        ],
-        [
-          "D5",
-          81,
-          0.5
+          2
         ],
         [
           "D5",
@@ -58235,24 +72982,24 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "D5",
           82,
           0.5
         ],
         [
-          "C6",
+          "C5",
           82.5,
           0.5
         ],
         [
-          "G5",
+          "C5",
           83,
-          1
+          0.5
         ],
         [
           "G5",
-          84,
-          0.5
+          83.5,
+          1
         ],
         [
           "D5",
@@ -58260,29 +73007,29 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C4",
           85,
           0.5
         ],
         [
-          "F5",
+          "F4",
           85.5,
           0.5
         ],
         [
-          "A5",
+          "A4",
           86,
           0.5
         ],
         [
-          "C6",
+          "C5",
           86.5,
           0.5
         ],
         [
-          "G5",
-          87.5,
-          0.5
+          "G4",
+          87.75,
+          0.25
         ],
         [
           "G5",
@@ -58307,17 +73054,7 @@ export const SONG_LIBRARY = {
         [
           "E5",
           89.75,
-          0.25
-        ],
-        [
-          "E5",
-          90,
-          0.25
-        ],
-        [
-          "D5",
-          90.25,
-          0.25
+          0.75
         ],
         [
           "D5",
@@ -58355,19 +73092,19 @@ export const SONG_LIBRARY = {
           0.5
         ],
         [
-          "C6",
+          "C5",
           93.5,
-          0.5
+          0.25
         ],
         [
-          "B5",
-          94,
-          1
+          "B4",
+          93.75,
+          1.25
         ],
         [
-          "G5",
-          95.5,
-          0.5
+          "G4",
+          95.75,
+          0.25
         ],
         [
           "A5",
@@ -58392,12 +73129,7 @@ export const SONG_LIBRARY = {
         [
           "E5",
           98,
-          0.25
-        ],
-        [
-          "D5",
-          98.25,
-          0.25
+          0.5
         ],
         [
           "D5",
@@ -58407,17 +73139,17 @@ export const SONG_LIBRARY = {
         [
           "D5",
           98.75,
+          0.75
+        ],
+        [
+          "C5",
+          99.5,
           0.25
         ],
         [
-          "C6",
-          99,
-          0.5
-        ],
-        [
           "D5",
-          99.5,
-          0.5
+          99.75,
+          0.25
         ],
         [
           "E5",
@@ -58437,27 +73169,22 @@ export const SONG_LIBRARY = {
         [
           "E5",
           101,
-          0.25
+          0.5
         ],
         [
           "F5",
-          101.25,
+          101.5,
           0.25
         ],
         [
           "G5",
-          101.5,
-          0.5
+          101.75,
+          1.25
         ],
         [
           "G5",
-          102,
-          0.5
-        ],
-        [
-          "G5",
-          103.5,
-          0.5
+          103.75,
+          0.25
         ],
         [
           "A5",
@@ -58482,17 +73209,7 @@ export const SONG_LIBRARY = {
         [
           "D5",
           105.75,
-          0.25
-        ],
-        [
-          "D5",
-          106,
-          0.25
-        ],
-        [
-          "E5",
-          106.25,
-          0.25
+          0.75
         ],
         [
           "E5",
@@ -58505,14 +73222,19 @@ export const SONG_LIBRARY = {
           0.25
         ],
         [
-          "F5",
+          "E5",
           107,
-          0.5
+          0.3333333333333333
+        ],
+        [
+          "F5",
+          107.33333333333333,
+          0.3333333333333333
         ],
         [
           "G5",
-          107.5,
-          0.5
+          107.66666666666667,
+          0.3333333333333333
         ],
         [
           "G5",
@@ -58587,12 +73309,7 @@ export const SONG_LIBRARY = {
         [
           "G5",
           114.75,
-          0.25
-        ],
-        [
-          "G5",
-          115,
-          0.5
+          0.75
         ],
         [
           "D5",
@@ -58607,37 +73324,37 @@ export const SONG_LIBRARY = {
         [
           "F5",
           116,
-          0.5
+          1
         ],
         [
           "C6",
-          116.5,
-          0.5
-        ],
-        [
-          "A5",
           117,
           0.5
         ],
         [
-          "G5",
+          "A5",
           117.5,
           0.5
         ],
         [
-          "G5",
+          "G4",
           118,
           0.5
         ],
         [
-          "B5",
+          "G5",
           118.5,
           0.5
         ],
         [
-          "C6",
+          "B4",
           119,
-          1
+          0.5
+        ],
+        [
+          "C5",
+          119.5,
+          0.5
         ]
       ],
       "sourceFeatures": {
@@ -58645,17 +73362,153 @@ export const SONG_LIBRARY = {
         "hasArpeggio": true,
         "hasRepeats": false,
         "unsupported": [
-          "Qupu123 source is a 17-key C kalimba roll/performance score; V1 keeps only the readable main melody line.",
-          "Chord, bass, and arpeggio cues visible in the source are recorded as source context but not encoded in this melody-only version.",
-          "Triplet and short grace-like groups were quantized to 0.25-beat subdivisions for the current practice timeline."
+          "Single-note main melody from the selected 31-bar Sohu/Bi San Dai arrangement. Source chords, bass, arpeggios and the measure-31 accompaniment outro are not encoded; this is not the complete multi-part arrangement or a claim to reproduce the full studio recording.",
+          "Entire measure 28 [108,112) remains unchanged from the prior data. Printed undotted 3–6 literally read E4/A4, but the intended register lacks independent source/performance confirmation; retain the whole bar to avoid mixing reviewed and deferred interpretations.",
+          "The original Qupu123 source was not reverified. Selected-source notation review does not resolve every arrangement/version difference, independent reference listening, physical-kalimba playability or publication rights."
         ],
         "unsureMeasures": [
-          "Measures 1-4 and 21-30 were cross-checked against the clearer Sohu/Bi San Dai jianpu image because the Qupu123 roll score is harder to read as numbered notation.",
-          "Measures with tied gray notes were encoded as the audible melody note or held duration, not as duplicate attacks."
+          "Measure 28 [108,112) is deferred in full: all eight prior tuples are frozen. The literal E4/A4 reading is clear, not a blurry image; a large leap alone cannot prove a printing error, and unavailable reference listening does not authorize guessed octave dots.",
+          "All 31 printed bars were inspected. Adopted reviewed beat ranges are [0,108) and [112,124); only measure 28 is unadopted. The final [120,124) is melody-only rest while the source accompaniment has an outro.",
+          "Qupu123 comparison remains unverified; its certificate failure was not bypassed. The publisher QQ Flash player is obsolete, the recovered modern watch page required login and no login was attempted; same-author Bilibili listings did not provide an accessible direct reference recording. Independent reference listening and physical-kalimba acceptance remain pending."
         ],
         "sourceReview": {
-          "confidence": "medium-for-melody-needs-listening-review",
-          "decision": "Added as a melody-only built-in song; defer chord/accompaniment coding until a clearer arrangement source or user review is available.",
+          "confidence": "high-for-adopted-selected-source-notation-excluding-measure-28",
+          "decision": "Adopt source-backed single-note melody corrections for the selected Sohu arrangement outside the fully deferred measure 28, retain the complete 124-beat melody extent and all historical evidence, and leave independent listening and physical validation pending.",
+          "focusedCorrections": [
+            {
+              "date": "2026-10-12",
+              "scope": "measure-1-opening-triplet-only",
+              "confidence": "high-for-opening-triplet-only",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "evidence": "The arranger's first page prints 1=C, 4/4, quarter note=69, three quarter rests, then single-underlined high 3-4-5 under a triplet bracket. The group occupies beat 3 through beat 4.",
+              "change": "Keep E5/F5/G5 pitches; use onsets 3, 3+1/3, 3+2/3 and duration 1/3 each. Preserve the A5 onset at beat 4 and every later melody tuple.",
+              "limitations": "This verifies only the opening triplet. Remaining quantized groups, ties, whole-song fidelity, listening acceptance and physical kalimba playability are not approved."
+            },
+            {
+              "date": "2026-10-12",
+              "scope": "measures-2-4-three-tied-continuations-only",
+              "confidence": "high-for-these-three-tie-groups-only",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "evidence": "The publisher instructs players to strike only the first note under a tie and omit the translucent continuation. Page 1 shows high 2 tied from a sixteenth to an eighth in measure 2, double-high 1 tied from an eighth to a quarter in measure 3, and high 6 tied from an eighth to a quarter in measure 4. Each measure occupies four quarter-note beats.",
+              "change": "Merge D5@5.75/0.25 + D5@6/0.5 into D5@5.75/0.75; C6@9.5/0.5 + C6@10/1 into C6@9.5/1.5; A5@13.5/0.5 + A5@14/1 into A5@13.5/1.5. Keep the separate untied D5 attack at 6.5. Preserve the opening triplet and total score timing; the separately recorded measure-4 ending is the only other change in this stage.",
+              "limitations": "This verifies only three tied groups and their occupied intervals, not complete measures or the whole song. The measure-4 ending rhythm is covered by a separate focused correction. Other ties, remaining quantized groups, listening acceptance, browser audio and physical kalimba playability are not approved."
+            },
+            {
+              "date": "2026-10-12",
+              "scope": "measure-4-ending-4-3-1-rhythm-only",
+              "confidence": "high-for-this-three-note-rhythm-group-only",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "evidence": "The closing high 4-3-1 on page 1, measure 4 has one shared underline and a second underline beneath only 4 and 3. It is two sixteenths followed by one eighth: 0.25 + 0.25 + 0.5 beats. All three notes have one upper octave dot.",
+              "change": "Keep F5/E5/C5 pitches. Replace F5@15/0.5, E5@15.5/0.25, C5@15.75/0.25 with F5@15/0.25, E5@15.25/0.25, C5@15.5/0.5. The group still occupies beat 15 through 16; the next G5 remains at 16. Together with the separately recorded three tie merges, all other 190 v2.4.0 melody tuples are unchanged.",
+              "limitations": "This verifies only the closing three-note rhythm group. It does not approve other quantized groups, all source measures, whole-song fidelity, listening acceptance or physical kalimba playability."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "scope": "measures-9-12-five-tied-continuations-only",
+              "confidence": "high-for-these-five-tie-groups-only",
+              "beatRange": [
+                35.5,
+                48.5
+              ],
+              "evidence": "Original pixels and enlarged crops show equal degree/octave at each arc endpoint and a gray continuation, consistent with the publisher instruction to pluck only the first tied note. The outgoing high 2 at the end of measure 12 matches the incoming gray high 2 at the start of measure 13 across the line break.",
+              "change": "Merge source E5@35.5/0.5 + E5@36/1 into E5@35.5/1.5; B4@39.5/0.5 + B4@40/0.5 into B4@39.5/1; G4@43.5/0.5 + G4@44/0.5 into G4@43.5/1; C5@45.5/0.5 + C5@46/1 into C5@45.5/1.5; D5@47.5/0.5 + D5@48/0.5 into D5@47.5/1. Retain untied G4@44.5 and D5@48.5 as independent attacks. Onset/rhythm and octave corrections are recorded separately.",
+              "limitations": "Only these five ties are approved, including only the first continuation of measure 13. Adjacent repeated pitches do not imply ties. This does not verify other ties, different-pitch slurs, the whole song, all source versions, listening or physical playability."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "scope": "measures-6-and-9-rest-and-repeated-note-rhythm-only",
+              "confidence": "high-for-these-inspected-rhythm-groups-only",
+              "evidence": "Measure 6 prints a dotted 0 followed by a single-underlined undotted-octave 5: 1.5 beats of rest and a 0.5-beat note. Measure 9 shows a high 3 quarter followed by three eighth-note pairs: 3–3, 3–5, 4–3. No triplet bracket occurs in this inspected passage.",
+              "change": "Restore silence [20,21.5), move/shorten the following G attack from beat 21/1 to 21.5/0.5, retaining the D5@22 and C@23 timing. Restore independent E5@34/0.5, move G5 to 34.5/0.5, F5 to 35/0.5 and the final E5 onset to 35.5; its tied duration is recorded separately. Preserve E5 attacks at 32, 33 and 33.5, all four A4 attacks at 40.5, 41, 41.5 and 42, and the rest [37,38).",
+              "limitations": "Rhythm evidence is separate from the local octave corrections. Duration sum changes from 110.5 to 110 beats solely because of the restored half-beat silence; this arithmetic is not source evidence or whole-song approval."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "scope": "measures-6-8-and-10-12-local-source-octaves-only",
+              "confidence": "high-for-these-inspected-octave-dots-only",
+              "evidence": "The m6 5, m10–11 7s, m11 four 6s and m11–12 5s have no octave dot; the inspected 1s in m6, m8 and m10–12 each have one upper dot, not two. Source degree/octave mapping for 1=C gives G4, B4, A4 and C5 respectively.",
+              "change": "Correct the retained G at 21.5 to G4; C notes at 23, 30, 31, 39, 43 and 45.5 to C5; B notes at 39.5 and 42.5 to B4; four A notes at 40.5, 41, 41.5 and 42 to A4; G notes at 43.5 and 44.5 to G4. Tied continuations are removed by the separately recorded tie decision. This is source-pitch restoration, not a transposition or register-folding arrangement.",
+              "limitations": "Only the listed source octave dots are verified. Measures 5 and 7 and all tuples outside [16,48.5) remain unchanged; no inference is made about other octave labels or the unavailable Qupu123 comparison."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrls": [
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+              ],
+              "scope": "measures-13-20-four-tied-continuations-only",
+              "confidence": "high-for-these-four-tie-groups-only",
+              "evidence": "Same-pitch arcs end in gray continuations at 52, 65, 76 and page-2 beat 80. The m21 continuation has one upper octave dot and a right augmentation dot with no underline: D5 lasting 1.5 beats. The m17 black high 1 has two underlines, its gray high-1 continuation one underline.",
+              "change": "Encode D5@51.5/1.5, C5@64.75/0.75, G4@75.5/1 and D5@79.5/2. Remove the old continuation attacks at 52, 76, 80 and 81; replace the misaligned old C6 pair in the separately reviewed m17 rhythm. Keep G4@76.5 independent, and preserve D5@81.5 outside scope.",
+              "limitations": "Only the four listed groups. Previous D5@47.5/1 is untouched; later black D5@81.5 is not part of the page-break tie and its duration is not approved here."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrls": [
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+              ],
+              "scope": "measures-13-14-17-and-20-rhythm-and-rests-only",
+              "confidence": "high-for-these-inspected-rhythm-groups-only",
+              "evidence": "m13 uses an eighth-note low 6 then quarter-note high 5 and eighth-note high 2. m14 follows the gray quarter continuation with a quarter rest, low 5 quarter and high 5 quarter. m17 underlines show dotted eighth high 2, sixteenth high 1 tied to eighth high 1, then five eighths, with no triplet marker. m20 underlined 0–1 is a half-beat rest then an eighth.",
+              "change": "Restore A4@50/0.5, G5@50.5/1 and D5@51.5/1.5; leave [53,54) silent and use G4@54/1 plus G5@55/1 without a false 55.5 retrigger. Set m17 onsets 64,64.75,65.5,66,66.5,67,67.5 with durations 0.75,0.75,0.5,0.5,0.5,0.5,0.5. Leave [78,78.5) silent, restore C5@78.5/0.5 and E5@79/0.5, then the separately recorded final tie.",
+              "limitations": "Rhythm and rest placement are separate from pitch evidence. m15, m16 and m18 are preserved. The 0.5 net increase in sounded duration comes from m20 restoring an eighth of source melody, not extending an ending or filling a source rest."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrls": [
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+              ],
+              "scope": "measures-13-14-17-and-19-20-local-source-octaves-only",
+              "confidence": "high-for-these-inspected-octave-dots-only",
+              "evidence": "Inspected 1s each have one upper octave dot, while low 5/6/7 have none. Source 1=C therefore gives C5, G4, A4 and B4 at the listed positions; high 5 remains G5.",
+              "change": "Use C5 at 49.5,64.75,72,75,77.5,78.5; A4 at 50,73.5,74; B4 at 74.5; G4 at 54,75.5,76.5. Preserve separate repeated A4 attacks at 73.5 and 74. This restores literal source octaves without transposition or local pitch folding.",
+              "limitations": "Only these inspected notes are approved; pitch restoration does not itself establish listening or physical-playability acceptance."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+              "scope": "measures-21-27-and-29-seven-tied-continuations-only",
+              "confidence": "high-for-these-seven-tie-groups-only",
+              "evidence": "Equal-pitch/degree arcs with matching octave dots connect to gray continuations at 84,90,94,99,102,106 and115. Underlines independently establish each duration; black same-pitch neighbors remain independent attacks.",
+              "change": "Encode G5@83.5/1, E5@89.75/0.75, B4@93.75/1.25, D5@98.75/0.75, G5@101.75/1.25, D5@105.75/0.75 and G5@114.75/0.75. Preserve untied E5/D5/A5/G5 repeated attacks.",
+              "limitations": "Only these seven ties; m28 is excluded in full and no different-pitch slur is merged."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+              "scope": "measures-21-27-and-29-31-source-rhythm-triplet-and-melody-ending",
+              "confidence": "high-for-adopted-rhythm-outside-measure-28",
+              "evidence": "m22,24,26 each end with a dotted eighth rest followed by a sixteenth. m27 high 3–4–5 has an explicit 3-in-one-quarter-beat bracket. m30 starts with a quarter note and ends at 120; m31 prints four quarter rests in the top melody row, while the lower accompaniment outro continues.",
+              "change": "Use rests [87,87.75), [95,95.75), [103,103.75); preserve binary underlines elsewhere, independent repeats and exact m27 triplet onsets 107,107+1/3,107+2/3 with durations1/3. Encode the source m30 seven attacks, final C5@119.5/0.5; retain [120,124) as melody-only silence with sourceTotalBeats124, never lengthening the final note.",
+              "limitations": "No m28 rhythm adopted. Four-beat ending silence is a melody-only claim, not generic all-layer silence. Reference audio and physical play-through are independent, unfinished checks."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+              "scope": "measures-21-27-and-30-local-source-pitches-excluding-measure-28",
+              "confidence": "high-for-adopted-pitch-notation-outside-measure-28",
+              "evidence": "The selected source shows m21 repeated high 2 then high 1; m22 undotted1/4/6/5 map to C4/F4/A4/G4, inspected one-dot1s map to C5, undotted7s to B4; m30 explicitly distinguishes G4/G5 and double-high C6 from final high C5.",
+              "change": "Restore source pitch/register in the adopted spans without transposition or octave folding. Keep the entire prior m28 bar, including all pitch/onset/duration tuples, until its intended-register question has corroborating evidence.",
+              "limitations": "m28 literal undotted3/6 are visibly E4/A4 but not adopted; a large leap does not establish a printing error. This is not blanket musical correctness or all-version approval."
+            }
+          ],
           "sources": [
             {
               "label": "中国曲谱网 云烟成雨（17音C调卡林巴琴演奏谱）",
@@ -58665,6 +73518,158 @@ export const SONG_LIBRARY = {
               "label": "搜狐 云烟成雨拇指琴演奏谱交叉参考",
               "url": "https://www.sohu.com/a/274931646_759018"
             }
+          ],
+          "scopedSourceAdoptions": [
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "scope": "measures-5-12-plus-measure-13-first-tied-continuation-only",
+              "beatRange": [
+                16,
+                48.5
+              ],
+              "sourceImageSha256": "e8a1574fe02f817fcfbf5db94ad4d72bf8e90a004519b643395e640c2594dbd3",
+              "baselineSongFileSha256": "bf72c25572f9432551a110efc92b6e7c39f60b3d8e3b2a4688905427adefea05",
+              "decision": "Adopt the directly inspected Sohu/Bi San Dai jianpu for this bounded passage only, retaining the source pitches without transposition.",
+              "sourceDiscrepancy": "The reviewed Sohu notation differs from the pre-correction JSON in ties, a dotted rest, a repeated eighth-note attack and local octave labels. The original Qupu123 citation and all earlier review notes are retained, but Qupu123 was not reverified; this pass does not establish whether the discrepancy originates in that arrangement or in its transcription, and does not resolve all source/version differences.",
+              "limitations": "No change or new source approval outside [16,48.5). Measures 1–4 retain their previously reviewed corrections; the rest of measure 13 and later measures remain unreviewed by this pass. No whole-song or all-versions accuracy claim, publication-rights certification, reference listening, browser audio acceptance or physical-kalimba validation.",
+              "previousHint": "主旋律练习版；据中国曲谱网17音C调卡林巴卷帘谱与清晰简谱交叉整理，伴奏/和弦暂未编码。"
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrls": [
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+                "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+              ],
+              "scope": "measures-13-20-plus-measure-21-first-tied-continuation-only",
+              "beatRange": [
+                48.5,
+                81.5
+              ],
+              "sourceImageSha256": [
+                "e8a1574fe02f817fcfbf5db94ad4d72bf8e90a004519b643395e640c2594dbd3",
+                "01023a8c008dd064ae082cba0b9d18f9f1caf37315c1c05067483140c338666f"
+              ],
+              "baselineScopedAttacksSha256": "d827002e5d33559f5e16467c1ce13b57cf5854f4d0db56db54fa480f7e49e576",
+              "previousHint": "主旋律练习版；第5—12小节及第13小节首个延音接续按搜狐/比三呆原谱定点复核。保留旧曲谱网来源，未重新核验；其余段落与版本差异仍待复核，伴奏/和弦暂未编码。",
+              "decision": "Adopt the directly inspected selected Sohu/Bi San Dai jianpu for [48.5,81.5) only, without transposition. Preserve earlier corrections and the independent D5@48.5.",
+              "sourceDiscrepancy": "Source notation differs from the prior encoded rhythm, rest placement, attacks and octave labels. Qupu123 was not reverified; historical source differences are not resolved and other arrangements are not declared incorrect.",
+              "limitations": "No new approval for notes starting at or after 81.5. Whole-song fidelity, reference listening, actual browser audio, physical-kalimba acceptance and publication rights are not established."
+            },
+            {
+              "date": "2026-10-12",
+              "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+              "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+              "scope": "measure-21-remainder-through-31-excluding-entire-measure-28",
+              "beatRanges": [
+                [
+                  81.5,
+                  108
+                ],
+                [
+                  112,
+                  124
+                ]
+              ],
+              "deferredBeatRanges": [
+                [
+                  108,
+                  112
+                ]
+              ],
+              "sourceImageSha256": "01023a8c008dd064ae082cba0b9d18f9f1caf37315c1c05067483140c338666f",
+              "baselineSongFileSha256": "69ea7019d95c801abcb8183ac4e42d25ac726aefe7ce8629575baf08aa4fcbad",
+              "previousHint": "主旋律练习版；第5—20小节及第21小节首个延音接续按搜狐/比三呆原谱定点复核。保留旧曲谱网来源，未重新核验；其余段落与版本差异仍待复核，伴奏/和弦暂未编码。",
+              "decision": "Adopt 68 exact source attacks outside all of m28, preserve all eight prior m28 tuples, and retain the final four-beat melody rest through sourceTotalBeats=124.",
+              "limitations": "The earlier audit excluded only two unresolved pitches; this approved implementation deliberately excludes the whole bar instead. No guessed octave corrections, mixed m28 rhythm revision, or all-layer-silence claim."
+            }
+          ],
+          "historicalReviewNotes": {
+            "date": "2026-10-12",
+            "stage": "before-final-2.4.2-selected-source-pass",
+            "unsupported": [
+              "Qupu123 source is a 17-key C kalimba roll/performance score; V1 keeps only the readable main melody line.",
+              "Chord, bass, and arpeggio cues visible in the source are recorded as source context but not encoded in this melody-only version.",
+              "The opening measure's high 3-4-5 triplet was corrected from the source on 2026-10-12. Other triplet and short grace-like groups were previously quantized to 0.25-beat subdivisions and remain unverified.",
+              "The focused opening-triplet, measures 2-4 tie and measure-4 ending-rhythm corrections are not whole-song approval. Other tied groups and quantized rhythms remain unverified or unresolved; all melody tuples outside the explicitly recorded correction scopes are unchanged.",
+              "The earlier focused-correction notes above are retained as historical evidence. The 2.4.2 pass additionally adopts the Sohu/Bi San Dai score only for measures 5–12 and the first tied continuation of measure 13; all tuples outside [16,48.5) remain as in 2.4.1. The retained Qupu123 source was not reverified, and unresolved source/version differences are not a claim of correctness across all versions.",
+              "A second bounded 2.4.2 pass additionally adopts the selected Sohu arrangement for [48.5,81.5), covering measures 13–20 after the previous boundary plus only the opening gray dotted-quarter continuation in measure 21. Earlier untouched-scope statements describe their respective historical stages. Later notes and other source versions remain unapproved."
+            ],
+            "unsureMeasures": [
+              "Measures 1-4 and 21-30 were cross-checked against the clearer Sohu/Bi San Dai jianpu image because the Qupu123 roll score is harder to read as numbered notation.",
+              "The 2026-10-12 source review verified and merged the tied gray continuation pairs at beats 5.75/6 (D5), 9.5/10 (C6), and 13.5/14 (A5). This applies only to those three pairs, not to other adjacent same-pitch notes.",
+              "Measure 4 closing high 4-3-1 was corrected from the enlarged source: two underlines beneath 4 and 3, then one beneath 1 give 0.25 + 0.25 + 0.5 beats at onsets 15, 15.25 and 15.5. This replaces the earlier 0.5 + 0.25 + 0.25 distribution without changing the next measure boundary at 16.",
+              "The 2.4.2 Sohu-scoped review confirmed five ties at 35.5/36, 39.5/40, 43.5/44, 45.5/46 and 47.5/48; it separately restored the dotted rest [20,21.5), the E5 attack at 34 and local source octave dots in measures 6, 8 and 10–12. Measure 5 and measure 7 are unchanged. Only the first continuation at 48 was reviewed in measure 13; D5@48.5 and all later tuples are preserved, not newly approved.",
+              "The second 2.4.2 pass verified m13–20 ties, octave dots, rests and underlines. m17 is a dotted eighth followed by a sixteenth tied to an eighth, not a triplet or grace group. The source rest is [53,54) in m14 and [78,78.5) in m20. m15, m16 and m18 are unchanged controls. The tie at 79.5 ends at 81.5; the independent black D5 at 81.5 is preserved outside this pass, not approved by it."
+            ],
+            "confidence": "medium-for-melody-needs-listening-review",
+            "decision": "Added as a melody-only built-in song; defer chord/accompaniment coding until a clearer arrangement source or user review is available.",
+            "reason": "Preserve earlier uncertainty statements verbatim as historical provenance; adopted ranges have since been reviewed. These are not the current unresolved-issue list."
+          },
+          "currentScopeReview": {
+            "date": "2026-10-12",
+            "status": "reviewed-with-deferred-measure",
+            "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+            "imageUrls": [
+              "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+              "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+            ],
+            "selectedVersion": "Sohu / 比三呆弹吉他, 31 printed bars, single-note main melody only",
+            "inspectedBeatRanges": [
+              [
+                0,
+                124
+              ]
+            ],
+            "reviewedBeatRanges": [
+              [
+                0,
+                108
+              ],
+              [
+                112,
+                124
+              ]
+            ],
+            "deferredBeatRanges": [
+              [
+                108,
+                112
+              ]
+            ],
+            "sourceTotalBeats": 124,
+            "melodyLastSoundingBeat": 120,
+            "melodyOnlyRestWindows": [
+              {
+                "beat": 120,
+                "duration": 4,
+                "reason": "Source m31 has four quarter rests in the melody row; the source accompaniment outro continues, so this is not all-layer silence."
+              }
+            ],
+            "deferredReason": "Entire m28 is frozen. The source literally prints undotted E4/A4 at 110/110.5; intended register needs corroboration. No pitch or rhythm changes from this bar are adopted.",
+            "oldQupuReverified": false,
+            "referenceListening": "not-completed-no-accessible-independent-recording",
+            "physicalKalimba": "not-performed",
+            "limitations": "Selected-source notation review outside the deferred bar is not whole-song/all-versions fidelity, source-accompaniment approval, independent listening, physical playability or publication-rights certification."
+          }
+        },
+        "sourceTotalBeats": 124,
+        "melodyOnlyRestWindows": [
+          {
+            "beat": 120,
+            "duration": 4,
+            "reason": "Source m31 has four quarter rests in the melody row; the source accompaniment outro continues, so this is not all-layer silence."
+          }
+        ],
+        "suitability": {
+          "status": "needs-review",
+          "scope": "selected-31-bar-sohu-main-melody-with-measure-28-deferred",
+          "reason": "The adopted notation is source-reviewed, but the whole deferred measure 28 and independent reference/physical acceptance remain unresolved.",
+          "reviewRequired": [
+            "Confirm measure-28 intended register from a reliable independent source or accessible publisher performance before changing the frozen bar.",
+            "Compare against an independent recording and perform a physical-kalimba play-through."
           ]
         }
       }
@@ -59074,24 +74079,120 @@ export const SONG_LIBRARY = {
         ],
         "unsupported": [
           "完整歌曲包含后续主歌、重复段和尾声；本练习版选取第16至35小节的完整核心唱段。",
-          "部分吉他编配使用转调后的D大三和弦，本版采用双手钢琴谱的Dm以适配自然音卡林巴。"
+          "本次核对的EOP15711第16–35小节主旋律本身均为自然音，没有升降音替换或局部移八度；该谱D/F/A伴奏与其他版本D大三和弦的历史比较，不是主旋律改音依据，其他版本和伴奏层未在本次获确认。"
         ],
         "unsureMeasures": [],
         "sourceReview": {
-          "confidence": "high",
-          "sources": [
-            {
-              "label": "人人钢琴网《猪猪侠主题曲》双手简谱",
-              "url": "https://www.everyonepiano.cn/music-15711-%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0%E4%B8%BB%E9%A2%98%E6%9B%B2.html"
-            },
-            {
-              "label": "吉他世界《猪猪侠》G调弹唱谱",
-              "url": "https://www.guitarworld.cc/thread-995-1-1.html"
-            },
-            {
-              "label": "小提琴网《GG Bond》主旋律谱",
-              "url": "https://www.xiaotiqinwang.com/pu/g-43.html"
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": false,
+            "sourceImages": [
+              "private/sheets/raw/zhu-zhu-xia-theme/everyonepiano-number-01.png",
+              "private/sheets/raw/zhu-zhu-xia-theme/everyonepiano-number-02.png"
+            ],
+            "unsupported": [
+              "完整歌曲包含后续主歌、重复段和尾声；本练习版选取第16至35小节的完整核心唱段。",
+              "部分吉他编配使用转调后的D大三和弦，本版采用双手钢琴谱的Dm以适配自然音卡林巴。"
+            ],
+            "unsureMeasures": [],
+            "sourceReview": {
+              "confidence": "high",
+              "sources": [
+                {
+                  "label": "人人钢琴网《猪猪侠主题曲》双手简谱",
+                  "url": "https://www.everyonepiano.cn/music-15711-%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0%E4%B8%BB%E9%A2%98%E6%9B%B2.html"
+                },
+                {
+                  "label": "吉他世界《猪猪侠》G调弹唱谱",
+                  "url": "https://www.guitarworld.cc/thread-995-1-1.html"
+                },
+                {
+                  "label": "小提琴网《GG Bond》主旋律谱",
+                  "url": "https://www.xiaotiqinwang.com/pu/g-43.html"
+                }
+              ]
             }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-eop-melody-only",
+            "reviewedOn": "2026-10-12",
+            "reviewedBeatRanges": [
+              [
+                0,
+                40
+              ]
+            ],
+            "sourceMeasureRange": [
+              16,
+              35
+            ],
+            "sourceUrls": [
+              "https://www.everyonepiano.cn/Number-15711.html",
+              "https://www.everyonepiano.cn/Stave-15711.html"
+            ],
+            "sameEditionFormats": true,
+            "attackCount": 76,
+            "changedTupleCount": 0,
+            "melodyOnlyRestWindows": [
+              [
+                7,
+                1
+              ],
+              [
+                15,
+                1
+              ],
+              [
+                23,
+                1
+              ],
+              [
+                31,
+                0.25
+              ]
+            ],
+            "finalAttack": [
+              "D5",
+              35.75,
+              4.25
+            ],
+            "printedTempo": 68,
+            "printedMeter": "2/4",
+            "pitchRange": [
+              "C4",
+              "D5"
+            ],
+            "tieChainCount": 13,
+            "tieContinuationCount": 14,
+            "sourceMapping": "App beat zero is source m16; preserve one sequential upper melody, no pitch replacement or octave folding. Final D5 spans m33–35.",
+            "originalFileSha256": "787ee9e79b44ff36749103695da421a25a89e693ccec6ea6cf41725c072c7f29",
+            "tupleSha256": "2029214c61b51acc3ec7736d9702dee9c24a50495946a9878038cb9622702058",
+            "scopeLimits": [
+              "Only selected first-pass m16–35; do not expand later m46 repeat or call it the full song.",
+              "Parallel numbered and staff exports are one edition, not independent sources.",
+              "Existing V2 harmony and reference/physical acceptance are not approved by this melody audit.",
+              "Melody-only rest windows do not assert that the piano accompaniment is silent."
+            ]
+          }
+        },
+        "sourceTotalBeats": 40,
+        "sourceMeasureRange": [
+          16,
+          35
+        ],
+        "sourceMeasureCount": 20,
+        "sourceKey": "C",
+        "transpositionSemitones": 0,
+        "transcriptionScope": "selected-eop-15711-measures-16-35",
+        "suitability": {
+          "status": "conditional",
+          "scope": "EOP 15711 第16–35小节，首遍主旋律节选",
+          "reason": "已逐小节核对所选简谱与同版五线谱：76次攻击、全部时值与八度均吻合，C4–D5自然音无需移调或改音；简谱与五线谱是同一编配的两种表示。",
+          "reviewRequired": [
+            "原曲或参考录音的旋律对照未执行。",
+            "浏览器音频与可选伴奏A/B未执行；本次不批准伴奏。",
+            "实体卡林巴快音群、重复音与长音衰减仍待试奏。"
           ]
         }
       }

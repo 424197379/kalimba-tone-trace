@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《星际穿越主题曲》练习轨道",
   "scoreTitle": "《星际穿越主题曲》简谱进度",
-  "hint": "Interstellar Main Theme melody practice version; opening ostinato moved into the higher register and source stack/accompaniment is available in the chord version.",
+  "hint": "单音练习版；仅第44—49小节采用 EOP 谱，恢复每音1/6拍的三连音与原谱八度。原速较难，建议慢速短句循环；第10—41小节主旋律选声部、第42—43小节音区及开头反复仍待核对。",
   "difficulty": "hard",
   "bpm": 90,
   "defaultSpeedFactor": 0.82,
@@ -740,482 +740,722 @@
     [
       "C5",
       131,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      131.25,
-      0.25
+      131.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      131.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       131.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      131.75,
-      0.25
+      131.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      131.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       132,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      132.25,
-      0.25
+      132.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      132.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       132.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      132.75,
-      0.25
+      132.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      132.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       133,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      133.25,
-      0.25
+      133.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      133.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       133.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      133.75,
-      0.25
+      133.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      133.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       134,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      134.25,
-      0.25
+      134.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      134.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       134.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      134.75,
-      0.25
+      134.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      134.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       135,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      135.25,
-      0.25
+      135.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      135.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       135.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      135.75,
-      0.25
+      135.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      135.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       136,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      136.25,
-      0.25
+      136.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      136.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       136.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      136.75,
-      0.25
+      136.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      136.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       137,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      137.25,
-      0.25
+      137.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      137.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       137.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      137.75,
-      0.25
+      137.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      137.83333333333334,
+      0.16666666666666666
     ],
     [
       "C5",
       138,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      138.25,
-      0.25
+      138.16666666666666,
+      0.16666666666666666
     ],
     [
       "E4",
+      138.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C5",
       138.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "A4",
-      138.75,
-      0.25
+      138.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E4",
+      138.83333333333334,
+      0.16666666666666666
     ],
     [
       "F5",
       139,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      139.25,
-      0.25
+      139.16666666666666,
+      0.16666666666666666
     ],
     [
       "A4",
+      139.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "F5",
       139.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      139.75,
-      0.25
+      139.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "A4",
+      139.83333333333334,
+      0.16666666666666666
     ],
     [
       "F5",
       140,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      140.25,
-      0.25
+      140.16666666666666,
+      0.16666666666666666
     ],
     [
       "A4",
+      140.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "F5",
       140.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      140.75,
-      0.25
+      140.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "A4",
+      140.83333333333334,
+      0.16666666666666666
     ],
     [
       "F5",
       141,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      141.25,
-      0.25
+      141.16666666666666,
+      0.16666666666666666
     ],
     [
       "A4",
+      141.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "F5",
       141.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      141.75,
-      0.25
+      141.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "A4",
+      141.83333333333334,
+      0.16666666666666666
     ],
     [
       "F5",
       142,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      142.25,
-      0.25
+      142.16666666666666,
+      0.16666666666666666
     ],
     [
       "A4",
+      142.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "F5",
       142.5,
-      0.25
+      0.16666666666666666
     ],
     [
       "C5",
-      142.75,
-      0.25
+      142.66666666666666,
+      0.16666666666666666
     ],
     [
-      "B4",
+      "A4",
+      142.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       143,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      143.25,
-      0.25
+      "G5",
+      143.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      143.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       143.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      143.75,
-      0.25
+      "G5",
+      143.66666666666666,
+      0.16666666666666666
     ],
     [
-      "B4",
+      "E5",
+      143.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       144,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      144.25,
-      0.25
+      "G5",
+      144.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      144.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       144.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      144.75,
-      0.25
+      "G5",
+      144.66666666666666,
+      0.16666666666666666
     ],
     [
-      "B4",
+      "E5",
+      144.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       145,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      145.25,
-      0.25
+      "G5",
+      145.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      145.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       145.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      145.75,
-      0.25
+      "G5",
+      145.66666666666666,
+      0.16666666666666666
     ],
     [
-      "B4",
+      "E5",
+      145.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       146,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      146.25,
-      0.25
+      "G5",
+      146.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      146.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "B5",
       146.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      146.75,
-      0.25
+      "G5",
+      146.66666666666666,
+      0.16666666666666666
     ],
     [
-      "C5",
+      "E5",
+      146.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       147,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      147.25,
-      0.25
+      "G5",
+      147.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      147.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       147.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      147.75,
-      0.25
+      "G5",
+      147.66666666666666,
+      0.16666666666666666
     ],
     [
-      "C5",
+      "E5",
+      147.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       148,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      148.25,
-      0.25
+      "G5",
+      148.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      148.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       148.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      148.75,
-      0.25
+      "G5",
+      148.66666666666666,
+      0.16666666666666666
     ],
     [
-      "C5",
+      "E5",
+      148.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       149,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      149.25,
-      0.25
+      "G5",
+      149.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      149.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       149.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      149.75,
-      0.25
+      "G5",
+      149.66666666666666,
+      0.16666666666666666
     ],
     [
-      "C5",
+      "E5",
+      149.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       150,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      150.25,
-      0.25
+      "G5",
+      150.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      150.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "C6",
       150.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "G4",
-      150.75,
-      0.25
+      "G5",
+      150.66666666666666,
+      0.16666666666666666
     ],
     [
-      "D5",
+      "E5",
+      150.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       151,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      151.25,
-      0.25
+      "B5",
+      151.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      151.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       151.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      151.75,
-      0.25
+      "B5",
+      151.66666666666666,
+      0.16666666666666666
     ],
     [
-      "D5",
+      "E5",
+      151.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       152,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      152.25,
-      0.25
+      "B5",
+      152.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      152.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       152.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      152.75,
-      0.25
+      "B5",
+      152.66666666666666,
+      0.16666666666666666
     ],
     [
-      "D5",
+      "E5",
+      152.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       153,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      153.25,
-      0.25
+      "B5",
+      153.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      153.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       153.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      153.75,
-      0.25
+      "B5",
+      153.66666666666666,
+      0.16666666666666666
     ],
     [
-      "D5",
+      "E5",
+      153.83333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       154,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      154.25,
-      0.25
+      "B5",
+      154.16666666666666,
+      0.16666666666666666
     ],
     [
-      "E4",
+      "E5",
+      154.33333333333334,
+      0.16666666666666666
+    ],
+    [
+      "D6",
       154.5,
-      0.25
+      0.16666666666666666
     ],
     [
-      "B4",
-      154.75,
-      0.25
+      "B5",
+      154.66666666666666,
+      0.16666666666666666
+    ],
+    [
+      "E5",
+      154.83333333333334,
+      0.16666666666666666
     ],
     [
       "E5",
@@ -1224,6 +1464,14 @@
     ]
   ],
   "sourceFeatures": {
+    "meterDisplay": "3/4 → 4/4",
+    "meterDisplayReview": {
+      "date": "2026-10-12",
+      "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+      "scope": "Printed opening 3/4 and m42 change to 4/4 only; display metadata, not additional melody or rhythm approval.",
+      "decision": "Correct the library meter label without changing beatsPerMeasure: 3, any pitch/onset/duration tuple, tempo, speed, loop behavior or playback. Historical review wording about displayed bar divisions is preserved as history; the current app uses an absolute-beat timeline and onset-aligned loops, not meter-based bar divisions.",
+      "limitations": "The reviewed melody range remains [131,155). Earlier voice selection, m42-43 register, opening-repeat expansion and the retained ending [155,159) remain deferred; no new source extent or whole-song certification."
+    },
     "hasChords": true,
     "hasArpeggio": true,
     "hasRepeats": true,
@@ -1233,18 +1481,23 @@
       "private/sheets/raw/interstellar-main-theme/doc88-page-03.png"
     ],
     "unsupported": [
-      "V1 keeps only the readable main melody / top-line motion; use the chord version for the lower organ-like support that makes the theme recognizable.",
+      "V1 remains a one-note-at-a-time practice path. Mainline m10-41 voice extraction from stacked notation is unresolved; the old top-line choice is retained without new melody-role approval.",
       "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
-      "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
+      "Only EOP 0005180 m44-49 [131,155) is adopted in this pass: source sixteenth triplets and octaves are restored. This is not a whole-song correction, Doc88 re-verification, accompaniment review or beginner recommendation.",
+      "The source opening repeat is not expanded in the retained timeline; m42-43 register and earlier transformations remain unresolved. Existing V2 source/support records were not changed or revalidated against this adopted tail.",
+      "The adopted tail has 24 attacks per 4/4 bar: about 111 ms per note at source tempo 90 BPM, about 136 ms at the unchanged 0.82x default. Use the existing slower playback and short phrase loops; physical playability and recognition require separate checks.",
       "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
     ],
     "unsureMeasures": [
-      "m10-m41 use the upper note and sustained E5 from stacked chord notation; inner voices are intentionally omitted from V1.",
-      "m44-m49 are playable arpeggio simplifications rather than exact triplet transcription."
+      "m10-m41: the inherited upper-note/sustained-E5 extraction from stacked notation has not been source-resolved as a main melody.",
+      "m1-m2 opening repeat and earlier register choices remain unchanged and unreviewed; this pass preserves the existing absolute beat origin.",
+      "m42-m43: EOP prints E4 while the current melody retains eight E5 quarter-note attacks; this register difference is deferred, not silently corrected.",
+      "m44-m49: literal EOP notes, octaves and 1/6-beat triplets are reviewed; independent reference listening, recognition, physical-kalimba performance and optional-support alignment remain pending.",
+      "m50 final E5@155/4 is frozen outside the reviewed range, not newly certified by the tail correction."
     ],
     "sourceReview": {
-      "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
-      "decision": "Updated the melody version by moving the opening ostinato into the higher playable register, and added a V2 chord/accompaniment version from the supplied Doc88 three-page jianpu screenshots.",
+      "confidence": "high-for-eop-m44-49-literal-pitches-and-triplets-only-rest-of-song-needs-review",
+      "decision": "Adopt EveryonePiano 0005180 only for the sequential upper-staff arpeggio at m44-49, beats [131,155). Restore all 144 sixteenth-triplet attacks and source octaves, without changing any of the 146 outside tuples or the existing source tempo.",
       "savedFiles": [
         "private/sheets/raw/interstellar-main-theme/doc88-interstellar.html",
         "private/sheets/raw/interstellar-main-theme/doc88-page-01.png",
@@ -1259,7 +1512,125 @@
         {
           "label": "User supplied page screenshots",
           "url": "local-private-source"
+        },
+        {
+          "label": "EveryonePiano 0005180 selected source for m44-49 only",
+          "url": "https://www.everyonepiano.cn/Music-5180.html"
         }
+      ],
+      "historicalReviewNotes": {
+        "date": "2026-10-12",
+        "stage": "before-2.4.3-eop-tail-adoption",
+        "unsupported": [
+          "V1 keeps only the readable main melody / top-line motion; use the chord version for the lower organ-like support that makes the theme recognizable.",
+          "The source changes from 3/4 to 4/4 at measure 42, but the current song schema supports one global beatsPerMeasure only. Absolute beat timing is preserved and beatsPerMeasure remains 3 for the main section.",
+          "Measures 44-49 contain notated triplet arpeggio cells. They are quantized to 0.25-beat playable figures to avoid unsupported triplet-grid warnings in the current validator.",
+          "Modern film-score source; publication rights for public distribution should be reviewed before committing or releasing."
+        ],
+        "unsureMeasures": [
+          "m10-m41 use the upper note and sustained E5 from stacked chord notation; inner voices are intentionally omitted from V1.",
+          "m44-m49 are playable arpeggio simplifications rather than exact triplet transcription."
+        ],
+        "confidence": "medium-high-for-main-melody-medium-for-ending-arpeggio-simplification",
+        "decision": "Updated the melody version by moving the opening ostinato into the higher playable register, and added a V2 chord/accompaniment version from the supplied Doc88 three-page jianpu screenshots.",
+        "reason": "Preserve the earlier Doc88 provenance, simplification rationale and unresolved voice decisions verbatim. The old triplet-quantization statement is historical, not the current state of the adopted m44-49 span."
+      },
+      "scopedSourceAdoptions": [
+        {
+          "date": "2026-10-12",
+          "scope": "printed-measures-44-49-sequential-upper-line-only",
+          "beatRange": [
+            131,
+            155
+          ],
+          "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+          "imageUrls": [
+            "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-2.png",
+            "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-3.png",
+            "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-w-b-2.png"
+          ],
+          "sourceImageSha256": [
+            "5922836333c1683532e272aefb291cde8329eb1c66cda3b3866ef5d12b2735a5",
+            "4b57280bad19be3d328554a998983ab16bd8d359a487c7300d6794eb4be9629b",
+            "3bd8aab33c077197a7705bcdd3d8929dec0ff271f9abf393e772466151f6388d"
+          ],
+          "previousHint": "Interstellar Main Theme melody practice version; opening ostinato moved into the higher register and source stack/accompaniment is available in the chord version.",
+          "sourceDiscrepancy": "The legacy Doc88 screenshots are unavailable in this checkout; Doc88 was not reverified. EOP is explicitly adopted only for this span. The matching title, form and note patterns suggest the same master arrangement but do not prove screenshot identity.",
+          "decision": "Replace 96 quarter-beat attacks with 144 source attacks: eight three-note cells per 4/4 bar, each cell 1/2 quarter-note beat and each note 1/6 beat. Restore m47-49 from the previous octave-down fold to the source register. No transposition is applied.",
+          "limitations": "This is a single-line arpeggio figure, not source-accompaniment approval or proof of melodic recognizability. All data outside [131,155), including m42-43 and the final E5 at 155 for 4 beats, is preserved without new approval."
+        }
+      ],
+      "currentScopeReview": {
+        "date": "2026-10-12",
+        "status": "reviewed-tail-only-rest-needs-review",
+        "sourceUrl": "https://www.everyonepiano.cn/Music-5180.html",
+        "imageUrls": [
+          "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-2.png",
+          "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-j-b-3.png",
+          "https://www.everyonepiano.cn/pianomusic/006/0005180/0005180-w-b-2.png"
+        ],
+        "sourceImageSha256": [
+          "5922836333c1683532e272aefb291cde8329eb1c66cda3b3866ef5d12b2735a5",
+          "4b57280bad19be3d328554a998983ab16bd8d359a487c7300d6794eb4be9629b",
+          "3bd8aab33c077197a7705bcdd3d8929dec0ff271f9abf393e772466151f6388d"
+        ],
+        "selectedVersion": "EveryonePiano fan arrangement 0005180, jianpu pages 2-3 cross-checked against staff page 2; m44-49 upper/right-hand sequential single-note line only",
+        "inspectedBeatRanges": [
+          [
+            131,
+            155
+          ]
+        ],
+        "reviewedBeatRanges": [
+          [
+            131,
+            155
+          ]
+        ],
+        "deferredBeatRanges": [
+          [
+            0,
+            131
+          ],
+          [
+            155,
+            159
+          ]
+        ],
+        "sourceMeterInScope": "4/4",
+        "beatsPerQuarter": 1,
+        "tempoQuarterBpm": 90,
+        "notesPerMeasure": 24,
+        "cellsPerMeasure": 8,
+        "tripletCellBeats": "1/2",
+        "tripletNoteBeats": "1/6",
+        "barStartBeats": [
+          131,
+          135,
+          139,
+          143,
+          147,
+          151
+        ],
+        "transpositionSemitones": 0,
+        "timebase": "Retain the existing unexpanded opening-repeat timeline. Source m42 changes to 4/4 at beat 123; m43 starts at 127 and m44 at 131. Global beatsPerMeasure stays 3, so displayed bar divisions remain a known limitation.",
+        "oldDoc88Reverified": false,
+        "deferredReason": "Earlier mainline m10-41 voice extraction remains unresolved. Source m42-43 shows E4 while the preserved data has E5; the opening-repeat expansion and earlier register transformations also remain unresolved. The retained final E5@155/4 is outside this adoption.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-by-this-source-review",
+        "physicalKalimba": "not-performed",
+        "limitations": "Literal pitch/rhythm evidence is high confidence only in the adopted span. The same publisher staff/jianpu cross-check is not an independent arrangement or listening reference. Whole-song fidelity, single-line recognizability, physical playability, support alignment and public-distribution rights remain unapproved."
+      }
+    },
+    "suitability": {
+      "status": "needs-review",
+      "scope": "eop-m44-49-tail-only-with-earlier-melody-and-form-deferred",
+      "reason": "The reviewed E4-D6 pitch vocabulary fits the fixed F3-E6 natural-note range, but this demanding 90-BPM sixteenth-triplet passage is not a beginner recommendation or whole-song approval.",
+      "reviewRequired": [
+        "Resolve m10-41 main-melody extraction, m42-43 register and the opening-repeat timeline from reliable source evidence.",
+        "Compare the isolated arpeggio line against a reference at source and actual practice tempo; check optional support separately.",
+        "Check tine movement, thumb alternation, fast attacks and real sustain on a physical kalimba.",
+        "Review public-distribution rights before publishing this modern film-theme arrangement."
       ]
     }
   }

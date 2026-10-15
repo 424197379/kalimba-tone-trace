@@ -30,7 +30,13 @@ function send(res, statusCode, body, contentType) {
 }
 
 function getLanUrls() {
-  const interfaces = os.networkInterfaces();
+  let interfaces;
+  try {
+    interfaces = os.networkInterfaces();
+  } catch {
+    // Sandboxed hosts may deny adapter enumeration while allowing localhost.
+    return [];
+  }
   const urls = [];
 
   Object.values(interfaces).forEach((entries) => {
@@ -46,7 +52,9 @@ function getLanUrls() {
 
 const publicFiles = new Set([
   "index.html", "songs.html", "changelog.html", "support.html",
-  "kalimba-practice.html", "manifest.webmanifest", "service-worker.js", "package.json"
+  "kalimba-practice.html", "manifest.webmanifest", "service-worker.js", "package.json",
+  path.join("data", "archives", "jasmine-walter-v2.4.3.json"),
+  path.join("data", "archives", "ling-er-xiang-ding-dang-v2.4.15.json")
 ]);
 const publicDirectories = new Set(["src", "assets"]);
 

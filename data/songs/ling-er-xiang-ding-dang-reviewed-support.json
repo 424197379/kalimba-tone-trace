@@ -1,0 +1,1457 @@
+{
+  "schemaVersion": 2,
+  "id": "ling-er-xiang-ding-dang-reviewed-support",
+  "baseSongId": "ling-er-xiang-ding-dang",
+  "title": "《铃儿响叮当》（短版副歌主题）",
+  "versionLabel": "所选短版副歌主题 · 可选根音轻伴奏",
+  "arrangementKind": "melody",
+  "judgementMode": "melody",
+  "uploader": "system",
+  "practiceTitle": "《铃儿响叮当》（短版副歌主题）练习轨道",
+  "scoreTitle": "《铃儿响叮当》（短版副歌主题）简谱进度",
+  "hint": "51音单旋律不变；可选轻伴奏每小节一枚根音。由所选谱和弦符号减配，省略三音、七音等色彩；不是原谱低音声部。",
+  "difficulty": "easy",
+  "bpm": 80,
+  "defaultSpeedFactor": 0.9,
+  "beatsPerMeasure": 4,
+  "key": "C",
+  "tuning": "21-key-c",
+  "events": [
+    {
+      "beat": 0,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 1,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 2,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 8,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 9,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 10,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12,
+      "duration": 4,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 16,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 17,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 18,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 19,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 20,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 21,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 22,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 24,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 25,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 26,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 27,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 28,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 30,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 32,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 33,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 34,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 37,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 38,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 40,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 41,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 42,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 43,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44,
+      "duration": 4,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 48,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 49,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 50,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 51,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 52,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 53,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 54,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 55,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 55.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 56,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 57,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 58,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "F5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 59,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 60,
+      "duration": 4,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    }
+  ],
+  "practiceAccompaniment": {
+    "enabledByDefault": false,
+    "volume": 0.3,
+    "events": [
+      {
+        "beat": 0,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 4,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 8,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 24,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 28,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 32,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 36,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 40,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 44,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 48,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 52,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 56,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 60,
+        "duration": 0.75,
+        "pattern": "source-chord-root-only-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      }
+    ]
+  },
+  "rhythm": {
+    "sourceStatus": "inferred",
+    "pickupBeats": 0,
+    "restWindows": [],
+    "sources": [
+      {
+        "label": "Kyle Coughlin Jingle Bells short G lead sheet, page 1",
+        "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
+      }
+    ]
+  },
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": false,
+    "hasRepeats": false,
+    "sourceTotalBeats": 64,
+    "unsupported": [
+      "Root-only support is derived from the selected Coughlin chord symbols. The source has no bass staff or prescribed bass attack pattern, octave, duration or dynamics; those are explicitly inferred arrangement choices.",
+      "All non-root chord tones are omitted. Source A7 transposes to D7: its F# third is omitted, never naturalized to F. The support does not reproduce complete chord quality or dominant-seventh color.",
+      "Printed source C at measures 3 and 11 beat 3 becomes F at app beats 10 and 42. Both changes remain in the source timeline but are deliberately omitted as support attacks for the one-root-per-bar reduction.",
+      "Written support durations do not truncate decoded samples. Original sample-buffer bounds and complete output effects tails require separate checks; no PCM trim or score-time extension is authorized.",
+      "Browser audio and full-graph diagnostics are separate integration checks; audible reference comparison and physical-instrument playing have not been completed in this data stage. Source access does not establish public reproduction rights."
+    ],
+    "unsureMeasures": [],
+    "practiceAccompaniment": {
+      "status": "needs-review",
+      "confidence": "source-symbol-reviewed-root-voicing-candidate",
+      "scope": "complete-selected-short-refrain-[0,64)",
+      "candidate": "sixteen-downbeat-roots",
+      "physicalTarget": "single-melody",
+      "sourceVoice": "derived-chord-root-not-literal-scored-bass",
+      "independentlyVerified": false,
+      "sourceSymbolReview": {
+        "reviewedOn": "2026-10-12",
+        "sourceUrl": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf",
+        "page": 1,
+        "sourceImageSha256": "83ef33ff7ec86a6852ba4dce5cb83da8187475971b8a7758dfef9c4f2193944f",
+        "sourceKey": "G",
+        "transposedKey": "C",
+        "semitoneShift": 5,
+        "sourceMeter": "4/4",
+        "pickupBeats": 0,
+        "sourceTempo": "unmarked",
+        "notationEvidence": "All four systems and all 18 printed symbols were read directly from the saved source pixels; a second independent reader agreed on every position and symbol. Both readings are of one edition, not two sources. In particular, m8 is plain D, whereas m15 is D7.",
+        "printedChordTimeline": [
+          {
+            "system": 1,
+            "measure": 1,
+            "beatInMeasure": 1,
+            "beat": 0,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 1,
+            "measure": 2,
+            "beatInMeasure": 1,
+            "beat": 4,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": false,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 1,
+            "measure": 3,
+            "beatInMeasure": 1,
+            "beat": 8,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": false,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 1,
+            "measure": 3,
+            "beatInMeasure": 3,
+            "beat": 10,
+            "printedSymbol": "C",
+            "sourceMelodyNote": "G4",
+            "transposedSymbol": "F",
+            "transposedPitchClasses": [
+              "F",
+              "A",
+              "C"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "F3",
+            "retainedInCandidate": false
+          },
+          {
+            "system": 1,
+            "measure": 4,
+            "beatInMeasure": 1,
+            "beat": 12,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 2,
+            "measure": 5,
+            "beatInMeasure": 1,
+            "beat": 16,
+            "printedSymbol": "C",
+            "sourceMelodyNote": "C5",
+            "transposedSymbol": "F",
+            "transposedPitchClasses": [
+              "F",
+              "A",
+              "C"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "F3",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 2,
+            "measure": 6,
+            "beatInMeasure": 1,
+            "beat": 20,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "C5",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 2,
+            "measure": 7,
+            "beatInMeasure": 1,
+            "beat": 24,
+            "printedSymbol": "A7",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "D7",
+            "transposedPitchClasses": [
+              "D",
+              "F#",
+              "A",
+              "C"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "D4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 2,
+            "measure": 8,
+            "beatInMeasure": 1,
+            "beat": 28,
+            "printedSymbol": "D",
+            "sourceMelodyNote": "A4",
+            "transposedSymbol": "G",
+            "transposedPitchClasses": [
+              "G",
+              "B",
+              "D"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "G3",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 3,
+            "measure": 9,
+            "beatInMeasure": 1,
+            "beat": 32,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 3,
+            "measure": 10,
+            "beatInMeasure": 1,
+            "beat": 36,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": false,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 3,
+            "measure": 11,
+            "beatInMeasure": 1,
+            "beat": 40,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": false,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 3,
+            "measure": 11,
+            "beatInMeasure": 3,
+            "beat": 42,
+            "printedSymbol": "C",
+            "sourceMelodyNote": "G4",
+            "transposedSymbol": "F",
+            "transposedPitchClasses": [
+              "F",
+              "A",
+              "C"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "F3",
+            "retainedInCandidate": false
+          },
+          {
+            "system": 3,
+            "measure": 12,
+            "beatInMeasure": 1,
+            "beat": 44,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "B4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 4,
+            "measure": 13,
+            "beatInMeasure": 1,
+            "beat": 48,
+            "printedSymbol": "C",
+            "sourceMelodyNote": "C5",
+            "transposedSymbol": "F",
+            "transposedPitchClasses": [
+              "F",
+              "A",
+              "C"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "F3",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 4,
+            "measure": 14,
+            "beatInMeasure": 1,
+            "beat": 52,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "C5",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 4,
+            "measure": 15,
+            "beatInMeasure": 1,
+            "beat": 56,
+            "printedSymbol": "D7",
+            "sourceMelodyNote": "D5",
+            "transposedSymbol": "G7",
+            "transposedPitchClasses": [
+              "G",
+              "B",
+              "D",
+              "F"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "G3",
+            "retainedInCandidate": true
+          },
+          {
+            "system": 4,
+            "measure": 16,
+            "beatInMeasure": 1,
+            "beat": 60,
+            "printedSymbol": "G",
+            "sourceMelodyNote": "G4",
+            "transposedSymbol": "C",
+            "transposedPitchClasses": [
+              "C",
+              "E",
+              "G"
+            ],
+            "isHarmonicChange": true,
+            "proposedRoot": "C4",
+            "retainedInCandidate": true
+          }
+        ],
+        "harmonicIntervals": [
+          {
+            "beat": 0,
+            "duration": 10,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 10,
+            "duration": 2,
+            "symbol": "F",
+            "pitchClasses": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "beat": 12,
+            "duration": 4,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 16,
+            "duration": 4,
+            "symbol": "F",
+            "pitchClasses": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "beat": 20,
+            "duration": 4,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 24,
+            "duration": 4,
+            "symbol": "D7",
+            "pitchClasses": [
+              "D",
+              "F#",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "beat": 28,
+            "duration": 4,
+            "symbol": "G",
+            "pitchClasses": [
+              "G",
+              "B",
+              "D"
+            ]
+          },
+          {
+            "beat": 32,
+            "duration": 10,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 42,
+            "duration": 2,
+            "symbol": "F",
+            "pitchClasses": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "beat": 44,
+            "duration": 4,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 48,
+            "duration": 4,
+            "symbol": "F",
+            "pitchClasses": [
+              "F",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "beat": 52,
+            "duration": 4,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "beat": 56,
+            "duration": 4,
+            "symbol": "G7",
+            "pitchClasses": [
+              "G",
+              "B",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "beat": 60,
+            "duration": 4,
+            "symbol": "C",
+            "pitchClasses": [
+              "C",
+              "E",
+              "G"
+            ]
+          }
+        ]
+      },
+      "reviewedBeatRanges": [
+        [
+          0,
+          64
+        ]
+      ],
+      "reduction": {
+        "rootRegister": {
+          "C": "C4",
+          "F": "F3",
+          "D7": "D4",
+          "G": "G3",
+          "G7": "G3"
+        },
+        "registerDecision": "Choose the lowest available representative of each transposed root pitch class in the fixed F3-E6 vocabulary. Chord symbols specify no bass octave; this is derived voicing, not literal scored bass or an octave-folded lower staff.",
+        "onsetDecision": "One root at each bar start. Printed repeated chord symbols justify harmonic membership but do not prescribe these bass reattacks.",
+        "durationDecision": "0.75-beat sparse trial events, inferred rather than source-written bass values; sample playback still uses full original buffers.",
+        "omittedChangeBeats": [
+          10,
+          42
+        ],
+        "omittedChanges": "The printed source C changes at m3/m11 local beat3 become F. They remain real source changes; omit their support attacks, not the source harmony. Earlier C4 decay is also a chord member of F.",
+        "omittedChordPitchClasses": {
+          "C": [
+            "E",
+            "G"
+          ],
+          "F": [
+            "A",
+            "C"
+          ],
+          "D7": [
+            "F#",
+            "A",
+            "C"
+          ],
+          "G": [
+            "B",
+            "D"
+          ],
+          "G7": [
+            "B",
+            "D",
+            "F"
+          ]
+        },
+        "accidentalNaturalization": false,
+        "completeChordFidelity": false,
+        "literalBassTranscription": false
+      },
+      "settings": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "noteVelocity": 0.32,
+        "parameterStatus": "Conservative inferred trial settings, not printed dynamics or proof of audible balance. Preserve explicitly remembered user settings."
+      },
+      "restAndEnding": {
+        "melodyRestWindows": [],
+        "allLayerSilentWindows": [],
+        "breathMarksAfterMeasures": [
+          4,
+          8,
+          12
+        ],
+        "breathDecision": "Unmeasured commas, not timed silence; no invented rests or shortened holds.",
+        "lastMelodyTuple": [
+          "C5",
+          60,
+          4
+        ],
+        "lastSupportTuple": [
+          "C4",
+          60,
+          0.75
+        ],
+        "supportWrittenEnd": 60.75,
+        "scoreEnd": 64,
+        "tailDecision": "Duration metadata does not trim the native sample. Preserve all PCM tails and do not add retriggers or score time."
+      },
+      "melodyCompatibility": {
+        "baseSongId": "ling-er-xiang-ding-dang",
+        "attackCount": 51,
+        "tupleSha256": "08ef07a4891bb24811c232a2237a7885a3fd43b98d9ef8b2d8507c83130726ef",
+        "bpm": 80,
+        "totalBeats": 64,
+        "contentCompatible": true,
+        "decision": "Keep the current V1 and all 51 pitches/onsets/durations unchanged; only this identical companion can provide the new reduced support."
+      },
+      "historicalSibling": {
+        "id": "ling-er-xiang-ding-dang-chord",
+        "fileSha256": "c28df5631e09a1dcce5e28fc7b32c3ec86d1ff858c2032daff9c91de888bafa8",
+        "attackCount": 49,
+        "totalBeats": 32,
+        "contentCompatible": false,
+        "decision": "Preserve all historical events, automatic backing and metadata unchanged; do not lend them to the selected 51-note melody."
+      },
+      "writtenSpanReview": "Each complete 0.75-beat support span is inside its source harmonic interval, below the active melody, and free of exact same-onset same-pitch duplication. No rest fill, new physical target or added score beat is created.",
+      "acousticTailBoundary": "Written spans, decoded original sample-buffer spans and complete effects-output tails are different. The app plays full samples and adds a 0.55-second convolution response plus filtering/compression. Buffer membership alone cannot certify complete-output harmonic overlap or headroom. Review fast-speed F3-to-C, C4-to-G7 and final ring-out without trimming PCM.",
+      "evidenceFingerprints": {
+        "candidateBlockSha256": "4a81081cf6a430d8e85ab4fc9380b7f22e01dbc68b027dcc572c730530a632ef"
+      },
+      "browserAudio": "not-performed-in-data-stage",
+      "referenceListening": "not-performed",
+      "physicalKalimba": "not-performed",
+      "reviewRequired": [
+        "Separate browser/audio scheduling and complete-graph measurements at 80 BPM 1.0x and actual selected practice speed; record the multiplier rather than inferring it from defaultSpeedFactor.",
+        "Assess C4 under F5 at20/52 and D4 under E5 at24, both inherited from the printed chord/melody relation; do not alter source melody or naturalize F# to remove their tension.",
+        "Check effects tails separately from source spans and sample-buffer lengths, including maximum1.4x and end64. No automatic source-fidelity or perceived-quality approval follows from numeric output tests.",
+        "Physical 21-key single-melody play-through and public distribution permission remain separate."
+      ],
+      "limits": "This record preserves source chord membership and a disclosed root reduction. It does not claim a literal source bass part, full harmonic reproduction, completed listening/physical acceptance or publication rights."
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "complete-selected-short-refrain-with-optional-root-support",
+      "reason": "The unchanged single melody fits the fixed instrument. Sixteen optional single roots use F3/G3/C4/D4 below the melody; exact register, attack rhythm, durations and gain are inferred. Omitted chord tones and two short F changes are disclosed.",
+      "reviewRequired": [
+        "Keep independent source notation, structural checks, browser output measurements, audible comparison and physical play-through separate; refer to the scoped integration verification for later checks."
+      ]
+    },
+    "sources": [
+      {
+        "label": "Kyle Coughlin: Jingle Bells, Short version in the key of G, complete selected 16-bar refrain",
+        "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
+      }
+    ]
+  }
+}

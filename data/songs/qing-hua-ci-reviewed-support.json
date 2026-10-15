@@ -1,0 +1,1672 @@
+{
+  "schemaVersion": 2,
+  "id": "qing-hua-ci-reviewed-support",
+  "baseSongId": "qing-hua-ci",
+  "title": "《青花瓷》（主题短版）",
+  "versionLabel": "主旋律资料 · 可选根音轻伴奏",
+  "arrangementKind": "melody",
+  "judgementMode": "melody",
+  "uploader": "system",
+  "practiceTitle": "《青花瓷》（主题短版）练习轨道",
+  "scoreTitle": "《青花瓷》（主题短版）简谱进度",
+  "hint": "EOP简易钢琴谱第25–40小节；83个实体单音目标、64拍与96 BPM不变。可选轻伴奏只保留15个小节首根音，低声部统一升八度，默认关闭；拍57的旋律休止处保留原谱低音延续。末根音仅半拍，后续琶音省略；这是稀疏减配，不是完整钢琴和声。",
+  "difficulty": "hard",
+  "bpm": 96,
+  "defaultSpeedFactor": 1,
+  "beatsPerMeasure": 4,
+  "key": "C",
+  "tuning": "21-key-c",
+  "events": [
+    {
+      "beat": 2.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 8,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 10.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 13,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 14,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 14.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 15,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 15.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 16,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 18.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 19,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 19.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 20,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 20.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 21,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 21.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 22,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 22.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 24,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 26.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 27,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 27.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 28,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 29,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 29.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 30.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 31.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 32,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 32.5,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 34.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 35,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 35.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 37,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "A4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 38,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 38.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 39,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 39.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 40,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 42.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 43,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 43.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 45,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 46,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 46.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 47,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 47.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 48,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 50.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 51,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 51.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 52,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 52.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 53,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 53.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 54,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 54.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 55,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 55.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 56,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 57.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G4",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 58,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 59,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 59.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 60.5,
+      "duration": 3.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    }
+  ],
+  "practiceAccompaniment": {
+    "enabledByDefault": false,
+    "volume": 0.3,
+    "events": [
+      {
+        "beat": 4,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 8,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 24,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 28,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 32,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 36,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 40,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 44,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "E4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 48,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 52,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "D4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 56,
+        "duration": 2,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 60,
+        "duration": 0.5,
+        "pattern": "source-downbeat-root-octave-candidate",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      }
+    ]
+  },
+  "rhythm": {
+    "sourceStatus": "verified",
+    "pickupBeats": 0,
+    "restWindows": [
+      {
+        "beat": 0,
+        "duration": 2.5,
+        "policy": "silent",
+        "reason": "Source m25: both staves are written silent only in [0,2.5); lower rest continues to 4 while melody starts at 2.5."
+      },
+      {
+        "beat": 10,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 18,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 26,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 34,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 42,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 50,
+        "duration": 0.5,
+        "policy": "silent",
+        "reason": "Written upper-voice rest; the source second-half-bar chord is deliberately omitted by the one-downbeat-root reduction, not a lower-source rest."
+      },
+      {
+        "beat": 57,
+        "duration": 0.5,
+        "policy": "hold",
+        "reason": "Source m39: the first lower G2-B2-D3 half-note chord spans [56,58); retain its root G2 shifted uniformly to G3 for the exact two beats. No new attack occurs in [57,57.5)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "EveryonePiano #1676 简易钢琴编配，所选第25–40小节",
+        "url": "https://www.everyonepiano.cn/Number-1676.html"
+      },
+      {
+        "label": "同一编配五线谱第2页，非第二独立谱源",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-w-b-2.png"
+      },
+      {
+        "label": "同一编配简谱第2页",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-2.png"
+      },
+      {
+        "label": "同一编配简谱第3页",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-3.png"
+      }
+    ]
+  },
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": true,
+    "hasRepeats": false,
+    "transcriptionScope": "selected-piano-theme-m25-40-with-optional-downbeat-root-reduction",
+    "sourceMeasureCount": 16,
+    "sourceTotalBeats": 64,
+    "sourceKey": "C",
+    "transpositionSemitones": 0,
+    "tempoStatus": "printed-quarter-note-tempo",
+    "meterStatus": "printed-4/4",
+    "sources": [
+      {
+        "label": "EveryonePiano #1676 简易钢琴编配，所选第25–40小节",
+        "url": "https://www.everyonepiano.cn/Number-1676.html"
+      },
+      {
+        "label": "同一编配五线谱第2页，非第二独立谱源",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-w-b-2.png"
+      },
+      {
+        "label": "同一编配简谱第2页",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-2.png"
+      },
+      {
+        "label": "同一编配简谱第3页",
+        "url": "https://www.everyonepiano.cn/pianomusic/002/0001676/0001676-j-b-3.png"
+      }
+    ],
+    "unsupported": [
+      "钢琴上声部83个实体目标逐项沿用当前V1；新增支持仅由App播放，不增实体和弦、低音目标或练习卡。",
+      "同谱低声部35次起音、91个音高攻击缩减为15个首根音；保留部分统一升12半音，省略三音、五音、各小节第二和弦及末小节后六次琶音。不是完整低声部或完整和声再现。",
+      "拍57–57.5仅上声部休止，下声部G根音按原谱半音符延续；其余六处短旋律休止的原谱第二和弦一律省略。",
+      "末支持C4在拍60写定0.5拍，不延长、不加终止低音；其后3.5拍是减配省略而非原谱休止。完整采样与效果器仍有自然余响。",
+      "源图及完整私人转谱不进入仓库。谱页禁止转载，公开传播权限未确定；本地候选不构成发布许可。"
+    ],
+    "unsureMeasures": [],
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-piano-theme-m25-40-with-optional-downbeat-root-reduction",
+      "reason": "83个主旋律目标原样保留。15个支持音由原谱首根音统一升八度到F3–E4，均低于重叠旋律；稀疏根音省略完整和弦色彩及末尾上行织体，不能把数值可用或低增益当作听感批准。",
+      "reviewRequired": [
+        "参考录音、源速与实际练习倍率的主观A/B以及实体琴检查仍须分别记录。",
+        "完整采样和效果尾部不是写定duration；不得删PCM、改时值或补拨以制造严格静音。",
+        "公开传播权另行确定。"
+      ]
+    },
+    "practiceAccompaniment": {
+      "status": "needs-review",
+      "independentlyVerified": false,
+      "reviewedOn": "2026-10-12",
+      "candidate": "sparse15-downbeat-root-uniform-plus12",
+      "physicalTarget": "single-melody",
+      "sourceVoice": "written-lower-staff-root-reduction-with-uniform-octave-shift",
+      "sourceMeasureRange": [
+        25,
+        40
+      ],
+      "sourceBeatRange": [
+        96,
+        160
+      ],
+      "sourceToExcerptBeatOffset": -96,
+      "reviewedBeatRanges": [
+        [
+          0,
+          64
+        ]
+      ],
+      "sourcePixels": "All selected lower bars, m39 two-staff rest/hold and m40 sequential ending were inspected; three independent readings and the integration lead agree on the notes and durations. The staff/numbered exports are one arrangement, not independent editions. This evidence does not approve listening or physical performance.",
+      "parallelExportsAreIndependentSources": false,
+      "sourceAssetHashes": {
+        "eop-staff2.png": "3156d9269f9a5e61d7eda009ec90897e6e129d70ef1a1a6a2350b05e37682f51",
+        "eop-number2.png": "3ebedd2a975d6408fffd11dfe341b1a0f8a847aec50ad6aa4e4b544c96b5b283",
+        "eop-number3.png": "01525afd9dafecc8121e9cb5787c463928d463c99a3efbb94c075fc65b08eba4"
+      },
+      "sourceRootReview": {
+        "printedChordLabels": false,
+        "chordNameBasis": "Analytical names inferred from explicit root-position F-A-C, G-B-D, E-G-B, A-C-E, D-F-A and C-E-G triads; m40 is a sequential tonic arpeggio, not a seven-note chord.",
+        "retainedDownbeats": [
+          {
+            "measure": 26,
+            "beat": 4,
+            "sourceRoot": "F2",
+            "analyticalChord": "F",
+            "retainedRoot": "F3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 27,
+            "beat": 8,
+            "sourceRoot": "G2",
+            "analyticalChord": "G",
+            "retainedRoot": "G3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 28,
+            "beat": 12,
+            "sourceRoot": "E3",
+            "analyticalChord": "Em",
+            "retainedRoot": "E4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 29,
+            "beat": 16,
+            "sourceRoot": "A2",
+            "analyticalChord": "Am",
+            "retainedRoot": "A3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 30,
+            "beat": 20,
+            "sourceRoot": "D3",
+            "analyticalChord": "Dm",
+            "retainedRoot": "D4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 31,
+            "beat": 24,
+            "sourceRoot": "G2",
+            "analyticalChord": "G",
+            "retainedRoot": "G3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 32,
+            "beat": 28,
+            "sourceRoot": "C3",
+            "analyticalChord": "C",
+            "retainedRoot": "C4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 33,
+            "beat": 32,
+            "sourceRoot": "C3",
+            "analyticalChord": "C",
+            "retainedRoot": "C4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 34,
+            "beat": 36,
+            "sourceRoot": "F2",
+            "analyticalChord": "F",
+            "retainedRoot": "F3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 35,
+            "beat": 40,
+            "sourceRoot": "G2",
+            "analyticalChord": "G",
+            "retainedRoot": "G3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 36,
+            "beat": 44,
+            "sourceRoot": "E3",
+            "analyticalChord": "Em",
+            "retainedRoot": "E4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 37,
+            "beat": 48,
+            "sourceRoot": "A2",
+            "analyticalChord": "Am",
+            "retainedRoot": "A3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 38,
+            "beat": 52,
+            "sourceRoot": "D3",
+            "analyticalChord": "Dm",
+            "retainedRoot": "D4",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 39,
+            "beat": 56,
+            "sourceRoot": "G2",
+            "analyticalChord": "G",
+            "retainedRoot": "G3",
+            "duration": 2,
+            "basis": "written-root-position-triad"
+          },
+          {
+            "measure": 40,
+            "beat": 60,
+            "sourceRoot": "C3",
+            "analyticalChord": "C",
+            "retainedRoot": "C4",
+            "duration": 0.5,
+            "basis": "first-note-of-written-tonic-arpeggio"
+          }
+        ],
+        "literalLowerEventCount": 35,
+        "literalLowerPitchAttacks": 91,
+        "literalLowerRange": [
+          "F2",
+          "C5"
+        ],
+        "literalLowerTies": 0,
+        "literalLowerAccidentals": [],
+        "sourceLowerRestWindows": [
+          {
+            "beat": 0,
+            "duration": 4
+          }
+        ]
+      },
+      "reduction": {
+        "semitoneShift": 12,
+        "melodySemitoneShift": 0,
+        "octaveFolding": false,
+        "accidentalNaturalization": false,
+        "addedNotes": false,
+        "addedAttacks": false,
+        "completeChordFidelity": false,
+        "literalRegisterPreserved": false,
+        "retainedSourceAttackCount": 15,
+        "omittedFirstChordTones": 28,
+        "omittedSecondChordAttacks": 42,
+        "omittedFinalArpeggioAttacks": 6,
+        "totalOmittedPitchAttacks": 76,
+        "maximumSimultaneousSupportNotes": 1,
+        "retainedRange": [
+          "F3",
+          "E4"
+        ],
+        "onsetDecision": "Retain exactly the first root of every sounding lower bar m26–40. Independently written repeated C roots in m32 and m33 remain separate attacks.",
+        "durationDecision": "Fourteen source half-note roots retain two beats; final source C3 eighth note becomes C4 for 0.5 beat. No source second chord is merged into a four-beat hold.",
+        "secondChordOmittedBeats": [
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58
+        ]
+      },
+      "restAndEnding": {
+        "melodyRestWindows": [
+          {
+            "beat": 0,
+            "duration": 2.5
+          },
+          {
+            "beat": 10,
+            "duration": 0.5
+          },
+          {
+            "beat": 18,
+            "duration": 0.5
+          },
+          {
+            "beat": 26,
+            "duration": 0.5
+          },
+          {
+            "beat": 34,
+            "duration": 0.5
+          },
+          {
+            "beat": 42,
+            "duration": 0.5
+          },
+          {
+            "beat": 50,
+            "duration": 0.5
+          },
+          {
+            "beat": 57,
+            "duration": 0.5
+          }
+        ],
+        "sourceLowerRestWindows": [
+          {
+            "beat": 0,
+            "duration": 4
+          }
+        ],
+        "allLayerSilentWindows": [
+          {
+            "beat": 0,
+            "duration": 2.5
+          }
+        ],
+        "silentReductionRestBeats": [
+          10,
+          18,
+          26,
+          34,
+          42,
+          50
+        ],
+        "retainedHold": {
+          "beat": 57,
+          "duration": 0.5,
+          "sourceMeasure": 39,
+          "sourceChord": [
+            "G2",
+            "B2",
+            "D3"
+          ],
+          "sourceSpan": {
+            "beat": 56,
+            "duration": 2
+          },
+          "retainedTuple": [
+            "G3",
+            56,
+            2
+          ],
+          "decision": "Explicitly retain the evidenced half-note root across the upper rest. This is lower activity, never all-layer silence and never a new rest-fill attack."
+        },
+        "finalReductionOmission": {
+          "beat": 60.5,
+          "duration": 3.5,
+          "sourceSilent": false,
+          "omittedSequentialAttacks": 6
+        },
+        "lastSupportTuple": [
+          "C4",
+          60,
+          0.5
+        ],
+        "supportWrittenEnd": 60.5,
+        "lastMelodyTuple": [
+          "C5",
+          60.5,
+          3.5
+        ],
+        "scoreEnd": 64,
+        "endingRestBeats": 0
+      },
+      "settings": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "noteVelocity": 0.32,
+        "provenance": "Conservative quiet trial settings, not source dynamics or subjective sound approval; preserve explicit remembered settings."
+      },
+      "melodyCompatibility": {
+        "baseSongId": "qing-hua-ci",
+        "attackCount": 83,
+        "tupleSha256": "fffdfef74853e1f23ed27be6fa95609750c2f0ed10f7496f5aa6cb274912fa54",
+        "fileSha256": "1c7162c13e5d4e843016dba7f37acaa725a98870a304ce6b649f7269f041e64e",
+        "bpm": 96,
+        "totalBeats": 64,
+        "contentCompatible": true,
+        "decision": "Borrow only when the current exact melody, BPM and ending extent match. Original V1 bytes remain unchanged; its no-support statements record the preceding melody-adoption stage."
+      },
+      "historicalSibling": {
+        "exists": false,
+        "automaticAccompanimentAdded": false,
+        "decision": "No historical Porcelain V2/backing sibling exists. The archived 131-attack melody remains private developer recovery evidence and is not compatible with this 83-attack companion."
+      },
+      "acousticTailBoundary": "Written durations, full decoded sample buffers and complete effects-output tails are separate. Normal playback uses full original PCM plus a 0.55-second convolution response, filtering and compression; two beats or 0.5 beat do not trim a sample. Numerical diagnostics found low but nonzero cross-harmony/end64 tails. Do not assert acoustic silence, listening approval or physical sustain from the data.",
+      "importBoundary": "Built-in practiceAccompaniment is not a lossless external import representation: the current importer drops that playback field while preserving melody/rhythm/metadata. A separately labelled external V2 representation must use autoAccompaniment and retain the exact evidenced hold window; no importer changes are included.",
+      "evidenceFingerprints": {
+        "candidateBlockSha256": "3d146c15f97b3a61c89153caabb8018ab862ad1eaf3f148ada314248ae0d4a69"
+      },
+      "browserAudio": "not-performed-in-data-stage",
+      "referenceListening": "not-performed",
+      "physicalKalimba": "not-performed",
+      "publicDistributionRights": "unestablished-local-preview-only",
+      "limits": "Source-derived root reduction and exact encoding only. Independent score readings are separate from review of the entire arrangement, subjective A/B, physical play-through and publication permission."
+    }
+  }
+}

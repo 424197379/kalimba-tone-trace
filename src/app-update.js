@@ -186,6 +186,11 @@ async function updateApp() {
 }
 
 function reloadForVersion(version) {
+  // The library may need to retain an unsubmitted raw draft or finish a write.
+  // Other pages have no listener and continue with the normal update flow.
+  if (!window.dispatchEvent(new Event("kalimba:before-page-leave", { cancelable: true }))) {
+    throw new Error("本页内容尚未安全保留，请先处理曲库中的草稿或保存提示，再点击更新。");
+  }
   rememberTarget(version);
   showStatus(`正在打开 v${version}…`);
   // Preserve the selected song and other URL state while bypassing HTML HTTP cache.

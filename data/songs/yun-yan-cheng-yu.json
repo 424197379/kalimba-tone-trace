@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《云烟成雨》练习轨道",
   "scoreTitle": "《云烟成雨》简谱进度",
-  "hint": "主旋律练习版；据中国曲谱网17音C调卡林巴卷帘谱与清晰简谱交叉整理，伴奏/和弦暂未编码。",
+  "hint": "搜狐/比三呆31小节编配的单音主旋律，含末尾4拍旋律休止；第28小节暂保留旧数据待核实。旧曲谱网版本未重验，参考录音与实体琴验证待完成；原谱伴奏未编码。",
   "difficulty": "medium",
   "bpm": 69,
   "defaultSpeedFactor": 0.9,
@@ -15,17 +15,17 @@
     [
       "E5",
       3,
-      0.25
+      0.3333333333333333
     ],
     [
       "F5",
-      3.25,
-      0.25
+      3.3333333333333335,
+      0.3333333333333333
     ],
     [
       "G5",
-      3.5,
-      0.25
+      3.6666666666666665,
+      0.3333333333333333
     ],
     [
       "A5",
@@ -50,12 +50,7 @@
     [
       "D5",
       5.75,
-      0.25
-    ],
-    [
-      "D5",
-      6,
-      0.5
+      0.75
     ],
     [
       "D5",
@@ -90,12 +85,7 @@
     [
       "C6",
       9.5,
-      0.5
-    ],
-    [
-      "C6",
-      10,
-      1
+      1.5
     ],
     [
       "D5",
@@ -120,27 +110,22 @@
     [
       "A5",
       13.5,
-      0.5
-    ],
-    [
-      "A5",
-      14,
-      1
+      1.5
     ],
     [
       "F5",
       15,
-      0.5
+      0.25
     ],
     [
       "E5",
-      15.5,
+      15.25,
       0.25
     ],
     [
       "C5",
-      15.75,
-      0.25
+      15.5,
+      0.5
     ],
     [
       "G5",
@@ -148,9 +133,9 @@
       4
     ],
     [
-      "G5",
-      21,
-      1
+      "G4",
+      21.5,
+      0.5
     ],
     [
       "D5",
@@ -158,7 +143,7 @@
       1
     ],
     [
-      "C6",
+      "C5",
       23,
       1
     ],
@@ -203,7 +188,7 @@
       1
     ],
     [
-      "C6",
+      "C5",
       30,
       0.5
     ],
@@ -213,7 +198,7 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       31,
       0.5
     ],
@@ -238,24 +223,24 @@
       0.5
     ],
     [
-      "G5",
+      "E5",
       34,
       0.5
     ],
     [
-      "F5",
+      "G5",
       34.5,
       0.5
     ],
     [
-      "E5",
+      "F5",
       35,
-      1
+      0.5
     ],
     [
       "E5",
-      36,
-      1
+      35.5,
+      1.5
     ],
     [
       "E5",
@@ -268,62 +253,52 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       39,
       0.5
     ],
     [
-      "B5",
+      "B4",
       39.5,
-      0.5
+      1
     ],
     [
-      "B5",
-      40,
-      0.5
-    ],
-    [
-      "A5",
+      "A4",
       40.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       41,
       0.5
     ],
     [
-      "A5",
+      "A4",
       41.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       42,
       0.5
     ],
     [
-      "B5",
+      "B4",
       42.5,
       0.5
     ],
     [
-      "C6",
+      "C5",
       43,
       0.5
     ],
     [
-      "G5",
+      "G4",
       43.5,
-      0.5
+      1
     ],
     [
-      "G5",
-      44,
-      0.5
-    ],
-    [
-      "G5",
+      "G4",
       44.5,
       0.5
     ],
@@ -333,14 +308,9 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       45.5,
-      0.5
-    ],
-    [
-      "C6",
-      46,
-      1
+      1.5
     ],
     [
       "E5",
@@ -350,12 +320,7 @@
     [
       "D5",
       47.5,
-      0.5
-    ],
-    [
-      "D5",
-      48,
-      0.5
+      1
     ],
     [
       "D5",
@@ -368,39 +333,34 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       49.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       50,
-      1
+      0.5
     ],
     [
       "G5",
-      51,
+      50.5,
       1
     ],
     [
       "D5",
-      52,
-      1
+      51.5,
+      1.5
     ],
     [
-      "D5",
-      53,
+      "G4",
+      54,
       1
     ],
     [
       "G5",
       55,
-      0.5
-    ],
-    [
-      "G5",
-      55.5,
-      0.5
+      1
     ],
     [
       "E5",
@@ -465,42 +425,37 @@
     [
       "D5",
       64,
-      1
+      0.75
     ],
     [
-      "C6",
-      65,
-      0.5
+      "C5",
+      64.75,
+      0.75
     ],
     [
-      "C6",
+      "A5",
       65.5,
       0.5
     ],
     [
-      "A5",
+      "G5",
       66,
       0.5
     ],
     [
-      "G5",
+      "F5",
       66.5,
       0.5
     ],
     [
-      "F5",
+      "E5",
       67,
       0.5
     ],
     [
-      "E5",
-      67.5,
-      0.25
-    ],
-    [
       "F5",
-      67.75,
-      0.25
+      67.5,
+      0.5
     ],
     [
       "E5",
@@ -523,42 +478,37 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       72,
       1.5
     ],
     [
-      "A5",
+      "A4",
       73.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       74,
       0.5
     ],
     [
-      "B5",
+      "B4",
       74.5,
       0.5
     ],
     [
-      "C6",
+      "C5",
       75,
       0.5
     ],
     [
-      "G5",
+      "G4",
       75.5,
-      0.5
+      1
     ],
     [
-      "G5",
-      76,
-      0.5
-    ],
-    [
-      "G5",
+      "G4",
       76.5,
       0.5
     ],
@@ -568,34 +518,24 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       77.5,
       0.5
     ],
     [
-      "C6",
-      79,
-      0.25
+      "C5",
+      78.5,
+      0.5
     ],
     [
       "E5",
-      79.25,
-      0.25
+      79,
+      0.5
     ],
     [
       "D5",
       79.5,
-      0.5
-    ],
-    [
-      "D5",
-      80,
-      1
-    ],
-    [
-      "D5",
-      81,
-      0.5
+      2
     ],
     [
       "D5",
@@ -603,24 +543,24 @@
       0.5
     ],
     [
-      "C6",
+      "D5",
       82,
       0.5
     ],
     [
-      "C6",
+      "C5",
       82.5,
       0.5
     ],
     [
-      "G5",
+      "C5",
       83,
-      1
+      0.5
     ],
     [
       "G5",
-      84,
-      0.5
+      83.5,
+      1
     ],
     [
       "D5",
@@ -628,29 +568,29 @@
       0.5
     ],
     [
-      "C6",
+      "C4",
       85,
       0.5
     ],
     [
-      "F5",
+      "F4",
       85.5,
       0.5
     ],
     [
-      "A5",
+      "A4",
       86,
       0.5
     ],
     [
-      "C6",
+      "C5",
       86.5,
       0.5
     ],
     [
-      "G5",
-      87.5,
-      0.5
+      "G4",
+      87.75,
+      0.25
     ],
     [
       "G5",
@@ -675,17 +615,7 @@
     [
       "E5",
       89.75,
-      0.25
-    ],
-    [
-      "E5",
-      90,
-      0.25
-    ],
-    [
-      "D5",
-      90.25,
-      0.25
+      0.75
     ],
     [
       "D5",
@@ -723,19 +653,19 @@
       0.5
     ],
     [
-      "C6",
+      "C5",
       93.5,
-      0.5
+      0.25
     ],
     [
-      "B5",
-      94,
-      1
+      "B4",
+      93.75,
+      1.25
     ],
     [
-      "G5",
-      95.5,
-      0.5
+      "G4",
+      95.75,
+      0.25
     ],
     [
       "A5",
@@ -760,12 +690,7 @@
     [
       "E5",
       98,
-      0.25
-    ],
-    [
-      "D5",
-      98.25,
-      0.25
+      0.5
     ],
     [
       "D5",
@@ -775,17 +700,17 @@
     [
       "D5",
       98.75,
+      0.75
+    ],
+    [
+      "C5",
+      99.5,
       0.25
     ],
     [
-      "C6",
-      99,
-      0.5
-    ],
-    [
       "D5",
-      99.5,
-      0.5
+      99.75,
+      0.25
     ],
     [
       "E5",
@@ -805,27 +730,22 @@
     [
       "E5",
       101,
-      0.25
+      0.5
     ],
     [
       "F5",
-      101.25,
+      101.5,
       0.25
     ],
     [
       "G5",
-      101.5,
-      0.5
+      101.75,
+      1.25
     ],
     [
       "G5",
-      102,
-      0.5
-    ],
-    [
-      "G5",
-      103.5,
-      0.5
+      103.75,
+      0.25
     ],
     [
       "A5",
@@ -850,17 +770,7 @@
     [
       "D5",
       105.75,
-      0.25
-    ],
-    [
-      "D5",
-      106,
-      0.25
-    ],
-    [
-      "E5",
-      106.25,
-      0.25
+      0.75
     ],
     [
       "E5",
@@ -873,14 +783,19 @@
       0.25
     ],
     [
-      "F5",
+      "E5",
       107,
-      0.5
+      0.3333333333333333
+    ],
+    [
+      "F5",
+      107.33333333333333,
+      0.3333333333333333
     ],
     [
       "G5",
-      107.5,
-      0.5
+      107.66666666666667,
+      0.3333333333333333
     ],
     [
       "G5",
@@ -955,12 +870,7 @@
     [
       "G5",
       114.75,
-      0.25
-    ],
-    [
-      "G5",
-      115,
-      0.5
+      0.75
     ],
     [
       "D5",
@@ -975,37 +885,37 @@
     [
       "F5",
       116,
-      0.5
+      1
     ],
     [
       "C6",
-      116.5,
-      0.5
-    ],
-    [
-      "A5",
       117,
       0.5
     ],
     [
-      "G5",
+      "A5",
       117.5,
       0.5
     ],
     [
-      "G5",
+      "G4",
       118,
       0.5
     ],
     [
-      "B5",
+      "G5",
       118.5,
       0.5
     ],
     [
-      "C6",
+      "B4",
       119,
-      1
+      0.5
+    ],
+    [
+      "C5",
+      119.5,
+      0.5
     ]
   ],
   "sourceFeatures": {
@@ -1013,17 +923,153 @@
     "hasArpeggio": true,
     "hasRepeats": false,
     "unsupported": [
-      "Qupu123 source is a 17-key C kalimba roll/performance score; V1 keeps only the readable main melody line.",
-      "Chord, bass, and arpeggio cues visible in the source are recorded as source context but not encoded in this melody-only version.",
-      "Triplet and short grace-like groups were quantized to 0.25-beat subdivisions for the current practice timeline."
+      "Single-note main melody from the selected 31-bar Sohu/Bi San Dai arrangement. Source chords, bass, arpeggios and the measure-31 accompaniment outro are not encoded; this is not the complete multi-part arrangement or a claim to reproduce the full studio recording.",
+      "Entire measure 28 [108,112) remains unchanged from the prior data. Printed undotted 3–6 literally read E4/A4, but the intended register lacks independent source/performance confirmation; retain the whole bar to avoid mixing reviewed and deferred interpretations.",
+      "The original Qupu123 source was not reverified. Selected-source notation review does not resolve every arrangement/version difference, independent reference listening, physical-kalimba playability or publication rights."
     ],
     "unsureMeasures": [
-      "Measures 1-4 and 21-30 were cross-checked against the clearer Sohu/Bi San Dai jianpu image because the Qupu123 roll score is harder to read as numbered notation.",
-      "Measures with tied gray notes were encoded as the audible melody note or held duration, not as duplicate attacks."
+      "Measure 28 [108,112) is deferred in full: all eight prior tuples are frozen. The literal E4/A4 reading is clear, not a blurry image; a large leap alone cannot prove a printing error, and unavailable reference listening does not authorize guessed octave dots.",
+      "All 31 printed bars were inspected. Adopted reviewed beat ranges are [0,108) and [112,124); only measure 28 is unadopted. The final [120,124) is melody-only rest while the source accompaniment has an outro.",
+      "Qupu123 comparison remains unverified; its certificate failure was not bypassed. The publisher QQ Flash player is obsolete, the recovered modern watch page required login and no login was attempted; same-author Bilibili listings did not provide an accessible direct reference recording. Independent reference listening and physical-kalimba acceptance remain pending."
     ],
     "sourceReview": {
-      "confidence": "medium-for-melody-needs-listening-review",
-      "decision": "Added as a melody-only built-in song; defer chord/accompaniment coding until a clearer arrangement source or user review is available.",
+      "confidence": "high-for-adopted-selected-source-notation-excluding-measure-28",
+      "decision": "Adopt source-backed single-note melody corrections for the selected Sohu arrangement outside the fully deferred measure 28, retain the complete 124-beat melody extent and all historical evidence, and leave independent listening and physical validation pending.",
+      "focusedCorrections": [
+        {
+          "date": "2026-10-12",
+          "scope": "measure-1-opening-triplet-only",
+          "confidence": "high-for-opening-triplet-only",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "evidence": "The arranger's first page prints 1=C, 4/4, quarter note=69, three quarter rests, then single-underlined high 3-4-5 under a triplet bracket. The group occupies beat 3 through beat 4.",
+          "change": "Keep E5/F5/G5 pitches; use onsets 3, 3+1/3, 3+2/3 and duration 1/3 each. Preserve the A5 onset at beat 4 and every later melody tuple.",
+          "limitations": "This verifies only the opening triplet. Remaining quantized groups, ties, whole-song fidelity, listening acceptance and physical kalimba playability are not approved."
+        },
+        {
+          "date": "2026-10-12",
+          "scope": "measures-2-4-three-tied-continuations-only",
+          "confidence": "high-for-these-three-tie-groups-only",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "evidence": "The publisher instructs players to strike only the first note under a tie and omit the translucent continuation. Page 1 shows high 2 tied from a sixteenth to an eighth in measure 2, double-high 1 tied from an eighth to a quarter in measure 3, and high 6 tied from an eighth to a quarter in measure 4. Each measure occupies four quarter-note beats.",
+          "change": "Merge D5@5.75/0.25 + D5@6/0.5 into D5@5.75/0.75; C6@9.5/0.5 + C6@10/1 into C6@9.5/1.5; A5@13.5/0.5 + A5@14/1 into A5@13.5/1.5. Keep the separate untied D5 attack at 6.5. Preserve the opening triplet and total score timing; the separately recorded measure-4 ending is the only other change in this stage.",
+          "limitations": "This verifies only three tied groups and their occupied intervals, not complete measures or the whole song. The measure-4 ending rhythm is covered by a separate focused correction. Other ties, remaining quantized groups, listening acceptance, browser audio and physical kalimba playability are not approved."
+        },
+        {
+          "date": "2026-10-12",
+          "scope": "measure-4-ending-4-3-1-rhythm-only",
+          "confidence": "high-for-this-three-note-rhythm-group-only",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "evidence": "The closing high 4-3-1 on page 1, measure 4 has one shared underline and a second underline beneath only 4 and 3. It is two sixteenths followed by one eighth: 0.25 + 0.25 + 0.5 beats. All three notes have one upper octave dot.",
+          "change": "Keep F5/E5/C5 pitches. Replace F5@15/0.5, E5@15.5/0.25, C5@15.75/0.25 with F5@15/0.25, E5@15.25/0.25, C5@15.5/0.5. The group still occupies beat 15 through 16; the next G5 remains at 16. Together with the separately recorded three tie merges, all other 190 v2.4.0 melody tuples are unchanged.",
+          "limitations": "This verifies only the closing three-note rhythm group. It does not approve other quantized groups, all source measures, whole-song fidelity, listening acceptance or physical kalimba playability."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "scope": "measures-9-12-five-tied-continuations-only",
+          "confidence": "high-for-these-five-tie-groups-only",
+          "beatRange": [
+            35.5,
+            48.5
+          ],
+          "evidence": "Original pixels and enlarged crops show equal degree/octave at each arc endpoint and a gray continuation, consistent with the publisher instruction to pluck only the first tied note. The outgoing high 2 at the end of measure 12 matches the incoming gray high 2 at the start of measure 13 across the line break.",
+          "change": "Merge source E5@35.5/0.5 + E5@36/1 into E5@35.5/1.5; B4@39.5/0.5 + B4@40/0.5 into B4@39.5/1; G4@43.5/0.5 + G4@44/0.5 into G4@43.5/1; C5@45.5/0.5 + C5@46/1 into C5@45.5/1.5; D5@47.5/0.5 + D5@48/0.5 into D5@47.5/1. Retain untied G4@44.5 and D5@48.5 as independent attacks. Onset/rhythm and octave corrections are recorded separately.",
+          "limitations": "Only these five ties are approved, including only the first continuation of measure 13. Adjacent repeated pitches do not imply ties. This does not verify other ties, different-pitch slurs, the whole song, all source versions, listening or physical playability."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "scope": "measures-6-and-9-rest-and-repeated-note-rhythm-only",
+          "confidence": "high-for-these-inspected-rhythm-groups-only",
+          "evidence": "Measure 6 prints a dotted 0 followed by a single-underlined undotted-octave 5: 1.5 beats of rest and a 0.5-beat note. Measure 9 shows a high 3 quarter followed by three eighth-note pairs: 3–3, 3–5, 4–3. No triplet bracket occurs in this inspected passage.",
+          "change": "Restore silence [20,21.5), move/shorten the following G attack from beat 21/1 to 21.5/0.5, retaining the D5@22 and C@23 timing. Restore independent E5@34/0.5, move G5 to 34.5/0.5, F5 to 35/0.5 and the final E5 onset to 35.5; its tied duration is recorded separately. Preserve E5 attacks at 32, 33 and 33.5, all four A4 attacks at 40.5, 41, 41.5 and 42, and the rest [37,38).",
+          "limitations": "Rhythm evidence is separate from the local octave corrections. Duration sum changes from 110.5 to 110 beats solely because of the restored half-beat silence; this arithmetic is not source evidence or whole-song approval."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "scope": "measures-6-8-and-10-12-local-source-octaves-only",
+          "confidence": "high-for-these-inspected-octave-dots-only",
+          "evidence": "The m6 5, m10–11 7s, m11 four 6s and m11–12 5s have no octave dot; the inspected 1s in m6, m8 and m10–12 each have one upper dot, not two. Source degree/octave mapping for 1=C gives G4, B4, A4 and C5 respectively.",
+          "change": "Correct the retained G at 21.5 to G4; C notes at 23, 30, 31, 39, 43 and 45.5 to C5; B notes at 39.5 and 42.5 to B4; four A notes at 40.5, 41, 41.5 and 42 to A4; G notes at 43.5 and 44.5 to G4. Tied continuations are removed by the separately recorded tie decision. This is source-pitch restoration, not a transposition or register-folding arrangement.",
+          "limitations": "Only the listed source octave dots are verified. Measures 5 and 7 and all tuples outside [16,48.5) remain unchanged; no inference is made about other octave labels or the unavailable Qupu123 comparison."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrls": [
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+          ],
+          "scope": "measures-13-20-four-tied-continuations-only",
+          "confidence": "high-for-these-four-tie-groups-only",
+          "evidence": "Same-pitch arcs end in gray continuations at 52, 65, 76 and page-2 beat 80. The m21 continuation has one upper octave dot and a right augmentation dot with no underline: D5 lasting 1.5 beats. The m17 black high 1 has two underlines, its gray high-1 continuation one underline.",
+          "change": "Encode D5@51.5/1.5, C5@64.75/0.75, G4@75.5/1 and D5@79.5/2. Remove the old continuation attacks at 52, 76, 80 and 81; replace the misaligned old C6 pair in the separately reviewed m17 rhythm. Keep G4@76.5 independent, and preserve D5@81.5 outside scope.",
+          "limitations": "Only the four listed groups. Previous D5@47.5/1 is untouched; later black D5@81.5 is not part of the page-break tie and its duration is not approved here."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrls": [
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+          ],
+          "scope": "measures-13-14-17-and-20-rhythm-and-rests-only",
+          "confidence": "high-for-these-inspected-rhythm-groups-only",
+          "evidence": "m13 uses an eighth-note low 6 then quarter-note high 5 and eighth-note high 2. m14 follows the gray quarter continuation with a quarter rest, low 5 quarter and high 5 quarter. m17 underlines show dotted eighth high 2, sixteenth high 1 tied to eighth high 1, then five eighths, with no triplet marker. m20 underlined 0–1 is a half-beat rest then an eighth.",
+          "change": "Restore A4@50/0.5, G5@50.5/1 and D5@51.5/1.5; leave [53,54) silent and use G4@54/1 plus G5@55/1 without a false 55.5 retrigger. Set m17 onsets 64,64.75,65.5,66,66.5,67,67.5 with durations 0.75,0.75,0.5,0.5,0.5,0.5,0.5. Leave [78,78.5) silent, restore C5@78.5/0.5 and E5@79/0.5, then the separately recorded final tie.",
+          "limitations": "Rhythm and rest placement are separate from pitch evidence. m15, m16 and m18 are preserved. The 0.5 net increase in sounded duration comes from m20 restoring an eighth of source melody, not extending an ending or filling a source rest."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrls": [
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+          ],
+          "scope": "measures-13-14-17-and-19-20-local-source-octaves-only",
+          "confidence": "high-for-these-inspected-octave-dots-only",
+          "evidence": "Inspected 1s each have one upper octave dot, while low 5/6/7 have none. Source 1=C therefore gives C5, G4, A4 and B4 at the listed positions; high 5 remains G5.",
+          "change": "Use C5 at 49.5,64.75,72,75,77.5,78.5; A4 at 50,73.5,74; B4 at 74.5; G4 at 54,75.5,76.5. Preserve separate repeated A4 attacks at 73.5 and 74. This restores literal source octaves without transposition or local pitch folding.",
+          "limitations": "Only these inspected notes are approved; pitch restoration does not itself establish listening or physical-playability acceptance."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+          "scope": "measures-21-27-and-29-seven-tied-continuations-only",
+          "confidence": "high-for-these-seven-tie-groups-only",
+          "evidence": "Equal-pitch/degree arcs with matching octave dots connect to gray continuations at 84,90,94,99,102,106 and115. Underlines independently establish each duration; black same-pitch neighbors remain independent attacks.",
+          "change": "Encode G5@83.5/1, E5@89.75/0.75, B4@93.75/1.25, D5@98.75/0.75, G5@101.75/1.25, D5@105.75/0.75 and G5@114.75/0.75. Preserve untied E5/D5/A5/G5 repeated attacks.",
+          "limitations": "Only these seven ties; m28 is excluded in full and no different-pitch slur is merged."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+          "scope": "measures-21-27-and-29-31-source-rhythm-triplet-and-melody-ending",
+          "confidence": "high-for-adopted-rhythm-outside-measure-28",
+          "evidence": "m22,24,26 each end with a dotted eighth rest followed by a sixteenth. m27 high 3–4–5 has an explicit 3-in-one-quarter-beat bracket. m30 starts with a quarter note and ends at 120; m31 prints four quarter rests in the top melody row, while the lower accompaniment outro continues.",
+          "change": "Use rests [87,87.75), [95,95.75), [103,103.75); preserve binary underlines elsewhere, independent repeats and exact m27 triplet onsets 107,107+1/3,107+2/3 with durations1/3. Encode the source m30 seven attacks, final C5@119.5/0.5; retain [120,124) as melody-only silence with sourceTotalBeats124, never lengthening the final note.",
+          "limitations": "No m28 rhythm adopted. Four-beat ending silence is a melody-only claim, not generic all-layer silence. Reference audio and physical play-through are independent, unfinished checks."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+          "scope": "measures-21-27-and-30-local-source-pitches-excluding-measure-28",
+          "confidence": "high-for-adopted-pitch-notation-outside-measure-28",
+          "evidence": "The selected source shows m21 repeated high 2 then high 1; m22 undotted1/4/6/5 map to C4/F4/A4/G4, inspected one-dot1s map to C5, undotted7s to B4; m30 explicitly distinguishes G4/G5 and double-high C6 from final high C5.",
+          "change": "Restore source pitch/register in the adopted spans without transposition or octave folding. Keep the entire prior m28 bar, including all pitch/onset/duration tuples, until its intended-register question has corroborating evidence.",
+          "limitations": "m28 literal undotted3/6 are visibly E4/A4 but not adopted; a large leap does not establish a printing error. This is not blanket musical correctness or all-version approval."
+        }
+      ],
       "sources": [
         {
           "label": "中国曲谱网 云烟成雨（17音C调卡林巴琴演奏谱）",
@@ -1033,6 +1079,158 @@
           "label": "搜狐 云烟成雨拇指琴演奏谱交叉参考",
           "url": "https://www.sohu.com/a/274931646_759018"
         }
+      ],
+      "scopedSourceAdoptions": [
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "scope": "measures-5-12-plus-measure-13-first-tied-continuation-only",
+          "beatRange": [
+            16,
+            48.5
+          ],
+          "sourceImageSha256": "e8a1574fe02f817fcfbf5db94ad4d72bf8e90a004519b643395e640c2594dbd3",
+          "baselineSongFileSha256": "bf72c25572f9432551a110efc92b6e7c39f60b3d8e3b2a4688905427adefea05",
+          "decision": "Adopt the directly inspected Sohu/Bi San Dai jianpu for this bounded passage only, retaining the source pitches without transposition.",
+          "sourceDiscrepancy": "The reviewed Sohu notation differs from the pre-correction JSON in ties, a dotted rest, a repeated eighth-note attack and local octave labels. The original Qupu123 citation and all earlier review notes are retained, but Qupu123 was not reverified; this pass does not establish whether the discrepancy originates in that arrangement or in its transcription, and does not resolve all source/version differences.",
+          "limitations": "No change or new source approval outside [16,48.5). Measures 1–4 retain their previously reviewed corrections; the rest of measure 13 and later measures remain unreviewed by this pass. No whole-song or all-versions accuracy claim, publication-rights certification, reference listening, browser audio acceptance or physical-kalimba validation.",
+          "previousHint": "主旋律练习版；据中国曲谱网17音C调卡林巴卷帘谱与清晰简谱交叉整理，伴奏/和弦暂未编码。"
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrls": [
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+            "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+          ],
+          "scope": "measures-13-20-plus-measure-21-first-tied-continuation-only",
+          "beatRange": [
+            48.5,
+            81.5
+          ],
+          "sourceImageSha256": [
+            "e8a1574fe02f817fcfbf5db94ad4d72bf8e90a004519b643395e640c2594dbd3",
+            "01023a8c008dd064ae082cba0b9d18f9f1caf37315c1c05067483140c338666f"
+          ],
+          "baselineScopedAttacksSha256": "d827002e5d33559f5e16467c1ce13b57cf5854f4d0db56db54fa480f7e49e576",
+          "previousHint": "主旋律练习版；第5—12小节及第13小节首个延音接续按搜狐/比三呆原谱定点复核。保留旧曲谱网来源，未重新核验；其余段落与版本差异仍待复核，伴奏/和弦暂未编码。",
+          "decision": "Adopt the directly inspected selected Sohu/Bi San Dai jianpu for [48.5,81.5) only, without transposition. Preserve earlier corrections and the independent D5@48.5.",
+          "sourceDiscrepancy": "Source notation differs from the prior encoded rhythm, rest placement, attacks and octave labels. Qupu123 was not reverified; historical source differences are not resolved and other arrangements are not declared incorrect.",
+          "limitations": "No new approval for notes starting at or after 81.5. Whole-song fidelity, reference listening, actual browser audio, physical-kalimba acceptance and publication rights are not established."
+        },
+        {
+          "date": "2026-10-12",
+          "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+          "imageUrl": "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg",
+          "scope": "measure-21-remainder-through-31-excluding-entire-measure-28",
+          "beatRanges": [
+            [
+              81.5,
+              108
+            ],
+            [
+              112,
+              124
+            ]
+          ],
+          "deferredBeatRanges": [
+            [
+              108,
+              112
+            ]
+          ],
+          "sourceImageSha256": "01023a8c008dd064ae082cba0b9d18f9f1caf37315c1c05067483140c338666f",
+          "baselineSongFileSha256": "69ea7019d95c801abcb8183ac4e42d25ac726aefe7ce8629575baf08aa4fcbad",
+          "previousHint": "主旋律练习版；第5—20小节及第21小节首个延音接续按搜狐/比三呆原谱定点复核。保留旧曲谱网来源，未重新核验；其余段落与版本差异仍待复核，伴奏/和弦暂未编码。",
+          "decision": "Adopt 68 exact source attacks outside all of m28, preserve all eight prior m28 tuples, and retain the final four-beat melody rest through sourceTotalBeats=124.",
+          "limitations": "The earlier audit excluded only two unresolved pitches; this approved implementation deliberately excludes the whole bar instead. No guessed octave corrections, mixed m28 rhythm revision, or all-layer-silence claim."
+        }
+      ],
+      "historicalReviewNotes": {
+        "date": "2026-10-12",
+        "stage": "before-final-2.4.2-selected-source-pass",
+        "unsupported": [
+          "Qupu123 source is a 17-key C kalimba roll/performance score; V1 keeps only the readable main melody line.",
+          "Chord, bass, and arpeggio cues visible in the source are recorded as source context but not encoded in this melody-only version.",
+          "The opening measure's high 3-4-5 triplet was corrected from the source on 2026-10-12. Other triplet and short grace-like groups were previously quantized to 0.25-beat subdivisions and remain unverified.",
+          "The focused opening-triplet, measures 2-4 tie and measure-4 ending-rhythm corrections are not whole-song approval. Other tied groups and quantized rhythms remain unverified or unresolved; all melody tuples outside the explicitly recorded correction scopes are unchanged.",
+          "The earlier focused-correction notes above are retained as historical evidence. The 2.4.2 pass additionally adopts the Sohu/Bi San Dai score only for measures 5–12 and the first tied continuation of measure 13; all tuples outside [16,48.5) remain as in 2.4.1. The retained Qupu123 source was not reverified, and unresolved source/version differences are not a claim of correctness across all versions.",
+          "A second bounded 2.4.2 pass additionally adopts the selected Sohu arrangement for [48.5,81.5), covering measures 13–20 after the previous boundary plus only the opening gray dotted-quarter continuation in measure 21. Earlier untouched-scope statements describe their respective historical stages. Later notes and other source versions remain unapproved."
+        ],
+        "unsureMeasures": [
+          "Measures 1-4 and 21-30 were cross-checked against the clearer Sohu/Bi San Dai jianpu image because the Qupu123 roll score is harder to read as numbered notation.",
+          "The 2026-10-12 source review verified and merged the tied gray continuation pairs at beats 5.75/6 (D5), 9.5/10 (C6), and 13.5/14 (A5). This applies only to those three pairs, not to other adjacent same-pitch notes.",
+          "Measure 4 closing high 4-3-1 was corrected from the enlarged source: two underlines beneath 4 and 3, then one beneath 1 give 0.25 + 0.25 + 0.5 beats at onsets 15, 15.25 and 15.5. This replaces the earlier 0.5 + 0.25 + 0.25 distribution without changing the next measure boundary at 16.",
+          "The 2.4.2 Sohu-scoped review confirmed five ties at 35.5/36, 39.5/40, 43.5/44, 45.5/46 and 47.5/48; it separately restored the dotted rest [20,21.5), the E5 attack at 34 and local source octave dots in measures 6, 8 and 10–12. Measure 5 and measure 7 are unchanged. Only the first continuation at 48 was reviewed in measure 13; D5@48.5 and all later tuples are preserved, not newly approved.",
+          "The second 2.4.2 pass verified m13–20 ties, octave dots, rests and underlines. m17 is a dotted eighth followed by a sixteenth tied to an eighth, not a triplet or grace group. The source rest is [53,54) in m14 and [78,78.5) in m20. m15, m16 and m18 are unchanged controls. The tie at 79.5 ends at 81.5; the independent black D5 at 81.5 is preserved outside this pass, not approved by it."
+        ],
+        "confidence": "medium-for-melody-needs-listening-review",
+        "decision": "Added as a melody-only built-in song; defer chord/accompaniment coding until a clearer arrangement source or user review is available.",
+        "reason": "Preserve earlier uncertainty statements verbatim as historical provenance; adopted ranges have since been reviewed. These are not the current unresolved-issue list."
+      },
+      "currentScopeReview": {
+        "date": "2026-10-12",
+        "status": "reviewed-with-deferred-measure",
+        "sourceUrl": "https://www.sohu.com/a/274931646_759018",
+        "imageUrls": [
+          "https://5b0988e595225.cdn.sohucs.com/images/20181113/3696afe6f91f4067999b5f0c48daad10.jpeg",
+          "https://5b0988e595225.cdn.sohucs.com/images/20181113/20f94f60b31443bebe09b23a07ed18d0.jpeg"
+        ],
+        "selectedVersion": "Sohu / 比三呆弹吉他, 31 printed bars, single-note main melody only",
+        "inspectedBeatRanges": [
+          [
+            0,
+            124
+          ]
+        ],
+        "reviewedBeatRanges": [
+          [
+            0,
+            108
+          ],
+          [
+            112,
+            124
+          ]
+        ],
+        "deferredBeatRanges": [
+          [
+            108,
+            112
+          ]
+        ],
+        "sourceTotalBeats": 124,
+        "melodyLastSoundingBeat": 120,
+        "melodyOnlyRestWindows": [
+          {
+            "beat": 120,
+            "duration": 4,
+            "reason": "Source m31 has four quarter rests in the melody row; the source accompaniment outro continues, so this is not all-layer silence."
+          }
+        ],
+        "deferredReason": "Entire m28 is frozen. The source literally prints undotted E4/A4 at 110/110.5; intended register needs corroboration. No pitch or rhythm changes from this bar are adopted.",
+        "oldQupuReverified": false,
+        "referenceListening": "not-completed-no-accessible-independent-recording",
+        "physicalKalimba": "not-performed",
+        "limitations": "Selected-source notation review outside the deferred bar is not whole-song/all-versions fidelity, source-accompaniment approval, independent listening, physical playability or publication-rights certification."
+      }
+    },
+    "sourceTotalBeats": 124,
+    "melodyOnlyRestWindows": [
+      {
+        "beat": 120,
+        "duration": 4,
+        "reason": "Source m31 has four quarter rests in the melody row; the source accompaniment outro continues, so this is not all-layer silence."
+      }
+    ],
+    "suitability": {
+      "status": "needs-review",
+      "scope": "selected-31-bar-sohu-main-melody-with-measure-28-deferred",
+      "reason": "The adopted notation is source-reviewed, but the whole deferred measure 28 and independent reference/physical acceptance remain unresolved.",
+      "reviewRequired": [
+        "Confirm measure-28 intended register from a reliable independent source or accessible publisher performance before changing the frozen bar.",
+        "Compare against an independent recording and perform a physical-kalimba play-through."
       ]
     }
   }

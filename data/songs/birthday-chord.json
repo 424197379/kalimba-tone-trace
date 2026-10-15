@@ -520,6 +520,265 @@
       "pattern": "phrase/downbeat bass-harmony support",
       "restPolicy": "silent restWindows are not filled",
       "reviewRequired": []
+    },
+    "practiceAccompaniment": {
+      "status": "needs-review",
+      "confidence": "source-chord-reviewed-voicing-candidate",
+      "generatedFrom": "Existing sparse support with three pitch substitutions derived from the Michael Kravchuk C-major lead-sheet chord symbols; the pickup C harmony remains inferred.",
+      "method": "Retain all nine onsets, two-note density and quiet playback parameters; replace only F3 with G3 at beat 14, G3 with F3 at beat 16, and D4 with C4 at beat 20. These are sparse chord-symbol voicings, not an exact written accompaniment score.",
+      "independentlyVerified": false,
+      "provenance": "The printed primary-source chord timeline was visually reviewed. The derived two-note voicings, inferred pickup harmony and complete listening/physical result are not independently verified. Original V2 layers and the earlier intersection candidate remain unchanged and recoverable.",
+      "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+      "unresolvedConflictBeats": [],
+      "correctedConflictBeats": [
+        14,
+        16,
+        20
+      ],
+      "sourceReview": {
+        "title": "Michael Kravchuk Happy Birthday, C-major lead sheet",
+        "url": "https://michaelkravchuk.com/free-lead-sheet-happy-birthday/",
+        "pdfUrl": "https://michaelkravchuk.com/wp-content/uploads/2017/02/Happy-Birthday-To-You-C-Major.pdf",
+        "page": 1,
+        "scope": "All nine existing light-support onsets checked against the primary chord-symbol timeline; the source provides chord symbols, not these exact accompaniment notes or their attacks. No approval of the preserved original V2 harmony is implied.",
+        "notationReview": "Primary-page start, fermata and ending pixels were inspected; the source chord symbols were separately checked by an independent reviewer. This is notation review, not completed audible or physical acceptance.",
+        "beatMapping": "App beat 0 is the first sounding pickup. First full measure starts at app beat 1. Melody is one octave above the source. After the A4 fermata at beat 17, retain the existing one extra practice beat in all later anchors.",
+        "printedChordTimeline": [
+          {
+            "beat": 1,
+            "symbol": "C"
+          },
+          {
+            "beat": 4,
+            "symbol": "G7"
+          },
+          {
+            "beat": 10,
+            "symbol": "C"
+          },
+          {
+            "beat": 16,
+            "symbol": "F"
+          },
+          {
+            "beat": 20,
+            "symbol": "C/G"
+          },
+          {
+            "beat": 22,
+            "symbol": "G7"
+          },
+          {
+            "beat": 23,
+            "symbol": "C"
+          }
+        ],
+        "pickupHarmony": {
+          "beat": 0,
+          "symbol": "C",
+          "status": "inferred",
+          "reason": "No chord symbol is printed above the pickup. Retained G3+C4 anticipates the first printed C; its chord membership is inferred rather than directly sourced."
+        },
+        "fermata": {
+          "melodyNote": "A4",
+          "beat": 17,
+          "writtenDuration": 1,
+          "retainedDuration": 2,
+          "extraPracticeBeats": 1,
+          "reason": "The source quarter note has a fermata. One extra beat is the retained fixed-time practice realization, not a duration prescribed by the notation."
+        },
+        "ending": {
+          "melodyNote": "C5",
+          "beat": 23,
+          "duration": 2,
+          "soundingEnd": 25,
+          "finalRestBeats": 0,
+          "reason": "Primary edition ends on a half note without the secondary Teachers edition's final quarter rest; do not combine the two editions."
+        }
+      },
+      "reviewRequired": [
+        "Fresh audible A/B comparison at the retained 104 BPM and configured practice speed is pending for the three changed pitches; the source prints no metronome mark, and prior acceptance of the old light support does not automatically accept this revision.",
+        "Pickup C harmony is inferred because the primary source prints no pickup chord; exact sparse voicings are derived rather than a written accompaniment score.",
+        "Physical 21-key kalimba play-through has not been performed."
+      ],
+      "historicalCandidates": [
+        {
+          "id": "conservative-layer-intersection-v2.4.2",
+          "practiceAccompaniment": {
+            "enabledByDefault": false,
+            "volume": 0.34,
+            "events": [
+              {
+                "beat": 0,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 4,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "D4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 6,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "D4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 10,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 12,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 14,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "F3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 16,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 20,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "D4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              },
+              {
+                "beat": 23,
+                "duration": 0.75,
+                "pattern": "conservative-anchor-intersection",
+                "notes": [
+                  {
+                    "name": "G3",
+                    "role": "bass",
+                    "velocity": 0.4
+                  },
+                  {
+                    "name": "C4",
+                    "role": "harmony",
+                    "velocity": 0.34
+                  }
+                ]
+              }
+            ]
+          },
+          "review": {
+            "status": "needs-review",
+            "confidence": "conservative-existing-layer-intersection",
+            "generatedFrom": "Existing autoAccompaniment onsets coincident with judged non-melody chord anchors; retain only pitches shared by both layers.",
+            "method": "Conservative intersection, at most one bass and one harmony note per existing anchor; no new pitches or onsets.",
+            "independentlyVerified": false,
+            "provenance": "A reduced practice candidate derived from the current arrangement, not independently verified new harmony. Existing source and harmony-review labels do not verify this candidate.",
+            "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+            "unresolvedConflictBeats": [],
+            "reviewRequired": [
+              "Independent source comparison and audible A/B/C listening review are still required; structural tests are not musical approval.",
+              "Physical 21-key kalimba play-through has not been performed."
+            ]
+          }
+        }
+      ]
     }
   },
   "autoAccompaniment": {
@@ -708,6 +967,165 @@
       {
         "label": "Music-for-Music-Teachers Happy Birthday chords",
         "url": "https://www.music-for-music-teachers.com/happy-birthday.html"
+      }
+    ]
+  },
+  "practiceAccompaniment": {
+    "enabledByDefault": false,
+    "volume": 0.34,
+    "events": [
+      {
+        "beat": 0,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 4,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 6,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 10,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 14,
+        "duration": 0.75,
+        "pattern": "source-chord-symbol-correction",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 0.75,
+        "pattern": "source-chord-symbol-correction",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 0.75,
+        "pattern": "source-chord-symbol-correction",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 23,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
       }
     ]
   }

@@ -1716,7 +1716,19 @@
           "label": "吉他世界《诀别书》C 调指弹预览",
           "url": "https://www.guitarworld.com.cn/pu/q90052"
         }
-      ]
+      ],
+      "currentScopeReview": {
+        "status": "unresolved-full-script-melody-role",
+        "checkedAt": "2026-10-12",
+        "reviewScope": "source-recovery-and-melody-role-boundary-only",
+        "historicalEvidenceBoundary": "原入库记录仅对开头主题作跨谱复核；原confidence、hint与四条缺失源图路径保留为历史记录，不代表本次重复完成开头或全程核验。",
+        "recoveredScriptBoundary": "当前公开脚本有334个词法数字组：206单数字、34双数字、94三数字组，未单列旋律声部；组数相同不证明与334个生产音逐项相符。",
+        "recoveredPianoBoundary": "EOP16458完整32个实写小节为双手钢琴编配，含共同符干叠音与分解织体；未确定全程唯一旋律声部，不采用其60 BPM或截取8小节冒称完整主题。",
+        "productionTupleComparison": false,
+        "fullSpanMelodyReview": false,
+        "preservedExistingMusic": true,
+        "documentationPath": "docs/JUEBIE_SOURCE_GAP.md"
+      }
     }
   }
 }

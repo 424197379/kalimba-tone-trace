@@ -288,21 +288,21 @@ function validateStepV1(step, index, context) {
   if (!isFiniteNumber(beat) || beat < 0) {
     addError(context, `${stepPath}[1]`, "beat must be a finite number >= 0");
   } else if (!isMultipleOf(beat, COMMON_BEAT_UNIT)) {
-    addWarning(context, `${stepPath}[1]`, `beat ${formatNumber(beat)} is not a multiple of ${COMMON_BEAT_UNIT}`);
+    addWarning(context, `${stepPath}[1]`, `beat ${formatNumber(beat)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`);
   }
 
   if (!isFiniteNumber(duration) || duration <= 0) {
     addError(context, `${stepPath}[2]`, "duration must be a finite number > 0");
   } else {
     if (duration < 0.25) {
-      addWarning(context, `${stepPath}[2]`, `duration ${formatNumber(duration)} is shorter than 0.25 beat`);
+      addWarning(context, `${stepPath}[2]`, `duration ${formatNumber(duration)} is shorter than 0.25 beat; practice-density notice only, preserve source timing`);
     }
 
     if (!isMultipleOf(duration, COMMON_BEAT_UNIT)) {
       addWarning(
         context,
         `${stepPath}[2]`,
-        `duration ${formatNumber(duration)} is not a multiple of ${COMMON_BEAT_UNIT}`
+        `duration ${formatNumber(duration)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`
       );
     }
   }
@@ -398,11 +398,67 @@ function validateSongVersionFields(song, context) {
   }
 }
 
+// A source ending is an explicit claim, not a maximum to repair from events.
+// Inspect raw timing independently of note/schema validation so an invalid note,
+// empty main array or malformed sibling cannot hide a bad declaration.
+// undefined means missing (legacy fallback); null means invalid (no fallback).
+function validateSourceExtent(song, schemaVersion, context) {
+  const hasDeclaration = Object.hasOwn(song.sourceFeatures ?? {}, "sourceTotalBeats");
+  let sourceTotalBeats = hasDeclaration ? song.sourceFeatures.sourceTotalBeats : undefined;
+  if (hasDeclaration && (!isFiniteNumber(sourceTotalBeats) || sourceTotalBeats < 0)) {
+    addError(context, "sourceFeatures.sourceTotalBeats", "must be a finite number >= 0 when provided; do not coerce or infer the source ending");
+    sourceTotalBeats = null;
+  }
+
+  const checkEnd = (endBeat, path) => {
+    if (isFiniteNumber(sourceTotalBeats) && endBeat > sourceTotalBeats + EPSILON) {
+      addError(context, "sourceFeatures.sourceTotalBeats", `declared length ${formatNumber(sourceTotalBeats)} is shorter than ${path} ending at beat ${formatNumber(endBeat)}`);
+    }
+  };
+  const inspectSpans = (spans, path, tuples = false) => {
+    if (!Array.isArray(spans)) {
+      return;
+    }
+    spans.forEach((span, index) => {
+      const beat = tuples && Array.isArray(span) ? span[1] : span?.beat;
+      const duration = tuples && Array.isArray(span) ? span[2] : span?.duration;
+      // Existing schema checks report malformed inputs. Never coerce them here.
+      if (!isFiniteNumber(beat) || beat < 0 || !isFiniteNumber(duration) || duration <= 0) {
+        return;
+      }
+      const endBeat = beat + duration;
+      if (!isFiniteNumber(endBeat)) {
+        addError(context, `${path}[${index}]`, "beat + duration must be finite");
+        return;
+      }
+      checkEnd(endBeat, `${path}[${index}]`);
+    });
+  };
+
+  if (schemaVersion === 1) {
+    inspectSpans(song.steps, "steps", true);
+  } else {
+    inspectSpans(song.events, "events");
+    inspectSpans(song.autoAccompaniment?.events, "autoAccompaniment.events");
+    inspectSpans(song.practiceAccompaniment?.events, "practiceAccompaniment.events");
+    inspectSpans(song.rhythm?.restWindows, "rhythm.restWindows");
+    if (isFiniteNumber(song.rhythm?.pickupBeats) && song.rhythm.pickupBeats >= 0) {
+      checkEnd(song.rhythm.pickupBeats, "rhythm.pickupBeats");
+    }
+  }
+  return sourceTotalBeats;
+}
+
 function validateSongV1(song, context) {
   validateSongVersionFields(song, context);
+  validateSourceExtent(song, 1, context);
 
   if ("autoAccompaniment" in song) {
     addError(context, "autoAccompaniment", "is only supported by schemaVersion 2");
+  }
+
+  if ("practiceAccompaniment" in song) {
+    addError(context, "practiceAccompaniment", "is only supported by schemaVersion 2");
   }
 
   if ("rhythm" in song) {
@@ -498,7 +554,7 @@ function validateEventV2(event, index, previousBeat, context) {
   if (!isFiniteNumber(event.beat) || event.beat < 0) {
     addError(context, `${eventPath}.beat`, "must be a finite number >= 0");
   } else if (!isMultipleOf(event.beat, COMMON_BEAT_UNIT)) {
-    addWarning(context, `${eventPath}.beat`, `beat ${formatNumber(event.beat)} is not a multiple of ${COMMON_BEAT_UNIT}`);
+    addWarning(context, `${eventPath}.beat`, `beat ${formatNumber(event.beat)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`);
   }
 
   if (isFiniteNumber(event.beat) && event.beat < previousBeat) {
@@ -509,13 +565,13 @@ function validateEventV2(event, index, previousBeat, context) {
     addError(context, `${eventPath}.duration`, "must be a finite number > 0");
   } else {
     if (event.duration < 0.25) {
-      addWarning(context, `${eventPath}.duration`, `duration ${formatNumber(event.duration)} is shorter than 0.25 beat`);
+      addWarning(context, `${eventPath}.duration`, `duration ${formatNumber(event.duration)} is shorter than 0.25 beat; practice-density notice only, preserve source timing`);
     }
     if (!isMultipleOf(event.duration, COMMON_BEAT_UNIT)) {
       addWarning(
         context,
         `${eventPath}.duration`,
-        `duration ${formatNumber(event.duration)} is not a multiple of ${COMMON_BEAT_UNIT}`
+        `duration ${formatNumber(event.duration)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`
       );
     }
   }
@@ -631,7 +687,7 @@ function validateAutoAccompanimentEvent(event, index, previousBeat, context) {
   if (!isFiniteNumber(event.beat) || event.beat < 0) {
     addError(context, `${eventPath}.beat`, "must be a finite number >= 0");
   } else if (!isMultipleOf(event.beat, COMMON_BEAT_UNIT)) {
-    addWarning(context, `${eventPath}.beat`, `beat ${formatNumber(event.beat)} is not a multiple of ${COMMON_BEAT_UNIT}`);
+    addWarning(context, `${eventPath}.beat`, `beat ${formatNumber(event.beat)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`);
   }
 
   if (isFiniteNumber(event.beat) && event.beat < previousBeat) {
@@ -642,13 +698,13 @@ function validateAutoAccompanimentEvent(event, index, previousBeat, context) {
     addError(context, `${eventPath}.duration`, "must be a finite number > 0");
   } else {
     if (event.duration < 0.25) {
-      addWarning(context, `${eventPath}.duration`, `duration ${formatNumber(event.duration)} is shorter than 0.25 beat`);
+      addWarning(context, `${eventPath}.duration`, `duration ${formatNumber(event.duration)} is shorter than 0.25 beat; practice-density notice only, preserve source timing`);
     }
     if (!isMultipleOf(event.duration, COMMON_BEAT_UNIT)) {
       addWarning(
         context,
         `${eventPath}.duration`,
-        `duration ${formatNumber(event.duration)} is not a multiple of ${COMMON_BEAT_UNIT}`
+        `duration ${formatNumber(event.duration)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`
       );
     }
   }
@@ -786,7 +842,7 @@ function validateRhythmRestWindow(window, index, previous, totalBeat, context) {
   if (!isFiniteNumber(window.beat) || window.beat < 0) {
     addError(context, `${windowPath}.beat`, "must be a finite number >= 0");
   } else if (!isMultipleOf(window.beat, COMMON_BEAT_UNIT)) {
-    addWarning(context, `${windowPath}.beat`, `beat ${formatNumber(window.beat)} is not a multiple of ${COMMON_BEAT_UNIT}`);
+    addWarning(context, `${windowPath}.beat`, `beat ${formatNumber(window.beat)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`);
   }
 
   if (!isFiniteNumber(window.duration) || window.duration <= 0) {
@@ -799,7 +855,7 @@ function validateRhythmRestWindow(window, index, previous, totalBeat, context) {
       addWarning(
         context,
         `${windowPath}.duration`,
-        `duration ${formatNumber(window.duration)} is not a multiple of ${COMMON_BEAT_UNIT}`
+        `duration ${formatNumber(window.duration)} is not a multiple of ${COMMON_BEAT_UNIT}; source-confirmed tuplets/subdivisions are valid, do not quantize to remove this review notice`
       );
     }
   }
@@ -833,7 +889,7 @@ function validateRhythmRestWindow(window, index, previous, totalBeat, context) {
     }
   }
 
-  if (totalBeat > 0 && endBeat > totalBeat + EPSILON) {
+  if (isFiniteNumber(totalBeat) && endBeat > totalBeat + EPSILON) {
     addError(context, windowPath, `ends at beat ${formatNumber(endBeat)} beyond song length ${formatNumber(totalBeat)}`);
   }
 
@@ -846,7 +902,7 @@ function validateRhythmRestWindow(window, index, previous, totalBeat, context) {
   };
 }
 
-function validateRhythm(song, validEvents, context) {
+function validateRhythm(song, validEvents, context, sourceTotalBeats) {
   if (!("rhythm" in song)) {
     return [];
   }
@@ -863,9 +919,9 @@ function validateRhythm(song, validEvents, context) {
 
   if (
     "pickupBeats" in rhythm &&
-    (!isFiniteNumber(rhythm.pickupBeats) || rhythm.pickupBeats < 0 || !isMultipleOf(rhythm.pickupBeats, COMMON_BEAT_UNIT))
+    (!isFiniteNumber(rhythm.pickupBeats) || rhythm.pickupBeats < 0)
   ) {
-    addError(context, "rhythm.pickupBeats", `must be a finite number >= 0 and a multiple of ${COMMON_BEAT_UNIT}`);
+    addError(context, "rhythm.pickupBeats", "must be a finite number >= 0; preserve source-confirmed fractional pickups");
   }
 
   if ("sources" in rhythm) {
@@ -889,7 +945,11 @@ function validateRhythm(song, validEvents, context) {
     return [];
   }
 
-  const totalBeat = validEvents.reduce((max, event) => Math.max(max, event.beat + event.duration), 0);
+  // Only absent metadata uses the old main-event endpoint. Backing, pickup,
+  // windows and bar alignment never enlarge the selected source ending.
+  const totalBeat = sourceTotalBeats === undefined
+    ? validEvents.reduce((max, event) => Math.max(max, event.beat + event.duration), 0) || null
+    : sourceTotalBeats;
   const validWindows = [];
   rhythm.restWindows.forEach((window, index) => {
     const normalizedWindow = validateRhythmRestWindow(
@@ -945,6 +1005,7 @@ function validateAutoAccompanimentAgainstRhythm(autoEvents, restWindows, context
 
 function validateSongV2(song, context) {
   validateSongVersionFields(song, context);
+  const sourceTotalBeats = validateSourceExtent(song, 2, context);
 
   if (!Array.isArray(song.events)) {
     addError(context, "events", "must be a non-empty array");
@@ -1006,7 +1067,14 @@ function validateSongV2(song, context) {
 
   context.stepCount += validSteps.length;
   addStepQualityWarnings(validSteps, song, context);
-  const rhythmWindows = validateRhythm(song, validEvents, context);
+  const rhythmWindows = validateRhythm(song, validEvents, context, sourceTotalBeats);
+  if ("practiceAccompaniment" in song) {
+    const candidateContext = { ...context, errors: [] };
+    // Reuse the established support schema, retaining a distinct field path in errors.
+    const candidateEvents = validateAutoAccompaniment({ ...song, autoAccompaniment: song.practiceAccompaniment }, candidateContext);
+    validateAutoAccompanimentAgainstRhythm(candidateEvents, rhythmWindows, candidateContext);
+    candidateContext.errors.forEach(error => context.errors.push(typeof error === "string" ? error.replaceAll("autoAccompaniment", "practiceAccompaniment") : error));
+  }
   const autoEvents = validateAutoAccompaniment(song, context);
   validateAutoAccompanimentAgainstRhythm(autoEvents, rhythmWindows, context);
 }

@@ -1,0 +1,1499 @@
+{
+  "schemaVersion": 2,
+  "id": "see-you-again-reviewed-support",
+  "baseSongId": "see-you-again",
+  "title": "《See You Again》12小节预览",
+  "versionLabel": "主旋律资料 · 可选轻伴奏",
+  "arrangementKind": "melody",
+  "judgementMode": "melody",
+  "uploader": "system",
+  "practiceTitle": "《See You Again》12小节预览单音练习",
+  "scoreTitle": "《See You Again》所选五线谱预览进度",
+  "hint": "所选 GuitarWorld 12小节预览，86个实体单音目标不变；可选轻伴奏仅保留同谱低声部 F3/G3/A3，24次起音，省略每组双音中的 C4，默认关闭。每小节局部拍点2的延音不重拨；48拍即预览截点，非全曲终止。音量与力度是轻声试用设置，听感与实体琴检查仍需单独验收。",
+  "difficulty": "medium",
+  "bpm": 80,
+  "defaultSpeedFactor": 0.88,
+  "beatsPerMeasure": 4,
+  "key": "C",
+  "tuning": "21-key-c",
+  "events": [
+    {
+      "beat": 0,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 0.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 1,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 1.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 2.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 2.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "E6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3.25,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 3.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 4.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 5.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 6.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "E6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7.25,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 7.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 8,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 8.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 9,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 9.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 10.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 10.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "E6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11.25,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 11.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 12.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 13,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 13.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 14.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 15,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 15.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 16,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 17.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 18.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 19.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 20,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 20.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 21,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 21.5,
+      "duration": 2,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 23.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 24,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 24.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "B5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 25,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 25.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 26,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 26.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 27,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 27.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 28,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 28.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 29,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 29.5,
+      "duration": 1.75,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 31.25,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 31.5,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 31.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 32,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 33.5,
+      "duration": 1,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 34.5,
+      "duration": 1.25,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 35.75,
+      "duration": 0.25,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 36.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 37,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 37.5,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 39,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 39.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "G5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 40,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 40.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 41,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 41.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "E6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 42,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 42.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 43,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 43.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 44.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "D6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 45,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 45.5,
+      "duration": 1.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 47,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "A5",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    },
+    {
+      "beat": 47.5,
+      "duration": 0.5,
+      "notes": [
+        {
+          "name": "C6",
+          "role": "melody",
+          "judge": true,
+          "velocity": 1
+        }
+      ]
+    }
+  ],
+  "practiceAccompaniment": {
+    "enabledByDefault": false,
+    "volume": 0.3,
+    "events": [
+      {
+        "beat": 0,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 1.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 4,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 5.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 8,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 9.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 13.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 17.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 21.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 24,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 25.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 28,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 29.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 32,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 33.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 36,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 37.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 40,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "A3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 41.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 44,
+        "duration": 1.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      },
+      {
+        "beat": 45.5,
+        "duration": 2.5,
+        "pattern": "source-lower-voice-only",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.32
+          }
+        ]
+      }
+    ]
+  },
+  "rhythm": {
+    "sourceStatus": "verified",
+    "pickupBeats": 0,
+    "restWindows": [],
+    "sources": [
+      {
+        "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+        "url": "https://www.guitarworld.com.cn/pu/q79160"
+      },
+      {
+        "label": "实际检查的五线谱预览图",
+        "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+      }
+    ]
+  },
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": false,
+    "hasRepeats": false,
+    "transcriptionScope": "selected-guitarworld-12-measure-preview-melody-and-reduced-lower-voice",
+    "sourceTotalBeats": 48,
+    "sourceMeasureCount": 12,
+    "sources": [
+      {
+        "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+        "url": "https://www.guitarworld.com.cn/pu/q79160"
+      },
+      {
+        "label": "实际检查的五线谱预览图",
+        "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+      }
+    ],
+    "unsupported": [
+      "仅为公开预览12小节；48拍是截点，不是完整歌曲终止，不添加后续或结尾填充。",
+      "每组来源双音的 C4 均明确省略，只保留低声部；不是完整钢琴织体，也不把双音命名为完整和弦。",
+      "伴奏只由 App 可选播放，不增加实体琴目标；音量、力度是编配试用参数，不是印刷力度或听感核准。",
+      "旧99起音 V2 及其自动伴奏原样保留，但与当前86起音旋律不兼容，不能借用旧伴奏。"
+    ],
+    "unsureMeasures": [],
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-guitarworld-12-measure-preview-melody-and-reduced-lower-voice",
+      "reason": "86个主旋律目标保持 C5–E6 原音高；可选支持仅用同谱 F3/G3/A3，零移调、零局部折叠。谱面与数据检查不代替实际音频、参考录音或实体高音快句检查。",
+      "reviewRequired": [
+        "浏览器实际源速与练习速度 A/B 检查须单独记录。",
+        "真实输出的平衡、音色与余量不由音量参数保证。",
+        "参考录音对听与实体卡林巴高音、手序、衰减检查未执行。",
+        "公开可读不等于已取得公开传播权。"
+      ]
+    },
+    "practiceAccompaniment": {
+      "status": "source-reviewed-lower-voice-candidate",
+      "scope": "all-twelve-selected-preview-bars-[0,48)",
+      "candidate": "A-lower-voice-only",
+      "physicalTarget": "single-melody",
+      "sourceVoice": "literal-bass-clef-lower-voice",
+      "sourceImageSha256": "8ba82cb8c119bb739bc44a3e433fd8804aa8dc6eb2752c13f42671aa8ec198c7",
+      "reviewedOn": "2026-10-12",
+      "reviewedBeatRanges": [
+        [
+          0,
+          48
+        ]
+      ],
+      "sourceNotation": "Each separately reviewed bar has a dotted-quarter dyad at local 0 and an eighth dyad at 1.5 tied in both pitches to a half dyad at 2. There is no beat-2 reattack or cross-bar tie. The C4 at 1.5 is a separate source attack, omitted by this reduction.",
+      "reduction": {
+        "retainedPitches": [
+          "F3",
+          "G3",
+          "A3"
+        ],
+        "omittedPitch": "C4",
+        "omissionReason": "Thin every source dyad to its exact lower voice; no range-driven omission.",
+        "semitoneShift": 0,
+        "octaveFolding": false,
+        "accidentalNaturalization": false,
+        "addedNotes": false,
+        "addedAttacks": false,
+        "completeChordNamesInferred": false
+      },
+      "sourceSpanMembership": "Every retained note belongs to every literal source dyad span overlapped by its full duration. Source dyads are exact pitch sets, not complete chord names. Compare the same full event span with the unchanged 86-attack melody; do not test only its onset.",
+      "timing": {
+        "attackCount": 24,
+        "noteAttackCount": 24,
+        "maximumSimultaneousSupportNotes": 1,
+        "localAttackBeats": [
+          0,
+          1.5
+        ],
+        "durations": [
+          1.5,
+          2.5
+        ],
+        "lowerVoiceTieCount": 12,
+        "sourceIndividualPitchTieCount": 24,
+        "lastAttackBeat": 45.5,
+        "endBeat": 48
+      },
+      "rests": {
+        "melodyRestWindows": [],
+        "sourceLowerVoiceRestWindows": [],
+        "allLayerSilentWindows": [],
+        "meaning": "The reviewed melody and left-hand source both cover [0,48) continuously; empty windows mean no written rests in this scope, not permission to fill a future gap. No invented hold policy, rest fill, tremolo or retrigger is added."
+      },
+      "settings": {
+        "enabledByDefault": false,
+        "volume": 0.3,
+        "noteVelocity": 0.32,
+        "provenance": "Conservative arranger trial settings, not source dynamics or a measured loudness/headroom result; preserve explicit remembered user settings."
+      },
+      "melodyCompatibility": {
+        "baseSongId": "see-you-again",
+        "attackCount": 86,
+        "tupleSha256": "0bcaf2d5daed29e3c2d8420436910a5faa27306d4f13211a4a91d0ec554aa4ad",
+        "contentCompatible": true,
+        "decision": "The new source companion has exactly the corrected V1 pitches, onsets, durations, 80 BPM and 48-beat extent. The existing content guard can lend only this compatible reduced support."
+      },
+      "historicalSibling": {
+        "id": "see-you-again-chord",
+        "fileSha256": "f22f7a54d6ee3d9caa20dc21925470337bd43cf3d134e4e912b261ddcabe76fb",
+        "melodyAttackCount": 99,
+        "contentCompatible": false,
+        "autoBassMismatchMeasures": [
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "eventAnchorBassMismatchMeasures": [
+          2,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "decision": "Keep the entire historical record unchanged. Its 12 downbeat backing events omit all selected 1.5-beat changes, and each contains a pitch absent from that exact source dyad. This does not judge other arrangements."
+      },
+      "evidenceFingerprints": {
+        "bassSourceFixtureSha256": "9ee9872dcb1da2b853c29d541c88c1a8ff2aba33406230bede8d243727184a71",
+        "candidateBlockSha256": "ab4ffa30e7e6617ce5972ced8c1038c631e1d0ca1671fde3356a0522bb6a1382"
+      },
+      "sourcePixels": "All twelve selected bass bars and tie endpoints reviewed; an independent reviewer agreed on the same pixels. This is one source edition, not two independent sources.",
+      "browserAudio": "not-performed-in-data-stage",
+      "referenceListening": "not-performed",
+      "physicalKalimba": "not-performed",
+      "limits": "Only the literal reduced source line and encoding are accepted here. Timbre, balance, headroom, actual source/practice-tempo playback and instrument behavior are separate checks. Preview duration is score time, not acoustic ring-out. Public reproduction rights remain unestablished."
+    }
+  }
+}

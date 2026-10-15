@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "ling-er-xiang-ding-dang",
-  "title": "《铃儿响叮当》",
+  "title": "《铃儿响叮当》（短版副歌主题）",
   "uploader": "system",
-  "practiceTitle": "《铃儿响叮当》练习轨道",
-  "scoreTitle": "《铃儿响叮当》简谱进度",
-  "hint": "主旋律练习版；和弦与伴奏保留在和弦版。",
+  "practiceTitle": "《铃儿响叮当》（短版副歌主题）练习轨道",
+  "scoreTitle": "《铃儿响叮当》（短版副歌主题）简谱进度",
+  "hint": "Kyle Coughlin 16小节短版副歌主题，51个单音、64拍；G调整体升5半音到C调。80 BPM为练习速度，可选同谱根音轻伴奏。",
   "difficulty": "easy",
   "bpm": 80,
   "defaultSpeedFactor": 0.9,
@@ -15,269 +15,400 @@
     [
       "E5",
       0,
-      0.5
-    ],
-    [
-      "E5",
-      0.5,
-      0.5
+      1
     ],
     [
       "E5",
       1,
-      0.5
+      1
     ],
     [
       "E5",
       2,
-      0.5
-    ],
-    [
-      "E5",
-      2.5,
-      0.5
-    ],
-    [
-      "E5",
-      3,
-      0.5
+      2
     ],
     [
       "E5",
       4,
-      0.75
-    ],
-    [
-      "G5",
-      4.75,
-      0.75
-    ],
-    [
-      "C5",
-      5.5,
-      0.75
-    ],
-    [
-      "D5",
-      6.25,
-      0.75
-    ],
-    [
-      "E5",
-      7,
       1
     ],
     [
-      "F5",
+      "E5",
+      5,
+      1
+    ],
+    [
+      "E5",
+      6,
+      2
+    ],
+    [
+      "E5",
       8,
-      0.5
+      1
     ],
     [
-      "F5",
-      8.5,
-      0.5
-    ],
-    [
-      "F5",
+      "G5",
       9,
-      0.5
+      1
     ],
     [
-      "F5",
-      9.5,
-      0.5
-    ],
-    [
-      "F5",
+      "C5",
       10,
-      0.5
+      1
     ],
     [
-      "E5",
-      10.5,
-      0.5
-    ],
-    [
-      "E5",
+      "D5",
       11,
-      0.5
-    ],
-    [
-      "E5",
-      11.5,
-      0.5
+      1
     ],
     [
       "E5",
       12,
-      0.75
+      4
     ],
     [
-      "D5",
-      12.75,
-      0.75
-    ],
-    [
-      "D5",
-      13.5,
-      0.75
-    ],
-    [
-      "E5",
-      14.25,
-      0.75
-    ],
-    [
-      "D5",
-      15,
-      0.5
-    ],
-    [
-      "G5",
-      15.5,
-      0.5
-    ],
-    [
-      "E5",
+      "F5",
       16,
-      0.5
+      1
     ],
     [
-      "E5",
-      16.5,
-      0.5
-    ],
-    [
-      "E5",
+      "F5",
       17,
-      0.5
+      1
     ],
     [
-      "E5",
+      "F5",
       18,
-      0.5
+      1
     ],
     [
-      "E5",
-      18.5,
-      0.5
-    ],
-    [
-      "E5",
+      "F5",
       19,
-      0.5
+      1
+    ],
+    [
+      "F5",
+      20,
+      1
     ],
     [
       "E5",
-      20,
-      0.75
+      21,
+      1
     ],
     [
-      "G5",
-      20.75,
-      0.75
-    ],
-    [
-      "C5",
-      21.5,
-      0.75
-    ],
-    [
-      "D5",
-      22.25,
-      0.75
+      "E5",
+      22,
+      1
     ],
     [
       "E5",
       23,
-      1
-    ],
-    [
-      "F5",
-      24,
-      0.5
-    ],
-    [
-      "F5",
-      24.5,
-      0.5
-    ],
-    [
-      "F5",
-      25,
-      0.5
-    ],
-    [
-      "F5",
-      25.5,
-      0.5
-    ],
-    [
-      "F5",
-      26,
       0.5
     ],
     [
       "E5",
-      26.5,
+      23.5,
       0.5
+    ],
+    [
+      "E5",
+      24,
+      1
+    ],
+    [
+      "D5",
+      25,
+      1
+    ],
+    [
+      "D5",
+      26,
+      1
     ],
     [
       "E5",
       27,
+      1
+    ],
+    [
+      "D5",
+      28,
+      2
+    ],
+    [
+      "G5",
+      30,
+      2
+    ],
+    [
+      "E5",
+      32,
+      1
+    ],
+    [
+      "E5",
+      33,
+      1
+    ],
+    [
+      "E5",
+      34,
+      2
+    ],
+    [
+      "E5",
+      36,
+      1
+    ],
+    [
+      "E5",
+      37,
+      1
+    ],
+    [
+      "E5",
+      38,
+      2
+    ],
+    [
+      "E5",
+      40,
+      1
+    ],
+    [
+      "G5",
+      41,
+      1
+    ],
+    [
+      "C5",
+      42,
+      1
+    ],
+    [
+      "D5",
+      43,
+      1
+    ],
+    [
+      "E5",
+      44,
+      4
+    ],
+    [
+      "F5",
+      48,
+      1
+    ],
+    [
+      "F5",
+      49,
+      1
+    ],
+    [
+      "F5",
+      50,
+      1
+    ],
+    [
+      "F5",
+      51,
+      1
+    ],
+    [
+      "F5",
+      52,
+      1
+    ],
+    [
+      "E5",
+      53,
+      1
+    ],
+    [
+      "E5",
+      54,
+      1
+    ],
+    [
+      "E5",
+      55,
       0.5
     ],
     [
       "E5",
-      27.5,
+      55.5,
       0.5
     ],
     [
       "G5",
-      28,
-      0.75
+      56,
+      1
     ],
     [
       "G5",
-      28.75,
-      0.75
+      57,
+      1
     ],
     [
       "F5",
-      29.5,
-      0.75
+      58,
+      1
     ],
     [
       "D5",
-      30.25,
-      0.75
+      59,
+      1
     ],
     [
       "C5",
-      31,
-      1
+      60,
+      4
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": false,
-    "sourceImages": [
-      "private/sheets/raw/IMG_20260613_182556.jpg"
+    "transcriptionScope": "complete-selected-short-refrain",
+    "sourceMeasureCount": 16,
+    "sourceTotalBeats": 64,
+    "transpositionSemitones": 5,
+    "tempoStatus": "retained-practice-choice-source-unmarked",
+    "sourceChordSymbols": [
+      "G",
+      "C",
+      "A7",
+      "D",
+      "D7"
+    ],
+    "transposedChordSymbols": [
+      "C",
+      "F",
+      "D7",
+      "G",
+      "G7"
     ],
     "unsupported": [
-      "Local source photo is 1=C, 4/4, q=80; lower bass accompaniment row is omitted from V1 steps."
+      "The complete selected Kyle Coughlin short page contains the 16-bar refrain/theme, not the original verse-and-refrain song. No missing verse, continuation or extra repeat is inferred.",
+      "Printed chord symbols in source key G are retained only as source information. After global +5 transposition, A7 becomes D7 with F#, unavailable on the fixed natural-note instrument; that accidental is not in the melody. No chord is naturalized and no harmony, bass or automatic accompaniment is added.",
+      "Breath commas after source measures 4, 8 and 12 have no measured duration. Keep the printed note lengths; do not invent silence or extend the 64-beat score.",
+      "The selected score has no visible tempo mark. 80 BPM and the historical 0.9 speed suggestion are practice settings, not a source tempo. Actual runtime speed follows the current new-song default or saved per-song preference.",
+      "Every source melody pitch is transposed globally by +5 semitones from G4-D5 to C5-G5; there is no individual octave folding, pitch naturalization or added retrigger.",
+      "The historical 49-attack V2 source/arrangement has a different 32-beat timeline and must not provide support for this selected 51-attack melody."
     ],
     "unsureMeasures": [],
     "sources": [
       {
-        "label": "Doctor Uke Jingle Bells C chord sheet",
-        "url": "https://www.doctoruke.com/jinglebellsc.pdf"
-      },
-      {
-        "label": "Easy Breezy Jingle Bells piano notes",
-        "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+        "label": "Kyle Coughlin: Jingle Bells, Short version in the key of G (complete 16-bar refrain/theme)",
+        "url": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf"
       }
-    ]
-  }
+    ],
+    "sourceReview": {
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "sourceImages": [
+          "private/sheets/raw/IMG_20260613_182556.jpg"
+        ],
+        "unsupported": [
+          "Local source photo is 1=C, 4/4, q=80; lower bass accompaniment row is omitted from V1 steps."
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "Doctor Uke Jingle Bells C chord sheet",
+            "url": "https://www.doctoruke.com/jinglebellsc.pdf"
+          },
+          {
+            "label": "Easy Breezy Jingle Bells piano notes",
+            "url": "https://easybreezypianotutorials.com/wp-content/uploads/2021/07/jingle-bells-piano-notes.pdf"
+          }
+        ]
+      },
+      "archivedEdition": {
+        "label": "Original 49-attack V1 preserved from v2.4.15",
+        "releaseVersion": "2.4.15",
+        "file": "data/archives/ling-er-xiang-ding-dang-v2.4.15.json",
+        "fileSha256": "8309ad1fea7f60b373e204c2fb952b345999b9981e139b8db8c68fbc3782f9d9",
+        "schemaVersion": 1,
+        "attackCount": 49,
+        "totalBeats": 32,
+        "preservation": "Exact original JSON bytes, including original title, all 49 steps, tempo, default speed and source metadata; accepted by the legacy V1 import path as an independent local melody.",
+        "status": "Preserved separate edition; its unavailable original local source image was not reverified. Selection of the Coughlin edition does not establish that the old edition is wrong."
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-short-refrain",
+        "selectedEdition": "coughlin-16-bar-short-refrain",
+        "adoptedInVersion": "2.4.16",
+        "reviewDate": "2026-10-12",
+        "scope": "Complete one-page 16-bar short refrain/theme, printed in full and ending with a whole G4 and final barline. This scope excludes the original verse; no continuation or repeat expansion is inferred.",
+        "sourceUrl": "https://www.christmasmusicsongs.com/PDFleadsheets/jingle-bells-easy-lead-sheet.pdf",
+        "sourcePdfSha256": "6938f9d76dc4be1daf4cdc12b128bba0916bde6cdcc86a86829fda460018ae70",
+        "sourceImageSha256": "83ef33ff7ec86a6852ba4dce5cb83da8187475971b8a7758dfef9c4f2193944f",
+        "reviewedBeatRanges": [
+          [
+            0,
+            64
+          ]
+        ],
+        "attackCount": 51,
+        "sourceKey": "G",
+        "sourceRange": [
+          "G4",
+          "D5"
+        ],
+        "compiledRange": [
+          "C5",
+          "G5"
+        ],
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "pickupBeats": 0,
+        "sourceTempo": "unmarked",
+        "tempoDecision": "Retain 80 quarter BPM and the historical defaultSpeedFactor 0.9 as practice choices. The source has no tempo marking; actual visible runtime speed must be recorded during playback checks.",
+        "independentReview": "The actual saved source pixels were independently re-read across all four systems before adoption; all 51 pitch/onset/duration tuples agree with the earlier independent source fixture. Similar occurrences and the two different cadences were read separately.",
+        "rhythmDecisions": [
+          "All 16 bars contain exactly four quarter beats, with no pickup, printed rest, tie, slur, tuplet or repeat instruction. All repeated pitches remain separate attacks.",
+          "m6 and m14 end with separate source B4 eighth notes, compiled as E5 at 23/23.5 and 55/55.5; the E5 at 24 is another attack, not a tied continuation.",
+          "m8 is D5 at 28 for two beats and G5 at 30 for two beats after transposition. m15 is G5/G5/F5/D5 at 56/57/58/59; it is not copied from the first-half cadence.",
+          "Breath commas after m4/m8/m12 are unmeasured phrasing signs. No guessed rest is inserted and no printed note is shortened.",
+          "Final compiled C5 at beat 60 lasts four beats to 64. No final rest or extra score-time ring-out is added."
+        ],
+        "breathMarksAfterMeasures": [
+          4,
+          8,
+          12
+        ],
+        "silentWindows": [],
+        "repeatExpansion": "none-all-16-bars-written-out",
+        "transpositionSemitones": 5,
+        "octaveFolding": false,
+        "oldEditionReverified": false,
+        "versionDecision": "Adopt the explicitly selected Coughlin short refrain in full. Its differences are not proof that the old edition is wrong; preserve the old source claims as historical information and never splice its timing or accompaniment into this edition.",
+        "supportDecision": "No new support. Printed A7 becomes D7 containing F# under the same +5 transposition; do not naturalize it or infer a playable lower voice. The historical V2 melody/timebase is incompatible and its support must be rejected.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "Notation correspondence and executable tuple checks do not establish external-reference listening, browser sound, physical-instrument acceptance or publication rights. The inspected PDF bears a Kyle Coughlin copyright notice.",
+        "archiveImportPath": "data/archives/ling-er-xiang-ding-dang-v2.4.15.json",
+        "contentRevision": "jingle-coughlin-16bars-2026-10-12"
+      }
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "complete-selected-short-refrain",
+      "reason": "The source-backed single melody uses five natural pitches C5-G5 with no simultaneous targets. Fastest repeated attacks are half a beat (375 ms at the chosen 80 BPM), with at most two tine positions of same-thumb movement. Listening and physical play-through remain pending.",
+      "reviewRequired": [
+        "Compare the unaccompanied selected refrain against a suitable reference performance; the source tempo is unmarked.",
+        "Check browser audio at 80 BPM (1.0x) and the actual visible new-song or saved practice speed, especially E5 eighth-note repeats, the distinct cadences and the final four-beat C5.",
+        "Physical 21-key C kalimba play-through, thumb movement and real decay have not been checked. Preserve separate attacks and natural plucked-note decay.",
+        "Public distribution rights for this selected arrangement are not established by notation or structural checks."
+      ]
+    }
+  },
+  "tuning": "21-key-c"
 }

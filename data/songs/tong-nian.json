@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "tong-nian",
-  "title": "《童年》",
+  "title": "《童年》（教材人声版）",
   "uploader": "system",
-  "practiceTitle": "《童年》练习轨道",
-  "scoreTitle": "《童年》简谱进度",
-  "hint": "依据网上完整谱面重新校对的主旋律练习段，修正旧版低音点与中音区混读问题。",
+  "practiceTitle": "《童年》（教材人声版）练习轨道",
+  "scoreTitle": "《童年》（教材人声版）简谱进度",
+  "hint": "教材完整16小节单遍人声，79次起音、64个四分拍；只走印刷m1–16一次，不按5排歌词扩为5遍。G调整体降7半音至C调，保留7处延音连接和3处人声休止；105 BPM为练习设定，无伴奏。",
   "difficulty": "medium",
   "bpm": 105,
   "defaultSpeedFactor": 0.9,
@@ -25,12 +25,7 @@
     [
       "G4",
       2,
-      1
-    ],
-    [
-      "G4",
-      3,
-      0.5
+      1.5
     ],
     [
       "E4",
@@ -55,12 +50,7 @@
     [
       "A4",
       5.5,
-      0.5
-    ],
-    [
-      "A4",
-      6,
-      0.5
+      1
     ],
     [
       "A4",
@@ -85,7 +75,12 @@
     [
       "C5",
       9,
-      1
+      0.5
+    ],
+    [
+      "C5",
+      9.5,
+      0.5
     ],
     [
       "C5",
@@ -125,12 +120,7 @@
     [
       "G4",
       18,
-      1
-    ],
-    [
-      "G4",
-      19,
-      0.5
+      1.5
     ],
     [
       "E4",
@@ -155,12 +145,7 @@
     [
       "A4",
       21.5,
-      0.5
-    ],
-    [
-      "A4",
-      22,
-      0.5
+      1
     ],
     [
       "A4",
@@ -185,7 +170,12 @@
     [
       "C5",
       25,
-      1
+      0.5
+    ],
+    [
+      "C5",
+      25.5,
+      0.5
     ],
     [
       "C5",
@@ -213,49 +203,44 @@
       4
     ],
     [
-      "G4",
+      "G5",
       32,
-      1
-    ],
-    [
-      "G4",
-      33,
       0.5
     ],
     [
-      "G4",
+      "G5",
+      32.5,
+      1
+    ],
+    [
+      "G5",
       33.5,
       0.5
     ],
     [
-      "G4",
-      34,
-      1
+      "G5",
+      34.5,
+      0.5
     ],
     [
-      "E4",
+      "E5",
       35,
       0.5
     ],
     [
-      "D4",
+      "D5",
       35.5,
       0.5
     ],
     [
       "C5",
       36,
-      1
+      0.5
     ],
     [
       "C5",
-      37,
-      0.5
-    ],
-    [
-      "A4",
-      37.5,
-      0.5
+      36.5,
+      1.5
     ],
     [
       "A4",
@@ -293,7 +278,7 @@
       0.5
     ],
     [
-      "C5",
+      "D5",
       41.5,
       0.5
     ],
@@ -325,12 +310,12 @@
     [
       "E5",
       48,
-      1
+      0.5
     ],
     [
       "E5",
-      49,
-      0.5
+      48.5,
+      1
     ],
     [
       "E5",
@@ -345,22 +330,17 @@
     [
       "D5",
       51,
-      0.5
-    ],
-    [
-      "D5",
-      51.5,
-      0.5
-    ],
-    [
-      "C5",
-      52,
       1
     ],
     [
       "C5",
-      53,
+      52,
       0.5
+    ],
+    [
+      "C5",
+      52.5,
+      1
     ],
     [
       "C5",
@@ -390,12 +370,12 @@
     [
       "G4",
       56,
-      1
+      0.5
     ],
     [
       "G4",
-      57,
-      0.5
+      56.5,
+      1
     ],
     [
       "G4",
@@ -431,33 +411,877 @@
   "sourceFeatures": {
     "hasChords": true,
     "hasArpeggio": false,
-    "hasRepeats": true,
-    "sourceImages": [
-      "private/sheets/raw/tong-nian/qupu123-290148-score.png",
-      "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
-      "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
-      "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
-      "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
-      "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
-    ],
+    "hasRepeats": false,
+    "sourceKey": "G",
+    "transpositionSemitones": -7,
+    "sourceTotalBeats": 64,
+    "sourceMeasureCount": 16,
+    "transcriptionScope": "complete-selected-teaching-vocal-strophe-once",
     "unsupported": [
-      "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
-      "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。"
+      "教材TAB和吉他和弦不进入单音steps，不从最高和弦音猜人声，也不借用旧V2伴奏。",
+      "完整保留16个写明的人声小节；5排歌词不是反复指令，本版不是商业录音完整5段结构。",
+      "保留开头整拍及两处内部人声休止；吉他仍有记谱，不能称为所有声部休止。",
+      "以无点1=G4为绝对八度计算约定，整体-7半音到C调；没有局部折八度或把F#改成原位自然音。",
+      "105 BPM、默认0.9倍率和medium沿用练习设定；源两页无数字或文字速度，不覆盖用户已存速度。",
+      "谱面与结构检查不等于听感或实体演奏通过；作品与出版分发权未确定，仅本地私人预览。"
     ],
     "unsureMeasures": [],
     "sources": [
       {
-        "label": "中国曲谱网《童年》罗大佑简谱",
-        "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
-      },
-      {
-        "label": "吉他世界《童年》C调指弹谱",
-        "url": "https://www.guitarworld.com.cn/pu/q36774"
-      },
-      {
-        "label": "搜狐《琴谱｜童年》双手简谱",
-        "url": "https://www.sohu.com/a/531241905_121124710"
+        "label": "黄冈师范学院托管《普通高中教科书 音乐 必修 演奏·下篇（吉他）》人民音乐出版社；《童年》完整教材人声单遍，PDF46–47／印42–43",
+        "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf"
       }
-    ]
-  }
+    ],
+    "suitability": {
+      "status": "conditional",
+      "scope": "Complete selected 16-bar,79-attack,64-quarter-beat teaching vocal strophe, once; global G-to-C minus7 semitones.",
+      "reason": "The directly identified vocal line and all occurrences match two independent readings of this same published source; its full pitch vocabulary fits E4-G5 without local changes. Reference listening, real decay and physical repeated-note technique remain unverified.",
+      "reviewRequired": [
+        "Compare the complete selected line against a reference and browser sound at the configured105 BPM and actual visible practice multiplier; there is no printed source BPM.",
+        "Check five independent eighth-note D5 attacks in m11, later syncopation and long-note decay on a physical kalimba; medium is retained, not a new comfort claim.",
+        "Review harmony separately before adding support, and establish reproduction rights before any public distribution."
+      ]
+    },
+    "sourceReview": {
+      "archivedEdition": {
+        "file": "data/archives/tong-nian-v2.4.37.json",
+        "fileSha256": "1261f31f6d1194b07fdff52a4bd5ec35b44c4426262575a01698b5fad6bb1ce4",
+        "attackCount": 81,
+        "melodyEndBeat": 64,
+        "restoration": "The complete pre-adoption JSON is byte-identical. Import it as an independent local song for developer recovery; no additional card, archive download or restore UI is added."
+      },
+      "historicalSourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": true,
+        "unsupported": [
+          "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
+          "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。",
+          "本次只合并开头G4[2,3.5)与A4[5.5,6.5)的同音延音，其余79个音符元组不变；不是完整开头或整段64拍校准。",
+          "第9–10拍C5是否另起音、第15–16拍是否休止存在来源版本分歧，均保留旧值；后续音区、节奏、反复及结尾仍待核。",
+          "105 BPM和默认0.9倍速为沿用练习设定；吉他世界公开谱标示四分音符=120，不将练习设定冒充来源速度。",
+          "旧V2保留原83音与原伴奏，和修正后的单音旋律不兼容，不借用其自动伴奏。"
+        ],
+        "unsureMeasures": [
+          "App [9,10): GuitarWorld ties the two C5 eighths, while HGNU writes separate attacks; retain legacy C5@9/1.",
+          "App [15,16): GuitarWorld writes a quarter rest, while HGNU holds G4; retain legacy G4@12/4.",
+          "Outside the two adopted tie spans, the 64-beat excerpt has not been source-calibrated; later rhythm, register, form and ending remain pending."
+        ],
+        "sources": [
+          {
+            "label": "吉他世界《童年》吉他老杨C调指弹谱（仅公开预览的人声第1–2小节两处延音）",
+            "url": "https://www.guitarworld.com.cn/pu/q36774"
+          },
+          {
+            "label": "黄冈师范学院托管吉他教材《童年》（印刷第42页前两小节对照，G调统一移至C调比较）",
+            "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf"
+          }
+        ],
+        "transcriptionScope": "retained-64-beat-verse-excerpt",
+        "suitability": {
+          "status": "needs-review",
+          "scope": "Retained 81-attack, 64-beat verse excerpt; only two opening ties reviewed.",
+          "reason": "Both inspected editions support the same two ties. Conflicting articulation/rests and unreviewed later rhythm/register prevent approval of the complete excerpt; this is not a rejection of the composition.",
+          "reviewRequired": [
+            "Resolve the app [9,10) articulation and [15,16) rest against the intended edition; review all other attacks, later octaves and the selected ending.",
+            "Compare the melody with a source/reference at the printed 120 BPM and actual selected practice speed; browser-audio and physical-kalimba acceptance remain pending.",
+            "Review harmony separately before any support reuse; public-distribution rights have not been established."
+          ]
+        },
+        "sourceReview": {
+          "originalV1": {
+            "title": "《童年》",
+            "practiceTitle": "《童年》练习轨道",
+            "scoreTitle": "《童年》简谱进度",
+            "hint": "依据网上完整谱面重新校对的主旋律练习段，修正旧版低音点与中音区混读问题。",
+            "fileSha256": "9689322aa12a8744b4236ab7ab514028819b7078644d014aacb2e17c9d1257b3",
+            "stepsSha256": "2d10a570f331f54c4225db4a6e417352aa9806182112f664c6329a1f44634ee6",
+            "attackCount": 83,
+            "melodyEndBeat": 64,
+            "restoration": "Restore the four original display strings; replace each merged tuple with its two original tuples in currentScopeReview.tieCorrections; replace sourceFeatures with historicalReviewNotes. All other fields and tuples stay unchanged. Serialize with two-space indentation and one final newline to reconstruct the full original file byte-for-byte."
+          },
+          "historicalReviewNotes": {
+            "hasChords": true,
+            "hasArpeggio": false,
+            "hasRepeats": true,
+            "sourceImages": [
+              "private/sheets/raw/tong-nian/qupu123-290148-score.png",
+              "private/sheets/raw/tong-nian/guitarworld-q36774-score.png",
+              "private/sheets/raw/tong-nian/sohu-score-cover.jpeg",
+              "private/sheets/raw/tong-nian/sohu-score-page-1.jpeg",
+              "private/sheets/raw/tong-nian/sohu-score-page-2.jpeg",
+              "private/sheets/raw/tong-nian/sohu-score-page-3.jpeg"
+            ],
+            "unsupported": [
+              "主旋律版只保留从“池塘边”到“等待游戏的童年”的练习段；全谱后续歌词多为同旋律反复。",
+              "和弦、双手钢琴伴奏与吉他指弹织体移入和弦版或作为来源复核，不写入 V1 steps。"
+            ],
+            "unsureMeasures": [],
+            "sources": [
+              {
+                "label": "中国曲谱网《童年》罗大佑简谱",
+                "url": "https://www.qupu123.com/Mobile-view-id-290148.html"
+              },
+              {
+                "label": "吉他世界《童年》C调指弹谱",
+                "url": "https://www.guitarworld.com.cn/pu/q36774"
+              },
+              {
+                "label": "搜狐《琴谱｜童年》双手简谱",
+                "url": "https://www.sohu.com/a/531241905_121124710"
+              }
+            ]
+          },
+          "currentScopeReview": {
+            "status": "reviewed-opening-common-ties",
+            "adoptedInVersion": "2.4.9",
+            "reviewedOn": "2026-10-12",
+            "decision": "Adopt only the two same-pitch ties common to the recorded GuitarWorld public preview and the independent HGNU teaching edition. Do not select either edition for the conflicting next two bars or replace the full excerpt.",
+            "reviewedBeatRanges": [
+              [
+                2,
+                3.5
+              ],
+              [
+                5.5,
+                6.5
+              ]
+            ],
+            "tieCorrections": [
+              {
+                "span": [
+                  2,
+                  3.5
+                ],
+                "original": [
+                  [
+                    "G4",
+                    2,
+                    1
+                  ],
+                  [
+                    "G4",
+                    3,
+                    0.5
+                  ]
+                ],
+                "merged": [
+                  "G4",
+                  2,
+                  1.5
+                ],
+                "guitarworldMeasure": 5,
+                "hgnuVocalMeasure": 1,
+                "sourceDegrees": "Undotted 5 quarter tied to undotted 5 eighth; one attack, 1 + 0.5 beats."
+              },
+              {
+                "span": [
+                  5.5,
+                  6.5
+                ],
+                "original": [
+                  [
+                    "A4",
+                    5.5,
+                    0.5
+                  ],
+                  [
+                    "A4",
+                    6,
+                    0.5
+                  ]
+                ],
+                "merged": [
+                  "A4",
+                  5.5,
+                  1
+                ],
+                "guitarworldMeasure": 6,
+                "hgnuVocalMeasure": 2,
+                "sourceDegrees": "Undotted 6 eighth tied to undotted 6 eighth; one attack, 0.5 + 0.5 beats."
+              }
+            ],
+            "fullOpeningApproved": false,
+            "fullExcerptApproved": false,
+            "fullSongApproved": false,
+            "sourceBeatUnit": "quarter",
+            "sourceMeter": "4/4",
+            "productionTranspositionSemitones": 0,
+            "octaveFolding": false,
+            "sourceEditions": [
+              {
+                "id": "guitarworld-q36774-public-preview",
+                "url": "https://www.guitarworld.com.cn/pu/q36774",
+                "edition": "吉他老杨编，罗大佑词曲唱，C调指弹谱；仅公开预览。",
+                "imageUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/490268/view/042a5e76b89274f07b58dcf90787de4e.png",
+                "imageSha256": "0d8f21d7777836dcc04877ff1a54d15ee3effffdf77dd5c841c76bbca41ccbdc",
+                "imageDimensions": [
+                  1200,
+                  832
+                ],
+                "cropBounds": [
+                  100,
+                  560,
+                  1100,
+                  810
+                ],
+                "cropScale": 2,
+                "cropSha256": "e645fbacef9256871031f90e9ce5669c6b8a5d4de087da3ef67fffb27c6c70a6",
+                "sourceKey": "C",
+                "sourceTempo": 120,
+                "sourceTempoBeatUnit": "quarter",
+                "sourceBeatOrigin": 16,
+                "comparisonSemitoneShift": 0,
+                "mapping": "Source absolute quarter beat minus 16 = app beat: omit instrumental measures 1–4; adopt only the two ties in printed measures 5–6 of the lyric-aligned numbered melody, not guitar tab or highest chord tones.",
+                "inspectedMeasures": [
+                  5,
+                  8
+                ],
+                "adoptedMeasures": [
+                  5,
+                  6
+                ],
+                "accessLimit": "Only four vocal bars are visible in the public preview. The full two-page score requires login/purchase and was not accessed; repeat ending and full-song form were not reviewed."
+              },
+              {
+                "id": "hgnu-guitar-teaching-comparison",
+                "url": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf",
+                "edition": "童年／民谣吉他曲／罗大佑词曲；教材印刷第42–43页。",
+                "pdfSha256": "bee5c8a881de14db9b9c53f8a3f1273ac617f31ef4bad14b6d84597ff987235b",
+                "pdfPage": 46,
+                "printedPage": 42,
+                "renderedPageSha256": "f0783380fd2442fd45cd10e3876d12dce1e8944b8de9e83c83d8663e0be3d31a",
+                "renderedDimensions": [
+                  1462,
+                  2000
+                ],
+                "cropBounds": [
+                  240,
+                  1430,
+                  1200,
+                  1580
+                ],
+                "cropScale": 2,
+                "cropSha256": "4f9960268f5b432e41543da688884a645ebfbee02323c928b8395f78992f8ba6",
+                "sourceKey": "G",
+                "sourceTempo": null,
+                "sourceBeatOrigin": 0,
+                "comparisonSemitoneShift": -7,
+                "mapping": "First vocal bar starts at app beat 0. Uniform G-to-C normalization (-7 semitones) retains every octave dot for comparison only; production adopts no transposition or octave folding.",
+                "inspectedVocalMeasures": [
+                  1,
+                  4
+                ],
+                "adoptedVocalMeasures": [
+                  1,
+                  2
+                ],
+                "independenceLimit": "Separately published teaching arrangement, not the missing Qupu original. Agreement supports the two ties only; differing later articulation, rest, register and form are not spliced into the legacy melody."
+              }
+            ],
+            "notationDecision": "Both sources show identical pitch and octave-dot state at each tie endpoint. G4 spans 2–3.5 and A4 spans 5.5–6.5 with no second attack. E4@3.5 and A4@6.5 are separate following attacks; different-pitch slurs and adjacent untied repeated notes retain their attacks.",
+            "excludedEditionConflicts": [
+              {
+                "span": [
+                  9,
+                  10
+                ],
+                "guitarworld": "Two upper-1 eighths tied as one C5@9/1.",
+                "hgnu": "Two upper-1 eighths separately attacked at 9 and 9.5.",
+                "retainedLegacy": [
+                  "C5",
+                  9,
+                  1
+                ],
+                "decision": "Unresolved edition choice; no change."
+              },
+              {
+                "span": [
+                  15,
+                  16
+                ],
+                "guitarworld": "G4@12 lasts 3 beats, followed by one quarter rest [15,16).",
+                "hgnu": "G4@12 lasts 4 beats with no final quarter rest.",
+                "retainedLegacy": [
+                  "G4",
+                  12,
+                  4
+                ],
+                "decision": "Unresolved edition choice; no change or new silence claim."
+              }
+            ],
+            "unchangedMelody": {
+              "untouchedAttackCount": 79,
+              "untouchedTuplesSha256": "ec64ef22799d4aa784f768eca5fb45f85736bdbceae83a7079d129bf2e8f0ad6",
+              "laterBeatOrigin": 8,
+              "laterAttackCount": 70,
+              "laterTuplesSha256": "8f624a73ec7a525b5ba2052ca4563e3a03bc17baa2fec73ddb7d5f3593b8e5be"
+            },
+            "encodedExtentBeats": 64,
+            "encodedExtentMeaning": "Retained legacy event end only, not a newly verified source ending, final-rest decision or complete-song extent. No sourceTotalBeats claim is added.",
+            "retainedPracticeTempo": "105 BPM remains the historical practice setting; GuitarWorld prints quarter=120 and HGNU prints no tempo on these pages. The 0.9 default suggests 94.5 BPM, not the actual selected or remembered runtime multiplier. No silent tempo normalization.",
+            "sourceForm": "Retain the existing one-strophe practice extent and hasRepeats classification as historical metadata. Omit instrumental material and later lyric strophes as before; no newly approved repeat expansion or full-song form.",
+            "originalPrivateImagesReverified": false,
+            "originalSourceLimits": "Six historical image paths are absent. Qupu was not reverified following a reported certificate problem; Sohu returned HTTP 403 and was not bypassed. Older hint and metadata are historical claims, not current proof.",
+            "evidenceFingerprints": {
+              "privateAuditSha256": "c575905d94af2eecd1057223b952259ae48b6aa5f384f198705cb384b8a4a3c8",
+              "privateOpeningFixtureSha256": "1f4343971a840761af392bb06399949d9a50b220102ddb9c7ae61fc833d79e21",
+              "privateCommonTiesEvidenceSha256": "49f8ad35e854b45629ee66174f2e746e977430332368eb953becca26fa242e5e"
+            },
+            "accompanimentReview": {
+              "status": "legacy-sibling-preserved-incompatible",
+              "siblingId": "tong-nian-chord",
+              "siblingFileSha256": "f370fb5ddb5e936afd7c16f5c8f9eaa4dab789b4ce5e052b071c6200a4fe8260",
+              "siblingMelodyAttackCount": 83,
+              "contentCompatible": false,
+              "addedSupport": false,
+              "physicalTarget": "single-melody",
+              "decision": "Leave the V2 file byte-identical. Its melody still matches the legacy 83 tuples; content compatibility must reject automatic/practice backing reuse for the corrected V1. Historical rhythm.sourceStatus=verified is not new harmony or whole-song approval."
+            },
+            "sourcePixels": "both-opening-crops-inspected-for-two-common-ties-and-excluded-conflicts",
+            "referenceListening": "not-performed",
+            "browserAudio": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "Only G4[2,3.5) and A4[5.5,6.5) are adopted source decisions. No complete opening, 64-beat excerpt, later octave/rhythm, harmony, form or source-ending approval. Browser scheduling/audio, reference listening and physical play-through remain separate pending checks. Public access does not establish public-distribution rights; raw source images and the complete comparison fixture stay outside the repository."
+          }
+        }
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-teaching-vocal-strophe",
+        "adoptedInVersion": "2.4.38",
+        "reviewedInVersion": "2.4.38",
+        "reviewedOn": "2026-10-12",
+        "versionDecision": "Select the complete HGNU-hosted textbook vocal strophe as its own edition. This does not prove the prior edition wrong; historical source claims and both earlier local tie decisions remain unchanged in the archive.",
+        "sourceUrl": "https://music.hgnu.edu.cn/_upload/article/files/09/d4/faf43ffb4e08b61cf64ee0adaf16/ec5df379-7cae-4b24-9ece-880a54ee478b.pdf",
+        "sourceBook": "普通高中教科书 音乐 必修 演奏·下篇（吉他）",
+        "publisher": "人民音乐出版社·北京",
+        "sourceTitle": "童年",
+        "sourceSubtitle": "民谣吉他曲",
+        "sourceCredit": "罗大佑词曲",
+        "sourceSection": "第七节 和弦巩固练习 / 演奏实践",
+        "pdfPages": [
+          46,
+          47
+        ],
+        "printedPages": [
+          42,
+          43
+        ],
+        "sourcePdfSha256": "bee5c8a881de14db9b9c53f8a3f1273ac617f31ef4bad14b6d84597ff987235b",
+        "sourcePageImageSha256": [
+          "f0783380fd2442fd45cd10e3876d12dce1e8944b8de9e83c83d8663e0be3d31a",
+          "168aeb7cd0bc429480995a905210d76a108ade9791a2588e010cbcbeb11608a2"
+        ],
+        "sourceMeasureNumbers": "Editorially counted from the first vocal bar; no measure numbers are printed.",
+        "sourceMeasureRange": [
+          1,
+          16
+        ],
+        "sourcePrintedMeasureCount": 16,
+        "distinctPrintedMelodyMeasures": 16,
+        "sourceSystemCount": 4,
+        "reviewedBeatRanges": [
+          [
+            0,
+            64
+          ]
+        ],
+        "expandedSourceMeasures": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              1,
+              16
+            ],
+            "beats": [
+              0,
+              64
+            ],
+            "pass": 1,
+            "voice": "lyric-aligned-single-vocal-line"
+          }
+        ],
+        "repeatSignsPresent": false,
+        "lyricRowCount": 5,
+        "lyricRowsAuthorizeRepeat": false,
+        "repeatExpansion": "none-all-16-selected-vocal-bars-written-once",
+        "allPrintedOccurrencesReviewed": true,
+        "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+        "voiceEvidence": "The page explicitly requests 弹唱《童年》. A separate numbered melody beneath guitar TAB is aligned to the lyric rows; vocal identity is not inferred from the highest guitar note.",
+        "excludedLayers": [
+          "guitar chord diagrams and TAB strumming"
+        ],
+        "excludedSections": [],
+        "omittedSectionsAreRests": false,
+        "metricNoteheadCount": 86,
+        "principalAttackCount": 79,
+        "tieContinuationCount": 7,
+        "ties": [
+          {
+            "sourceMeasure": 1,
+            "sourceHeads": [
+              "m01-h03",
+              "m01-h04"
+            ],
+            "from": [
+              "G4",
+              2,
+              1
+            ],
+            "to": [
+              "G4",
+              3,
+              0.5
+            ],
+            "mergedAttack": [
+              "G4",
+              2,
+              1.5
+            ]
+          },
+          {
+            "sourceMeasure": 2,
+            "sourceHeads": [
+              "m02-h04",
+              "m02-h05"
+            ],
+            "from": [
+              "A4",
+              5.5,
+              0.5
+            ],
+            "to": [
+              "A4",
+              6,
+              0.5
+            ],
+            "mergedAttack": [
+              "A4",
+              5.5,
+              1
+            ]
+          },
+          {
+            "sourceMeasure": 5,
+            "sourceHeads": [
+              "m05-h03",
+              "m05-h04"
+            ],
+            "from": [
+              "G4",
+              18,
+              1
+            ],
+            "to": [
+              "G4",
+              19,
+              0.5
+            ],
+            "mergedAttack": [
+              "G4",
+              18,
+              1.5
+            ]
+          },
+          {
+            "sourceMeasure": 6,
+            "sourceHeads": [
+              "m06-h04",
+              "m06-h05"
+            ],
+            "from": [
+              "A4",
+              21.5,
+              0.5
+            ],
+            "to": [
+              "A4",
+              22,
+              0.5
+            ],
+            "mergedAttack": [
+              "A4",
+              21.5,
+              1
+            ]
+          },
+          {
+            "sourceMeasure": 9,
+            "sourceHeads": [
+              "m09-h02",
+              "m09-h03"
+            ],
+            "from": [
+              "G5",
+              32.5,
+              0.5
+            ],
+            "to": [
+              "G5",
+              33,
+              0.5
+            ],
+            "mergedAttack": [
+              "G5",
+              32.5,
+              1
+            ]
+          },
+          {
+            "sourceMeasure": 10,
+            "sourceHeads": [
+              "m10-h02",
+              "m10-h03"
+            ],
+            "from": [
+              "C5",
+              36.5,
+              0.5
+            ],
+            "to": [
+              "C5",
+              37,
+              0.5
+            ],
+            "mergedAttack": [
+              "C5",
+              36.5,
+              1.5
+            ]
+          },
+          {
+            "sourceMeasure": 10,
+            "sourceHeads": [
+              "m10-h03",
+              "m10-h04"
+            ],
+            "from": [
+              "C5",
+              37,
+              0.5
+            ],
+            "to": [
+              "C5",
+              37.5,
+              0.5
+            ],
+            "mergedAttack": [
+              "C5",
+              36.5,
+              1.5
+            ]
+          }
+        ],
+        "slurCount": 9,
+        "slurs": [
+          {
+            "sourceMeasure": 2,
+            "sourceHeads": [
+              "m02-h02",
+              "m02-h03"
+            ],
+            "from": [
+              "A4",
+              4.5,
+              0.5
+            ],
+            "to": [
+              "B4",
+              5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 3,
+            "sourceHeads": [
+              "m03-h06",
+              "m03-h07"
+            ],
+            "from": [
+              "C5",
+              11,
+              0.5
+            ],
+            "to": [
+              "A4",
+              11.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 6,
+            "sourceHeads": [
+              "m06-h02",
+              "m06-h03"
+            ],
+            "from": [
+              "A4",
+              20.5,
+              0.5
+            ],
+            "to": [
+              "B4",
+              21,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 6,
+            "sourceHeads": [
+              "m06-h07",
+              "m06-h08"
+            ],
+            "from": [
+              "A4",
+              23,
+              0.5
+            ],
+            "to": [
+              "G4",
+              23.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 7,
+            "sourceHeads": [
+              "m07-h06",
+              "m07-h07"
+            ],
+            "from": [
+              "A4",
+              27,
+              0.5
+            ],
+            "to": [
+              "C5",
+              27.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 11,
+            "sourceHeads": [
+              "m11-h07",
+              "m11-h08"
+            ],
+            "from": [
+              "E5",
+              43,
+              0.5
+            ],
+            "to": [
+              "D5",
+              43.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 14,
+            "sourceHeads": [
+              "m14-h04",
+              "m14-h05"
+            ],
+            "from": [
+              "D5",
+              54,
+              0.5
+            ],
+            "to": [
+              "C5",
+              54.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 14,
+            "sourceHeads": [
+              "m14-h06",
+              "m14-h07"
+            ],
+            "from": [
+              "A4",
+              55,
+              0.5
+            ],
+            "to": [
+              "G4",
+              55.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          },
+          {
+            "sourceMeasure": 15,
+            "sourceHeads": [
+              "m15-h06",
+              "m15-h07"
+            ],
+            "from": [
+              "D5",
+              59,
+              0.5
+            ],
+            "to": [
+              "E5",
+              59.5,
+              0.5
+            ],
+            "separateAttacksRetained": true
+          }
+        ],
+        "arcEvidence": "Both independently frozen readers agree on all 7 same-pitch tie joins and 9 different-pitch slur endpoints. No cross-bar or cross-system arcs. Numeric glyph coordinates were measured by reader A only, not independently measured twice.",
+        "chainDecision": "m10 h2-h3-h4 has two ties and one C5@36.5/1.5 attack; h1 at36 and later C5 at38.5 and39.5 remain independent attacks.",
+        "repeatedAttackDecision": "m11 h1-h5 are five separate D5 eighth-note attacks at40,40.5,41,41.5,42. Their slightly thick lines are single underlines, not two separate sixteenth-note lines.",
+        "vocalRests": [
+          {
+            "sourceMeasure": 1,
+            "beat": 0,
+            "duration": 1,
+            "scope": "vocal-only; guitar remains active in the source"
+          },
+          {
+            "sourceMeasure": 5,
+            "beat": 16,
+            "duration": 1,
+            "scope": "vocal-only; guitar remains active in the source"
+          },
+          {
+            "sourceMeasure": 9,
+            "beat": 34,
+            "duration": 0.5,
+            "scope": "vocal-only; guitar remains active in the source"
+          }
+        ],
+        "silentWindows": [],
+        "restDecision": "Preserve [0,1), [16,17) and [34,34.5) as vocal gaps. The first full 4/4 bar starts at0, not at the first attack. These are not source-wide silence claims; the selected practice omits guitar.",
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 1,
+        "endingRestBeats": 0,
+        "finalAttack": [
+          "C5",
+          60,
+          4
+        ],
+        "sourceTotalBeats": 64,
+        "selectedEndIsSelectedEditionEnding": true,
+        "selectedEndIsFullSongEnding": false,
+        "fullSelectedVocalStropheReviewed": true,
+        "fullSongApproved": false,
+        "sourceEnding": "m16 final upper1 plus three extender dashes reaches beat64 and a final double/thick barline without repeat dots; no tail rest. The complete printed vocal strophe is not the five-strophe recording form.",
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "sourceKey": "G",
+        "sourceQuarterBpm": null,
+        "sourceNumericTempoPrinted": false,
+        "sourceTempoText": null,
+        "tempoDecision": "105 BPM is a retained editorial practice choice; neither numeric nor verbal tempo is printed on these two source pages. The 0.9 suggestion is separate from a user-selected or remembered multiplier; no speed preference is rewritten.",
+        "absoluteOctaveConvention": "Undotted source 1 = G4 and target 1 = C4; preserve all printed octave dots. This is a declared computational realization of movable-do notation, not proof of a singer's concert octave.",
+        "sourceKeySignatureAccidentals": [
+          "F#"
+        ],
+        "additionalMelodyAccidentals": [],
+        "sourcePitchClasses": [
+          2,
+          4,
+          6,
+          7,
+          9,
+          11
+        ],
+        "sourceRange": [
+          "B4",
+          "D6"
+        ],
+        "compiledRange": [
+          "E4",
+          "G5"
+        ],
+        "transpositionSemitones": -7,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "localPitchAlterations": [],
+        "allowedPitchClassShifts": [
+          5,
+          10
+        ],
+        "registerValidGlobalSemitoneShifts": [
+          -14,
+          -7,
+          -2
+        ],
+        "pitchDecision": "Apply -7 semitones uniformly to every source pitch; source degree7 is F# and becomes B, not a locally naturalized F. No deleted notes, local octave folding or changed intervals.",
+        "tuplets": [],
+        "unmeasuredOrnaments": [],
+        "omittedOrnaments": [],
+        "fermatas": [],
+        "breathMarks": [],
+        "augmentationDots": [],
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "independentSourceReaders": 2,
+        "sourceReviewMethod": "Two complete source-only readings were frozen before comparison; these are two readers of one published source, not two independent published sources. All79 attack tuples,86 noteheads,16 arc endpoint pairs and3 vocal rests agree.",
+        "firstFrozenSourceReadingSha256": "fd1ba4ce5d046dc57372f6eeb89787252621cb83ef019e5404c0e5227f6b733e",
+        "independentSourceFixtureSha256": "62d7c7efda7f505edc9b676e2713b1449fd61fa83955a39f27113c0c2cebc8de",
+        "comparisonSha256": "714f7b6b30931d2bea469baf8ee75a8915f9d039fa211a62a6898d90c8e38921",
+        "independentSourceTupleSha256": "b8ab6f84080f3db2d10cd324ac7f91347e05a4d2eb244f025e5b3940973ea5e8",
+        "sourceMidiTupleSha256": "a7cc380db137270ee1f516dfa5ec0d07ba6cce5c9a60738eaa764b00d7f31e92",
+        "accompanimentReview": {
+          "status": "legacy-sibling-preserved-incompatible",
+          "siblingId": "tong-nian-chord",
+          "siblingFileSha256": "f370fb5ddb5e936afd7c16f5c8f9eaa4dab789b4ce5e052b071c6200a4fe8260",
+          "siblingMelodyAttackCount": 83,
+          "contentCompatible": false,
+          "addedSupport": false,
+          "physicalTarget": "single-melody",
+          "decision": "Keep the original V2 bytes and its historical source metadata unchanged; both automatic and practice backing provider paths must reject its different melody. No guitar reduction is added."
+        },
+        "sourcePixels": "complete-two-score-pages-and-title-page-inspected",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only",
+        "melodyOnlyRestWindows": [
+          [
+            0,
+            1
+          ],
+          [
+            16,
+            1
+          ],
+          [
+            34,
+            0.5
+          ]
+        ]
+      }
+    }
+  },
+  "tuning": "21-key-c"
 }

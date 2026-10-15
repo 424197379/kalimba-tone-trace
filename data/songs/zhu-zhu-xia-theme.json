@@ -403,24 +403,120 @@
     ],
     "unsupported": [
       "完整歌曲包含后续主歌、重复段和尾声；本练习版选取第16至35小节的完整核心唱段。",
-      "部分吉他编配使用转调后的D大三和弦，本版采用双手钢琴谱的Dm以适配自然音卡林巴。"
+      "本次核对的EOP15711第16–35小节主旋律本身均为自然音，没有升降音替换或局部移八度；该谱D/F/A伴奏与其他版本D大三和弦的历史比较，不是主旋律改音依据，其他版本和伴奏层未在本次获确认。"
     ],
     "unsureMeasures": [],
     "sourceReview": {
-      "confidence": "high",
-      "sources": [
-        {
-          "label": "人人钢琴网《猪猪侠主题曲》双手简谱",
-          "url": "https://www.everyonepiano.cn/music-15711-%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0%E4%B8%BB%E9%A2%98%E6%9B%B2.html"
-        },
-        {
-          "label": "吉他世界《猪猪侠》G调弹唱谱",
-          "url": "https://www.guitarworld.cc/thread-995-1-1.html"
-        },
-        {
-          "label": "小提琴网《GG Bond》主旋律谱",
-          "url": "https://www.xiaotiqinwang.com/pu/g-43.html"
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": false,
+        "sourceImages": [
+          "private/sheets/raw/zhu-zhu-xia-theme/everyonepiano-number-01.png",
+          "private/sheets/raw/zhu-zhu-xia-theme/everyonepiano-number-02.png"
+        ],
+        "unsupported": [
+          "完整歌曲包含后续主歌、重复段和尾声；本练习版选取第16至35小节的完整核心唱段。",
+          "部分吉他编配使用转调后的D大三和弦，本版采用双手钢琴谱的Dm以适配自然音卡林巴。"
+        ],
+        "unsureMeasures": [],
+        "sourceReview": {
+          "confidence": "high",
+          "sources": [
+            {
+              "label": "人人钢琴网《猪猪侠主题曲》双手简谱",
+              "url": "https://www.everyonepiano.cn/music-15711-%E7%8C%AA%E7%8C%AA%E4%BE%A0-%E7%8C%AA%E7%8C%AA%E4%BE%A0%E4%B8%BB%E9%A2%98%E6%9B%B2.html"
+            },
+            {
+              "label": "吉他世界《猪猪侠》G调弹唱谱",
+              "url": "https://www.guitarworld.cc/thread-995-1-1.html"
+            },
+            {
+              "label": "小提琴网《GG Bond》主旋律谱",
+              "url": "https://www.xiaotiqinwang.com/pu/g-43.html"
+            }
+          ]
         }
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-eop-melody-only",
+        "reviewedOn": "2026-10-12",
+        "reviewedBeatRanges": [
+          [
+            0,
+            40
+          ]
+        ],
+        "sourceMeasureRange": [
+          16,
+          35
+        ],
+        "sourceUrls": [
+          "https://www.everyonepiano.cn/Number-15711.html",
+          "https://www.everyonepiano.cn/Stave-15711.html"
+        ],
+        "sameEditionFormats": true,
+        "attackCount": 76,
+        "changedTupleCount": 0,
+        "melodyOnlyRestWindows": [
+          [
+            7,
+            1
+          ],
+          [
+            15,
+            1
+          ],
+          [
+            23,
+            1
+          ],
+          [
+            31,
+            0.25
+          ]
+        ],
+        "finalAttack": [
+          "D5",
+          35.75,
+          4.25
+        ],
+        "printedTempo": 68,
+        "printedMeter": "2/4",
+        "pitchRange": [
+          "C4",
+          "D5"
+        ],
+        "tieChainCount": 13,
+        "tieContinuationCount": 14,
+        "sourceMapping": "App beat zero is source m16; preserve one sequential upper melody, no pitch replacement or octave folding. Final D5 spans m33–35.",
+        "originalFileSha256": "787ee9e79b44ff36749103695da421a25a89e693ccec6ea6cf41725c072c7f29",
+        "tupleSha256": "2029214c61b51acc3ec7736d9702dee9c24a50495946a9878038cb9622702058",
+        "scopeLimits": [
+          "Only selected first-pass m16–35; do not expand later m46 repeat or call it the full song.",
+          "Parallel numbered and staff exports are one edition, not independent sources.",
+          "Existing V2 harmony and reference/physical acceptance are not approved by this melody audit.",
+          "Melody-only rest windows do not assert that the piano accompaniment is silent."
+        ]
+      }
+    },
+    "sourceTotalBeats": 40,
+    "sourceMeasureRange": [
+      16,
+      35
+    ],
+    "sourceMeasureCount": 20,
+    "sourceKey": "C",
+    "transpositionSemitones": 0,
+    "transcriptionScope": "selected-eop-15711-measures-16-35",
+    "suitability": {
+      "status": "conditional",
+      "scope": "EOP 15711 第16–35小节，首遍主旋律节选",
+      "reason": "已逐小节核对所选简谱与同版五线谱：76次攻击、全部时值与八度均吻合，C4–D5自然音无需移调或改音；简谱与五线谱是同一编配的两种表示。",
+      "reviewRequired": [
+        "原曲或参考录音的旋律对照未执行。",
+        "浏览器音频与可选伴奏A/B未执行；本次不批准伴奏。",
+        "实体卡林巴快音群、重复音与长音衰减仍待试奏。"
       ]
     }
   }

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "song-bie",
-  "title": "《送别》",
+  "title": "《送别》（教学版）",
   "uploader": "system",
-  "practiceTitle": "《送别》练习轨道",
-  "scoreTitle": "《送别》简谱进度",
-  "hint": "依据网上 C 调简谱重新校对的主旋律版，句尾保留两拍呼吸。",
+  "practiceTitle": "《送别》（教学版）练习轨道",
+  "scoreTitle": "《送别》（教学版）简谱进度",
+  "hint": "选用《中国诗乐二十品》完整24小节教学主旋律，86个单音共96拍；降E调统一移至C调，保留六处两拍休止及末尾静默。70 BPM为练习设定。",
   "difficulty": "easy",
   "bpm": 70,
   "defaultSpeedFactor": 0.9,
@@ -15,11 +15,11 @@
     [
       "G4",
       0,
-      1
+      1.0
     ],
     [
       "E4",
-      1,
+      1.0,
       0.5
     ],
     [
@@ -29,67 +29,67 @@
     ],
     [
       "C5",
-      2,
-      2
+      2.0,
+      2.0
     ],
     [
       "A4",
       4,
-      1
+      1.0
     ],
     [
       "C5",
-      5,
-      1
+      5.0,
+      1.0
     ],
     [
       "G4",
-      6,
-      2
+      6.0,
+      2.0
     ],
     [
       "G4",
       8,
-      1
+      1.0
     ],
     [
-      "C5",
-      9,
+      "C4",
+      9.0,
       0.5
     ],
     [
-      "D5",
+      "D4",
       9.5,
       0.5
     ],
     [
-      "E5",
-      10,
-      1
+      "E4",
+      10.0,
+      1.0
     ],
     [
-      "D5",
-      11,
+      "D4",
+      11.0,
       0.5
     ],
     [
-      "C5",
+      "C4",
       11.5,
       0.5
     ],
     [
-      "D5",
+      "D4",
       12,
-      2
+      2.0
     ],
     [
       "G4",
       16,
-      1
+      1.0
     ],
     [
       "E4",
-      17,
+      17.0,
       0.5
     ],
     [
@@ -99,7 +99,7 @@
     ],
     [
       "C5",
-      18,
+      18.0,
       1.5
     ],
     [
@@ -110,71 +110,71 @@
     [
       "A4",
       20,
-      1
+      1.0
     ],
     [
       "C5",
-      21,
-      1
+      21.0,
+      1.0
     ],
     [
       "G4",
-      22,
-      2
+      22.0,
+      2.0
     ],
     [
       "G4",
       24,
-      1
+      1.0
     ],
     [
-      "D5",
-      25,
+      "D4",
+      25.0,
       0.5
     ],
     [
-      "E5",
+      "E4",
       25.5,
       0.5
     ],
     [
-      "F5",
-      26,
+      "F4",
+      26.0,
       1.5
     ],
     [
-      "B4",
+      "B3",
       27.5,
       0.5
     ],
     [
-      "C5",
+      "C4",
       28,
-      2
+      2.0
     ],
     [
       "A4",
       32,
-      1
+      1.0
     ],
     [
       "C5",
-      33,
-      1
+      33.0,
+      1.0
     ],
     [
       "C5",
-      34,
-      2
+      34.0,
+      2.0
     ],
     [
       "B4",
       36,
-      1
+      1.0
     ],
     [
       "A4",
-      37,
+      37.0,
       0.5
     ],
     [
@@ -184,8 +184,8 @@
     ],
     [
       "C5",
-      38,
-      2
+      38.0,
+      2.0
     ],
     [
       "A4",
@@ -199,7 +199,7 @@
     ],
     [
       "C5",
-      41,
+      41.0,
       0.5
     ],
     [
@@ -209,7 +209,7 @@
     ],
     [
       "A4",
-      42,
+      42.0,
       0.5
     ],
     [
@@ -219,7 +219,7 @@
     ],
     [
       "E4",
-      43,
+      43.0,
       0.5
     ],
     [
@@ -230,16 +230,16 @@
     [
       "D4",
       44,
-      2
+      2.0
     ],
     [
       "G4",
       48,
-      1
+      1.0
     ],
     [
       "E4",
-      49,
+      49.0,
       0.5
     ],
     [
@@ -249,7 +249,7 @@
     ],
     [
       "C5",
-      50,
+      50.0,
       1.5
     ],
     [
@@ -260,75 +260,495 @@
     [
       "A4",
       52,
-      1
+      1.0
     ],
     [
       "C5",
-      53,
-      1
+      53.0,
+      1.0
     ],
     [
       "G4",
-      54,
-      2
+      54.0,
+      2.0
     ],
     [
       "G4",
       56,
-      1
+      1.0
     ],
     [
-      "D5",
-      57,
+      "D4",
+      57.0,
       0.5
     ],
     [
-      "E5",
+      "E4",
       57.5,
       0.5
     ],
     [
-      "F5",
-      58,
+      "F4",
+      58.0,
       1.5
     ],
     [
-      "B4",
+      "B3",
       59.5,
       0.5
     ],
     [
-      "C5",
+      "C4",
       60,
-      4
+      2.0
+    ],
+    [
+      "G4",
+      64,
+      1.0
+    ],
+    [
+      "E4",
+      65.0,
+      0.5
+    ],
+    [
+      "G4",
+      65.5,
+      0.5
+    ],
+    [
+      "C5",
+      66.0,
+      2.0
+    ],
+    [
+      "A4",
+      68,
+      1.0
+    ],
+    [
+      "C5",
+      69.0,
+      1.0
+    ],
+    [
+      "G4",
+      70.0,
+      2.0
+    ],
+    [
+      "G4",
+      72,
+      1.0
+    ],
+    [
+      "C4",
+      73.0,
+      0.5
+    ],
+    [
+      "D4",
+      73.5,
+      0.5
+    ],
+    [
+      "E4",
+      74.0,
+      1.0
+    ],
+    [
+      "D4",
+      75.0,
+      0.5
+    ],
+    [
+      "C4",
+      75.5,
+      0.5
+    ],
+    [
+      "D4",
+      76,
+      2.0
+    ],
+    [
+      "G4",
+      80,
+      1.0
+    ],
+    [
+      "E4",
+      81.0,
+      0.5
+    ],
+    [
+      "G4",
+      81.5,
+      0.5
+    ],
+    [
+      "C5",
+      82.0,
+      1.5
+    ],
+    [
+      "B4",
+      83.5,
+      0.5
+    ],
+    [
+      "A4",
+      84,
+      1.0
+    ],
+    [
+      "C5",
+      85.0,
+      1.0
+    ],
+    [
+      "G4",
+      86.0,
+      2.0
+    ],
+    [
+      "G4",
+      88,
+      1.0
+    ],
+    [
+      "D4",
+      89.0,
+      0.5
+    ],
+    [
+      "E4",
+      89.5,
+      0.5
+    ],
+    [
+      "F4",
+      90.0,
+      1.5
+    ],
+    [
+      "B3",
+      91.5,
+      0.5
+    ],
+    [
+      "C4",
+      92,
+      2.0
     ]
   ],
   "sourceFeatures": {
-    "hasChords": true,
+    "hasChords": false,
     "hasArpeggio": false,
     "hasRepeats": false,
-    "sourceImages": [
-      "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
-      "private/sheets/raw/IMG_20260613_182620.jpg"
-    ],
     "unsupported": [
-      "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
-      "重新读谱后修正旧版开头误把伴奏行或低八度音当成主旋律的问题。"
+      "选用《中国诗乐二十品》全页24小节单声部教学谱；五线谱与简谱属于同一版，全部按谱顺序演奏一次，不因多行歌词增加反复。",
+      "降E调全线统一下移三个半音至C调，保留全部音程、八度及六处两拍休止；不混用旧58音版本或吉他世界另一版的八度。",
+      "这是另一份完整教学旋律，不证明原照片对应的旧58音、64拍版本错误；旧版原始数据和复核历史完整留存，原V2伴奏不沿用。",
+      "原谱未标速度，70 BPM与easy难度为编辑练习选择；原0.9建议倍率保留，不覆盖初次或已保存的实际速度。参考录音比较、浏览器试听及实琴验收是独立待验项目。"
     ],
     "unsureMeasures": [],
     "sources": [
       {
-        "label": "吉他世界《送别》C调弹唱谱",
-        "url": "https://www.guitarworld.com.cn/pu/q45790"
-      },
-      {
-        "label": "CNBlogs anbus encoded 《送别》 numbered melody",
-        "url": "https://www.cnblogs.com/anbus/p/11303701.html"
-      },
-      {
-        "label": "维基百科《送别》条目与乐谱片段",
-        "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
+        "label": "《中国诗乐二十品》送别教学谱，外文出版社，印刷页222 / PDF页238",
+        "url": "https://cxqx.jyc.edu.cn/__local/3/D5/71/B7A1BD225359A39D710C8C3021A_A9C90F62_167DC01.pdf#page=238"
       }
-    ]
-  }
+    ],
+    "transcriptionScope": "selected-complete-monophonic-teaching-edition",
+    "sourceMeasureCount": 24,
+    "sourceTotalBeats": 96,
+    "sourceKey": "Eb",
+    "transpositionSemitones": -3,
+    "tempoStatus": "editorial-practice-tempo-source-unmarked",
+    "meterStatus": "printed-4/4",
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-complete-teaching-edition",
+        "reviewDate": "2026-10-12",
+        "adoptedInVersion": "2.4.29",
+        "selectedEdition": "chinese-poetry-music-twenty-pieces-complete-teaching-melody",
+        "sourceUrl": "https://cxqx.jyc.edu.cn/__local/3/D5/71/B7A1BD225359A39D710C8C3021A_A9C90F62_167DC01.pdf#page=238",
+        "sourcePublication": "《中国诗乐二十品》，主编张竹筠、沈亚玲，外文出版社；揭阳职业技术学院公开教学资料",
+        "sourceCredits": "李叔同词 / （美）奥德维曲",
+        "sourcePdfSha256": "ca4f41c909d255dfa1817d3988ccb404fc2ed39a96c3682b8814810a29c64e6c",
+        "printedPage": 222,
+        "pdfPage": 238,
+        "sourceMeasureRange": [
+          1,
+          24
+        ],
+        "sourceMeasureCount": 24,
+        "distinctPrintedMelodyMeasures": 24,
+        "sourceMeasureNumbers": "Printed system-start labels 5, 9, 13, 17 and 21 anchor the 24-bar count; intermediate measure numbers are counted.",
+        "reviewedBeatRanges": [
+          [
+            0,
+            96
+          ]
+        ],
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              1,
+              24
+            ],
+            "beats": [
+              0,
+              96
+            ],
+            "attacks": 86
+          }
+        ],
+        "excludedSections": [],
+        "sourceVoice": "explicit-lyric-aligned-monophonic-staff-and-numbered-line",
+        "voiceDecision": "Staff and numbered notation show the same single vocal melody. No chord-tone extraction; these are two representations of one edition, not independent source editions.",
+        "sourceKey": "Eb",
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "sourceQuarterBpm": null,
+        "sourceTempoPrinted": false,
+        "tempoDecision": "70 BPM is an editorial practice choice, not a printed source or recording tempo. The historical defaultSpeedFactor=0.9 suggestion stays unchanged; initial and remembered speed are not changed by this adoption.",
+        "difficultyDecision": "easy is an editorial conditional practice suggestion, not a printed grading or completed physical-playability finding.",
+        "registerConvention": "Treble staff establishes undotted 1=Eb4; a uniform -3-semitone transposition gives undotted 1=C4. Read each actual octave dot; no local octave folding.",
+        "sourceRange": [
+          "D4",
+          "Eb5"
+        ],
+        "compiledRange": [
+          "B3",
+          "C5"
+        ],
+        "sourcePitchClasses": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10
+        ],
+        "transpositionSemitones": -3,
+        "globalOctaveShift": 0,
+        "octaveFolding": false,
+        "sourceKeySignatureAccidentals": [
+          "Bb",
+          "Eb",
+          "Ab"
+        ],
+        "additionalMelodyAccidentals": [],
+        "localPitchAlterations": [],
+        "pickupBeats": 0,
+        "initialMelodyRestBeats": 0,
+        "repeatExpansion": "none-all-24-selected-bars-written-out",
+        "repeatSignsPresent": false,
+        "lyricRowsAuthorizeRepeat": false,
+        "formDecision": "Retain the entire printed m1–24 once through its final double bar. The later eight-bar return is separately printed and independently read. Alternate lyric rows do not authorize another traversal; this is the complete selected teaching melody, not every performance or stanza form.",
+        "selectedAttacks": 86,
+        "tieContinuationCount": 0,
+        "ties": [],
+        "tuplets": [],
+        "occurrenceDecisions": [
+          "At separately printed m3 and m19, source Bb4 drops to Eb4; undotted numbered 1, 2, 3, 2, 1 agree with the staff. Compiled C4/D4/E4/D4/C4 retain that lower register.",
+          "At m7, m15 and m23, the lower dot on the final short degree 7 agrees with staff D4; all three compile to B3. Each occurrence was inspected.",
+          "At m5, m13 and m21, upper tonic is a dotted quarter followed by an eighth-note degree 7. At m7, m15 and m23, degree 4 is dotted quarter followed by lower-7 eighth; augmentation and octave dots remain distinct.",
+          "Every visible arc joins different pitches and remains a slur. Separate high-tonic attacks at m9 and adjacent degree-6 eighth attacks at m11 are not merged; m11 retains eight eighth notes. No same-pitch ties or tuplets are present."
+        ],
+        "silentWindows": [
+          {
+            "beat": 14,
+            "duration": 2
+          },
+          {
+            "beat": 30,
+            "duration": 2
+          },
+          {
+            "beat": 46,
+            "duration": 2
+          },
+          {
+            "beat": 62,
+            "duration": 2
+          },
+          {
+            "beat": 78,
+            "duration": 2
+          },
+          {
+            "beat": 94,
+            "duration": 2
+          }
+        ],
+        "restScope": "Six two-beat rests in the single-voice teaching score, each a half-note followed by two written quarter rests. This monophonic edition contains no backing voice; silence claims do not apply to other arrangements or acoustic decay.",
+        "allLayerSilenceClaim": true,
+        "endingRestBeats": 2,
+        "selectedEndIsFullSongEnding": false,
+        "selectedEndIsSelectedEditionEnding": true,
+        "endingDecision": "Final C4 attacks at 92 for two beats; two printed quarter rests preserve [94,96). Do not extend C4, truncate at 94, or treat written duration as a PCM/effects-tail cutoff.",
+        "oldEditionReverified": false,
+        "historicalSourceImageIdentityVerified": false,
+        "independentSourcesVerified": false,
+        "versionDecision": "Deliberately selected complete teaching edition, not proof that the old 58-attack / 64-beat edition is wrong. This source does not recover the unavailable original photo or resolve the different GuitarWorld engraving intent.",
+        "supportDecision": "No backing is added or borrowed. The unchanged historical song-bie-chord sibling fails the actual content compatibility guard despite sharing the title/base id and 70 BPM.",
+        "sourcePixelReview": "The source author read all 24 bars in staff and numbered notation. An independent reader entered all 24 bars before comparison and matched all 86 transposed tuples and six rests. Implementation also viewed the complete page. These are separate readings of one edition, not independent source editions.",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed-at-data-adoption",
+        "physicalKalimba": "not-performed",
+        "publicDistributionRights": "unestablished-private-preview-only",
+        "rightsNotice": "Public source access is not a reproduction or public-distribution license. No source-book images, engraving, lyrics or full private glyph maps are packaged; this adoption does not authorize push, publication or deployment."
+      },
+      "archivedEdition": {
+        "file": "data/archives/song-bie-v2.4.28.json",
+        "fileSha256": "31042a1c640d60dbf2cabfd880aa451d6d2f142916c169fa5bc5eabca19c0a26",
+        "purpose": "Byte-exact developer recovery of all 58 steps, original display strings, 70 BPM, 4/4, 0.9 suggestion and complete source metadata. No additional built-in card, user restore UI, HTTP route or precache entry."
+      },
+      "historicalSourceFeatures": {
+        "hasChords": true,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "sourceImages": [
+          "private/sheets/raw/song-bie/guitarworld-q45790-page-1.png",
+          "private/sheets/raw/IMG_20260613_182620.jpg"
+        ],
+        "unsupported": [
+          "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
+          "仅采用吉他世界公开预览第7–8小节的五处八度校正；不表示缺失的原卡林巴照片或其他版本错误。",
+          "第3–4小节的八度意图仍有冲突；未查看付费第二页，不把本次校正套用到第57–60拍。",
+          "原V2来源版和伴奏保留原样；旋律不一致时不可沿用为本版练习伴奏。"
+        ],
+        "unsureMeasures": [
+          3,
+          4,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "sources": [
+          {
+            "label": "吉他世界《送别》C调弹唱谱",
+            "url": "https://www.guitarworld.com.cn/pu/q45790"
+          },
+          {
+            "label": "CNBlogs anbus encoded 《送别》 numbered melody",
+            "url": "https://www.cnblogs.com/anbus/p/11303701.html"
+          },
+          {
+            "label": "维基百科《送别》条目与乐谱片段",
+            "url": "https://zh.wikipedia.org/zh-hans/%E9%80%81%E5%88%AB_(%E6%AD%8C%E6%9B%B2)"
+          }
+        ],
+        "sourceReview": {
+          "confidence": "partial-source-specific",
+          "decision": "Adopt the existing cited GuitarWorld public preview only for the unambiguous m7–8 cadence. Keep the rest of the 58-attack, 64-beat encoding pending review rather than fabricate a full edition.",
+          "historicalReviewNotes": {
+            "previousHint": "依据网上 C 调简谱重新校对的主旋律版，句尾保留两拍呼吸。",
+            "unsupported": [
+              "主旋律版只保留单音旋律；吉他和弦、卡林巴伴奏行移入和弦版。",
+              "重新读谱后修正旧版开头误把伴奏行或低八度音当成主旋律的问题。"
+            ],
+            "unsureMeasures": [],
+            "status": "Historical pre-2.4.5 claims, retained for provenance and exact reconstruction; not current source verification. The original private photos are unavailable."
+          },
+          "currentScopeReview": {
+            "date": "2026-10-12",
+            "status": "reviewed-cadence-only-rest-needs-review",
+            "sourceUrl": "https://www.guitarworld.com.cn/pu/q45790",
+            "previewUrl": "https://s2.guitarworld.com.cn/upload/pu_qupupic/791924/view/4e7aacc1901fe74235aa752033510542.png",
+            "sourceImageSha256": "1316e3ffb8e3ae391f184ec6881db13d380d3e12a566687532394644a15a5601",
+            "sourceImageDimensions": [
+              1200,
+              831
+            ],
+            "reviewedMeasures": [
+              7,
+              8
+            ],
+            "reviewedBeatRanges": [
+              [
+                24,
+                32
+              ]
+            ],
+            "correctedPitchBeats": [
+              25,
+              25.5,
+              26,
+              27.5,
+              28
+            ],
+            "sourceConfirmedRestWindows": [
+              {
+                "beat": 30,
+                "duration": 2
+              }
+            ],
+            "cropBox": [
+              630,
+              698,
+              1110,
+              830
+            ],
+            "timebase": "Quarter-note beats, zero at the first visible vocal melody attack; 1=C, 4/4, no pickup. No-dot tonic is C4 by repository convention.",
+            "transpositionSemitones": 0,
+            "sourceBpm": null,
+            "retainedPracticeTempo": "70 BPM is the retained playback basis, not a tempo marking established by this preview. The historical defaultSpeedFactor 0.9 field is preserved (63 BPM at 0.9x); the current runtime uses the selected or remembered practice multiplier, initially 0.55x (38.5 BPM) without a saved preference.",
+            "notationDecision": "Keep six separate attacks G4, D4, E4, F4, B3, C4; the different-pitch arc is a slur. The F side dot augments duration, the B lower dot lowers its octave, and the two printed quarter rests preserve beats 30–32.",
+            "unresolvedBeatRanges": [
+              [
+                8,
+                16
+              ],
+              [
+                32,
+                64
+              ]
+            ],
+            "unresolvedReason": "Preview m3 has upper dots on C/D but none on the following E/D/C; its engraving intent and m4 register remain unresolved. The paid second half, later repeated-looking cadence at beats 57–60, full form and ending were not inspected. Do not mirror the correction or infer a sourceTotalBeats from the retained encoding.",
+            "originalPrivatePhotosReverified": false,
+            "fullSongApproved": false,
+            "originalMelodyFileSha256": "adaf958d152111ca3a11c0a7b9a6373e9074035d9a464a88504f08e57afb884d",
+            "preservedV2FileSha256": "dd575f1e2db95a54b010d3e9eca6e1f273f58190743fec68e7db55490e61c35c",
+            "browserAudio": "not-performed",
+            "referenceListening": "not-performed",
+            "physicalKalimba": "not-performed",
+            "limitations": "This source-specific two-bar correction does not verify every edition, the unavailable original kalimba photos, complete repeat expansion, unseen paid pages, later rest/ending, harmony, listening quality or public-distribution rights. V2 remains historical source data with a different melody; do not reuse its support until separately reviewed and content-compatible."
+          }
+        },
+        "suitability": {
+          "status": "needs-review",
+          "scope": "existing 64-beat single-note arrangement; source-specific m7–8 cadence corrected only",
+          "reason": "The reviewed cadence fits the fixed F3–E6 natural-note instrument without transposition; the retained song has unresolved register/form evidence and no completed listening or physical play-through. A partial source correction is not whole-song approval.",
+          "reviewRequired": [
+            "Resolve the first-phrase m3–4 octave conflict against the same arrangement or the original kalimba photo.",
+            "Verify the unseen second half, repeat/form decisions, later cadence, third rest and final note/extent.",
+            "Compare the unaccompanied reviewed phrase to a reference at the retained 70 BPM basis and the actual selected practice multiplier. The first-use 0.55x setting yields 38.5 BPM, but remembered settings may differ; the source has no printed tempo.",
+            "Keep incompatible optional support unavailable; any later support needs separate source, rest and A/B listening review.",
+            "Physical kalimba hand alternation, jumps and decay have not been tested."
+          ]
+        }
+      },
+      "historicalEditionStatus": "The old 58-attack / 64-beat version retained only a source-specific GuitarWorld m7–8 cadence review. Its original photos, conflicting m3–4 and unseen later sections remain unverified; the complete historical metadata is preserved without converting its claims into current approval."
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "complete-selected-teaching-edition",
+      "reason": "所选24小节、86音教学旋律以统一降三个半音完整保留音程，音域B3–C5适配21键C调；独立重弹与六处两拍休止按谱保留。easy为练习建议，数值范围不代替实体演奏验收。",
+      "reviewRequired": [
+        "70 BPM是练习选择；最短0.5拍约429毫秒，0.9建议倍率约476毫秒，不代表实际网页当前速度。",
+        "参考录音比较、浏览器音频验收、实体琴手指走向与自然衰减仍待完成。"
+      ]
+    }
+  },
+  "tuning": "21-key-c"
 }

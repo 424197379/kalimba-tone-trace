@@ -897,6 +897,25 @@
       "pattern": "phrase/downbeat bass-harmony support",
       "restPolicy": "silent restWindows are not filled",
       "reviewRequired": []
+    },
+    "practiceAccompaniment": {
+      "status": "needs-review",
+      "confidence": "conservative-existing-layer-intersection",
+      "generatedFrom": "Existing autoAccompaniment onsets coincident with judged non-melody chord anchors; retain only pitches shared by both layers.",
+      "method": "Conservative intersection, at most one bass and one harmony note per existing anchor; no new pitches or onsets.",
+      "independentlyVerified": false,
+      "provenance": "A reduced practice candidate derived from the current arrangement, not independently verified new harmony. Existing source and harmony-review labels do not verify this candidate.",
+      "restPolicy": "Keep original backing durations, bounded by melody gaps and silent restWindows; never add a rest attack or active melody unison.",
+      "unresolvedConflictBeats": [
+        20,
+        28,
+        30
+      ],
+      "reviewRequired": [
+        "At beats 20, 28 and 30, judged chord anchors and original autoAccompaniment disagree. Retaining only C4, G3 and G3 respectively does not resolve the harmony conflict.",
+        "Independent source comparison and audible A/B/C listening review are still required; structural tests are not musical approval.",
+        "Physical 21-key kalimba play-through has not been performed."
+      ]
     }
   },
   "autoAccompaniment": {
@@ -1350,6 +1369,303 @@
       {
         "label": "UkuStuff Twinkle Twinkle C/F/G7 chords",
         "url": "https://ukestuff.wordpress.com/wp-content/uploads/2016/08/twinkle-twinkle-little-star-c-f-g71.pdf"
+      }
+    ]
+  },
+  "practiceAccompaniment": {
+    "enabledByDefault": false,
+    "volume": 0.34,
+    "events": [
+      {
+        "beat": 0,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 4,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 6,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 8,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 12,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 14,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 16,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 20,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 22,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 24,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 28,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          }
+        ]
+      },
+      {
+        "beat": 30,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          }
+        ]
+      },
+      {
+        "beat": 32,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 36,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 38,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 40,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "F3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 44,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "D4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
+      },
+      {
+        "beat": 46,
+        "duration": 0.75,
+        "pattern": "conservative-anchor-intersection",
+        "notes": [
+          {
+            "name": "G3",
+            "role": "bass",
+            "velocity": 0.4
+          },
+          {
+            "name": "C4",
+            "role": "harmony",
+            "velocity": 0.34
+          }
+        ]
       }
     ]
   }

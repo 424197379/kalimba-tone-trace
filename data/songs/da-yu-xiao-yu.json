@@ -5,7 +5,7 @@
   "uploader": "system",
   "practiceTitle": "《大雨小雨》练习轨道",
   "scoreTitle": "《大雨小雨》简谱进度",
-  "hint": "主旋律练习版；按 1=D、4/4 来源谱转为 C 调。",
+  "hint": "保留11小节演唱主旋律，单遍44拍；按 1=D、4/4 来源谱整体降2半音为 C 调，省略末尾4拍括号间奏。92 BPM 为练习设定。",
   "difficulty": "easy",
   "bpm": 92,
   "defaultSpeedFactor": 0.9,
@@ -59,50 +59,222 @@
     ["E4", 29, 0.5],
     ["F4", 29.5, 0.5],
     ["D4", 30, 2],
-    ["G4", 32, 1],
+    ["G4", 32, 0.5],
+    ["G4", 32.5, 0.5],
     ["G4", 33, 0.5],
-    ["G4", 33.5, 0.5],
-    ["E4", 34, 2],
-    ["G4", 36, 1],
-    ["G4", 37, 0.5],
-    ["G4", 37.5, 0.5],
-    ["E4", 38, 2],
-    ["F4", 40, 1],
+    ["E4", 33.5, 0.5],
+    ["G4", 34, 0.5],
+    ["G4", 34.5, 0.5],
+    ["G4", 35, 0.5],
+    ["E4", 35.5, 0.5],
+    ["F4", 36, 0.5],
+    ["F4", 36.5, 0.5],
+    ["F4", 37, 0.5],
+    ["D4", 37.5, 0.5],
+    ["F4", 38, 0.5],
+    ["F4", 38.5, 0.5],
+    ["F4", 39, 0.5],
+    ["D4", 39.5, 0.5],
+    ["G4", 40, 0.5],
+    ["E4", 40.5, 0.5],
     ["F4", 41, 0.5],
-    ["F4", 41.5, 0.5],
-    ["D4", 42, 2],
-    ["F4", 44, 1],
-    ["F4", 45, 0.5],
-    ["F4", 45.5, 0.5],
-    ["D4", 46, 2],
-    ["G4", 48, 0.5],
-    ["E4", 48.5, 0.5],
-    ["F4", 49, 0.5],
-    ["D4", 49.5, 0.5],
-    ["C4", 50, 0.5],
-    ["C4", 50.5, 0.5],
-    ["C4", 51, 1]
+    ["D4", 41.5, 0.5],
+    ["C4", 42, 0.5],
+    ["C4", 42.5, 0.5],
+    ["C4", 43, 1]
   ],
   "sourceFeatures": {
     "hasChords": false,
     "hasArpeggio": false,
     "hasRepeats": false,
-    "sourceImages": [
-      "private/sheets/raw/da-yu-xiao-yu/ccguitar-da-yu-xiao-yu.jpg"
-    ],
     "unsupported": [
-      "括号标注的间奏未作为主旋律练习段展开。"
+      "括号标注的间奏未作为主旋律练习段展开。",
+      "Selected vocal-only scope is 44 beats. The separate parenthesized interlude occupies source beats [44,48) and contains seven attacks; its omission is not a written rest or all-layer silence.",
+      "The source prints two lyric rows without a repeat instruction; the selected melody is retained once, not expanded into an inferred second verse."
     ],
     "unsureMeasures": [],
     "sources": [
       {
         "label": "虫虫乐谱《大雨小雨》简谱",
         "url": "https://www.ccguitar.cn/cchtml/12894419.htm"
-      },
-      {
-        "label": "百度文库《儿童趣味发声练声曲谱》搜索摘录",
-        "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html"
       }
-    ]
+    ],
+    "sourceTotalBeats": 44,
+    "sourceMeasureCount": 11,
+    "sourceReview": {
+      "historicalReviewNotes": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "sourceImages": [
+          "private/sheets/raw/da-yu-xiao-yu/ccguitar-da-yu-xiao-yu.jpg"
+        ],
+        "unsupported": [
+          "括号标注的间奏未作为主旋律练习段展开。"
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "虫虫乐谱《大雨小雨》简谱",
+            "url": "https://www.ccguitar.cn/cchtml/12894419.htm"
+          },
+          {
+            "label": "百度文库《儿童趣味发声练声曲谱》搜索摘录",
+            "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html"
+          }
+        ]
+      },
+      "originalV1": {
+        "fileSha256": "e7a90499d051ed5afc10ec564f9bd6dbb870786119b3e9be8e8dc02344173ea0",
+        "hint": "主旋律练习版；按 1=D、4/4 来源谱转为 C 调。",
+        "reconstruction": "Restore this hint and historicalReviewNotes as sourceFeatures. Reverse only timing for attack indices 47-62 to four [1,0.5,0.5,2]-beat cells starting at 32,36,40,44, then add 8 beats to indices 63-69. Serialize with two-space JSON indentation, compact each steps tuple on one line, and append one newline; the focused regression reconstructs the exact original bytes."
+      },
+      "currentScopeReview": {
+        "status": "reviewed-vocal-melody-interlude-omitted",
+        "reviewedAt": "2026-10-12",
+        "adoptedInVersion": "2.4.6",
+        "selectedEdition": "ccguitar-12894419-vocal-once",
+        "sourceUrl": "https://www.ccguitar.cn/cchtml/12894419.htm",
+        "sourceImageUrl": "https://s201.lzjoy.com/res/statics/fileupload/opern666/score_400000_500000/0321/3f5f572b52892028574824bfed66c0375e7586ab8a6d1.jpg",
+        "sourceImageSha256": "20f666fdba68000b80f72d0254d561e81189742804d2b5f906f22ec8464cde03",
+        "sourceImageDimensions": [
+          1000,
+          1430
+        ],
+        "sourceKey": "D",
+        "sourceMeter": "4/4",
+        "sourceTempo": null,
+        "sourceTempoBeatUnit": "quarter",
+        "beatOrigin": "Beginning of the first complete 4/4 bar; audit-assigned bar n spans [4(n-1),4n). The source has no printed bar numbers.",
+        "transpositionSemitones": -2,
+        "octaveFolding": false,
+        "reviewedMeasures": [
+          1,
+          11
+        ],
+        "reviewedBeatRanges": [
+          [
+            0,
+            44
+          ]
+        ],
+        "selectedAttackCount": 70,
+        "selectedVocalScopeBeats": 44,
+        "unchangedOpening": {
+          "measures": [
+            1,
+            8
+          ],
+          "beatRange": [
+            0,
+            32
+          ],
+          "attackCount": 47,
+          "status": "all-pitch-onset-duration-tuples-unchanged"
+        },
+        "timingCorrection": {
+          "changedAttackIndices": [
+            47,
+            69
+          ],
+          "changedTupleCount": 23,
+          "changedPitchCount": 0,
+          "eighthNoteMeasures": [
+            9,
+            10
+          ],
+          "eighthNoteAttackCountPerMeasure": 8,
+          "eighthNoteDuration": 0.5,
+          "previousMeasureBeatRanges": [
+            [
+              32,
+              40
+            ],
+            [
+              40,
+              48
+            ],
+            [
+              48,
+              52
+            ]
+          ],
+          "correctedMeasureBeatRanges": [
+            [
+              32,
+              36
+            ],
+            [
+              36,
+              40
+            ],
+            [
+              40,
+              44
+            ]
+          ],
+          "finalMeasureShiftBeats": -8,
+          "finalMeasureDurations": "unchanged",
+          "evidence": "Each of source bars 9 and 10 has eight single-underlined eighth notes, filling four beats. The old four-attack quarter/eighth/eighth/half pattern doubled these two bars. Bar 11 keeps all seven attacks and durations, eight beats earlier."
+        },
+        "sourceForm": {
+          "printedMeasureCount": 12,
+          "printedLinearScoreBeats": 48,
+          "selectedVocalMeasureCount": 11,
+          "selectedVocalBeats": 44,
+          "lyricRows": 2,
+          "repeatSignsPrinted": false,
+          "expandedRepeats": false,
+          "writtenRestBeats": 0
+        },
+        "omittedSourceGestures": [
+          {
+            "measure": 12,
+            "beat": 44,
+            "duration": 4,
+            "type": "parenthesized-interlude",
+            "attackCount": 7,
+            "outsideSelectedScope": true,
+            "sourceWrittenRest": false,
+            "sourceAllLayerSilence": false
+          }
+        ],
+        "notationDecision": "Single underlines halve quarter-note values. Curves connect different pitches as slurs and retain both attacks; repeated equal pitches have no same-pitch ties and remain separate. No octave dots, incidental accidentals, written rests, repeat signs or alternate endings were found in the selected vocal line.",
+        "ending": {
+          "measure": 11,
+          "note": "C4",
+          "beat": 43,
+          "duration": 1,
+          "totalBeats": 44,
+          "finalRestBeats": 0
+        },
+        "sourceTotalBeatsMeaning": "44 is the retained 11-bar vocal-only extent. The full printed linear page including its separate interlude lasts 48 beats; the omitted four beats are not ending silence.",
+        "retainedPracticeTempo": "No metronome tempo is printed. The unchanged 92 BPM is a practice choice; defaultSpeedFactor 0.9 is a historical suggestion, not evidence of the actual selected or remembered runtime multiplier.",
+        "secondarySourceReview": {
+          "url": "https://set.baidu.com/view/87e3e95c551252d380eb6294dd88d0d233d43c11.html",
+          "status": "notation-not-recovered",
+          "reason": "The recorded Baidu URL returned a JavaScript loading shell rather than notation. No independent secondary-source corroboration is claimed."
+        },
+        "accompanimentReview": {
+          "status": "no-existing-v2-sibling",
+          "scope": "No da-yu-xiao-yu V2 source arrangement exists. da-yu and da-yu-chord identify a different song. No support is added or borrowed; any future candidate must match the corrected melody, BPM and 44-beat extent."
+        },
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "Pixel and tuple review cover the selected vocal melody only, not the omitted interlude as a practice arrangement. Independent secondary-source corroboration, reference listening, browser-audio acceptance and physical kalimba playing remain pending. Public access does not establish republication rights; public-distribution rights remain unapproved."
+      }
+    },
+    "suitability": {
+      "status": "conditional",
+      "scope": "reviewed-11-bar-vocal-melody-once-interlude-omitted",
+      "reason": "The source-backed single melody fits C4-A4 after one uniform -2-semitone transposition. All 70 attacks and the 44-beat selected extent are reviewed; maximum encoded density is two attacks per quarter beat. The separate four-beat interlude is omitted.",
+      "reviewRequired": [
+        "Reference-performance recognition comparison pending.",
+        "Browser-audio verification at the actual selected practice speed pending.",
+        "Physical kalimba play-through and same-thumb repeated eighth notes pending.",
+        "Independent secondary-source corroboration and publication rights are not established."
+      ]
+    }
   }
 }

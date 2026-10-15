@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "tian-kong-zhi-cheng",
-  "title": "《天空之城》",
+  "title": "《天空之城》（改音版）",
   "uploader": "system",
-  "practiceTitle": "《天空之城》练习轨道",
+  "practiceTitle": "《天空之城》改音练习轨道",
   "scoreTitle": "《天空之城》简谱进度",
-  "hint": "按中国曲谱网 17 音 C 调卡林巴演奏谱整理的主旋律版；和弦与分解伴奏保留在和弦版。",
+  "hint": "固定21键C调改音版：原主题的升4、升5已自然化，此版不是保真单音谱；原2019编配与第15小节连线仍待复核。",
   "difficulty": "medium",
   "bpm": 72,
   "defaultSpeedFactor": 0.95,
@@ -420,7 +420,9 @@
       "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
     ],
     "sourceReview": {
-      "confidence": "high-for-melody-medium-for-harmony",
+      "confidence": "needs-review-naturalized-melody",
+      "previousConfidence": "high-for-melody-medium-for-harmony",
+      "originalDisplayTitle": "《天空之城》",
       "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
       "sources": [
         {
@@ -431,6 +433,63 @@
           "label": "中国曲谱网源图",
           "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
         }
+      ],
+      "focusedReview": {
+        "date": "2026-10-12",
+        "method": "Visual inspection of the independently published theme score; not a full revalidation of the chosen 2019 arrangement.",
+        "sources": [
+          {
+            "label": "山东教育出版社《音乐》四年级下册《天空之城》主题曲",
+            "url": "https://v.sjs.com.cn/ebooks/931E845D.pdf",
+            "printedPage": 55,
+            "pdfPage": 58,
+            "inspected": "rendered-score-pixels"
+          }
+        ],
+        "identityMatch": "The single-line 1=C, 4/4 theme score matches the current opening, repeated opening and cadence; its ties and some rhythms differ from the current data.",
+        "explicitMelodyAccidentals": [
+          {
+            "sourcePitch": "F#4",
+            "currentMeasure": 8,
+            "currentStepIndex": 22,
+            "currentBeat": 29.5,
+            "currentPitch": "F4",
+            "currentDuration": 0.5
+          },
+          {
+            "sourcePitch": "G#4",
+            "currentMeasure": 16,
+            "currentStepIndex": 52,
+            "currentBeat": 63,
+            "currentPitch": "G4",
+            "currentDuration": 1
+          }
+        ],
+        "sameBarAccidentalScope": {
+          "currentMeasure": 8,
+          "currentStepIndex": 23,
+          "currentBeat": 30,
+          "currentPitch": "F4",
+          "status": "needs-review-against-chosen-arrangement",
+          "reason": "The next degree 4 in the same printed bar has no natural sign. Check accidental carry-through against the chosen 2019 arrangement; do not assume F-natural."
+        },
+        "measureNumbering": "Current app numbering includes the initial pickup/rest bar as measure 1; step indices are zero-based.",
+        "themePitchClasses": ["C", "D", "E", "F", "F#", "G", "G#", "A", "B"],
+        "fixedInstrumentPitchClasses": ["C", "D", "E", "F", "G", "A", "B"],
+        "fittingSemitoneTranspositions": [],
+        "fitReason": "All 12 consistent semitone transpositions were checked. Nine distinct melody pitch classes cannot fit the fixed instrument's seven natural pitch classes; octave shifts cannot remove this constraint.",
+        "originalArrangementStatus": "The 2019 Qupu123 source page is readable, but its score image was unavailable: web fetches returned Cache miss/not accessible and ordinary direct public-image requests returned HTTP 502. The full 24-bar arrangement, accompaniment and measure 15 ties were not revalidated.",
+        "changeScope": "Display labels and review metadata only. All 79 melody tuples, timing, tempo and the historical chord source are unchanged."
+      }
+    },
+    "suitability": {
+      "status": "not-recommended",
+      "scope": "faithful-complete-theme-fixed21C",
+      "reason": "已目视核对的同曲主题主旋律含升4、升5，共9种音级，不能用一次整体移调保真适配固定21键C调自然音琴。现有自然化数据属于改音版，不作为原主题保真练习。",
+      "reviewRequired": [
+        "此结论针对完整主题的保真演奏，不排除经源谱核实的自然音选段。",
+        "原2019年24小节编配图片仍不可读；第8小节后续4的变音作用范围、第15小节连线及整段节奏仍待原谱核对。",
+        "独立教材用于核实主题半音与乐器限制，不代表已逐音复核当前编配或通过录音、实体琴验收。"
       ]
     }
   },

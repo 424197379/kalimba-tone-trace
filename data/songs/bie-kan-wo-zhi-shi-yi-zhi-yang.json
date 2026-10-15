@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "bie-kan-wo-zhi-shi-yi-zhi-yang",
-  "title": "《别看我只是一只羊》",
+  "title": "《别看我只是一只羊》（主歌选段）",
   "uploader": "system",
-  "practiceTitle": "《别看我只是一只羊》练习轨道",
-  "scoreTitle": "《别看我只是一只羊》简谱进度",
-  "hint": "主歌选段；依据线简谱混排谱保留附点节奏。副歌含升4，不纳入21音自然音版本；非全曲。",
+  "practiceTitle": "《别看我只是一只羊》主歌选段练习轨道",
+  "scoreTitle": "《别看我只是一只羊》主歌选段简谱进度",
+  "hint": "C调主歌选段，68个单音、63拍；保留附点、十六分音符与8处附点八分休止，末音结束即止，不含其后的八分休止与副歌弱起。副歌需F#，非全曲；120 BPM 为沿用的练习设定。",
   "difficulty": "medium",
   "bpm": 120,
   "defaultSpeedFactor": 0.8,
@@ -354,42 +354,256 @@
     ]
   ],
   "sourceFeatures": {
-    "hasChords": false,
+    "hasChords": true,
     "hasArpeggio": false,
     "hasRepeats": false,
     "unsupported": [
-      "只选主歌16小节，不含前奏、角色念唱与含F#的副歌。",
-      "末音按原谱保留3拍，截去随后的副歌弱起；V1音符时间轴止于63拍，整小节长度警告属于选段边界。",
-      "仅保留主旋律，未加入和弦或自动伴奏。"
+      "仅收录主歌选段：15个完整4/4小节及第16小节前3拍，共63拍；不含前奏、角色念唱、随后休止、含F#的副歌及尾奏。",
+      "末音C5从第60拍起保留3拍；选段截止于63拍，源谱随后[63,63.5)的八分休止及[63.5,64)的副歌C5弱起均在选段之外，不补齐为64拍。",
+      "原谱印有和弦符号，hasChords仅描述来源；练习仅保留68个单音主旋律，未加入和弦目标、自动伴奏或可选支持。",
+      "当前所选C调线简谱未印数字速度；120 BPM及默认0.8倍速沿用历史练习设定，不借用其他F调版本的120 BPM作为本版来源速度。",
+      "公开重印谱支持所选68个音符，但中国曲谱网原链接及《最易上手！口琴独奏超精选》书目归属未重新验证；其他F调版本有旋律与节奏差异，不拼接。"
     ],
     "unsureMeasures": [],
     "sources": [
       {
-        "label": "中国曲谱网《最易上手！口琴独奏超精选》线简谱混排版",
-        "url": "https://www.qupu123.com/qiyue/kouqin/p89823.html"
-      },
-      {
-        "label": "人人钢琴网 F调双手简谱（对照）",
-        "url": "https://www.everyonepiano.cn/Number-531.html"
-      },
-      {
-        "label": "简谱之家 F调歌谱（对照）",
-        "url": "https://www.jianpujia.com/jianpu/7208.html"
-      },
-      {
-        "label": "吉他世界公开主歌预览（对照）",
-        "url": "https://www.guitarworld.com.cn/pu/q129513"
+        "label": "曲谱图《别看我只是一只羊》C调线简谱混排公开重印谱（当前选段核对）",
+        "url": "https://www.quputu.com/qiyuequpu/kouqin/10234.html"
       }
     ],
     "transcriptionScope": "verse-excerpt",
     "suitability": {
       "status": "conditional",
       "scope": "verse-excerpt",
-      "reason": "所选主歌为自然音 E4-E5；保留附点与十六分音符。副歌含 F#，不作为全曲收录。",
+      "reason": "所选C调主歌68个单音、63拍，音域E4-E5并使用全部七个自然音级；不移调、不折叠八度。含F#的副歌未纳入，不能据此声称固定自然音琴可原样演奏全曲。",
       "reviewRequired": [
-        "仅主歌选段，不代表固定自然音琴可原样演奏全曲。",
-        "旋律按选定印刷版本逐句对谱；浏览器发声与时序已检查，实体琴试听验收未完成。"
+        "所选范围已逐音核对两页线简谱，未改变任何音高、起拍或时值；这不等于完整原曲或和声验收。",
+        "所选版本参考录音对听、当前浏览器音频与实际练习速度验收、实体琴重复音/双手分配/衰减检查仍待完成。",
+        "旧注记“浏览器发声与时序已检查”仅保留为历史，本次未重新验证；公开访问也不代表取得传播授权。"
       ]
+    },
+    "sourceTotalBeats": 63,
+    "sourceReview": {
+      "originalV1": {
+        "title": "《别看我只是一只羊》",
+        "practiceTitle": "《别看我只是一只羊》练习轨道",
+        "scoreTitle": "《别看我只是一只羊》简谱进度",
+        "hint": "主歌选段；依据线简谱混排谱保留附点节奏。副歌含升4，不纳入21音自然音版本；非全曲。",
+        "fileSha256": "0b0a2b4cc768f2c3e2f0e36e536550ee23633fab9dc0a3253aa170ef90ef5a3b",
+        "stepsSha256": "c057503da62fed876734291dc44531687a2a0277fe9a708cf9cc1759be500055",
+        "attackCount": 68,
+        "melodyEndBeat": 63,
+        "restoration": "Restore these four display strings and replace sourceFeatures with historicalReviewNotes; retain steps unchanged. Two-space JSON plus one final newline reconstructs the entire original file byte-for-byte."
+      },
+      "historicalReviewNotes": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "unsupported": [
+          "只选主歌16小节，不含前奏、角色念唱与含F#的副歌。",
+          "末音按原谱保留3拍，截去随后的副歌弱起；V1音符时间轴止于63拍，整小节长度警告属于选段边界。",
+          "仅保留主旋律，未加入和弦或自动伴奏。"
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "中国曲谱网《最易上手！口琴独奏超精选》线简谱混排版",
+            "url": "https://www.qupu123.com/qiyue/kouqin/p89823.html"
+          },
+          {
+            "label": "人人钢琴网 F调双手简谱（对照）",
+            "url": "https://www.everyonepiano.cn/Number-531.html"
+          },
+          {
+            "label": "简谱之家 F调歌谱（对照）",
+            "url": "https://www.jianpujia.com/jianpu/7208.html"
+          },
+          {
+            "label": "吉他世界公开主歌预览（对照）",
+            "url": "https://www.guitarworld.com.cn/pu/q129513"
+          }
+        ],
+        "transcriptionScope": "verse-excerpt",
+        "suitability": {
+          "status": "conditional",
+          "scope": "verse-excerpt",
+          "reason": "所选主歌为自然音 E4-E5；保留附点与十六分音符。副歌含 F#，不作为全曲收录。",
+          "reviewRequired": [
+            "仅主歌选段，不代表固定自然音琴可原样演奏全曲。",
+            "旋律按选定印刷版本逐句对谱；浏览器发声与时序已检查，实体琴试听验收未完成。"
+          ]
+        }
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-verse-excerpt",
+        "adoptedInVersion": "2.4.8",
+        "reviewedOn": "2026-10-12",
+        "selectedEdition": "c-major-staff-and-numbered-harmonica-engraving",
+        "sourceUrl": "https://www.quputu.com/qiyuequpu/kouqin/10234.html",
+        "sourceImages": [
+          {
+            "url": "https://www.quputu.com/uploads/allimg/221228/2-22122Q94334J1.jpg",
+            "sha256": "1045752a16a6eb6ea20f48cdae0e714093130a7313de54985135f993562b9dd3",
+            "dimensions": [
+              1015,
+              1275
+            ]
+          },
+          {
+            "url": "https://www.quputu.com/uploads/allimg/221228/2-22122Q94336262.jpg",
+            "sha256": "9931f94a9d41945a14e5a439259da256a3d1b2a6a0522e00ddbac698c4a500fd",
+            "dimensions": [
+              972,
+              1302
+            ]
+          }
+        ],
+        "provenanceLimit": "This accessible repost matches the distinctive musical text, but is not an independent musical arrangement. Original Qupu123 image identity, original page and claimed book attribution were not reverified; no new claim of identical source bytes, arranger identity or book provenance is made.",
+        "sourceKey": "C",
+        "sourceMeter": "4/4",
+        "sourceTempo": null,
+        "sourceTempoBeatUnit": "quarter",
+        "retainedPracticeTempo": "120 BPM is the retained historical practice setting; numeric tempo is not printed in the selected C engraving. The 0.8 default is only a suggestion (96 BPM), not the actual selected or remembered runtime multiplier. Other F editions printing 120 do not establish this edition's tempo.",
+        "transpositionSemitones": 0,
+        "octaveFolding": false,
+        "sourceBeatOrigin": 36,
+        "beatOriginMeaning": "Local beat 0 is the downbeat of editorial source measure 10, after nine 4/4 bars; the source itself prints no measure numbers.",
+        "reviewedMeasures": [
+          10,
+          25
+        ],
+        "reviewedBeatRanges": [
+          [
+            0,
+            63
+          ]
+        ],
+        "selectedAttackCount": 68,
+        "unchangedMelody": {
+          "attackCount": 68,
+          "changedPitchCount": 0,
+          "changedOnsetCount": 0,
+          "changedDurationCount": 0,
+          "status": "all-pitch-onset-duration-tuples-unchanged"
+        },
+        "sourceForm": {
+          "selectedCompleteMeasureCount": 15,
+          "selectedTerminalMeasureBeats": 3,
+          "selectedMeasureSpan": 16,
+          "repeatSignsInSelectedVerse": false,
+          "writtenOutRecurringMaterial": true,
+          "omittedOutroHasRepeatSigns": true
+        },
+        "sourceTotalBeatsMeaning": "63 is the selected verse excerpt extent, ending exactly with its last held note. It is not the full-score extent, sixteen complete bars or an ending-rest claim; the following eighth rest and chorus pickup are both outside the selected excerpt.",
+        "ending": {
+          "localMeasure": 16,
+          "editorialSourceMeasure": 25,
+          "note": "C5",
+          "beat": 60,
+          "duration": 3,
+          "totalBeats": 63,
+          "finalRestBeats": 0
+        },
+        "excludedBoundaryEvents": [
+          {
+            "beat": 63,
+            "duration": 0.5,
+            "type": "written-eighth-rest",
+            "outsideSelectedScope": true
+          },
+          {
+            "beat": 63.5,
+            "duration": 0.5,
+            "type": "chorus-pickup",
+            "note": "C5",
+            "outsideSelectedScope": true
+          }
+        ],
+        "selectedMelodyRests": [
+          {
+            "beat": 0,
+            "duration": 0.75
+          },
+          {
+            "beat": 8,
+            "duration": 0.75
+          },
+          {
+            "beat": 16,
+            "duration": 0.75
+          },
+          {
+            "beat": 24,
+            "duration": 0.75
+          },
+          {
+            "beat": 32,
+            "duration": 0.75
+          },
+          {
+            "beat": 40,
+            "duration": 0.75
+          },
+          {
+            "beat": 48,
+            "duration": 0.75
+          },
+          {
+            "beat": 56,
+            "duration": 0.75
+          }
+        ],
+        "notationDecision": "Both staff and numbered lines were inspected for all selected attacks. Preserve dotted-eighth/sixteenth values, eight dotted-eighth rests, long holds and every separately written repeated attack; no same-pitch ties occur in the selected verse. E4 at 27.75 and 28 are separate attacks. No repeat expansion or phantom attack is added.",
+        "pitchFit": {
+          "selectedSourcePitchClasses": [
+            0,
+            2,
+            4,
+            5,
+            7,
+            9,
+            11
+          ],
+          "selectedRange": [
+            "E4",
+            "E5"
+          ],
+          "omittedEssentialPitch": "F#",
+          "combinedPitchClassCount": 8,
+          "fullSongNaturalNoteFit": false,
+          "scopeLimit": "The selected verse uses seven natural pitch classes; the omitted chorus adds essential #4. Eight distinct classes cannot fit seven natural classes under any interval-preserving global transposition. This is a vocabulary constraint, not a full-chorus transcription or full-song approval."
+        },
+        "chordSymbolDecision": "Printed chord symbols are source features only. Their voicings and timing are not transcribed or approved; physical practice remains one main-melody note at a time.",
+        "alternateEditionReview": [
+          {
+            "url": "https://www.jianpujia.com/jianpu/7208.html",
+            "status": "different-f-major-vocal-edition",
+            "decision": "Straight eighths and differing phrase pitches remain an edition conflict; do not merge with this C engraving's dotted rhythm."
+          },
+          {
+            "url": "https://www.everyonepiano.cn/Number-531.html",
+            "status": "different-f-major-piano-edition",
+            "decision": "The public numbered previews use straight eighths and alternate endings; their additional final-verse lead-in attack is not an error in the selected C engraving."
+          },
+          {
+            "url": "https://www.guitarworld.com.cn/pu/q129513",
+            "status": "public-preview-not-recovered",
+            "decision": "The ordinary page identifies a paid full score; its explicitly public preview returned 502. No musical conclusion uses it and no paid continuation was accessed."
+          }
+        ],
+        "accompanimentReview": {
+          "status": "no-existing-v2-sibling",
+          "addedSupport": false,
+          "physicalTarget": "single-melody"
+        },
+        "sourcePixels": "all-68-selected-attacks-and-boundary-reviewed",
+        "independentPixelReview": "all-68-tuples-and-eight-rests-agree",
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "historicalBrowserClaim": "The previous suitability note claims browser sound/timing checks; it is retained only in historicalReviewNotes and was not rerun as part of this source review.",
+        "limitations": "Source-pixel agreement and executable fixtures do not establish reference-listening, browser-audio or physical-kalimba acceptance. Full-song transcription, harmony approval, original-book attribution and public-distribution rights remain unapproved."
+      }
     }
   }
 }

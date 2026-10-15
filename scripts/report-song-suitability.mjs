@@ -1,6 +1,8 @@
 import { pathToFileURL } from "node:url";
 import { DISPLAY_KEYS, readSongFiles } from "./build-song-library.mjs";
 
+import { inspectSourceExtent } from "./inspect-source-extent.mjs";
+
 const pitches = new Map(DISPLAY_KEYS.map((key) => [key.name, Math.round(69 + 12 * Math.log2(key.freq / 440))]));
 const decisions = new Set(["recommended", "conditional", "needs-review", "not-recommended"]);
 const EPSILON = 1e-8;
@@ -58,7 +60,8 @@ export function inspectSuitability(song) {
     longNotes: melody.filter(([, , duration]) => duration >= 2).length,
     maxLeapSemitones: maxLeap,
     fastestOnsetSecondsAtScoreTempo: Number.isFinite(minOnsetGap) && song.bpm > 0 ? minOnsetGap * 60 / song.bpm : null,
-    signals
+    signals,
+    ...inspectSourceExtent(song, end)
   };
 }
 
@@ -66,13 +69,20 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const reports = (await readSongFiles()).map(({ song }) => inspectSuitability(song));
   if (process.argv.includes("--json")) console.log(JSON.stringify(reports, null, 2));
   else {
-    console.log("Read-only suitability review. Long notes are informational, not a rejection criterion.");
+    console.log("Read-only suitability review. Gaps describe melody timestamps, not all-layer silence or PCM tails. Long notes are informational.");
     console.table(reports.map((report) => ({
       id: report.id, review: report.recordedDecision, range: report.range,
-      longNotes: report.longNotes, gaps: report.gaps.length, signals: report.signals.length
+      longNotes: report.longNotes, "initialInternalGaps>=1b": report.gaps.length, signals: report.signals.length
     })));
-    for (const report of reports.filter((item) => item.signals.length)) {
-      console.log(`${report.id}: ${[report.reason, ...report.signals].filter(Boolean).join(" | ")}`);
+    console.log("Written timeline: endpoints and ending-gap duration are in score beats. A fallback extent is encoded data, not a reviewed source ending.");
+    console.table(reports.map((report) => ({
+      id: report.id, melodyEndBeat: report.melodyEndBeat, selectedExtentBeats: report.selectedSourceExtentBeats,
+      extentBasis: { "declared-source-total": "declared", "encoded-main-event-fallback": "fallback", unresolved: "unresolved" }[report.sourceExtentSelection],
+      endingMelodyGapBeats: report.endingMelodyGap?.duration ?? null, extentIssues: report.sourceExtentIssues.length
+    })));
+    console.log("initialInternalGaps>=1b counts legacy initial/internal melody gaps >= 1 beat ONLY; endings are excluded. endingMelodyGapBeats is the inferred ending duration in beats (null = absent or unresolved). See --json for extent status, independent backing endpoints and fractional gaps.");
+    for (const report of reports.filter((item) => item.signals.length || item.sourceExtentIssues.length)) {
+      console.log(`${report.id}: ${[report.reason, ...report.signals, ...report.sourceExtentIssues.map(issue => `Extent review: ${issue.code}`)].filter(Boolean).join(" | ")}`);
     }
   }
 }

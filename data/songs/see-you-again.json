@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "see-you-again",
-  "title": "《See You Again》",
+  "title": "《See You Again》12小节预览",
   "uploader": "system",
-  "practiceTitle": "《See You Again》练习轨道",
-  "scoreTitle": "《See You Again》简谱进度",
-  "hint": "主旋律练习版；按 1=C、4/4 钢琴简谱预览整理，保留最具辨识度的引子与主题 hook。",
+  "practiceTitle": "《See You Again》12小节预览单音练习",
+  "scoreTitle": "《See You Again》所选五线谱预览进度",
+  "hint": "所选 GuitarWorld 12小节五线谱预览上声部，86个单音、48拍，非全曲；按印刷 C调、4/4、80 BPM 原音高录入，不移调；12组同音延音合为持续音，另起同音保留。48拍是预览截点，不是全曲终止；C5–E6高音快句宜慢练，旧伴奏暂不使用，录音对听与实体琴检查待完成。",
   "difficulty": "medium",
   "bpm": 80,
   "defaultSpeedFactor": 0.88,
@@ -18,52 +18,47 @@
       0.5
     ],
     [
-      "D5",
+      "D6",
       0.5,
       0.5
     ],
     [
-      "C5",
+      "C6",
       1,
       0.5
     ],
     [
       "G5",
       1.5,
-      0.5
+      1
     ],
     [
-      "G5",
-      2,
-      0.5
-    ],
-    [
-      "C5",
+      "C6",
       2.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       2.75,
       0.25
     ],
     [
-      "E5",
+      "E6",
       3,
       0.25
     ],
     [
-      "D5",
+      "D6",
       3.25,
       0.25
     ],
     [
-      "C5",
+      "C6",
       3.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       3.75,
       0.25
     ],
@@ -73,52 +68,47 @@
       0.5
     ],
     [
-      "D5",
+      "D6",
       4.5,
       0.5
     ],
     [
-      "C5",
+      "C6",
       5,
       0.5
     ],
     [
       "G5",
       5.5,
-      0.5
+      1
     ],
     [
-      "G5",
-      6,
-      0.5
-    ],
-    [
-      "C5",
+      "C6",
       6.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       6.75,
       0.25
     ],
     [
-      "E5",
+      "E6",
       7,
       0.25
     ],
     [
-      "D5",
+      "D6",
       7.25,
       0.25
     ],
     [
-      "C5",
+      "C6",
       7.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       7.75,
       0.25
     ],
@@ -128,52 +118,47 @@
       0.5
     ],
     [
-      "D5",
+      "D6",
       8.5,
       0.5
     ],
     [
-      "C5",
+      "C6",
       9,
       0.5
     ],
     [
       "G5",
       9.5,
-      0.5
+      1
     ],
     [
-      "G5",
-      10,
-      0.5
-    ],
-    [
-      "C5",
+      "C6",
       10.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       10.75,
       0.25
     ],
     [
-      "E5",
+      "E6",
       11,
       0.25
     ],
     [
-      "D5",
+      "D6",
       11.25,
       0.25
     ],
     [
-      "C5",
+      "C6",
       11.5,
       0.25
     ],
     [
-      "D5",
+      "D6",
       11.75,
       0.25
     ],
@@ -183,24 +168,19 @@
       0.5
     ],
     [
-      "D5",
+      "D6",
       12.5,
       0.5
     ],
     [
-      "C5",
+      "C6",
       13,
       0.5
     ],
     [
       "G5",
       13.5,
-      0.75
-    ],
-    [
-      "G5",
-      14.25,
-      0.25
+      1
     ],
     [
       "C5",
@@ -220,32 +200,22 @@
     [
       "A5",
       16,
-      1
-    ],
-    [
-      "G5",
-      17,
-      0.5
+      1.5
     ],
     [
       "G5",
       17.5,
-      0.5
-    ],
-    [
-      "A5",
-      18,
       1
     ],
     [
       "A5",
-      19,
-      0.5
+      18.5,
+      1.25
     ],
     [
       "C5",
-      19.5,
-      0.5
+      19.75,
+      0.25
     ],
     [
       "D5",
@@ -265,12 +235,7 @@
     [
       "E5",
       21.5,
-      0.5
-    ],
-    [
-      "E5",
-      22,
-      1.5
+      2
     ],
     [
       "E5",
@@ -340,57 +305,42 @@
     [
       "C5",
       29.5,
-      0.5
+      1.75
     ],
     [
       "C5",
-      30,
-      0.5
-    ],
-    [
-      "C5",
-      30.5,
-      0.5
+      31.25,
+      0.25
     ],
     [
       "E5",
-      31,
-      0.5
+      31.5,
+      0.25
     ],
     [
       "G5",
-      31.5,
-      0.5
+      31.75,
+      0.25
     ],
     [
       "A5",
       32,
-      1
-    ],
-    [
-      "G5",
-      33,
-      0.5
+      1.5
     ],
     [
       "G5",
       33.5,
-      0.5
-    ],
-    [
-      "A5",
-      34,
       1
     ],
     [
       "A5",
-      35,
-      0.5
+      34.5,
+      1.25
     ],
     [
       "C5",
-      35.5,
-      0.5
+      35.75,
+      0.25
     ],
     [
       "D5",
@@ -410,22 +360,17 @@
     [
       "E5",
       37.5,
-      0.5
-    ],
-    [
-      "E5",
-      38,
       1.5
     ],
     [
       "E5",
-      39.5,
-      0.25
+      39,
+      0.5
     ],
     [
       "G5",
-      39.75,
-      0.25
+      39.5,
+      0.5
     ],
     [
       "A5",
@@ -433,106 +378,293 @@
       0.5
     ],
     [
-      "B5",
+      "C6",
       40.5,
       0.5
     ],
     [
-      "A5",
+      "D6",
       41,
       0.5
     ],
     [
-      "G5",
+      "E6",
       41.5,
       0.5
     ],
     [
-      "E5",
+      "D6",
       42,
       0.5
     ],
     [
-      "D5",
+      "C6",
       42.5,
       0.5
     ],
     [
-      "D5",
+      "A5",
       43,
       0.5
     ],
     [
-      "C5",
+      "C6",
       43.5,
       0.5
     ],
     [
-      "D5",
+      "D6",
       44,
       0.5
     ],
     [
-      "D5",
+      "D6",
       44.5,
       0.5
     ],
     [
-      "E5",
+      "C6",
       45,
       0.5
     ],
     [
-      "C5",
+      "C6",
       45.5,
-      0.5
+      1.5
     ],
     [
-      "C5",
-      46,
-      0.5
-    ],
-    [
-      "C5",
-      46.5,
-      0.5
-    ],
-    [
-      "E5",
+      "A5",
       47,
       0.5
     ],
     [
-      "G5",
+      "C6",
       47.5,
       0.5
     ]
   ],
   "sourceFeatures": {
     "hasChords": true,
-    "hasArpeggio": true,
-    "hasRepeats": true,
-    "sourceImages": [
-      "private/sheets/raw/see-you-again/guitarworld-jianpu-preview.png",
-      "private/sheets/raw/see-you-again/guitarworld-staff-preview.png"
+    "hasArpeggio": false,
+    "hasRepeats": false,
+    "transcriptionScope": "selected-guitarworld-12-measure-treble-preview",
+    "sourceTotalBeats": 48,
+    "sourceMeasureCount": 12,
+    "sources": [
+      {
+        "label": "吉他世界 q79160／乐星人 C调钢琴编配所选公开五线谱预览",
+        "url": "https://www.guitarworld.com.cn/pu/q79160"
+      },
+      {
+        "label": "实际检查的五线谱预览图",
+        "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png"
+      }
     ],
     "unsupported": [
-      "吉他世界页面只公开预览页；本版本录入可核对的钢琴引子/主题 hook，不声明为全曲完整版。",
-      "和声按预览低音区与常见 C 大调/Am-F-C-G 走向稀疏化，避免自动伴奏压过主旋律。"
+      "仅采纳所选公开预览的12小节上声部单旋律；48拍是截点，不证明歌曲在此终止，不添加缺失后续。",
+      "钢琴低音声部、旧 Am-F-C-G 式和声及自动伴奏未在此次获得核准；当前 V1 不使用已保留的旧 V2 伴奏。",
+      "同出版者简谱预览未成功取得像素；其他编配的差异不能用于拼补所选版本。"
     ],
     "unsureMeasures": [],
-    "sourceReview": {
-      "confidence": "medium-high-for-intro-hook-medium-for-full-song-form",
-      "sources": [
-        {
-          "label": "吉他世界 See You Again 钢琴谱预览",
-          "url": "https://www.guitarworld.com.cn/pu/q79160"
-        },
-        {
-          "label": "吉他世界简谱预览图",
-          "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png"
-        }
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-guitarworld-12-measure-treble-preview",
+      "reason": "所选上声部在 C5–E6 自然音范围内，无需移调或局部折叠；高音十六分音符、跳进与拨弦衰减仍需慢速及实体检查。",
+      "reviewRequired": [
+        "参考录音对听未执行。",
+        "浏览器实际音频与速度选择检查未执行。",
+        "实体卡林巴高音、手序、快句与真实衰减检查未执行。",
+        "公开可读不等于已取得公开传播权。"
       ]
+    },
+    "sourceReview": {
+      "originalV1": {
+        "fileSha256": "be4ac589564559cb43e4985257471902f4bf611b08d3652e7c56900383dd50bb",
+        "stepsSha256": "0cea38494d9bce08649e825c8fb7def2a7a19e7e90025a0b70973a3a224497ba",
+        "attackCount": 99,
+        "melodyEndBeat": 48,
+        "restoration": "scripts/fixtures/see-you-preview-source.json history.originalV1 preserves the full original file byte-for-byte through JSON.stringify(value, null, 2) plus a final newline; its dedicated regression verifies the hash."
+      },
+      "historicalReviewNotes": {
+        "hasChords": true,
+        "hasArpeggio": true,
+        "hasRepeats": true,
+        "sourceImages": [
+          "private/sheets/raw/see-you-again/guitarworld-jianpu-preview.png",
+          "private/sheets/raw/see-you-again/guitarworld-staff-preview.png"
+        ],
+        "unsupported": [
+          "吉他世界页面只公开预览页；本版本录入可核对的钢琴引子/主题 hook，不声明为全曲完整版。",
+          "和声按预览低音区与常见 C 大调/Am-F-C-G 走向稀疏化，避免自动伴奏压过主旋律。"
+        ],
+        "unsureMeasures": [],
+        "sourceReview": {
+          "confidence": "medium-high-for-intro-hook-medium-for-full-song-form",
+          "sources": [
+            {
+              "label": "吉他世界 See You Again 钢琴谱预览",
+              "url": "https://www.guitarworld.com.cn/pu/q79160"
+            },
+            {
+              "label": "吉他世界简谱预览图",
+              "url": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png"
+            }
+          ]
+        }
+      },
+      "currentScopeReview": {
+        "status": "reviewed-selected-guitarworld-preview",
+        "reviewedOn": "2026-10-12",
+        "reviewedBeatRanges": [
+          [
+            0,
+            48
+          ]
+        ],
+        "sourceEditions": [
+          {
+            "publisher": "GuitarWorld",
+            "arranger": "乐星人",
+            "url": "https://www.guitarworld.com.cn/pu/q79160",
+            "staffImage": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/a375c1e50d521d2eb4d7af2c23224cfd.png",
+            "staffImageSha256": "8ba82cb8c119bb739bc44a3e433fd8804aa8dc6eb2752c13f42671aa8ec198c7",
+            "staffImageSize": [
+              1200,
+              831
+            ],
+            "inspectedMeasures": [
+              1,
+              12
+            ],
+            "sourceKey": "C",
+            "sourceMeter": "4/4",
+            "sourceTempo": 80,
+            "sourceTempoBeatUnit": "quarter",
+            "sourceBeatOrigin": 0,
+            "mapping": "The visible upper treble staff is monophonic and separately bracketed from bass-staff dyads; no highest-note or first-array-note selection is used.",
+            "numberedImage": "https://s2.guitarworld.com.cn/upload/pu_qupupic/545417/view/7101e52aa412140dd4b27f6dfad4c20f.png",
+            "numberedPixelsInspected": false,
+            "accessLimit": "The staff asset succeeded after one ordinary retry; the numbered asset returned HTTP 502/connection refused and was not inspected. No restriction was bypassed and no paid continuation was requested.",
+            "independence": "The publisher staff and numbered formats are one edition, not independent sources. Independent reviewers of the same pixels do not create an independent source."
+          }
+        ],
+        "selectedMelody": {
+          "attackCount": 86,
+          "tupleSha256": "0bcaf2d5daed29e3c2d8420436910a5faa27306d4f13211a4a91d0ec554aa4ad",
+          "physicalTarget": "single-melody",
+          "voice": "explicit-monophonic-upper-treble-staff",
+          "melodyRestWindows": []
+        },
+        "notationDecision": "Twelve explicit same-pitch tie chains contain thirteen continuation endpoints; each chain sounds once. Independent same-pitch attacks, especially E5@23.5, C5@31.25, E5@39, D6@44 and D6@44.5, remain separate. All twelve visible bars are read independently; m10–12 are not copied from m6–8.",
+        "tieChainCount": 12,
+        "tieContinuationCount": 13,
+        "unchangedMelody": {
+          "untouchedAttackCount": 27,
+          "untouchedTuplesSha256": "888023d0e39958a183b45c0d485f5874b1daf3dcd33a0b5c4bf25f7a192ed807",
+          "completeUnchangedMeasures": [
+            7
+          ],
+          "measure7TuplesSha256": "feedbea66a3ca1ace3ae34b40b3315f498ece6eeaa549ca822043c89c33ef0e5"
+        },
+        "sourceForm": {
+          "printedMeasureCount": 12,
+          "selectedMeasureCount": 12,
+          "beatsPerMeasure": 4,
+          "pickupBeats": 0,
+          "repeatExpansion": false,
+          "endingKind": "preview-excerpt-boundary",
+          "fullSongEndingEstablished": false,
+          "scope": "Entire visible selected 12-bar treble preview [0,48), not a complete song or reconstructed paid continuation."
+        },
+        "ending": {
+          "note": "C6",
+          "beat": 47.5,
+          "duration": 0.5,
+          "totalBeats": 48,
+          "finalRestBeats": 0,
+          "kind": "preview-excerpt-boundary"
+        },
+        "sourceTotalBeatsMeaning": "48 is the selected preview cut after twelve 4/4 bars, not a proven full-song ending. No final rest or sustain beyond 48 is asserted.",
+        "transposition": {
+          "sourceKey": "C",
+          "compiledKey": "C",
+          "semitoneShift": 0,
+          "sourceRange": [
+            "C5",
+            "E6"
+          ],
+          "compiledRange": [
+            "C5",
+            "E6"
+          ],
+          "sourcePitchClasses": [
+            0,
+            2,
+            4,
+            7,
+            9,
+            11
+          ],
+          "octaveFolding": false,
+          "accidentalNaturalization": false,
+          "decision": "Literal source register; the legacy opening mixed D5/C5/E5 with unchanged G5 and was not a global transposition."
+        },
+        "retainedPracticeTempo": "80 BPM agrees with printed quarter=80. The unchanged 0.88 default suggests 70.4 BPM, not the actual selected/remembered runtime speed.",
+        "comparisonEdition": {
+          "publisher": "EveryonePiano",
+          "arranger": "Cody Walton",
+          "numberPage": "https://www.everyonepiano.cn/Number-15813-1.html",
+          "staffPage": "https://www.everyonepiano.cn/Stave-15813-1.html",
+          "sourceKey": "Bb",
+          "quarterBpm": 80,
+          "comparisonSemitoneShift": 2,
+          "inspectedMeasures": [
+            1,
+            12
+          ],
+          "status": "comparison-only-not-adopted",
+          "agreementMeasures": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            11,
+            12
+          ],
+          "conflictingMeasures": [
+            5,
+            8,
+            9,
+            10
+          ],
+          "decision": "After +2 semitones, opening register and m11–12 agree, but m5/9, m8 and m10 have real rhythm/pitch differences. In particular its m8 quarter-beat rest is not imported over the selected GuitarWorld tie through 31.25.",
+          "independence": "Separate publisher and arranger credit; independent underlying ancestry is not established. Its two notation formats are one edition."
+        },
+        "evidenceFingerprints": {
+          "preEditSourceFixtureSha256": "5b10ccd20451c135ab1343abf4222398374c1c1ce95c4c96944a3230b3792989",
+          "tieEndpointsSha256": "801abc0cce0d7884316e03da39c2bb93dad3bfac4043fda56008c45cad895583",
+          "preEditComparisonSha256": "b0da7f062ae2bcf6fba5484d961c26c4e694976da4d6b96ed675e2480f9653d0"
+        },
+        "accompanimentReview": {
+          "status": "legacy-sibling-preserved-incompatible",
+          "siblingId": "see-you-again-chord",
+          "siblingFileSha256": "f22f7a54d6ee3d9caa20dc21925470337bd43cf3d134e4e912b261ddcabe76fb",
+          "contentCompatible": false,
+          "sourceHarmonyApproved": false,
+          "addedSupport": false,
+          "physicalTarget": "single-melody",
+          "decision": "The complete V2 bytes, 99 explicit melody attacks and 12 automatic backing events are frozen. Existing content compatibility rejects borrowing its old backing for the revised 86-attack V1."
+        },
+        "selectedMelodyNotationReviewed": true,
+        "fullOriginalSongApproved": false,
+        "exactRecordingApproved": false,
+        "referenceListening": "not-performed",
+        "browserAudio": "not-performed",
+        "physicalKalimba": "not-performed",
+        "limitations": "This accepts only the selected source preview melody, not the full song, an exact recording, source harmony, or physical ease. Reference listening, browser audio and physical kalimba remain separate checks. Public access does not establish public-distribution rights; raw source images and private review artifacts stay outside the repository."
+      }
     }
   }
 }
