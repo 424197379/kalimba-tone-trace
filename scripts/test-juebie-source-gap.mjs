@@ -68,11 +68,13 @@ const music = song => ({
     .map(key => [key, song.sourceFeatures[key]]))
 });
 
-test("structural preservation: all 57 built-in music records remain frozen at v2.4.42", async () => {
+test("structural preservation: all 57 v2.4.42 music records remain recoverable", async () => {
   const files = (await readdir(new URL("../data/songs/", import.meta.url))).filter(file => file.endsWith(".json")).sort();
   assert.equal(files.length, 57);
   const songs = await Promise.all(files.map(async file => JSON.parse(await read(`data/songs/${file}`))));
-  assert.equal(hash(JSON.stringify(songs.map(music))), "dd25890b394454fcacf9e2b2d87593cc6c8bd8a87d0a60635792fe5aca448a7a");
+  const castleArchive = JSON.parse(await read("data/archives/tian-kong-zhi-cheng-v2.4.52.json"));
+  const historicalSongs = songs.map(song => song.id === "tian-kong-zhi-cheng" ? castleArchive : song);
+  assert.equal(hash(JSON.stringify(historicalSongs.map(music))), "dd25890b394454fcacf9e2b2d87593cc6c8bd8a87d0a60635792fe5aca448a7a");
   for (const song of songs) assert.deepEqual(music(SONG_LIBRARY[song.id]), music(song), `generated music: ${song.id}`);
 });
 

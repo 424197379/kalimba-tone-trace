@@ -1,6 +1,6 @@
 import { NOTE_INDEX, SONG_LIBRARY } from "./songs.js";
 
-export const APP_VERSION = "2.4.52";
+export const APP_VERSION = "2.4.53";
 export const CURRENT_SONG_STORAGE_KEY = "kalimba-current-song";
 export const CUSTOM_SONGS_STORAGE_KEY = "kalimba-custom-songs-v1";
 export const DIFFICULTY_LEVELS = ["easy", "medium", "hard"];
@@ -303,6 +303,9 @@ export function getSongReviewNotice(song) {
     return "谱面待复核：第44–49小节三连音已简化为0.25拍；原谱第42小节起为4/4。";
   }
   const scopeReview = song.sourceFeatures?.sourceReview?.currentScopeReview;
+  if (baseSongId === "tian-kong-zhi-cheng" && scopeReview?.status === "reviewed-selected-mv-excerpt") {
+    return "MV短版：保留开头主题与后半段收尾，88 BPM、1倍速约1分22秒；跳过含升音的乐句，有两处剪接，21音C调无需调音。剪接听感与实体演奏待确认。";
+  }
   if (baseSongId === "jue-bie-shu" && scopeReview?.status === "unresolved-full-script-melody-role") {
     return "待核版：保留现有334个单音；历史跨谱复核仅覆盖开头主题，15键脚本未单列旋律声部，全程单音取舍仍待核。完整脚本不等于完整旋律已核准。";
   }

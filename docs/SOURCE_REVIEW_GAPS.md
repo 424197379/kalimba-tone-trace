@@ -192,8 +192,11 @@ reference-listening, real-instrument and publication-rights limits.
   and pending; see `YUN_YAN_TAIL_2.4.2.md` and the song's current scope review.
 - 《喀秋莎》: current 73-note mapping remains unresolved; see
   `KATYUSHA_SOURCE_GAP_2.4.8.md`.
-- 《天空之城》: existing naturalized accidentals are disclosed as an altered
-  version, not a faithful fixed-C rendering; see `SKY_CASTLE_FIT_2.4.1.md`.
+- 《天空之城》: the former naturalized edition is byte-preserved in the
+  v2.4.52 archive. The selected MV excerpt skips altered-note phrases and
+  retains 88 BPM; its two editorial joins still need listening and physical
+  review. See `SONG_QUALITY_REVIEW_2.4.53.md`. The full-theme pitch limitation
+  documented in `SKY_CASTLE_FIT_2.4.1.md` still applies.
 - 《星际穿越主题曲》: only the adopted tail is rechecked; earlier voice/register
   limitations remain in its scope review. The source-backed 3/4 → 4/4 card
   label is corrected in2.4.27 without changing note timing or extending approval.

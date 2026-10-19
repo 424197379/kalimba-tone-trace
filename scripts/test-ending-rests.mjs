@@ -8,6 +8,7 @@ const EPSILON = 1e-9;
 const near = (actual, expected, message) => assert.ok(Math.abs(actual - expected) < EPSILON,
   `${message}: ${actual} != ${expected}`);
 const sourceBounds = {
+  "tian-kong-zhi-cheng": [120, 120],
   "song-bie": [94, 96],
   "da-yu": [128, 128],
   "ling-er-xiang-ding-dang": [64, 64],
@@ -52,9 +53,9 @@ function deepFreeze(value) {
   return value;
 }
 
-test("all 29 source-notated V1 bounds remain covered and cannot truncate notes", () => {
+test("all 30 source-notated V1 bounds remain covered and cannot truncate notes", () => {
   const sources = rawSongs.filter((song) => song.schemaVersion === 1 && Object.hasOwn(song.sourceFeatures || {}, "sourceTotalBeats"));
-  assert.equal(sources.length, 29);
+  assert.equal(sources.length, 30);
   assert.deepEqual(sources.map(({ id }) => id).sort(), Object.keys(sourceBounds).sort());
   for (const song of sources) {
     assert.equal(song.schemaVersion, 1, song.id);

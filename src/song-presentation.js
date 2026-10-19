@@ -22,7 +22,7 @@ const BUILTIN_DISPLAY_TITLES = new Map([
   ["see-you-again-reviewed-support", ["《See You Again》12小节预览", "《See You Again》"]],
   ["sheng-sheng-man", ["《声声慢》（戏腔简谱版）", "《声声慢》"]],
   ["song-bie", ["《送别》（教学版）", "《送别》"]],
-  ["tian-kong-zhi-cheng", ["《天空之城》（改音版）", "《天空之城》"]],
+  ["tian-kong-zhi-cheng", ["《天空之城》（MV短版）", "《天空之城》"]],
   ["tong-nian", ["《童年》（教材人声版）", "《童年》"]],
   ["xuan-cao-hua", ["《萱草花》（声乐版）", "《萱草花》"]],
   ["xuan-cao-hua-reviewed-support", ["《萱草花》（声乐版）", "《萱草花》"]]

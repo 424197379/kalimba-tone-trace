@@ -122,8 +122,10 @@ test("all 56 prior 2.4.31 song JSON payloads stay byte-exact, including historic
   const hongyanArchive=await read("data/archives/hong-yan-v2.4.36.json");
   const childhoodArchive=await read("data/archives/tong-nian-v2.4.37.json");
   const shengArchive=await read("data/archives/sheng-sheng-man-v2.4.40.json");
+  const castleArchive=await read("data/archives/tian-kong-zhi-cheng-v2.4.52.json");
   // Recover only the new disclosure metadata; keep the original whole-file hashes.
   const priorRaw = (fileName, raw) => {
+    if (fileName === "tian-kong-zhi-cheng.json") return castleArchive;
     if (fileName !== "jue-bie-shu.json") return raw;
     const historical = JSON.parse(raw);
     delete historical.sourceFeatures.sourceReview.currentScopeReview;

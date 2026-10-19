@@ -56877,15 +56877,246 @@ export const SONG_LIBRARY = {
   "tian-kong-zhi-cheng": {
       "schemaVersion": 1,
       "id": "tian-kong-zhi-cheng",
-      "title": "《天空之城》（改音版）",
+      "title": "《天空之城》（MV短版）",
       "uploader": "system",
-      "practiceTitle": "《天空之城》改音练习轨道",
-      "scoreTitle": "《天空之城》简谱进度",
-      "hint": "固定21键C调改音版：原主题的升4、升5已自然化，此版不是保真单音谱；原2019编配与第15小节连线仍待复核。",
       "difficulty": "medium",
-      "bpm": 72,
-      "defaultSpeedFactor": 0.95,
+      "bpm": 88,
+      "defaultSpeedFactor": 1,
       "beatsPerMeasure": 4,
+      "key": "C",
+      "hint": "MV短版：保留开头主题、回应乐句和后半段收尾，按原谱88 BPM，默认1倍速约1分22秒。21音C调无需调音；跳过含升音的乐句，非全曲。",
+      "sourceFeatures": {
+        "hasChords": false,
+        "hasArpeggio": false,
+        "hasRepeats": false,
+        "transcriptionScope": "mv-opening-and-later-theme-excerpt",
+        "sourceMeasureCount": 33,
+        "outputMeasureCount": 30,
+        "sourceTotalBeats": 120,
+        "sourceTempo": 88,
+        "arrangementTempo": 88,
+        "sourceSegments": [
+          {
+            "sourceStartBeat": 0,
+            "sourceEndBeat": 27,
+            "targetStartBeat": 0
+          },
+          {
+            "sourceStartBeat": 35,
+            "sourceEndBeat": 60,
+            "targetStartBeat": 27
+          },
+          {
+            "sourceStartBeat": 64,
+            "sourceEndBeat": 132,
+            "targetStartBeat": 52
+          }
+        ],
+        "excludedAlteredMeasures": [
+          8,
+          16
+        ],
+        "transpositionSemitones": 0,
+        "unsupported": [
+          "Keep source beats [0,27), [35,60), [64,132): opening, varied response and later theme with the printed cadence. The two joins are editorial cuts, not a continuous original section.",
+          "The source simplifies altered tones in measures 8 and 16; both measures are excluded rather than replacing accidentals with natural notes.",
+          "V1 omits the lower accompaniment voice and the extra upper-voice B4 at source measure 19.",
+          "The printed 88 BPM is retained. Default 1.0x is 81.818 seconds including the three-beat pickup lead-in; length follows the selected phrases rather than tempo stretching."
+        ],
+        "unsureMeasures": [],
+        "sources": [
+          {
+            "label": "用户提供：比三呆弹吉他《天空之城》伴随着你，2018-08-28，两页简谱",
+            "url": "https://mp.weixin.qq.com/s/Sf9pW8EZ9ezs92oSP4w5-A"
+          },
+          {
+            "label": "Kalimba Class / Patricia Reichel：独立旋律音高参照，非节奏覆盖",
+            "url": "https://www.kalimbaclass.com/tutoriales-para-kalimba/castle-in-the-sky-kimi-wo-nosete-carrying-you-laputa-joe-hisaishi"
+          },
+          {
+            "label": "音伴 C 调版：开头、后半主题与高音乐句参照",
+            "url": "https://www.yinban.com/tab/finger/2299.html"
+          }
+        ],
+        "suitability": {
+          "status": "conditional",
+          "scope": "mv-opening-and-later-theme-excerpt",
+          "reason": "The selected upper melody uses only natural notes D4–A5; the source final A4 resolves the excerpt. Printed rests and dotted rhythms are retained. Source intervals were compared with independent kalimba/guitar notation; no original-recording listening is claimed.",
+          "reviewRequired": [
+            "Human listening to the editorial join and a physical 21-key play-through remain pending."
+          ]
+        },
+        "sourceReview": {
+          "confidence": "source-reviewed-selected-excerpt-listening-pending",
+          "archivedEdition": {
+            "file": "data/archives/tian-kong-zhi-cheng-v2.4.52.json",
+            "fileSha256": "87cec5397ef34eb01264939c1e15d3e2f2649ec28c678566a59968a9d783b1a6"
+          },
+          "historicalSourceFeatures": {
+            "hasChords": true,
+            "hasArpeggio": true,
+            "hasRepeats": false,
+            "unsupported": [
+              "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
+              "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
+              "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
+            ],
+            "unsureMeasures": [
+              "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
+            ],
+            "sourceReview": {
+              "confidence": "needs-review-naturalized-melody",
+              "previousConfidence": "high-for-melody-medium-for-harmony",
+              "originalDisplayTitle": "《天空之城》",
+              "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
+              "sources": [
+                {
+                  "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
+                  "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
+                },
+                {
+                  "label": "中国曲谱网源图",
+                  "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
+                }
+              ],
+              "focusedReview": {
+                "date": "2026-10-12",
+                "method": "Visual inspection of the independently published theme score; not a full revalidation of the chosen 2019 arrangement.",
+                "sources": [
+                  {
+                    "label": "山东教育出版社《音乐》四年级下册《天空之城》主题曲",
+                    "url": "https://v.sjs.com.cn/ebooks/931E845D.pdf",
+                    "printedPage": 55,
+                    "pdfPage": 58,
+                    "inspected": "rendered-score-pixels"
+                  }
+                ],
+                "identityMatch": "The single-line 1=C, 4/4 theme score matches the current opening, repeated opening and cadence; its ties and some rhythms differ from the current data.",
+                "explicitMelodyAccidentals": [
+                  {
+                    "sourcePitch": "F#4",
+                    "currentMeasure": 8,
+                    "currentStepIndex": 22,
+                    "currentBeat": 29.5,
+                    "currentPitch": "F4",
+                    "currentDuration": 0.5
+                  },
+                  {
+                    "sourcePitch": "G#4",
+                    "currentMeasure": 16,
+                    "currentStepIndex": 52,
+                    "currentBeat": 63,
+                    "currentPitch": "G4",
+                    "currentDuration": 1
+                  }
+                ],
+                "sameBarAccidentalScope": {
+                  "currentMeasure": 8,
+                  "currentStepIndex": 23,
+                  "currentBeat": 30,
+                  "currentPitch": "F4",
+                  "status": "needs-review-against-chosen-arrangement",
+                  "reason": "The next degree 4 in the same printed bar has no natural sign. Check accidental carry-through against the chosen 2019 arrangement; do not assume F-natural."
+                },
+                "measureNumbering": "Current app numbering includes the initial pickup/rest bar as measure 1; step indices are zero-based.",
+                "themePitchClasses": [
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "F#",
+                  "G",
+                  "G#",
+                  "A",
+                  "B"
+                ],
+                "fixedInstrumentPitchClasses": [
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "A",
+                  "B"
+                ],
+                "fittingSemitoneTranspositions": [],
+                "fitReason": "All 12 consistent semitone transpositions were checked. Nine distinct melody pitch classes cannot fit the fixed instrument's seven natural pitch classes; octave shifts cannot remove this constraint.",
+                "originalArrangementStatus": "The 2019 Qupu123 source page is readable, but its score image was unavailable: web fetches returned Cache miss/not accessible and ordinary direct public-image requests returned HTTP 502. The full 24-bar arrangement, accompaniment and measure 15 ties were not revalidated.",
+                "changeScope": "Display labels and review metadata only. All 79 melody tuples, timing, tempo and the historical chord source are unchanged."
+              }
+            },
+            "suitability": {
+              "status": "not-recommended",
+              "scope": "faithful-complete-theme-fixed21C",
+              "reason": "已目视核对的同曲主题主旋律含升4、升5，共9种音级，不能用一次整体移调保真适配固定21键C调自然音琴。现有自然化数据属于改音版，不作为原主题保真练习。",
+              "reviewRequired": [
+                "此结论针对完整主题的保真演奏，不排除经源谱核实的自然音选段。",
+                "原2019年24小节编配图片仍不可读；第8小节后续4的变音作用范围、第15小节连线及整段节奏仍待原谱核对。",
+                "独立教材用于核实主题半音与乐器限制，不代表已逐音复核当前编配或通过录音、实体琴验收。"
+              ]
+            }
+          },
+          "currentScopeReview": {
+            "status": "reviewed-selected-mv-excerpt",
+            "reviewedBeatRanges": [
+              [
+                0,
+                120
+              ]
+            ],
+            "sourceSegments": [
+              {
+                "sourceStartBeat": 0,
+                "sourceEndBeat": 27,
+                "targetStartBeat": 0
+              },
+              {
+                "sourceStartBeat": 35,
+                "sourceEndBeat": 60,
+                "targetStartBeat": 27
+              },
+              {
+                "sourceStartBeat": 64,
+                "sourceEndBeat": 132,
+                "targetStartBeat": 52
+              }
+            ],
+            "octaveConvention": "C-based unmarked degree 1 = C4; upper dot = octave 5",
+            "silentWindows": [
+              {
+                "beat": 0,
+                "duration": 3
+              },
+              {
+                "beat": 17,
+                "duration": 2
+              },
+              {
+                "beat": 25,
+                "duration": 2
+              }
+            ],
+            "editorialJoinBeats": [
+              27,
+              52
+            ],
+            "sourceQuarterBpm": 88,
+            "sourceTie": {
+              "sourceMeasure": 15,
+              "compiledNote": [
+                "C5",
+                49.5,
+                2.5
+              ]
+            },
+            "sourceEnding": "Source measure 33 A4, four beats; lower arpeggio omitted",
+            "originalRecordingListening": "not-performed",
+            "physicalKalimba": "not-performed"
+          }
+        }
+      },
+      "practiceTitle": "《天空之城》MV短版练习轨道",
+      "scoreTitle": "《天空之城》MV短版简谱进度",
       "steps": [
         [
           "A4",
@@ -56950,12 +57181,17 @@ export const SONG_LIBRARY = {
         [
           "G4",
           16,
-          3
+          1
+        ],
+        [
+          "D4",
+          19,
+          0.5
         ],
         [
           "E4",
-          19,
-          1
+          19.5,
+          0.5
         ],
         [
           "F4",
@@ -56980,35 +57216,35 @@ export const SONG_LIBRARY = {
         [
           "E4",
           24,
-          3
+          1
         ],
         [
-          "C5",
+          "A4",
           27,
           0.5
         ],
         [
-          "C5",
+          "B4",
           27.5,
           0.5
         ],
         [
-          "B4",
+          "C5",
           28,
           1.5
         ],
         [
-          "F4",
+          "B4",
           29.5,
           0.5
         ],
         [
-          "F4",
+          "C5",
           30,
           1
         ],
         [
-          "B4",
+          "E5",
           31,
           1
         ],
@@ -57018,59 +57254,59 @@ export const SONG_LIBRARY = {
           3
         ],
         [
-          "A4",
+          "E4",
           35,
-          0.5
+          1
         ],
         [
-          "B4",
-          35.5,
-          0.5
-        ],
-        [
-          "C5",
+          "A4",
           36,
           1.5
         ],
         [
-          "B4",
+          "G4",
           37.5,
           0.5
         ],
         [
-          "C5",
+          "A4",
           38,
           1
         ],
         [
-          "E5",
+          "C5",
           39,
           1
         ],
         [
-          "B4",
+          "G4",
           40,
           3
         ],
         [
-          "E4",
+          "D4",
           43,
-          1
-        ],
-        [
-          "A4",
-          44,
-          1.5
-        ],
-        [
-          "G4",
-          45.5,
           0.5
         ],
         [
-          "A4",
-          46,
+          "E4",
+          43.5,
+          0.5
+        ],
+        [
+          "F4",
+          44,
           1
+        ],
+        [
+          "C5",
+          45,
+          0.5
+        ],
+        [
+          "B4",
+          45.5,
+          1.5
         ],
         [
           "C5",
@@ -57078,122 +57314,122 @@ export const SONG_LIBRARY = {
           1
         ],
         [
-          "G4",
+          "D5",
           48,
-          3
-        ],
-        [
-          "E4",
-          51,
           1
         ],
         [
-          "F4",
-          52,
-          1
+          "E5",
+          49,
+          0.5
         ],
         [
           "C5",
-          53,
-          0.5
+          49.5,
+          2.5
         ],
         [
-          "B4",
-          53.5,
-          0.5
-        ],
-        [
-          "B4",
-          54,
-          1
+          "A4",
+          52,
+          3
         ],
         [
           "C5",
           55,
-          1
+          0.5
         ],
         [
           "D5",
+          55.5,
+          0.5
+        ],
+        [
+          "E5",
           56,
           1.5
         ],
         [
-          "E5",
+          "D5",
           57.5,
           0.5
         ],
         [
-          "C5",
+          "E5",
           58,
-          2
-        ],
-        [
-          "C5",
-          60,
-          0.5
-        ],
-        [
-          "B4",
-          60.5,
-          0.5
-        ],
-        [
-          "A4",
-          61,
-          1
-        ],
-        [
-          "B4",
-          62,
-          1
-        ],
-        [
-          "G4",
-          63,
-          1
-        ],
-        [
-          "A4",
-          64,
-          3
-        ],
-        [
-          "C5",
-          67,
-          0.5
-        ],
-        [
-          "D5",
-          67.5,
-          0.5
-        ],
-        [
-          "E5",
-          68,
-          1.5
-        ],
-        [
-          "D5",
-          69.5,
-          0.5
-        ],
-        [
-          "E5",
-          70,
           1
         ],
         [
           "G5",
-          71,
+          59,
           1
         ],
         [
           "D5",
-          72,
+          60,
           3
         ],
         [
           "G4",
+          63,
+          0.5
+        ],
+        [
+          "G4",
+          63.5,
+          0.5
+        ],
+        [
+          "C5",
+          64,
+          1.5
+        ],
+        [
+          "B4",
+          65.5,
+          0.5
+        ],
+        [
+          "C5",
+          66,
+          1
+        ],
+        [
+          "E5",
+          67,
+          1
+        ],
+        [
+          "E5",
+          68,
+          4
+        ],
+        [
+          "A4",
+          72,
+          0.5
+        ],
+        [
+          "B4",
+          72.5,
+          0.5
+        ],
+        [
+          "C5",
+          73,
+          1
+        ],
+        [
+          "B4",
+          74,
+          0.5
+        ],
+        [
+          "C5",
+          74.5,
+          0.5
+        ],
+        [
+          "D5",
           75,
           1
         ],
@@ -57203,191 +57439,176 @@ export const SONG_LIBRARY = {
           1.5
         ],
         [
-          "B4",
+          "G4",
           77.5,
           0.5
         ],
         [
-          "C5",
-          78,
-          1
-        ],
-        [
-          "E5",
-          79,
-          1
-        ],
-        [
-          "E5",
-          80,
-          4
-        ],
-        [
-          "A4",
-          84,
-          0.5
-        ],
-        [
-          "B4",
-          84.5,
-          0.5
-        ],
-        [
-          "C5",
-          85,
-          1
-        ],
-        [
-          "B4",
-          86,
-          0.5
-        ],
-        [
-          "C5",
-          86.5,
-          0.5
-        ],
-        [
-          "D5",
-          87,
-          1
-        ],
-        [
-          "C5",
-          88,
-          2
-        ],
-        [
           "G4",
-          90,
+          78,
           2
         ],
         [
           "F5",
-          92,
+          80,
           1
         ],
         [
           "E5",
-          93,
+          81,
           1
         ],
         [
           "D5",
-          94,
+          82,
           1
         ],
         [
           "C5",
-          95,
+          83,
           1
+        ],
+        [
+          "E5",
+          84,
+          3
+        ],
+        [
+          "E5",
+          87,
+          1
+        ],
+        [
+          "A5",
+          88,
+          1.5
+        ],
+        [
+          "A5",
+          89.5,
+          0.5
+        ],
+        [
+          "G5",
+          90,
+          1.5
+        ],
+        [
+          "G5",
+          91.5,
+          0.5
+        ],
+        [
+          "E5",
+          92,
+          0.5
+        ],
+        [
+          "D5",
+          92.5,
+          0.5
+        ],
+        [
+          "C5",
+          93,
+          3
+        ],
+        [
+          "D5",
+          96,
+          1
+        ],
+        [
+          "C5",
+          97,
+          0.5
+        ],
+        [
+          "D5",
+          97.5,
+          1.5
+        ],
+        [
+          "G5",
+          99,
+          1
+        ],
+        [
+          "E5",
+          100,
+          3
+        ],
+        [
+          "E5",
+          103,
+          1
+        ],
+        [
+          "A5",
+          104,
+          1.5
+        ],
+        [
+          "A5",
+          105.5,
+          0.5
+        ],
+        [
+          "G5",
+          106,
+          1.5
+        ],
+        [
+          "G5",
+          107.5,
+          0.5
+        ],
+        [
+          "E5",
+          108,
+          0.5
+        ],
+        [
+          "D5",
+          108.5,
+          0.5
+        ],
+        [
+          "C5",
+          109,
+          2
+        ],
+        [
+          "C5",
+          111,
+          1
+        ],
+        [
+          "D5",
+          112,
+          1
+        ],
+        [
+          "C5",
+          113,
+          0.5
+        ],
+        [
+          "D5",
+          113.5,
+          1.5
+        ],
+        [
+          "B4",
+          115,
+          1
+        ],
+        [
+          "A4",
+          116,
+          4
         ]
-      ],
-      "sourceFeatures": {
-        "hasChords": true,
-        "hasArpeggio": true,
-        "hasRepeats": false,
-        "unsupported": [
-          "Qupu123 source is a two-staff 17-key C kalimba performance score; V1 keeps only the upper-staff melody.",
-          "Lower-staff accompaniment/arpeggio details are thinned in the chord version and auto-accompaniment.",
-          "Altered tones such as #4 and #5 are mapped to nearby natural notes for 21-key C kalimba playback."
-        ],
-        "unsureMeasures": [
-          "Measure 15 has tied/dotted repeated high-2 notation; encoded as the audible sustained melody figure D5-E5-C5."
-        ],
-        "sourceReview": {
-          "confidence": "needs-review-naturalized-melody",
-          "previousConfidence": "high-for-melody-medium-for-harmony",
-          "originalDisplayTitle": "《天空之城》",
-          "decision": "Replaced the previous 30-measure mixed-source version with the 24-measure Qupu123 kalimba C arrangement supplied by the user.",
-          "sources": [
-            {
-              "label": "中国曲谱网 天空之城（拇指琴卡林巴琴和弦简谱）",
-              "url": "https://qupu123.com/puyou/shangchuan/p343924.html"
-            },
-            {
-              "label": "中国曲谱网源图",
-              "url": "https://qupu123.com/Public/Uploads/2019/05/08/5078795cd2af780dc11.jpg"
-            }
-          ],
-          "focusedReview": {
-            "date": "2026-10-12",
-            "method": "Visual inspection of the independently published theme score; not a full revalidation of the chosen 2019 arrangement.",
-            "sources": [
-              {
-                "label": "山东教育出版社《音乐》四年级下册《天空之城》主题曲",
-                "url": "https://v.sjs.com.cn/ebooks/931E845D.pdf",
-                "printedPage": 55,
-                "pdfPage": 58,
-                "inspected": "rendered-score-pixels"
-              }
-            ],
-            "identityMatch": "The single-line 1=C, 4/4 theme score matches the current opening, repeated opening and cadence; its ties and some rhythms differ from the current data.",
-            "explicitMelodyAccidentals": [
-              {
-                "sourcePitch": "F#4",
-                "currentMeasure": 8,
-                "currentStepIndex": 22,
-                "currentBeat": 29.5,
-                "currentPitch": "F4",
-                "currentDuration": 0.5
-              },
-              {
-                "sourcePitch": "G#4",
-                "currentMeasure": 16,
-                "currentStepIndex": 52,
-                "currentBeat": 63,
-                "currentPitch": "G4",
-                "currentDuration": 1
-              }
-            ],
-            "sameBarAccidentalScope": {
-              "currentMeasure": 8,
-              "currentStepIndex": 23,
-              "currentBeat": 30,
-              "currentPitch": "F4",
-              "status": "needs-review-against-chosen-arrangement",
-              "reason": "The next degree 4 in the same printed bar has no natural sign. Check accidental carry-through against the chosen 2019 arrangement; do not assume F-natural."
-            },
-            "measureNumbering": "Current app numbering includes the initial pickup/rest bar as measure 1; step indices are zero-based.",
-            "themePitchClasses": [
-              "C",
-              "D",
-              "E",
-              "F",
-              "F#",
-              "G",
-              "G#",
-              "A",
-              "B"
-            ],
-            "fixedInstrumentPitchClasses": [
-              "C",
-              "D",
-              "E",
-              "F",
-              "G",
-              "A",
-              "B"
-            ],
-            "fittingSemitoneTranspositions": [],
-            "fitReason": "All 12 consistent semitone transpositions were checked. Nine distinct melody pitch classes cannot fit the fixed instrument's seven natural pitch classes; octave shifts cannot remove this constraint.",
-            "originalArrangementStatus": "The 2019 Qupu123 source page is readable, but its score image was unavailable: web fetches returned Cache miss/not accessible and ordinary direct public-image requests returned HTTP 502. The full 24-bar arrangement, accompaniment and measure 15 ties were not revalidated.",
-            "changeScope": "Display labels and review metadata only. All 79 melody tuples, timing, tempo and the historical chord source are unchanged."
-          }
-        },
-        "suitability": {
-          "status": "not-recommended",
-          "scope": "faithful-complete-theme-fixed21C",
-          "reason": "已目视核对的同曲主题主旋律含升4、升5，共9种音级，不能用一次整体移调保真适配固定21键C调自然音琴。现有自然化数据属于改音版，不作为原主题保真练习。",
-          "reviewRequired": [
-            "此结论针对完整主题的保真演奏，不排除经源谱核实的自然音选段。",
-            "原2019年24小节编配图片仍不可读；第8小节后续4的变音作用范围、第15小节连线及整段节奏仍待原谱核对。",
-            "独立教材用于核实主题半音与乐器限制，不代表已逐音复核当前编配或通过录音、实体琴验收。"
-          ]
-        }
-      },
-      "key": "C"
+      ]
     },
   "tian-kong-zhi-cheng-chord": {
       "schemaVersion": 2,

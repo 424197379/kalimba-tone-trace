@@ -284,6 +284,7 @@ test("all 55 other source files retain frozen 21 bytes, and the archive is exclu
   assert.deepEqual(files.map(({fileName})=>fileName).sort(),[...Object.keys(frozenOtherFiles),"da-yu.json"].sort());
   for(const [fileName,expectedHash] of Object.entries(frozenOtherFiles)) {
     const path = fileName === "ping-fan-zhi-lu.json" ? "data/archives/ping-fan-zhi-lu-v2.4.23.json"
+      : fileName === "tian-kong-zhi-cheng.json" ? "data/archives/tian-kong-zhi-cheng-v2.4.52.json"
       : fileName === "hong-yan.json" ? "data/archives/hong-yan-v2.4.36.json"
       : fileName === "tong-nian.json" ? "data/archives/tong-nian-v2.4.37.json"
       : fileName === "sheng-sheng-man.json" ? "data/archives/sheng-sheng-man-v2.4.40.json"
