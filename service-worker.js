@@ -1,4 +1,4 @@
-const APP_VERSION = "2.4.52";
+const APP_VERSION = "2.4.53";
 // Compact requested controls, normal-speed marker and silent segment boundary preview.
 // Candidate52: natural-demo completion retains terminal progress.
 // First-frame preparation and post-audio-graph deadline checks; no musical-data edits.
