@@ -240,7 +240,7 @@ test("full old81 bytes, earlier83 reconstruction and original V2 sibling are pre
   assert.equal(hash(siblingBytes),siblingHash); assert.equal(sibling.events.length,83);
   assert.equal(review.archivedEdition.file,archivePath); assert.equal(review.archivedEdition.fileSha256,archiveHash);
   assert.equal(getSongArchiveDownload(song),null); assert.equal(current.archiveImportPath,undefined);
-  const files=await readSongFiles(); assert.equal(files.length,57); assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,36);
+  const files=await readSongFiles(); assert.equal(files.length,58); assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,37);
   assert.equal(files.filter(({song:s})=>s.id===id).length,1); assert.deepEqual(files.filter(({song:s})=>s.id.startsWith(`${id}-`)).map(({song:s})=>s.id),["tong-nian-chord"]);
   for (const file of ["service-worker.js","serve-kalimba.js","src/app.js","src/song-library.js"])
     assert.ok(!(await read(file)).toString().includes("tong-nian-v2.4.37.json"),`${file}: no dedicated archive route or precache`);
@@ -259,7 +259,7 @@ test("real archive import and save/read recover every old field without changing
   const recovered=Object.fromEntries(Object.keys(archive).map(key=>[key,normalizedFields.has(key)?archive[key]:saved[key]]));
   assert.deepEqual(recovered,archive,"all original values after reversing only documented identity/schema/display normalization");
   assert.equal(JSON.stringify(library),before); assert.deepEqual(getPracticeSongs(library).map(s=>s.id).sort(),ids);
-  const merged={...library,[saved.id]:saved}; assert.equal(getPracticeSongs(merged).length,37);
+  const merged={...library,[saved.id]:saved}; assert.equal(getPracticeSongs(merged).length,38);
   assert.equal(getPracticeSongId(merged,id),id); assert.equal(getPracticeSongId(merged,"tong-nian-chord"),id); assert.equal(getPracticeSongId(merged,saved.id),saved.id);
   const [again]=parseImportedSongs(archiveBytes.toString(),merged); assert.notEqual(again.id,saved.id); assert.deepEqual(again.steps,archive.steps);
   const [selected]=parseImportedSongs(JSON.stringify(song),merged); assertSelectedEdition(selected);

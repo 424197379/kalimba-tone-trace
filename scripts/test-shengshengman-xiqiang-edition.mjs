@@ -286,7 +286,7 @@ test("complete old76/64 bytes remain recoverable internally without a sibling, e
   assert.equal(review.archivedEdition.file,archivePath);assert.equal(review.archivedEdition.fileSha256,archiveHash);
   assert.equal(review.archivedEdition.attackCount,76);assert.equal(review.archivedEdition.melodyEndBeat,64);
   for(const value of [archive,song])for(const field of ["autoAccompaniment","practiceAccompaniment"])assert.equal(value[field],undefined,"no real old backing is fabricated");
-  const files=await readSongFiles();assert.equal(files.length,57);assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,36);
+  const files=await readSongFiles();assert.equal(files.length,58);assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,37);
   assert.deepEqual(files.filter(({song:s})=>s.id===id||s.id.startsWith(`${id}-`)).map(({song:s})=>s.id),[id]);
   assert.equal(getSongArchiveDownload(song),null);assert.equal(current.archiveImportPath,undefined);
   for(const file of ["service-worker.js","serve-kalimba.js","src/app.js","src/song-library.js"])
@@ -304,7 +304,7 @@ test("real archive import/save/read preserves every original value and does not 
   const recovered=Object.fromEntries(Object.keys(archive).map(key=>[key,normalizedFields.has(key)?archive[key]:saved[key]]));
   assert.deepEqual(recovered,archive,"every archived field after reversing documented normalization only");
   assert.equal(JSON.stringify(library),before);assert.deepEqual(getPracticeSongs(library).map(s=>s.id).sort(),ids);
-  const merged={...library,[saved.id]:saved};assert.equal(getPracticeSongs(merged).length,37);
+  const merged={...library,[saved.id]:saved};assert.equal(getPracticeSongs(merged).length,38);
   assert.equal(getPracticeSongId(merged,id),id);assert.equal(getPracticeSongId(merged,saved.id),saved.id);
   const [again]=parseImportedSongs(archiveBytes.toString(),merged);assert.notEqual(again.id,saved.id);assert.deepEqual(again.steps,archive.steps);
   assert.equal(values.get(SONG_SPEED_STORAGE_KEY),speedBytes);assert.deepEqual(readSongSpeed(globalThis.localStorage,id),{speed:.65});assert.equal(values.get(CURRENT_SONG_STORAGE_KEY),id);
@@ -326,7 +326,7 @@ test("generated canonical module retains one card, the complete reviewed metadat
   const library=getSongLibrary();assert.deepEqual(library[id].steps,song.steps,"integration owner must build generated module");
   assert.equal(library[id].title,song.title);assert.deepEqual(library[id].sourceFeatures,song.sourceFeatures);
   assertSourceMusic(library[id]);assertSelectedPolicy(library[id]);
-  assert.equal(getPracticeSongs(library).length,36);assert.equal(getPracticeSongId(library,id),id);
+  assert.equal(getPracticeSongs(library).length,37);assert.equal(getPracticeSongId(library,id),id);
   assert.equal(getSongArchiveDownload(library[id]),null);
   for(const originalOnly of [false,true])assert.equal(getSongAccompanimentProvider(library[id],Object.values(library),originalOnly),null);
 }));

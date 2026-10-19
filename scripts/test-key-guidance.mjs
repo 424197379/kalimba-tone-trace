@@ -397,9 +397,9 @@ test("unsorted inputs are interpreted chronologically without reordering input",
   assert.deepEqual(events, before);
 });
 
-test("36-song production V1 corpus contains every expected real melody onset", () => {
-  assert.equal(corpus.length, 36);
-  assert.equal(corpus.reduce((count, { events }) => count + events.length, 0), 4440);
+test("37-song production V1 corpus contains every expected real melody onset", () => {
+  assert.equal(corpus.length, 37);
+  assert.equal(corpus.reduce((count, { events }) => count + events.length, 0), 4506);
   for (const { song, events } of corpus) {
     assert.equal(events.length, song.steps.length, song.id);
     assert.ok(events.every(e => e.judgeLanes.length === 1), song.id);
@@ -407,7 +407,7 @@ test("36-song production V1 corpus contains every expected real melody onset", (
 });
 
 for (const speed of [0.35, 0.55, 1, 1.4]) {
-  test(`all 4,440 V1 onsets and note ends obey held intervals at ${speed}x`, () => {
+  test(`all 4,506 V1 onsets and note ends obey held intervals at ${speed}x`, () => {
     for (const { song, events } of corpus) {
       const scaledBeatSeconds = 60 / song.bpm / speed;
       for (const e of events) {

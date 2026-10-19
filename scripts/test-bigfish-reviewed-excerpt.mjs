@@ -279,7 +279,9 @@ test("the complete historical 200-attack JSON is byte-exact and only three bars 
 });
 
 test("all 55 other source files retain frozen 21 bytes, and the archive is excluded from the 56-record source library",async()=>{
-  const files=(await readSongFiles()).filter(({fileName})=>fileName!=="xuan-cao-hua-reviewed-support.json");
+  const currentFiles=await readSongFiles(); assert.equal(currentFiles.length,58);
+  // Later additions are not members of this frozen historical source corpus.
+  const files=currentFiles.filter(({fileName})=>fileName!=="xuan-cao-hua-reviewed-support.json"&&fileName!=="fan-fang-xiang-de-zhong.json");
   assert.equal(files.length,56); assert.equal(Object.keys(frozenOtherFiles).length,55);
   assert.deepEqual(files.map(({fileName})=>fileName).sort(),[...Object.keys(frozenOtherFiles),"da-yu.json"].sort());
   for(const [fileName,expectedHash] of Object.entries(frozenOtherFiles)) {
@@ -313,11 +315,11 @@ test("all 55 other source files retain frozen 21 bytes, and the archive is exclu
   for(const file of ["service-worker.js","serve-kalimba.js","src/song-library.js","src/app.js"]) assert.ok(!(await read(file)).toString().includes("da-yu-v2.4.21.json"),`${file} must not expose/precache internal archive`);
 });
 
-test("actual archive parser and isolated save restore an independent local song without replacing 36 canonical cards",()=>{
+test("actual archive parser and isolated save restore an independent local song without replacing 37 canonical cards",()=>{
   withIsolatedStorage(()=>{
     const library=getSongLibrary(); library[song.id]=normalized(song);
     const prior=JSON.stringify(library), ids=getPracticeSongs(library).map(({id})=>id).sort();
-    assert.equal(ids.length,36);
+    assert.equal(ids.length,37);
     assert.equal(getPracticeSongId(library,"da-yu"),"da-yu");
     assert.equal(getPracticeSongId(library,"da-yu-chord"),"da-yu","old arrangement link resolves to the new canonical melody");
     const [restored]=parseImportedSongs(archiveBytes.toString(),library);
@@ -335,7 +337,7 @@ test("actual archive parser and isolated save restore an independent local song 
     assert.equal(hash(JSON.stringify(reconstructed)),archiveContentHash,"restored music and source history reconstruct the complete parsed archive");
     assert.equal(JSON.stringify(library),prior); assert.equal(library[song.id].steps.length,162);
     assert.deepEqual(getPracticeSongs(library).map(({id})=>id).sort(),ids);
-    const merged={...library,[restored.id]:restored}; assert.equal(getPracticeSongs(merged).length,37);
+    const merged={...library,[restored.id]:restored}; assert.equal(getPracticeSongs(merged).length,38);
     assert.equal(getPracticeSongId(merged,restored.id),restored.id);
     const [again]=parseImportedSongs(archiveBytes.toString(),merged); assert.notEqual(again.id,restored.id);
     assert.deepEqual(again.steps,archive.steps);

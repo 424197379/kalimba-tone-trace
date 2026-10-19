@@ -332,7 +332,7 @@ let library;
 try { globalThis.localStorage = { getItem: () => null }; library = getSongLibrary(); }
 finally { if (previousStorage === undefined) delete globalThis.localStorage; else globalThis.localStorage = previousStorage; }
 const melodies = getPracticeSongs(library);
-assert.equal(melodies.length, 36);
+assert.equal(melodies.length, 37);
 for (const song of melodies) for (const cadence of ["30fps", "jitter<=100ms"]) {
   test(`${song.id}: densest eight-beat segment at 1.4x, ${cadence}, every true attack once`, async () => {
     const h = harness({ range: null }); const { c } = h;

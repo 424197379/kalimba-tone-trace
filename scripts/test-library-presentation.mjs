@@ -83,9 +83,9 @@ test("title helper preserves imported, unknown and newly changed titles literall
   assert.equal(getSongDisplayTitle(null), "");
 });
 
-test("all 36 cards show clean titles, all useful metadata and one accessible icon-only play button", () => {
+test("all 37 cards show clean titles, all useful metadata and one accessible icon-only play button", () => {
   const h = harness(), before = JSON.stringify(library);
-  assert.equal(h.groups.length, 36);
+  assert.equal(h.groups.length, 37);
   for (const group of h.groups) {
     const song = group.primary, card = h.card(song.id), face = visibleText(card);
     const body = card.children[0], meta = body.children[1];

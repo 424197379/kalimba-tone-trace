@@ -199,8 +199,8 @@ test("content guard accepts this companion and rejects historical or changed mel
     const changed=structuredClone(song); mutate(changed); assert.equal(hasMatchingPracticeMelody(melody,changed),false);
   }
 });
-test("actual normalization and deep links keep 57 source records and 36 single-melody cards", () => {
-  assert.equal(Object.keys(library).length,57); assert.equal(getPracticeSongs(library).length,36);
+test("actual normalization and deep links keep 58 source records and 37 single-melody cards", () => {
+  assert.equal(Object.keys(library).length,58); assert.equal(getPracticeSongs(library).length,37);
   assert.deepEqual(plain(library[song.id].practiceAccompaniment),song.practiceAccompaniment);
   assert.deepEqual(plain(library[song.id].steps),melody.steps);
   assert.equal(getPracticeSongs(library).filter(s=>getSongBaseId(s)===melody.id).length,1);
@@ -208,7 +208,7 @@ test("actual normalization and deep links keep 57 source records and 36 single-m
   const reordered=normalizedLibrary([song,legacy,melody]);
   assert.deepEqual(getPracticeSongs(reordered).map(s=>s.id),[melody.id]);
   const absent=normalizedLibrary(rawSongs.filter(s=>s.id!==song.id));
-  assert.equal(Object.keys(absent).length,56); assert.equal(getPracticeSongs(absent).length,36);
+  assert.equal(Object.keys(absent).length,57); assert.equal(getPracticeSongs(absent).length,37);
 });
 test("actual app borrows only compatible light support, never historical automatic backing", () => {
   const app=appContext(); const canonical=library[melody.id];
