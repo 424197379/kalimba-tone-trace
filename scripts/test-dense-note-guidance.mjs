@@ -47,7 +47,7 @@ function fixture(beats, names = ["C4", "D4", "E4", "F4"]) {
 }
 
 test("guidance regression covers every built-in V1 melody", () => {
-  assert.ok(melodySongs.length >= 36, "The existing 36-song V1 corpus must remain covered");
+  assert.ok(melodySongs.length >= 37, "The existing 37-song V1 corpus must remain covered");
   for (const song of melodySongs) assert.ok(song.steps.length > 0, `${song.id} needs melody onsets`);
 });
 

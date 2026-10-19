@@ -155,8 +155,9 @@ const externalRepresentation=()=>{
 test("the prior 55-song and three-archive snapshot remains byte-exactly recoverable",async()=>{
   assert.equal(hash(melodyBytes),"1c7162c13e5d4e843016dba7f37acaa725a98870a304ce6b649f7269f041e64e");
   assert.equal(hash(archiveBytes),"ae805daffe79f68916a8c88afe0b931b45fd14ec6bc65eb06761c7993e918b21");
+  // Exclude later additions while retaining the original snapshot hash and size.
   const files=[];
-  for(const dir of ["data/songs","data/archives"]) for(const name of (await readdir(new URL(`../${dir}/`,import.meta.url))).filter(x=>x.endsWith(".json")&&x!=="qing-hua-ci-reviewed-support.json"&&x!=="xuan-cao-hua-reviewed-support.json"&&x!=="da-yu-v2.4.21.json"&&x!=="ping-fan-zhi-lu-v2.4.23.json"&&x!=="ju-ci-lang-de-xia-tian-v2.4.25.json"&&x!=="xuan-cao-hua-v2.4.27.json"&&x!=="song-bie-v2.4.28.json"&&x!=="rang-wo-men-dang-qi-shuang-jiang-v2.4.34.json"&&x!=="qing-cheng-shan-xia-bai-su-zhen-v2.4.35.json"&&x!=="hong-yan-v2.4.36.json"&&x!=="tong-nian-v2.4.37.json"&&x!=="sheng-sheng-man-v2.4.40.json").sort()) {
+  for(const dir of ["data/songs","data/archives"]) for(const name of (await readdir(new URL(`../${dir}/`,import.meta.url))).filter(x=>x.endsWith(".json")&&x!=="fan-fang-xiang-de-zhong.json"&&x!=="qing-hua-ci-reviewed-support.json"&&x!=="xuan-cao-hua-reviewed-support.json"&&x!=="da-yu-v2.4.21.json"&&x!=="ping-fan-zhi-lu-v2.4.23.json"&&x!=="ju-ci-lang-de-xia-tian-v2.4.25.json"&&x!=="xuan-cao-hua-v2.4.27.json"&&x!=="song-bie-v2.4.28.json"&&x!=="rang-wo-men-dang-qi-shuang-jiang-v2.4.34.json"&&x!=="qing-cheng-shan-xia-bai-su-zhen-v2.4.35.json"&&x!=="hong-yan-v2.4.36.json"&&x!=="tong-nian-v2.4.37.json"&&x!=="sheng-sheng-man-v2.4.40.json").sort()) {
     // Later deliberate Bigfish and Ordinary Road editions preserves the exact former bytes in
     // an internal archive; reconstruct the prior snapshot without weakening it.
     const sourcePath = dir === "data/songs" && name === "da-yu.json"
@@ -302,8 +303,8 @@ test("content guard accepts exactly this melody and rejects archived or changed 
     const changed=structuredClone(song);mutate(changed);assert.equal(hasMatchingPracticeMelody(melody,changed),false);
   }
 });
-test("actual normalization keeps 57 records, 36 cards, two real ids and no fictitious chord route",()=>{
-  assert.equal(Object.keys(library).length,57);assert.equal(getPracticeSongs(library).length,36);
+test("actual normalization keeps 58 records, 37 cards, two real ids and no fictitious chord route",()=>{
+  assert.equal(Object.keys(library).length,58);assert.equal(getPracticeSongs(library).length,37);
   assert.deepEqual(plain(library[song.id].practiceAccompaniment),song.practiceAccompaniment);
   assert.deepEqual(plain(library[song.id].steps),expectedMelody);
   assert.deepEqual(plain(library[song.id].rhythm),song.rhythm);
@@ -313,7 +314,7 @@ test("actual normalization keeps 57 records, 36 cards, two real ids and no ficti
   assert.deepEqual(getPracticeSongs(normalizedLibrary([song,melody])).map(s=>s.id),[melody.id]);
   assert.deepEqual(getPracticeSongs(normalizedLibrary([melody,song])).map(s=>s.id),[melody.id]);
   const absent=normalizedLibrary(rawSongs.filter(s=>s.id!==song.id));
-  assert.equal(Object.keys(absent).length,56);assert.equal(getPracticeSongs(absent).length,36);
+  assert.equal(Object.keys(absent).length,57);assert.equal(getPracticeSongs(absent).length,37);
 });
 test("actual app borrows the light candidate with its retained hold and no original auto layer",()=>{
   const app=appContext(),canonical=library[melody.id];

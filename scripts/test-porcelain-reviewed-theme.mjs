@@ -224,14 +224,14 @@ test("the 131-note historical edition remains byte-identical and its first 42 tu
   }
 });
 
-test("actual archive import and simulated save keep the selected card independent and all 36 canonical cards intact", () => {
+test("actual archive import and simulated save keep the selected card independent and all 37 canonical cards intact", () => {
   withIsolatedStorage(() => {
     const library = getSongLibrary();
     const previousIds = getPracticeSongs(library).map(({id})=>id).sort();
     const selected = deepFreeze(normalized(song));
     library[song.id] = selected; // Allows data regression before lead rebuilds generated src/songs.js.
     const before = JSON.stringify(library);
-    assert.equal(previousIds.length,36);
+    assert.equal(previousIds.length,37);
     assert.deepEqual(getPracticeSongs(library).map(({id})=>id).sort(),previousIds);
     assert.equal(getPracticeSongId(library,song.id),song.id);
     const [restored] = parseImportedSongs(archiveBytes.toString(),library);
@@ -252,7 +252,7 @@ test("actual archive import and simulated save keep the selected card independen
     assert.equal(JSON.stringify(library),before);
     assert.equal(library[song.id].steps.length,83);
     const merged = {...library,[restored.id]:restored};
-    assert.equal(getPracticeSongs(merged).length,37);
+    assert.equal(getPracticeSongs(merged).length,38);
     assert.equal(getPracticeSongId(merged,restored.id),restored.id);
     const [again] = parseImportedSongs(archiveBytes.toString(),merged);
     assert.notEqual(again.id,restored.id);

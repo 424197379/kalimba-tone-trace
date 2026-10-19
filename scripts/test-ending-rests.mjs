@@ -8,6 +8,7 @@ const EPSILON = 1e-9;
 const near = (actual, expected, message) => assert.ok(Math.abs(actual - expected) < EPSILON,
   `${message}: ${actual} != ${expected}`);
 const sourceBounds = {
+  "fan-fang-xiang-de-zhong": [62, 64],
   "song-bie": [94, 96],
   "da-yu": [128, 128],
   "ling-er-xiang-ding-dang": [64, 64],
@@ -38,7 +39,7 @@ const sourceBounds = {
   "xuan-cao-hua": [191, 192],
   "yun-yan-cheng-yu": [120, 124]
 };
-const restBeats = { "song-bie": 2, "xuan-cao-hua": 1, "ping-fan-zhi-lu": 4, "jasmine": 1, "gao-bai-qi-qiu": 3, "qi-feng-le": 3, "ye-de-gang-qin-qu-wu": 3, "yun-yan-cheng-yu": 4 };
+const restBeats = { "fan-fang-xiang-de-zhong": 2, "song-bie": 2, "xuan-cao-hua": 1, "ping-fan-zhi-lu": 4, "jasmine": 1, "gao-bai-qi-qiu": 3, "qi-feng-le": 3, "ye-de-gang-qin-qu-wu": 3, "yun-yan-cheng-yu": 4 };
 const restSongIds = Object.keys(restBeats).sort();
 const rawSongs = (await readSongFiles()).map(({ song }) => song);
 globalThis.localStorage = { getItem: () => null };
@@ -52,9 +53,9 @@ function deepFreeze(value) {
   return value;
 }
 
-test("all 29 source-notated V1 bounds remain covered and cannot truncate notes", () => {
+test("all 30 source-notated V1 bounds remain covered and cannot truncate notes", () => {
   const sources = rawSongs.filter((song) => song.schemaVersion === 1 && Object.hasOwn(song.sourceFeatures || {}, "sourceTotalBeats"));
-  assert.equal(sources.length, 29);
+  assert.equal(sources.length, 30);
   assert.deepEqual(sources.map(({ id }) => id).sort(), Object.keys(sourceBounds).sort());
   for (const song of sources) {
     assert.equal(song.schemaVersion, 1, song.id);
@@ -67,8 +68,8 @@ test("all 29 source-notated V1 bounds remain covered and cannot truncate notes",
   }
 });
 
-test("eight of the 36 practice songs preserve a selected melody ending rest", () => {
-  assert.equal(practiceSongs.length, 36);
+test("nine of the 37 practice songs preserve a selected melody ending rest", () => {
+  assert.equal(practiceSongs.length, 37);
   const changed = [];
   for (const song of practiceSongs) {
     const before = structuredClone(song);

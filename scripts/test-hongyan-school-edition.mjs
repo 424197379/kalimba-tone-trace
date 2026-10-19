@@ -448,7 +448,7 @@ test("complete old bytes and parsed metadata remain recoverable internally witho
   assert.deepEqual(archive.steps.at(-1),["A3",76,4]); assert.equal(archive.sourceFeatures.transpositionSemitones,-7);
   assert.equal(review.archivedEdition.file,archivePath); assert.equal(review.archivedEdition.fileSha256,archiveHash);
   assert.equal(getSongArchiveDownload(song),null); assert.equal(current.archiveImportPath,undefined);
-  const files=await readSongFiles(); assert.equal(files.length,57); assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,36);
+  const files=await readSongFiles(); assert.equal(files.length,58); assert.equal(files.filter(({song:s})=>s.schemaVersion===1).length,37);
   assert.equal(files.filter(({song:s})=>s.id===id).length,1); assert.equal(files.filter(({song:s})=>s.id.startsWith(`${id}-`)).length,0);
   for(const file of ["service-worker.js","serve-kalimba.js","src/app.js","src/song-library.js"])
     assert.ok(!(await read(file)).toString().includes("hong-yan-v2.4.36.json"),`${file}: no archive route/precache`);
@@ -471,7 +471,7 @@ test("actual importer and storage preserve every archived value, canonical links
     const reconstructed=Object.fromEntries(Object.keys(archive).map(key=>[key,normalizedFields.has(key)?archive[key]:saved[key]]));
     assert.deepEqual(reconstructed,archive,"all original fields after reversing only documented identity/schema/display normalization");
     assert.equal(JSON.stringify(library),before); assert.deepEqual(getPracticeSongs(library).map(s=>s.id).sort(),ids);
-    const merged={...library,[saved.id]:saved}; assert.equal(getPracticeSongs(merged).length,37);
+    const merged={...library,[saved.id]:saved}; assert.equal(getPracticeSongs(merged).length,38);
     assert.equal(getPracticeSongId(merged,id),id); assert.equal(getPracticeSongId(merged,saved.id),saved.id);
     const [again]=parseImportedSongs(archiveBytes.toString(),merged); assert.notEqual(again.id,saved.id); assert.deepEqual(again.steps,archive.steps);
     const [selected]=parseImportedSongs(JSON.stringify(song),merged); assertSelectedEdition(selected);
