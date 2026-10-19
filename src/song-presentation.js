@@ -3,6 +3,7 @@
 // Exact matches are deliberate: never strip arbitrary parentheses, version
 // words, or legitimate parts of imported/future song titles with a regexp.
 const BUILTIN_DISPLAY_TITLES = new Map([
+  ["fan-fang-xiang-de-zhong", ["《反方向的钟》（副歌选段）", "《反方向的钟》"]],
   ["jasmine", ["《茉莉花》（短版）", "《茉莉花》"]],
   ["bluebird", ["《青鸟》（待核简化版）", "《青鸟》"]],
   ["katyusha", ["《喀秋莎》（待核版）", "《喀秋莎》"]],

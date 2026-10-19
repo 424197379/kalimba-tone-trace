@@ -290,11 +290,11 @@ test("unknown rhythm policies remain unknown instead of becoming a silence decla
   assert.deepEqual(a.declaredSilentConflicts, []);
 });
 
-test("57 current records keep 403 auto events and expose 98 optional practice events", async () => {
+test("58 current records keep 403 auto events and expose 98 optional practice events", async () => {
   const songs = await Promise.all((await readdir(songsDir)).filter(file => file.endsWith(".json"))
     .map(async file => JSON.parse(await readFile(join(songsDir, file), "utf8"))));
   const rows = songs.map(summarizeRhythm);
-  assert.equal(rows.length, 57);
+  assert.equal(rows.length, 58);
   assert.equal(rows.reduce((sum, row) => sum + row.autoEvents, 0), 403);
   assert.equal(rows.reduce((sum, row) => sum + row.practiceEvents, 0), 98);
   assert.equal(rows.reduce((sum, row) => sum + row.conflicts.length, 0), 0);

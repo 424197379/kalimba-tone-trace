@@ -378,6 +378,7 @@ test("melody-only versus all-layer-silence metadata cannot upgrade an inferred g
 
 const songs = (await readSongFiles()).map(({ song: data }) => data);
 const expectedTails = {
+  "fan-fang-xiang-de-zhong": [62, 64, 2],
   "song-bie": [94, 96, 2], "xuan-cao-hua-reviewed-support": [191,192,1],
   jasmine: [55, 56, 1], "gao-bai-qi-qiu": [129, 132, 3], "ping-fan-zhi-lu": [64, 68, 4],
   "qi-feng-le": [77, 80, 3], "xuan-cao-hua": [191, 192, 1], "ye-de-gang-qin-qu-wu": [129, 132, 3],
@@ -409,8 +410,8 @@ test("Daylily and Farewell keep legacy gap counts while separately reporting the
   }
 });
 
-test("all 57 current records preserve every legacy metric, signal, decision and input byte value", () => {
-  assert.equal(songs.length, 57);
+test("all 58 current records preserve every legacy metric, signal, decision and input byte value", () => {
+  assert.equal(songs.length, 58);
   for (const fixture of songs) {
     const before = structuredClone(fixture);
     const previous = inspectLegacy(fixture);
@@ -439,7 +440,7 @@ test("JSON and human CLI output expose units and do not require builds or genera
   const json = spawnSync(process.execPath, [script, "--json"], { encoding: "utf8" });
   assert.equal(json.status, 0, json.stderr);
   const rows = JSON.parse(json.stdout);
-  assert.equal(rows.length, 57);
+  assert.equal(rows.length, 58);
   assert.deepEqual(rows, songs.map(fixture => JSON.parse(JSON.stringify(inspectSuitability(fixture)))));
   const table = spawnSync(process.execPath, [script], { encoding: "utf8" });
   assert.equal(table.status, 0, table.stderr);

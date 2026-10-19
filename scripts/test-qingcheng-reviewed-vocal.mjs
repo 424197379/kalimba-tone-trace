@@ -220,8 +220,8 @@ test("prior 116-attack, 72-beat edition survives byte for byte without an extra 
   assert.equal(archive.beatsPerMeasure, 4); assert.equal(archive.defaultSpeedFactor, .9);
   assert.equal(review.archivedEdition.file, archivePath); assert.equal(review.archivedEdition.fileSha256, archiveHash);
   assert.equal(current.archiveImportPath, undefined); assert.equal(getSongArchiveDownload(song), null);
-  const files = await readSongFiles(); assert.equal(files.length, 57);
-  assert.equal(files.filter(({ song: s }) => s.schemaVersion === 1).length, 36);
+  const files = await readSongFiles(); assert.equal(files.length, 58);
+  assert.equal(files.filter(({ song: s }) => s.schemaVersion === 1).length, 37);
   assert.equal(files.filter(({ song: s }) => s.schemaVersion === 2).length, 21);
   assert.equal(files.filter(({ song: s }) => s.id === id).length, 1);
   assert.equal(files.filter(({ song: s }) => s.id.startsWith(`${id}-`)).length, 0);
@@ -237,7 +237,7 @@ test("real importer and storage recover every archived value independently witho
     // integration owner regenerates src/songs.js; it never edits that module.
     const library = getSongLibrary(); library[id] = normalized(song);
     const before = JSON.stringify(library), previousIds = getPracticeSongs(library).map(s => s.id).sort();
-    assert.equal(Object.keys(library).length, 57); assert.equal(previousIds.length, 36);
+    assert.equal(Object.keys(library).length, 58); assert.equal(previousIds.length, 37);
     const [restored] = parseImportedSongs(archiveBytes.toString(), library);
     assert.deepEqual(restored.steps, archive.steps); assert.deepEqual(restored.sourceFeatures, archive.sourceFeatures);
     assert.equal(restored.schemaVersion, 2); assert.equal(restored.source, "local");
@@ -250,7 +250,7 @@ test("real importer and storage recover every archived value independently witho
     assert.equal(JSON.stringify(library), before); assert.deepEqual(library[id].steps, song.steps);
     assert.deepEqual(getPracticeSongs(library).map(s => s.id).sort(), previousIds);
     const merged = { ...library, [restored.id]: restored };
-    assert.equal(getPracticeSongs(merged).length, 37); assert.equal(getPracticeSongId(merged, id), id);
+    assert.equal(getPracticeSongs(merged).length, 38); assert.equal(getPracticeSongId(merged, id), id);
     assert.equal(getPracticeSongId(merged, restored.id), restored.id);
     const [again] = parseImportedSongs(archiveBytes.toString(), merged); assert.notEqual(again.id, restored.id);
     assert.deepEqual(again.steps, archive.steps);

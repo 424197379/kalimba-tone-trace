@@ -95,10 +95,10 @@ function assertMatchesRuntime(library, store, requestedId, options) {
   return { list, group, actual, badge, seconds };
 }
 
-test("all 36 built-in cards match first practice at 1.00x without writing preferences or history", () => {
+test("all 37 built-in cards match first practice at 1.00x without writing preferences or history", () => {
   const library = libraryWith(), store = storage(), before = JSON.stringify(library);
   const songs = songStore.getPracticeSongs(library);
-  assert.equal(songs.length, 36);
+  assert.equal(songs.length, 37);
   for (const song of songs) {
     const { actual } = assertMatchesRuntime(library, store, song.id);
     assert.equal(actual.speedFactor, 1, song.id);
@@ -108,7 +108,7 @@ test("all 36 built-in cards match first practice at 1.00x without writing prefer
   assert.deepEqual(store.writes, []);
 });
 
-test("all 36 built-in cards use each song's remembered slow, medium and fast speed", () => {
+test("all 37 built-in cards use each song's remembered slow, medium and fast speed", () => {
   const library = libraryWith();
   for (const song of songStore.getPracticeSongs(library)) {
     for (const speed of [.35, .75, 1.4]) {
