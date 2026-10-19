@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "id": "fan-fang-xiang-de-zhong",
+  "title": "《反方向的钟》（副歌选段）",
+  "uploader": "system",
+  "practiceTitle": "《反方向的钟》（副歌选段）练习轨道",
+  "scoreTitle": "《反方向的钟》（副歌选段）简谱进度",
+  "hint": "主副歌选段，按谱面反复和一、二房结尾展开16小节，共66次起音、64拍，非全曲。G调整体降7半音至C调，A3–A4；保留32处延音连接和两处2拍人声休止，无伴奏。96 BPM为练习设定，建议先慢练。",
+  "difficulty": "medium",
+  "bpm": 96,
+  "defaultSpeedFactor": 0.85,
+  "beatsPerMeasure": 4,
+  "key": "C",
+  "tuning": "21-key-c",
+  "steps": [
+    [
+      "A4",
+      0,
+      0.5
+    ],
+    [
+      "G4",
+      0.5,
+      0.5
+    ],
+    [
+      "E4",
+      1.0,
+      0.5
+    ],
+    [
+      "D4",
+      1.5,
+      1.5
+    ],
+    [
+      "E4",
+      3.0,
+      0.5
+    ],
+    [
+      "C4",
+      3.5,
+      1.0
+    ],
+    [
+      "D4",
+      4.5,
+      1.0
+    ],
+    [
+      "E4",
+      5.5,
+      1.0
+    ],
+    [
+      "G4",
+      6.5,
+      1.5
+    ],
+    [
+      "A4",
+      8,
+      0.5
+    ],
+    [
+      "G4",
+      8.5,
+      0.5
+    ],
+    [
+      "E4",
+      9.0,
+      0.5
+    ],
+    [
+      "D4",
+      9.5,
+      1.5
+    ],
+    [
+      "E4",
+      11.0,
+      0.5
+    ],
+    [
+      "D4",
+      11.5,
+      1.5
+    ],
+    [
+      "C4",
+      13,
+      0.5
+    ],
+    [
+      "D4",
+      13.5,
+      1.0
+    ],
+    [
+      "C4",
+      14.5,
+      1.5
+    ],
+    [
+      "A4",
+      16,
+      0.5
+    ],
+    [
+      "G4",
+      16.5,
+      0.5
+    ],
+    [
+      "E4",
+      17.0,
+      0.5
+    ],
+    [
+      "D4",
+      17.5,
+      1.5
+    ],
+    [
+      "E4",
+      19.0,
+      0.5
+    ],
+    [
+      "C4",
+      19.5,
+      1.0
+    ],
+    [
+      "D4",
+      20.5,
+      1.0
+    ],
+    [
+      "E4",
+      21.5,
+      1.0
+    ],
+    [
+      "G4",
+      22.5,
+      1.5
+    ],
+    [
+      "A4",
+      24,
+      0.5
+    ],
+    [
+      "G4",
+      24.5,
+      0.5
+    ],
+    [
+      "E4",
+      25.0,
+      0.5
+    ],
+    [
+      "D4",
+      25.5,
+      1.5
+    ],
+    [
+      "E4",
+      27.0,
+      0.5
+    ],
+    [
+      "A3",
+      27.5,
+      2.5
+    ],
+    [
+      "A4",
+      32,
+      0.5
+    ],
+    [
+      "G4",
+      32.5,
+      0.5
+    ],
+    [
+      "E4",
+      33.0,
+      0.5
+    ],
+    [
+      "D4",
+      33.5,
+      1.5
+    ],
+    [
+      "E4",
+      35.0,
+      0.5
+    ],
+    [
+      "C4",
+      35.5,
+      1.0
+    ],
+    [
+      "D4",
+      36.5,
+      1.0
+    ],
+    [
+      "E4",
+      37.5,
+      1.0
+    ],
+    [
+      "G4",
+      38.5,
+      1.5
+    ],
+    [
+      "A4",
+      40,
+      0.5
+    ],
+    [
+      "G4",
+      40.5,
+      0.5
+    ],
+    [
+      "E4",
+      41.0,
+      0.5
+    ],
+    [
+      "D4",
+      41.5,
+      1.5
+    ],
+    [
+      "E4",
+      43.0,
+      0.5
+    ],
+    [
+      "D4",
+      43.5,
+      1.5
+    ],
+    [
+      "C4",
+      45,
+      0.5
+    ],
+    [
+      "D4",
+      45.5,
+      1.0
+    ],
+    [
+      "C4",
+      46.5,
+      1.5
+    ],
+    [
+      "A4",
+      48,
+      0.5
+    ],
+    [
+      "G4",
+      48.5,
+      0.5
+    ],
+    [
+      "E4",
+      49.0,
+      0.5
+    ],
+    [
+      "D4",
+      49.5,
+      1.5
+    ],
+    [
+      "E4",
+      51.0,
+      0.5
+    ],
+    [
+      "C4",
+      51.5,
+      1.0
+    ],
+    [
+      "D4",
+      52.5,
+      1.0
+    ],
+    [
+      "E4",
+      53.5,
+      1.0
+    ],
+    [
+      "G4",
+      54.5,
+      1.5
+    ],
+    [
+      "A4",
+      56,
+      0.5
+    ],
+    [
+      "G4",
+      56.5,
+      0.5
+    ],
+    [
+      "E4",
+      57.0,
+      0.5
+    ],
+    [
+      "D4",
+      57.5,
+      1.5
+    ],
+    [
+      "E4",
+      59.0,
+      0.5
+    ],
+    [
+      "A3",
+      59.5,
+      2.5
+    ]
+  ],
+  "sourceFeatures": {
+    "hasChords": true,
+    "hasArpeggio": false,
+    "hasRepeats": true,
+    "unsupported": [
+      "仅保留原谱明确的人声单音线；吉他和弦、TAB、扫弦及其他段落不纳入。",
+      "16小节副歌选段，不是完整原曲；没有延音重拨或填充休止。"
+    ],
+    "unsureMeasures": [],
+    "sources": [
+      {
+        "label": "简谱之家三页吉他弹唱谱，选取第2页明确的人声简谱副歌；小节号为人工计数",
+        "url": "https://www.jianpujia.com/jianpu/354380.html"
+      },
+      {
+        "label": "周杰伦官方MV：曲目身份及后续试听参考，未作为已完成听感验收",
+        "url": "https://www.youtube.com/watch?v=fuM1aVCGR8c"
+      }
+    ],
+    "transcriptionScope": "selected-vocal-chorus-two-pass-repeat",
+    "sourceWrittenMeasureCount": 9,
+    "sourceMeasureCount": 16,
+    "sourceTotalBeats": 64,
+    "sourceKey": "G",
+    "transpositionSemitones": -7,
+    "tempoStatus": "explicit-practice-choice-no-numeric-source-tempo",
+    "meterStatus": "printed-4/4",
+    "suitability": {
+      "status": "conditional",
+      "scope": "selected-vocal-chorus-two-pass-repeat",
+      "reason": "所选副歌无额外变音；统一移调保留音程，A3–A4落在21音琴范围。半拍起音、左右手转换及两次低音收尾需慢练；本项不代表完成实琴验收。",
+      "reviewRequired": [
+        "原唱参考录音的主观辨识度试听未完成。",
+        "实体21音卡林巴的换手、跳进及自然衰减待实弹。"
+      ]
+    },
+    "sourceReview": {
+      "currentScopeReview": {
+        "status": "reviewed-selected-vocal-chorus",
+        "reviewDate": "2026-10-19",
+        "adoptedInVersion": "2.4.54",
+        "selectedEdition": "jianpujia-354380-lyric-aligned-vocal-chorus",
+        "sourceUrl": "https://www.jianpujia.com/jianpu/354380.html",
+        "sourcePage": 2,
+        "sourceVoice": "explicit-lyric-aligned-single-vocal-line",
+        "sourceKey": "G",
+        "sourceMeter": "4/4",
+        "beatUnit": "quarter-note",
+        "sourceMeasureNumbering": "editorially counted, not printed; page 1 has 5+5+3+3 bars; page 2 chorus begins system 3 bar 2",
+        "selectedRoute": [
+          {
+            "sourceMeasures": [
+              26,
+              33
+            ],
+            "pass": 1,
+            "beats": [
+              0,
+              32
+            ]
+          },
+          {
+            "sourceMeasures": [
+              26,
+              32
+            ],
+            "pass": 2,
+            "beats": [
+              32,
+              60
+            ]
+          },
+          {
+            "sourceMeasures": [
+              34,
+              34
+            ],
+            "pass": 2,
+            "beats": [
+              60,
+              64
+            ]
+          }
+        ],
+        "expandedSourceMeasures": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34
+        ],
+        "repeatExpansion": "explicit-repeat-with-first-and-second-endings",
+        "repeatSignsPresent": true,
+        "lyricRowsAuthorizeRepeat": false,
+        "sourceNumericTempoPrinted": false,
+        "sourceQuarterBpm": null,
+        "practiceQuarterBpm": 96,
+        "tempoDecision": "96 BPM is an explicit practice setting, not a tempo printed on this source or a measurement of the original recording.",
+        "sourceRange": [
+          "E4",
+          "E5"
+        ],
+        "compiledRange": [
+          "A3",
+          "A4"
+        ],
+        "sourcePitchClasses": [
+          2,
+          4,
+          7,
+          9,
+          11
+        ],
+        "transpositionSemitones": -7,
+        "localPitchAlterations": [],
+        "octaveFolding": false,
+        "additionalMelodyAccidentals": [],
+        "metricNoteheadOccurrences": 98,
+        "principalAttackCount": 66,
+        "tieContinuationCount": 32,
+        "tieContinuations": [
+          {
+            "sourceMeasure": 26,
+            "pass": 1,
+            "continuationBeat": 2,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 1,
+            "continuationBeat": 4,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 1,
+            "continuationBeat": 5,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 1,
+            "continuationBeat": 6,
+            "note": "E4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 1,
+            "continuationBeat": 7,
+            "note": "G4"
+          },
+          {
+            "sourceMeasure": 28,
+            "pass": 1,
+            "continuationBeat": 10,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 1,
+            "continuationBeat": 12,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 1,
+            "continuationBeat": 14,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 1,
+            "continuationBeat": 15,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 30,
+            "pass": 1,
+            "continuationBeat": 18,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 1,
+            "continuationBeat": 20,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 1,
+            "continuationBeat": 21,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 1,
+            "continuationBeat": 22,
+            "note": "E4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 1,
+            "continuationBeat": 23,
+            "note": "G4"
+          },
+          {
+            "sourceMeasure": 32,
+            "pass": 1,
+            "continuationBeat": 26,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 33,
+            "pass": 1,
+            "continuationBeat": 28,
+            "note": "A3"
+          },
+          {
+            "sourceMeasure": 26,
+            "pass": 2,
+            "continuationBeat": 34,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 2,
+            "continuationBeat": 36,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 2,
+            "continuationBeat": 37,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 2,
+            "continuationBeat": 38,
+            "note": "E4"
+          },
+          {
+            "sourceMeasure": 27,
+            "pass": 2,
+            "continuationBeat": 39,
+            "note": "G4"
+          },
+          {
+            "sourceMeasure": 28,
+            "pass": 2,
+            "continuationBeat": 42,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 2,
+            "continuationBeat": 44,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 2,
+            "continuationBeat": 46,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 29,
+            "pass": 2,
+            "continuationBeat": 47,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 30,
+            "pass": 2,
+            "continuationBeat": 50,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 2,
+            "continuationBeat": 52,
+            "note": "C4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 2,
+            "continuationBeat": 53,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 2,
+            "continuationBeat": 54,
+            "note": "E4"
+          },
+          {
+            "sourceMeasure": 31,
+            "pass": 2,
+            "continuationBeat": 55,
+            "note": "G4"
+          },
+          {
+            "sourceMeasure": 32,
+            "pass": 2,
+            "continuationBeat": 58,
+            "note": "D4"
+          },
+          {
+            "sourceMeasure": 34,
+            "pass": 2,
+            "continuationBeat": 60,
+            "note": "A3"
+          }
+        ],
+        "criticalArticulation": [
+          "Cross-system source m28 to m29 keeps one held degree-2 attack.",
+          "Source m29 has two same-pitch ties inside a broader different-pitch phrase slur; the degree-2 to degree-1 change remains two attacks.",
+          "Source m32 low degree-6 ties into the selected ending; each merged hold is 2.5 beats."
+        ],
+        "vocalRestWindows": [
+          [
+            30,
+            2
+          ],
+          [
+            62,
+            2
+          ]
+        ],
+        "restScope": "vocal-only; guitar activity is omitted, not declared absent in the source",
+        "pickupBeats": 0,
+        "sourceTotalBeats": 64,
+        "endingRestBeats": 2,
+        "sourceAssetHashes": {
+          "jianpujia-1.png": "7485c4e0cd44c85f7a41dee0e28ccd54de4a844409c40c9cedbe000ccf30ce5d",
+          "jianpujia-2.png": "2663a9ec80aa5d7375e865f03dfb8f1175a53dff85209658434e618425bb9d86",
+          "jianpujia-3.png": "982221f84f730e129651e8906625e22cabbc3685688b55d001a4c6308dd57650"
+        },
+        "independentSourceFixtureSha256": "5ec0212ec53e88facbfbdd0442df0dcd8db32422aa9806ff2cd6b85bc66e0304",
+        "parentInitialReadingSha256": "59366914f9d1d3f266d1a2c3824cd13b95f9ff4ed58a51fdd3b3cdf3653db119",
+        "sourcePixelReview": "Two independent readings of the same three-page edition agree on every selected printed head, tie, rest and all 66 compiled attacks; this is not a second independent published score.",
+        "supportDecision": "All guitar TAB, chord symbols and strumming are omitted. No automatic accompaniment or chord targets.",
+        "referenceListening": "not-performed",
+        "browserAudio": "pending-cloud-verification",
+        "physicalKalimba": "not-performed",
+        "publicationRights": "project-owner-confirmed-licensed-Jay-Chou-song-package",
+        "rightsScope": "Owner confirmed composition adaptation and public-release permission. No source-page image, typography, lyrics, or third-party guitar accompaniment is redistributed; the license itself was not independently inspected."
+      }
+    }
+  }
+}
