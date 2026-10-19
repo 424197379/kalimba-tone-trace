@@ -229,7 +229,7 @@ test("real importer/storage restore all historical music separately without chan
     values.set(SONG_SPEED_STORAGE_KEY,speedBytes);
     const library=getSongLibrary();library[song.id]=normalized(song);
     const before=JSON.stringify(library),previousIds=getPracticeSongs(library).map(s=>s.id).sort();
-    assert.equal(previousIds.length,36);
+    assert.equal(previousIds.length,37);
     const imported=parseImportedSongs(archiveBytes.toString(),library);assert.equal(imported.length,1);
     const restored=imported[0];assert.deepEqual(restored.steps,archive.steps);
     assert.deepEqual(restored.sourceFeatures,archive.sourceFeatures);assert.equal(restored.schemaVersion,2);
@@ -243,7 +243,7 @@ test("real importer/storage restore all historical music separately without chan
     assert.deepEqual(reconstructed,archive,"all old values recover after documented identity/schema/display normalization; archive alone preserves original lexical bytes");
     assert.equal(JSON.stringify(library),before);assert.equal(library[song.id].steps.length,183);
     assert.deepEqual(getPracticeSongs(library).map(s=>s.id).sort(),previousIds);
-    const merged={...library,[restored.id]:restored};assert.equal(getPracticeSongs(merged).length,37);
+    const merged={...library,[restored.id]:restored};assert.equal(getPracticeSongs(merged).length,38);
     assert.equal(getPracticeSongId(merged,restored.id),restored.id);
     const [again]=parseImportedSongs(archiveBytes.toString(),merged);assert.notEqual(again.id,restored.id);assert.deepEqual(again.steps,archive.steps);
     const [selected]=parseImportedSongs(JSON.stringify(song),merged);assertSelectedEdition(selected);

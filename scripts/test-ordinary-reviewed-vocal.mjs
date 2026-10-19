@@ -207,7 +207,7 @@ test("frozen235 archive retains exact bytes, complete old metadata and original1
 
 test("archive remains developer-only with one canonical card and no inherited guitar backing", async () => {
   const files = await readSongFiles();
-  assert.equal(files.length, 57);
+  assert.equal(files.length, 58);
   assert.equal(files.filter(({ song: value }) => value.id === song.id).length, 1);
   assert.ok(files.every(({ fileName }) => fileName !== "ping-fan-zhi-lu-v2.4.23.json"));
   assert.ok(files.every(({ fileName }) => fileName !== "ping-fan-zhi-lu-chord.json"));
@@ -235,7 +235,7 @@ test("real archive import and isolated save recover235 as an independent local s
   withIsolatedStorage(() => {
     const library = getSongLibrary(); library[song.id] = normalized(song);
     const before = JSON.stringify(library), canonicalIds = getPracticeSongs(library).map(({ id }) => id).sort();
-    assert.equal(canonicalIds.length, 36);
+    assert.equal(canonicalIds.length, 37);
     const [restored] = parseImportedSongs(archiveBytes.toString(), library);
     assert.notEqual(restored.id, song.id); assert.notEqual(restored.baseSongId, song.id);
     assert.equal(restored.source, "local"); assert.equal(restored.schemaVersion, 2);
@@ -254,7 +254,7 @@ test("real archive import and isolated save recover235 as an independent local s
     assert.equal(JSON.stringify(library), before); assert.equal(library[song.id].steps.length, 93);
     assert.deepEqual(getPracticeSongs(library).map(({ id }) => id).sort(), canonicalIds);
     const merged = { ...library, [saved.id]: saved };
-    assert.equal(getPracticeSongs(merged).length, 37); assert.equal(getPracticeSongId(merged, saved.id), saved.id);
+    assert.equal(getPracticeSongs(merged).length, 38); assert.equal(getPracticeSongId(merged, saved.id), saved.id);
     assert.equal(getPracticeSongId(merged, song.id), song.id);
     const [again] = parseImportedSongs(archiveBytes.toString(), merged);
     assert.notEqual(again.id, saved.id); assert.deepEqual(again.steps, archive.steps);

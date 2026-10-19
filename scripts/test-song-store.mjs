@@ -111,7 +111,7 @@ test("all built-in arrangements resolve to authoritative single-note melodies wi
     assert.ok(song.events.some((event) => event.notes.length > 1));
   }
   const practiceSongs = getPracticeSongs(library);
-  assert.equal(practiceSongs.length, 36);
+  assert.equal(practiceSongs.length, 37);
   assert.equal(new Set(practiceSongs.map(getSongBaseId)).size, practiceSongs.length);
   assert.ok(practiceSongs.every((song) => song.judgementMode === "melody" && song.arrangementKind === "melody"));
   assert.ok(practiceSongs.every((song) => song.events.every((event) => event.notes.filter((note) => note.judge).length === 1)));

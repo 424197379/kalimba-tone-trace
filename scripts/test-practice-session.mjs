@@ -170,6 +170,7 @@ function endingRestHarness(songId) {
 }
 
 for (const [songId, eventEnd, sourceEnd] of [
+  ["fan-fang-xiang-de-zhong", 62, 64],
   ["gao-bai-qi-qiu", 129, 132],
   ["ye-de-gang-qin-qu-wu", 129, 132],
   ["qi-feng-le", 77, 80],

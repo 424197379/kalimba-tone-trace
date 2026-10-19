@@ -130,12 +130,12 @@ test('provider selects one whole layer deterministically: practice first, own au
  assert.equal(a.autoAccompaniment.tag,'a','neither selected practice nor auto mutates the other layer');
 });
 
-test('all 36 built-in initial providers retain pre-import-memory selection and mismatched legacy backing stays unavailable',()=>{
+test('all 37 built-in initial providers retain pre-import-memory selection and mismatched legacy backing stays unavailable',()=>{
  const previous=globalThis.localStorage;let library;
  try{globalThis.localStorage={getItem:()=>null};library=getSongLibrary();}
  finally{if(previous===undefined)delete globalThis.localStorage;else globalThis.localStorage=previous;}
  const canonical=Object.values(library).filter(song=>getPracticeSongId(library,song.id)===song.id);
- assert.equal(canonical.length,36);
+ assert.equal(canonical.length,37);
  for(const song of canonical){
   const siblings=Object.values(library).filter(candidate=>getSongBaseId(candidate)===getSongBaseId(song))
    .sort((a,b)=>getSongVersionRank(a)-getSongVersionRank(b)||a.id.localeCompare(b.id,'en'));

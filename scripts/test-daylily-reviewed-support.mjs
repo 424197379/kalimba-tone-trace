@@ -131,7 +131,9 @@ test("all 56 prior 2.4.31 song JSON payloads stay byte-exact, including historic
     delete historical.sourceFeatures.sourceReview.currentScopeReview;
     return Buffer.from(`${JSON.stringify(historical, null, 2)}\n`);
   };
-  const prior=rawFiles.filter(({song:s})=>s.id!==song.id).map(({fileName,raw})=>[fileName,hash(fileName==="rang-wo-men-dang-qi-shuang-jiang.json"?rowingArchive:fileName==="qing-cheng-shan-xia-bai-su-zhen.json"?qingchengArchive:fileName==="hong-yan.json"?hongyanArchive:fileName==="tong-nian.json"?childhoodArchive:fileName==="sheng-sheng-man.json"?shengArchive:priorRaw(fileName,raw))])
+  // The new melody is outside the frozen 2.4.31 payload snapshot.
+  assert.equal(rawFiles.length,58);
+  const prior=rawFiles.filter(({song:s})=>s.id!==song.id&&s.id!=="fan-fang-xiang-de-zhong").map(({fileName,raw})=>[fileName,hash(fileName==="rang-wo-men-dang-qi-shuang-jiang.json"?rowingArchive:fileName==="qing-cheng-shan-xia-bai-su-zhen.json"?qingchengArchive:fileName==="hong-yan.json"?hongyanArchive:fileName==="tong-nian.json"?childhoodArchive:fileName==="sheng-sheng-man.json"?shengArchive:priorRaw(fileName,raw))])
     .sort((a,b)=>a[0]<b[0]?-1:a[0]>b[0]?1:0);
   assert.equal(prior.length,56);
   assert.equal(hash(JSON.stringify(prior)),"b367d1fc31c1be4a5e63911ae39fb1e4bc68701a31ddad8ae26a2db23bf918bc");
@@ -223,8 +225,8 @@ test("actual corrected validator accepts all20 rests and rejects conflicting spa
   const tooShort=structuredClone(song); tooShort.sourceFeatures.sourceTotalBeats=191;
   assert.ok(validate(tooShort).errors.length>0);
 });
-test("normalization and all three deep links keep57 source records but36 canonical single-melody cards",()=>{
-  assert.equal(Object.keys(library).length,57); assert.equal(getPracticeSongs(library).length,36);
+test("normalization and all three deep links keep58 source records but37 canonical single-melody cards",()=>{
+  assert.equal(Object.keys(library).length,58); assert.equal(getPracticeSongs(library).length,37);
   assert.deepEqual(plain(library[song.id].steps),melody.steps);
   assert.deepEqual(plain(library[song.id].practiceAccompaniment),song.practiceAccompaniment);
   assert.deepEqual(plain(library[song.id].rhythm),song.rhythm);
@@ -233,7 +235,7 @@ test("normalization and all three deep links keep57 source records but36 canonic
   for (const entries of [[song,legacy,melody],[melody,song,legacy]])
     assert.deepEqual(getPracticeSongs(normalizedLibrary(entries)).map(s=>s.id),[melody.id]);
   const absent=normalizedLibrary(rawSongs.filter(s=>s.id!==song.id));
-  assert.equal(Object.keys(absent).length,56); assert.equal(getPracticeSongs(absent).length,36);
+  assert.equal(Object.keys(absent).length,57); assert.equal(getPracticeSongs(absent).length,37);
 });
 test("provider borrows only compatible optional support and never the retained old V2 backing",()=>{
   assert.equal(hasMatchingPracticeMelody(melody,song),true); assert.equal(hasMatchingPracticeMelody(melody,legacy),false);

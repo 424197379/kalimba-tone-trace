@@ -140,7 +140,7 @@ test("a long notated hold keeps its beam after judgement grace, then clears thro
   assert.deepEqual(board.beam(), [8]); assert.deepEqual(board.highlighted(), [8]);
 });
 
-for (const [songId, restBeats] of [["gao-bai-qi-qiu", 3], ["ye-de-gang-qin-qu-wu", 3], ["qi-feng-le", 3], ["yun-yan-cheng-yu", 4]]) {
+for (const [songId, restBeats] of [["fan-fang-xiang-de-zhong", 2], ["gao-bai-qi-qiu", 3], ["ye-de-gang-qin-qu-wu", 3], ["qi-feng-le", 3], ["yun-yan-cheng-yu", 4]]) {
   test(`${songId}: its last held note clears before the ${restBeats} source-ending rest beats and stays clear at song end`, () => {
     const song = SONG_LIBRARY[songId];
     const events = song.steps.slice(-2).map(([name, beat, duration], id) => event(id, beat, NOTE_INDEX.get(name), duration));

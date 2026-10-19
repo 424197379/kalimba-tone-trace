@@ -223,7 +223,7 @@ test("actual importer and storage recover the historical song separately and all
     const previousIds=getPracticeSongs(library).map(({id})=>id).sort();
     library[song.id]=normalized(song); // Valid before the lead regenerates src/songs.js.
     const before=JSON.stringify(library);
-    assert.equal(previousIds.length,36);
+    assert.equal(previousIds.length,37);
     assert.deepEqual(getPracticeSongs(library).map(({id})=>id).sort(),previousIds);
     const [restored]=parseImportedSongs(archiveBytes.toString(),library);
     assert.deepEqual(restored.steps,archive.steps);
@@ -247,7 +247,7 @@ test("actual importer and storage recover the historical song separately and all
     assert.equal(JSON.stringify(library),before);
     assert.equal(library[song.id].steps.length,61);
     const merged={...library,[restored.id]:restored};
-    assert.equal(getPracticeSongs(merged).length,37);
+    assert.equal(getPracticeSongs(merged).length,38);
     assert.equal(getPracticeSongId(merged,restored.id),restored.id);
     const [again]=parseImportedSongs(archiveBytes.toString(),merged);
     assert.notEqual(again.id,restored.id);
