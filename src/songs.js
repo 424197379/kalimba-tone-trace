@@ -57585,39 +57585,29 @@ export const SONG_LIBRARY = {
   "tian-kong-zhi-cheng": {
       "schemaVersion": 1,
       "id": "tian-kong-zhi-cheng",
-      "title": "《天空之城》（MV短版）",
+      "title": "《天空之城》（连续高潮选段）",
       "uploader": "system",
       "difficulty": "medium",
       "bpm": 88,
       "defaultSpeedFactor": 1,
       "beatsPerMeasure": 4,
       "key": "C",
-      "hint": "MV短版：保留开头主题、回应乐句和后半段收尾，按原谱88 BPM，默认1倍速约1分22秒。21音C调无需调音；跳过含升音的乐句，非全曲。",
+      "hint": "连续高潮选段：从后半主题弱起至原谱收尾，55个单音、65拍，原谱88 BPM，1倍速约44秒。不含“6、7、1”开头；21音C调无需调音，无拼接、无改音，不是全曲。",
       "sourceFeatures": {
         "hasChords": false,
         "hasArpeggio": false,
         "hasRepeats": false,
-        "transcriptionScope": "mv-opening-and-later-theme-excerpt",
+        "transcriptionScope": "continuous-middle-climax-excerpt",
         "sourceMeasureCount": 33,
-        "outputMeasureCount": 30,
-        "sourceTotalBeats": 120,
+        "outputMeasureCount": 17,
+        "sourceTotalBeats": 65,
         "sourceTempo": 88,
         "arrangementTempo": 88,
         "sourceSegments": [
           {
-            "sourceStartBeat": 0,
-            "sourceEndBeat": 27,
-            "targetStartBeat": 0
-          },
-          {
-            "sourceStartBeat": 35,
-            "sourceEndBeat": 60,
-            "targetStartBeat": 27
-          },
-          {
-            "sourceStartBeat": 64,
+            "sourceStartBeat": 67,
             "sourceEndBeat": 132,
-            "targetStartBeat": 52
+            "targetStartBeat": 0
           }
         ],
         "excludedAlteredMeasures": [
@@ -57626,16 +57616,21 @@ export const SONG_LIBRARY = {
         ],
         "transpositionSemitones": 0,
         "unsupported": [
-          "Keep source beats [0,27), [35,60), [64,132): opening, varied response and later theme with the printed cadence. The two joins are editorial cuts, not a continuous original section.",
-          "The source simplifies altered tones in measures 8 and 16; both measures are excluded rather than replacing accidentals with natural notes.",
-          "V1 omits the lower accompaniment voice and the extra upper-voice B4 at source measure 19.",
-          "The printed 88 BPM is retained. Default 1.0x is 81.818 seconds including the three-beat pickup lead-in; length follows the selected phrases rather than tempo stretching."
+          "Selected one continuous source range [67,132): the C5-D5 pickup at the last beat of measure 17 through the printed final A4 of measure 33. The preceding opening theme is omitted as a whole; there are no internal editorial joins.",
+          "The complete theme contains F-sharp and G-sharp unavailable on the fixed natural-note instrument. The selected melody itself needs neither pitch; no accidental is replaced, and no local octave folding is used.",
+          "V1 omits all lower accompaniment and the simultaneous lower B4 under the source-identified D5 melody at measure 19.",
+          "The one-beat pickup starts at output beat 0. The app provides preparation before playback; no extra score rests are inserted. Printed 88 BPM is retained: 65 quarter beats take 44.318 seconds, excluding preparation and player tail.",
+          "This is the chosen 2018 MV arrangement, whose later repeated attacks differ from some other editions. It is not a claim to reproduce every articulation of the original recording."
         ],
         "unsureMeasures": [],
         "sources": [
           {
             "label": "用户提供：比三呆弹吉他《天空之城》伴随着你，2018-08-28，两页简谱",
             "url": "https://mp.weixin.qq.com/s/Sf9pW8EZ9ezs92oSP4w5-A"
+          },
+          {
+            "label": "比三呆弹吉他：同作者2018-08-29搜狐发布，两页谱面可读",
+            "url": "https://www.sohu.com/a/250579756_100091032"
           },
           {
             "label": "Kalimba Class / Patricia Reichel：独立旋律音高参照，非节奏覆盖",
@@ -57648,14 +57643,14 @@ export const SONG_LIBRARY = {
         ],
         "suitability": {
           "status": "conditional",
-          "scope": "mv-opening-and-later-theme-excerpt",
-          "reason": "The selected upper melody uses only natural notes D4–A5; the source final A4 resolves the excerpt. Printed rests and dotted rhythms are retained. Source intervals were compared with independent kalimba/guitar notation; no original-recording listening is claimed.",
+          "scope": "continuous-middle-climax-excerpt",
+          "reason": "A continuous source-backed 55-attack melody with its C5-D5 pickup and complete A4 ending fits G4–A5 on the fixed 21-key C instrument. The user selected this scope in place of the former stitched opening/later version. No pitch substitution or internal cut is used.",
           "reviewRequired": [
-            "Human listening to the editorial join and a physical 21-key play-through remain pending."
+            "Reference-recording listening and physical 21-key kalimba play-through were not performed; source pixels and independent transcription were checked separately."
           ]
         },
         "sourceReview": {
-          "confidence": "source-reviewed-selected-excerpt-listening-pending",
+          "confidence": "source-reviewed-contiguous-excerpt-listening-pending",
           "archivedEdition": {
             "file": "data/archives/tian-kong-zhi-cheng-v2.4.52.json",
             "fileSha256": "87cec5397ef34eb01264939c1e15d3e2f2649ec28c678566a59968a9d783b1a6"
@@ -57765,555 +57760,382 @@ export const SONG_LIBRARY = {
             }
           },
           "currentScopeReview": {
-            "status": "reviewed-selected-mv-excerpt",
-            "reviewedBeatRanges": [
-              [
-                0,
-                120
-              ]
+            "status": "reviewed-continuous-mv-climax",
+            "reviewDate": "2026-10-22",
+            "selectedEdition": "bisandai-2018-numbered-mv-arrangement",
+            "sourceUrl": "https://www.sohu.com/a/250579756_100091032",
+            "sourceImageSha256": [
+              "6142e675aac01fd792dcf946fbbf24451a6438e975dcb7a99ff34befa116c0fc",
+              "aa7dfdfe286d91d74954c03f0053826a2a0329930ac4dbe66dd20cd874a59950"
             ],
-            "sourceSegments": [
-              {
-                "sourceStartBeat": 0,
-                "sourceEndBeat": 27,
-                "targetStartBeat": 0
-              },
-              {
-                "sourceStartBeat": 35,
-                "sourceEndBeat": 60,
-                "targetStartBeat": 27
-              },
-              {
-                "sourceStartBeat": 64,
-                "sourceEndBeat": 132,
-                "targetStartBeat": 52
-              }
+            "sourceMeasureSelection": "m17 final beat, then m18–33 complete",
+            "sourceBeatRange": [
+              67,
+              132
             ],
-            "octaveConvention": "C-based unmarked degree 1 = C4; upper dot = octave 5",
-            "silentWindows": [
-              {
-                "beat": 0,
-                "duration": 3
-              },
-              {
-                "beat": 17,
-                "duration": 2
-              },
-              {
-                "beat": 25,
-                "duration": 2
-              }
+            "outputBeatRange": [
+              0,
+              65
             ],
-            "editorialJoinBeats": [
-              27,
-              52
-            ],
+            "sourceToOutputBeatOffset": -67,
+            "pickupBeats": 1,
+            "principalAttackCount": 55,
             "sourceQuarterBpm": 88,
-            "sourceTie": {
-              "sourceMeasure": 15,
-              "compiledNote": [
-                "C5",
-                49.5,
-                2.5
-              ]
-            },
-            "sourceEnding": "Source measure 33 A4, four beats; lower arpeggio omitted",
+            "compiledRange": [
+              "G4",
+              "A5"
+            ],
+            "transpositionSemitones": 0,
+            "localPitchAlterations": [],
+            "octaveFolding": false,
+            "editorialJoinBeats": [],
+            "silentWindows": [],
+            "sourceEnding": "Source measure 33 A4, four beats, output beat 61–65; lower arpeggio omitted.",
+            "sourcePixelReview": "Two independent readings of the same two-page MV score agree on all selected pitches and durations. KalimbaClass is a separate contour/voice reference, not a replacement rhythm edition.",
             "originalRecordingListening": "not-performed",
             "physicalKalimba": "not-performed"
+          },
+          "previousSelectedEdition": {
+            "file": "data/archives/tian-kong-zhi-cheng-v2.4.54.json",
+            "fileSha256": "f831607a55dada2886727970189d1d97b6ec72ec7008c35d89ea20d3def5d7be",
+            "currentScopeReview": {
+              "status": "reviewed-selected-mv-excerpt",
+              "reviewedBeatRanges": [
+                [
+                  0,
+                  120
+                ]
+              ],
+              "sourceSegments": [
+                {
+                  "sourceStartBeat": 0,
+                  "sourceEndBeat": 27,
+                  "targetStartBeat": 0
+                },
+                {
+                  "sourceStartBeat": 35,
+                  "sourceEndBeat": 60,
+                  "targetStartBeat": 27
+                },
+                {
+                  "sourceStartBeat": 64,
+                  "sourceEndBeat": 132,
+                  "targetStartBeat": 52
+                }
+              ],
+              "octaveConvention": "C-based unmarked degree 1 = C4; upper dot = octave 5",
+              "silentWindows": [
+                {
+                  "beat": 0,
+                  "duration": 3
+                },
+                {
+                  "beat": 17,
+                  "duration": 2
+                },
+                {
+                  "beat": 25,
+                  "duration": 2
+                }
+              ],
+              "editorialJoinBeats": [
+                27,
+                52
+              ],
+              "sourceQuarterBpm": 88,
+              "sourceTie": {
+                "sourceMeasure": 15,
+                "compiledNote": [
+                  "C5",
+                  49.5,
+                  2.5
+                ]
+              },
+              "sourceEnding": "Source measure 33 A4, four beats; lower arpeggio omitted",
+              "originalRecordingListening": "not-performed",
+              "physicalKalimba": "not-performed"
+            },
+            "reason": "The user reported poor resemblance and approved replacing the stitched MV short version with a continuous climax excerpt, without the iconic opening."
           }
-        }
+        },
+        "pickupBeats": 1
       },
-      "practiceTitle": "《天空之城》MV短版练习轨道",
-      "scoreTitle": "《天空之城》MV短版简谱进度",
+      "practiceTitle": "《天空之城》连续高潮选段练习轨道",
+      "scoreTitle": "《天空之城》连续高潮选段简谱进度",
       "steps": [
         [
-          "A4",
-          3,
+          "C5",
+          0,
           0.5
         ],
         [
-          "B4",
-          3.5,
+          "D5",
+          0.5,
+          0.5
+        ],
+        [
+          "E5",
+          1,
+          1.5
+        ],
+        [
+          "D5",
+          2.5,
+          0.5
+        ],
+        [
+          "E5",
+          3,
+          1
+        ],
+        [
+          "G5",
+          4,
+          1
+        ],
+        [
+          "D5",
+          5,
+          3
+        ],
+        [
+          "G4",
+          8,
+          0.5
+        ],
+        [
+          "G4",
+          8.5,
           0.5
         ],
         [
           "C5",
-          4,
+          9,
           1.5
         ],
         [
           "B4",
-          5.5,
+          10.5,
           0.5
         ],
         [
           "C5",
-          6,
-          1
-        ],
-        [
-          "E5",
-          7,
-          1
-        ],
-        [
-          "B4",
-          8,
-          3
-        ],
-        [
-          "E4",
           11,
           1
         ],
         [
-          "A4",
+          "E5",
           12,
-          1.5
-        ],
-        [
-          "G4",
-          13.5,
-          0.5
-        ],
-        [
-          "A4",
-          14,
-          1
-        ],
-        [
-          "C5",
-          15,
-          1
-        ],
-        [
-          "G4",
-          16,
-          1
-        ],
-        [
-          "D4",
-          19,
-          0.5
-        ],
-        [
-          "E4",
-          19.5,
-          0.5
-        ],
-        [
-          "F4",
-          20,
-          1.5
-        ],
-        [
-          "E4",
-          21.5,
-          0.5
-        ],
-        [
-          "F4",
-          22,
-          1
-        ],
-        [
-          "C5",
-          23,
-          1
-        ],
-        [
-          "E4",
-          24,
-          1
-        ],
-        [
-          "A4",
-          27,
-          0.5
-        ],
-        [
-          "B4",
-          27.5,
-          0.5
-        ],
-        [
-          "C5",
-          28,
-          1.5
-        ],
-        [
-          "B4",
-          29.5,
-          0.5
-        ],
-        [
-          "C5",
-          30,
           1
         ],
         [
           "E5",
-          31,
-          1
-        ],
-        [
-          "B4",
-          32,
-          3
-        ],
-        [
-          "E4",
-          35,
-          1
-        ],
-        [
-          "A4",
-          36,
-          1.5
-        ],
-        [
-          "G4",
-          37.5,
-          0.5
-        ],
-        [
-          "A4",
-          38,
-          1
-        ],
-        [
-          "C5",
-          39,
-          1
-        ],
-        [
-          "G4",
-          40,
-          3
-        ],
-        [
-          "D4",
-          43,
-          0.5
-        ],
-        [
-          "E4",
-          43.5,
-          0.5
-        ],
-        [
-          "F4",
-          44,
-          1
-        ],
-        [
-          "C5",
-          45,
-          0.5
-        ],
-        [
-          "B4",
-          45.5,
-          1.5
-        ],
-        [
-          "C5",
-          47,
-          1
-        ],
-        [
-          "D5",
-          48,
-          1
-        ],
-        [
-          "E5",
-          49,
-          0.5
-        ],
-        [
-          "C5",
-          49.5,
-          2.5
-        ],
-        [
-          "A4",
-          52,
-          3
-        ],
-        [
-          "C5",
-          55,
-          0.5
-        ],
-        [
-          "D5",
-          55.5,
-          0.5
-        ],
-        [
-          "E5",
-          56,
-          1.5
-        ],
-        [
-          "D5",
-          57.5,
-          0.5
-        ],
-        [
-          "E5",
-          58,
-          1
-        ],
-        [
-          "G5",
-          59,
-          1
-        ],
-        [
-          "D5",
-          60,
-          3
-        ],
-        [
-          "G4",
-          63,
-          0.5
-        ],
-        [
-          "G4",
-          63.5,
-          0.5
-        ],
-        [
-          "C5",
-          64,
-          1.5
-        ],
-        [
-          "B4",
-          65.5,
-          0.5
-        ],
-        [
-          "C5",
-          66,
-          1
-        ],
-        [
-          "E5",
-          67,
-          1
-        ],
-        [
-          "E5",
-          68,
+          13,
           4
         ],
         [
           "A4",
-          72,
+          17,
           0.5
         ],
         [
           "B4",
-          72.5,
+          17.5,
           0.5
         ],
         [
           "C5",
-          73,
+          18,
           1
         ],
         [
           "B4",
-          74,
+          19,
           0.5
         ],
         [
           "C5",
-          74.5,
+          19.5,
           0.5
         ],
         [
           "D5",
-          75,
+          20,
           1
         ],
         [
           "C5",
-          76,
+          21,
           1.5
         ],
         [
           "G4",
-          77.5,
+          22.5,
           0.5
         ],
         [
           "G4",
-          78,
+          23,
           2
         ],
         [
           "F5",
-          80,
+          25,
           1
         ],
         [
           "E5",
-          81,
+          26,
           1
         ],
         [
           "D5",
-          82,
+          27,
           1
         ],
         [
           "C5",
-          83,
+          28,
           1
         ],
         [
           "E5",
-          84,
+          29,
           3
         ],
         [
           "E5",
-          87,
+          32,
           1
         ],
         [
           "A5",
-          88,
+          33,
           1.5
         ],
         [
           "A5",
-          89.5,
+          34.5,
           0.5
         ],
         [
           "G5",
-          90,
+          35,
           1.5
         ],
         [
           "G5",
-          91.5,
+          36.5,
           0.5
         ],
         [
           "E5",
-          92,
+          37,
           0.5
         ],
         [
           "D5",
-          92.5,
+          37.5,
           0.5
         ],
         [
           "C5",
-          93,
+          38,
           3
         ],
         [
           "D5",
-          96,
+          41,
           1
         ],
         [
           "C5",
-          97,
+          42,
           0.5
         ],
         [
           "D5",
-          97.5,
+          42.5,
           1.5
         ],
         [
           "G5",
-          99,
+          44,
           1
         ],
         [
           "E5",
-          100,
+          45,
           3
         ],
         [
           "E5",
-          103,
+          48,
           1
         ],
         [
           "A5",
-          104,
+          49,
           1.5
         ],
         [
           "A5",
-          105.5,
+          50.5,
           0.5
         ],
         [
           "G5",
-          106,
+          51,
           1.5
         ],
         [
           "G5",
-          107.5,
+          52.5,
           0.5
         ],
         [
           "E5",
-          108,
+          53,
           0.5
         ],
         [
           "D5",
-          108.5,
+          53.5,
           0.5
         ],
         [
           "C5",
-          109,
+          54,
           2
         ],
         [
           "C5",
-          111,
+          56,
           1
         ],
         [
           "D5",
-          112,
+          57,
           1
         ],
         [
           "C5",
-          113,
+          58,
           0.5
         ],
         [
           "D5",
-          113.5,
+          58.5,
           1.5
         ],
         [
           "B4",
-          115,
+          60,
           1
         ],
         [
           "A4",
-          116,
+          61,
           4
         ]
       ]
