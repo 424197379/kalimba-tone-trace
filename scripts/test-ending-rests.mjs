@@ -9,7 +9,7 @@ const near = (actual, expected, message) => assert.ok(Math.abs(actual - expected
   `${message}: ${actual} != ${expected}`);
 const sourceBounds = {
   "fan-fang-xiang-de-zhong": [62, 64],
-  "tian-kong-zhi-cheng": [120, 120],
+  "tian-kong-zhi-cheng": [65, 65],
   "song-bie": [94, 96],
   "da-yu": [128, 128],
   "ling-er-xiang-ding-dang": [64, 64],
