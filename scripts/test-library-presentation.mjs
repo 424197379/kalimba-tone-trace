@@ -61,12 +61,14 @@ function harness(songs = library) {
 }
 
 test("built-in edition labels become clean presentation titles without mutating source data", () => {
-  const expected = { bluebird: "《青鸟》", katyusha: "《喀秋莎》", "tian-kong-zhi-cheng": "《天空之城》",
+  const expected = { bluebird: "《青鸟》", katyusha: "《喀秋莎》", "tian-kong-zhi-cheng": "《天空之城》（连续高潮选段）",
     jasmine: "《茉莉花》", "see-you-again": "《See You Again》", "sheng-sheng-man": "《声声慢》",
     "mo-he-wu-ting-verse": "《漠河舞厅》", "ju-ci-lang-de-xia-tian": "《菊次郎的夏天》" };
   const before = JSON.stringify(library);
   for (const [id, title] of Object.entries(expected)) assert.equal(getSongDisplayTitle(library[id]), title, id);
   for (const song of songStore.getPracticeSongs(library)) {
+    // This explicitly selected replacement must disclose that the iconic opening is absent.
+    if (song.id === "tian-kong-zhi-cheng") continue;
     assert.doesNotMatch(getSongDisplayTitle(song), /待核|简化版|改音版|教材|教学版|短版|选段|预览|首主题|声乐版|人声版|戏腔简谱版/);
   }
   assert.equal(getSongDisplayTitle(library["one-summers-day"]), "《那个夏天（One Summer’s Day）》", "legitimate parentheses are part of the name");

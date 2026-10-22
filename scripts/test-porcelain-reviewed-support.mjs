@@ -158,7 +158,7 @@ test("the prior 55-song and three-archive snapshot remains byte-exactly recovera
   // Exclude later additions while retaining the original snapshot hash and size.
   const files=[];
   for(const dir of ["data/songs","data/archives"]) for(const name of (await readdir(new URL(`../${dir}/`,import.meta.url))).filter(x=>x.endsWith(".json")&&x!=="fan-fang-xiang-de-zhong.json"&&x!=="qing-hua-ci-reviewed-support.json"&&x!=="xuan-cao-hua-reviewed-support.json"&&x!=="da-yu-v2.4.21.json"&&x!=="ping-fan-zhi-lu-v2.4.23.json"&&x!=="ju-ci-lang-de-xia-tian-v2.4.25.json"&&x!=="xuan-cao-hua-v2.4.27.json"&&x!=="song-bie-v2.4.28.json"&&x!=="rang-wo-men-dang-qi-shuang-jiang-v2.4.34.json"&&x!=="qing-cheng-shan-xia-bai-su-zhen-v2.4.35.json"&&x!=="hong-yan-v2.4.36.json"&&x!=="tong-nian-v2.4.37.json"&&x!=="sheng-sheng-man-v2.4.40.json").sort()) {
-    if (name === "tian-kong-zhi-cheng-v2.4.52.json") continue;
+    if (["tian-kong-zhi-cheng-v2.4.52.json", "tian-kong-zhi-cheng-v2.4.54.json"].includes(name)) continue;
     // Later deliberate Bigfish and Ordinary Road editions preserves the exact former bytes in
     // an internal archive; reconstruct the prior snapshot without weakening it.
     const sourcePath = dir === "data/songs" && name === "tian-kong-zhi-cheng.json"

@@ -315,7 +315,7 @@ test("source-limited and selected-edition melodies visibly disclose current scop
   const library = getSongLibrary();
   const notices = getPracticeSongs(library).filter((song) => getSongReviewNotice(song));
   assert.deepEqual(notices.map((song) => song.id).sort(), ["bie-kan-wo-zhi-shi-yi-zhi-yang", "bluebird", "da-yu", "da-yu-xiao-yu", "hong-yan", "interstellar-main-theme", "jasmine", "ju-ci-lang-de-xia-tian", "jue-bie-shu", "katyusha", "ling-er-xiang-ding-dang", "mi-xue-bing-cheng-theme", "ping-fan-zhi-lu", "qing-cheng-shan-xia-bai-su-zhen", "qing-hua-ci", "rang-wo-men-dang-qi-shuang-jiang", "see-you-again", "sheng-sheng-man", "song-bie", "tai-yang-zhao-chang-sheng-qi", "tian-kong-zhi-cheng", "tong-nian", "xuan-cao-hua", "yun-yan-cheng-yu", "zhu-zhu-xia-theme"]);
-  assert.match(getSongReviewNotice(library["tian-kong-zhi-cheng"]), /MV短版.*88 BPM.*1分22秒.*两处剪接.*无需调音/);
+  assert.match(getSongReviewNotice(library["tian-kong-zhi-cheng"]), /连续高潮选段.*88 BPM.*44秒.*不含.*开头主题.*无拼接.*无改音.*无需调音/);
   assert.match(getSongReviewNotice(library["interstellar-main-theme"]), /44–49.*恢复三连音.*尾段密集.*慢速分段.*前段声部与音区仍待核.*第42小节起为4\/4/);
   assert.doesNotMatch(getSongReviewNotice(library["interstellar-main-theme"]), /统一按3\/4显示/);
   assert.match(getSongReviewNotice({ id: "interstellar-main-theme", sourceFeatures: { unsupported: ["44-49 triplets quantized to 0.25"] } }), /44–49.*0\.25拍/);
